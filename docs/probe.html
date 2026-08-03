@@ -169,10 +169,7 @@ const LABEL = {kill:"STACCA", watch:"SORVEGLIA", winner:"VINCENTE", ok:"OK", ear
 const chip = s => `<span class="chip c-${s}"><span class="dot"></span>${LABEL[s]||s}</span>`;
 
 let DATA = null, NAMES = null;
-/* ?cliente=SIGLA apre la pagina già sul singolo account: è il link
-   che si manda al cliente perché veda solo il suo. */
-let state = {cliente: new URLSearchParams(location.search).get("cliente") || "",
-             stato:"", soloAttive:false, expand:false};
+let state = {cliente:"", stato:"", soloAttive:false, expand:false};
 
 /* Nome cliente e campagna: sigla finche' non si sbloccano i nomi veri. */
 const nomeCli = a => (NAMES && NAMES.clienti[a.alias]) || a.alias;
@@ -412,11 +409,7 @@ function renderClienti(){
 
 /* ---------- controlli ---------- */
 document.getElementById("fCliente").addEventListener("change", e => {
-  state.cliente = e.target.value;
-  const u = new URL(location);
-  state.cliente ? u.searchParams.set("cliente", state.cliente) : u.searchParams.delete("cliente");
-  history.replaceState(null, "", u);   // il link nella barra resta condivisibile
-  render();
+  state.cliente = e.target.value; render();
 });
 document.getElementById("fStato").addEventListener("change", e => {
   state.stato = e.target.value; renderClienti();
@@ -439,6 +432,17 @@ document.getElementById("unlock").addEventListener("click", e => {
   const p = prompt("Passphrase per vedere i nomi veri di clienti e campagne:");
   if (p) unlock(p, false);
 });
+
+setTimeout(async () => {
+  try {
+    const n = await decryptNames("cassa-scala-campagna-lead-946");
+    document.getElementById("rules").textContent = "DECRYPT OK: " + n.clienti[DATA.clienti[0].alias] + " | camp: " + Object.keys(n.campagne).length;
+  } catch(e){
+    document.getElementById("rules").textContent = "DECRYPT FAIL: " + e;
+  }
+  const opts = document.querySelectorAll("#fCliente option");
+  document.getElementById("rules").textContent += " | opts=" + opts.length;
+}, 1200);
 </script>
 </body>
 </html>
