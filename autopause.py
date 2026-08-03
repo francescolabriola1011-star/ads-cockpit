@@ -6,10 +6,10 @@ Regole (config.yaml -> autopause.rules):
   - 1 lead e spesa oltre  €22  -> in pausa
 
 Vincoli di sicurezza, volutamente stretti:
-  - agisce SOLO sugli account elencati in autopause.account_ids
-    (oggi: AI Elite Advisory, casa nostra). Gli account dei clienti non si
-    toccano mai in automatico: la dashboard dice cosa staccare, l'azione la
-    fa una persona.
+  - agisce sugli account di autopause.account_ids. Con "auto" copre tutti i
+    clienti della dashboard generale (quindi anche i nuovi appena entrano)
+    piu' quelli di account_ids_extra. Gli id in mai_toccare restano esclusi
+    sempre.
   - tocca solo campagne ACTIVE, e le mette in PAUSED (reversibile, non elimina).
   - senza --esegui non scrive niente: stampa solo cosa farebbe.
   - ogni azione finisce in logs/autopause.log e in docs/aea/staccate.json,
@@ -88,7 +88,18 @@ def main() -> int:
     kill_no_lead = num(r["spesa_zero_lead_eur"])
     kill_un_lead = num(r["spesa_un_lead_eur"])
     cpl_max = num(r.get("cpl_max_eur")) if r.get("cpl_max_eur") else None
-    accounts = [str(a) for a in ap_cfg.get("account_ids", [])]
+    ids = ap_cfg.get("account_ids")
+    if ids == "auto":
+        # tutti gli account della dashboard generale: i clienti nuovi entrano
+        # nell'automazione da soli, senza toccare la configurazione
+        fuori = set(str(x) for x in cfg.get("excluded_account_ids", []))
+        accounts = [a["id"].replace("act_", "") for a in meta.list_accounts(meta.token())
+                    if a["id"].replace("act_", "") not in fuori]
+    else:
+        accounts = [str(a) for a in (ids or [])]
+    accounts += [str(a) for a in ap_cfg.get("account_ids_extra", [])]
+    mai = set(str(a) for a in ap_cfg.get("mai_toccare", []))
+    accounts = [a for a in dict.fromkeys(accounts) if a not in mai]
     if not accounts:
         print("autopause: nessun account autorizzato, non faccio niente")
         return 0
