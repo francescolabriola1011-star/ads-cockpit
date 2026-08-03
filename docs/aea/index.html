@@ -107,6 +107,9 @@ button.tgl[aria-pressed="true"]{border-color:var(--accent);color:var(--accent)}
 .fermo{background:var(--card);border:1px dashed var(--line);border-radius:8px;
   padding:7px 12px;font-size:13px;color:var(--ink2)}
 .fermo b{color:var(--accent)}
+.nuovo{background:var(--card);border:1px solid var(--good);border-left:3px solid var(--good);
+  border-radius:10px;padding:11px 16px;margin-top:14px;font-size:13.5px}
+.nuovo b{color:var(--good)}
 footer{margin-top:44px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:14px}
 @media(max-width:820px){
   .chead{grid-template-columns:1fr 1fr;gap:10px}
@@ -127,6 +130,7 @@ footer{margin-top:44px;color:var(--muted);font-size:12px;border-top:1px solid va
     <button class="tgl" id="unlock">Mostra nomi veri</button>
   </div>
   <div class="rules" id="rules"></div>
+  <div id="nuovi"></div>
 
   <div class="filters" id="scopebar">
     <select id="fCliente"><option value="">Tutti i clienti</option></select>
@@ -264,6 +268,16 @@ function render(){
     `0 lead da <b>${eur0(R.spend_warn_eur)}</b> → sorvegliata`,
     `CPL sotto <b>${eur0(R.cpl_winner_eur)}</b> → vincente, ci si mette budget`
   ].map(r => `<span class="rule">${r}</span>`).join("");
+
+  /* clienti entrati da poco: il parco si popola da solo, ma va detto */
+  const nuovi = (d.nuovi || []).map(al => {
+    const c = d.clienti.find(x => x.alias === al) || (d.fermi||[]).find(x => x.alias === al);
+    return c ? nomeCli(c) : al;
+  });
+  document.getElementById("nuovi").innerHTML = nuovi.length
+    ? `<div class="nuovo"><b>Nuovo account entrato</b> · ${nuovi.map(esc).join(", ")}
+        · aggiunto in automatico, nessuna configurazione richiesta</div>`
+    : "";
 
   /* selettore account */
   const selEl = document.getElementById("fCliente");
