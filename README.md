@@ -3,7 +3,16 @@
 Dashboard unica per fare il **run delle ads di tutti i clienti** con le regole di casa,
 senza aprire venti Gestioni Inserzioni.
 
-**Link dashboard:** https://francescolabriola1011-star.github.io/ads-cockpit/
+**Dashboard generale** (tutti gli account, con selettore):
+https://francescolabriola1011-star.github.io/ads-cockpit/
+
+**Dashboard AI Elite Advisory** (solo casa nostra):
+https://francescolabriola1011-star.github.io/ads-cockpit/aea/
+
+**Link del singolo cliente**: basta aggiungere `?cliente=SIGLA`, es.
+`.../ads-cockpit/?cliente=CF-SM`. La pagina si apre già scopata su quel solo account:
+il suo sprecato, le sue campagne da staccare, le sue vincenti. È il link da mandare
+al cliente.
 
 ## Le regole applicate
 
@@ -41,12 +50,20 @@ CTR sotto l'1% (creativo che non ferma), frequenza sopra 2.5 (pubblico bruciato)
 CPM sopra €60, meno del 5% dei click che diventa lead (modulo o landing da rivedere),
 spesa senza impression (campagna in errore).
 
-## Privacy
+## Privacy e nomi veri
 
-La dashboard è su GitHub Pages pubblico, quindi **i nomi dei clienti non escono mai**:
-nel `docs/data.json` finiscono solo le sigle (`CF-SM`, `ORO-GMY`, …).
-La mappa sigla → nome vero sta in `clients_private.json`, che è nel `.gitignore`
-e resta solo sui nostri Mac. Le sigle fisse si assegnano in `config.yaml` → `aliases`.
+Il sito è pubblico, quindi di default si vedono solo le **sigle** (`CF-SM`, `ORO-GMY`),
+e anche i nomi di persona dentro i nomi campagna sono oscurati.
+
+I nomi veri esistono comunque, ma **cifrati**: `docs/names.enc` è un blob AES-GCM con
+chiave derivata da una passphrase (PBKDF2-SHA256, 250.000 giri). Il bottone
+**"Mostra nomi veri"** chiede la passphrase e decifra nel browser: da quel momento
+clienti e campagne compaiono col nome vero, per tutta la sessione.
+
+- La passphrase sta in `~/.config/ads-cockpit/passphrase` (mai nel repo).
+- Senza passphrase, chi apre il link vede solo sigle e non può risalire a nulla.
+- I nomi puliti si scrivono in `config.yaml` → `client_names`.
+- `clients_private.json` ha la stessa mappa in chiaro, in locale, per comodità.
 
 ## Uso
 

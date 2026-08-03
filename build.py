@@ -1,25 +1,33 @@
 #!/usr/bin/env python3
-"""ADS COCKPIT — genera docs/data.json per la dashboard.
+"""ADS COCKPIT — genera i dati per la dashboard.
 
-Legge tutti gli ad account raggiungibili dal token Meta, scarica le campagne
-del periodo, applica le regole di casa (config.yaml) e scrive:
+Legge gli ad account raggiungibili dal token Meta, scarica le campagne del
+periodo, applica le regole di casa (config.yaml) e scrive:
 
-  docs/data.json          -> pubblico, nomi cliente ANONIMIZZATI in sigle
-  clients_private.json    -> mappa sigla -> nome vero (NON committato)
+  docs/data.json          -> pubblico, nomi cliente in SIGLA
+  docs/names.enc          -> nomi VERI (clienti e campagne), cifrati AES-GCM
+  clients_private.json    -> mappa sigla -> nome vero in chiaro (NON committato)
 
-Uso:  python3 build.py [--account act_xxx] [--no-anon]
+La dashboard mostra le sigle a chiunque apra il link; chi conosce la passphrase
+sblocca i nomi veri nel browser. La passphrase sta in
+~/.config/ads-cockpit/passphrase e non entra mai nel repo.
+
+Uso:  python3 build.py [--account act_xxx] [--out docs/aea] [--titolo "..."] [--no-anon]
 """
 from __future__ import annotations
 
 import argparse
+import base64
 import datetime as dt
 import json
 import os
 import re
+import secrets
 import sys
 import unicodedata
 
 import yaml
+from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
@@ -28,6 +36,37 @@ import meta  # noqa: E402
 from rules import Rules  # noqa: E402
 
 ROME = dt.timezone(dt.timedelta(hours=2))
+
+
+PASSFILE = os.path.expanduser("~/.config/ads-cockpit/passphrase")
+
+
+def passphrase() -> str:
+    """Passphrase per sbloccare i nomi veri. Generata la prima volta e stampata."""
+    if os.path.exists(PASSFILE):
+        return open(PASSFILE).read().strip()
+    os.makedirs(os.path.dirname(PASSFILE), exist_ok=True)
+    words = ("oro argento lingotto cockpit lead campagna budget stacco margine "
+             "rendita cassa scala portafoglio").split()
+    p = "-".join(secrets.choice(words) for _ in range(4)) + "-" + str(secrets.randbelow(900) + 100)
+    with open(PASSFILE, "w") as f:
+        f.write(p)
+    os.chmod(PASSFILE, 0o600)
+    print(f"\n*** PASSPHRASE GENERATA (serve a te e ad Alessandro): {p}")
+    print(f"*** salvata in {PASSFILE}\n")
+    return p
+
+
+def encrypt_names(clear: dict, pw: str) -> dict:
+    """AES-GCM con chiave derivata dalla passphrase (PBKDF2-SHA256, 250k giri)."""
+    import hashlib
+    salt = secrets.token_bytes(16)
+    key = hashlib.pbkdf2_hmac("sha256", pw.encode(), salt, 250_000, dklen=32)
+    nonce = secrets.token_bytes(12)
+    ct = AESGCM(key).encrypt(nonce, json.dumps(clear, ensure_ascii=False).encode(), None)
+    b64 = lambda b: base64.b64encode(b).decode()
+    return {"v": 1, "kdf": "PBKDF2-SHA256", "iter": 250_000,
+            "salt": b64(salt), "nonce": b64(nonce), "ct": b64(ct)}
 
 
 def load_config() -> dict:
@@ -123,11 +162,12 @@ def build_account(acct: dict, cfg: dict, R: Rules, tok: str, since: str, until: 
     kill_now = [c for c in campaigns if c["status"] == "kill" and c["attiva"]]
 
     alias = cfg.get("aliases", {}).get(raw_id) or slugify(acct.get("name", raw_id))
+    nome = cfg.get("client_names", {}).get(raw_id) or acct.get("name")
 
     return {
         "alias": alias,
         "account_id": raw_id,
-        "nome_reale": acct.get("name"),
+        "nome_reale": nome,
         "currency": acct.get("currency", "EUR"),
         "spend": round(spend, 2),
         "leads": leads,
@@ -148,6 +188,9 @@ def build_account(acct: dict, cfg: dict, R: Rules, tok: str, since: str, until: 
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--account", help="solo questo account (act_xxx o id nudo)")
+    ap.add_argument("--out", default="docs", help="cartella di output (default docs)")
+    ap.add_argument("--titolo", default="ADS Cockpit", help="titolo mostrato in cima")
+    ap.add_argument("--sottotitolo", default="tutti i clienti")
     ap.add_argument("--no-anon", action="store_true", help="tieni i nomi veri nel data.json")
     args = ap.parse_args()
 
@@ -168,9 +211,10 @@ def main() -> int:
     else:
         accounts = [a for a in accounts if a["id"].replace("act_", "") not in excluded]
 
-    out, errors = [], []
+    out, fermi, errors = [], [], []
     for a in accounts:
         label = a.get("name", a["id"])
+        raw = a["id"].replace("act_", "")
         try:
             res = build_account(a, cfg, R, tok, since, until, recent_since)
             if res and res["spend"] > 0:
@@ -178,7 +222,12 @@ def main() -> int:
                 print(f"  ok  {res['alias']:12s} €{res['spend']:>9.2f} "
                       f"{int(res['leads']):>4} lead  sprecato €{res['sprecato']:.2f}")
             else:
-                print(f"  --  {label}: nessuna spesa nel periodo")
+                # Cliente collegato ma senza spesa nel periodo: va mostrato lo stesso,
+                # perche' "non spende" e' a sua volta un'informazione da vedere.
+                alias = cfg.get("aliases", {}).get(raw) or slugify(label)
+                fermi.append({"alias": alias, "account_id": raw,
+                              "nome_reale": cfg.get("client_names", {}).get(raw) or label})
+                print(f"  --  {alias:12s} nessuna spesa nel periodo")
         except Exception as e:
             errors.append({"account": label, "errore": str(e)[:200]})
             print(f"  ERR {label}: {e}", file=sys.stderr)
@@ -191,6 +240,8 @@ def main() -> int:
     giorni = max(1, (today - dt.date.fromisoformat(since)).days)
 
     payload = {
+        "titolo": args.titolo,
+        "sottotitolo": args.sottotitolo,
         "generato": dt.datetime.now(ROME).isoformat(timespec="seconds"),
         "periodo": {"da": since, "a": until, "giorni": giorni,
                     "finestra_recente_giorni": cfg["period"]["recent_days"]},
@@ -208,10 +259,21 @@ def main() -> int:
             "campagne": sum(a["n_campagne"] for a in out),
         },
         "clienti": out,
+        "fermi": fermi,
         "errori": errors,
     }
 
     anon = cfg.get("anonymize", True) and not args.no_anon
+
+    # I nomi VERI, messi da parte prima di anonimizzare: finiscono cifrati
+    # in names.enc e in chiaro solo in clients_private.json (mai committato).
+    clear_names = {
+        "clienti": {a["alias"]: a["nome_reale"] for a in out + fermi},
+        "campagne": {c["id"]: c["name"] for a in out for c in a["campagne"]},
+    }
+    with open(os.path.join(HERE, "clients_private.json"), "w") as f:
+        json.dump({a["alias"]: {"nome": a["nome_reale"], "account_id": a["account_id"]}
+                   for a in out + fermi}, f, indent=2, ensure_ascii=False)
 
     # Nomi di persona dentro i nomi campagna: oscurati prima di pubblicare.
     scrub = {t.lower() for t in cfg.get("scrub_terms", [])}
@@ -228,21 +290,28 @@ def main() -> int:
             for c in a["campagne"]:
                 c["name"] = re.sub(r"\s{2,}", " ", pat.sub("…", c["name"])).strip()
 
-    priv = {a["alias"]: {"nome": a["nome_reale"], "account_id": a["account_id"]} for a in out}
-    with open(os.path.join(HERE, "clients_private.json"), "w") as f:
-        json.dump(priv, f, indent=2, ensure_ascii=False)
-
     if anon:
-        for a in payload["clienti"]:
+        for a in payload["clienti"] + payload["fermi"]:
             a.pop("nome_reale", None)
             a.pop("account_id", None)
         for e in payload["errori"]:
             e["account"] = "(account)"
 
-    docs = os.path.join(HERE, "docs")
+    docs = args.out if os.path.isabs(args.out) else os.path.join(HERE, args.out)
     os.makedirs(docs, exist_ok=True)
+    payload["nomi_sbloccabili"] = anon
     with open(os.path.join(docs, "data.json"), "w") as f:
         json.dump(payload, f, indent=1, ensure_ascii=False)
+
+    if anon:
+        with open(os.path.join(docs, "names.enc"), "w") as f:
+            json.dump(encrypt_names(clear_names, passphrase()), f)
+
+    # la dashboard e' un file solo: le sottocartelle riusano lo stesso index
+    idx = os.path.join(HERE, "docs", "index.html")
+    if os.path.abspath(docs) != os.path.dirname(idx) and os.path.exists(idx):
+        import shutil
+        shutil.copy2(idx, os.path.join(docs, "index.html"))
 
     t = payload["totali"]
     print(f"\nSPESA €{t['spesa']:.2f} | LEAD {int(t['lead'])} | "
