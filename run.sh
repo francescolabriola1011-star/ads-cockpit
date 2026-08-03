@@ -20,6 +20,11 @@ python3 build.py --tutti --no-anon --out privato \
   --titolo "Controllo regole" --sottotitolo "tutti i clienti" >/dev/null
 python3 alert.py
 
+# Stacco automatico sulle campagne di casa (solo AI Elite), prima di
+# rigenerare i dati, così la dashboard mostra già lo stato aggiornato.
+python3 autopause.py --esegui || echo "autopause: vedi sopra"
+echo
+
 if [[ -n "$(git status --porcelain docs/)" ]]; then
   git add docs/
   git commit -q -m "dati $(date '+%Y-%m-%d %H:%M')"
