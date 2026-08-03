@@ -1,7 +1,7 @@
 {
  "titolo": "AI Elite Advisory",
  "sottotitolo": "casa nostra",
- "generato": "2026-08-03T18:58:19+02:00",
+ "generato": "2026-08-03T18:59:36+02:00",
  "periodo": {
   "da": "2026-01-01",
   "a": "2026-08-03",
@@ -2654,8 +2654,8 @@
      "clicks": 5.0,
      "ctr": 0.967118,
      "cpm": 8.181818,
-     "reach": 381.0,
-     "frequency": 1.356955,
+     "reach": 386.0,
+     "frequency": 1.339378,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 6.0,
