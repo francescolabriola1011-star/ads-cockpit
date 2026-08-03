@@ -1,7 +1,7 @@
 {
  "titolo": "AI Elite Advisory",
  "sottotitolo": "casa nostra",
- "generato": "2026-08-03T18:47:21+02:00",
+ "generato": "2026-08-03T18:57:10+02:00",
  "periodo": {
   "da": "2026-01-01",
   "a": "2026-08-03",
@@ -18,12 +18,12 @@
   "min_impressions": 300
  },
  "totali": {
-  "spesa": 3061.16,
+  "spesa": 3061.46,
   "lead": 197.0,
   "cpl": 15.54,
-  "sprecato": 246.89,
+  "sprecato": 246.95,
   "quota_sprecata": 8.1,
-  "sprecato_al_mese": 34.61,
+  "sprecato_al_mese": 34.62,
   "brucia_oggi": 12.0,
   "da_staccare_ora": 2,
   "clienti": 1,
@@ -33,19 +33,19 @@
   {
    "alias": "AEA-HOUSE",
    "currency": "EUR",
-   "spend": 3061.16,
+   "spend": 3061.46,
    "leads": 197.0,
    "cpl": 15.54,
-   "sprecato": 246.89,
+   "sprecato": 246.95,
    "quota_sprecata": 8.1,
-   "impressions": 276991.0,
+   "impressions": 277014.0,
    "clicks": 4391.0,
    "n_campagne": 116,
    "n_kill": 36,
    "n_kill_ancora_accese": 2,
    "brucia_oggi": 12.0,
    "riallocazione": {
-    "budget_da_spostare": 1407.89,
+    "budget_da_spostare": 1407.95,
     "cpl_vincente": 2.37,
     "lead_prudente": 93,
     "lead_ottimistico": 593
@@ -736,26 +736,26 @@
     {
      "id": "120249165028790629",
      "name": "Moduli -immagine - Copia 7",
-     "spend": 17.3,
+     "spend": 17.31,
      "leads": 1.0,
-     "cpl": 17.3,
-     "impressions": 1577.0,
+     "cpl": 17.31,
+     "impressions": 1578.0,
      "clicks": 20.0,
-     "ctr": 1.268231,
-     "cpm": 10.970197,
-     "reach": 969.0,
-     "frequency": 1.627451,
+     "ctr": 1.267427,
+     "cpm": 10.969582,
+     "reach": 972.0,
+     "frequency": 1.623457,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 6.0,
      "status": "kill",
-     "reason": "CPL €17.30: sopra il limite di €15",
-     "sprecato": 2.3,
+     "reason": "CPL €17.31: sopra il limite di €15",
+     "sprecato": 2.31,
      "flags": [],
      "recent": {
-      "spend": 17.3,
+      "spend": 17.31,
       "leads": 1.0,
-      "cpl": 17.3
+      "cpl": 17.31
      },
      "trend": 0.0
     },
@@ -828,26 +828,26 @@
     {
      "id": "120249165044430629",
      "name": "Moduli -immagine - Copia 8",
-     "spend": 15.96,
+     "spend": 16.01,
      "leads": 1.0,
-     "cpl": 15.96,
-     "impressions": 1521.0,
+     "cpl": 16.01,
+     "impressions": 1522.0,
      "clicks": 20.0,
-     "ctr": 1.314924,
-     "cpm": 10.493097,
+     "ctr": 1.31406,
+     "cpm": 10.519054,
      "reach": 906.0,
-     "frequency": 1.678808,
+     "frequency": 1.679912,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 6.0,
      "status": "kill",
-     "reason": "CPL €15.96: sopra il limite di €15",
-     "sprecato": 0.96,
+     "reason": "CPL €16.01: sopra il limite di €15",
+     "sprecato": 1.01,
      "flags": [],
      "recent": {
-      "spend": 15.96,
+      "spend": 16.01,
       "leads": 1.0,
-      "cpl": 15.96
+      "cpl": 16.01
      },
      "trend": 0.0
     },
@@ -977,28 +977,28 @@
     {
      "id": "120249076162600629",
      "name": "Moduli -immagine - Copia 6",
-     "spend": 40.32,
+     "spend": 40.43,
      "leads": 3.0,
-     "cpl": 13.44,
-     "impressions": 3416.0,
+     "cpl": 13.48,
+     "impressions": 3420.0,
      "clicks": 34.0,
-     "ctr": 0.995316,
-     "cpm": 11.803279,
+     "ctr": 0.994152,
+     "cpm": 11.821637,
      "reach": 1718.0,
-     "frequency": 1.988359,
+     "frequency": 1.990687,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 6.0,
      "status": "ok",
-     "reason": "CPL €13.44: dentro i parametri",
+     "reason": "CPL €13.48: dentro i parametri",
      "sprecato": 0.0,
      "flags": [
-      "CTR 1.00%: il creativo non ferma nessuno"
+      "CTR 0.99%: il creativo non ferma nessuno"
      ],
      "recent": {
-      "spend": 40.32,
+      "spend": 40.43,
       "leads": 3.0,
-      "cpl": 13.44
+      "cpl": 13.48
      },
      "trend": 0.0
     },
@@ -1507,24 +1507,24 @@
     {
      "id": "120249165124290629",
      "name": "Moduli -video cfa - c - Copia 10",
-     "spend": 15.38,
+     "spend": 15.42,
      "leads": 0.0,
      "cpl": null,
-     "impressions": 1216.0,
+     "impressions": 1222.0,
      "clicks": 15.0,
-     "ctr": 1.233553,
-     "cpm": 12.648026,
-     "reach": 843.0,
-     "frequency": 1.442467,
-     "attiva": true,
-     "effective_status": "ACTIVE",
+     "ctr": 1.227496,
+     "cpm": 12.618658,
+     "reach": 844.0,
+     "frequency": 1.447867,
+     "attiva": false,
+     "effective_status": "PAUSED",
      "daily_budget": 6.0,
      "status": "watch",
-     "reason": "€15.38 spesi e 0 lead: mancano €6.62 allo stacco",
+     "reason": "€15.42 spesi e 0 lead: mancano €6.58 allo stacco",
      "sprecato": 0.0,
      "flags": [],
      "recent": {
-      "spend": 15.38,
+      "spend": 15.42,
       "leads": 0.0,
       "cpl": null
      },
@@ -1691,6 +1691,32 @@
      "trend": null
     },
     {
+     "id": "120249165080140629",
+     "name": "Moduli -video cfa - c - Copia 9",
+     "spend": 15.07,
+     "leads": 0.0,
+     "cpl": null,
+     "impressions": 994.0,
+     "clicks": 12.0,
+     "ctr": 1.207243,
+     "cpm": 15.160966,
+     "reach": 773.0,
+     "frequency": 1.285899,
+     "attiva": false,
+     "effective_status": "PAUSED",
+     "daily_budget": 6.0,
+     "status": "watch",
+     "reason": "€15.07 spesi e 0 lead: mancano €6.93 allo stacco",
+     "sprecato": 0.0,
+     "flags": [],
+     "recent": {
+      "spend": 15.07,
+      "leads": 0.0,
+      "cpl": null
+     },
+     "trend": null
+    },
+    {
      "id": "120248777536040629",
      "name": "Moduli -immagine - concorrenza ind",
      "spend": 15.06,
@@ -1712,32 +1738,6 @@
       "CTR 0.46%: il creativo non ferma nessuno"
      ],
      "recent": null,
-     "trend": null
-    },
-    {
-     "id": "120249165080140629",
-     "name": "Moduli -video cfa - c - Copia 9",
-     "spend": 15.0,
-     "leads": 0.0,
-     "cpl": null,
-     "impressions": 990.0,
-     "clicks": 12.0,
-     "ctr": 1.212121,
-     "cpm": 15.151515,
-     "reach": 769.0,
-     "frequency": 1.287386,
-     "attiva": true,
-     "effective_status": "ACTIVE",
-     "daily_budget": 6.0,
-     "status": "watch",
-     "reason": "€15.00 spesi e 0 lead: mancano €7.00 allo stacco",
-     "sprecato": 0.0,
-     "flags": [],
-     "recent": {
-      "spend": 15.0,
-      "leads": 0.0,
-      "cpl": null
-     },
      "trend": null
     },
     {
@@ -2647,26 +2647,26 @@
     {
      "id": "120249196105520629",
      "name": "Moduli -immagine - Copia 9",
-     "spend": 4.2,
+     "spend": 4.22,
      "leads": 0.0,
      "cpl": null,
-     "impressions": 507.0,
+     "impressions": 514.0,
      "clicks": 5.0,
-     "ctr": 0.986193,
-     "cpm": 8.284024,
-     "reach": 377.0,
-     "frequency": 1.344828,
+     "ctr": 0.972763,
+     "cpm": 8.210117,
+     "reach": 381.0,
+     "frequency": 1.349081,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 6.0,
      "status": "early",
-     "reason": "€4.20 spesi, ancora 0 lead ma sotto soglia",
+     "reason": "€4.22 spesi, ancora 0 lead ma sotto soglia",
      "sprecato": 0.0,
      "flags": [
-      "CTR 0.99%: il creativo non ferma nessuno"
+      "CTR 0.97%: il creativo non ferma nessuno"
      ],
      "recent": {
-      "spend": 4.2,
+      "spend": 4.22,
       "leads": 0.0,
       "cpl": null
      },
@@ -2764,9 +2764,7 @@
   }
  ],
  "fermi": [],
- "nuovi": [
-  "AEA-HOUSE"
- ],
+ "nuovi": [],
  "errori": [],
  "nomi_sbloccabili": true
 }
