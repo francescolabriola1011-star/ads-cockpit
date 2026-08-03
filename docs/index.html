@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>ADS Cockpit</title>
+<style>
+:root{
+  --surface:#1a1a19; --plane:#0d0d0d; --card:#212120; --line:#33322f;
+  --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781;
+  --good:#0ca30c; --warn:#fab219; --serious:#ec835a; --crit:#d03b3b;
+  --accent:#d4af37;
+}
+@media (prefers-color-scheme: light){
+  :root{ --surface:#fcfcfb; --plane:#f9f9f7; --card:#ffffff; --line:#e4e3df;
+         --ink:#0b0b0b; --ink2:#52514e; --muted:#898781; --accent:#8a6d0b; }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--plane);color:var(--ink);
+  font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:28px 20px 80px}
+a{color:var(--accent)}
+h1{font-size:26px;margin:0 0 4px;letter-spacing:-.02em}
+h2{font-size:15px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);
+   margin:38px 0 12px;font-weight:600}
+.sub{color:var(--muted);font-size:13px;margin:0}
+.mono{font-variant-numeric:tabular-nums}
+
+/* regole */
+.rules{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0}
+.rule{background:var(--card);border:1px solid var(--line);border-radius:999px;
+  padding:5px 12px;font-size:12.5px;color:var(--ink2)}
+.rule b{color:var(--ink)}
+
+/* stat tiles */
+.tiles{display:grid;gap:12px;margin-top:14px;
+  grid-template-columns:repeat(auto-fit,minmax(168px,1fr))}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.tile .lab{font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.tile .val{font-size:27px;font-weight:650;margin-top:5px;letter-spacing:-.02em}
+.tile .note{font-size:12px;color:var(--muted);margin-top:3px}
+.tile.hero{border-color:var(--crit)}
+.tile.hero .val{color:var(--crit)}
+.tile.act{border-color:var(--warn)}
+.tile.act .val{color:var(--warn)}
+
+/* azioni */
+.act-row{display:grid;grid-template-columns:88px 1fr auto;gap:14px;align-items:center;
+  background:var(--card);border:1px solid var(--line);border-left:3px solid var(--crit);
+  border-radius:10px;padding:12px 16px;margin-bottom:8px}
+.act-row .who{font-weight:650;font-size:13px;color:var(--accent)}
+.act-row .what{font-size:14px}
+.act-row .why{font-size:12.5px;color:var(--muted);margin-top:2px}
+.act-row .burn{text-align:right;font-size:13px;color:var(--crit);font-weight:600;white-space:nowrap}
+
+/* chip stato */
+.chip{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:650;
+  padding:3px 8px;border-radius:6px;white-space:nowrap;border:1px solid}
+.chip .dot{width:7px;height:7px;border-radius:50%}
+.c-kill{color:var(--crit);border-color:var(--crit)} .c-kill .dot{background:var(--crit)}
+.c-watch{color:var(--warn);border-color:var(--warn)} .c-watch .dot{background:var(--warn)}
+.c-winner{color:var(--good);border-color:var(--good)} .c-winner .dot{background:var(--good)}
+.c-ok{color:var(--ink2);border-color:var(--line)} .c-ok .dot{background:var(--ink2)}
+.c-early{color:var(--muted);border-color:var(--line)} .c-early .dot{background:var(--muted)}
+
+/* clienti */
+.client{background:var(--card);border:1px solid var(--line);border-radius:12px;
+  margin-bottom:10px;overflow:hidden}
+.chead{display:grid;grid-template-columns:110px repeat(4,minmax(70px,1fr)) 150px 24px;
+  gap:12px;align-items:center;padding:14px 16px;cursor:pointer;user-select:none}
+.chead:hover{background:rgba(212,175,55,.05)}
+.chead .alias{font-weight:700;color:var(--accent);letter-spacing:.02em}
+.k{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.v{font-size:16px;font-weight:600;margin-top:2px}
+.bar{height:7px;border-radius:4px;background:rgba(137,135,129,.22);overflow:hidden;margin-top:7px}
+.bar > i{display:block;height:100%;border-radius:4px;background:var(--crit)}
+.caret{color:var(--muted);transition:transform .15s}
+.client.open .caret{transform:rotate(90deg)}
+.cbody{display:none;border-top:1px solid var(--line);padding:4px 0 8px}
+.client.open .cbody{display:block}
+
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);
+   text-align:right;padding:10px 12px;font-weight:600;border-bottom:1px solid var(--line)}
+th:first-child,td:first-child{text-align:left}
+td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:right;vertical-align:top}
+tr:last-child td{border-bottom:none}
+.cname{max-width:340px}
+.cname .n{font-weight:550}
+.cname .r{font-size:12px;color:var(--muted);margin-top:2px}
+.flag{font-size:12px;color:var(--serious);margin-top:3px}
+.off{opacity:.5}
+.tag-off{font-size:10.5px;color:var(--muted);border:1px solid var(--line);
+  border-radius:4px;padding:1px 5px;margin-left:6px}
+.up{color:var(--crit)} .down{color:var(--good)}
+
+/* filtri */
+.filters{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:14px 0 0}
+select,button.tgl{background:var(--card);color:var(--ink);border:1px solid var(--line);
+  border-radius:8px;padding:7px 11px;font:inherit;font-size:13px;cursor:pointer}
+button.tgl[aria-pressed="true"]{border-color:var(--accent);color:var(--accent)}
+.empty{color:var(--muted);padding:18px;text-align:center;font-size:13.5px}
+footer{margin-top:44px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:14px}
+@media(max-width:820px){
+  .chead{grid-template-columns:1fr 1fr;gap:10px}
+  .chead .spark{grid-column:1/-1}
+  .act-row{grid-template-columns:1fr;gap:6px}
+  .act-row .burn{text-align:left}
+  table{font-size:12.5px} td,th{padding:8px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>ADS Cockpit</h1>
+  <p class="sub" id="meta">caricamento…</p>
+  <div class="rules" id="rules"></div>
+
+  <h2>Il quadro</h2>
+  <div class="tiles" id="tiles"></div>
+
+  <h2>Azioni di oggi <span id="nact" style="color:var(--crit)"></span></h2>
+  <div id="azioni"></div>
+
+  <h2>Dove riallocare</h2>
+  <div id="realloc"></div>
+
+  <h2>Clienti</h2>
+  <div class="filters">
+    <select id="fStato">
+      <option value="">Tutti gli stati</option>
+      <option value="kill">Solo da staccare</option>
+      <option value="watch">Solo sorvegliate</option>
+      <option value="winner">Solo vincenti</option>
+    </select>
+    <button class="tgl" id="fAttive" aria-pressed="false">Solo campagne ancora accese</button>
+    <button class="tgl" id="fExp" aria-pressed="false">Apri tutti i clienti</button>
+  </div>
+  <div id="clienti"></div>
+
+  <footer id="foot"></footer>
+</div>
+
+<script>
+const eur = n => "€" + (n ?? 0).toLocaleString("it-IT",{minimumFractionDigits:2,maximumFractionDigits:2});
+const eur0 = n => "€" + Math.round(n ?? 0).toLocaleString("it-IT");
+const int = n => Math.round(n ?? 0).toLocaleString("it-IT");
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+const LABEL = {kill:"STACCA", watch:"SORVEGLIA", winner:"VINCENTE", ok:"OK", early:"PRESTO"};
+const chip = s => `<span class="chip c-${s}"><span class="dot"></span>${LABEL[s]||s}</span>`;
+
+let DATA = null, state = {stato:"", soloAttive:false, expand:false};
+
+fetch("data.json?" + Date.now())
+  .then(r => r.json())
+  .then(d => { DATA = d; render(); })
+  .catch(e => document.getElementById("meta").textContent = "Impossibile leggere data.json: " + e);
+
+function render(){
+  const d = DATA, t = d.totali, R = d.regole;
+  const gen = new Date(d.generato);
+  document.getElementById("meta").innerHTML =
+    `Periodo <b>${d.periodo.da}</b> → <b>${d.periodo.a}</b> (${d.periodo.giorni} giorni) ·
+     ${t.clienti} clienti · ${int(t.campagne)} campagne ·
+     dati aggiornati ${gen.toLocaleString("it-IT",{dateStyle:"short",timeStyle:"short"})}`;
+
+  document.getElementById("rules").innerHTML = [
+    `CPL sopra <b>${eur0(R.cpl_kill_eur)}</b> → si stacca`,
+    `0 o 1 lead sopra <b>${eur0(R.spend_kill_eur)}</b> di spesa → si stacca`,
+    `0 lead da <b>${eur0(R.spend_warn_eur)}</b> → sorvegliata`,
+    `CPL sotto <b>${eur0(R.cpl_winner_eur)}</b> → vincente, ci si mette budget`
+  ].map(r => `<span class="rule">${r}</span>`).join("");
+
+  const tile = (lab,val,note,cls="") =>
+    `<div class="tile ${cls}"><div class="lab">${lab}</div>
+     <div class="val mono">${val}</div><div class="note">${note||""}</div></div>`;
+
+  document.getElementById("tiles").innerHTML = [
+    tile("Budget sprecato", eur0(t.sprecato),
+         `${t.quota_sprecata}% di tutto lo speso · ${eur0(t.sprecato_al_mese)} al mese a questo ritmo`, "hero"),
+    tile("Da staccare ora", int(t.da_staccare_ora),
+         t.brucia_oggi > 0 ? `bruciano ${eur(t.brucia_oggi)} al giorno` : "campagne ancora accese fuori regola", "act"),
+    tile("Spesa totale", eur0(t.spesa), `${d.periodo.giorni} giorni`),
+    tile("Lead", int(t.lead), "moduli e conversioni Meta"),
+    tile("CPL medio", t.cpl ? eur(t.cpl) : "n/d",
+         t.cpl ? (t.cpl > R.cpl_kill_eur ? `sopra il limite di ${eur0(R.cpl_kill_eur)}` : `sotto il limite di ${eur0(R.cpl_kill_eur)}`) : ""),
+    tile("Lead mancati", int(d.clienti.reduce((s,c)=>s+(c.riallocazione.lead_prudente||0),0)),
+         `stima prudente: lo stesso budget speso al CPL limite di ${eur0(R.cpl_kill_eur)}`)
+  ].join("");
+
+  // azioni: campagne kill ANCORA accese, ordinate per spreco
+  const azioni = [];
+  d.clienti.forEach(c => c.campagne.forEach(k => {
+    if (k.status === "kill" && k.attiva) azioni.push({cli:c.alias, ...k});
+  }));
+  azioni.sort((a,b) => (b.daily_budget||0) - (a.daily_budget||0) || b.sprecato - a.sprecato);
+  document.getElementById("nact").textContent = azioni.length ? `(${azioni.length})` : "";
+  document.getElementById("azioni").innerHTML = azioni.length ? azioni.map(a => `
+    <div class="act-row">
+      <div class="who">${esc(a.cli)}</div>
+      <div><div class="what">${esc(a.name)}</div>
+        <div class="why">${esc(a.reason)}${a.flags.length ? " · " + esc(a.flags[0]) : ""}</div></div>
+      <div class="burn">${a.daily_budget ? eur(a.daily_budget)+"/giorno" : "attiva"}<br>
+        <span style="color:var(--muted);font-weight:400">già sprecati ${eur(a.sprecato)}</span></div>
+    </div>`).join("")
+    : `<div class="empty">Nessuna campagna fuori regola ancora accesa. Tutto pulito.</div>`;
+
+  // riallocazione
+  const rr = d.clienti.filter(c => c.riallocazione.budget_da_spostare > 0);
+  document.getElementById("realloc").innerHTML = rr.length ? `
+    <table><thead><tr><th>Cliente</th><th>Budget finito sui perdenti</th>
+      <th>Lead mancati (prudente)</th><th>CPL delle vincenti</th>
+      <th>Se reggesse lo scale</th></tr></thead><tbody>
+      ${rr.sort((a,b)=>b.riallocazione.budget_da_spostare-a.riallocazione.budget_da_spostare).map(c=>`
+        <tr><td><b style="color:var(--accent)">${esc(c.alias)}</b></td>
+          <td class="mono">${eur(c.riallocazione.budget_da_spostare)}</td>
+          <td class="mono" style="color:var(--good)">${c.riallocazione.lead_prudente ? "+"+int(c.riallocazione.lead_prudente) : "—"}</td>
+          <td class="mono">${c.riallocazione.cpl_vincente ? eur(c.riallocazione.cpl_vincente)
+              : '<span style="color:var(--muted)">nessuna vincente</span>'}</td>
+          <td class="mono" style="color:var(--muted)">${c.riallocazione.lead_ottimistico ? "+"+int(c.riallocazione.lead_ottimistico) : "—"}</td>
+        </tr>`).join("")}
+    </tbody></table>
+    <p class="sub" style="margin-top:10px">Il numero su cui contare è quello prudente.
+      La colonna a destra vale solo se le campagne vincenti tengono lo stesso CPL a budget più alto,
+      cosa che quasi mai succede.</p>`
+    : `<div class="empty">Niente budget parcheggiato su campagne fuori regola.</div>`;
+
+  renderClienti();
+}
+
+function renderClienti(){
+  const d = DATA, maxSpr = Math.max(...d.clienti.map(c => c.sprecato), 1);
+  const host = document.getElementById("clienti");
+
+  host.innerHTML = d.clienti.map((c, i) => {
+    const camp = c.campagne.filter(k =>
+      (!state.stato || k.status === state.stato) && (!state.soloAttive || k.attiva));
+    const open = state.expand || c.n_kill_ancora_accese > 0;
+    return `
+    <div class="client ${open ? "open" : ""}" data-i="${i}">
+      <div class="chead" role="button" tabindex="0">
+        <div class="alias">${esc(c.alias)}</div>
+        <div><div class="k">Spesa</div><div class="v mono">${eur0(c.spend)}</div></div>
+        <div><div class="k">Lead</div><div class="v mono">${int(c.leads)}</div></div>
+        <div><div class="k">CPL</div><div class="v mono" style="color:${
+          c.cpl == null ? "var(--muted)" : c.cpl > d.regole.cpl_kill_eur ? "var(--crit)"
+          : c.cpl <= d.regole.cpl_winner_eur ? "var(--good)" : "inherit"}">${
+          c.cpl ? eur(c.cpl) : "n/d"}</div></div>
+        <div><div class="k">Sprecato</div><div class="v mono" style="color:var(--crit)">${eur0(c.sprecato)}</div></div>
+        <div class="spark"><div class="k">${c.quota_sprecata}% sprecato · ${c.n_kill} fuori regola${
+          c.n_kill_ancora_accese ? `, <b style="color:var(--crit)">${c.n_kill_ancora_accese} accese</b>` : ""}</div>
+          <div class="bar"><i style="width:${Math.max(2, c.sprecato / maxSpr * 100)}%"></i></div></div>
+        <div class="caret">›</div>
+      </div>
+      <div class="cbody">${camp.length ? `
+        <table><thead><tr>
+          <th>Campagna</th><th>Stato</th><th>Spesa</th><th>Lead</th><th>CPL</th>
+          <th>CPL 7g</th><th>CTR</th><th>Sprecato</th></tr></thead><tbody>
+          ${camp.map(k => `<tr class="${k.attiva ? "" : "off"}">
+            <td class="cname"><div class="n">${esc(k.name)}${
+              k.attiva ? "" : `<span class="tag-off">${esc(k.effective_status)}</span>`}</div>
+              <div class="r">${esc(k.reason)}</div>
+              ${k.flags.map(f => `<div class="flag">${esc(f)}</div>`).join("")}</td>
+            <td>${chip(k.status)}</td>
+            <td class="mono">${eur(k.spend)}</td>
+            <td class="mono">${int(k.leads)}</td>
+            <td class="mono">${k.cpl ? eur(k.cpl) : "—"}</td>
+            <td class="mono">${k.recent && k.recent.cpl ? eur(k.recent.cpl) + (
+                k.trend ? ` <span class="${k.trend > 0 ? "up" : "down"}">${k.trend > 0 ? "▲" : "▼"}</span>` : "")
+              : '<span style="color:var(--muted)">—</span>'}</td>
+            <td class="mono">${k.ctr ? k.ctr.toFixed(2) + "%" : "—"}</td>
+            <td class="mono" style="color:${k.sprecato > 0 ? "var(--crit)" : "var(--muted)"}">${
+              k.sprecato > 0 ? eur(k.sprecato) : "—"}</td>
+          </tr>`).join("")}
+        </tbody></table>`
+        : `<div class="empty">Nessuna campagna con questo filtro.</div>`}
+      </div>
+    </div>`;
+  }).join("");
+
+  host.querySelectorAll(".chead").forEach(h => {
+    const toggle = () => h.parentElement.classList.toggle("open");
+    h.addEventListener("click", toggle);
+    h.addEventListener("keydown", e => {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggle(); }
+    });
+  });
+
+  document.getElementById("foot").innerHTML =
+    `Fonte: Meta Marketing API, letta direttamente dagli ad account. Nomi cliente in sigla.
+     Budget sprecato = euro usciti oltre il punto in cui la regola diceva di staccare.
+     ${DATA.errori.length ? `<br><span style="color:var(--serious)">${DATA.errori.length} account non letti in questo giro.</span>` : ""}`;
+}
+
+document.getElementById("fStato").addEventListener("change", e => {
+  state.stato = e.target.value; renderClienti();
+});
+document.getElementById("fAttive").addEventListener("click", e => {
+  state.soloAttive = !state.soloAttive;
+  e.target.setAttribute("aria-pressed", state.soloAttive); renderClienti();
+});
+document.getElementById("fExp").addEventListener("click", e => {
+  state.expand = !state.expand;
+  e.target.setAttribute("aria-pressed", state.expand); renderClienti();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+# MAI committare: mappa sigla -> nome vero del cliente.
+clients_private.json
+config.yaml
+# Il token Meta non sta qui (vive in ~/.config/meta-ads/config.json), ma per sicurezza:
+.env
+*.token
+__pycache__/
+*.pyc
+logs/

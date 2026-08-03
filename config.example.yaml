@@ -1,0 +1,60 @@
+# ============================================================
+# ADS COCKPIT — configurazione unica
+# Le regole di casa: si toccano SOLO qui, il codice non si tocca.
+# ============================================================
+
+# ------------------------------------------------------------
+# REGOLE DI RUN (le regole di Francesco)
+# ------------------------------------------------------------
+rules:
+  # CPL oltre il quale la campagna va STACCATA
+  cpl_kill_eur: 15
+  # Spesa oltre la quale una campagna che ha prodotto 0 o 1 lead va STACCATA
+  spend_kill_eur: 22
+  # Zona gialla: 0 lead ma spesa gia' oltre questa soglia -> sorvegliata speciale
+  spend_warn_eur: 15
+  # CPL sotto il quale la campagna e' un VINCITORE (su cui riallocare budget)
+  cpl_winner_eur: 8
+  # Sotto questo CTR il creativo non tiene (segnalazione qualita')
+  ctr_floor_pct: 1.0
+  # Sopra questa frequenza il pubblico e' bruciato
+  frequency_ceiling: 2.5
+  # Minimo di impression prima di dare un giudizio (evita verdetti su nulla)
+  min_impressions: 300
+
+# ------------------------------------------------------------
+# PERIODO
+# ------------------------------------------------------------
+period:
+  since: "2026-01-01"      # inizio periodo cumulativo (vuoto = 1 gennaio anno corrente)
+  recent_days: 7           # finestra "ultimi giorni" per il trend
+
+# ------------------------------------------------------------
+# ACCOUNT
+# ------------------------------------------------------------
+# auto_discover: prende tutti gli ad account raggiungibili dal token.
+auto_discover: true
+
+# Account da NON mostrare mai (personali, test, account morti).
+excluded_account_ids:
+  - "000000000000001"     # es. account personale
+  - "000000000000002"     # es. ad account dismesso
+
+# ------------------------------------------------------------
+# PRIVACY — la dashboard e' su GitHub Pages PUBBLICO.
+# I nomi veri dei clienti NON escono mai: nel data.json pubblicato
+# finisce solo la sigla. La mappa sigla->nome vero sta in
+# clients_private.json, che NON viene committato.
+# ------------------------------------------------------------
+anonymize: true
+
+# Parole da OSCURARE dentro i NOMI DELLE CAMPAGNE prima di pubblicarle
+# (i nomi campagna a volte contengono il nome della persona).
+# I nomi presi dagli account vengono aggiunti in automatico.
+scrub_terms:
+  - nomedipersona
+
+# Sigle fisse (se un account non e' qui, la sigla e' generata dalle iniziali).
+aliases:
+  "000000000000003": "CF-XX"
+  "000000000000004": "ORO-YY"
