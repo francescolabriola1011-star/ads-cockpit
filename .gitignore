@@ -7,3 +7,7 @@ config.yaml
 __pycache__/
 *.pyc
 logs/
+# Controllo interno: dati di TUTTI i clienti coi nomi veri + digest quotidiano.
+privato/
+digest.md
+docs-interno/

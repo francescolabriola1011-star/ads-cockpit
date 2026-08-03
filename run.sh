@@ -13,6 +13,13 @@ echo
 python3 build.py --account act_859478370532394 \
   --out docs/aea --titolo "AI Elite Advisory" --sottotitolo "casa nostra"
 
+# Controllo interno su TUTTI i clienti (anche quelli fuori dalla dashboard
+# pubblica) + notifica a Francesco se c'e' qualcosa da decidere oggi.
+echo
+python3 build.py --tutti --no-anon --out privato \
+  --titolo "Controllo regole" --sottotitolo "tutti i clienti" >/dev/null
+python3 alert.py
+
 if [[ -n "$(git status --porcelain docs/)" ]]; then
   git add docs/
   git commit -q -m "dati $(date '+%Y-%m-%d %H:%M')"

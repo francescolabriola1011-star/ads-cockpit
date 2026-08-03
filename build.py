@@ -39,6 +39,21 @@ ROME = dt.timezone(dt.timedelta(hours=2))
 
 
 PASSFILE = os.path.expanduser("~/.config/ads-cockpit/passphrase")
+STATEFILE = os.path.join(HERE, "state", "known_accounts.json")
+
+
+def known_accounts() -> set:
+    """Account gia' visti nei giri precedenti."""
+    try:
+        return set(json.load(open(STATEFILE)))
+    except Exception:
+        return set()
+
+
+def remember_accounts(ids: set) -> None:
+    os.makedirs(os.path.dirname(STATEFILE), exist_ok=True)
+    with open(STATEFILE, "w") as f:
+        json.dump(sorted(ids), f, indent=1)
 
 
 def passphrase() -> str:
@@ -192,6 +207,9 @@ def main() -> int:
     ap.add_argument("--titolo", default="ADS Cockpit", help="titolo mostrato in cima")
     ap.add_argument("--sottotitolo", default="tutti i clienti")
     ap.add_argument("--no-anon", action="store_true", help="tieni i nomi veri nel data.json")
+    ap.add_argument("--tutti", action="store_true",
+                    help="controllo interno: usa le esclusioni della sezione alert, "
+                         "quindi tiene dentro anche i clienti nascosti dalla dashboard pubblica")
     args = ap.parse_args()
 
     cfg = load_config()
@@ -204,12 +222,27 @@ def main() -> int:
     recent_since = (today - dt.timedelta(days=int(cfg["period"]["recent_days"]))).isoformat()
 
     accounts = meta.list_accounts(tok)
-    excluded = set(str(x) for x in cfg.get("excluded_account_ids", []))
+    if args.tutti:
+        excluded = set(str(x) for x in cfg.get("alert", {}).get("excluded_account_ids", []))
+    else:
+        excluded = set(str(x) for x in cfg.get("excluded_account_ids", []))
     if args.account:
         want = args.account.replace("act_", "")
         accounts = [a for a in accounts if a["id"].replace("act_", "") == want]
     else:
         accounts = [a for a in accounts if a["id"].replace("act_", "") not in excluded]
+
+    # Clienti NUOVI: entrano da soli appena l'ad account e' raggiungibile dal
+    # token, ma vanno segnalati, non scoperti per caso. Il primo giro in
+    # assoluto non segnala nulla (sarebbero tutti "nuovi").
+    visti = known_accounts()
+    ids_ora = {a["id"].replace("act_", "") for a in accounts}
+    # Il rilevamento "nuovo cliente" vale solo per il giro standard: con
+    # --account o --tutti il perimetro e' diverso e sarebbero falsi positivi.
+    giro_standard = not args.account and not args.tutti
+    nuovi_ids = (ids_ora - visti) if (visti and giro_standard) else set()
+    if giro_standard:
+        remember_accounts(visti | ids_ora)
 
     out, fermi, errors = [], [], []
     for a in accounts:
@@ -260,6 +293,7 @@ def main() -> int:
         },
         "clienti": out,
         "fermi": fermi,
+        "nuovi": [a["alias"] for a in out + fermi if a["account_id"] in nuovi_ids],
         "errori": errors,
     }
 
@@ -271,9 +305,17 @@ def main() -> int:
         "clienti": {a["alias"]: a["nome_reale"] for a in out + fermi},
         "campagne": {c["id"]: c["name"] for a in out for c in a["campagne"]},
     }
-    with open(os.path.join(HERE, "clients_private.json"), "w") as f:
-        json.dump({a["alias"]: {"nome": a["nome_reale"], "account_id": a["account_id"]}
-                   for a in out + fermi}, f, indent=2, ensure_ascii=False)
+    # La mappa in chiaro si AGGIORNA, non si sovrascrive: ogni build vede solo
+    # il suo perimetro e cancellerebbe gli altri clienti.
+    privfile = os.path.join(HERE, "clients_private.json")
+    try:
+        priv = json.load(open(privfile))
+    except Exception:
+        priv = {}
+    priv.update({a["alias"]: {"nome": a["nome_reale"], "account_id": a["account_id"]}
+                 for a in out + fermi})
+    with open(privfile, "w") as f:
+        json.dump(priv, f, indent=2, ensure_ascii=False, sort_keys=True)
 
     # Nomi di persona dentro i nomi campagna: oscurati prima di pubblicare.
     scrub = {t.lower() for t in cfg.get("scrub_terms", [])}
@@ -318,6 +360,8 @@ def main() -> int:
           f"CPL €{t['cpl'] or 0:.2f} | SPRECATO €{t['sprecato']:.2f} ({t['quota_sprecata']}%)")
     print(f"Da staccare ORA: {t['da_staccare_ora']} campagne "
           f"(€{t['brucia_oggi']:.2f} al giorno)")
+    if payload["nuovi"]:
+        print(f"NUOVI CLIENTI ENTRATI: {', '.join(payload['nuovi'])}")
     print(f"-> {os.path.join(docs, 'data.json')}"
           + ("  [nomi anonimizzati]" if anon else "  [NOMI VERI]"))
     return 0
