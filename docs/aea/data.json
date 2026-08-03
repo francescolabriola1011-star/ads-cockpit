@@ -1,7 +1,7 @@
 {
  "titolo": "AI Elite Advisory",
  "sottotitolo": "casa nostra",
- "generato": "2026-08-03T19:02:50+02:00",
+ "generato": "2026-08-03T19:07:07+02:00",
  "periodo": {
   "da": "2026-01-01",
   "a": "2026-08-03",
@@ -18,12 +18,12 @@
   "min_impressions": 300
  },
  "totali": {
-  "spesa": 3061.51,
+  "spesa": 3061.58,
   "lead": 197.0,
   "cpl": 15.54,
-  "sprecato": 246.98,
+  "sprecato": 247.0,
   "quota_sprecata": 8.1,
-  "sprecato_al_mese": 34.62,
+  "sprecato_al_mese": 34.63,
   "brucia_oggi": 12.0,
   "da_staccare_ora": 2,
   "clienti": 1,
@@ -32,20 +32,22 @@
  "clienti": [
   {
    "alias": "AEA-HOUSE",
+   "account_id": "859478370532394",
+   "nome_reale": "AI Elite Advisory",
    "currency": "EUR",
-   "spend": 3061.51,
+   "spend": 3061.58,
    "leads": 197.0,
    "cpl": 15.54,
-   "sprecato": 246.98,
+   "sprecato": 247.0,
    "quota_sprecata": 8.1,
-   "impressions": 277026.0,
+   "impressions": 277039.0,
    "clicks": 4391.0,
    "n_campagne": 116,
    "n_kill": 36,
    "n_kill_ancora_accese": 2,
    "brucia_oggi": 12.0,
    "riallocazione": {
-    "budget_da_spostare": 1407.98,
+    "budget_da_spostare": 1408.0,
     "cpl_vincente": 2.37,
     "lead_prudente": 93,
     "lead_ottimistico": 593
@@ -102,7 +104,7 @@
     },
     {
      "id": "120248505328100629",
-     "name": "Moduli - evento cfa Copia 2 apt - Copia",
+     "name": "Moduli - evento cfa  Copia 2 apt - Copia",
      "spend": 27.5,
      "leads": 1.0,
      "cpl": 27.5,
@@ -170,7 +172,7 @@
     },
     {
      "id": "120248505374530629",
-     "name": "Moduli - evento cfa Copia 2 apt - Copia 2",
+     "name": "Moduli - evento cfa  Copia 2 apt - Copia 2",
      "spend": 26.83,
      "leads": 1.0,
      "cpl": 26.83,
@@ -739,12 +741,12 @@
      "spend": 17.34,
      "leads": 1.0,
      "cpl": 17.34,
-     "impressions": 1580.0,
+     "impressions": 1582.0,
      "clicks": 20.0,
-     "ctr": 1.265823,
-     "cpm": 10.974684,
+     "ctr": 1.264223,
+     "cpm": 10.960809,
      "reach": 974.0,
-     "frequency": 1.622177,
+     "frequency": 1.62423,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 6.0,
@@ -828,26 +830,26 @@
     {
      "id": "120249165044430629",
      "name": "Moduli -immagine - Copia 8",
-     "spend": 16.01,
+     "spend": 16.03,
      "leads": 1.0,
-     "cpl": 16.01,
-     "impressions": 1522.0,
+     "cpl": 16.03,
+     "impressions": 1526.0,
      "clicks": 20.0,
-     "ctr": 1.31406,
-     "cpm": 10.519054,
-     "reach": 906.0,
-     "frequency": 1.679912,
+     "ctr": 1.310616,
+     "cpm": 10.504587,
+     "reach": 907.0,
+     "frequency": 1.68247,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 6.0,
      "status": "kill",
-     "reason": "CPL €16.01: sopra il limite di €15",
-     "sprecato": 1.01,
+     "reason": "CPL €16.03: sopra il limite di €15",
+     "sprecato": 1.03,
      "flags": [],
      "recent": {
-      "spend": 16.01,
+      "spend": 16.03,
       "leads": 1.0,
-      "cpl": 16.01
+      "cpl": 16.03
      },
      "trend": 0.0
     },
@@ -977,28 +979,28 @@
     {
      "id": "120249076162600629",
      "name": "Moduli -immagine - Copia 6",
-     "spend": 40.43,
+     "spend": 40.48,
      "leads": 3.0,
-     "cpl": 13.48,
-     "impressions": 3425.0,
+     "cpl": 13.49,
+     "impressions": 3430.0,
      "clicks": 34.0,
-     "ctr": 0.992701,
-     "cpm": 11.80438,
+     "ctr": 0.991254,
+     "cpm": 11.801749,
      "reach": 1718.0,
-     "frequency": 1.993597,
+     "frequency": 1.996508,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 6.0,
      "status": "ok",
-     "reason": "CPL €13.48: dentro i parametri",
+     "reason": "CPL €13.49: dentro i parametri",
      "sprecato": 0.0,
      "flags": [
       "CTR 0.99%: il creativo non ferma nessuno"
      ],
      "recent": {
-      "spend": 40.43,
+      "spend": 40.48,
       "leads": 3.0,
-      "cpl": 13.48
+      "cpl": 13.49
      },
      "trend": 0.0
     },
@@ -1118,7 +1120,7 @@
     },
     {
      "id": "120248500682100629",
-     "name": "Moduli - evento cfa Copia 2 apt",
+     "name": "Moduli - evento cfa  Copia 2 apt",
      "spend": 20.08,
      "leads": 0.0,
      "cpl": null,
@@ -1186,7 +1188,7 @@
     },
     {
      "id": "120248520456630629",
-     "name": "Moduli - evento cfa - VIDEO in estate",
+     "name": "Moduli - evento cfa - VIDEO  in estate",
      "spend": 18.43,
      "leads": 0.0,
      "cpl": null,
@@ -1412,7 +1414,7 @@
     },
     {
      "id": "120248505381180629",
-     "name": "Moduli - evento cfa Copia 2 apt - Copia 3",
+     "name": "Moduli - evento cfa  Copia 2 apt - Copia 3",
      "spend": 16.4,
      "leads": 0.0,
      "cpl": null,
@@ -1434,7 +1436,7 @@
     },
     {
      "id": "120248505343060629",
-     "name": "Moduli - evento cfa Copia 2 apt - Copia 2",
+     "name": "Moduli - evento cfa  Copia 2 apt - Copia 2",
      "spend": 16.35,
      "leads": 0.0,
      "cpl": null,
@@ -1700,8 +1702,8 @@
      "clicks": 12.0,
      "ctr": 1.204819,
      "cpm": 15.140562,
-     "reach": 773.0,
-     "frequency": 1.288486,
+     "reach": 775.0,
+     "frequency": 1.285161,
      "attiva": false,
      "effective_status": "PAUSED",
      "daily_budget": 6.0,
@@ -2304,7 +2306,7 @@
     },
     {
      "id": "120249130741210629",
-     "name": "IG Traffico - vs … Campagna - Copia 5",
+     "name": "IG Traffico - vs Barravecchia Campagna - Copia 5",
      "spend": 9.87,
      "leads": 0.0,
      "cpl": null,
@@ -2330,7 +2332,7 @@
     },
     {
      "id": "120248589735750629",
-     "name": "Moduli - evento cfa Copia 2 apt - Copia 3",
+     "name": "Moduli - evento cfa  Copia 2 apt - Copia 3",
      "spend": 9.76,
      "leads": 0.0,
      "cpl": null,
@@ -2376,7 +2378,7 @@
     },
     {
      "id": "120248892387440629",
-     "name": "IG Traffico - vs … Campagna - Copia 2",
+     "name": "IG Traffico - vs Barravecchia Campagna - Copia 2",
      "spend": 8.13,
      "leads": 0.0,
      "cpl": null,
@@ -2554,7 +2556,7 @@
     },
     {
      "id": "120248786393100629",
-     "name": "IG Traffico - vs … Campagna - Copia",
+     "name": "IG Traffico - vs Barravecchia Campagna - Copia",
      "spend": 5.47,
      "leads": 0.0,
      "cpl": null,
@@ -2598,7 +2600,7 @@
     },
     {
      "id": "120248808677260629",
-     "name": "IG Traffico - vs … Campagna - Copia 2",
+     "name": "IG Traffico - vs Barravecchia Campagna - Copia 2",
      "spend": 4.69,
      "leads": 0.0,
      "cpl": null,
@@ -2650,12 +2652,12 @@
      "spend": 4.23,
      "leads": 0.0,
      "cpl": null,
-     "impressions": 517.0,
+     "impressions": 519.0,
      "clicks": 5.0,
-     "ctr": 0.967118,
-     "cpm": 8.181818,
+     "ctr": 0.963391,
+     "cpm": 8.150289,
      "reach": 386.0,
-     "frequency": 1.339378,
+     "frequency": 1.34456,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 6.0,
@@ -2663,7 +2665,7 @@
      "reason": "€4.23 spesi, ancora 0 lead ma sotto soglia",
      "sprecato": 0.0,
      "flags": [
-      "CTR 0.97%: il creativo non ferma nessuno"
+      "CTR 0.96%: il creativo non ferma nessuno"
      ],
      "recent": {
       "spend": 4.23,
@@ -2766,5 +2768,5 @@
  "fermi": [],
  "nuovi": [],
  "errori": [],
- "nomi_sbloccabili": true
+ "nomi_sbloccabili": false
 }

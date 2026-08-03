@@ -179,7 +179,9 @@ let state = {cliente: new URLSearchParams(location.search).get("cliente") || "",
              stato:"", soloAttive:false, expand:false};
 
 /* Nome cliente e campagna: sigla finche' non si sbloccano i nomi veri. */
-const nomeCli = a => (NAMES && NAMES.clienti[a.alias]) || a.alias;
+/* Con anonymize:false il nome vero arriva gia' nel dato; altrimenti si
+   parte dalla sigla e lo si sblocca con la passphrase. */
+const nomeCli = a => (NAMES && NAMES.clienti[a.alias]) || a.nome_reale || a.alias;
 const nomeCamp = k => (NAMES && NAMES.campagne[k.id]) || k.name;
 
 /* ---------- sblocco nomi veri (AES-GCM, chiave da passphrase) ---------- */
