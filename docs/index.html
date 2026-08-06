@@ -265,7 +265,8 @@ function render(){
      aggiornato ${gen.toLocaleString("it-IT",{dateStyle:"short",timeStyle:"short"})}`;
 
   document.getElementById("rules").innerHTML = [
-    `0 o 1 lead sopra <b>${eur0(R.spend_kill_eur)}</b> di spesa → si stacca`,
+    `entro <b>${eur0(R.spend_kill_eur)}</b> di spesa servono almeno <b>2 lead</b> (CPL sotto ${eur0(R.spend_kill_eur/2)}) → altrimenti si stacca`,
+    `con 1 lead sotto <b>${eur0(R.spend_kill_eur)}</b> si lascia girare, il CPL non si guarda`,
     `da 2 lead in su, CPL sopra <b>${eur0(R.cpl_kill_eur)}</b> → si stacca`,
     `0 lead da <b>${eur0(R.spend_warn_eur)}</b> → sorvegliata`,
     `CPL sotto <b>${eur0(R.cpl_winner_eur)}</b> → vincente, ci si mette budget`
