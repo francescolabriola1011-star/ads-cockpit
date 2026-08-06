@@ -1,11 +1,11 @@
 {
  "titolo": "AI Elite Advisory",
  "sottotitolo": "casa nostra",
- "generato": "2026-08-05T08:32:31+02:00",
+ "generato": "2026-08-06T05:16:45+02:00",
  "periodo": {
   "da": "2026-01-01",
-  "a": "2026-08-05",
-  "giorni": 216,
+  "a": "2026-08-06",
+  "giorni": 217,
   "finestra_recente_giorni": 7
  },
  "regole": {
@@ -18,16 +18,16 @@
   "min_impressions": 300
  },
  "totali": {
-  "spesa": 3113.36,
-  "lead": 198.0,
-  "cpl": 15.72,
-  "sprecato": 260.12,
+  "spesa": 3146.56,
+  "lead": 206.0,
+  "cpl": 15.27,
+  "sprecato": 264.59,
   "quota_sprecata": 8.4,
-  "sprecato_al_mese": 36.13,
+  "sprecato_al_mese": 36.58,
   "brucia_oggi": 6.0,
   "da_staccare_ora": 1,
   "clienti": 1,
-  "campagne": 120
+  "campagne": 121
  },
  "clienti": [
   {
@@ -35,22 +35,22 @@
    "account_id": "859478370532394",
    "nome_reale": "AI Elite Advisory",
    "currency": "EUR",
-   "spend": 3113.36,
-   "leads": 198.0,
-   "cpl": 15.72,
-   "sprecato": 260.12,
+   "spend": 3146.56,
+   "leads": 206.0,
+   "cpl": 15.27,
+   "sprecato": 264.59,
    "quota_sprecata": 8.4,
-   "impressions": 281763.0,
-   "clicks": 4445.0,
-   "n_campagne": 120,
+   "impressions": 284868.0,
+   "clicks": 4509.0,
+   "n_campagne": 121,
    "n_kill": 37,
    "n_kill_ancora_accese": 1,
    "brucia_oggi": 6.0,
    "riallocazione": {
-    "budget_da_spostare": 1466.12,
-    "cpl_vincente": 2.37,
-    "lead_prudente": 97,
-    "lead_ottimistico": 618
+    "budget_da_spostare": 1470.59,
+    "cpl_vincente": 2.19,
+    "lead_prudente": 98,
+    "lead_ottimistico": 672
    },
    "campagne": [
     {
@@ -217,6 +217,32 @@
      ],
      "recent": null,
      "trend": null
+    },
+    {
+     "id": "120249076162600629",
+     "name": "Moduli -immagine - Copia 6",
+     "spend": 54.87,
+     "leads": 3.0,
+     "cpl": 18.29,
+     "impressions": 4902.0,
+     "clicks": 52.0,
+     "ctr": 1.060792,
+     "cpm": 11.19339,
+     "reach": 2215.0,
+     "frequency": 2.213093,
+     "attiva": true,
+     "effective_status": "ACTIVE",
+     "daily_budget": 6.0,
+     "status": "kill",
+     "reason": "CPL €18.29: sopra il limite di €15",
+     "sprecato": 9.87,
+     "flags": [],
+     "recent": {
+      "spend": 42.96,
+      "leads": 2.0,
+      "cpl": 21.48
+     },
+     "trend": 3.19
     },
     {
      "id": "120246019758390629",
@@ -524,32 +550,6 @@
      "trend": 0.0
     },
     {
-     "id": "120249076162600629",
-     "name": "Moduli -immagine - Copia 6",
-     "spend": 50.4,
-     "leads": 3.0,
-     "cpl": 16.8,
-     "impressions": 4382.0,
-     "clicks": 46.0,
-     "ctr": 1.049749,
-     "cpm": 11.501597,
-     "reach": 2078.0,
-     "frequency": 2.108758,
-     "attiva": true,
-     "effective_status": "ACTIVE",
-     "daily_budget": 6.0,
-     "status": "kill",
-     "reason": "CPL €16.80: sopra il limite di €15",
-     "sprecato": 5.4,
-     "flags": [],
-     "recent": {
-      "spend": 44.78,
-      "leads": 3.0,
-      "cpl": 14.93
-     },
-     "trend": -1.87
-    },
-    {
      "id": "120246769141420629",
      "name": "Moduli - prova 30 giorni",
      "spend": 20.16,
@@ -617,7 +617,7 @@
       "solo 2.4% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 12.81,
+      "spend": 7.69,
       "leads": 0.0,
       "cpl": null
      },
@@ -669,7 +669,7 @@
       "solo 3.8% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 17.94,
+      "spend": 12.81,
       "leads": 0.0,
       "cpl": null
      },
@@ -917,11 +917,11 @@
      "sprecato": 0.83,
      "flags": [],
      "recent": {
-      "spend": 15.83,
-      "leads": 1.0,
-      "cpl": 15.83
+      "spend": 11.31,
+      "leads": 0.0,
+      "cpl": null
      },
-     "trend": 0.0
+     "trend": null
     },
     {
      "id": "120246542937170629",
@@ -1035,12 +1035,8 @@
      "reason": "CPL €1.42: sotto €8, ci si mette budget",
      "sprecato": 0.0,
      "flags": [],
-     "recent": {
-      "spend": 0.39,
-      "leads": 1.0,
-      "cpl": 0.39
-     },
-     "trend": -1.03
+     "recent": null,
+     "trend": null
     },
     {
      "id": "120245586757670629",
@@ -1085,6 +1081,32 @@
      "flags": [],
      "recent": null,
      "trend": null
+    },
+    {
+     "id": "120246122124050629",
+     "name": "Setter - Modulo",
+     "spend": 21.46,
+     "leads": 22.0,
+     "cpl": 0.98,
+     "impressions": 1119.0,
+     "clicks": 105.0,
+     "ctr": 9.383378,
+     "cpm": 19.177837,
+     "reach": 756.0,
+     "frequency": 1.480159,
+     "attiva": false,
+     "effective_status": "PAUSED",
+     "daily_budget": 4.0,
+     "status": "winner",
+     "reason": "CPL €0.98: sotto €8, ci si mette budget",
+     "sprecato": 0.0,
+     "flags": [],
+     "recent": {
+      "spend": 8.85,
+      "leads": 11.0,
+      "cpl": 0.8
+     },
+     "trend": -0.18
     },
     {
      "id": "120246688864450629",
@@ -1265,32 +1287,6 @@
      ],
      "recent": null,
      "trend": null
-    },
-    {
-     "id": "120246122124050629",
-     "name": "Setter - Modulo",
-     "spend": 18.0,
-     "leads": 14.0,
-     "cpl": 1.29,
-     "impressions": 915.0,
-     "clicks": 72.0,
-     "ctr": 7.868852,
-     "cpm": 19.672131,
-     "reach": 653.0,
-     "frequency": 1.401225,
-     "attiva": false,
-     "effective_status": "PAUSED",
-     "daily_budget": 4.0,
-     "status": "winner",
-     "reason": "CPL €1.29: sotto €8, ci si mette budget",
-     "sprecato": 0.0,
-     "flags": [],
-     "recent": {
-      "spend": 5.39,
-      "leads": 3.0,
-      "cpl": 1.8
-     },
-     "trend": 0.51
     },
     {
      "id": "120246172601970629",
@@ -1729,6 +1725,32 @@
      "trend": null
     },
     {
+     "id": "120249196105520629",
+     "name": "Moduli -immagine - Copia 9",
+     "spend": 15.06,
+     "leads": 0.0,
+     "cpl": null,
+     "impressions": 1617.0,
+     "clicks": 18.0,
+     "ctr": 1.113173,
+     "cpm": 9.313544,
+     "reach": 969.0,
+     "frequency": 1.668731,
+     "attiva": false,
+     "effective_status": "PAUSED",
+     "daily_budget": 6.0,
+     "status": "watch",
+     "reason": "€15.06 spesi e 0 lead: mancano €6.94 allo stacco",
+     "sprecato": 0.0,
+     "flags": [],
+     "recent": {
+      "spend": 15.06,
+      "leads": 0.0,
+      "cpl": null
+     },
+     "trend": null
+    },
+    {
      "id": "120249034724170629",
      "name": "Moduli -video cfa - c - Copia 6",
      "spend": 14.95,
@@ -1747,11 +1769,7 @@
      "reason": "€14.95 spesi, ancora 0 lead ma sotto soglia",
      "sprecato": 0.0,
      "flags": [],
-     "recent": {
-      "spend": 0.32,
-      "leads": 0.0,
-      "cpl": null
-     },
+     "recent": null,
      "trend": null
     },
     {
@@ -1846,11 +1864,65 @@
       "CTR 0.94%: il creativo non ferma nessuno"
      ],
      "recent": {
-      "spend": 14.47,
+      "spend": 11.72,
       "leads": 0.0,
       "cpl": null
      },
      "trend": null
+    },
+    {
+     "id": "120249214145560629",
+     "name": "Moduli -video cfa - c - Copia 12",
+     "spend": 14.42,
+     "leads": 0.0,
+     "cpl": null,
+     "impressions": 1127.0,
+     "clicks": 15.0,
+     "ctr": 1.330967,
+     "cpm": 12.795031,
+     "reach": 822.0,
+     "frequency": 1.371046,
+     "attiva": false,
+     "effective_status": "PAUSED",
+     "daily_budget": 6.0,
+     "status": "early",
+     "reason": "€14.42 spesi, ancora 0 lead ma sotto soglia",
+     "sprecato": 0.0,
+     "flags": [],
+     "recent": {
+      "spend": 14.42,
+      "leads": 0.0,
+      "cpl": null
+     },
+     "trend": null
+    },
+    {
+     "id": "120249213501960629",
+     "name": "Moduli -video cfa - c - Copia 11",
+     "spend": 14.35,
+     "leads": 1.0,
+     "cpl": 14.35,
+     "impressions": 1079.0,
+     "clicks": 7.0,
+     "ctr": 0.648749,
+     "cpm": 13.299351,
+     "reach": 829.0,
+     "frequency": 1.301568,
+     "attiva": true,
+     "effective_status": "ACTIVE",
+     "daily_budget": 6.0,
+     "status": "ok",
+     "reason": "CPL €14.35: dentro i parametri",
+     "sprecato": 0.0,
+     "flags": [
+      "CTR 0.65%: il creativo non ferma nessuno"
+     ],
+     "recent": {
+      "spend": 14.35,
+      "leads": 1.0,
+      "cpl": 14.35
+     },
+     "trend": 0.0
     },
     {
      "id": "120249111677640629",
@@ -1872,7 +1944,7 @@
      "sprecato": 0.0,
      "flags": [],
      "recent": {
-      "spend": 14.26,
+      "spend": 11.86,
       "leads": 0.0,
       "cpl": null
      },
@@ -1919,11 +1991,7 @@
      "reason": "€14.13 spesi, ancora 0 lead ma sotto soglia",
      "sprecato": 0.0,
      "flags": [],
-     "recent": {
-      "spend": 4.35,
-      "leads": 0.0,
-      "cpl": null
-     },
+     "recent": null,
      "trend": null
     },
     {
@@ -1945,11 +2013,7 @@
      "reason": "€14.00 spesi, ancora 0 lead ma sotto soglia",
      "sprecato": 0.0,
      "flags": [],
-     "recent": {
-      "spend": 4.23,
-      "leads": 0.0,
-      "cpl": null
-     },
+     "recent": null,
      "trend": null
     },
     {
@@ -2018,32 +2082,6 @@
      "sprecato": 0.0,
      "flags": [],
      "recent": null,
-     "trend": null
-    },
-    {
-     "id": "120249196105520629",
-     "name": "Moduli -immagine - Copia 9",
-     "spend": 13.52,
-     "leads": 0.0,
-     "cpl": null,
-     "impressions": 1492.0,
-     "clicks": 16.0,
-     "ctr": 1.072386,
-     "cpm": 9.061662,
-     "reach": 889.0,
-     "frequency": 1.67829,
-     "attiva": true,
-     "effective_status": "ACTIVE",
-     "daily_budget": 6.0,
-     "status": "early",
-     "reason": "€13.52 spesi, ancora 0 lead ma sotto soglia",
-     "sprecato": 0.0,
-     "flags": [],
-     "recent": {
-      "spend": 13.52,
-      "leads": 0.0,
-      "cpl": null
-     },
      "trend": null
     },
     {
@@ -2367,60 +2405,6 @@
      "trend": null
     },
     {
-     "id": "120249213501960629",
-     "name": "Moduli -video cfa - c - Copia 11",
-     "spend": 9.28,
-     "leads": 1.0,
-     "cpl": 9.28,
-     "impressions": 690.0,
-     "clicks": 6.0,
-     "ctr": 0.869565,
-     "cpm": 13.449275,
-     "reach": 564.0,
-     "frequency": 1.223404,
-     "attiva": true,
-     "effective_status": "ACTIVE",
-     "daily_budget": 6.0,
-     "status": "ok",
-     "reason": "CPL €9.28: dentro i parametri",
-     "sprecato": 0.0,
-     "flags": [
-      "CTR 0.87%: il creativo non ferma nessuno"
-     ],
-     "recent": {
-      "spend": 9.28,
-      "leads": 1.0,
-      "cpl": 9.28
-     },
-     "trend": 0.0
-    },
-    {
-     "id": "120249214145560629",
-     "name": "Moduli -video cfa - c - Copia 12",
-     "spend": 9.04,
-     "leads": 0.0,
-     "cpl": null,
-     "impressions": 678.0,
-     "clicks": 9.0,
-     "ctr": 1.327434,
-     "cpm": 13.333333,
-     "reach": 531.0,
-     "frequency": 1.276836,
-     "attiva": true,
-     "effective_status": "ACTIVE",
-     "daily_budget": 6.0,
-     "status": "early",
-     "reason": "€9.04 spesi, ancora 0 lead ma sotto soglia",
-     "sprecato": 0.0,
-     "flags": [],
-     "recent": {
-      "spend": 9.04,
-      "leads": 0.0,
-      "cpl": null
-     },
-     "trend": null
-    },
-    {
      "id": "120248647892450629",
      "name": "Moduli -video cfa - Copia 3",
      "spend": 8.88,
@@ -2440,6 +2424,58 @@
      "sprecato": 0.0,
      "flags": [],
      "recent": null,
+     "trend": null
+    },
+    {
+     "id": "120249243905500629",
+     "name": "Moduli -immagine - Copia 10",
+     "spend": 8.43,
+     "leads": 0.0,
+     "cpl": null,
+     "impressions": 864.0,
+     "clicks": 14.0,
+     "ctr": 1.62037,
+     "cpm": 9.756944,
+     "reach": 616.0,
+     "frequency": 1.402597,
+     "attiva": true,
+     "effective_status": "ACTIVE",
+     "daily_budget": 6.0,
+     "status": "early",
+     "reason": "€8.43 spesi, ancora 0 lead ma sotto soglia",
+     "sprecato": 0.0,
+     "flags": [],
+     "recent": {
+      "spend": 8.43,
+      "leads": 0.0,
+      "cpl": null
+     },
+     "trend": null
+    },
+    {
+     "id": "120249243948220629",
+     "name": "Moduli -immagine - Copia 11",
+     "spend": 8.38,
+     "leads": 0.0,
+     "cpl": null,
+     "impressions": 843.0,
+     "clicks": 11.0,
+     "ctr": 1.304864,
+     "cpm": 9.940688,
+     "reach": 612.0,
+     "frequency": 1.377451,
+     "attiva": true,
+     "effective_status": "ACTIVE",
+     "daily_budget": 6.0,
+     "status": "early",
+     "reason": "€8.38 spesi, ancora 0 lead ma sotto soglia",
+     "sprecato": 0.0,
+     "flags": [],
+     "recent": {
+      "spend": 8.38,
+      "leads": 0.0,
+      "cpl": null
+     },
      "trend": null
     },
     {
@@ -2706,11 +2742,11 @@
      "sprecato": 0.0,
      "flags": [],
      "recent": {
-      "spend": 4.51,
-      "leads": 1.0,
-      "cpl": 4.51
+      "spend": 1.92,
+      "leads": 0.0,
+      "cpl": null
      },
-     "trend": 0.0
+     "trend": null
     },
     {
      "id": "120245587238450629",
@@ -2732,32 +2768,6 @@
      "sprecato": 0.0,
      "flags": [],
      "recent": null,
-     "trend": null
-    },
-    {
-     "id": "120249243905500629",
-     "name": "Moduli -immagine - Copia 10",
-     "spend": 3.8,
-     "leads": 0.0,
-     "cpl": null,
-     "impressions": 337.0,
-     "clicks": 6.0,
-     "ctr": 1.780415,
-     "cpm": 11.275964,
-     "reach": 284.0,
-     "frequency": 1.18662,
-     "attiva": true,
-     "effective_status": "ACTIVE",
-     "daily_budget": 6.0,
-     "status": "early",
-     "reason": "€3.80 spesi, ancora 0 lead ma sotto soglia",
-     "sprecato": 0.0,
-     "flags": [],
-     "recent": {
-      "spend": 3.8,
-      "leads": 0.0,
-      "cpl": null
-     },
      "trend": null
     },
     {
@@ -2783,26 +2793,26 @@
      "trend": null
     },
     {
-     "id": "120249243948220629",
-     "name": "Moduli -immagine - Copia 11",
-     "spend": 2.73,
+     "id": "120249279515680629",
+     "name": "Moduli -immagine - Copia 10",
+     "spend": 3.0,
      "leads": 0.0,
      "cpl": null,
-     "impressions": 296.0,
-     "clicks": 3.0,
-     "ctr": 1.013514,
-     "cpm": 9.222973,
-     "reach": 238.0,
-     "frequency": 1.243697,
+     "impressions": 344.0,
+     "clicks": 0.0,
+     "ctr": 0.0,
+     "cpm": 8.72093,
+     "reach": 273.0,
+     "frequency": 1.260073,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 6.0,
      "status": "early",
-     "reason": "solo 296 impression: troppo presto per giudicare",
+     "reason": "€3.00 spesi, ancora 0 lead ma sotto soglia",
      "sprecato": 0.0,
      "flags": [],
      "recent": {
-      "spend": 2.73,
+      "spend": 3.0,
       "leads": 0.0,
       "cpl": null
      },
