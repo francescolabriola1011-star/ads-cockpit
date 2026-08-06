@@ -265,10 +265,10 @@ function render(){
      aggiornato ${gen.toLocaleString("it-IT",{dateStyle:"short",timeStyle:"short"})}`;
 
   document.getElementById("rules").innerHTML = [
-    `entro <b>${eur0(R.spend_kill_eur)}</b> di spesa servono almeno <b>2 lead</b> (CPL sotto ${eur0(R.spend_kill_eur/2)}) → altrimenti si stacca`,
-    `con 1 lead sotto <b>${eur0(R.spend_kill_eur)}</b> si lascia girare, il CPL non si guarda`,
-    `da 2 lead in su, CPL sopra <b>${eur0(R.cpl_kill_eur)}</b> → si stacca`,
-    `0 lead da <b>${eur0(R.spend_warn_eur)}</b> → sorvegliata`,
+    `<b>0 lead</b> sopra ${eur0(R.spend_kill_zero_lead_eur || R.spend_warn_eur)} di spesa → si stacca`,
+    `<b>1 lead</b>: si lascia girare fino a ${eur0(R.spend_kill_eur)}, il CPL non si guarda`,
+    `entro ${eur0(R.spend_kill_eur)} servono <b>2 lead</b> (CPL sotto ${eur0(R.spend_kill_eur/2)}) → altrimenti si stacca`,
+    `da <b>2 lead</b> in su, CPL sopra <b>${eur0(R.cpl_kill_eur)}</b> → si stacca`,
     `CPL sotto <b>${eur0(R.cpl_winner_eur)}</b> → vincente, ci si mette budget`
   ].map(r => `<span class="rule">${r}</span>`).join("");
 
