@@ -1,5 +1,25 @@
 [
  {
+  "quando": "2026-08-07T08:37:21+02:00",
+  "account": "859478370532394",
+  "campagna": "Moduli -immagine - Copia 10",
+  "campaign_id": "120249243905500629",
+  "motivo": "€15.56 spesi e 0 lead (limite €15)",
+  "spesa": 15.56,
+  "lead": 0.0,
+  "eseguito": true
+ },
+ {
+  "quando": "2026-08-07T08:37:22+02:00",
+  "account": "859478370532394",
+  "campagna": "Moduli -immagine - Copia 11",
+  "campaign_id": "120249243948220629",
+  "motivo": "€15.20 spesi e 0 lead (limite €15)",
+  "spesa": 15.2,
+  "lead": 0.0,
+  "eseguito": true
+ },
+ {
   "quando": "2026-08-05T08:32:50+02:00",
   "account": "27645634798460719",
   "campagna": "Moduli - Pianifica ora il tuo domani",
