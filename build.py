@@ -102,6 +102,20 @@ def num(v) -> float:
         return 0.0
 
 
+# Campagne di HIRING/recruiting: NON sono acquisizione clienti, quindi non
+# entrano mai in spesa, lead, CPL, sprecato, CAC ne' nella scelta delle creative.
+# Riconoscibili dal ruolo cercato in testa al nome: "AM - Moduli", "Setter - Modulo",
+# "Venditore - Moduli", "CSM- Moduli", "MB - Moduli", "Editor - Moduli".
+HIRING_RE = re.compile(
+    r"^\s*(am|mb|csm|setter|venditore|editor|account\s*manager|media\s*buyer)\s*-",
+    re.I,
+)
+
+
+def is_hiring(name: str) -> bool:
+    return bool(HIRING_RE.match(name or ""))
+
+
 def normalize(row: dict, status_map: dict) -> dict:
     leads = meta.leads_of(row)
     spend = num(row.get("spend"))
@@ -144,8 +158,13 @@ def build_account(acct: dict, cfg: dict, R: Rules, tok: str, since: str, until: 
         pass
 
     campaigns = []
+    hiring = []
     for row in rows:
         c = normalize(row, status_map)
+        if is_hiring(c["name"]):
+            c["hiring"] = True
+            hiring.append(c)
+            continue
         status, reason = R.verdict(c)
         c["status"] = status
         c["reason"] = reason
@@ -197,6 +216,13 @@ def build_account(acct: dict, cfg: dict, R: Rules, tok: str, since: str, until: 
         "brucia_oggi": round(sum(c["daily_budget"] or 0 for c in kill_now), 2),
         "riallocazione": R.reallocation(campaigns),
         "campagne": campaigns,
+        # tenute da parte, mai sommate: servono solo a spiegare il delta col conto Meta
+        "hiring": {
+            "n": len(hiring),
+            "spend": round(sum(c["spend"] for c in hiring), 2),
+            "leads": sum(c["leads"] for c in hiring),
+        },
+        "campagne_hiring": hiring,
     }
 
 
@@ -329,7 +355,7 @@ def main() -> int:
         pat = re.compile(r"\b(" + "|".join(sorted(map(re.escape, scrub), key=len, reverse=True)) + r")\b",
                          re.IGNORECASE)
         for a in payload["clienti"]:
-            for c in a["campagne"]:
+            for c in a["campagne"] + a.get("campagne_hiring", []):
                 c["name"] = re.sub(r"\s{2,}", " ", pat.sub("…", c["name"])).strip()
 
     if anon:

@@ -73,8 +73,12 @@ def costruisci(d: dict) -> tuple[str, str]:
     L.append(f"# Run ads — controllo regole · {datetime.now():%d/%m/%Y %H:%M}")
     L.append("")
     L.append(
-        f"Regole applicate: CPL sopra €{regole['cpl_kill_eur']:.0f} si stacca · "
-        f"0 o 1 lead oltre €{regole['spend_kill_eur']:.0f} spesi si stacca · "
+        f"Regole applicate: 0 lead oltre "
+        f"€{regole.get('spend_kill_zero_lead_eur', regole['spend_warn_eur']):.0f} si stacca · "
+        f"1 lead oltre €{regole['spend_kill_eur']:.0f} si stacca (entro €"
+        f"{regole['spend_kill_eur']:.0f} serve il 2° lead, CPL sotto €"
+        f"{regole['spend_kill_eur'] / 2:.0f}) · "
+        f"da 2 lead in su, CPL sopra €{regole['cpl_kill_eur']:.0f} si stacca · "
         f"CPL sotto €{regole['cpl_winner_eur']:.0f} si mette budget."
     )
     L.append("")

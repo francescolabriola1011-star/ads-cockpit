@@ -5,6 +5,12 @@ Regole (config.yaml -> autopause.rules):
   - 0 lead e spesa oltre  €15  -> in pausa
   - 1 lead e spesa oltre  €22  -> in pausa
 
+Con 0 o 1 lead conta SOLO la spesa: il CPL su un lead solo non e' un dato, quindi
+la regola CPL vale da 2 lead in su (ed e' comunque spenta, cpl_max_eur: null).
+Il senso del limite a 1 lead: entro €22 deve arrivare il secondo lead, cioe' CPL
+sotto €11. Sotto quella spesa la campagna si lascia respirare, se no non si trova
+mai una vincente.
+
 Vincoli di sicurezza, volutamente stretti:
   - agisce sugli account di autopause.account_ids. Con "auto" copre tutti i
     clienti della dashboard generale (quindi anche i nuovi appena entrano)
@@ -36,6 +42,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 
 import meta  # noqa: E402
+from build import is_hiring  # noqa: E402  (unica definizione, vedi build.py)
 
 ROME = dt.timezone(dt.timedelta(hours=2))
 LOG = os.path.join(HERE, "logs", "autopause.log")
@@ -124,6 +131,8 @@ def main() -> int:
             st = stato.get(cid, {})
             if st.get("effective_status") != "ACTIVE":
                 continue                      # gia' spenta, niente da fare
+            if is_hiring(row.get("campaign_name", "")):
+                continue                      # recruiting: non e' acquisizione, non si tocca
 
             spend, leads = num(row.get("spend")), meta.leads_of(row)
             motivo = None
@@ -131,7 +140,7 @@ def main() -> int:
                 motivo = f"€{spend:.2f} spesi e 0 lead (limite €{kill_no_lead:.0f})"
             elif leads == 1 and spend > kill_un_lead:
                 motivo = f"€{spend:.2f} spesi per 1 solo lead (limite €{kill_un_lead:.0f})"
-            elif cpl_max and leads > 0 and spend / leads > cpl_max:
+            elif cpl_max and leads >= 2 and spend / leads > cpl_max:
                 motivo = f"CPL €{spend / leads:.2f} sopra il limite di €{cpl_max:.0f}"
             if not motivo:
                 continue

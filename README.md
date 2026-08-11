@@ -16,12 +16,17 @@ al cliente.
 
 ## Le regole applicate
 
+Ordine di precedenza (si legge dall'alto in giù):
+
 | Regola | Verdetto |
 |---|---|
-| CPL sopra **€15** | STACCA |
-| 0 o 1 lead con più di **€22** spesi | STACCA |
-| 0 lead da **€15** in su | SORVEGLIA |
-| CPL sotto **€8** | VINCENTE, ci si mette budget |
+| **0 lead** oltre **€15** spesi | STACCA |
+| **1 lead**, sotto **€22** spesi | LASCIA GIRARE (col CPL non si guarda, con un lead solo non è un dato) |
+| **Checkpoint €22**: entro quella spesa servono **2 lead**, cioè **CPL sotto €11** | altrimenti STACCA |
+| **1 lead**, oltre **€22** spesi | STACCA (conta solo la spesa) |
+| Da 2 lead in su, CPL sopra **€15** | STACCA |
+| 0 lead, ancora sotto **€15** | SORVEGLIA |
+| CPL sotto **€8** (da 2 lead in su) | VINCENTE, ci si mette budget |
 
 Si cambiano in [config.yaml](config.yaml), sezione `rules`. Il codice non si tocca.
 
@@ -30,8 +35,9 @@ Si cambiano in [config.yaml](config.yaml), sezione `rules`. Il codice non si toc
 Non è "quanto abbiamo speso male a occhio": è **quanto è uscito oltre il punto in cui
 la regola diceva di staccare**.
 
-- campagna senza lead → tutto lo speso oltre €22
-- campagna con lead ma CPL troppo alto → `spesa − (lead × €15)`
+- campagna con 0 lead → speso oltre €15
+- campagna con 1 lead → speso oltre €22 (sotto €22 non è sprecato, gira)
+- campagna con 2+ lead e CPL troppo alto → `spesa − (lead × €15)`
 
 Sommato per cliente e in totale, più la proiezione a 30 giorni al ritmo attuale.
 

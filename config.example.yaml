@@ -7,11 +7,18 @@
 # REGOLE DI RUN (le regole di Francesco)
 # ------------------------------------------------------------
 rules:
-  # CPL oltre il quale la campagna va STACCATA
+  # CPL oltre il quale la campagna va STACCATA.
+  # Vale SOLO da 2 lead in su: con 0 o 1 lead il CPL non e' un dato, e conta
+  # soltanto la spesa (spend_kill_eur qui sotto).
   cpl_kill_eur: 15
-  # Spesa oltre la quale una campagna che ha prodotto 0 o 1 lead va STACCATA
+  # Spesa oltre la quale una campagna con 1 LEAD va STACCATA.
+  # Sotto questa cifra, con 1 lead, la campagna si LASCIA GIRARE: entro €22 deve
+  # arrivare il secondo lead (cioe' CPL sotto €11), altrimenti si stacca.
   spend_kill_eur: 22
-  # Zona gialla: 0 lead ma spesa gia' oltre questa soglia -> sorvegliata speciale
+  # Spesa oltre la quale una campagna con 0 LEAD va STACCATA (piu' severa: senza
+  # nemmeno un contatto non si aspetta fino a €22).
+  spend_kill_zero_lead_eur: 15
+  # Zona gialla: 0 lead, spesa sotto il limite -> sorvegliata speciale
   spend_warn_eur: 15
   # CPL sotto il quale la campagna e' un VINCITORE (su cui riallocare budget)
   cpl_winner_eur: 8

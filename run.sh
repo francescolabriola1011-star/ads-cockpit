@@ -25,6 +25,13 @@ python3 alert.py
 python3 autopause.py --esegui || echo "autopause: vedi sopra"
 echo
 
+# COSTI CHE SCAPPANO — solo sulla dashboard di casa (docs/aea): il blocco
+# compare nella pagina solo dove esiste costi.json, quindi la versione condivisa
+# coi clienti resta senza. Se Zoho non risponde, la pagina perde il blocco ma
+# non mostra numeri vecchi spacciati per freschi.
+/usr/bin/python3 /Users/francescolabriola/csm-automations/motore/costi_che_scappano.py \
+  --out docs/aea/costi.json || echo "costi che scappano: non generato (vedi sopra)"
+
 if [[ -n "$(git status --porcelain docs/)" ]]; then
   git add docs/
   git commit -q -m "dati $(date '+%Y-%m-%d %H:%M')"

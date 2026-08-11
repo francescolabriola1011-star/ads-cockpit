@@ -1,14 +1,23 @@
 """Le regole di casa applicate alle campagne + calcolo del budget sprecato.
 
 Regole (da config.yaml):
-  1. Campagna con lead e CPL > cpl_kill_eur          -> STACCA
-  2. Campagna con 0 o 1 lead e spesa > spend_kill_eur -> STACCA
+  1. Campagna con 0 lead: si stacca oltre spend_kill_zero_lead_eur (€15).
+  1b. Campagna con 1 lead: si guarda SOLO la spesa, si stacca oltre spend_kill_eur (€22)
+     (con un lead solo il CPL non e' un dato, e' un caso: NON si applica cpl_kill_eur)
+  2. Campagna con 2 lead o piu' e CPL > cpl_kill_eur -> STACCA
+
+Il CHECKPOINT dei €22 (spend_kill_eur), che e' quello che conta davvero:
+entro quella spesa la campagna deve aver portato ALMENO 2 lead, cioe' un CPL sotto
+€11 (22 / 2). Con 1 lead solo a €22 il CPL sarebbe €22 e si stacca comunque.
+Quindi: sotto €22 si lascia respirare (1 lead a €18 NON si stacca, altrimenti non si
+trova mai una vincente), ma arrivati a €22 il secondo lead dev'esserci.
   3. Campagna con 0 lead e spesa >= spend_warn_eur    -> SORVEGLIATA
   4. Campagna con CPL <= cpl_winner_eur               -> VINCITRICE (ci si mette budget)
 
 Budget sprecato = euro usciti OLTRE il punto in cui la regola diceva di staccare.
-  - campagna senza lead: tutto cio' che e' stato speso oltre spend_kill_eur
-  - campagna con lead ma CPL troppo alto: spesa - (lead x cpl_kill_eur)
+  - campagna con 0 lead: speso oltre spend_kill_zero_lead_eur
+  - campagna con 1 lead: speso oltre spend_kill_eur
+  - campagna con 2+ lead e CPL troppo alto: spesa - (lead x cpl_kill_eur)
 """
 from __future__ import annotations
 
@@ -25,6 +34,8 @@ class Rules:
         r = cfg["rules"]
         self.cpl_kill = _f(r["cpl_kill_eur"])
         self.spend_kill = _f(r["spend_kill_eur"])
+        # 0 lead: limite piu' severo, senza nemmeno un contatto non si aspetta €22
+        self.spend_kill_zero = _f(r.get("spend_kill_zero_lead_eur") or r["spend_warn_eur"])
         self.spend_warn = _f(r["spend_warn_eur"])
         self.cpl_winner = _f(r["cpl_winner_eur"])
         self.ctr_floor = _f(r["ctr_floor_pct"])
@@ -37,22 +48,30 @@ class Rules:
         spend, leads, impr = c["spend"], c["leads"], c["impressions"]
         cpl = c["cpl"]
 
-        if impr < self.min_impr and spend < self.spend_warn:
+        if impr < self.min_impr and spend < self.spend_kill_zero:
             return "early", f"solo {int(impr)} impression: troppo presto per giudicare"
 
         if leads == 0:
+            if spend > self.spend_kill_zero:
+                return "kill", (
+                    f"€{spend:.2f} spesi e 0 lead: oltre il limite di €{self.spend_kill_zero:.0f}"
+                )
+            return "watch", (
+                f"€{spend:.2f} spesi e 0 lead: mancano "
+                f"€{self.spend_kill_zero - spend:.2f} allo stacco"
+            )
+
+        if leads <= 1:
+            # Con un lead solo il CPL non e' un dato attendibile: conta solo la spesa.
             if spend > self.spend_kill:
                 return "kill", (
-                    f"€{spend:.2f} spesi e 0 lead: oltre il limite di €{self.spend_kill:.0f}"
+                    f"1 solo lead a €{spend:.2f}: oltre il limite di €{self.spend_kill:.0f}"
                 )
-            if spend >= self.spend_warn:
-                return "watch", (
-                    f"€{spend:.2f} spesi e 0 lead: mancano €{self.spend_kill - spend:.2f} allo stacco"
-                )
-            return "early", f"€{spend:.2f} spesi, ancora 0 lead ma sotto soglia"
-
-        if leads <= 1 and spend > self.spend_kill:
-            return "kill", f"1 solo lead a €{spend:.2f}: oltre il limite di €{self.spend_kill:.0f}"
+            return "early", (
+                f"1 lead a €{spend:.2f}: si lascia girare, ma entro €{self.spend_kill:.0f} "
+                f"(mancano €{self.spend_kill - spend:.2f}) deve arrivare il 2° lead, "
+                f"cioe' CPL sotto €{self.spend_kill / 2:.0f}"
+            )
 
         if cpl is not None and cpl > self.cpl_kill:
             return "kill", f"CPL €{cpl:.2f}: sopra il limite di €{self.cpl_kill:.0f}"
@@ -66,6 +85,8 @@ class Rules:
     def wasted(self, c: dict) -> float:
         spend, leads, cpl = c["spend"], c["leads"], c["cpl"]
         if leads == 0:
+            return max(0.0, spend - self.spend_kill_zero)
+        if leads == 1:
             return max(0.0, spend - self.spend_kill)
         if cpl is not None and cpl > self.cpl_kill:
             return max(0.0, spend - leads * self.cpl_kill)
