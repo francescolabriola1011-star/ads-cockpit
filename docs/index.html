@@ -160,6 +160,12 @@ footer{margin-top:44px;color:var(--muted);font-size:12px;border-top:1px solid va
   <div id="clienti"></div>
   <div class="fermi" id="fermi"></div>
 
+  <!-- COSTI CHE SCAPPANO — compare solo dove esiste costi.json (la dashboard di
+       casa AEA). Stessa domanda delle ads, sull'altro lato: dove escono soldi
+       che non dovrebbero. Dati da motore/costi_che_scappano.py (Zoho Books). -->
+  <section id="costi" hidden></section>
+  <style>#costi .num{text-align:right;font-variant-numeric:tabular-nums}</style>
+
   <footer id="foot"></footer>
 </div>
 
@@ -456,6 +462,40 @@ document.getElementById("unlock").addEventListener("click", e => {
   const p = prompt("Passphrase per vedere i nomi veri di clienti e campagne:");
   if (p) unlock(p, false);
 });
+
+/* ---------- COSTI CHE SCAPPANO ---------- */
+const COSTI_COL = {scappato:"var(--crit)", nuovo:"var(--accent)", sparito:"var(--muted)", stabile:"var(--good)"};
+const COSTI_LAB = {scappato:"sta scappando", nuovo:"nuovo", sparito:"sparito", stabile:"stabile"};
+fetch("costi.json", {cache:"no-store"}).then(r => r.ok ? r.json() : null).then(d => {
+  if (!d || !d.voci) return;
+  const el = document.getElementById("costi");
+  const righe = d.voci.slice(0,20).map(v => `<tr>
+      <td>${v.voce}</td>
+      <td class="num">${eur0(v.mese_corrente)}</td>
+      <td class="num">${v.atteso_a_oggi == null ? "—" : eur0(v.atteso_a_oggi)}</td>
+      <td class="num">${v.variazione == null ? "—" : (v.variazione > 0 ? "+" : "") + v.variazione + "%"}</td>
+      <td style="color:${COSTI_COL[v.stato]};font-weight:650">${COSTI_LAB[v.stato]}</td>
+    </tr>`).join("");
+  el.innerHTML = `
+    <h2 style="font-size:17px;margin:38px 0 6px">Costi che scappano</h2>
+    <p style="font-size:12.5px;color:var(--muted);line-height:1.55;margin:0 0 12px">
+      Spese Zoho del mese in corso (${d.quota_mese}% di mese trascorso) contro la media dei due mesi
+      precedenti, riportata ai giorni gia' passati.
+      <b style="color:var(--ink)">${eur0(d.extra_del_mese)} di troppo</b> su ${d.n_scappati} voci fuori passo ·
+      ${d.n_nuovi} nuove · ${d.n_spariti} sparite. Totale mese ${eur0(d.totale_corrente)},
+      mese scorso ${eur0(d.totale_m1)}.
+    </p>
+    <table>
+      <thead><tr><th>Voce</th><th class="num">Speso ora</th><th class="num">Atteso a oggi</th>
+      <th class="num">Scarto</th><th>Stato</th></tr></thead>
+      <tbody>${righe || '<tr><td colspan="5">Nessun costo sopra la soglia.</td></tr>'}</tbody>
+    </table>
+    <p style="font-size:12px;color:var(--muted);margin-top:10px">
+      Fonte Zoho Books, spese reali. "Atteso a oggi" = media dei due mesi precedenti riportata
+      ai giorni trascorsi, quindi confronta mele con mele a meta' mese. Aggiornato ${d.generato}.
+    </p>`;
+  el.hidden = false;
+}).catch(() => {});
 </script>
 </body>
 </html>

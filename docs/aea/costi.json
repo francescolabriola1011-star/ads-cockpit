@@ -1,0 +1,93 @@
+{
+ "generato": "11/08/2026 06:34",
+ "quota_mese": 35,
+ "totale_corrente": 4466,
+ "totale_m1": 5447,
+ "totale_m2": 1407,
+ "voci": [
+  {
+   "voce": "Michele De Sena",
+   "mese_corrente": 1510,
+   "media_precedenti": 225,
+   "atteso_a_oggi": 80,
+   "variazione": 1791,
+   "stato": "scappato"
+  },
+  {
+   "voce": "Cost Of Goods Sold",
+   "mese_corrente": 1000,
+   "media_precedenti": 1622,
+   "atteso_a_oggi": 576,
+   "variazione": 74,
+   "stato": "scappato"
+  },
+  {
+   "voce": "Claude",
+   "mese_corrente": 40,
+   "media_precedenti": 40,
+   "atteso_a_oggi": 14,
+   "variazione": 182,
+   "stato": "scappato"
+  },
+  {
+   "voce": "Alessandro Cugini",
+   "mese_corrente": 970,
+   "media_precedenti": null,
+   "atteso_a_oggi": null,
+   "variazione": null,
+   "stato": "nuovo"
+  },
+  {
+   "voce": "Carlo Parodi",
+   "mese_corrente": 420,
+   "media_precedenti": null,
+   "atteso_a_oggi": null,
+   "variazione": null,
+   "stato": "nuovo"
+  },
+  {
+   "voce": "Tax Dome",
+   "mese_corrente": 350,
+   "media_precedenti": null,
+   "atteso_a_oggi": null,
+   "variazione": null,
+   "stato": "nuovo"
+  },
+  {
+   "voce": "Davide Mazzucco",
+   "mese_corrente": 150,
+   "media_precedenti": null,
+   "atteso_a_oggi": null,
+   "variazione": null,
+   "stato": "nuovo"
+  },
+  {
+   "voce": "Twilio",
+   "mese_corrente": 20,
+   "media_precedenti": null,
+   "atteso_a_oggi": null,
+   "variazione": null,
+   "stato": "nuovo"
+  },
+  {
+   "voce": "Facebook",
+   "mese_corrente": 0,
+   "media_precedenti": 2350,
+   "atteso_a_oggi": 834,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Go High Level",
+   "mese_corrente": 0,
+   "media_precedenti": 358,
+   "atteso_a_oggi": 127,
+   "variazione": -100,
+   "stato": "sparito"
+  }
+ ],
+ "extra_del_mese": 1880,
+ "n_scappati": 3,
+ "n_nuovi": 5,
+ "n_spariti": 2
+}
