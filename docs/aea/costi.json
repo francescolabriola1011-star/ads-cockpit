@@ -1,5 +1,5 @@
 {
- "generato": "12/08/2026 06:26",
+ "generato": "12/08/2026 08:48",
  "quota_mese": 39,
  "totale_corrente": 4466,
  "totale_m1": 5447,
@@ -70,18 +70,18 @@
    "stato": "nuovo"
   },
   {
-   "voce": "Facebook",
-   "mese_corrente": 0,
-   "media_precedenti": 2350,
-   "atteso_a_oggi": 910,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
    "voce": "Go High Level",
    "mese_corrente": 0,
    "media_precedenti": 358,
    "atteso_a_oggi": 138,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Facebook",
+   "mese_corrente": 0,
+   "media_precedenti": 2350,
+   "atteso_a_oggi": 910,
    "variazione": -100,
    "stato": "sparito"
   }
