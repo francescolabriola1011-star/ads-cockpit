@@ -1,5 +1,15 @@
 [
  {
+  "quando": "2026-08-12T05:12:34+02:00",
+  "account": "859478370532394",
+  "campagna": "Moduli -video cfa - c - Copia 14",
+  "campaign_id": "120249379845590629",
+  "motivo": "€17.62 spesi e 0 lead (limite €15)",
+  "spesa": 17.62,
+  "lead": 0.0,
+  "eseguito": true
+ },
+ {
   "quando": "2026-08-09T08:40:16+02:00",
   "account": "27645634798460719",
   "campagna": "Moduli - Video - Sai in cosa stai investendo?",
