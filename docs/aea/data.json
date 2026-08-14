@@ -1,7 +1,7 @@
 {
  "titolo": "AI Elite Advisory",
  "sottotitolo": "casa nostra",
- "generato": "2026-08-14T09:04:28+02:00",
+ "generato": "2026-08-14T09:05:40+02:00",
  "periodo": {
   "da": "2026-01-01",
   "a": "2026-08-14",
@@ -1459,8 +1459,8 @@
      "clicks": 231.0,
      "ctr": 2.496757,
      "cpm": 7.813446,
-     "reach": 3626.0,
-     "frequency": 2.551572,
+     "reach": 3630.0,
+     "frequency": 2.54876,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 20.0,
@@ -1468,7 +1468,7 @@
      "reason": "CPL €6.02: sotto €8, ci si mette budget",
      "sprecato": 0.0,
      "flags": [
-      "frequenza 2.6: pubblico bruciato, cambia audience"
+      "frequenza 2.5: pubblico bruciato, cambia audience"
      ],
      "recent": {
       "spend": 72.29,
@@ -2879,8 +2879,8 @@
      "clicks": 8.0,
      "ctr": 1.315789,
      "cpm": 5.871711,
-     "reach": 495.0,
-     "frequency": 1.228283,
+     "reach": 500.0,
+     "frequency": 1.216,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 6.0,
