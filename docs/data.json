@@ -1,11 +1,11 @@
 {
  "titolo": "ADS Cockpit",
  "sottotitolo": "tutti gli account",
- "generato": "2026-08-16T09:58:43+02:00",
+ "generato": "2026-08-17T04:59:28+02:00",
  "periodo": {
   "da": "2026-01-01",
-  "a": "2026-08-16",
-  "giorni": 227,
+  "a": "2026-08-17",
+  "giorni": 228,
   "finestra_recente_giorni": 7
  },
  "regole": {
@@ -19,16 +19,16 @@
   "min_impressions": 300
  },
  "totali": {
-  "spesa": 882.19,
-  "lead": 25.0,
-  "cpl": 35.29,
+  "spesa": 944.79,
+  "lead": 27.0,
+  "cpl": 34.99,
   "sprecato": 0.0,
   "quota_sprecata": 0.0,
   "sprecato_al_mese": 0.0,
   "brucia_oggi": 0,
   "da_staccare_ora": 0,
   "clienti": 4,
-  "campagne": 49
+  "campagne": 51
  },
  "clienti": [
   {
@@ -36,13 +36,13 @@
    "account_id": "1494987368248230",
    "nome_reale": "Flavio Bosia",
    "currency": "EUR",
-   "spend": 120.72,
+   "spend": 135.46,
    "leads": 3.0,
-   "cpl": 40.24,
+   "cpl": 45.15,
    "sprecato": 0.0,
    "quota_sprecata": 0.0,
-   "impressions": 12829.0,
-   "clicks": 197.0,
+   "impressions": 14134.0,
+   "clicks": 221.0,
    "n_campagne": 8,
    "n_kill": 0,
    "n_kill_ancora_accese": 0,
@@ -161,26 +161,52 @@
      "trend": null
     },
     {
+     "id": "52580033731061",
+     "name": "Moduli - Quanto avrai in pensione?",
+     "spend": 15.25,
+     "leads": 1.0,
+     "cpl": 15.25,
+     "impressions": 1247.0,
+     "clicks": 22.0,
+     "ctr": 1.764234,
+     "cpm": 12.22935,
+     "reach": 942.0,
+     "frequency": 1.323779,
+     "attiva": true,
+     "effective_status": "ACTIVE",
+     "daily_budget": 5.0,
+     "status": "early",
+     "reason": "1 lead a €15.25: si lascia girare, ma entro €110 (mancano €94.75) deve arrivare il 2° lead, cioe' CPL sotto €55",
+     "sprecato": 0.0,
+     "flags": [],
+     "recent": {
+      "spend": 15.25,
+      "leads": 1.0,
+      "cpl": 15.25
+     },
+     "trend": 0.0
+    },
+    {
      "id": "52579744519461",
      "name": "Moduli - 1.163 miliardi fermi sui conti",
-     "spend": 15.18,
+     "spend": 15.19,
      "leads": 0.0,
      "cpl": null,
-     "impressions": 1079.0,
+     "impressions": 1081.0,
      "clicks": 20.0,
-     "ctr": 1.853568,
-     "cpm": 14.068582,
-     "reach": 778.0,
-     "frequency": 1.386889,
+     "ctr": 1.850139,
+     "cpm": 14.051804,
+     "reach": 779.0,
+     "frequency": 1.387677,
      "attiva": false,
      "effective_status": "PAUSED",
      "daily_budget": 5.0,
      "status": "watch",
-     "reason": "€15.18 spesi e 0 lead: mancano €94.82 allo stacco",
+     "reason": "€15.19 spesi e 0 lead: mancano €94.81 allo stacco",
      "sprecato": 0.0,
      "flags": [],
      "recent": {
-      "spend": 15.18,
+      "spend": 15.19,
       "leads": 0.0,
       "cpl": null
      },
@@ -189,76 +215,50 @@
     {
      "id": "52580038073061",
      "name": "Moduli - I tuoi risparmi dove ti stanno portando?",
-     "spend": 10.26,
+     "spend": 14.95,
      "leads": 0.0,
      "cpl": null,
-     "impressions": 813.0,
-     "clicks": 21.0,
-     "ctr": 2.583026,
-     "cpm": 12.619926,
-     "reach": 719.0,
-     "frequency": 1.130737,
+     "impressions": 1255.0,
+     "clicks": 31.0,
+     "ctr": 2.47012,
+     "cpm": 11.912351,
+     "reach": 967.0,
+     "frequency": 1.297828,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 5.0,
      "status": "watch",
-     "reason": "€10.26 spesi e 0 lead: mancano €99.74 allo stacco",
+     "reason": "€14.95 spesi e 0 lead: mancano €95.05 allo stacco",
      "sprecato": 0.0,
      "flags": [],
      "recent": {
-      "spend": 10.26,
+      "spend": 14.95,
       "leads": 0.0,
       "cpl": null
      },
      "trend": null
     },
     {
-     "id": "52580033731061",
-     "name": "Moduli - Quanto avrai in pensione?",
-     "spend": 9.92,
-     "leads": 1.0,
-     "cpl": 9.92,
-     "impressions": 773.0,
-     "clicks": 11.0,
-     "ctr": 1.423027,
-     "cpm": 12.833118,
-     "reach": 635.0,
-     "frequency": 1.217323,
-     "attiva": true,
-     "effective_status": "ACTIVE",
-     "daily_budget": 5.0,
-     "status": "early",
-     "reason": "1 lead a €9.92: si lascia girare, ma entro €110 (mancano €100.08) deve arrivare il 2° lead, cioe' CPL sotto €55",
-     "sprecato": 0.0,
-     "flags": [],
-     "recent": {
-      "spend": 9.94,
-      "leads": 1.0,
-      "cpl": 9.94
-     },
-     "trend": 0.02
-    },
-    {
      "id": "52580035469461",
      "name": "Moduli - Hai lavorato per anni",
-     "spend": 9.45,
+     "spend": 14.16,
      "leads": 0.0,
      "cpl": null,
-     "impressions": 974.0,
-     "clicks": 12.0,
-     "ctr": 1.232033,
-     "cpm": 9.702259,
-     "reach": 816.0,
-     "frequency": 1.193627,
+     "impressions": 1361.0,
+     "clicks": 15.0,
+     "ctr": 1.102131,
+     "cpm": 10.404115,
+     "reach": 1053.0,
+     "frequency": 1.292498,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 5.0,
      "status": "watch",
-     "reason": "€9.45 spesi e 0 lead: mancano €100.55 allo stacco",
+     "reason": "€14.16 spesi e 0 lead: mancano €95.84 allo stacco",
      "sprecato": 0.0,
      "flags": [],
      "recent": {
-      "spend": 9.46,
+      "spend": 14.16,
       "leads": 0.0,
       "cpl": null
      },
@@ -277,14 +277,14 @@
    "account_id": "940630012397327",
    "nome_reale": "Luigi Micheloni Banker",
    "currency": "EUR",
-   "spend": 162.15,
+   "spend": 176.22,
    "leads": 9.0,
-   "cpl": 18.02,
+   "cpl": 19.58,
    "sprecato": 0.0,
    "quota_sprecata": 0.0,
-   "impressions": 24373.0,
-   "clicks": 382.0,
-   "n_campagne": 7,
+   "impressions": 26768.0,
+   "clicks": 419.0,
+   "n_campagne": 8,
    "n_kill": 0,
    "n_kill_ancora_accese": 0,
    "brucia_oggi": 0,
@@ -298,30 +298,30 @@
     {
      "id": "52605999729747",
      "name": "Moduli - Affidi il TFR al datore di lavoro?",
-     "spend": 61.7,
+     "spend": 67.46,
      "leads": 6.0,
-     "cpl": 10.28,
-     "impressions": 10848.0,
-     "clicks": 172.0,
-     "ctr": 1.585546,
-     "cpm": 5.687684,
-     "reach": 6056.0,
-     "frequency": 1.791281,
+     "cpl": 11.24,
+     "impressions": 11926.0,
+     "clicks": 182.0,
+     "ctr": 1.526077,
+     "cpm": 5.656549,
+     "reach": 6536.0,
+     "frequency": 1.824663,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 6.0,
      "status": "ok",
-     "reason": "CPL €10.28: dentro i parametri",
+     "reason": "CPL €11.24: dentro i parametri",
      "sprecato": 0.0,
      "flags": [
-      "solo 3.5% dei click diventa lead: modulo o landing da rivedere"
+      "solo 3.3% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 49.6,
-      "leads": 4.0,
-      "cpl": 12.4
+      "spend": 47.45,
+      "leads": 2.0,
+      "cpl": 23.73
      },
-     "trend": 2.12
+     "trend": 12.49
     },
     {
      "id": "52606390674147",
@@ -345,7 +345,7 @@
       "solo 2.5% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 10.46,
+      "spend": 3.33,
       "leads": 0.0,
       "cpl": null
      },
@@ -373,37 +373,37 @@
       "solo 3.0% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 10.08,
-      "leads": 1.0,
-      "cpl": 10.08
+      "spend": 6.97,
+      "leads": 0.0,
+      "cpl": null
      },
-     "trend": -12.03
+     "trend": null
     },
     {
      "id": "52607726864947",
      "name": "Moduli - L'inflazione non fa rumore",
-     "spend": 17.92,
+     "spend": 20.43,
      "leads": 1.0,
-     "cpl": 17.92,
-     "impressions": 2499.0,
-     "clicks": 46.0,
-     "ctr": 1.840736,
-     "cpm": 7.170868,
-     "reach": 1695.0,
-     "frequency": 1.474336,
+     "cpl": 20.43,
+     "impressions": 2953.0,
+     "clicks": 60.0,
+     "ctr": 2.031832,
+     "cpm": 6.918388,
+     "reach": 1951.0,
+     "frequency": 1.513583,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 3.0,
      "status": "early",
-     "reason": "1 lead a €17.92: si lascia girare, ma entro €110 (mancano €92.08) deve arrivare il 2° lead, cioe' CPL sotto €55",
+     "reason": "1 lead a €20.43: si lascia girare, ma entro €110 (mancano €89.57) deve arrivare il 2° lead, cioe' CPL sotto €55",
      "sprecato": 0.0,
      "flags": [
-      "solo 2.2% dei click diventa lead: modulo o landing da rivedere"
+      "solo 1.7% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 17.92,
+      "spend": 20.43,
       "leads": 1.0,
-      "cpl": 17.92
+      "cpl": 20.43
      },
      "trend": 0.0
     },
@@ -427,7 +427,7 @@
      "sprecato": 0.0,
      "flags": [],
      "recent": {
-      "spend": 15.21,
+      "spend": 13.15,
       "leads": 0.0,
       "cpl": null
      },
@@ -436,24 +436,24 @@
     {
      "id": "52610226460547",
      "name": "Moduli - TFR al datore di lavoro? Target Giovani",
-     "spend": 12.53,
+     "spend": 15.11,
      "leads": 0.0,
      "cpl": null,
-     "impressions": 2212.0,
-     "clicks": 27.0,
-     "ctr": 1.220615,
-     "cpm": 5.664557,
-     "reach": 1617.0,
-     "frequency": 1.367965,
-     "attiva": true,
-     "effective_status": "ACTIVE",
+     "impressions": 2635.0,
+     "clicks": 34.0,
+     "ctr": 1.290323,
+     "cpm": 5.734345,
+     "reach": 1920.0,
+     "frequency": 1.372396,
+     "attiva": false,
+     "effective_status": "PAUSED",
      "daily_budget": 4.0,
      "status": "watch",
-     "reason": "€12.53 spesi e 0 lead: mancano €97.47 allo stacco",
+     "reason": "€15.11 spesi e 0 lead: mancano €94.89 allo stacco",
      "sprecato": 0.0,
      "flags": [],
      "recent": {
-      "spend": 12.53,
+      "spend": 15.11,
       "leads": 0.0,
       "cpl": null
      },
@@ -462,24 +462,50 @@
     {
      "id": "52610214028747",
      "name": "Moduli - Costruisci il tuo piano vacanze",
-     "spend": 10.1,
+     "spend": 13.32,
      "leads": 0.0,
      "cpl": null,
-     "impressions": 1374.0,
-     "clicks": 20.0,
-     "ctr": 1.455604,
-     "cpm": 7.350801,
-     "reach": 1079.0,
-     "frequency": 1.273401,
+     "impressions": 1808.0,
+     "clicks": 26.0,
+     "ctr": 1.438053,
+     "cpm": 7.367257,
+     "reach": 1430.0,
+     "frequency": 1.264336,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 3.0,
      "status": "watch",
-     "reason": "€10.10 spesi e 0 lead: mancano €99.90 allo stacco",
+     "reason": "€13.32 spesi e 0 lead: mancano €96.68 allo stacco",
      "sprecato": 0.0,
      "flags": [],
      "recent": {
-      "spend": 10.1,
+      "spend": 13.32,
+      "leads": 0.0,
+      "cpl": null
+     },
+     "trend": null
+    },
+    {
+     "id": "52607857516547",
+     "name": "Moduli - La domanda rivelatrice",
+     "spend": 0.0,
+     "leads": 0.0,
+     "cpl": null,
+     "impressions": 6.0,
+     "clicks": 0.0,
+     "ctr": 0.0,
+     "cpm": 0.0,
+     "reach": 5.0,
+     "frequency": 1.2,
+     "attiva": true,
+     "effective_status": "ACTIVE",
+     "daily_budget": 4.0,
+     "status": "early",
+     "reason": "solo 6 impression: troppo presto per giudicare",
+     "sprecato": 0.0,
+     "flags": [],
+     "recent": {
+      "spend": 0.0,
       "leads": 0.0,
       "cpl": null
      },
@@ -498,13 +524,13 @@
    "account_id": "833628578375108",
    "nome_reale": "Stefano Moratti",
    "currency": "EUR",
-   "spend": 341.08,
-   "leads": 6.0,
-   "cpl": 56.85,
+   "spend": 360.17,
+   "leads": 7.0,
+   "cpl": 51.45,
    "sprecato": 0.0,
    "quota_sprecata": 0.0,
-   "impressions": 45477.0,
-   "clicks": 626.0,
+   "impressions": 48809.0,
+   "clicks": 670.0,
    "n_campagne": 20,
    "n_kill": 0,
    "n_kill_ancora_accese": 0,
@@ -583,11 +609,7 @@
      "flags": [
       "solo 2.9% dei click diventa lead: modulo o landing da rivedere"
      ],
-     "recent": {
-      "spend": 3.11,
-      "leads": 0.0,
-      "cpl": null
-     },
+     "recent": null,
      "trend": null
     },
     {
@@ -611,11 +633,7 @@
      "flags": [
       "CTR 0.85%: il creativo non ferma nessuno"
      ],
-     "recent": {
-      "spend": 5.08,
-      "leads": 0.0,
-      "cpl": null
-     },
+     "recent": null,
      "trend": null
     },
     {
@@ -640,11 +658,11 @@
       "solo 1.6% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 12.82,
-      "leads": 1.0,
-      "cpl": 12.82
+      "spend": 4.14,
+      "leads": 0.0,
+      "cpl": null
      },
-     "trend": -9.58
+     "trend": null
     },
     {
      "id": "120253294796340427",
@@ -668,7 +686,7 @@
       "solo 1.9% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 3.81,
+      "spend": 2.31,
       "leads": 0.0,
       "cpl": null
      },
@@ -725,6 +743,34 @@
      "trend": null
     },
     {
+     "id": "120253546544010427",
+     "name": "Moduli - Capisci il valore del tempo",
+     "spend": 15.9,
+     "leads": 1.0,
+     "cpl": 15.9,
+     "impressions": 2656.0,
+     "clicks": 32.0,
+     "ctr": 1.204819,
+     "cpm": 5.986446,
+     "reach": 2016.0,
+     "frequency": 1.31746,
+     "attiva": true,
+     "effective_status": "ACTIVE",
+     "daily_budget": 3.0,
+     "status": "early",
+     "reason": "1 lead a €15.90: si lascia girare, ma entro €110 (mancano €94.10) deve arrivare il 2° lead, cioe' CPL sotto €55",
+     "sprecato": 0.0,
+     "flags": [
+      "solo 3.1% dei click diventa lead: modulo o landing da rivedere"
+     ],
+     "recent": {
+      "spend": 15.92,
+      "leads": 1.0,
+      "cpl": 15.92
+     },
+     "trend": 0.02
+    },
+    {
      "id": "120253343552290427",
      "name": "Moduli - La tua banca ti informa?",
      "spend": 15.61,
@@ -743,11 +789,7 @@
      "reason": "€15.61 spesi e 0 lead: mancano €94.39 allo stacco",
      "sprecato": 0.0,
      "flags": [],
-     "recent": {
-      "spend": 2.33,
-      "leads": 0.0,
-      "cpl": null
-     },
+     "recent": null,
      "trend": null
     },
     {
@@ -848,7 +890,7 @@
      "sprecato": 0.0,
      "flags": [],
      "recent": {
-      "spend": 15.05,
+      "spend": 10.49,
       "leads": 0.0,
       "cpl": null
      },
@@ -881,78 +923,52 @@
      "trend": null
     },
     {
-     "id": "120253546544010427",
-     "name": "Moduli - Capisci il valore del tempo",
-     "spend": 12.07,
-     "leads": 1.0,
-     "cpl": 12.07,
-     "impressions": 1968.0,
-     "clicks": 20.0,
-     "ctr": 1.01626,
-     "cpm": 6.13313,
-     "reach": 1554.0,
-     "frequency": 1.266409,
-     "attiva": true,
-     "effective_status": "ACTIVE",
-     "daily_budget": 3.0,
-     "status": "early",
-     "reason": "1 lead a €12.07: si lascia girare, ma entro €110 (mancano €97.93) deve arrivare il 2° lead, cioe' CPL sotto €55",
-     "sprecato": 0.0,
-     "flags": [],
-     "recent": {
-      "spend": 12.07,
-      "leads": 1.0,
-      "cpl": 12.07
-     },
-     "trend": 0.0
-    },
-    {
-     "id": "120253546437500427",
-     "name": "Moduli - Il Veneto sa pianificare il futuro",
-     "spend": 11.04,
+     "id": "120253628014680427",
+     "name": "Moduli - Sei un libero professionista",
+     "spend": 14.83,
      "leads": 0.0,
      "cpl": null,
-     "impressions": 1930.0,
-     "clicks": 28.0,
-     "ctr": 1.450777,
-     "cpm": 5.720207,
-     "reach": 1599.0,
-     "frequency": 1.207004,
+     "impressions": 2669.0,
+     "clicks": 32.0,
+     "ctr": 1.198951,
+     "cpm": 5.556388,
+     "reach": 1933.0,
+     "frequency": 1.380755,
      "attiva": true,
      "effective_status": "ACTIVE",
-     "daily_budget": 2.0,
+     "daily_budget": 4.0,
      "status": "watch",
-     "reason": "€11.04 spesi e 0 lead: mancano €98.96 allo stacco",
+     "reason": "€14.83 spesi e 0 lead: mancano €95.17 allo stacco",
      "sprecato": 0.0,
      "flags": [],
      "recent": {
-      "spend": 11.04,
+      "spend": 14.83,
       "leads": 0.0,
       "cpl": null
      },
      "trend": null
     },
     {
-     "id": "120253628014680427",
-     "name": "Moduli - Sei un libero professionista",
-     "spend": 9.79,
+     "id": "120253546437500427",
+     "name": "Moduli - Il Veneto sa pianificare il futuro",
+     "spend": 13.58,
      "leads": 0.0,
      "cpl": null,
-     "impressions": 1730.0,
-     "clicks": 18.0,
-     "ctr": 1.040462,
-     "cpm": 5.65896,
-     "reach": 1333.0,
-     "frequency": 1.297824,
+     "impressions": 2369.0,
+     "clicks": 33.0,
+     "ctr": 1.392993,
+     "cpm": 5.732377,
+     "reach": 1914.0,
+     "frequency": 1.237722,
      "attiva": true,
      "effective_status": "ACTIVE",
-     "daily_budget": 4.0,
+     "daily_budget": 2.0,
      "status": "watch",
-     "reason": "€9.79 spesi e 0 lead: mancano €100.21 allo stacco",
+     "reason": "€13.58 spesi e 0 lead: mancano €96.42 allo stacco",
      "sprecato": 0.0,
      "flags": [],
      "recent": {
-      "spend": 9.79,
+      "spend": 13.58,
       "leads": 0.0,
       "cpl": null
      },
@@ -961,24 +977,24 @@
     {
      "id": "120253694280770427",
      "name": "Moduli - Se sei un libero professionista",
-     "spend": 6.26,
+     "spend": 10.44,
      "leads": 0.0,
      "cpl": null,
-     "impressions": 1162.0,
-     "clicks": 20.0,
-     "ctr": 1.72117,
-     "cpm": 5.387263,
-     "reach": 834.0,
-     "frequency": 1.393285,
+     "impressions": 1788.0,
+     "clicks": 26.0,
+     "ctr": 1.454139,
+     "cpm": 5.838926,
+     "reach": 1193.0,
+     "frequency": 1.498743,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 4.0,
      "status": "watch",
-     "reason": "€6.26 spesi e 0 lead: mancano €103.74 allo stacco",
+     "reason": "€10.44 spesi e 0 lead: mancano €99.56 allo stacco",
      "sprecato": 0.0,
      "flags": [],
      "recent": {
-      "spend": 6.26,
+      "spend": 10.44,
       "leads": 0.0,
       "cpl": null
      },
@@ -987,28 +1003,28 @@
     {
      "id": "120253686684730427",
      "name": "Moduli - Protezione dai costi nascosti",
-     "spend": 5.25,
-     "leads": 0.0,
-     "cpl": null,
-     "impressions": 1108.0,
-     "clicks": 15.0,
-     "ctr": 1.353791,
-     "cpm": 4.738267,
-     "reach": 883.0,
-     "frequency": 1.254813,
+     "spend": 8.75,
+     "leads": 1.0,
+     "cpl": 8.75,
+     "impressions": 1748.0,
+     "clicks": 22.0,
+     "ctr": 1.258581,
+     "cpm": 5.005721,
+     "reach": 1292.0,
+     "frequency": 1.352941,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 3.0,
-     "status": "watch",
-     "reason": "€5.25 spesi e 0 lead: mancano €104.75 allo stacco",
+     "status": "early",
+     "reason": "1 lead a €8.75: si lascia girare, ma entro €110 (mancano €101.25) deve arrivare il 2° lead, cioe' CPL sotto €55",
      "sprecato": 0.0,
      "flags": [],
      "recent": {
-      "spend": 5.25,
-      "leads": 0.0,
-      "cpl": null
+      "spend": 8.75,
+      "leads": 1.0,
+      "cpl": 8.75
      },
-     "trend": null
+     "trend": 0.0
     },
     {
      "id": "120253560315260427",
@@ -1024,7 +1040,7 @@
      "frequency": 1.1,
      "attiva": false,
      "effective_status": "PAUSED",
-     "daily_budget": 3.0,
+     "daily_budget": 4.0,
      "status": "watch",
      "reason": "€2.48 spesi e 0 lead: mancano €107.52 allo stacco",
      "sprecato": 0.0,
@@ -1051,14 +1067,14 @@
    "account_id": "27645634798460719",
    "nome_reale": "Marco La Corte",
    "currency": "EUR",
-   "spend": 258.24,
-   "leads": 7.0,
-   "cpl": 36.89,
+   "spend": 272.94,
+   "leads": 8.0,
+   "cpl": 34.12,
    "sprecato": 0.0,
    "quota_sprecata": 0.0,
-   "impressions": 38611.0,
-   "clicks": 634.0,
-   "n_campagne": 14,
+   "impressions": 40883.0,
+   "clicks": 689.0,
+   "n_campagne": 15,
    "n_kill": 0,
    "n_kill_ancora_accese": 0,
    "brucia_oggi": 0,
@@ -1072,30 +1088,30 @@
     {
      "id": "120251031963370566",
      "name": "Moduli - I soldi sul conto si sciolgono",
-     "spend": 34.12,
-     "leads": 2.0,
-     "cpl": 17.06,
-     "impressions": 4303.0,
-     "clicks": 95.0,
-     "ctr": 2.207762,
-     "cpm": 7.929352,
-     "reach": 2787.0,
-     "frequency": 1.543954,
+     "spend": 40.45,
+     "leads": 3.0,
+     "cpl": 13.48,
+     "impressions": 5261.0,
+     "clicks": 128.0,
+     "ctr": 2.432998,
+     "cpm": 7.688652,
+     "reach": 3174.0,
+     "frequency": 1.65753,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 6.0,
      "status": "ok",
-     "reason": "CPL €17.06: dentro i parametri",
+     "reason": "CPL €13.48: dentro i parametri",
      "sprecato": 0.0,
      "flags": [
-      "solo 2.1% dei click diventa lead: modulo o landing da rivedere"
+      "solo 2.3% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 34.76,
-      "leads": 2.0,
-      "cpl": 17.38
+      "spend": 40.45,
+      "leads": 3.0,
+      "cpl": 13.48
      },
-     "trend": 0.32
+     "trend": 0.0
     },
     {
      "id": "120250911654100566",
@@ -1118,11 +1134,7 @@
      "flags": [
       "solo 2.4% dei click diventa lead: modulo o landing da rivedere"
      ],
-     "recent": {
-      "spend": 3.95,
-      "leads": 0.0,
-      "cpl": null
-     },
+     "recent": null,
      "trend": null
     },
     {
@@ -1148,11 +1160,11 @@
       "solo 2.8% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 22.35,
+      "spend": 18.57,
       "leads": 1.0,
-      "cpl": 22.35
+      "cpl": 18.57
      },
-     "trend": 0.0
+     "trend": -3.78
     },
     {
      "id": "120250790558870566",
@@ -1175,12 +1187,36 @@
      "flags": [
       "solo 0.9% dei click diventa lead: modulo o landing da rivedere"
      ],
-     "recent": {
-      "spend": 1.56,
-      "leads": 0.0,
-      "cpl": null
-     },
+     "recent": null,
      "trend": null
+    },
+    {
+     "id": "120251040275320566",
+     "name": "Moduli - Investire bene a Taranto",
+     "spend": 22.19,
+     "leads": 1.0,
+     "cpl": 22.19,
+     "impressions": 3111.0,
+     "clicks": 75.0,
+     "ctr": 2.4108,
+     "cpm": 7.132755,
+     "reach": 1612.0,
+     "frequency": 1.929901,
+     "attiva": false,
+     "effective_status": "PAUSED",
+     "daily_budget": 5.0,
+     "status": "early",
+     "reason": "1 lead a €22.19: si lascia girare, ma entro €110 (mancano €87.81) deve arrivare il 2° lead, cioe' CPL sotto €55",
+     "sprecato": 0.0,
+     "flags": [
+      "solo 1.3% dei click diventa lead: modulo o landing da rivedere"
+     ],
+     "recent": {
+      "spend": 22.19,
+      "leads": 1.0,
+      "cpl": 22.19
+     },
+     "trend": 0.0
     },
     {
      "id": "120250911738470566",
@@ -1205,34 +1241,6 @@
      ],
      "recent": null,
      "trend": null
-    },
-    {
-     "id": "120251040275320566",
-     "name": "Moduli - Investire bene a Taranto",
-     "spend": 17.75,
-     "leads": 1.0,
-     "cpl": 17.75,
-     "impressions": 2472.0,
-     "clicks": 61.0,
-     "ctr": 2.467638,
-     "cpm": 7.180421,
-     "reach": 1372.0,
-     "frequency": 1.801749,
-     "attiva": true,
-     "effective_status": "ACTIVE",
-     "daily_budget": 5.0,
-     "status": "early",
-     "reason": "1 lead a €17.75: si lascia girare, ma entro €110 (mancano €92.25) deve arrivare il 2° lead, cioe' CPL sotto €55",
-     "sprecato": 0.0,
-     "flags": [
-      "solo 1.6% dei click diventa lead: modulo o landing da rivedere"
-     ],
-     "recent": {
-      "spend": 18.2,
-      "leads": 1.0,
-      "cpl": 18.2
-     },
-     "trend": 0.45
     },
     {
      "id": "120250818838410566",
@@ -1298,7 +1306,7 @@
      "sprecato": 0.0,
      "flags": [],
      "recent": {
-      "spend": 15.85,
+      "spend": 8.95,
       "leads": 0.0,
       "cpl": null
      },
@@ -1374,7 +1382,7 @@
      "sprecato": 0.0,
      "flags": [],
      "recent": {
-      "spend": 15.14,
+      "spend": 10.91,
       "leads": 0.0,
       "cpl": null
      },
@@ -1386,12 +1394,12 @@
      "spend": 15.1,
      "leads": 0.0,
      "cpl": null,
-     "impressions": 1634.0,
+     "impressions": 1636.0,
      "clicks": 24.0,
-     "ctr": 1.468788,
-     "cpm": 9.241126,
-     "reach": 1187.0,
-     "frequency": 1.37658,
+     "ctr": 1.466993,
+     "cpm": 9.229829,
+     "reach": 1191.0,
+     "frequency": 1.373636,
      "attiva": false,
      "effective_status": "PAUSED",
      "daily_budget": 5.0,
@@ -1409,24 +1417,50 @@
     {
      "id": "120251053166740566",
      "name": "Moduli - Il futuro non si costruisce con i soldi fermi",
-     "spend": 7.52,
+     "spend": 11.38,
      "leads": 0.0,
      "cpl": null,
-     "impressions": 1165.0,
-     "clicks": 16.0,
-     "ctr": 1.373391,
-     "cpm": 6.454936,
-     "reach": 914.0,
-     "frequency": 1.274617,
+     "impressions": 1826.0,
+     "clicks": 24.0,
+     "ctr": 1.314348,
+     "cpm": 6.232202,
+     "reach": 1324.0,
+     "frequency": 1.379154,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 4.0,
      "status": "watch",
-     "reason": "€7.52 spesi e 0 lead: mancano €102.48 allo stacco",
+     "reason": "€11.38 spesi e 0 lead: mancano €98.62 allo stacco",
      "sprecato": 0.0,
      "flags": [],
      "recent": {
-      "spend": 8.05,
+      "spend": 11.38,
+      "leads": 0.0,
+      "cpl": null
+     },
+     "trend": null
+    },
+    {
+     "id": "120251054901810566",
+     "name": "Moduli - TFR al datore di lavoro",
+     "spend": 0.07,
+     "leads": 0.0,
+     "cpl": null,
+     "impressions": 12.0,
+     "clicks": 0.0,
+     "ctr": 0.0,
+     "cpm": 5.833333,
+     "reach": 11.0,
+     "frequency": 1.090909,
+     "attiva": true,
+     "effective_status": "ACTIVE",
+     "daily_budget": 6.0,
+     "status": "early",
+     "reason": "solo 12 impression: troppo presto per giudicare",
+     "sprecato": 0.0,
+     "flags": [],
+     "recent": {
+      "spend": 0.07,
       "leads": 0.0,
       "cpl": null
      },
