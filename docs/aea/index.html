@@ -160,6 +160,14 @@ footer{margin-top:44px;color:var(--muted);font-size:12px;border-top:1px solid va
   <div id="clienti"></div>
   <div class="fermi" id="fermi"></div>
 
+  <!-- ALLARMI CONFIGURAZIONE — compare solo dove esiste allarmi.json. Sta in ALTO
+       perche' e' l'unica cosa che va guardata prima dei numeri: se una campagna e'
+       nata male, i numeri sotto stanno misurando una cosa rotta.
+       Dati da motore/collaudo_ads.py (Meta + Drive). -->
+  <section id="allarmi" hidden></section>
+  <style>#allarmi .grave{color:var(--crit);font-weight:700}
+  #allarmi .medio{color:var(--accent);font-weight:650}
+  #allarmi .lieve{color:var(--muted)}</style>
   <!-- COSTI CHE SCAPPANO — compare solo dove esiste costi.json (la dashboard di
        casa AEA). Stessa domanda delle ads, sull'altro lato: dove escono soldi
        che non dovrebbero. Dati da motore/costi_che_scappano.py (Zoho Books). -->
@@ -462,6 +470,38 @@ document.getElementById("unlock").addEventListener("click", e => {
   const p = prompt("Passphrase per vedere i nomi veri di clienti e campagne:");
   if (p) unlock(p, false);
 });
+
+
+/* ---------- ALLARMI DI CONFIGURAZIONE ---------- */
+fetch("allarmi.json", {cache:"no-store"}).then(r => r.ok ? r.json() : null).then(d => {
+  if (!d || !d.voci) return;
+  const el = document.getElementById("allarmi");
+  const cls = g => g >= 3 ? "grave" : (g === 2 ? "medio" : "lieve");
+  const righe = d.voci.slice(0,40).map(v => `<tr>
+      <td>${v.cliente}</td>
+      <td class="${cls(v.gravita)}">${v.tipo}</td>
+      <td>${v.dettaglio || ""}</td>
+    </tr>`).join("");
+  const gravi = d.voci.filter(v => v.gravita >= 3).length;
+  el.innerHTML = `
+    <h2 style="font-size:17px;margin:34px 0 6px">Campagne e moduli nati male</h2>
+    <p style="font-size:12.5px;color:var(--muted);line-height:1.55;margin:0 0 12px">
+      Controllo di configurazione, non di risultato: dice se una campagna o un modulo
+      e' stato creato in modo che i lead si perdano o il budget vada nel posto sbagliato.
+      <b style="color:var(--ink)">${d.voci.length} segnalazioni</b> su ${d.n_account_rossi}
+      account${gravi ? ` · <span class="grave">${gravi} gravi, si perdono lead o l'account e' fermo</span>` : ""}.
+      Puliti: ${d.puliti.join(", ") || "nessuno"}.
+    </p>
+    <table>
+      <thead><tr><th>Account</th><th>Cosa</th><th>Dove</th></tr></thead>
+      <tbody>${righe || '<tr><td colspan="3">Nessun allarme.</td></tr>'}</tbody>
+    </table>
+    <p style="font-size:12px;color:var(--muted);margin-top:10px">
+      Rosso = si perdono lead o l'account e' fermo. Arancio = soldi che escono male.
+      Grigio = fuori regola 15/22 o budget sotto soglia. Aggiornato ${d.generato}.
+    </p>`;
+  el.hidden = false;
+}).catch(() => {});
 
 /* ---------- COSTI CHE SCAPPANO ---------- */
 const COSTI_COL = {scappato:"var(--crit)", nuovo:"var(--accent)", sparito:"var(--muted)", stabile:"var(--good)"};
