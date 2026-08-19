@@ -1,5 +1,5 @@
 {
- "generato": "19/08 08:14",
+ "generato": "19/08 14:55",
  "n_account_rossi": 10,
  "n_puliti": 0,
  "puliti": [],
@@ -257,9 +257,9 @@
    "gravita": 1
   },
   {
-   "cliente": "CF-SM",
+   "cliente": "FB",
    "tipo": "BUDGET SCOPERTO",
-   "dettaglio": "14.00 €/g sotto i 15",
+   "dettaglio": "10.00 €/g sotto i 15",
    "gravita": 1
   }
  ]
