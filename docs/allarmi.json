@@ -1,0 +1,260 @@
+{
+ "generato": "19/08 04:56",
+ "n_account_rossi": 10,
+ "n_puliti": 0,
+ "puliti": [],
+ "voci": [
+  {
+   "cliente": "ASS-AR1",
+   "tipo": "NON CONSEGNA",
+   "dettaglio": "Moduli - il tuo risparmio - Copia · ieri 0.00 €",
+   "gravita": 3
+  },
+  {
+   "cliente": "ASS-AR1",
+   "tipo": "NON CONSEGNA",
+   "dettaglio": "Moduli - risparmia 400 chf · ieri 0.00 €",
+   "gravita": 3
+  },
+  {
+   "cliente": "ASS-AR1",
+   "tipo": "NON CONSEGNA",
+   "dettaglio": "Moduli - stai spendendo troppo foto - Copia · ieri 0.00 €",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-ES",
+   "tipo": "NON CONSEGNA",
+   "dettaglio": "Moduli - anche con 100€ al mese - Copia · ieri 0.00 €",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-ES",
+   "tipo": "NON CONSEGNA",
+   "dettaglio": "Moduli - inizia con meno di 1500 - Copia · ieri 0.00 €",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-ES",
+   "tipo": "NON CONSEGNA",
+   "dettaglio": "Moduli - versamenti da 1200 - Copia · ieri 0.00 €",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-MDL",
+   "tipo": "NON CONSEGNA",
+   "dettaglio": "Moduli - avangers · ieri 0.00 €",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-MDL",
+   "tipo": "NON CONSEGNA",
+   "dettaglio": "Moduli - costruire port · ieri 0.00 €",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-MDL",
+   "tipo": "NON CONSEGNA",
+   "dettaglio": "Moduli - rifatta - Copia · ieri 0.00 €",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-MDL",
+   "tipo": "NON CONSEGNA",
+   "dettaglio": "Moduli - rifatta · ieri 0.00 €",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-MLC",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "facebook/facebook_reels · 3.23 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-MLC",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "instagram/instagram_reels · 1.61 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-RD",
+   "tipo": "NON CONSEGNA",
+   "dettaglio": "Moduli - La filiale cambia, il patrimonio resta · ieri 0.00 €",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-RD",
+   "tipo": "NON CONSEGNA",
+   "dettaglio": "Moduli - Video Consulenza Risparmiatori Puglia · ieri 0.00 €",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-RD",
+   "tipo": "NON CONSEGNA",
+   "dettaglio": "Moduli - €7.500 all'anno in commissioni · ieri 0.00 €",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-SM",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "facebook/facebook_reels · 2.07 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-SM",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "instagram/instagram_reels · 6.36 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "gravita": 3
+  },
+  {
+   "cliente": "FB",
+   "tipo": "NON CONSEGNA",
+   "dettaglio": "Moduli - La banca guadagna quando tu perdi · ieri 0.00 €",
+   "gravita": 3
+  },
+  {
+   "cliente": "FB",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "facebook/facebook_reels · 3.26 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "gravita": 3
+  },
+  {
+   "cliente": "FB",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "instagram/instagram_reels · 4.66 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "gravita": 3
+  },
+  {
+   "cliente": "LMB",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "facebook/facebook_reels · 0.92 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "gravita": 3
+  },
+  {
+   "cliente": "LMB",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "instagram/instagram_reels · 3.54 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-RD",
+   "tipo": "POSIZIONAMENTI AUTOMATICI",
+   "dettaglio": "Moduli - La filiale cambia, il patrimonio resta",
+   "gravita": 2
+  },
+  {
+   "cliente": "CF-RD",
+   "tipo": "POSIZIONAMENTI AUTOMATICI",
+   "dettaglio": "Moduli - Video Consulenza Risparmiatori Puglia",
+   "gravita": 2
+  },
+  {
+   "cliente": "CF-RD",
+   "tipo": "POSIZIONAMENTI AUTOMATICI",
+   "dettaglio": "Moduli - €7.500 all'anno in commissioni",
+   "gravita": 2
+  },
+  {
+   "cliente": "ZEN",
+   "tipo": "POSIZIONAMENTI AUTOMATICI",
+   "dettaglio": "Nuova campagna Contatti step",
+   "gravita": 2
+  },
+  {
+   "cliente": "ZEN",
+   "tipo": "POSIZIONAMENTI AUTOMATICI",
+   "dettaglio": "Nuova campagna dispongo di un capitale",
+   "gravita": 2
+  },
+  {
+   "cliente": "AEA-HOUSE",
+   "tipo": "REELS ATTIVI ['facebook_reels', 'facebook_reels_overlay']",
+   "dettaglio": "Venditore - Moduli",
+   "gravita": 1
+  },
+  {
+   "cliente": "AEA-HOUSE",
+   "tipo": "REELS ATTIVI ['facebook_reels_overlay']",
+   "dettaglio": "ASSIC -Moduli -immagine - Copia 13",
+   "gravita": 1
+  },
+  {
+   "cliente": "AEA-HOUSE",
+   "tipo": "REELS ATTIVI ['facebook_reels_overlay']",
+   "dettaglio": "Moduli -immagine - Copia 10",
+   "gravita": 1
+  },
+  {
+   "cliente": "AEA-HOUSE",
+   "tipo": "REELS ATTIVI ['facebook_reels_overlay']",
+   "dettaglio": "Moduli -immagine - Copia 9",
+   "gravita": 1
+  },
+  {
+   "cliente": "ASS-AR1",
+   "tipo": "REELS ATTIVI ['facebook_reels_overlay']",
+   "dettaglio": "Moduli - il tuo risparmio - Copia",
+   "gravita": 1
+  },
+  {
+   "cliente": "ASS-AR1",
+   "tipo": "REELS ATTIVI ['facebook_reels_overlay']",
+   "dettaglio": "Moduli - risparmia 400 chf",
+   "gravita": 1
+  },
+  {
+   "cliente": "ASS-AR1",
+   "tipo": "REELS ATTIVI ['facebook_reels_overlay']",
+   "dettaglio": "Moduli - stai spendendo troppo foto - Copia",
+   "gravita": 1
+  },
+  {
+   "cliente": "CF-ES",
+   "tipo": "REELS ATTIVI ['facebook_reels_overlay']",
+   "dettaglio": "Moduli - anche con 100€ al mese - Copia",
+   "gravita": 1
+  },
+  {
+   "cliente": "CF-ES",
+   "tipo": "REELS ATTIVI ['facebook_reels_overlay']",
+   "dettaglio": "Moduli - inizia con meno di 1500 - Copia",
+   "gravita": 1
+  },
+  {
+   "cliente": "CF-ES",
+   "tipo": "REELS ATTIVI ['facebook_reels_overlay']",
+   "dettaglio": "Moduli - versamenti da 1200 - Copia",
+   "gravita": 1
+  },
+  {
+   "cliente": "CF-MDL",
+   "tipo": "REELS ATTIVI ['facebook_reels_overlay']",
+   "dettaglio": "Moduli - avangers",
+   "gravita": 1
+  },
+  {
+   "cliente": "CF-MDL",
+   "tipo": "REELS ATTIVI ['facebook_reels_overlay']",
+   "dettaglio": "Moduli - costruire port",
+   "gravita": 1
+  },
+  {
+   "cliente": "CF-MDL",
+   "tipo": "REELS ATTIVI ['facebook_reels_overlay']",
+   "dettaglio": "Moduli - rifatta",
+   "gravita": 1
+  },
+  {
+   "cliente": "CF-MDL",
+   "tipo": "REELS ATTIVI ['facebook_reels_overlay']",
+   "dettaglio": "Moduli - rifatta - Copia",
+   "gravita": 1
+  },
+  {
+   "cliente": "CF-SM",
+   "tipo": "BUDGET SCOPERTO",
+   "dettaglio": "14.00 €/g sotto i 15",
+   "gravita": 1
+  }
+ ]
+}
