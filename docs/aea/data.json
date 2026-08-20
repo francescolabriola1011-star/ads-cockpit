@@ -1,7 +1,7 @@
 {
  "titolo": "AI Elite Advisory",
  "sottotitolo": "casa nostra",
- "generato": "2026-08-20T08:15:01+02:00",
+ "generato": "2026-08-20T08:20:54+02:00",
  "periodo": {
   "da": "2026-01-01",
   "a": "2026-08-20",
@@ -22,7 +22,7 @@
   "cvr_min_clicks": 30
  },
  "totali": {
-  "spesa": 3511.62,
+  "spesa": 3511.75,
   "lead": 172.0,
   "cpl": 20.42,
   "sprecato": 7.1,
@@ -41,12 +41,12 @@
    "account_id": "859478370532394",
    "nome_reale": "AI Elite Advisory",
    "currency": "EUR",
-   "spend": 3511.62,
+   "spend": 3511.75,
    "leads": 172.0,
    "cpl": 20.42,
    "sprecato": 7.1,
    "quota_sprecata": 0.2,
-   "impressions": 337728.0,
+   "impressions": 337756.0,
    "clicks": 4984.0,
    "cvr": 3.45,
    "n_campagne": 126,
@@ -136,7 +136,7 @@
     },
     {
      "id": "120246542889040629",
-     "name": "Moduli - video promotore [RIPROVA]",
+     "name": "Moduli - video promotore",
      "spend": 213.68,
      "leads": 14.0,
      "cpl": 15.26,
@@ -153,25 +153,23 @@
      "status": "ok",
      "reason": "CPL €15.26: dentro i parametri",
      "sprecato": 0.0,
-     "flags": [
-      "DA RIPROVARE: staccata a torto, aveva campione e CPL sotto target"
-     ],
+     "flags": [],
      "recent": null,
      "trend": null
     },
     {
      "id": "120249368205620629",
      "name": "ASSIC -Moduli -immagine - Copia 13",
-     "spend": 189.52,
+     "spend": 189.55,
      "leads": 32.0,
      "cpl": 5.92,
-     "impressions": 23998.0,
+     "impressions": 24007.0,
      "clicks": 486.0,
      "cvr": 6.58,
-     "ctr": 2.025169,
-     "cpm": 7.897325,
+     "ctr": 2.02441,
+     "cpm": 7.895614,
      "reach": 6953.0,
-     "frequency": 3.45146,
+     "frequency": 3.452754,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 20.0,
@@ -182,7 +180,7 @@
       "frequenza 3.5: pubblico bruciato, cambia audience"
      ],
      "recent": {
-      "spend": 134.25,
+      "spend": 134.28,
       "leads": 22.0,
       "cpl": 6.1
      },
@@ -291,7 +289,7 @@
     },
     {
      "id": "120246368631780629",
-     "name": "Moduli - step by step [RIPROVA]",
+     "name": "Moduli - step by step",
      "spend": 74.13,
      "leads": 10.0,
      "cpl": 7.41,
@@ -308,9 +306,7 @@
      "status": "winner",
      "reason": "CPL €7.41: sotto €10, ci si mette budget",
      "sprecato": 0.0,
-     "flags": [
-      "DA RIPROVARE: staccata a torto, aveva campione e CPL sotto target"
-     ],
+     "flags": [],
      "recent": null,
      "trend": null
     },
@@ -365,29 +361,29 @@
     {
      "id": "120249502985680629",
      "name": "Moduli -immagine - Copia 9",
-     "spend": 49.94,
+     "spend": 50.01,
      "leads": 4.0,
-     "cpl": 12.48,
-     "impressions": 7934.0,
+     "cpl": 12.5,
+     "impressions": 7942.0,
      "clicks": 59.0,
      "cvr": 6.78,
-     "ctr": 0.743635,
-     "cpm": 6.294429,
+     "ctr": 0.742886,
+     "cpm": 6.296903,
      "reach": 3537.0,
-     "frequency": 2.243144,
+     "frequency": 2.245406,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 10.0,
      "status": "ok",
-     "reason": "CPL €12.48: dentro i parametri",
+     "reason": "CPL €12.50: dentro i parametri",
      "sprecato": 0.0,
      "flags": [
       "CTR 0.74%: il creativo non ferma nessuno"
      ],
      "recent": {
-      "spend": 49.94,
+      "spend": 50.01,
       "leads": 4.0,
-      "cpl": 12.48
+      "cpl": 12.5
      },
      "trend": 0.0
     },
@@ -1423,27 +1419,27 @@
     {
      "id": "120249130741210629",
      "name": "IG Traffico - vs Barravecchia Campagna - Copia 5",
-     "spend": 17.26,
+     "spend": 17.29,
      "leads": 0.0,
      "cpl": null,
-     "impressions": 7665.0,
+     "impressions": 7676.0,
      "clicks": 357.0,
      "cvr": 0.0,
-     "ctr": 4.657534,
-     "cpm": 2.251794,
+     "ctr": 4.65086,
+     "cpm": 2.252475,
      "reach": 6386.0,
-     "frequency": 1.200282,
+     "frequency": 1.202004,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 4.0,
      "status": "watch",
-     "reason": "€17.26 spesi e 0 lead: mancano €12.74 allo stacco",
+     "reason": "€17.29 spesi e 0 lead: mancano €12.71 allo stacco",
      "sprecato": 0.0,
      "flags": [
       "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 7.39,
+      "spend": 7.42,
       "leads": 0.0,
       "cpl": null
      },
@@ -3083,7 +3079,7 @@
    ],
    "hiring": {
     "n": 6,
-    "spend": 165.46,
+    "spend": 165.49,
     "leads": 97.0
    },
    "campagne_hiring": [
@@ -3144,16 +3140,16 @@
     {
      "id": "120246443902370629",
      "name": "Venditore - Moduli",
-     "spend": 92.86,
+     "spend": 92.89,
      "leads": 24.0,
      "cpl": 3.87,
-     "impressions": 4419.0,
+     "impressions": 4421.0,
      "clicks": 223.0,
      "cvr": 10.76,
-     "ctr": 5.046391,
-     "cpm": 21.013804,
+     "ctr": 5.044108,
+     "cpm": 21.011083,
      "reach": 1915.0,
-     "frequency": 2.307572,
+     "frequency": 2.308616,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 6.0,
