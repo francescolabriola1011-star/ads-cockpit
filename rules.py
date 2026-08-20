@@ -45,6 +45,10 @@ class Rules:
         self.ctr_floor = _f(r["ctr_floor_pct"])
         self.freq_ceiling = _f(r["frequency_ceiling"])
         self.min_impr = _f(r["min_impressions"])
+        # Campagne staccate a torto, da tenere sott'occhio: vengono dal config,
+        # cosi' la lista si cambia senza toccare il codice.
+        self.riprova = {str(x).strip().lower()
+                        for x in (cfg.get("riprova_candidate") or [])}
         # CVR click->lead: sotto la soglia il collo e' il modulo, non le ads (20/8/2026)
         self.cvr_floor = _f(r.get("cvr_floor_pct") or 4.0)
         self.cvr_min_clicks = _f(r.get("cvr_min_clicks") or 30)
@@ -115,6 +119,9 @@ class Rules:
                 out.append(f"solo {cvr:.1f}% dei click diventa lead: modulo o landing da rivedere")
         if c["spend"] > 0 and c["impressions"] == 0:
             out.append("spesa senza impression: campagna in errore, controlla subito")
+        nome = str(c.get("name") or c.get("nome") or "").strip().lower()
+        if nome and nome in self.riprova:
+            out.append("DA RIPROVARE: staccata a torto, aveva campione e CPL sotto target")
         return out
 
     # ---------------- riallocazione ----------------
