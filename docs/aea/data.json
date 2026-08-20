@@ -1,7 +1,7 @@
 {
  "titolo": "AI Elite Advisory",
  "sottotitolo": "casa nostra",
- "generato": "2026-08-20T07:31:28+02:00",
+ "generato": "2026-08-20T08:10:26+02:00",
  "periodo": {
   "da": "2026-01-01",
   "a": "2026-08-20",
@@ -22,16 +22,16 @@
   "cvr_min_clicks": 30
  },
  "totali": {
-  "spesa": 3510.61,
+  "spesa": 3511.55,
   "lead": 172.0,
-  "cpl": 20.41,
+  "cpl": 20.42,
   "sprecato": 7.1,
   "quota_sprecata": 0.2,
   "sprecato_al_mese": 0.92,
   "brucia_oggi": 0,
   "da_staccare_ora": 0,
-  "clicks": 4975.0,
-  "cvr": 3.46,
+  "clicks": 4982.0,
+  "cvr": 3.45,
   "clienti": 1,
   "campagne": 126
  },
@@ -41,21 +41,21 @@
    "account_id": "859478370532394",
    "nome_reale": "AI Elite Advisory",
    "currency": "EUR",
-   "spend": 3510.61,
+   "spend": 3511.55,
    "leads": 172.0,
-   "cpl": 20.41,
+   "cpl": 20.42,
    "sprecato": 7.1,
    "quota_sprecata": 0.2,
-   "impressions": 337560.0,
-   "clicks": 4975.0,
-   "cvr": 3.46,
+   "impressions": 337706.0,
+   "clicks": 4982.0,
+   "cvr": 3.45,
    "n_campagne": 126,
    "n_kill": 2,
    "n_kill_ancora_accese": 0,
    "brucia_oggi": 0,
    "riallocazione": {
     "budget_da_spostare": 103.1,
-    "cpl_vincente": 6.26,
+    "cpl_vincente": 6.28,
     "lead_prudente": 4,
     "lead_ottimistico": 16
    },
@@ -110,7 +110,7 @@
     },
     {
      "id": "120246542937170629",
-     "name": "Moduli -video cfa",
+     "name": "Moduli -video cfa [RIPROVA]",
      "spend": 421.21,
      "leads": 30.0,
      "cpl": 14.04,
@@ -128,15 +128,14 @@
      "reason": "CPL €14.04: dentro i parametri",
      "sprecato": 0.0,
      "flags": [
-      "frequenza 2.8: pubblico bruciato, cambia audience",
-      "DA RIPROVARE: staccata a torto, aveva campione e CPL sotto target"
+      "frequenza 2.8: pubblico bruciato, cambia audience"
      ],
      "recent": null,
      "trend": null
     },
     {
      "id": "120246542889040629",
-     "name": "Moduli - video promotore",
+     "name": "Moduli - video promotore [RIPROVA]",
      "spend": 213.68,
      "leads": 14.0,
      "cpl": 15.26,
@@ -153,44 +152,42 @@
      "status": "ok",
      "reason": "CPL €15.26: dentro i parametri",
      "sprecato": 0.0,
-     "flags": [
-      "DA RIPROVARE: staccata a torto, aveva campione e CPL sotto target"
-     ],
+     "flags": [],
      "recent": null,
      "trend": null
     },
     {
      "id": "120249368205620629",
      "name": "ASSIC -Moduli -immagine - Copia 13",
-     "spend": 188.94,
+     "spend": 189.49,
      "leads": 32.0,
-     "cpl": 5.9,
-     "impressions": 23941.0,
+     "cpl": 5.92,
+     "impressions": 23992.0,
      "clicks": 486.0,
      "cvr": 6.58,
-     "ctr": 2.02999,
-     "cpm": 7.891901,
-     "reach": 6939.0,
-     "frequency": 3.450209,
+     "ctr": 2.025675,
+     "cpm": 7.898049,
+     "reach": 6953.0,
+     "frequency": 3.450597,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 20.0,
      "status": "winner",
-     "reason": "CPL €5.90: sotto €10, ci si mette budget",
+     "reason": "CPL €5.92: sotto €10, ci si mette budget",
      "sprecato": 0.0,
      "flags": [
       "frequenza 3.5: pubblico bruciato, cambia audience"
      ],
      "recent": {
-      "spend": 133.67,
+      "spend": 134.22,
       "leads": 22.0,
-      "cpl": 6.08
+      "cpl": 6.1
      },
      "trend": 0.18
     },
     {
      "id": "120247570940590629",
-     "name": "Moduli - garanzie",
+     "name": "Moduli - garanzie [RIPROVA]",
      "spend": 174.24,
      "leads": 11.0,
      "cpl": 15.84,
@@ -208,8 +205,7 @@
      "reason": "CPL €15.84: dentro i parametri",
      "sprecato": 0.0,
      "flags": [
-      "frequenza 3.0: pubblico bruciato, cambia audience",
-      "DA RIPROVARE: staccata a torto, aveva campione e CPL sotto target"
+      "frequenza 3.0: pubblico bruciato, cambia audience"
      ],
      "recent": null,
      "trend": null
@@ -291,7 +287,7 @@
     },
     {
      "id": "120246368631780629",
-     "name": "Moduli - step by step",
+     "name": "Moduli - step by step [RIPROVA]",
      "spend": 74.13,
      "leads": 10.0,
      "cpl": 7.41,
@@ -308,9 +304,7 @@
      "status": "winner",
      "reason": "CPL €7.41: sotto €10, ci si mette budget",
      "sprecato": 0.0,
-     "flags": [
-      "DA RIPROVARE: staccata a torto, aveva campione e CPL sotto target"
-     ],
+     "flags": [],
      "recent": null,
      "trend": null
     },
@@ -365,29 +359,29 @@
     {
      "id": "120249502985680629",
      "name": "Moduli -immagine - Copia 9",
-     "spend": 49.81,
+     "spend": 49.93,
      "leads": 4.0,
-     "cpl": 12.45,
-     "impressions": 7903.0,
+     "cpl": 12.48,
+     "impressions": 7932.0,
      "clicks": 59.0,
      "cvr": 6.78,
-     "ctr": 0.746552,
-     "cpm": 6.30267,
-     "reach": 3530.0,
-     "frequency": 2.23881,
+     "ctr": 0.743822,
+     "cpm": 6.294755,
+     "reach": 3537.0,
+     "frequency": 2.242578,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 10.0,
      "status": "ok",
-     "reason": "CPL €12.45: dentro i parametri",
+     "reason": "CPL €12.48: dentro i parametri",
      "sprecato": 0.0,
      "flags": [
-      "CTR 0.75%: il creativo non ferma nessuno"
+      "CTR 0.74%: il creativo non ferma nessuno"
      ],
      "recent": {
-      "spend": 49.81,
+      "spend": 49.93,
       "leads": 4.0,
-      "cpl": 12.45
+      "cpl": 12.48
      },
      "trend": 0.0
     },
@@ -1421,6 +1415,35 @@
      "trend": null
     },
     {
+     "id": "120249130741210629",
+     "name": "IG Traffico - vs Barravecchia Campagna - Copia 5",
+     "spend": 17.23,
+     "leads": 0.0,
+     "cpl": null,
+     "impressions": 7651.0,
+     "clicks": 355.0,
+     "cvr": 0.0,
+     "ctr": 4.639916,
+     "cpm": 2.251993,
+     "reach": 6386.0,
+     "frequency": 1.19809,
+     "attiva": true,
+     "effective_status": "ACTIVE",
+     "daily_budget": 4.0,
+     "status": "watch",
+     "reason": "€17.23 spesi e 0 lead: mancano €12.77 allo stacco",
+     "sprecato": 0.0,
+     "flags": [
+      "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
+     ],
+     "recent": {
+      "spend": 7.36,
+      "leads": 0.0,
+      "cpl": null
+     },
+     "trend": null
+    },
+    {
      "id": "120248785450840629",
      "name": "Moduli -video cfa - contro barr",
      "spend": 17.13,
@@ -1464,35 +1487,6 @@
      "sprecato": 0.0,
      "flags": [],
      "recent": null,
-     "trend": null
-    },
-    {
-     "id": "120249130741210629",
-     "name": "IG Traffico - vs Barravecchia Campagna - Copia 5",
-     "spend": 16.96,
-     "leads": 0.0,
-     "cpl": null,
-     "impressions": 7585.0,
-     "clicks": 348.0,
-     "cvr": 0.0,
-     "ctr": 4.588003,
-     "cpm": 2.235992,
-     "reach": 6353.0,
-     "frequency": 1.193924,
-     "attiva": true,
-     "effective_status": "ACTIVE",
-     "daily_budget": 4.0,
-     "status": "watch",
-     "reason": "€16.96 spesi e 0 lead: mancano €13.04 allo stacco",
-     "sprecato": 0.0,
-     "flags": [
-      "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-     ],
-     "recent": {
-      "spend": 7.09,
-      "leads": 0.0,
-      "cpl": null
-     },
      "trend": null
     },
     {
@@ -3083,7 +3077,7 @@
    ],
    "hiring": {
     "n": 6,
-    "spend": 165.43,
+    "spend": 165.46,
     "leads": 97.0
    },
    "campagne_hiring": [
@@ -3144,16 +3138,16 @@
     {
      "id": "120246443902370629",
      "name": "Venditore - Moduli",
-     "spend": 92.83,
+     "spend": 92.86,
      "leads": 24.0,
      "cpl": 3.87,
-     "impressions": 4417.0,
+     "impressions": 4419.0,
      "clicks": 223.0,
      "cvr": 10.76,
-     "ctr": 5.048676,
-     "cpm": 21.016527,
+     "ctr": 5.046391,
+     "cpm": 21.013804,
      "reach": 1913.0,
-     "frequency": 2.308939,
+     "frequency": 2.309984,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 6.0,
