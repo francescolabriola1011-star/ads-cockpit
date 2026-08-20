@@ -1,16 +1,20 @@
 """Le regole di casa applicate alle campagne + calcolo del budget sprecato.
 
 Regole (da config.yaml):
-  1. Campagna con 0 lead: si stacca oltre spend_kill_zero_lead_eur (€15).
-  1b. Campagna con 1 lead: si guarda SOLO la spesa, si stacca oltre spend_kill_eur (€22)
+  1. Campagna con 0 lead: si stacca oltre spend_kill_zero_lead_eur (€30).
+  1b. Campagna con 1 lead: si guarda SOLO la spesa, si stacca oltre spend_kill_eur (€50)
      (con un lead solo il CPL non e' un dato, e' un caso: NON si applica cpl_kill_eur)
   2. Campagna con 2 lead o piu' e CPL > cpl_kill_eur -> STACCA
 
-Il CHECKPOINT dei €22 (spend_kill_eur), che e' quello che conta davvero:
+Il CHECKPOINT dei €50 (spend_kill_eur), che e' quello che conta davvero:
 entro quella spesa la campagna deve aver portato ALMENO 2 lead, cioe' un CPL sotto
-€11 (22 / 2). Con 1 lead solo a €22 il CPL sarebbe €22 e si stacca comunque.
-Quindi: sotto €22 si lascia respirare (1 lead a €18 NON si stacca, altrimenti non si
-trova mai una vincente), ma arrivati a €22 il secondo lead dev'esserci.
+€25 (50 / 2). Quindi: sotto €50 si lascia respirare (1 lead a €40 NON si stacca,
+altrimenti non si trova mai una vincente), ma arrivati a €50 il secondo lead dev'esserci.
+
+Soglie UFFICIALI dal 20/8/2026 (superano le 15/22 del 17/8). ATTENZIONE, incoerenza
+nota e non ancora decisa: cpl_kill_eur e' rimasto 22, quindi una campagna con 2 lead a
+€46 (CPL 23) viene staccata mentre una con 1 lead a €49 sopravvive, cioe' il righello
+punisce quella che va meglio.
   3. Campagna con 0 lead e spesa >= spend_warn_eur    -> SORVEGLIATA
   4. Campagna con CPL <= cpl_winner_eur               -> VINCITRICE (ci si mette budget)
 
@@ -41,6 +45,9 @@ class Rules:
         self.ctr_floor = _f(r["ctr_floor_pct"])
         self.freq_ceiling = _f(r["frequency_ceiling"])
         self.min_impr = _f(r["min_impressions"])
+        # CVR click->lead: sotto la soglia il collo e' il modulo, non le ads (20/8/2026)
+        self.cvr_floor = _f(r.get("cvr_floor_pct") or 4.0)
+        self.cvr_min_clicks = _f(r.get("cvr_min_clicks") or 30)
 
     # ---------------- verdetto ----------------
     def verdict(self, c: dict) -> tuple[str, str]:
@@ -102,9 +109,9 @@ class Rules:
                 out.append(f"frequenza {c['frequency']:.1f}: pubblico bruciato, cambia audience")
             if c["cpm"] > 60:
                 out.append(f"CPM €{c['cpm']:.0f}: stai pagando caro il posizionamento")
-        if c["leads"] > 0 and c["clicks"] > 0:
+        if c["clicks"] >= self.cvr_min_clicks:
             cvr = c["leads"] / c["clicks"] * 100
-            if cvr < 5 and c["clicks"] >= 30:
+            if cvr < self.cvr_floor:
                 out.append(f"solo {cvr:.1f}% dei click diventa lead: modulo o landing da rivedere")
         if c["spend"] > 0 and c["impressions"] == 0:
             out.append("spesa senza impression: campagna in errore, controlla subito")
@@ -115,7 +122,7 @@ class Rules:
         """Quanto budget e' finito sui perdenti e quanti lead darebbe altrove.
 
         Due stime, perche' una sola sarebbe una promessa:
-          - PRUDENTE: lo stesso budget speso al CPL limite (€15). E' il minimo
+          - PRUDENTE: lo stesso budget speso al CPL limite (€22, cpl_kill_eur). E' il minimo
             sindacale che ci si aspetta da una campagna che resta accesa.
           - OTTIMISTICA: al CPL delle campagne vincenti dello stesso account.
             Vale solo se quelle campagne reggono lo scale, quindi si guarda

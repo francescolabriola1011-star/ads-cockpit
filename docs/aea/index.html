@@ -68,7 +68,7 @@ h2{font-size:15px;text-transform:uppercase;letter-spacing:.08em;color:var(--mute
 /* clienti */
 .client{background:var(--card);border:1px solid var(--line);border-radius:12px;
   margin-bottom:10px;overflow:hidden}
-.chead{display:grid;grid-template-columns:110px repeat(4,minmax(70px,1fr)) 150px 24px;
+.chead{display:grid;grid-template-columns:110px repeat(5,minmax(66px,1fr)) 150px 24px;
   gap:12px;align-items:center;padding:14px 16px;cursor:pointer;user-select:none}
 .chead:hover{background:rgba(212,175,55,.05)}
 .chead .alias{font-weight:700;color:var(--accent);letter-spacing:.02em}
@@ -240,6 +240,13 @@ fetch("data.json?" + Date.now())
   .catch(e => document.getElementById("meta").textContent = "Impossibile leggere data.json: " + e);
 
 /* Il perimetro di TUTTA la pagina: tutti i clienti, o quello selezionato. */
+let CVRMIN = 4;
+const R2 = () => (DATA && DATA.regole) || {};
+/* CVR click -> lead: quanti dei click che abbiamo pagato diventano un contatto vero.
+   Sotto la soglia il collo e' il MODULO (o la landing), non le ads. */
+const cvrCli  = c => (c.clicks ? c.leads / c.clicks * 100 : null);
+const cvrCamp = k => (k.clicks ? k.leads / k.clicks * 100 : null);
+
 function scope(){
   if (!state.cliente) return DATA.clienti;
   return DATA.clienti.filter(c => c.alias === state.cliente);
@@ -251,21 +258,32 @@ function totali(sel){
   const spesa = sel.reduce((s,c)=>s+c.spend,0);
   const lead  = sel.reduce((s,c)=>s+c.leads,0);
   const spr   = sel.reduce((s,c)=>s+c.sprecato,0);
+  const click = sel.reduce((s,c)=>s+(c.clicks||0),0);
   const g = DATA.periodo.giorni || 1;
   return {
     spesa, lead, sprecato: spr,
     cpl: lead ? spesa/lead : null,
+    clicks: click,
+    cvr: click ? lead/click*100 : null,
     quota: spesa ? spr/spesa*100 : 0,
     al_mese: spr/g*30,
     brucia_oggi: sel.reduce((s,c)=>s+c.brucia_oggi,0),
     da_staccare: sel.reduce((s,c)=>s+c.n_kill_ancora_accese,0),
-    lead_mancati: sel.reduce((s,c)=>s+(c.riallocazione.lead_prudente||0),0),
+    /* Lead mancati = quanti lead avrebbe dato TUTTO il budget girando al CPL
+       target, meno quelli arrivati davvero. Non e' il budget parcheggiato sui
+       perdenti (quello sta nella tabella di riallocazione): e' il divario col
+       target, e per questo e' un numero grosso. */
+    lead_mancati: 0,
     campagne: sel.reduce((s,c)=>s+c.n_campagne,0)
   };
 }
 
 function render(){
   const d = DATA, R = d.regole, sel = scope(), t = totali(sel);
+  CVRMIN = R.cvr_floor_pct || 4;
+  const CPLT = R.cpl_target_eur || 15;
+  t.lead_attesi = CPLT ? Math.floor(t.spesa / CPLT) : 0;
+  t.lead_mancati = Math.max(0, t.lead_attesi - t.lead);
   const uno = sel.length === 1;
 
   document.title = d.titolo || "ADS Cockpit";
@@ -283,7 +301,9 @@ function render(){
     `<b>1 lead</b>: si lascia girare fino a ${eur0(R.spend_kill_eur)}, il CPL non si guarda`,
     `entro ${eur0(R.spend_kill_eur)} servono <b>2 lead</b> (CPL sotto ${eur0(R.spend_kill_eur/2)}) → altrimenti si stacca`,
     `da <b>2 lead</b> in su, CPL sopra <b>${eur0(R.cpl_kill_eur)}</b> → si stacca`,
-    `CPL sotto <b>${eur0(R.cpl_winner_eur)}</b> → vincente, ci si mette budget`
+    `CPL sotto <b>${eur0(R.cpl_winner_eur)}</b> → vincente, ci si mette budget`,
+    `<b>CVR click → lead</b> sotto <b>${CVRMIN}%</b> → il problema è il modulo, non le ads`,
+    `<b>CPL target ${eur0(CPLT)}</b> → il metro dei lead mancati (${eur0(R.cpl_kill_eur)} è il limite di stacco, non l'obiettivo)`
   ].map(r => `<span class="rule">${r}</span>`).join("");
 
   /* clienti entrati da poco: il parco si popola da solo, ma va detto */
@@ -322,8 +342,13 @@ function render(){
     tile("CPL medio", t.cpl ? eur(t.cpl) : "n/d",
          t.cpl ? (t.cpl > R.cpl_kill_eur ? `sopra il limite di ${eur0(R.cpl_kill_eur)}`
                                          : `sotto il limite di ${eur0(R.cpl_kill_eur)}`) : ""),
+    tile("CVR click → lead", t.cvr != null ? t.cvr.toFixed(1) + "%" : "n/d",
+         t.cvr == null ? "" : (t.cvr < CVRMIN
+            ? `sotto il ${CVRMIN}% minimo: il collo è il modulo, non le ads`
+            : `sopra il ${CVRMIN}% minimo · ${int(t.clicks)} click`)),
     tile("Lead mancati", int(t.lead_mancati),
-         `stima prudente: lo stesso budget speso al CPL limite di ${eur0(R.cpl_kill_eur)}`)
+         `${eur0(t.spesa)} al CPL target di ${eur0(CPLT)} valgono ${int(t.lead_attesi)} lead, ne sono arrivati ${int(t.lead)}`,
+         t.lead_mancati > 0 ? "act" : "")
   ].join("");
 
   /* azioni di oggi */
@@ -387,6 +412,9 @@ function renderClienti(){
           c.cpl == null ? "var(--muted)" : (c.leads >= 2 && c.cpl > d.regole.cpl_kill_eur) ? "var(--crit)"
           : c.cpl <= d.regole.cpl_winner_eur ? "var(--good)" : "inherit"}">${
           c.cpl ? eur(c.cpl) : "n/d"}</div></div>
+        <div><div class="k">CVR</div><div class="v mono" style="color:${
+          cvrCli(c) == null ? "var(--muted)" : cvrCli(c) < CVRMIN ? "var(--crit)" : "var(--good)"}">${
+          cvrCli(c) == null ? "n/d" : cvrCli(c).toFixed(1) + "%"}</div></div>
         <div><div class="k">Sprecato</div><div class="v mono" style="color:var(--crit)">${eur0(c.sprecato)}</div></div>
         <div class="spark"><div class="k">${c.quota_sprecata}% sprecato · ${c.n_kill} fuori regola${
           c.n_kill_ancora_accese ? `, <b style="color:var(--crit)">${c.n_kill_ancora_accese} accese</b>` : ""}</div>
@@ -396,7 +424,7 @@ function renderClienti(){
       <div class="cbody">${camp.length ? `
         <table><thead><tr>
           <th>Campagna</th><th>Stato</th><th>Spesa</th><th>Lead</th><th>CPL</th>
-          <th>CPL 7g</th><th>CTR</th><th>Sprecato</th></tr></thead><tbody>
+          <th>CPL 7g</th><th>CTR</th><th>CVR</th><th>Sprecato</th></tr></thead><tbody>
           ${camp.map(k => `<tr class="${k.attiva ? "" : "off"}">
             <td class="cname"><div class="n">${esc(nomeCamp(k))}${
               k.attiva ? "" : `<span class="tag-off">${esc(k.effective_status)}</span>`}</div>
@@ -410,6 +438,11 @@ function renderClienti(){
                 k.trend ? ` <span class="${k.trend > 0 ? "up" : "down"}">${k.trend > 0 ? "▲" : "▼"}</span>` : "")
               : '<span style="color:var(--muted)">—</span>'}</td>
             <td class="mono">${k.ctr ? k.ctr.toFixed(2) + "%" : "—"}</td>
+            <td class="mono" style="color:${
+              cvrCamp(k) == null ? "var(--muted)"
+              : (k.clicks >= (R2().cvr_min_clicks || 30) && cvrCamp(k) < CVRMIN) ? "var(--crit)"
+              : cvrCamp(k) >= CVRMIN ? "var(--good)" : "inherit"}">${
+              cvrCamp(k) == null ? "—" : cvrCamp(k).toFixed(1) + "%"}</td>
             <td class="mono" style="color:${k.sprecato > 0 ? "var(--crit)" : "var(--muted)"}">${
               k.sprecato > 0 ? eur(k.sprecato) : "—"}</td>
           </tr>`).join("")}

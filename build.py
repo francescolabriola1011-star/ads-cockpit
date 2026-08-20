@@ -129,6 +129,8 @@ def normalize(row: dict, status_map: dict) -> dict:
         "cpl": round(spend / leads, 2) if leads else None,
         "impressions": num(row.get("impressions")),
         "clicks": num(row.get("clicks")),
+        # CVR click->lead: dice se il collo e' il MODULO invece delle ads
+        "cvr": round(leads / num(row.get("clicks")) * 100, 2) if num(row.get("clicks")) else None,
         "ctr": num(row.get("ctr")),
         "cpm": num(row.get("cpm")),
         "reach": num(row.get("reach")),
@@ -210,6 +212,8 @@ def build_account(acct: dict, cfg: dict, R: Rules, tok: str, since: str, until: 
         "quota_sprecata": round(sprecato / spend * 100, 1) if spend else 0.0,
         "impressions": sum(c["impressions"] for c in campaigns),
         "clicks": sum(c["clicks"] for c in campaigns),
+        "cvr": (round(leads / sum(c["clicks"] for c in campaigns) * 100, 2)
+                if sum(c["clicks"] for c in campaigns) else None),
         "n_campagne": len(campaigns),
         "n_kill": len([c for c in campaigns if c["status"] == "kill"]),
         "n_kill_ancora_accese": len(kill_now),
@@ -314,6 +318,9 @@ def main() -> int:
             "sprecato_al_mese": round(tot_wasted / giorni * 30, 2),
             "brucia_oggi": round(sum(a["brucia_oggi"] for a in out), 2),
             "da_staccare_ora": sum(a["n_kill_ancora_accese"] for a in out),
+            "clicks": sum(a["clicks"] for a in out),
+            "cvr": (round(tot_leads / sum(a["clicks"] for a in out) * 100, 2)
+                    if sum(a["clicks"] for a in out) else None),
             "clienti": len(out),
             "campagne": sum(a["n_campagne"] for a in out),
         },
