@@ -1,7 +1,7 @@
 {
- "generato": "21/08/2026 08:11",
+ "generato": "21/08/2026 20:08",
  "quota_mese": 68,
- "totale_corrente": 4606,
+ "totale_corrente": 5106,
  "totale_m1": 5447,
  "totale_m2": 1407,
  "voci": [
@@ -11,6 +11,14 @@
    "media_precedenti": 225,
    "atteso_a_oggi": 152,
    "variazione": 891,
+   "stato": "scappato"
+  },
+  {
+   "voce": "Cost Of Goods Sold",
+   "mese_corrente": 1500,
+   "media_precedenti": 1622,
+   "atteso_a_oggi": 1099,
+   "variazione": 37,
    "stato": "scappato"
   },
   {
@@ -54,7 +62,7 @@
    "stato": "nuovo"
   },
   {
-   "voce": "Zoom",
+   "voce": "Twilio",
    "mese_corrente": 20,
    "media_precedenti": null,
    "atteso_a_oggi": null,
@@ -62,7 +70,7 @@
    "stato": "nuovo"
   },
   {
-   "voce": "Twilio",
+   "voce": "Zoom",
    "mese_corrente": 20,
    "media_precedenti": null,
    "atteso_a_oggi": null,
@@ -78,14 +86,6 @@
    "stato": "sparito"
   },
   {
-   "voce": "Cost Of Goods Sold",
-   "mese_corrente": 1000,
-   "media_precedenti": 1622,
-   "atteso_a_oggi": 1099,
-   "variazione": -9,
-   "stato": "stabile"
-  },
-  {
    "voce": "Facebook",
    "mese_corrente": 120,
    "media_precedenti": 2350,
@@ -94,8 +94,8 @@
    "stato": "stabile"
   }
  ],
- "extra_del_mese": 1371,
- "n_scappati": 2,
+ "extra_del_mese": 1772,
+ "n_scappati": 3,
  "n_nuovi": 6,
  "n_spariti": 1
 }

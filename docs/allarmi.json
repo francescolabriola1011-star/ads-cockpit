@@ -1,9 +1,15 @@
 {
- "generato": "21/08 08:13",
+ "generato": "21/08 20:10",
  "n_account_rossi": 9,
  "n_puliti": 0,
  "puliti": [],
  "voci": [
+  {
+   "cliente": "AEA-HOUSE",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "facebook/facebook_reels · 0.76 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "gravita": 3
+  },
   {
    "cliente": "AEA-HOUSE",
    "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
@@ -123,12 +129,6 @@
    "tipo": "POSIZIONAMENTI AUTOMATICI",
    "dettaglio": "Nuova campagna dispongo di un capitale",
    "gravita": 2
-  },
-  {
-   "cliente": "AEA-HOUSE",
-   "tipo": "REELS ATTIVI ['facebook_reels', 'facebook_reels_overlay']",
-   "dettaglio": "Venditore - Moduli",
-   "gravita": 1
   },
   {
    "cliente": "AEA-HOUSE",
