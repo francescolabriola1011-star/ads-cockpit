@@ -1,7 +1,7 @@
 {
- "generato": "21/08/2026 06:14",
+ "generato": "21/08/2026 08:11",
  "quota_mese": 68,
- "totale_corrente": 4586,
+ "totale_corrente": 4606,
  "totale_m1": 5447,
  "totale_m2": 1407,
  "voci": [
@@ -54,6 +54,14 @@
    "stato": "nuovo"
   },
   {
+   "voce": "Zoom",
+   "mese_corrente": 20,
+   "media_precedenti": null,
+   "atteso_a_oggi": null,
+   "variazione": null,
+   "stato": "nuovo"
+  },
+  {
    "voce": "Twilio",
    "mese_corrente": 20,
    "media_precedenti": null,
@@ -88,6 +96,6 @@
  ],
  "extra_del_mese": 1371,
  "n_scappati": 2,
- "n_nuovi": 5,
+ "n_nuovi": 6,
  "n_spariti": 1
 }
