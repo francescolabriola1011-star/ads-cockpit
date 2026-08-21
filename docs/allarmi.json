@@ -1,5 +1,5 @@
 {
- "generato": "20/08 08:13",
+ "generato": "21/08 06:16",
  "n_account_rossi": 9,
  "n_puliti": 0,
  "puliti": [],
@@ -7,7 +7,7 @@
   {
    "cliente": "AEA-HOUSE",
    "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "instagram/instagram_reels · 0.89 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "dettaglio": "instagram/instagram_reels · 4.38 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
    "gravita": 3
   },
   {
@@ -73,37 +73,37 @@
   {
    "cliente": "CF-MLC",
    "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "facebook/facebook_stories · 4.76 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "dettaglio": "instagram/instagram_stories · 0.64 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
    "gravita": 3
   },
   {
-   "cliente": "CF-MLC",
+   "cliente": "CF-SM",
    "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "instagram/instagram_stories · 1.40 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "dettaglio": "facebook/facebook_reels · 1.49 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-SM",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "facebook/facebook_stories · 1.28 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-SM",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "instagram/instagram_reels · 3.22 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-SM",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "instagram/instagram_stories · 1.01 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
    "gravita": 3
   },
   {
    "cliente": "FB",
    "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "facebook/facebook_stories · 7.44 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
-   "gravita": 3
-  },
-  {
-   "cliente": "FB",
-   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "instagram/instagram_stories · 1.48 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
-   "gravita": 3
-  },
-  {
-   "cliente": "LMB",
-   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "facebook/facebook_stories · 3.55 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
-   "gravita": 3
-  },
-  {
-   "cliente": "LMB",
-   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "instagram/instagram_stories · 1.73 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "dettaglio": "facebook/facebook_stories · 1.60 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
    "gravita": 3
   },
   {
@@ -210,7 +210,7 @@
   },
   {
    "cliente": "CF-SM",
-   "tipo": "REELS ATTIVI ['facebook_reels', 'facebook_reels_overlay', 'reels']",
+   "tipo": "REELS ATTIVI ['facebook_reels_overlay']",
    "dettaglio": "Moduli - 7.500€ all'anno in commissioni - Copy",
    "gravita": 1
   },
