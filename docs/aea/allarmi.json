@@ -1,6 +1,6 @@
 {
- "generato": "22/08 08:13",
- "n_account_rossi": 8,
+ "generato": "22/08 15:25",
+ "n_account_rossi": 9,
  "n_puliti": 1,
  "puliti": [
   "FB"
@@ -85,16 +85,22 @@
    "gravita": 3
   },
   {
-   "cliente": "CF-SM",
+   "cliente": "CF-RD",
    "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
-   "dettaglio": "Lead Gen 2 - Stefano Moratti",
+   "dettaglio": "Lead Gen - Raffaele De Leonardis",
    "gravita": 3
   },
   {
-   "cliente": "AEA-HOUSE",
-   "tipo": "POSIZIONAMENTI AUTOMATICI",
-   "dettaglio": "IG Traffico - vs Barravecchia Campagna - Copia 5",
-   "gravita": 2
+   "cliente": "CF-RD",
+   "tipo": "NON CONSEGNA",
+   "dettaglio": "Moduli - Video Consulenza Risparmiatori Puglia · ieri 0.00 €",
+   "gravita": 3
+  },
+  {
+   "cliente": "LMB",
+   "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
+   "dettaglio": "Lead Gen 2 - Luigi Micheloni",
+   "gravita": 3
   },
   {
    "cliente": "ZEN",
@@ -184,6 +190,12 @@
    "cliente": "CF-MLC",
    "tipo": "REELS ATTIVI ['facebook_reels_overlay']",
    "dettaglio": "Moduli - 10.000€ oggi valgono 8.000€ - Copy",
+   "gravita": 1
+  },
+  {
+   "cliente": "CF-RD",
+   "tipo": "REELS ATTIVI ['reels']",
+   "dettaglio": "Moduli - Video Consulenza Risparmiatori Puglia",
    "gravita": 1
   },
   {
