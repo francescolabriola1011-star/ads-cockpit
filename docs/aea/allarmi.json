@@ -1,19 +1,21 @@
 {
- "generato": "21/08 20:10",
- "n_account_rossi": 9,
- "n_puliti": 0,
- "puliti": [],
+ "generato": "22/08 07:03",
+ "n_account_rossi": 8,
+ "n_puliti": 1,
+ "puliti": [
+  "FB"
+ ],
  "voci": [
   {
    "cliente": "AEA-HOUSE",
    "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "facebook/facebook_reels · 0.76 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "dettaglio": "facebook/facebook_reels · 0.54 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
    "gravita": 3
   },
   {
    "cliente": "AEA-HOUSE",
    "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "instagram/instagram_reels · 4.38 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "dettaglio": "instagram/instagram_reels · 3.84 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
    "gravita": 3
   },
   {
@@ -78,38 +80,14 @@
   },
   {
    "cliente": "CF-MLC",
-   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "instagram/instagram_stories · 0.64 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
+   "dettaglio": "Lead Gen 2 - Marco La Corte",
    "gravita": 3
   },
   {
    "cliente": "CF-SM",
-   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "facebook/facebook_reels · 1.49 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
-   "gravita": 3
-  },
-  {
-   "cliente": "CF-SM",
-   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "facebook/facebook_stories · 1.28 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
-   "gravita": 3
-  },
-  {
-   "cliente": "CF-SM",
-   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "instagram/instagram_reels · 3.22 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
-   "gravita": 3
-  },
-  {
-   "cliente": "CF-SM",
-   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "instagram/instagram_stories · 1.01 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
-   "gravita": 3
-  },
-  {
-   "cliente": "FB",
-   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "facebook/facebook_stories · 1.60 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
+   "dettaglio": "Lead Gen 2 - Stefano Moratti",
    "gravita": 3
   },
   {
@@ -216,8 +194,8 @@
   },
   {
    "cliente": "LMB",
-   "tipo": "REELS ATTIVI ['facebook_reels_overlay']",
-   "dettaglio": "Moduli - €7.500 all'anno in commissioni - Copy",
+   "tipo": "REELS ATTIVI ['facebook_reels', 'facebook_reels_overlay', 'reels']",
+   "dettaglio": "Moduli - Video",
    "gravita": 1
   }
  ]

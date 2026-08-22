@@ -1,6 +1,6 @@
 {
- "generato": "21/08/2026 20:08",
- "quota_mese": 68,
+ "generato": "22/08/2026 07:01",
+ "quota_mese": 71,
  "totale_corrente": 5106,
  "totale_m1": 5447,
  "totale_m2": 1407,
@@ -9,24 +9,24 @@
    "voce": "Michele De Sena",
    "mese_corrente": 1510,
    "media_precedenti": 225,
-   "atteso_a_oggi": 152,
-   "variazione": 891,
+   "atteso_a_oggi": 160,
+   "variazione": 846,
    "stato": "scappato"
   },
   {
    "voce": "Cost Of Goods Sold",
    "mese_corrente": 1500,
    "media_precedenti": 1622,
-   "atteso_a_oggi": 1099,
-   "variazione": 37,
+   "atteso_a_oggi": 1151,
+   "variazione": 30,
    "stato": "scappato"
   },
   {
    "voce": "Claude",
    "mese_corrente": 40,
    "media_precedenti": 40,
-   "atteso_a_oggi": 27,
-   "variazione": 48,
+   "atteso_a_oggi": 28,
+   "variazione": 41,
    "stato": "scappato"
   },
   {
@@ -81,7 +81,7 @@
    "voce": "Go High Level",
    "mese_corrente": 0,
    "media_precedenti": 358,
-   "atteso_a_oggi": 242,
+   "atteso_a_oggi": 254,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -89,12 +89,12 @@
    "voce": "Facebook",
    "mese_corrente": 120,
    "media_precedenti": 2350,
-   "atteso_a_oggi": 1592,
-   "variazione": -92,
+   "atteso_a_oggi": 1668,
+   "variazione": -93,
    "stato": "stabile"
   }
  ],
- "extra_del_mese": 1772,
+ "extra_del_mese": 1711,
  "n_scappati": 3,
  "n_nuovi": 6,
  "n_spariti": 1
