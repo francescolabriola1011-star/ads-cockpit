@@ -1,7 +1,7 @@
 {
  "titolo": "AI Elite Advisory",
  "sottotitolo": "casa nostra",
- "generato": "2026-08-22T07:00:12+02:00",
+ "generato": "2026-08-22T08:10:26+02:00",
  "periodo": {
   "da": "2026-01-01",
   "a": "2026-08-22",
@@ -22,15 +22,15 @@
   "cvr_min_clicks": 30
  },
  "totali": {
-  "spesa": 3580.96,
+  "spesa": 3582.44,
   "lead": 175.0,
-  "cpl": 20.46,
+  "cpl": 20.47,
   "sprecato": 7.1,
   "quota_sprecata": 0.2,
   "sprecato_al_mese": 0.91,
   "brucia_oggi": 0,
   "da_staccare_ora": 0,
-  "clicks": 5350.0,
+  "clicks": 5357.0,
   "cvr": 3.27,
   "clienti": 1,
   "campagne": 126
@@ -41,13 +41,13 @@
    "account_id": "859478370532394",
    "nome_reale": "AI Elite Advisory",
    "currency": "EUR",
-   "spend": 3580.96,
+   "spend": 3582.44,
    "leads": 175.0,
-   "cpl": 20.46,
+   "cpl": 20.47,
    "sprecato": 7.1,
    "quota_sprecata": 0.2,
-   "impressions": 350915.0,
-   "clicks": 5350.0,
+   "impressions": 351130.0,
+   "clicks": 5357.0,
    "cvr": 3.27,
    "n_campagne": 126,
    "n_kill": 2,
@@ -55,7 +55,7 @@
    "brucia_oggi": 0,
    "riallocazione": {
     "budget_da_spostare": 103.1,
-    "cpl_vincente": 6.73,
+    "cpl_vincente": 6.74,
     "lead_prudente": 4,
     "lead_ottimistico": 15
    },
@@ -137,31 +137,31 @@
     {
      "id": "120249368205620629",
      "name": "ASSIC -Moduli -immagine - Copia 13",
-     "spend": 228.6,
+     "spend": 229.38,
      "leads": 35.0,
-     "cpl": 6.53,
-     "impressions": 30154.0,
-     "clicks": 587.0,
-     "cvr": 5.96,
-     "ctr": 1.946674,
-     "cpm": 7.581084,
-     "reach": 8389.0,
-     "frequency": 3.594469,
+     "cpl": 6.55,
+     "impressions": 30248.0,
+     "clicks": 589.0,
+     "cvr": 5.94,
+     "ctr": 1.947236,
+     "cpm": 7.583311,
+     "reach": 8406.0,
+     "frequency": 3.598382,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 20.0,
      "status": "winner",
-     "reason": "CPL €6.53: sotto €10, ci si mette budget",
+     "reason": "CPL €6.55: sotto €10, ci si mette budget",
      "sprecato": 0.0,
      "flags": [
       "frequenza 3.6: pubblico bruciato, cambia audience"
      ],
      "recent": {
-      "spend": 136.55,
+      "spend": 137.33,
       "leads": 17.0,
-      "cpl": 8.03
+      "cpl": 8.08
      },
-     "trend": 1.5
+     "trend": 1.53
     },
     {
      "id": "120246542889040629",
@@ -338,29 +338,29 @@
     {
      "id": "120249502985680629",
      "name": "Moduli -immagine - Copia 9",
-     "spend": 68.01,
+     "spend": 68.46,
      "leads": 4.0,
-     "cpl": 17.0,
-     "impressions": 10334.0,
+     "cpl": 17.11,
+     "impressions": 10363.0,
      "clicks": 73.0,
      "cvr": 5.48,
-     "ctr": 0.706406,
-     "cpm": 6.581188,
-     "reach": 4150.0,
-     "frequency": 2.49012,
+     "ctr": 0.704429,
+     "cpm": 6.606195,
+     "reach": 4155.0,
+     "frequency": 2.494103,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 10.0,
      "status": "ok",
-     "reason": "CPL €17.00: dentro i parametri",
+     "reason": "CPL €17.11: dentro i parametri",
      "sprecato": 0.0,
      "flags": [
-      "CTR 0.71%: il creativo non ferma nessuno"
+      "CTR 0.70%: il creativo non ferma nessuno"
      ],
      "recent": {
-      "spend": 60.11,
+      "spend": 60.56,
       "leads": 4.0,
-      "cpl": 15.03
+      "cpl": 15.14
      },
      "trend": -1.97
     },
@@ -511,27 +511,27 @@
     {
      "id": "120249130741210629",
      "name": "IG Traffico - vs Barravecchia Campagna - Copia 5",
-     "spend": 29.45,
+     "spend": 29.7,
      "leads": 0.0,
      "cpl": null,
-     "impressions": 12296.0,
-     "clicks": 608.0,
+     "impressions": 12388.0,
+     "clicks": 613.0,
      "cvr": 0.0,
-     "ctr": 4.944697,
-     "cpm": 2.395088,
-     "reach": 9300.0,
-     "frequency": 1.322151,
+     "ctr": 4.948337,
+     "cpm": 2.397481,
+     "reach": 9378.0,
+     "frequency": 1.320964,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 4.0,
      "status": "watch",
-     "reason": "€29.45 spesi e 0 lead: mancano €0.55 allo stacco",
+     "reason": "€29.70 spesi e 0 lead: mancano €0.30 allo stacco",
      "sprecato": 0.0,
      "flags": [
       "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 19.58,
+      "spend": 19.83,
       "leads": 0.0,
       "cpl": null
      },

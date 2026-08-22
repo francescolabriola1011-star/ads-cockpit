@@ -1,5 +1,5 @@
 {
- "generato": "22/08/2026 07:01",
+ "generato": "22/08/2026 08:11",
  "quota_mese": 71,
  "totale_corrente": 5106,
  "totale_m1": 5447,
@@ -62,7 +62,7 @@
    "stato": "nuovo"
   },
   {
-   "voce": "Twilio",
+   "voce": "Zoom",
    "mese_corrente": 20,
    "media_precedenti": null,
    "atteso_a_oggi": null,
@@ -70,7 +70,7 @@
    "stato": "nuovo"
   },
   {
-   "voce": "Zoom",
+   "voce": "Twilio",
    "mese_corrente": 20,
    "media_precedenti": null,
    "atteso_a_oggi": null,
