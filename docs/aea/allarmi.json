@@ -1,21 +1,19 @@
 {
- "generato": "22/08 15:25",
- "n_account_rossi": 9,
- "n_puliti": 1,
- "puliti": [
-  "FB"
- ],
+ "generato": "23/08 08:13",
+ "n_account_rossi": 10,
+ "n_puliti": 0,
+ "puliti": [],
  "voci": [
   {
    "cliente": "AEA-HOUSE",
    "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "facebook/facebook_reels · 0.54 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "dettaglio": "facebook/facebook_reels · 0.72 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
    "gravita": 3
   },
   {
    "cliente": "AEA-HOUSE",
    "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "instagram/instagram_reels · 3.84 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "dettaglio": "instagram/instagram_reels · 1.39 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
    "gravita": 3
   },
   {
@@ -94,6 +92,12 @@
    "cliente": "CF-RD",
    "tipo": "NON CONSEGNA",
    "dettaglio": "Moduli - Video Consulenza Risparmiatori Puglia · ieri 0.00 €",
+   "gravita": 3
+  },
+  {
+   "cliente": "FB",
+   "tipo": "NON CONSEGNA",
+   "dettaglio": "Moduli - I costi nascosti divorano i risparmi · ieri 0.00 €",
    "gravita": 3
   },
   {

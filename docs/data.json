@@ -1,11 +1,11 @@
 {
  "titolo": "ADS Cockpit",
  "sottotitolo": "tutti gli account",
- "generato": "2026-08-22T15:21:50+02:00",
+ "generato": "2026-08-23T08:10:20+02:00",
  "periodo": {
   "da": "2026-01-01",
-  "a": "2026-08-22",
-  "giorni": 233,
+  "a": "2026-08-23",
+  "giorni": 234,
   "finestra_recente_giorni": 7
  },
  "regole": {
@@ -22,16 +22,16 @@
   "cvr_min_clicks": 30
  },
  "totali": {
-  "spesa": 1287.58,
+  "spesa": 1314.46,
   "lead": 35.0,
-  "cpl": 36.79,
-  "sprecato": 3.63,
-  "quota_sprecata": 0.3,
-  "sprecato_al_mese": 0.47,
+  "cpl": 37.56,
+  "sprecato": 6.33,
+  "quota_sprecata": 0.5,
+  "sprecato_al_mese": 0.81,
   "brucia_oggi": 0,
   "da_staccare_ora": 0,
-  "clicks": 2571.0,
-  "cvr": 1.36,
+  "clicks": 2630.0,
+  "cvr": 1.33,
   "clienti": 4,
   "campagne": 67
  },
@@ -41,14 +41,14 @@
    "account_id": "833628578375108",
    "nome_reale": "Stefano Moratti",
    "currency": "EUR",
-   "spend": 450.0,
+   "spend": 459.95,
    "leads": 10.0,
-   "cpl": 45.0,
+   "cpl": 45.99,
    "sprecato": 3.63,
    "quota_sprecata": 0.8,
-   "impressions": 61267.0,
-   "clicks": 814.0,
-   "cvr": 1.23,
+   "impressions": 62052.0,
+   "clicks": 829.0,
+   "cvr": 1.21,
    "n_campagne": 23,
    "n_kill": 1,
    "n_kill_ancora_accese": 0,
@@ -86,6 +86,33 @@
      "trend": null
     },
     {
+     "id": "120253809545780427",
+     "name": "Moduli - 7.500€ all'anno in commissioni - Copy",
+     "spend": 49.06,
+     "leads": 3.0,
+     "cpl": 16.35,
+     "impressions": 5158.0,
+     "clicks": 62.0,
+     "cvr": 4.84,
+     "ctr": 1.202016,
+     "cpm": 9.511439,
+     "reach": 2949.0,
+     "frequency": 1.749067,
+     "attiva": true,
+     "effective_status": "ACTIVE",
+     "daily_budget": 15.0,
+     "status": "ok",
+     "reason": "CPL €16.35: dentro i parametri",
+     "sprecato": 0.0,
+     "flags": [],
+     "recent": {
+      "spend": 49.06,
+      "leads": 3.0,
+      "cpl": 16.35
+     },
+     "trend": 0.0
+    },
+    {
      "id": "120253050201600427",
      "name": "Moduli - Ti fidi del tuo consulente finanziario?",
      "spend": 41.78,
@@ -111,33 +138,6 @@
      "trend": null
     },
     {
-     "id": "120253809545780427",
-     "name": "Moduli - 7.500€ all'anno in commissioni - Copy",
-     "spend": 39.11,
-     "leads": 3.0,
-     "cpl": 13.04,
-     "impressions": 4373.0,
-     "clicks": 47.0,
-     "cvr": 6.38,
-     "ctr": 1.074777,
-     "cpm": 8.943517,
-     "reach": 2646.0,
-     "frequency": 1.652683,
-     "attiva": true,
-     "effective_status": "ACTIVE",
-     "daily_budget": 15.0,
-     "status": "ok",
-     "reason": "CPL €13.04: dentro i parametri",
-     "sprecato": 0.0,
-     "flags": [],
-     "recent": {
-      "spend": 39.11,
-      "leads": 3.0,
-      "cpl": 13.04
-     },
-     "trend": 0.0
-    },
-    {
      "id": "120253686684730427",
      "name": "Moduli - Protezione dai costi nascosti",
      "spend": 23.12,
@@ -160,11 +160,11 @@
       "solo 2.0% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 20.69,
+      "spend": 18.43,
       "leads": 1.0,
-      "cpl": 20.69
+      "cpl": 18.43
      },
-     "trend": -2.43
+     "trend": -4.69
     },
     {
      "id": "120253390656370427",
@@ -314,7 +314,7 @@
       "solo 2.3% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 11.19,
+      "spend": 9.47,
       "leads": 0.0,
       "cpl": null
      },
@@ -343,7 +343,7 @@
       "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 15.26,
+      "spend": 11.99,
       "leads": 0.0,
       "cpl": null
      },
@@ -418,7 +418,7 @@
       "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 6.52,
+      "spend": 4.85,
       "leads": 0.0,
       "cpl": null
      },
@@ -447,7 +447,7 @@
       "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 9.21,
+      "spend": 6.2,
       "leads": 0.0,
       "cpl": null
      },
@@ -666,49 +666,49 @@
    "account_id": "1494987368248230",
    "nome_reale": "Flavio Bosia",
    "currency": "EUR",
-   "spend": 227.99,
+   "spend": 231.42,
    "leads": 4.0,
-   "cpl": 57.0,
-   "sprecato": 0.0,
-   "quota_sprecata": 0.0,
-   "impressions": 20461.0,
-   "clicks": 318.0,
-   "cvr": 1.26,
+   "cpl": 57.85,
+   "sprecato": 2.7,
+   "quota_sprecata": 1.2,
+   "impressions": 20829.0,
+   "clicks": 322.0,
+   "cvr": 1.24,
    "n_campagne": 13,
-   "n_kill": 0,
+   "n_kill": 1,
    "n_kill_ancora_accese": 0,
    "brucia_oggi": 0,
    "riallocazione": {
-    "budget_da_spostare": 0,
+    "budget_da_spostare": 32.7,
     "cpl_vincente": null,
-    "lead_prudente": 0,
+    "lead_prudente": 1,
     "lead_ottimistico": 0
    },
    "campagne": [
     {
      "id": "52583479530461",
      "name": "Moduli - € 7.500 in commissioni",
-     "spend": 29.63,
+     "spend": 32.7,
      "leads": 0.0,
      "cpl": null,
-     "impressions": 2303.0,
-     "clicks": 32.0,
+     "impressions": 2636.0,
+     "clicks": 36.0,
      "cvr": 0.0,
-     "ctr": 1.389492,
-     "cpm": 12.865827,
-     "reach": 1440.0,
-     "frequency": 1.599306,
-     "attiva": true,
-     "effective_status": "ACTIVE",
+     "ctr": 1.365706,
+     "cpm": 12.405159,
+     "reach": 1601.0,
+     "frequency": 1.646471,
+     "attiva": false,
+     "effective_status": "PAUSED",
      "daily_budget": 15.0,
-     "status": "watch",
-     "reason": "€29.63 spesi e 0 lead: mancano €0.37 allo stacco",
-     "sprecato": 0.0,
+     "status": "kill",
+     "reason": "€32.70 spesi e 0 lead: oltre il limite di €30",
+     "sprecato": 2.7,
      "flags": [
       "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 29.63,
+      "spend": 32.7,
       "leads": 0.0,
       "cpl": null
      },
@@ -737,11 +737,11 @@
       "solo 3.3% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 26.2,
-      "leads": 1.0,
-      "cpl": 26.2
+      "spend": 17.61,
+      "leads": 0.0,
+      "cpl": null
      },
-     "trend": 0.0
+     "trend": null
     },
     {
      "id": "52579729303861",
@@ -763,11 +763,7 @@
      "reason": "1 lead a €22.32: si lascia girare, ma entro €50 (mancano €27.68) deve arrivare il 2° lead, cioe' CPL sotto €25",
      "sprecato": 0.0,
      "flags": [],
-     "recent": {
-      "spend": 6.97,
-      "leads": 0.0,
-      "cpl": null
-     },
+     "recent": null,
      "trend": null
     },
     {
@@ -792,37 +788,33 @@
      "flags": [
       "solo 2.7% dei click diventa lead: modulo o landing da rivedere"
      ],
-     "recent": {
-      "spend": 0.64,
-      "leads": 0.0,
-      "cpl": null
-     },
+     "recent": null,
      "trend": null
     },
     {
      "id": "52581507761861",
      "name": "Moduli - I costi nascosti divorano i risparmi",
-     "spend": 19.64,
+     "spend": 20.0,
      "leads": 1.0,
-     "cpl": 19.64,
-     "impressions": 1337.0,
+     "cpl": 20.0,
+     "impressions": 1372.0,
      "clicks": 19.0,
      "cvr": 5.26,
-     "ctr": 1.421092,
-     "cpm": 14.689604,
-     "reach": 1023.0,
-     "frequency": 1.30694,
-     "attiva": false,
-     "effective_status": "PAUSED",
-     "daily_budget": 5.0,
+     "ctr": 1.38484,
+     "cpm": 14.577259,
+     "reach": 1038.0,
+     "frequency": 1.321773,
+     "attiva": true,
+     "effective_status": "ACTIVE",
+     "daily_budget": 15.0,
      "status": "early",
-     "reason": "1 lead a €19.64: si lascia girare, ma entro €50 (mancano €30.36) deve arrivare il 2° lead, cioe' CPL sotto €25",
+     "reason": "1 lead a €20.00: si lascia girare, ma entro €50 (mancano €30.00) deve arrivare il 2° lead, cioe' CPL sotto €25",
      "sprecato": 0.0,
      "flags": [],
      "recent": {
-      "spend": 19.64,
+      "spend": 20.0,
       "leads": 1.0,
-      "cpl": 19.64
+      "cpl": 20.0
      },
      "trend": 0.0
     },
@@ -899,7 +891,7 @@
      "sprecato": 0.0,
      "flags": [],
      "recent": {
-      "spend": 15.73,
+      "spend": 7.21,
       "leads": 0.0,
       "cpl": null
      },
@@ -953,7 +945,7 @@
       "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 15.39,
+      "spend": 6.74,
       "leads": 0.0,
       "cpl": null
      },
@@ -979,11 +971,7 @@
      "reason": "€15.19 spesi e 0 lead: mancano €14.81 allo stacco",
      "sprecato": 0.0,
      "flags": [],
-     "recent": {
-      "spend": 0.46,
-      "leads": 0.0,
-      "cpl": null
-     },
+     "recent": null,
      "trend": null
     },
     {
@@ -1053,14 +1041,14 @@
    "account_id": "940630012397327",
    "nome_reale": "Luigi Micheloni Banker",
    "currency": "EUR",
-   "spend": 253.83,
+   "spend": 262.32,
    "leads": 11.0,
-   "cpl": 23.08,
+   "cpl": 23.85,
    "sprecato": 0.0,
    "quota_sprecata": 0.0,
-   "impressions": 38322.0,
-   "clicks": 603.0,
-   "cvr": 1.82,
+   "impressions": 39820.0,
+   "clicks": 630.0,
+   "cvr": 1.75,
    "n_campagne": 13,
    "n_kill": 0,
    "n_kill_ancora_accese": 0,
@@ -1095,7 +1083,7 @@
       "solo 3.1% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 17.05,
+      "spend": 12.03,
       "leads": 0.0,
       "cpl": null
      },
@@ -1149,7 +1137,7 @@
       "solo 1.5% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 6.72,
+      "spend": 4.67,
       "leads": 0.0,
       "cpl": null
      },
@@ -1181,29 +1169,58 @@
      "trend": null
     },
     {
+     "id": "52615654765547",
+     "name": "Moduli - Video",
+     "spend": 21.73,
+     "leads": 1.0,
+     "cpl": 21.73,
+     "impressions": 3304.0,
+     "clicks": 70.0,
+     "cvr": 1.43,
+     "ctr": 2.118644,
+     "cpm": 6.576877,
+     "reach": 2334.0,
+     "frequency": 1.415596,
+     "attiva": true,
+     "effective_status": "ACTIVE",
+     "daily_budget": 15.0,
+     "status": "early",
+     "reason": "1 lead a €21.73: si lascia girare, ma entro €50 (mancano €28.27) deve arrivare il 2° lead, cioe' CPL sotto €25",
+     "sprecato": 0.0,
+     "flags": [
+      "solo 1.4% dei click diventa lead: modulo o landing da rivedere"
+     ],
+     "recent": {
+      "spend": 21.73,
+      "leads": 1.0,
+      "cpl": 21.73
+     },
+     "trend": 0.0
+    },
+    {
      "id": "52614600312147",
      "name": "Moduli - €7.500 all'anno in commissioni - Copy",
-     "spend": 19.93,
+     "spend": 19.94,
      "leads": 0.0,
      "cpl": null,
-     "impressions": 2895.0,
+     "impressions": 2896.0,
      "clicks": 39.0,
      "cvr": 0.0,
-     "ctr": 1.34715,
-     "cpm": 6.884283,
+     "ctr": 1.346685,
+     "cpm": 6.885359,
      "reach": 1679.0,
-     "frequency": 1.724241,
+     "frequency": 1.724836,
      "attiva": false,
      "effective_status": "PAUSED",
      "daily_budget": 15.0,
      "status": "watch",
-     "reason": "€19.93 spesi e 0 lead: mancano €10.07 allo stacco",
+     "reason": "€19.94 spesi e 0 lead: mancano €10.06 allo stacco",
      "sprecato": 0.0,
      "flags": [
       "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 19.93,
+      "spend": 19.94,
       "leads": 0.0,
       "cpl": null
      },
@@ -1257,7 +1274,7 @@
       "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 5.93,
+      "spend": 2.93,
       "leads": 0.0,
       "cpl": null
      },
@@ -1284,7 +1301,7 @@
      "sprecato": 0.0,
      "flags": [],
      "recent": {
-      "spend": 9.25,
+      "spend": 5.79,
       "leads": 0.0,
       "cpl": null
      },
@@ -1316,35 +1333,6 @@
       "cpl": null
      },
      "trend": null
-    },
-    {
-     "id": "52615654765547",
-     "name": "Moduli - Video",
-     "spend": 13.25,
-     "leads": 1.0,
-     "cpl": 13.25,
-     "impressions": 1807.0,
-     "clicks": 43.0,
-     "cvr": 2.33,
-     "ctr": 2.379635,
-     "cpm": 7.332595,
-     "reach": 1398.0,
-     "frequency": 1.292561,
-     "attiva": true,
-     "effective_status": "ACTIVE",
-     "daily_budget": 15.0,
-     "status": "early",
-     "reason": "1 lead a €13.25: si lascia girare, ma entro €50 (mancano €36.75) deve arrivare il 2° lead, cioe' CPL sotto €25",
-     "sprecato": 0.0,
-     "flags": [
-      "solo 2.3% dei click diventa lead: modulo o landing da rivedere"
-     ],
-     "recent": {
-      "spend": 13.25,
-      "leads": 1.0,
-      "cpl": 13.25
-     },
-     "trend": 0.0
     },
     {
      "id": "52607898421947",
@@ -1442,14 +1430,14 @@
    "account_id": "27645634798460719",
    "nome_reale": "Marco La Corte",
    "currency": "EUR",
-   "spend": 355.76,
+   "spend": 360.77,
    "leads": 10.0,
-   "cpl": 35.58,
+   "cpl": 36.08,
    "sprecato": 0.0,
    "quota_sprecata": 0.0,
-   "impressions": 50962.0,
-   "clicks": 836.0,
-   "cvr": 1.2,
+   "impressions": 51679.0,
+   "clicks": 849.0,
+   "cvr": 1.18,
    "n_campagne": 18,
    "n_kill": 0,
    "n_kill_ancora_accese": 0,
@@ -1484,38 +1472,38 @@
       "solo 1.8% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 30.14,
+      "spend": 25.47,
       "leads": 1.0,
-      "cpl": 30.14
+      "cpl": 25.47
      },
-     "trend": 10.94
+     "trend": 6.27
     },
     {
      "id": "120251273799380566",
      "name": "Moduli - 10.000€ oggi valgono 8.000€ - Copy",
-     "spend": 29.7,
+     "spend": 34.71,
      "leads": 1.0,
-     "cpl": 29.7,
-     "impressions": 3340.0,
-     "clicks": 49.0,
-     "cvr": 2.04,
-     "ctr": 1.467066,
-     "cpm": 8.892216,
-     "reach": 2039.0,
-     "frequency": 1.638058,
+     "cpl": 34.71,
+     "impressions": 4057.0,
+     "clicks": 62.0,
+     "cvr": 1.61,
+     "ctr": 1.528223,
+     "cpm": 8.555583,
+     "reach": 2359.0,
+     "frequency": 1.719797,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 15.0,
      "status": "early",
-     "reason": "1 lead a €29.70: si lascia girare, ma entro €50 (mancano €20.30) deve arrivare il 2° lead, cioe' CPL sotto €25",
+     "reason": "1 lead a €34.71: si lascia girare, ma entro €50 (mancano €15.29) deve arrivare il 2° lead, cioe' CPL sotto €25",
      "sprecato": 0.0,
      "flags": [
-      "solo 2.0% dei click diventa lead: modulo o landing da rivedere"
+      "solo 1.6% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 29.7,
+      "spend": 34.71,
       "leads": 1.0,
-      "cpl": 29.7
+      "cpl": 34.71
      },
      "trend": 0.0
     },
@@ -1618,7 +1606,7 @@
       "solo 1.3% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 13.99,
+      "spend": 5.54,
       "leads": 0.0,
       "cpl": null
      },
@@ -1793,7 +1781,7 @@
       "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 15.2,
+      "spend": 8.42,
       "leads": 0.0,
       "cpl": null
      },
@@ -1842,11 +1830,7 @@
      "reason": "€15.10 spesi e 0 lead: mancano €14.90 allo stacco",
      "sprecato": 0.0,
      "flags": [],
-     "recent": {
-      "spend": 2.13,
-      "leads": 0.0,
-      "cpl": null
-     },
+     "recent": null,
      "trend": null
     },
     {
