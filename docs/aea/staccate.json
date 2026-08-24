@@ -1,5 +1,15 @@
 [
  {
+  "quando": "2026-08-24T08:11:20+02:00",
+  "account": "859478370532394",
+  "campagna": "IG Traffico - vs Barravecchia Campagna - Copia 5",
+  "campaign_id": "120249130741210629",
+  "motivo": "€35.85 spesi e 0 lead (limite €30)",
+  "spesa": 35.85,
+  "lead": 0.0,
+  "eseguito": true
+ },
+ {
   "quando": "2026-08-23T08:11:16+02:00",
   "account": "859478370532394",
   "campagna": "IG Traffico - vs Barravecchia Campagna - Copia 5",

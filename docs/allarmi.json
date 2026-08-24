@@ -1,5 +1,5 @@
 {
- "generato": "23/08 08:13",
+ "generato": "24/08 08:13",
  "n_account_rossi": 10,
  "n_puliti": 0,
  "puliti": [],
@@ -7,13 +7,7 @@
   {
    "cliente": "AEA-HOUSE",
    "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "facebook/facebook_reels · 0.72 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
-   "gravita": 3
-  },
-  {
-   "cliente": "AEA-HOUSE",
-   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "instagram/instagram_reels · 1.39 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "dettaglio": "instagram/instagram_reels · 1.28 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
    "gravita": 3
   },
   {
@@ -95,12 +89,6 @@
    "gravita": 3
   },
   {
-   "cliente": "FB",
-   "tipo": "NON CONSEGNA",
-   "dettaglio": "Moduli - I costi nascosti divorano i risparmi · ieri 0.00 €",
-   "gravita": 3
-  },
-  {
    "cliente": "LMB",
    "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
    "dettaglio": "Lead Gen 2 - Luigi Micheloni",
@@ -117,6 +105,12 @@
    "tipo": "POSIZIONAMENTI AUTOMATICI",
    "dettaglio": "Nuova campagna dispongo di un capitale",
    "gravita": 2
+  },
+  {
+   "cliente": "AEA-HOUSE",
+   "tipo": "FUORI REGOLA",
+   "dettaglio": "Moduli -immagine - Copia 9 · CPL 22.62 €",
+   "gravita": 1
   },
   {
    "cliente": "AEA-HOUSE",
@@ -192,7 +186,7 @@
   },
   {
    "cliente": "CF-MLC",
-   "tipo": "REELS ATTIVI ['facebook_reels_overlay']",
+   "tipo": "REELS ATTIVI ['reels']",
    "dettaglio": "Moduli - 10.000€ oggi valgono 8.000€ - Copy",
    "gravita": 1
   },
@@ -206,6 +200,12 @@
    "cliente": "CF-SM",
    "tipo": "REELS ATTIVI ['facebook_reels_overlay']",
    "dettaglio": "Moduli - 7.500€ all'anno in commissioni - Copy",
+   "gravita": 1
+  },
+  {
+   "cliente": "FB",
+   "tipo": "REELS ATTIVI ['reels']",
+   "dettaglio": "Moduli - I costi nascosti divorano i risparmi",
    "gravita": 1
   },
   {
