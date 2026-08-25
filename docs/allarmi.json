@@ -1,10 +1,8 @@
 {
- "generato": "25/08 08:15",
- "n_account_rossi": 9,
- "n_puliti": 1,
- "puliti": [
-  "CF-SM"
- ],
+ "generato": "25/08 18:43",
+ "n_account_rossi": 10,
+ "n_puliti": 0,
+ "puliti": [],
  "voci": [
   {
    "cliente": "AEA-HOUSE",
@@ -86,20 +84,14 @@
   },
   {
    "cliente": "CF-RD",
-   "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
-   "dettaglio": "Lead Gen - Raffaele De Leonardis",
-   "gravita": 3
-  },
-  {
-   "cliente": "CF-RD",
-   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "facebook/facebook_reels · 0.56 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
-   "gravita": 3
-  },
-  {
-   "cliente": "CF-RD",
    "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
    "dettaglio": "instagram/instagram_stories · 0.74 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-SM",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "facebook/instream_video · 1.32 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
    "gravita": 3
   },
   {
@@ -212,8 +204,14 @@
   },
   {
    "cliente": "CF-RD",
-   "tipo": "REELS ATTIVI ['reels']",
+   "tipo": "REELS ATTIVI ['facebook_reels', 'reels']",
    "dettaglio": "Moduli - Video Consulenza Risparmiatori Puglia",
+   "gravita": 1
+  },
+  {
+   "cliente": "CF-SM",
+   "tipo": "REELS ATTIVI ['reels']",
+   "dettaglio": "Moduli - 7.500€ all'anno in commissioni - Copy",
    "gravita": 1
   },
   {
@@ -224,7 +222,7 @@
   },
   {
    "cliente": "LMB",
-   "tipo": "REELS ATTIVI ['facebook_reels', 'facebook_reels_overlay', 'reels']",
+   "tipo": "REELS ATTIVI ['facebook_reels', 'reels']",
    "dettaglio": "Moduli - Video 3 24-08",
    "gravita": 1
   }
