@@ -1,8 +1,10 @@
 {
- "generato": "25/08 06:44",
- "n_account_rossi": 10,
- "n_puliti": 0,
- "puliti": [],
+ "generato": "25/08 08:15",
+ "n_account_rossi": 9,
+ "n_puliti": 1,
+ "puliti": [
+  "CF-SM"
+ ],
  "voci": [
   {
    "cliente": "AEA-HOUSE",
@@ -132,12 +134,6 @@
   },
   {
    "cliente": "AEA-HOUSE",
-   "tipo": "FUORI REGOLA",
-   "dettaglio": "Moduli -immagine - Copia 9 · CPL 25.20 €",
-   "gravita": 1
-  },
-  {
-   "cliente": "AEA-HOUSE",
    "tipo": "REELS ATTIVI ['facebook_reels_overlay']",
    "dettaglio": "ASSIC -Moduli -immagine - Copia 13",
    "gravita": 1
@@ -218,18 +214,6 @@
    "cliente": "CF-RD",
    "tipo": "REELS ATTIVI ['reels']",
    "dettaglio": "Moduli - Video Consulenza Risparmiatori Puglia",
-   "gravita": 1
-  },
-  {
-   "cliente": "CF-SM",
-   "tipo": "FUORI REGOLA",
-   "dettaglio": "Moduli - 7.500€ all'anno in commissioni - Copy · CPL 24.17 €",
-   "gravita": 1
-  },
-  {
-   "cliente": "FB",
-   "tipo": "FUORI REGOLA",
-   "dettaglio": "Moduli - I costi nascosti divorano i risparmi · CPL 26.63 €",
    "gravita": 1
   },
   {
