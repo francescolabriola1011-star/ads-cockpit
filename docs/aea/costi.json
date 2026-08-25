@@ -1,6 +1,6 @@
 {
- "generato": "24/08/2026 08:11",
- "quota_mese": 77,
+ "generato": "25/08/2026 06:42",
+ "quota_mese": 81,
  "totale_corrente": 5106,
  "totale_m1": 5447,
  "totale_m2": 1407,
@@ -9,16 +9,8 @@
    "voce": "Michele De Sena",
    "mese_corrente": 1510,
    "media_precedenti": 225,
-   "atteso_a_oggi": 174,
-   "variazione": 767,
-   "stato": "scappato"
-  },
-  {
-   "voce": "Claude",
-   "mese_corrente": 40,
-   "media_precedenti": 40,
-   "atteso_a_oggi": 31,
-   "variazione": 29,
+   "atteso_a_oggi": 181,
+   "variazione": 732,
    "stato": "scappato"
   },
   {
@@ -54,7 +46,7 @@
    "stato": "nuovo"
   },
   {
-   "voce": "Zoom",
+   "voce": "Twilio",
    "mese_corrente": 20,
    "media_precedenti": null,
    "atteso_a_oggi": null,
@@ -62,7 +54,7 @@
    "stato": "nuovo"
   },
   {
-   "voce": "Twilio",
+   "voce": "Zoom",
    "mese_corrente": 20,
    "media_precedenti": null,
    "atteso_a_oggi": null,
@@ -73,7 +65,7 @@
    "voce": "Go High Level",
    "mese_corrente": 0,
    "media_precedenti": 358,
-   "atteso_a_oggi": 277,
+   "atteso_a_oggi": 288,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -81,21 +73,29 @@
    "voce": "Cost Of Goods Sold",
    "mese_corrente": 1500,
    "media_precedenti": 1622,
-   "atteso_a_oggi": 1256,
-   "variazione": 19,
+   "atteso_a_oggi": 1308,
+   "variazione": 15,
    "stato": "stabile"
   },
   {
    "voce": "Facebook",
    "mese_corrente": 120,
    "media_precedenti": 2350,
-   "atteso_a_oggi": 1819,
-   "variazione": -93,
+   "atteso_a_oggi": 1895,
+   "variazione": -94,
+   "stato": "stabile"
+  },
+  {
+   "voce": "Claude",
+   "mese_corrente": 40,
+   "media_precedenti": 40,
+   "atteso_a_oggi": 32,
+   "variazione": 24,
    "stato": "stabile"
   }
  ],
- "extra_del_mese": 1345,
- "n_scappati": 2,
+ "extra_del_mese": 1329,
+ "n_scappati": 1,
  "n_nuovi": 6,
  "n_spariti": 1
 }

@@ -1,5 +1,5 @@
 {
- "generato": "24/08 08:13",
+ "generato": "25/08 06:44",
  "n_account_rossi": 10,
  "n_puliti": 0,
  "puliti": [],
@@ -7,7 +7,13 @@
   {
    "cliente": "AEA-HOUSE",
    "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "instagram/instagram_reels · 1.28 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "dettaglio": "facebook/facebook_reels · 0.77 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "gravita": 3
+  },
+  {
+   "cliente": "AEA-HOUSE",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "instagram/instagram_reels · 1.65 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
    "gravita": 3
   },
   {
@@ -84,14 +90,32 @@
   },
   {
    "cliente": "CF-RD",
-   "tipo": "NON CONSEGNA",
-   "dettaglio": "Moduli - Video Consulenza Risparmiatori Puglia · ieri 0.00 €",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "facebook/facebook_reels · 0.56 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-RD",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "instagram/instagram_stories · 0.74 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
    "gravita": 3
   },
   {
    "cliente": "LMB",
    "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
    "dettaglio": "Lead Gen 2 - Luigi Micheloni",
+   "gravita": 3
+  },
+  {
+   "cliente": "LMB",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "facebook/facebook_stories · 1.55 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "gravita": 3
+  },
+  {
+   "cliente": "LMB",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "instagram/instagram_stories · 1.19 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
    "gravita": 3
   },
   {
@@ -109,7 +133,7 @@
   {
    "cliente": "AEA-HOUSE",
    "tipo": "FUORI REGOLA",
-   "dettaglio": "Moduli -immagine - Copia 9 · CPL 22.62 €",
+   "dettaglio": "Moduli -immagine - Copia 9 · CPL 25.20 €",
    "gravita": 1
   },
   {
@@ -187,7 +211,7 @@
   {
    "cliente": "CF-MLC",
    "tipo": "REELS ATTIVI ['reels']",
-   "dettaglio": "Moduli - 10.000€ oggi valgono 8.000€ - Copy",
+   "dettaglio": "Moduli - Video 2 24-08",
    "gravita": 1
   },
   {
@@ -198,8 +222,14 @@
   },
   {
    "cliente": "CF-SM",
-   "tipo": "REELS ATTIVI ['facebook_reels_overlay']",
-   "dettaglio": "Moduli - 7.500€ all'anno in commissioni - Copy",
+   "tipo": "FUORI REGOLA",
+   "dettaglio": "Moduli - 7.500€ all'anno in commissioni - Copy · CPL 24.17 €",
+   "gravita": 1
+  },
+  {
+   "cliente": "FB",
+   "tipo": "FUORI REGOLA",
+   "dettaglio": "Moduli - I costi nascosti divorano i risparmi · CPL 26.63 €",
    "gravita": 1
   },
   {
@@ -211,7 +241,7 @@
   {
    "cliente": "LMB",
    "tipo": "REELS ATTIVI ['facebook_reels', 'facebook_reels_overlay', 'reels']",
-   "dettaglio": "Moduli - Video",
+   "dettaglio": "Moduli - Video 3 24-08",
    "gravita": 1
   }
  ]
