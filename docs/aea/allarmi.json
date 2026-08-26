@@ -1,5 +1,5 @@
 {
- "generato": "25/08 18:43",
+ "generato": "26/08 05:33",
  "n_account_rossi": 10,
  "n_puliti": 0,
  "puliti": [],
@@ -7,13 +7,7 @@
   {
    "cliente": "AEA-HOUSE",
    "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "facebook/facebook_reels · 0.77 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
-   "gravita": 3
-  },
-  {
-   "cliente": "AEA-HOUSE",
-   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "instagram/instagram_reels · 1.65 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "dettaglio": "instagram/instagram_reels · 0.75 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
    "gravita": 3
   },
   {
@@ -83,34 +77,16 @@
    "gravita": 3
   },
   {
-   "cliente": "CF-RD",
-   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "instagram/instagram_stories · 0.74 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
-   "gravita": 3
-  },
-  {
-   "cliente": "CF-SM",
-   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "facebook/instream_video · 1.32 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
-   "gravita": 3
-  },
-  {
    "cliente": "LMB",
    "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
    "dettaglio": "Lead Gen 2 - Luigi Micheloni",
    "gravita": 3
   },
   {
-   "cliente": "LMB",
-   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "facebook/facebook_stories · 1.55 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
-   "gravita": 3
-  },
-  {
-   "cliente": "LMB",
-   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "instagram/instagram_stories · 1.19 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
-   "gravita": 3
+   "cliente": "FB",
+   "tipo": "POSIZIONAMENTI AUTOMATICI",
+   "dettaglio": "Moduli - pension 15€",
+   "gravita": 2
   },
   {
    "cliente": "ZEN",
@@ -210,14 +186,8 @@
   },
   {
    "cliente": "CF-SM",
-   "tipo": "REELS ATTIVI ['reels']",
-   "dettaglio": "Moduli - 7.500€ all'anno in commissioni - Copy",
-   "gravita": 1
-  },
-  {
-   "cliente": "FB",
-   "tipo": "REELS ATTIVI ['reels']",
-   "dettaglio": "Moduli - I costi nascosti divorano i risparmi",
+   "tipo": "REELS ATTIVI ['facebook_reels', 'reels']",
+   "dettaglio": "Moduli - Video 3",
    "gravita": 1
   },
   {
