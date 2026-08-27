@@ -1,5 +1,5 @@
 {
- "generato": "27/08 03:54",
+ "generato": "27/08 08:14",
  "n_account_rossi": 9,
  "n_puliti": 0,
  "puliti": [],
@@ -182,6 +182,12 @@
    "cliente": "CF-SM",
    "tipo": "REELS ATTIVI ['facebook_reels', 'reels']",
    "dettaglio": "Moduli - Campagna Attiva",
+   "gravita": 1
+  },
+  {
+   "cliente": "FB",
+   "tipo": "FUORI REGOLA",
+   "dettaglio": "Moduli - Campagna Attiva · CPL 35.05 €",
    "gravita": 1
   },
   {

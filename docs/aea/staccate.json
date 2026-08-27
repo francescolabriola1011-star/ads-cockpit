@@ -1,5 +1,15 @@
 [
  {
+  "quando": "2026-08-27T08:11:04+02:00",
+  "account": "27645634798460719",
+  "campagna": "Moduli - Campagna Attiva",
+  "campaign_id": "120251346937780566",
+  "motivo": "€33.78 spesi e 0 lead (limite €30)",
+  "spesa": 33.78,
+  "lead": 0.0,
+  "eseguito": true
+ },
+ {
   "quando": "2026-08-27T03:52:33+02:00",
   "account": "27645634798460719",
   "campagna": "Moduli - Campagna Attiva",
