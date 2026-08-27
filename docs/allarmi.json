@@ -1,13 +1,13 @@
 {
- "generato": "26/08 05:33",
- "n_account_rossi": 10,
+ "generato": "27/08 03:54",
+ "n_account_rossi": 9,
  "n_puliti": 0,
  "puliti": [],
  "voci": [
   {
    "cliente": "AEA-HOUSE",
    "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "instagram/instagram_reels · 0.75 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "dettaglio": "instagram/instagram_reels · 1.77 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
    "gravita": 3
   },
   {
@@ -71,21 +71,21 @@
    "gravita": 3
   },
   {
-   "cliente": "CF-MLC",
-   "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
-   "dettaglio": "Lead Gen 2 - Marco La Corte",
-   "gravita": 3
-  },
-  {
    "cliente": "LMB",
    "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
    "dettaglio": "Lead Gen 2 - Luigi Micheloni",
    "gravita": 3
   },
   {
-   "cliente": "FB",
-   "tipo": "POSIZIONAMENTI AUTOMATICI",
-   "dettaglio": "Moduli - pension 15€",
+   "cliente": "LMB",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "facebook/instream_video · 0.51 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "gravita": 3
+  },
+  {
+   "cliente": "LMB",
+   "tipo": "PIU' DI UN MODULO VIVO",
+   "dettaglio": "Lead Gen - Luigi Micheloni, Lead 2 - Luigi Micheloni",
    "gravita": 2
   },
   {
@@ -173,27 +173,27 @@
    "gravita": 1
   },
   {
-   "cliente": "CF-MLC",
-   "tipo": "REELS ATTIVI ['reels']",
-   "dettaglio": "Moduli - Video 2 24-08",
-   "gravita": 1
-  },
-  {
    "cliente": "CF-RD",
    "tipo": "REELS ATTIVI ['facebook_reels', 'reels']",
-   "dettaglio": "Moduli - Video Consulenza Risparmiatori Puglia",
+   "dettaglio": "Moduli - Campagna Principale Attiva",
    "gravita": 1
   },
   {
    "cliente": "CF-SM",
    "tipo": "REELS ATTIVI ['facebook_reels', 'reels']",
-   "dettaglio": "Moduli - Video 3",
+   "dettaglio": "Moduli - Campagna Attiva",
+   "gravita": 1
+  },
+  {
+   "cliente": "FB",
+   "tipo": "REELS ATTIVI ['facebook_reels', 'reels']",
+   "dettaglio": "Moduli - Campagna Attiva",
    "gravita": 1
   },
   {
    "cliente": "LMB",
    "tipo": "REELS ATTIVI ['facebook_reels', 'reels']",
-   "dettaglio": "Moduli - Video 3 24-08",
+   "dettaglio": "Moduli - Campagna Attiva",
    "gravita": 1
   }
  ]

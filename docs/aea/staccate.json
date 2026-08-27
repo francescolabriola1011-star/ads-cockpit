@@ -1,5 +1,25 @@
 [
  {
+  "quando": "2026-08-27T03:52:33+02:00",
+  "account": "27645634798460719",
+  "campagna": "Moduli - Campagna Attiva",
+  "campaign_id": "120251346937780566",
+  "motivo": "€30.70 spesi e 0 lead (limite €30)",
+  "spesa": 30.7,
+  "lead": 0.0,
+  "eseguito": true
+ },
+ {
+  "quando": "2026-08-27T03:52:39+02:00",
+  "account": "859478370532394",
+  "campagna": "IG Traffico - vs Barravecchia Campagna - Copia 5",
+  "campaign_id": "120249130741210629",
+  "motivo": "€44.35 spesi e 0 lead (limite €30)",
+  "spesa": 44.35,
+  "lead": 0.0,
+  "eseguito": true
+ },
+ {
   "quando": "2026-08-25T18:39:49+02:00",
   "account": "859478370532394",
   "campagna": "IG Traffico - vs Barravecchia Campagna - Copia 5",
