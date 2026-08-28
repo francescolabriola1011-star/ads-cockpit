@@ -1,15 +1,9 @@
 {
- "generato": "27/08 08:14",
+ "generato": "28/08 08:19",
  "n_account_rossi": 9,
  "n_puliti": 0,
  "puliti": [],
  "voci": [
-  {
-   "cliente": "AEA-HOUSE",
-   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "instagram/instagram_reels · 1.77 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
-   "gravita": 3
-  },
   {
    "cliente": "ASS-AR1",
    "tipo": "NON CONSEGNA",
@@ -71,22 +65,22 @@
    "gravita": 3
   },
   {
-   "cliente": "LMB",
+   "cliente": "CF-MLC",
    "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
-   "dettaglio": "Lead Gen 2 - Luigi Micheloni",
+   "dettaglio": "Lead Gen 2 - Marco La Corte",
    "gravita": 3
   },
   {
-   "cliente": "LMB",
-   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "facebook/instream_video · 0.51 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "cliente": "CF-MLC",
+   "tipo": "PIU' MODULI SULLE ADS ATTIVE",
+   "dettaglio": "Lead Gen - 1 Q - Marco La Corte + Lead Gen 2 - Marco La Corte",
    "gravita": 3
   },
   {
-   "cliente": "LMB",
-   "tipo": "PIU' DI UN MODULO VIVO",
-   "dettaglio": "Lead Gen - Luigi Micheloni, Lead 2 - Luigi Micheloni",
-   "gravita": 2
+   "cliente": "FB",
+   "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
+   "dettaglio": "Lead Gen - 1 Q - Flavio Bosia",
+   "gravita": 3
   },
   {
    "cliente": "ZEN",
@@ -173,6 +167,12 @@
    "gravita": 1
   },
   {
+   "cliente": "CF-MLC",
+   "tipo": "REELS ATTIVI ['facebook_reels', 'reels']",
+   "dettaglio": "Moduli - Campagna Attiva",
+   "gravita": 1
+  },
+  {
    "cliente": "CF-RD",
    "tipo": "REELS ATTIVI ['facebook_reels', 'reels']",
    "dettaglio": "Moduli - Campagna Principale Attiva",
@@ -187,17 +187,11 @@
   {
    "cliente": "FB",
    "tipo": "FUORI REGOLA",
-   "dettaglio": "Moduli - Campagna Attiva · CPL 35.05 €",
+   "dettaglio": "Moduli - Campagna Attiva · CPL 44.00 €",
    "gravita": 1
   },
   {
    "cliente": "FB",
-   "tipo": "REELS ATTIVI ['facebook_reels', 'reels']",
-   "dettaglio": "Moduli - Campagna Attiva",
-   "gravita": 1
-  },
-  {
-   "cliente": "LMB",
    "tipo": "REELS ATTIVI ['facebook_reels', 'reels']",
    "dettaglio": "Moduli - Campagna Attiva",
    "gravita": 1

@@ -1,11 +1,11 @@
 {
  "titolo": "AI Elite Advisory",
  "sottotitolo": "casa nostra",
- "generato": "2026-08-27T08:10:22+02:00",
+ "generato": "2026-08-28T08:16:24+02:00",
  "periodo": {
   "da": "2026-01-01",
-  "a": "2026-08-27",
-  "giorni": 238,
+  "a": "2026-08-28",
+  "giorni": 239,
   "finestra_recente_giorni": 7
  },
  "regole": {
@@ -22,16 +22,16 @@
   "cvr_min_clicks": 30
  },
  "totali": {
-  "spesa": 3755.32,
-  "lead": 185.0,
-  "cpl": 20.3,
+  "spesa": 3784.26,
+  "lead": 187.0,
+  "cpl": 20.24,
   "sprecato": 14.56,
   "quota_sprecata": 0.4,
-  "sprecato_al_mese": 1.84,
+  "sprecato_al_mese": 1.83,
   "brucia_oggi": 0,
   "da_staccare_ora": 0,
-  "clicks": 5980.0,
-  "cvr": 3.09,
+  "clicks": 6042.0,
+  "cvr": 3.1,
   "clienti": 1,
   "campagne": 126
  },
@@ -41,23 +41,23 @@
    "account_id": "859478370532394",
    "nome_reale": "AI Elite Advisory",
    "currency": "EUR",
-   "spend": 3755.32,
-   "leads": 185.0,
-   "cpl": 20.3,
+   "spend": 3784.26,
+   "leads": 187.0,
+   "cpl": 20.24,
    "sprecato": 14.56,
    "quota_sprecata": 0.4,
-   "impressions": 379071.0,
-   "clicks": 5980.0,
-   "cvr": 3.09,
+   "impressions": 382795.0,
+   "clicks": 6042.0,
+   "cvr": 3.1,
    "n_campagne": 126,
    "n_kill": 2,
    "n_kill_ancora_accese": 0,
    "brucia_oggi": 0,
    "riallocazione": {
     "budget_da_spostare": 74.56,
-    "cpl_vincente": 7.42,
+    "cpl_vincente": 7.49,
     "lead_prudente": 2,
-    "lead_ottimistico": 10
+    "lead_ottimistico": 9
    },
    "campagne": [
     {
@@ -66,13 +66,13 @@
      "spend": 44.35,
      "leads": 0.0,
      "cpl": null,
-     "impressions": 17369.0,
+     "impressions": 17370.0,
      "clicks": 889.0,
      "cvr": 0.0,
-     "ctr": 5.118314,
-     "cpm": 2.5534,
+     "ctr": 5.11802,
+     "cpm": 2.553253,
      "reach": 11811.0,
-     "frequency": 1.470578,
+     "frequency": 1.470663,
      "attiva": false,
      "effective_status": "PAUSED",
      "daily_budget": 4.0,
@@ -83,7 +83,7 @@
       "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 28.11,
+      "spend": 21.4,
       "leads": 0.0,
       "cpl": null
      },
@@ -141,31 +141,31 @@
     {
      "id": "120249368205620629",
      "name": "ASSIC -Moduli -immagine - Copia 13",
-     "spend": 334.24,
-     "leads": 45.0,
-     "cpl": 7.43,
-     "impressions": 46318.0,
-     "clicks": 871.0,
-     "cvr": 5.17,
-     "ctr": 1.880478,
-     "cpm": 7.216201,
-     "reach": 11774.0,
-     "frequency": 3.933922,
+     "spend": 352.62,
+     "leads": 47.0,
+     "cpl": 7.5,
+     "impressions": 48771.0,
+     "clicks": 920.0,
+     "cvr": 5.11,
+     "ctr": 1.886367,
+     "cpm": 7.230116,
+     "reach": 12149.0,
+     "frequency": 4.014404,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 20.0,
      "status": "winner",
-     "reason": "CPL €7.43: sotto €10, ci si mette budget",
+     "reason": "CPL €7.50: sotto €10, ci si mette budget",
      "sprecato": 0.0,
      "flags": [
-      "frequenza 3.9: pubblico bruciato, cambia audience"
+      "frequenza 4.0: pubblico bruciato, cambia audience"
      ],
      "recent": {
-      "spend": 148.03,
-      "leads": 13.0,
-      "cpl": 11.39
+      "spend": 144.45,
+      "leads": 14.0,
+      "cpl": 10.32
      },
-     "trend": 3.96
+     "trend": 2.82
     },
     {
      "id": "120246542889040629",
@@ -219,29 +219,29 @@
     {
      "id": "120249502985680629",
      "name": "Moduli -immagine - Copia 9",
-     "spend": 121.83,
+     "spend": 132.39,
      "leads": 4.0,
-     "cpl": 30.46,
-     "impressions": 17253.0,
-     "clicks": 138.0,
-     "cvr": 2.9,
-     "ctr": 0.799861,
-     "cpm": 7.061381,
-     "reach": 5618.0,
-     "frequency": 3.071022,
+     "cpl": 33.1,
+     "impressions": 18523.0,
+     "clicks": 151.0,
+     "cvr": 2.65,
+     "ctr": 0.815203,
+     "cpm": 7.14733,
+     "reach": 5821.0,
+     "frequency": 3.182099,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 10.0,
      "status": "ok",
-     "reason": "CPL €30.46: dentro i parametri",
+     "reason": "CPL €33.10: dentro i parametri",
      "sprecato": 0.0,
      "flags": [
-      "CTR 0.80%: il creativo non ferma nessuno",
-      "frequenza 3.1: pubblico bruciato, cambia audience",
-      "solo 2.9% dei click diventa lead: modulo o landing da rivedere"
+      "CTR 0.82%: il creativo non ferma nessuno",
+      "frequenza 3.2: pubblico bruciato, cambia audience",
+      "solo 2.6% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 73.23,
+      "spend": 74.39,
       "leads": 0.0,
       "cpl": null
      },
