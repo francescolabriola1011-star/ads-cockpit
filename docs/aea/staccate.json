@@ -1,5 +1,25 @@
 [
  {
+  "quando": "2026-08-29T08:11:14+02:00",
+  "account": "940630012397327",
+  "campagna": "Moduli - Campagna Attiva",
+  "campaign_id": "52616908898947",
+  "motivo": "€65.22 spesi e 0 lead (limite €30)",
+  "spesa": 65.22,
+  "lead": 0.0,
+  "eseguito": true
+ },
+ {
+  "quando": "2026-08-29T08:11:17+02:00",
+  "account": "833628578375108",
+  "campagna": "Moduli - Campagna Attiva",
+  "campaign_id": "120253921757410427",
+  "motivo": "€52.82 spesi per 1 solo lead (limite €50)",
+  "spesa": 52.82,
+  "lead": 1.0,
+  "eseguito": true
+ },
+ {
   "quando": "2026-08-27T08:11:04+02:00",
   "account": "27645634798460719",
   "campagna": "Moduli - Campagna Attiva",

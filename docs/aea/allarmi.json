@@ -1,6 +1,6 @@
 {
- "generato": "28/08 08:19",
- "n_account_rossi": 9,
+ "generato": "29/08 08:13",
+ "n_account_rossi": 8,
  "n_puliti": 0,
  "puliti": [],
  "voci": [
@@ -20,24 +20,6 @@
    "cliente": "ASS-AR1",
    "tipo": "NON CONSEGNA",
    "dettaglio": "Moduli - stai spendendo troppo foto - Copia · ieri 0.00 €",
-   "gravita": 3
-  },
-  {
-   "cliente": "CF-ES",
-   "tipo": "NON CONSEGNA",
-   "dettaglio": "Moduli - anche con 100€ al mese - Copia · ieri 0.00 €",
-   "gravita": 3
-  },
-  {
-   "cliente": "CF-ES",
-   "tipo": "NON CONSEGNA",
-   "dettaglio": "Moduli - inizia con meno di 1500 - Copia · ieri 0.00 €",
-   "gravita": 3
-  },
-  {
-   "cliente": "CF-ES",
-   "tipo": "NON CONSEGNA",
-   "dettaglio": "Moduli - versamenti da 1200 - Copia · ieri 0.00 €",
    "gravita": 3
   },
   {
@@ -77,12 +59,6 @@
    "gravita": 3
   },
   {
-   "cliente": "FB",
-   "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
-   "dettaglio": "Lead Gen - 1 Q - Flavio Bosia",
-   "gravita": 3
-  },
-  {
    "cliente": "ZEN",
    "tipo": "POSIZIONAMENTI AUTOMATICI",
    "dettaglio": "Nuova campagna Contatti step",
@@ -93,6 +69,12 @@
    "tipo": "POSIZIONAMENTI AUTOMATICI",
    "dettaglio": "Nuova campagna dispongo di un capitale",
    "gravita": 2
+  },
+  {
+   "cliente": "AEA-HOUSE",
+   "tipo": "FUORI REGOLA",
+   "dettaglio": "Moduli -immagine - Copia 9 · CPL 35.41 €",
+   "gravita": 1
   },
   {
    "cliente": "AEA-HOUSE",
@@ -176,18 +158,6 @@
    "cliente": "CF-RD",
    "tipo": "REELS ATTIVI ['facebook_reels', 'reels']",
    "dettaglio": "Moduli - Campagna Principale Attiva",
-   "gravita": 1
-  },
-  {
-   "cliente": "CF-SM",
-   "tipo": "REELS ATTIVI ['facebook_reels', 'reels']",
-   "dettaglio": "Moduli - Campagna Attiva",
-   "gravita": 1
-  },
-  {
-   "cliente": "FB",
-   "tipo": "FUORI REGOLA",
-   "dettaglio": "Moduli - Campagna Attiva · CPL 44.00 €",
    "gravita": 1
   },
   {
