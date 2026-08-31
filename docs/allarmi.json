@@ -1,9 +1,15 @@
 {
- "generato": "29/08 08:13",
- "n_account_rossi": 8,
+ "generato": "31/08 08:16",
+ "n_account_rossi": 10,
  "n_puliti": 0,
  "puliti": [],
  "voci": [
+  {
+   "cliente": "AEA-HOUSE",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "instagram/instagram_reels · 0.52 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "gravita": 3
+  },
   {
    "cliente": "ASS-AR1",
    "tipo": "NON CONSEGNA",
@@ -20,6 +26,24 @@
    "cliente": "ASS-AR1",
    "tipo": "NON CONSEGNA",
    "dettaglio": "Moduli - stai spendendo troppo foto - Copia · ieri 0.00 €",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-ES",
+   "tipo": "NON CONSEGNA",
+   "dettaglio": "Moduli - anche con 100€ al mese - Copia · ieri 0.00 €",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-ES",
+   "tipo": "NON CONSEGNA",
+   "dettaglio": "Moduli - inizia con meno di 1500 - Copia · ieri 0.00 €",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-ES",
+   "tipo": "NON CONSEGNA",
+   "dettaglio": "Moduli - versamenti da 1200 - Copia · ieri 0.00 €",
    "gravita": 3
   },
   {
@@ -59,6 +83,30 @@
    "gravita": 3
   },
   {
+   "cliente": "CF-RD",
+   "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
+   "dettaglio": "Lead Gen 1 Q - Raffaele De Leonardis",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-RD",
+   "tipo": "PIU' MODULI SULLE ADS ATTIVE",
+   "dettaglio": "Lead Gen - Raffaele De Leonardis + Lead Gen 1 Q - Raffaele De Leonardis",
+   "gravita": 3
+  },
+  {
+   "cliente": "ZEN",
+   "tipo": "NON CONSEGNA",
+   "dettaglio": "Nuova campagna dispongo di un capitale · ieri 0.00 €",
+   "gravita": 3
+  },
+  {
+   "cliente": "LMB",
+   "tipo": "PIU' DI UN MODULO VIVO",
+   "dettaglio": "Lead Gen 1 Q - Luigi Micheloni, Resoconto Mensile - Luigi Micheloni - Agosto 2026",
+   "gravita": 2
+  },
+  {
    "cliente": "ZEN",
    "tipo": "POSIZIONAMENTI AUTOMATICI",
    "dettaglio": "Nuova campagna Contatti step",
@@ -72,8 +120,8 @@
   },
   {
    "cliente": "AEA-HOUSE",
-   "tipo": "FUORI REGOLA",
-   "dettaglio": "Moduli -immagine - Copia 9 · CPL 35.41 €",
+   "tipo": "REELS ATTIVI ['facebook_reels', 'facebook_reels_overlay']",
+   "dettaglio": "Venditore - Moduli",
    "gravita": 1
   },
   {
@@ -156,12 +204,42 @@
   },
   {
    "cliente": "CF-RD",
+   "tipo": "FUORI REGOLA",
+   "dettaglio": "Moduli - Campagna Principale Attiva · CPL 35.32 €",
+   "gravita": 1
+  },
+  {
+   "cliente": "CF-RD",
    "tipo": "REELS ATTIVI ['facebook_reels', 'reels']",
    "dettaglio": "Moduli - Campagna Principale Attiva",
    "gravita": 1
   },
   {
+   "cliente": "CF-SM",
+   "tipo": "FUORI REGOLA",
+   "dettaglio": "Moduli - Campagna Attiva · 83.32 € e 1 lead",
+   "gravita": 1
+  },
+  {
+   "cliente": "CF-SM",
+   "tipo": "REELS ATTIVI ['facebook_reels', 'reels']",
+   "dettaglio": "Moduli - Campagna Attiva",
+   "gravita": 1
+  },
+  {
    "cliente": "FB",
+   "tipo": "REELS ATTIVI ['facebook_reels', 'reels']",
+   "dettaglio": "Moduli - Campagna Attiva",
+   "gravita": 1
+  },
+  {
+   "cliente": "LMB",
+   "tipo": "FUORI REGOLA",
+   "dettaglio": "Moduli - Campagna Attiva · CPL 50.18 €",
+   "gravita": 1
+  },
+  {
+   "cliente": "LMB",
    "tipo": "REELS ATTIVI ['facebook_reels', 'reels']",
    "dettaglio": "Moduli - Campagna Attiva",
    "gravita": 1

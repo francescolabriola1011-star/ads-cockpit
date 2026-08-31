@@ -1,11 +1,11 @@
 {
  "titolo": "AI Elite Advisory",
  "sottotitolo": "casa nostra",
- "generato": "2026-08-29T08:10:33+02:00",
+ "generato": "2026-08-31T08:11:46+02:00",
  "periodo": {
   "da": "2026-01-01",
-  "a": "2026-08-29",
-  "giorni": 240,
+  "a": "2026-08-31",
+  "giorni": 242,
   "finestra_recente_giorni": 7
  },
  "regole": {
@@ -22,16 +22,16 @@
   "cvr_min_clicks": 30
  },
  "totali": {
-  "spesa": 3815.32,
-  "lead": 189.0,
-  "cpl": 20.19,
-  "sprecato": 16.19,
+  "spesa": 3885.72,
+  "lead": 198.0,
+  "cpl": 19.62,
+  "sprecato": 14.56,
   "quota_sprecata": 0.4,
-  "sprecato_al_mese": 2.02,
-  "brucia_oggi": 10.0,
-  "da_staccare_ora": 1,
-  "clicks": 6101.0,
-  "cvr": 3.1,
+  "sprecato_al_mese": 1.8,
+  "brucia_oggi": 0,
+  "da_staccare_ora": 0,
+  "clicks": 6247.0,
+  "cvr": 3.17,
   "clienti": 1,
   "campagne": 126
  },
@@ -41,23 +41,23 @@
    "account_id": "859478370532394",
    "nome_reale": "AI Elite Advisory",
    "currency": "EUR",
-   "spend": 3815.32,
-   "leads": 189.0,
-   "cpl": 20.19,
-   "sprecato": 16.19,
+   "spend": 3885.72,
+   "leads": 198.0,
+   "cpl": 19.62,
+   "sprecato": 14.56,
    "quota_sprecata": 0.4,
-   "impressions": 386186.0,
-   "clicks": 6101.0,
-   "cvr": 3.1,
+   "impressions": 395489.0,
+   "clicks": 6247.0,
+   "cvr": 3.17,
    "n_campagne": 126,
-   "n_kill": 3,
-   "n_kill_ancora_accese": 1,
-   "brucia_oggi": 10.0,
+   "n_kill": 2,
+   "n_kill_ancora_accese": 0,
+   "brucia_oggi": 0,
    "riallocazione": {
-    "budget_da_spostare": 216.19,
-    "cpl_vincente": 7.6,
-    "lead_prudente": 6,
-    "lead_ottimistico": 28
+    "budget_da_spostare": 74.56,
+    "cpl_vincente": 7.48,
+    "lead_prudente": 2,
+    "lead_ottimistico": 9
    },
    "campagne": [
     {
@@ -83,38 +83,7 @@
       "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 15.29,
-      "leads": 0.0,
-      "cpl": null
-     },
-     "trend": null
-    },
-    {
-     "id": "120249502985680629",
-     "name": "Moduli -immagine - Copia 9",
-     "spend": 141.63,
-     "leads": 4.0,
-     "cpl": 35.41,
-     "impressions": 19731.0,
-     "clicks": 168.0,
-     "cvr": 2.38,
-     "ctr": 0.851452,
-     "cpm": 7.178045,
-     "reach": 6015.0,
-     "frequency": 3.280299,
-     "attiva": true,
-     "effective_status": "ACTIVE",
-     "daily_budget": 10.0,
-     "status": "kill",
-     "reason": "CPL €35.41: sopra il limite di €35",
-     "sprecato": 1.63,
-     "flags": [
-      "CTR 0.85%: il creativo non ferma nessuno",
-      "frequenza 3.3: pubblico bruciato, cambia audience",
-      "solo 2.4% dei click diventa lead: modulo o landing da rivedere"
-     ],
-     "recent": {
-      "spend": 74.29,
+      "spend": 8.95,
       "leads": 0.0,
       "cpl": null
      },
@@ -172,31 +141,31 @@
     {
      "id": "120249368205620629",
      "name": "ASSIC -Moduli -immagine - Copia 13",
-     "spend": 374.44,
-     "leads": 49.0,
-     "cpl": 7.64,
-     "impressions": 50954.0,
-     "clicks": 962.0,
-     "cvr": 5.09,
-     "ctr": 1.887977,
-     "cpm": 7.348589,
-     "reach": 12276.0,
-     "frequency": 4.150701,
+     "spend": 419.66,
+     "leads": 56.0,
+     "cpl": 7.49,
+     "impressions": 57659.0,
+     "clicks": 1063.0,
+     "cvr": 5.27,
+     "ctr": 1.843598,
+     "cpm": 7.278309,
+     "reach": 12929.0,
+     "frequency": 4.459664,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 20.0,
      "status": "winner",
-     "reason": "CPL €7.64: sotto €10, ci si mette budget",
+     "reason": "CPL €7.49: sotto €10, ci si mette budget",
      "sprecato": 0.0,
      "flags": [
-      "frequenza 4.2: pubblico bruciato, cambia audience"
+      "frequenza 4.5: pubblico bruciato, cambia audience"
      ],
      "recent": {
-      "spend": 147.56,
-      "leads": 14.0,
-      "cpl": 10.54
+      "spend": 148.12,
+      "leads": 18.0,
+      "cpl": 8.23
      },
-     "trend": 2.9
+     "trend": 0.74
     },
     {
      "id": "120246542889040629",
@@ -246,6 +215,37 @@
      ],
      "recent": null,
      "trend": null
+    },
+    {
+     "id": "120249502985680629",
+     "name": "Moduli -immagine - Copia 9",
+     "spend": 166.81,
+     "leads": 6.0,
+     "cpl": 27.8,
+     "impressions": 22329.0,
+     "clicks": 213.0,
+     "cvr": 2.82,
+     "ctr": 0.953916,
+     "cpm": 7.470554,
+     "reach": 6460.0,
+     "frequency": 3.456502,
+     "attiva": true,
+     "effective_status": "ACTIVE",
+     "daily_budget": 10.0,
+     "status": "ok",
+     "reason": "CPL €27.80: dentro i parametri",
+     "sprecato": 0.0,
+     "flags": [
+      "CTR 0.95%: il creativo non ferma nessuno",
+      "frequenza 3.5: pubblico bruciato, cambia audience",
+      "solo 2.8% dei click diventa lead: modulo o landing da rivedere"
+     ],
+     "recent": {
+      "spend": 76.31,
+      "leads": 2.0,
+      "cpl": 38.16
+     },
+     "trend": 10.36
     },
     {
      "id": "120248713065570629",
@@ -3069,8 +3069,8 @@
    ],
    "hiring": {
     "n": 6,
-    "spend": 175.99,
-    "leads": 102.0
+    "spend": 182.51,
+    "leads": 106.0
    },
    "campagne_hiring": [
     {
@@ -3130,18 +3130,18 @@
     {
      "id": "120246443902370629",
      "name": "Venditore - Moduli",
-     "spend": 103.39,
-     "leads": 29.0,
-     "cpl": 3.57,
-     "impressions": 4864.0,
-     "clicks": 239.0,
-     "cvr": 12.13,
-     "ctr": 4.913651,
-     "cpm": 21.256168,
-     "reach": 2050.0,
-     "frequency": 2.372683,
-     "attiva": false,
-     "effective_status": "PAUSED",
+     "spend": 109.91,
+     "leads": 33.0,
+     "cpl": 3.33,
+     "impressions": 5190.0,
+     "clicks": 255.0,
+     "cvr": 12.94,
+     "ctr": 4.913295,
+     "cpm": 21.177264,
+     "reach": 2148.0,
+     "frequency": 2.416201,
+     "attiva": true,
+     "effective_status": "ACTIVE",
      "daily_budget": 6.0,
      "hiring": true
     },

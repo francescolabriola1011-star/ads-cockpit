@@ -1,5 +1,53 @@
 [
  {
+  "quando": "2026-08-29T10:56:26+02:00",
+  "account": "999",
+  "campagna": "Moduli - Campagna Attiva",
+  "annuncio": "creativa vecchia",
+  "ad_id": "AD1",
+  "campaign_id": "CAMP1",
+  "motivo": "€80.00 spesi e 0 lead (limite €30)",
+  "spesa": 80.0,
+  "lead": 0.0,
+  "eseguito": true
+ },
+ {
+  "quando": "2026-08-29T10:56:26+02:00",
+  "account": "999",
+  "campagna": "Moduli - Campagna Attiva",
+  "annuncio": "creativa media",
+  "ad_id": "AD2",
+  "campaign_id": "CAMP1",
+  "motivo": "€70.00 spesi e 0 lead (limite €30)",
+  "spesa": 70.0,
+  "lead": 0.0,
+  "eseguito": true
+ },
+ {
+  "quando": "2026-08-29T10:56:03+02:00",
+  "account": "999",
+  "campagna": "Moduli - Campagna Attiva",
+  "annuncio": "creativa vecchia",
+  "ad_id": "AD1",
+  "campaign_id": "CAMP1",
+  "motivo": "€80.00 spesi e 0 lead (limite €30)",
+  "spesa": 80.0,
+  "lead": 0.0,
+  "eseguito": true
+ },
+ {
+  "quando": "2026-08-29T10:56:03+02:00",
+  "account": "999",
+  "campagna": "Moduli - Campagna Attiva",
+  "annuncio": "creativa nuova",
+  "ad_id": "AD2",
+  "campaign_id": "CAMP1",
+  "motivo": "€70.00 spesi e 0 lead (limite €30)",
+  "spesa": 70.0,
+  "lead": 0.0,
+  "eseguito": true
+ },
+ {
   "quando": "2026-08-29T08:11:14+02:00",
   "account": "940630012397327",
   "campagna": "Moduli - Campagna Attiva",
