@@ -1,11 +1,11 @@
 {
  "titolo": "ADS Cockpit",
  "sottotitolo": "tutti gli account",
- "generato": "2026-08-31T08:10:59+02:00",
+ "generato": "2026-09-01T08:10:23+02:00",
  "periodo": {
   "da": "2026-01-01",
-  "a": "2026-08-31",
-  "giorni": 242,
+  "a": "2026-09-01",
+  "giorni": 243,
   "finestra_recente_giorni": 7
  },
  "regole": {
@@ -22,15 +22,15 @@
   "cvr_min_clicks": 30
  },
  "totali": {
-  "spesa": 1909.63,
-  "lead": 52.0,
-  "cpl": 36.72,
-  "sprecato": 70.87,
-  "quota_sprecata": 3.7,
-  "sprecato_al_mese": 8.79,
-  "brucia_oggi": 45.0,
-  "da_staccare_ora": 3,
-  "clicks": 3668.0,
+  "spesa": 2002.96,
+  "lead": 55.0,
+  "cpl": 36.42,
+  "sprecato": 106.99,
+  "quota_sprecata": 5.3,
+  "sprecato_al_mese": 13.21,
+  "brucia_oggi": 30.0,
+  "da_staccare_ora": 2,
+  "clicks": 3869.0,
   "cvr": 1.42,
   "clienti": 5,
   "campagne": 73
@@ -41,20 +41,20 @@
    "account_id": "833628578375108",
    "nome_reale": "Stefano Moratti",
    "currency": "EUR",
-   "spend": 580.75,
+   "spend": 601.62,
    "leads": 11.0,
-   "cpl": 52.8,
-   "sprecato": 36.94,
-   "quota_sprecata": 6.4,
-   "impressions": 78881.0,
-   "clicks": 1006.0,
-   "cvr": 1.09,
+   "cpl": 54.69,
+   "sprecato": 57.81,
+   "quota_sprecata": 9.6,
+   "impressions": 81784.0,
+   "clicks": 1037.0,
+   "cvr": 1.06,
    "n_campagne": 24,
    "n_kill": 2,
    "n_kill_ancora_accese": 1,
    "brucia_oggi": 15.0,
    "riallocazione": {
-    "budget_da_spostare": 116.94,
+    "budget_da_spostare": 137.81,
     "cpl_vincente": null,
     "lead_prudente": 3,
     "lead_ottimistico": 0
@@ -63,30 +63,30 @@
     {
      "id": "120253921757410427",
      "name": "Moduli - Campagna Attiva",
-     "spend": 83.31,
+     "spend": 104.18,
      "leads": 1.0,
-     "cpl": 83.31,
-     "impressions": 13055.0,
-     "clicks": 124.0,
-     "cvr": 0.81,
-     "ctr": 0.949828,
-     "cpm": 6.381463,
-     "reach": 6868.0,
-     "frequency": 1.900845,
+     "cpl": 104.18,
+     "impressions": 15958.0,
+     "clicks": 155.0,
+     "cvr": 0.65,
+     "ctr": 0.9713,
+     "cpm": 6.528387,
+     "reach": 7849.0,
+     "frequency": 2.033125,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 15.0,
      "status": "kill",
-     "reason": "1 solo lead a €83.31: oltre il limite di €50",
-     "sprecato": 33.31,
+     "reason": "1 solo lead a €104.18: oltre il limite di €50",
+     "sprecato": 54.18,
      "flags": [
-      "CTR 0.95%: il creativo non ferma nessuno",
-      "solo 0.8% dei click diventa lead: modulo o landing da rivedere"
+      "CTR 0.97%: il creativo non ferma nessuno",
+      "solo 0.6% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 83.31,
+      "spend": 104.18,
       "leads": 1.0,
-      "cpl": 83.31
+      "cpl": 104.18
      },
      "trend": 0.0
     },
@@ -138,7 +138,7 @@
       "solo 2.6% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 26.77,
+      "spend": 15.43,
       "leads": 0.0,
       "cpl": null
      },
@@ -666,53 +666,53 @@
    "account_id": "940630012397327",
    "nome_reale": "Luigi Micheloni Banker",
    "currency": "EUR",
-   "spend": 388.66,
+   "spend": 404.86,
    "leads": 13.0,
-   "cpl": 29.9,
-   "sprecato": 30.26,
-   "quota_sprecata": 7.8,
-   "impressions": 58914.0,
-   "clicks": 851.0,
-   "cvr": 1.53,
+   "cpl": 31.14,
+   "sprecato": 46.46,
+   "quota_sprecata": 11.5,
+   "impressions": 62570.0,
+   "clicks": 902.0,
+   "cvr": 1.44,
    "n_campagne": 14,
    "n_kill": 1,
    "n_kill_ancora_accese": 1,
    "brucia_oggi": 15.0,
    "riallocazione": {
-    "budget_da_spostare": 100.26,
+    "budget_da_spostare": 116.46,
     "cpl_vincente": null,
-    "lead_prudente": 2,
+    "lead_prudente": 3,
     "lead_ottimistico": 0
    },
    "campagne": [
     {
      "id": "52616908898947",
      "name": "Moduli - Campagna Attiva",
-     "spend": 100.26,
+     "spend": 116.46,
      "leads": 2.0,
-     "cpl": 50.13,
-     "impressions": 16627.0,
-     "clicks": 168.0,
-     "cvr": 1.19,
-     "ctr": 1.010405,
-     "cpm": 6.029951,
-     "reach": 7804.0,
-     "frequency": 2.130574,
+     "cpl": 58.23,
+     "impressions": 20283.0,
+     "clicks": 219.0,
+     "cvr": 0.91,
+     "ctr": 1.079722,
+     "cpm": 5.741754,
+     "reach": 8867.0,
+     "frequency": 2.28747,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 15.0,
      "status": "kill",
-     "reason": "CPL €50.13: sopra il limite di €35",
-     "sprecato": 30.26,
+     "reason": "CPL €58.23: sopra il limite di €35",
+     "sprecato": 46.46,
      "flags": [
-      "solo 1.2% dei click diventa lead: modulo o landing da rivedere"
+      "solo 0.9% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 100.32,
+      "spend": 116.46,
       "leads": 2.0,
-      "cpl": 50.16
+      "cpl": 58.23
      },
-     "trend": 0.03
+     "trend": 0.0
     },
     {
      "id": "52605999729747",
@@ -762,7 +762,7 @@
       "solo 0.8% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 11.82,
+      "spend": 0.42,
       "leads": 0.0,
       "cpl": null
      },
@@ -1048,14 +1048,14 @@
    "account_id": "1494987368248230",
    "nome_reale": "Flavio Bosia",
    "currency": "EUR",
-   "spend": 368.08,
-   "leads": 9.0,
-   "cpl": 40.9,
+   "spend": 383.94,
+   "leads": 10.0,
+   "cpl": 38.39,
    "sprecato": 2.72,
    "quota_sprecata": 0.7,
-   "impressions": 34187.0,
-   "clicks": 472.0,
-   "cvr": 1.91,
+   "impressions": 37142.0,
+   "clicks": 506.0,
+   "cvr": 1.98,
    "n_campagne": 14,
    "n_kill": 1,
    "n_kill_ancora_accese": 0,
@@ -1095,31 +1095,31 @@
     {
      "id": "52581507761861",
      "name": "Moduli - Campagna Attiva",
-     "spend": 142.2,
-     "leads": 6.0,
-     "cpl": 23.7,
-     "impressions": 13827.0,
-     "clicks": 152.0,
-     "cvr": 3.95,
-     "ctr": 1.099298,
-     "cpm": 10.284227,
-     "reach": 7167.0,
-     "frequency": 1.929259,
+     "spend": 158.06,
+     "leads": 7.0,
+     "cpl": 22.58,
+     "impressions": 16782.0,
+     "clicks": 186.0,
+     "cvr": 3.76,
+     "ctr": 1.10833,
+     "cpm": 9.418425,
+     "reach": 8490.0,
+     "frequency": 1.976678,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 15.0,
      "status": "ok",
-     "reason": "CPL €23.70: dentro i parametri",
+     "reason": "CPL €22.58: dentro i parametri",
      "sprecato": 0.0,
      "flags": [
-      "solo 3.9% dei click diventa lead: modulo o landing da rivedere"
+      "solo 3.8% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 104.6,
-      "leads": 4.0,
-      "cpl": 26.15
+      "spend": 107.57,
+      "leads": 5.0,
+      "cpl": 21.51
      },
-     "trend": 2.45
+     "trend": -1.07
     },
     {
      "id": "52580033731061",
@@ -1424,53 +1424,53 @@
    "account_id": "1008903164040326",
    "nome_reale": "Raffaele De Leonardis",
    "currency": "EUR",
-   "spend": 105.95,
-   "leads": 3.0,
-   "cpl": 35.32,
-   "sprecato": 0.95,
-   "quota_sprecata": 0.9,
-   "impressions": 9906.0,
-   "clicks": 259.0,
-   "cvr": 1.16,
+   "spend": 129.48,
+   "leads": 5.0,
+   "cpl": 25.9,
+   "sprecato": 0.0,
+   "quota_sprecata": 0.0,
+   "impressions": 12852.0,
+   "clicks": 317.0,
+   "cvr": 1.58,
    "n_campagne": 1,
-   "n_kill": 1,
-   "n_kill_ancora_accese": 1,
-   "brucia_oggi": 15.0,
+   "n_kill": 0,
+   "n_kill_ancora_accese": 0,
+   "brucia_oggi": 0,
    "riallocazione": {
-    "budget_da_spostare": 105.95,
+    "budget_da_spostare": 0,
     "cpl_vincente": null,
-    "lead_prudente": 3,
+    "lead_prudente": 0,
     "lead_ottimistico": 0
    },
    "campagne": [
     {
      "id": "120255864019140012",
      "name": "Moduli - Campagna Principale Attiva",
-     "spend": 105.95,
-     "leads": 3.0,
-     "cpl": 35.32,
-     "impressions": 9906.0,
-     "clicks": 259.0,
-     "cvr": 1.16,
-     "ctr": 2.614577,
-     "cpm": 10.695538,
-     "reach": 6014.0,
-     "frequency": 1.647157,
+     "spend": 129.48,
+     "leads": 5.0,
+     "cpl": 25.9,
+     "impressions": 12852.0,
+     "clicks": 317.0,
+     "cvr": 1.58,
+     "ctr": 2.466542,
+     "cpm": 10.074697,
+     "reach": 7283.0,
+     "frequency": 1.764657,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 15.0,
-     "status": "kill",
-     "reason": "CPL €35.32: sopra il limite di €35",
-     "sprecato": 0.95,
+     "status": "ok",
+     "reason": "CPL €25.90: dentro i parametri",
+     "sprecato": 0.0,
      "flags": [
-      "solo 1.2% dei click diventa lead: modulo o landing da rivedere"
+      "solo 1.6% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 105.95,
-      "leads": 3.0,
-      "cpl": 35.32
+      "spend": 119.3,
+      "leads": 5.0,
+      "cpl": 23.86
      },
-     "trend": 0.0
+     "trend": -2.04
     }
    ],
    "hiring": {
@@ -1485,14 +1485,14 @@
    "account_id": "27645634798460719",
    "nome_reale": "Marco La Corte",
    "currency": "EUR",
-   "spend": 466.19,
+   "spend": 483.06,
    "leads": 16.0,
-   "cpl": 29.14,
+   "cpl": 30.19,
    "sprecato": 0.0,
    "quota_sprecata": 0.0,
-   "impressions": 64554.0,
-   "clicks": 1080.0,
-   "cvr": 1.48,
+   "impressions": 67443.0,
+   "clicks": 1107.0,
+   "cvr": 1.45,
    "n_campagne": 20,
    "n_kill": 0,
    "n_kill_ancora_accese": 0,
@@ -1507,31 +1507,31 @@
     {
      "id": "120251346937780566",
      "name": "Moduli - Campagna Attiva",
-     "spend": 96.57,
+     "spend": 113.44,
      "leads": 6.0,
-     "cpl": 16.09,
-     "impressions": 11551.0,
-     "clicks": 219.0,
-     "cvr": 2.74,
-     "ctr": 1.89594,
-     "cpm": 8.360315,
-     "reach": 7120.0,
-     "frequency": 1.622331,
+     "cpl": 18.91,
+     "impressions": 14440.0,
+     "clicks": 246.0,
+     "cvr": 2.44,
+     "ctr": 1.703601,
+     "cpm": 7.855956,
+     "reach": 8592.0,
+     "frequency": 1.680633,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 15.0,
      "status": "ok",
-     "reason": "CPL €16.09: dentro i parametri",
+     "reason": "CPL €18.91: dentro i parametri",
      "sprecato": 0.0,
      "flags": [
-      "solo 2.7% dei click diventa lead: modulo o landing da rivedere"
+      "solo 2.4% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 96.57,
+      "spend": 113.38,
       "leads": 6.0,
-      "cpl": 16.09
+      "cpl": 18.9
      },
-     "trend": 0.0
+     "trend": -0.01
     },
     {
      "id": "120251031963370566",
@@ -1969,11 +1969,7 @@
      "flags": [
       "CTR 0.88%: il creativo non ferma nessuno"
      ],
-     "recent": {
-      "spend": 7.83,
-      "leads": 0.0,
-      "cpl": null
-     },
+     "recent": null,
      "trend": null
     },
     {

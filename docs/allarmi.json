@@ -1,15 +1,9 @@
 {
- "generato": "31/08 08:16",
+ "generato": "01/09 08:13",
  "n_account_rossi": 10,
  "n_puliti": 0,
  "puliti": [],
  "voci": [
-  {
-   "cliente": "AEA-HOUSE",
-   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "instagram/instagram_reels · 0.52 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
-   "gravita": 3
-  },
   {
    "cliente": "ASS-AR1",
    "tipo": "NON CONSEGNA",
@@ -84,12 +78,6 @@
   },
   {
    "cliente": "CF-RD",
-   "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
-   "dettaglio": "Lead Gen 1 Q - Raffaele De Leonardis",
-   "gravita": 3
-  },
-  {
-   "cliente": "CF-RD",
    "tipo": "PIU' MODULI SULLE ADS ATTIVE",
    "dettaglio": "Lead Gen - Raffaele De Leonardis + Lead Gen 1 Q - Raffaele De Leonardis",
    "gravita": 3
@@ -99,12 +87,6 @@
    "tipo": "NON CONSEGNA",
    "dettaglio": "Nuova campagna dispongo di un capitale · ieri 0.00 €",
    "gravita": 3
-  },
-  {
-   "cliente": "LMB",
-   "tipo": "PIU' DI UN MODULO VIVO",
-   "dettaglio": "Lead Gen 1 Q - Luigi Micheloni, Resoconto Mensile - Luigi Micheloni - Agosto 2026",
-   "gravita": 2
   },
   {
    "cliente": "ZEN",
@@ -204,12 +186,6 @@
   },
   {
    "cliente": "CF-RD",
-   "tipo": "FUORI REGOLA",
-   "dettaglio": "Moduli - Campagna Principale Attiva · CPL 35.32 €",
-   "gravita": 1
-  },
-  {
-   "cliente": "CF-RD",
    "tipo": "REELS ATTIVI ['facebook_reels', 'reels']",
    "dettaglio": "Moduli - Campagna Principale Attiva",
    "gravita": 1
@@ -217,7 +193,7 @@
   {
    "cliente": "CF-SM",
    "tipo": "FUORI REGOLA",
-   "dettaglio": "Moduli - Campagna Attiva · 83.32 € e 1 lead",
+   "dettaglio": "Moduli - Campagna Attiva · 104.18 € e 1 lead",
    "gravita": 1
   },
   {
@@ -235,7 +211,7 @@
   {
    "cliente": "LMB",
    "tipo": "FUORI REGOLA",
-   "dettaglio": "Moduli - Campagna Attiva · CPL 50.18 €",
+   "dettaglio": "Moduli - Campagna Attiva · CPL 58.24 €",
    "gravita": 1
   },
   {
