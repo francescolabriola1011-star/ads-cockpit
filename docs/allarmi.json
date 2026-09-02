@@ -1,5 +1,5 @@
 {
- "generato": "01/09 08:13",
+ "generato": "02/09 08:13",
  "n_account_rossi": 10,
  "n_puliti": 0,
  "puliti": [],
@@ -67,37 +67,55 @@
   {
    "cliente": "CF-MLC",
    "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
+   "dettaglio": "Lead Gen - New 1 Q - Marco La Corte",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-MLC",
+   "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
    "dettaglio": "Lead Gen 2 - Marco La Corte",
    "gravita": 3
   },
   {
    "cliente": "CF-MLC",
    "tipo": "PIU' MODULI SULLE ADS ATTIVE",
-   "dettaglio": "Lead Gen - 1 Q - Marco La Corte + Lead Gen 2 - Marco La Corte",
+   "dettaglio": "Lead Gen - New 1 Q - Marco La Corte + Lead Gen 2 - Marco La Corte",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-RD",
+   "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
+   "dettaglio": "Lead Gen New 1 Q - Raffaele De Leonardis",
    "gravita": 3
   },
   {
    "cliente": "CF-RD",
    "tipo": "PIU' MODULI SULLE ADS ATTIVE",
-   "dettaglio": "Lead Gen - Raffaele De Leonardis + Lead Gen 1 Q - Raffaele De Leonardis",
+   "dettaglio": "Lead Gen - Raffaele De Leonardis + Lead Gen New 1 Q - Raffaele De Leonardis",
    "gravita": 3
   },
   {
-   "cliente": "ZEN",
-   "tipo": "NON CONSEGNA",
-   "dettaglio": "Nuova campagna dispongo di un capitale · ieri 0.00 €",
+   "cliente": "CF-SM",
+   "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
+   "dettaglio": "Lead Gen New 1 Q - Stefano Moratti",
+   "gravita": 3
+  },
+  {
+   "cliente": "FB",
+   "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
+   "dettaglio": "Lead Gen - New 1 Q - Flavio Bosia",
+   "gravita": 3
+  },
+  {
+   "cliente": "LMB",
+   "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
+   "dettaglio": "Lead Gen - New 1 Q - Luigi Micheloni",
    "gravita": 3
   },
   {
    "cliente": "ZEN",
    "tipo": "POSIZIONAMENTI AUTOMATICI",
    "dettaglio": "Nuova campagna Contatti step",
-   "gravita": 2
-  },
-  {
-   "cliente": "ZEN",
-   "tipo": "POSIZIONAMENTI AUTOMATICI",
-   "dettaglio": "Nuova campagna dispongo di un capitale",
    "gravita": 2
   },
   {
@@ -120,6 +138,30 @@
   },
   {
    "cliente": "ASS-AR1",
+   "tipo": "FASCIA ETA' FUORI STANDARD",
+   "dettaglio": "18-65 invece di 30-63 · Moduli - il tuo risparmio - Copia",
+   "gravita": 1
+  },
+  {
+   "cliente": "ASS-AR1",
+   "tipo": "FASCIA ETA' FUORI STANDARD",
+   "dettaglio": "18-65 invece di 30-63 · Moduli - risparmia 400 chf",
+   "gravita": 1
+  },
+  {
+   "cliente": "ASS-AR1",
+   "tipo": "FASCIA ETA' FUORI STANDARD",
+   "dettaglio": "18-65 invece di 30-63 · Moduli - stai spendendo troppo foto - Copia",
+   "gravita": 1
+  },
+  {
+   "cliente": "ASS-AR1",
+   "tipo": "PIU' DI UNA DOMANDA DI QUALIFICA",
+   "dettaglio": "modulo nuovo-copy-copy · 4 domande",
+   "gravita": 1
+  },
+  {
+   "cliente": "ASS-AR1",
    "tipo": "REELS ATTIVI ['facebook_reels_overlay']",
    "dettaglio": "Moduli - il tuo risparmio - Copia",
    "gravita": 1
@@ -138,6 +180,30 @@
   },
   {
    "cliente": "CF-ES",
+   "tipo": "FASCIA ETA' FUORI STANDARD",
+   "dettaglio": "18-65 invece di 30-63 · Moduli - anche con 100€ al mese - Copia",
+   "gravita": 1
+  },
+  {
+   "cliente": "CF-ES",
+   "tipo": "FASCIA ETA' FUORI STANDARD",
+   "dettaglio": "18-65 invece di 30-63 · Moduli - inizia con meno di 1500 - Copia",
+   "gravita": 1
+  },
+  {
+   "cliente": "CF-ES",
+   "tipo": "FASCIA ETA' FUORI STANDARD",
+   "dettaglio": "18-65 invece di 30-63 · Moduli - versamenti da 1200 - Copia",
+   "gravita": 1
+  },
+  {
+   "cliente": "CF-ES",
+   "tipo": "PIU' DI UNA DOMANDA DI QUALIFICA",
+   "dettaglio": "Emanuele 16/6-copy-copy · 4 domande",
+   "gravita": 1
+  },
+  {
+   "cliente": "CF-ES",
    "tipo": "REELS ATTIVI ['facebook_reels_overlay']",
    "dettaglio": "Moduli - anche con 100€ al mese - Copia",
    "gravita": 1
@@ -152,6 +218,36 @@
    "cliente": "CF-ES",
    "tipo": "REELS ATTIVI ['facebook_reels_overlay']",
    "dettaglio": "Moduli - versamenti da 1200 - Copia",
+   "gravita": 1
+  },
+  {
+   "cliente": "CF-MDL",
+   "tipo": "FASCIA ETA' FUORI STANDARD",
+   "dettaglio": "18-65 invece di 30-63 · Moduli - avangers",
+   "gravita": 1
+  },
+  {
+   "cliente": "CF-MDL",
+   "tipo": "FASCIA ETA' FUORI STANDARD",
+   "dettaglio": "18-65 invece di 30-63 · Moduli - costruire port",
+   "gravita": 1
+  },
+  {
+   "cliente": "CF-MDL",
+   "tipo": "FASCIA ETA' FUORI STANDARD",
+   "dettaglio": "18-65 invece di 30-63 · Moduli - rifatta",
+   "gravita": 1
+  },
+  {
+   "cliente": "CF-MDL",
+   "tipo": "FASCIA ETA' FUORI STANDARD",
+   "dettaglio": "18-65 invece di 30-63 · Moduli - rifatta - Copia",
+   "gravita": 1
+  },
+  {
+   "cliente": "CF-MDL",
+   "tipo": "PIU' DI UNA DOMANDA DI QUALIFICA",
+   "dettaglio": "Modulo guida · 5 domande",
    "gravita": 1
   },
   {
@@ -180,8 +276,44 @@
   },
   {
    "cliente": "CF-MLC",
+   "tipo": "FASCIA ETA' FUORI STANDARD",
+   "dettaglio": "30-60 invece di 30-63 · Moduli - Campagna Attiva",
+   "gravita": 1
+  },
+  {
+   "cliente": "CF-MLC",
+   "tipo": "MODULO SENZA HEADLINE",
+   "dettaglio": "Lead Gen 2 - Marco La Corte",
+   "gravita": 1
+  },
+  {
+   "cliente": "CF-MLC",
+   "tipo": "PIU' DI UNA DOMANDA DI QUALIFICA",
+   "dettaglio": "Lead Gen 2 - Marco La Corte · 3 domande",
+   "gravita": 1
+  },
+  {
+   "cliente": "CF-MLC",
    "tipo": "REELS ATTIVI ['facebook_reels', 'reels']",
    "dettaglio": "Moduli - Campagna Attiva",
+   "gravita": 1
+  },
+  {
+   "cliente": "CF-RD",
+   "tipo": "FASCIA ETA' FUORI STANDARD",
+   "dettaglio": "30-60 invece di 30-63 · Moduli - Campagna Principale Attiva",
+   "gravita": 1
+  },
+  {
+   "cliente": "CF-RD",
+   "tipo": "MODULO SENZA HEADLINE",
+   "dettaglio": "Lead Gen - Raffaele De Leonardis",
+   "gravita": 1
+  },
+  {
+   "cliente": "CF-RD",
+   "tipo": "PIU' DI UNA DOMANDA DI QUALIFICA",
+   "dettaglio": "Lead Gen - Raffaele De Leonardis · 3 domande",
    "gravita": 1
   },
   {
@@ -192,8 +324,14 @@
   },
   {
    "cliente": "CF-SM",
+   "tipo": "FASCIA ETA' FUORI STANDARD",
+   "dettaglio": "30-60 invece di 30-63 · Moduli - Campagna Attiva",
+   "gravita": 1
+  },
+  {
+   "cliente": "CF-SM",
    "tipo": "FUORI REGOLA",
-   "dettaglio": "Moduli - Campagna Attiva · 104.18 € e 1 lead",
+   "dettaglio": "Moduli - Campagna Attiva · 116.12 € e 1 lead",
    "gravita": 1
   },
   {
@@ -204,14 +342,26 @@
   },
   {
    "cliente": "FB",
+   "tipo": "FASCIA ETA' FUORI STANDARD",
+   "dettaglio": "30-60 invece di 30-63 · Moduli - Campagna Attiva",
+   "gravita": 1
+  },
+  {
+   "cliente": "FB",
    "tipo": "REELS ATTIVI ['facebook_reels', 'reels']",
    "dettaglio": "Moduli - Campagna Attiva",
    "gravita": 1
   },
   {
    "cliente": "LMB",
+   "tipo": "FASCIA ETA' FUORI STANDARD",
+   "dettaglio": "30-60 invece di 30-63 · Moduli - Campagna Attiva",
+   "gravita": 1
+  },
+  {
+   "cliente": "LMB",
    "tipo": "FUORI REGOLA",
-   "dettaglio": "Moduli - Campagna Attiva · CPL 58.24 €",
+   "dettaglio": "Moduli - Campagna Attiva · CPL 44.10 €",
    "gravita": 1
   },
   {
