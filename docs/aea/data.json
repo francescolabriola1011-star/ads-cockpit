@@ -1,11 +1,11 @@
 {
  "titolo": "AI Elite Advisory",
  "sottotitolo": "casa nostra",
- "generato": "2026-09-02T08:10:28+02:00",
+ "generato": "2026-09-03T09:09:29+02:00",
  "periodo": {
   "da": "2026-01-01",
-  "a": "2026-09-02",
-  "giorni": 244,
+  "a": "2026-09-03",
+  "giorni": 245,
   "finestra_recente_giorni": 7
  },
  "regole": {
@@ -22,16 +22,16 @@
   "cvr_min_clicks": 30
  },
  "totali": {
-  "spesa": 3937.24,
-  "lead": 201.0,
-  "cpl": 19.59,
+  "spesa": 3961.2,
+  "lead": 204.0,
+  "cpl": 19.42,
   "sprecato": 14.56,
   "quota_sprecata": 0.4,
-  "sprecato_al_mese": 1.79,
+  "sprecato_al_mese": 1.78,
   "brucia_oggi": 0,
   "da_staccare_ora": 0,
-  "clicks": 6413.0,
-  "cvr": 3.13,
+  "clicks": 6484.0,
+  "cvr": 3.15,
   "clienti": 1,
   "campagne": 126
  },
@@ -41,14 +41,14 @@
    "account_id": "859478370532394",
    "nome_reale": "AI Elite Advisory",
    "currency": "EUR",
-   "spend": 3937.24,
-   "leads": 201.0,
-   "cpl": 19.59,
+   "spend": 3961.2,
+   "leads": 204.0,
+   "cpl": 19.42,
    "sprecato": 14.56,
    "quota_sprecata": 0.4,
-   "impressions": 406252.0,
-   "clicks": 6413.0,
-   "cvr": 3.13,
+   "impressions": 411009.0,
+   "clicks": 6484.0,
+   "cvr": 3.15,
    "n_campagne": 126,
    "n_kill": 2,
    "n_kill_ancora_accese": 0,
@@ -83,7 +83,7 @@
       "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 3.86,
+      "spend": 0.3,
       "leads": 0.0,
       "cpl": null
      },
@@ -115,16 +115,16 @@
     {
      "id": "120249368205620629",
      "name": "ASSIC -Moduli -immagine - Copia 13",
-     "spend": 455.37,
-     "leads": 58.0,
+     "spend": 470.96,
+     "leads": 60.0,
      "cpl": 7.85,
-     "impressions": 65853.0,
-     "clicks": 1182.0,
-     "cvr": 4.91,
-     "ctr": 1.794907,
-     "cpm": 6.914947,
-     "reach": 14262.0,
-     "frequency": 4.617375,
+     "impressions": 69103.0,
+     "clicks": 1224.0,
+     "cvr": 4.9,
+     "ctr": 1.771269,
+     "cpm": 6.815334,
+     "reach": 14940.0,
+     "frequency": 4.625368,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 20.0,
@@ -135,11 +135,11 @@
       "frequenza 4.6: pubblico bruciato, cambia audience"
      ],
      "recent": {
-      "spend": 144.72,
-      "leads": 18.0,
-      "cpl": 8.04
+      "spend": 139.9,
+      "leads": 16.0,
+      "cpl": 8.74
      },
-     "trend": 0.19
+     "trend": 0.89
     },
     {
      "id": "120246542937170629",
@@ -193,32 +193,32 @@
     {
      "id": "120249502985680629",
      "name": "Moduli -immagine - Copia 9",
-     "spend": 182.62,
-     "leads": 7.0,
-     "cpl": 26.09,
-     "impressions": 24898.0,
-     "clicks": 260.0,
-     "cvr": 2.69,
-     "ctr": 1.044261,
-     "cpm": 7.334726,
-     "reach": 6590.0,
-     "frequency": 3.778149,
+     "spend": 190.99,
+     "leads": 8.0,
+     "cpl": 23.87,
+     "impressions": 26405.0,
+     "clicks": 289.0,
+     "cvr": 2.77,
+     "ctr": 1.09449,
+     "cpm": 7.2331,
+     "reach": 6799.0,
+     "frequency": 3.883659,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 10.0,
      "status": "ok",
-     "reason": "CPL €26.09: dentro i parametri",
+     "reason": "CPL €23.87: dentro i parametri",
      "sprecato": 0.0,
      "flags": [
-      "frequenza 3.8: pubblico bruciato, cambia audience",
-      "solo 2.7% dei click diventa lead: modulo o landing da rivedere"
+      "frequenza 3.9: pubblico bruciato, cambia audience",
+      "solo 2.8% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 72.22,
-      "leads": 3.0,
-      "cpl": 24.07
+      "spend": 70.23,
+      "leads": 4.0,
+      "cpl": 17.56
      },
-     "trend": -2.02
+     "trend": -6.31
     },
     {
      "id": "120247570940590629",
@@ -3068,7 +3068,7 @@
    ],
    "hiring": {
     "n": 6,
-    "spend": 195.66,
+    "spend": 201.85,
     "leads": 108.0
    },
    "campagne_hiring": [
@@ -3129,16 +3129,16 @@
     {
      "id": "120246443902370629",
      "name": "Venditore - Moduli",
-     "spend": 123.06,
+     "spend": 129.25,
      "leads": 35.0,
-     "cpl": 3.52,
-     "impressions": 5779.0,
-     "clicks": 272.0,
-     "cvr": 12.87,
-     "ctr": 4.706697,
-     "cpm": 21.294342,
-     "reach": 2326.0,
-     "frequency": 2.484523,
+     "cpl": 3.69,
+     "impressions": 5999.0,
+     "clicks": 283.0,
+     "cvr": 12.37,
+     "ctr": 4.717453,
+     "cpm": 21.545258,
+     "reach": 2394.0,
+     "frequency": 2.505848,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 6.0,
