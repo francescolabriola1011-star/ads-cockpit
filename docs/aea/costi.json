@@ -1,5 +1,5 @@
 {
- "generato": "03/09/2026 09:40",
+ "generato": "03/09/2026 09:46",
  "quota_mese": 10,
  "totale_corrente": 100,
  "totale_m1": 6332,
@@ -14,26 +14,18 @@
    "stato": "nuovo"
   },
   {
-   "voce": "Carlo Parodi",
+   "voce": "Zoom",
    "mese_corrente": 0,
-   "media_precedenti": 420,
-   "atteso_a_oggi": 42,
+   "media_precedenti": 20,
+   "atteso_a_oggi": 2,
    "variazione": -100,
    "stato": "sparito"
   },
   {
-   "voce": "Claude",
+   "voce": "Facebook",
    "mese_corrente": 0,
-   "media_precedenti": 50,
-   "atteso_a_oggi": 5,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Davide Mazzucco",
-   "mese_corrente": 0,
-   "media_precedenti": 150,
-   "atteso_a_oggi": 15,
+   "media_precedenti": 1798,
+   "atteso_a_oggi": 180,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -46,17 +38,17 @@
    "stato": "sparito"
   },
   {
-   "voce": "Zoom",
+   "voce": "Michele De Sena",
    "mese_corrente": 0,
-   "media_precedenti": 20,
-   "atteso_a_oggi": 2,
+   "media_precedenti": 878,
+   "atteso_a_oggi": 88,
    "variazione": -100,
    "stato": "sparito"
   },
   {
-   "voce": "Go High Level",
+   "voce": "Tax Dome",
    "mese_corrente": 0,
-   "media_precedenti": 347,
+   "media_precedenti": 350,
    "atteso_a_oggi": 35,
    "variazione": -100,
    "stato": "sparito"
@@ -70,26 +62,18 @@
    "stato": "sparito"
   },
   {
-   "voce": "Tax Dome",
+   "voce": "Carlo Parodi",
    "mese_corrente": 0,
-   "media_precedenti": 350,
+   "media_precedenti": 420,
+   "atteso_a_oggi": 42,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Go High Level",
+   "mese_corrente": 0,
+   "media_precedenti": 347,
    "atteso_a_oggi": 35,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Michele De Sena",
-   "mese_corrente": 0,
-   "media_precedenti": 878,
-   "atteso_a_oggi": 88,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Facebook",
-   "mese_corrente": 0,
-   "media_precedenti": 1798,
-   "atteso_a_oggi": 180,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -98,6 +82,22 @@
    "mese_corrente": 0,
    "media_precedenti": 100,
    "atteso_a_oggi": 10,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Davide Mazzucco",
+   "mese_corrente": 0,
+   "media_precedenti": 150,
+   "atteso_a_oggi": 15,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Claude",
+   "mese_corrente": 0,
+   "media_precedenti": 50,
+   "atteso_a_oggi": 5,
    "variazione": -100,
    "stato": "sparito"
   },
