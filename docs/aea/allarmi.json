@@ -1,5 +1,5 @@
 {
- "generato": "03/09 09:48",
+ "generato": "04/09 08:14",
  "n_account_rossi": 10,
  "n_puliti": 0,
  "puliti": [],
@@ -67,12 +67,6 @@
   {
    "cliente": "CF-MLC",
    "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
-   "dettaglio": "Lead Gen - New 1 Q - Marco La Corte",
-   "gravita": 3
-  },
-  {
-   "cliente": "CF-MLC",
-   "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
    "dettaglio": "Lead Gen 2 - Marco La Corte",
    "gravita": 3
   },
@@ -98,6 +92,12 @@
    "cliente": "CF-SM",
    "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
    "dettaglio": "Lead Gen New 1 Q - Stefano Moratti",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-SM",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "instagram/instagram_reels · 1.28 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
    "gravita": 3
   },
   {
@@ -331,12 +331,12 @@
   {
    "cliente": "CF-SM",
    "tipo": "FUORI REGOLA",
-   "dettaglio": "Moduli - Campagna Attiva · 132.71 € e 1 lead",
+   "dettaglio": "Moduli - Campagna Attiva · 141.25 € e 1 lead",
    "gravita": 1
   },
   {
    "cliente": "CF-SM",
-   "tipo": "REELS ATTIVI ['facebook_reels', 'reels']",
+   "tipo": "REELS ATTIVI ['facebook_reels']",
    "dettaglio": "Moduli - Campagna Attiva",
    "gravita": 1
   },
@@ -361,7 +361,7 @@
   {
    "cliente": "LMB",
    "tipo": "FUORI REGOLA",
-   "dettaglio": "Moduli - Campagna Attiva · CPL 36.74 €",
+   "dettaglio": "Moduli - Campagna Attiva · CPL 38.82 €",
    "gravita": 1
   },
   {
