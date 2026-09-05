@@ -1,5 +1,5 @@
 {
- "generato": "05/09/2026 08:11",
+ "generato": "05/09/2026 10:04",
  "quota_mese": 17,
  "totale_corrente": 1450,
  "totale_m1": 6332,
@@ -38,6 +38,38 @@
    "stato": "nuovo"
   },
   {
+   "voce": "Cost Of Goods Sold",
+   "mese_corrente": 0,
+   "media_precedenti": 1965,
+   "atteso_a_oggi": 328,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Facebook",
+   "mese_corrente": 0,
+   "media_precedenti": 1798,
+   "atteso_a_oggi": 300,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Twilio",
+   "mese_corrente": 0,
+   "media_precedenti": 20,
+   "atteso_a_oggi": 3,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Zoom",
+   "mese_corrente": 0,
+   "media_precedenti": 20,
+   "atteso_a_oggi": 3,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
    "voce": "Claude",
    "mese_corrente": 0,
    "media_precedenti": 50,
@@ -54,30 +86,6 @@
    "stato": "sparito"
   },
   {
-   "voce": "Davide Mazzucco",
-   "mese_corrente": 0,
-   "media_precedenti": 150,
-   "atteso_a_oggi": 25,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Facebook",
-   "mese_corrente": 0,
-   "media_precedenti": 1798,
-   "atteso_a_oggi": 300,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Zoom",
-   "mese_corrente": 0,
-   "media_precedenti": 20,
-   "atteso_a_oggi": 3,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
    "voce": "Tax Dome",
    "mese_corrente": 0,
    "media_precedenti": 350,
@@ -86,18 +94,10 @@
    "stato": "sparito"
   },
   {
-   "voce": "Cost Of Goods Sold",
+   "voce": "Davide Mazzucco",
    "mese_corrente": 0,
-   "media_precedenti": 1965,
-   "atteso_a_oggi": 328,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Twilio",
-   "mese_corrente": 0,
-   "media_precedenti": 20,
-   "atteso_a_oggi": 3,
+   "media_precedenti": 150,
+   "atteso_a_oggi": 25,
    "variazione": -100,
    "stato": "sparito"
   },

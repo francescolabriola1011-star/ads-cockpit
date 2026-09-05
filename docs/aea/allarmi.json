@@ -1,5 +1,5 @@
 {
- "generato": "05/09 08:14",
+ "generato": "05/09 10:08",
  "n_account_rossi": 10,
  "n_puliti": 0,
  "puliti": [],
@@ -301,7 +301,7 @@
   {
    "cliente": "CF-RD",
    "tipo": "FUORI REGOLA",
-   "dettaglio": "Moduli - Campagna Principale Attiva · CPL 35.16 €",
+   "dettaglio": "Moduli - Campagna Principale Attiva · CPL 36.00 €",
    "gravita": 1
   },
   {
@@ -331,7 +331,7 @@
   {
    "cliente": "CF-SM",
    "tipo": "FUORI REGOLA",
-   "dettaglio": "Moduli - Campagna Attiva · 153.75 € e 1 lead",
+   "dettaglio": "Moduli - Campagna Attiva · 157.13 € e 1 lead",
    "gravita": 1
   },
   {
@@ -361,7 +361,7 @@
   {
    "cliente": "LMB",
    "tipo": "FUORI REGOLA",
-   "dettaglio": "Moduli - Campagna Attiva · CPL 42.30 €",
+   "dettaglio": "Moduli - Campagna Attiva · CPL 43.27 €",
    "gravita": 1
   },
   {
