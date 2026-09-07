@@ -1,9 +1,15 @@
 {
- "generato": "05/09 10:08",
+ "generato": "07/09 09:33",
  "n_account_rossi": 10,
  "n_puliti": 0,
  "puliti": [],
  "voci": [
+  {
+   "cliente": "AEA-HOUSE",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "instagram/instagram_reels · 0.56 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "gravita": 3
+  },
   {
    "cliente": "ASS-AR1",
    "tipo": "NON CONSEGNA",
@@ -301,7 +307,7 @@
   {
    "cliente": "CF-RD",
    "tipo": "FUORI REGOLA",
-   "dettaglio": "Moduli - Campagna Principale Attiva · CPL 36.00 €",
+   "dettaglio": "Moduli - Campagna Principale Attiva · CPL 42.63 €",
    "gravita": 1
   },
   {
@@ -331,12 +337,12 @@
   {
    "cliente": "CF-SM",
    "tipo": "FUORI REGOLA",
-   "dettaglio": "Moduli - Campagna Attiva · 157.13 € e 1 lead",
+   "dettaglio": "Moduli - Campagna Attiva · 194.90 € e 1 lead",
    "gravita": 1
   },
   {
    "cliente": "CF-SM",
-   "tipo": "REELS ATTIVI ['facebook_reels']",
+   "tipo": "REELS ATTIVI ['facebook_reels', 'reels']",
    "dettaglio": "Moduli - Campagna Attiva",
    "gravita": 1
   },
@@ -361,7 +367,7 @@
   {
    "cliente": "LMB",
    "tipo": "FUORI REGOLA",
-   "dettaglio": "Moduli - Campagna Attiva · CPL 43.27 €",
+   "dettaglio": "Moduli - Campagna Attiva · CPL 51.72 €",
    "gravita": 1
   },
   {

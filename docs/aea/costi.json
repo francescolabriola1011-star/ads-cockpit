@@ -1,6 +1,6 @@
 {
- "generato": "05/09/2026 10:04",
- "quota_mese": 17,
+ "generato": "07/09/2026 09:30",
+ "quota_mese": 23,
  "totale_corrente": 1450,
  "totale_m1": 6332,
  "totale_m2": 5447,
@@ -9,24 +9,24 @@
    "voce": "Carlo Parodi",
    "mese_corrente": 496,
    "media_precedenti": 420,
-   "atteso_a_oggi": 70,
-   "variazione": 609,
+   "atteso_a_oggi": 98,
+   "variazione": 406,
    "stato": "scappato"
   },
   {
    "voce": "Alessandro Cugini",
    "mese_corrente": 420,
    "media_precedenti": 970,
-   "atteso_a_oggi": 162,
-   "variazione": 160,
+   "atteso_a_oggi": 226,
+   "variazione": 86,
    "stato": "scappato"
   },
   {
    "voce": "Go High Level",
    "mese_corrente": 297,
    "media_precedenti": 347,
-   "atteso_a_oggi": 58,
-   "variazione": 414,
+   "atteso_a_oggi": 81,
+   "variazione": 267,
    "stato": "scappato"
   },
   {
@@ -38,50 +38,10 @@
    "stato": "nuovo"
   },
   {
-   "voce": "Cost Of Goods Sold",
-   "mese_corrente": 0,
-   "media_precedenti": 1965,
-   "atteso_a_oggi": 328,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Facebook",
-   "mese_corrente": 0,
-   "media_precedenti": 1798,
-   "atteso_a_oggi": 300,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Twilio",
-   "mese_corrente": 0,
-   "media_precedenti": 20,
-   "atteso_a_oggi": 3,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Zoom",
-   "mese_corrente": 0,
-   "media_precedenti": 20,
-   "atteso_a_oggi": 3,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Claude",
-   "mese_corrente": 0,
-   "media_precedenti": 50,
-   "atteso_a_oggi": 8,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
    "voce": "Rimborso Spese Francesco Labriola",
    "mese_corrente": 0,
    "media_precedenti": 100,
-   "atteso_a_oggi": 17,
+   "atteso_a_oggi": 23,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -89,7 +49,15 @@
    "voce": "Tax Dome",
    "mese_corrente": 0,
    "media_precedenti": 350,
-   "atteso_a_oggi": 58,
+   "atteso_a_oggi": 82,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Facebook",
+   "mese_corrente": 0,
+   "media_precedenti": 1798,
+   "atteso_a_oggi": 420,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -97,7 +65,39 @@
    "voce": "Davide Mazzucco",
    "mese_corrente": 0,
    "media_precedenti": 150,
-   "atteso_a_oggi": 25,
+   "atteso_a_oggi": 35,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Twilio",
+   "mese_corrente": 0,
+   "media_precedenti": 20,
+   "atteso_a_oggi": 5,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Cost Of Goods Sold",
+   "mese_corrente": 0,
+   "media_precedenti": 1965,
+   "atteso_a_oggi": 458,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Zoom",
+   "mese_corrente": 0,
+   "media_precedenti": 20,
+   "atteso_a_oggi": 5,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Claude",
+   "mese_corrente": 0,
+   "media_precedenti": 50,
+   "atteso_a_oggi": 12,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -105,12 +105,12 @@
    "voce": "Michele De Sena",
    "mese_corrente": 50,
    "media_precedenti": 878,
-   "atteso_a_oggi": 146,
-   "variazione": -66,
+   "atteso_a_oggi": 205,
+   "variazione": -76,
    "stato": "stabile"
   }
  ],
- "extra_del_mese": 923,
+ "extra_del_mese": 808,
  "n_scappati": 3,
  "n_nuovi": 1,
  "n_spariti": 8
