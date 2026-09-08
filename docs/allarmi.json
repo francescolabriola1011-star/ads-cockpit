@@ -1,5 +1,5 @@
 {
- "generato": "07/09 09:33",
+ "generato": "08/09 08:14",
  "n_account_rossi": 10,
  "n_puliti": 0,
  "puliti": [],
@@ -7,7 +7,7 @@
   {
    "cliente": "AEA-HOUSE",
    "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "instagram/instagram_reels · 0.56 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "dettaglio": "instagram/instagram_reels · 0.50 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
    "gravita": 3
   },
   {
@@ -80,12 +80,6 @@
    "cliente": "CF-MLC",
    "tipo": "PIU' MODULI SULLE ADS ATTIVE",
    "dettaglio": "Lead Gen - New 1 Q - Marco La Corte + Lead Gen 2 - Marco La Corte",
-   "gravita": 3
-  },
-  {
-   "cliente": "CF-RD",
-   "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
-   "dettaglio": "Lead Gen New 1 Q - Raffaele De Leonardis",
    "gravita": 3
   },
   {
@@ -306,12 +300,6 @@
   },
   {
    "cliente": "CF-RD",
-   "tipo": "FUORI REGOLA",
-   "dettaglio": "Moduli - Campagna Principale Attiva · CPL 42.63 €",
-   "gravita": 1
-  },
-  {
-   "cliente": "CF-RD",
    "tipo": "MODULO SENZA HEADLINE",
    "dettaglio": "Lead Gen - Raffaele De Leonardis",
    "gravita": 1
@@ -337,7 +325,7 @@
   {
    "cliente": "CF-SM",
    "tipo": "FUORI REGOLA",
-   "dettaglio": "Moduli - Campagna Attiva · 194.90 € e 1 lead",
+   "dettaglio": "Moduli - Campagna Attiva · CPL 71.61 €",
    "gravita": 1
   },
   {
@@ -367,7 +355,7 @@
   {
    "cliente": "LMB",
    "tipo": "FUORI REGOLA",
-   "dettaglio": "Moduli - Campagna Attiva · CPL 51.72 €",
+   "dettaglio": "Moduli - Campagna Attiva · CPL 55.63 €",
    "gravita": 1
   },
   {
