@@ -1,15 +1,9 @@
 {
- "generato": "10/09 08:15",
+ "generato": "11/09 08:14",
  "n_account_rossi": 10,
  "n_puliti": 0,
  "puliti": [],
  "voci": [
-  {
-   "cliente": "AEA-HOUSE",
-   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "instagram/instagram_reels · 1.34 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
-   "gravita": 3
-  },
   {
    "cliente": "ASS-AR1",
    "tipo": "NON CONSEGNA",
@@ -92,6 +86,18 @@
    "cliente": "LMB",
    "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
    "dettaglio": "Lead Gen - New 1 Q - Luigi Micheloni",
+   "gravita": 3
+  },
+  {
+   "cliente": "ZEN",
+   "tipo": "NON CONSEGNA",
+   "dettaglio": "Nuova campagna Contatti step - Copia · ieri 0.00 €",
+   "gravita": 3
+  },
+  {
+   "cliente": "ZEN",
+   "tipo": "NON CONSEGNA",
+   "dettaglio": "Nuova campagna Contatti step · ieri 0.00 €",
    "gravita": 3
   },
   {
