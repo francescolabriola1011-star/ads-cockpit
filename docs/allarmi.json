@@ -1,5 +1,5 @@
 {
- "generato": "11/09 08:14",
+ "generato": "12/09 08:16",
  "n_account_rossi": 10,
  "n_puliti": 0,
  "puliti": [],
@@ -77,12 +77,6 @@
    "gravita": 3
   },
   {
-   "cliente": "CF-RD",
-   "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
-   "dettaglio": "Lead Gen 2 - 1 Q - Raffaele De Leonardis",
-   "gravita": 3
-  },
-  {
    "cliente": "LMB",
    "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
    "dettaglio": "Lead Gen - New 1 Q - Luigi Micheloni",
@@ -97,7 +91,7 @@
   {
    "cliente": "ZEN",
    "tipo": "NON CONSEGNA",
-   "dettaglio": "Nuova campagna Contatti step · ieri 0.00 €",
+   "dettaglio": "Nuova campagna Contatti step · ieri 0.44 €",
    "gravita": 3
   },
   {
@@ -116,12 +110,6 @@
    "cliente": "AEA-HOUSE",
    "tipo": "REELS ATTIVI ['facebook_reels', 'facebook_reels_overlay']",
    "dettaglio": "Venditore - Moduli",
-   "gravita": 1
-  },
-  {
-   "cliente": "AEA-HOUSE",
-   "tipo": "REELS ATTIVI ['facebook_reels_overlay']",
-   "dettaglio": "ASSIC -Moduli -immagine - Copia 13",
    "gravita": 1
   },
   {
