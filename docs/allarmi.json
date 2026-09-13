@@ -1,6 +1,6 @@
 {
- "generato": "12/09 08:16",
- "n_account_rossi": 10,
+ "generato": "13/09 09:17",
+ "n_account_rossi": 9,
  "n_puliti": 0,
  "puliti": [],
  "voci": [
@@ -83,27 +83,27 @@
    "gravita": 3
   },
   {
-   "cliente": "ZEN",
-   "tipo": "NON CONSEGNA",
-   "dettaglio": "Nuova campagna Contatti step - Copia · ieri 0.00 €",
-   "gravita": 3
-  },
-  {
-   "cliente": "ZEN",
-   "tipo": "NON CONSEGNA",
-   "dettaglio": "Nuova campagna Contatti step · ieri 0.44 €",
-   "gravita": 3
-  },
-  {
-   "cliente": "ZEN",
-   "tipo": "POSIZIONAMENTI AUTOMATICI",
-   "dettaglio": "Nuova campagna Contatti step",
+   "cliente": "CF-MLC",
+   "tipo": "PIU' DI UN MODULO VIVO",
+   "dettaglio": "Lead Gen - New 1Q - Marco La Corte, Lead Gen 2 - Marco La Corte, Lead Gen 1 Q - Marco La Corte",
    "gravita": 2
   },
   {
-   "cliente": "ZEN",
-   "tipo": "POSIZIONAMENTI AUTOMATICI",
-   "dettaglio": "Nuova campagna Contatti step - Copia",
+   "cliente": "CF-RD",
+   "tipo": "PIU' DI UN MODULO VIVO",
+   "dettaglio": " Lead Gen 2 - 1 Q - Raffaele De Leonardis, Lead Gen - Raffaele De Leonardis, Lead Gen 1Q - Raffaele De Leonardis, Lead Gen - New 1 Q - Raffaele De Leonardis",
+   "gravita": 2
+  },
+  {
+   "cliente": "CF-SM",
+   "tipo": "PIU' DI UN MODULO VIVO",
+   "dettaglio": "Lead Gen 2 - 1 Q - Stefano Moratti, Lead Gen 2 - Stefano Moratti",
+   "gravita": 2
+  },
+  {
+   "cliente": "LMB",
+   "tipo": "PIU' DI UN MODULO VIVO",
+   "dettaglio": "Lead Gen - New 1Q - Luigi Micheloni, Lead Gen Standard - Luigi Micheloni, Lead Gen 1 Q - Luigi Micheloni",
    "gravita": 2
   },
   {
