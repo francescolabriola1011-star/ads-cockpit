@@ -1,7 +1,7 @@
 {
  "titolo": "AI Elite Advisory",
  "sottotitolo": "casa nostra",
- "generato": "2026-09-16T08:10:49+02:00",
+ "generato": "2026-09-16T17:20:28+02:00",
  "periodo": {
   "da": "2026-01-01",
   "a": "2026-09-16",
@@ -22,15 +22,15 @@
   "cvr_min_clicks": 30
  },
  "totali": {
-  "spesa": 4479.62,
-  "lead": 250.0,
-  "cpl": 17.92,
+  "spesa": 4509.18,
+  "lead": 252.0,
+  "cpl": 17.89,
   "sprecato": 0.0,
   "quota_sprecata": 0.0,
   "sprecato_al_mese": 0.0,
   "brucia_oggi": 0,
   "da_staccare_ora": 0,
-  "clicks": 7541.0,
+  "clicks": 7584.0,
   "cvr": 3.32,
   "clienti": 1,
   "campagne": 127
@@ -41,18 +41,26 @@
    "account_id": "859478370532394",
    "nome_reale": "AI Elite Advisory",
    "currency": "EUR",
-   "spend": 4479.62,
-   "leads": 250.0,
-   "cpl": 17.92,
+   "spend": 4509.18,
+   "leads": 252.0,
+   "cpl": 17.89,
    "sprecato": 0.0,
    "quota_sprecata": 0.0,
-   "impressions": 472801.0,
-   "clicks": 7541.0,
+   "impressions": 476180.0,
+   "clicks": 7584.0,
    "cvr": 3.32,
    "n_campagne": 127,
    "n_kill": 0,
    "n_kill_ancora_accese": 0,
    "brucia_oggi": 0,
+   "vivo": {
+    "spend": 1007.09,
+    "leads": 111.0,
+    "cpl": 9.07,
+    "cvr": 4.74,
+    "recent_cpl": 12.59,
+    "n_creative": 7
+   },
    "riallocazione": {
     "budget_da_spostare": 0,
     "cpl_vincente": null,
@@ -63,16 +71,16 @@
     {
      "id": "120249368205620629",
      "name": "ASSIC -Moduli -immagine - Copia 13",
-     "spend": 685.96,
-     "leads": 86.0,
-     "cpl": 7.98,
-     "impressions": 100356.0,
-     "clicks": 1733.0,
-     "cvr": 4.96,
-     "ctr": 1.726852,
-     "cpm": 6.835266,
-     "reach": 20045.0,
-     "frequency": 5.006535,
+     "spend": 695.98,
+     "leads": 87.0,
+     "cpl": 8.0,
+     "impressions": 101656.0,
+     "clicks": 1749.0,
+     "cvr": 4.97,
+     "ctr": 1.720508,
+     "cpm": 6.846423,
+     "reach": 20160.0,
+     "frequency": 5.04246,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 20.0,
@@ -82,24 +90,88 @@
        "name": "Nuova inserzione Contatti",
        "campaign_id": "120249368205620629",
        "campaign_name": "ASSIC -Moduli -immagine - Copia 13",
-       "spend": 614.79,
+       "spend": 622.17,
        "leads": 80.0,
-       "cpl": 7.68,
-       "impressions": 91073.0,
-       "clicks": 1584.0,
-       "cvr": 5.05,
-       "ctr": 1.739264,
-       "cpm": 6.750519,
-       "reach": 19863.0,
-       "frequency": 4.585058,
+       "cpl": 7.78,
+       "impressions": 92123.0,
+       "clicks": 1596.0,
+       "cvr": 5.01,
+       "ctr": 1.732466,
+       "cpm": 6.753688,
+       "reach": 19976.0,
+       "frequency": 4.611684,
        "attiva": true,
        "effective_status": "ACTIVE",
        "status": "winner",
-       "reason": "CPL €7.68: sotto €10, ci si mette budget",
+       "reason": "CPL €7.78: sotto €10, ci si mette budget",
        "sprecato": 0.0,
        "flags": [
         "frequenza 4.6: pubblico bruciato, cambia audience"
-       ]
+       ],
+       "recent": {
+        "spend": 85.65,
+        "leads": 9.0,
+        "cpl": 9.52
+       },
+       "trend": 1.74
+      },
+      {
+       "id": "120249918046040629",
+       "name": "Nuova inserzione Contatti - Copia",
+       "campaign_id": "120249368205620629",
+       "campaign_name": "ASSIC -Moduli -immagine - Copia 13",
+       "spend": 49.37,
+       "leads": 6.0,
+       "cpl": 8.23,
+       "impressions": 6955.0,
+       "clicks": 99.0,
+       "cvr": 6.06,
+       "ctr": 1.423436,
+       "cpm": 7.09849,
+       "reach": 3178.0,
+       "frequency": 2.188483,
+       "attiva": true,
+       "effective_status": "ACTIVE",
+       "status": "winner",
+       "reason": "CPL €8.23: sotto €10, ci si mette budget",
+       "sprecato": 0.0,
+       "flags": [],
+       "recent": {
+        "spend": 22.01,
+        "leads": 1.0,
+        "cpl": 22.01
+       },
+       "trend": 13.78
+      },
+      {
+       "id": "120249919919890629",
+       "name": "Nuova inserzione Contatti - Copia",
+       "campaign_id": "120249368205620629",
+       "campaign_name": "ASSIC -Moduli -immagine - Copia 13",
+       "spend": 5.02,
+       "leads": 0.0,
+       "cpl": null,
+       "impressions": 396.0,
+       "clicks": 2.0,
+       "cvr": 0.0,
+       "ctr": 0.505051,
+       "cpm": 12.676768,
+       "reach": 275.0,
+       "frequency": 1.44,
+       "attiva": true,
+       "effective_status": "ACTIVE",
+       "status": "watch",
+       "reason": "€5.02 spesi e 0 lead: mancano €24.98 allo stacco",
+       "sprecato": 0.0,
+       "flags": [
+        "CTR 0.51%: il creativo non ferma nessuno"
+       ],
+       "recent": {
+        "spend": 1.18,
+        "leads": 0.0,
+        "cpl": null
+       },
+       "trend": null
       },
       {
        "id": "120249876992030629",
@@ -123,7 +195,13 @@
        "sprecato": 0.0,
        "flags": [
         "solo 1.9% dei click diventa lead: modulo o landing da rivedere"
-       ]
+       ],
+       "recent": {
+        "spend": 0.22,
+        "leads": 0.0,
+        "cpl": null
+       },
+       "trend": null
       },
       {
        "id": "120249917946710629",
@@ -145,55 +223,23 @@
        "status": "early",
        "reason": "solo 1 impression: troppo presto per giudicare",
        "sprecato": 0.0,
-       "flags": []
-      },
-      {
-       "id": "120249918046040629",
-       "name": "Nuova inserzione Contatti - Copia",
-       "campaign_id": "120249368205620629",
-       "campaign_name": "ASSIC -Moduli -immagine - Copia 13",
-       "spend": 46.9,
-       "leads": 5.0,
-       "cpl": 9.38,
-       "impressions": 6717.0,
-       "clicks": 95.0,
-       "cvr": 5.26,
-       "ctr": 1.414322,
-       "cpm": 6.982284,
-       "reach": 3135.0,
-       "frequency": 2.142584,
-       "attiva": true,
-       "effective_status": "ACTIVE",
-       "status": "winner",
-       "reason": "CPL €9.38: sotto €10, ci si mette budget",
-       "sprecato": 0.0,
-       "flags": []
-      },
-      {
-       "id": "120249919919890629",
-       "name": "Nuova inserzione Contatti - Copia",
-       "campaign_id": "120249368205620629",
-       "campaign_name": "ASSIC -Moduli -immagine - Copia 13",
-       "spend": 4.85,
-       "leads": 0.0,
-       "cpl": null,
-       "impressions": 384.0,
-       "clicks": 2.0,
-       "cvr": 0.0,
-       "ctr": 0.520833,
-       "cpm": 12.630208,
-       "reach": 268.0,
-       "frequency": 1.432836,
-       "attiva": true,
-       "effective_status": "ACTIVE",
-       "status": "watch",
-       "reason": "€4.85 spesi e 0 lead: mancano €25.15 allo stacco",
-       "sprecato": 0.0,
-       "flags": [
-        "CTR 0.52%: il creativo non ferma nessuno"
-       ]
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": {
+      "spend": 676.56,
+      "leads": 86.0,
+      "clicks": 1697.0,
+      "impressions": 99474.0,
+      "cpl": 7.87,
+      "cvr": 5.07,
+      "ctr": 1.71,
+      "recent_cpl": 10.88,
+      "recent_spend": 108.84,
+      "recent_leads": 10.0
+     },
      "n_ads": 5,
      "n_ads_attivi": 3,
      "sprecato": 0.0,
@@ -203,29 +249,116 @@
       "frequenza 5.0: pubblico bruciato, cambia audience"
      ],
      "recent": {
-      "spend": 99.04,
-      "leads": 9.0,
-      "cpl": 11.0
+      "spend": 109.06,
+      "leads": 10.0,
+      "cpl": 10.91
      },
-     "trend": 3.02
+     "trend": 2.91
     },
     {
      "id": "120249502985680629",
      "name": "Moduli -immagine - Copia 9",
-     "spend": 462.03,
-     "leads": 26.0,
-     "cpl": 17.77,
-     "impressions": 55237.0,
-     "clicks": 787.0,
-     "cvr": 3.3,
-     "ctr": 1.42477,
-     "cpm": 8.364502,
-     "reach": 11404.0,
-     "frequency": 4.843651,
+     "spend": 475.31,
+     "leads": 27.0,
+     "cpl": 17.6,
+     "impressions": 56990.0,
+     "clicks": 807.0,
+     "cvr": 3.35,
+     "ctr": 1.416038,
+     "cpm": 8.340235,
+     "reach": 11656.0,
+     "frequency": 4.889327,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 40.0,
      "ads": [
+      {
+       "id": "120249800005130629",
+       "name": "Nuova inserzione Contatti",
+       "campaign_id": "120249502985680629",
+       "campaign_name": "Moduli -immagine - Copia 9",
+       "spend": 200.44,
+       "leads": 17.0,
+       "cpl": 11.79,
+       "impressions": 24250.0,
+       "clicks": 490.0,
+       "cvr": 3.47,
+       "ctr": 2.020619,
+       "cpm": 8.265567,
+       "reach": 7905.0,
+       "frequency": 3.067679,
+       "attiva": true,
+       "effective_status": "ACTIVE",
+       "status": "ok",
+       "reason": "CPL €11.79: dentro i parametri",
+       "sprecato": 0.0,
+       "flags": [
+        "frequenza 3.1: pubblico bruciato, cambia audience",
+        "solo 3.5% dei click diventa lead: modulo o landing da rivedere"
+       ],
+       "recent": {
+        "spend": 113.66,
+        "leads": 10.0,
+        "cpl": 11.37
+       },
+       "trend": -0.42
+      },
+      {
+       "id": "120250059666430629",
+       "name": "Nuova inserzione Contatti - Copia 2",
+       "campaign_id": "120249502985680629",
+       "campaign_name": "Moduli -immagine - Copia 9",
+       "spend": 73.89,
+       "leads": 5.0,
+       "cpl": 14.78,
+       "impressions": 7138.0,
+       "clicks": 73.0,
+       "cvr": 6.85,
+       "ctr": 1.022695,
+       "cpm": 10.351639,
+       "reach": 3656.0,
+       "frequency": 1.952407,
+       "attiva": true,
+       "effective_status": "ACTIVE",
+       "status": "ok",
+       "reason": "CPL €14.78: dentro i parametri",
+       "sprecato": 0.0,
+       "flags": [],
+       "recent": {
+        "spend": 73.89,
+        "leads": 5.0,
+        "cpl": 14.78
+       },
+       "trend": 0.0
+      },
+      {
+       "id": "120249983398610629",
+       "name": "Nuova inserzione Contatti - Copia",
+       "campaign_id": "120249502985680629",
+       "campaign_name": "Moduli -immagine - Copia 9",
+       "spend": 17.56,
+       "leads": 1.0,
+       "cpl": 17.56,
+       "impressions": 1642.0,
+       "clicks": 26.0,
+       "cvr": 3.85,
+       "ctr": 1.583435,
+       "cpm": 10.694275,
+       "reach": 763.0,
+       "frequency": 2.152031,
+       "attiva": true,
+       "effective_status": "ACTIVE",
+       "status": "early",
+       "reason": "1 lead a €17.56: si lascia girare, ma entro €50 (mancano €32.44) deve arrivare il 2° lead, cioe' CPL sotto €25",
+       "sprecato": 0.0,
+       "flags": [],
+       "recent": {
+        "spend": 17.56,
+        "leads": 1.0,
+        "cpl": 17.56
+       },
+       "trend": 0.0
+      },
       {
        "id": "120249502985690629",
        "name": "Nuova inserzione Contatti",
@@ -250,76 +383,9 @@
         "CTR 0.86%: il creativo non ferma nessuno",
         "frequenza 3.3: pubblico bruciato, cambia audience",
         "solo 2.3% dei click diventa lead: modulo o landing da rivedere"
-       ]
-      },
-      {
-       "id": "120249800005130629",
-       "name": "Nuova inserzione Contatti",
-       "campaign_id": "120249502985680629",
-       "campaign_name": "Moduli -immagine - Copia 9",
-       "spend": 197.22,
-       "leads": 16.0,
-       "cpl": 12.33,
-       "impressions": 23916.0,
-       "clicks": 480.0,
-       "cvr": 3.33,
-       "ctr": 2.007025,
-       "cpm": 8.246362,
-       "reach": 7841.0,
-       "frequency": 3.050121,
-       "attiva": true,
-       "effective_status": "ACTIVE",
-       "status": "ok",
-       "reason": "CPL €12.33: dentro i parametri",
-       "sprecato": 0.0,
-       "flags": [
-        "frequenza 3.1: pubblico bruciato, cambia audience",
-        "solo 3.3% dei click diventa lead: modulo o landing da rivedere"
-       ]
-      },
-      {
-       "id": "120249917998520629",
-       "name": "Nuova inserzione Contatti - Copia",
-       "campaign_id": "120249502985680629",
-       "campaign_name": "Moduli -immagine - Copia 9",
-       "spend": 15.69,
-       "leads": 0.0,
-       "cpl": null,
-       "impressions": 1719.0,
-       "clicks": 25.0,
-       "cvr": 0.0,
-       "ctr": 1.454334,
-       "cpm": 9.1274,
-       "reach": 898.0,
-       "frequency": 1.914254,
-       "attiva": false,
-       "effective_status": "PAUSED",
-       "status": "watch",
-       "reason": "€15.69 spesi e 0 lead: mancano €14.31 allo stacco",
-       "sprecato": 0.0,
-       "flags": []
-      },
-      {
-       "id": "120249983398610629",
-       "name": "Nuova inserzione Contatti - Copia",
-       "campaign_id": "120249502985680629",
-       "campaign_name": "Moduli -immagine - Copia 9",
-       "spend": 17.18,
-       "leads": 1.0,
-       "cpl": 17.18,
-       "impressions": 1622.0,
-       "clicks": 26.0,
-       "cvr": 3.85,
-       "ctr": 1.602959,
-       "cpm": 10.591862,
-       "reach": 759.0,
-       "frequency": 2.137022,
-       "attiva": true,
-       "effective_status": "ACTIVE",
-       "status": "early",
-       "reason": "1 lead a €17.18: si lascia girare, ma entro €50 (mancano €32.82) deve arrivare il 2° lead, cioe' CPL sotto €25",
-       "sprecato": 0.0,
-       "flags": []
+       ],
+       "recent": null,
+       "trend": null
       },
       {
        "id": "120250027672920629",
@@ -343,46 +409,70 @@
        "sprecato": 0.0,
        "flags": [
         "CTR 0.99%: il creativo non ferma nessuno"
-       ]
+       ],
+       "recent": {
+        "spend": 21.9,
+        "leads": 0.0,
+        "cpl": null
+       },
+       "trend": null
       },
       {
-       "id": "120250059666430629",
-       "name": "Nuova inserzione Contatti - Copia 2",
+       "id": "120249917998520629",
+       "name": "Nuova inserzione Contatti - Copia",
        "campaign_id": "120249502985680629",
        "campaign_name": "Moduli -immagine - Copia 9",
-       "spend": 64.21,
-       "leads": 5.0,
-       "cpl": 12.84,
-       "impressions": 5739.0,
-       "clicks": 63.0,
-       "cvr": 7.94,
-       "ctr": 1.097752,
-       "cpm": 11.18836,
-       "reach": 3172.0,
-       "frequency": 1.809269,
-       "attiva": true,
-       "effective_status": "ACTIVE",
-       "status": "ok",
-       "reason": "CPL €12.84: dentro i parametri",
+       "spend": 15.69,
+       "leads": 0.0,
+       "cpl": null,
+       "impressions": 1719.0,
+       "clicks": 25.0,
+       "cvr": 0.0,
+       "ctr": 1.454334,
+       "cpm": 9.1274,
+       "reach": 898.0,
+       "frequency": 1.914254,
+       "attiva": false,
+       "effective_status": "PAUSED",
+       "status": "watch",
+       "reason": "€15.69 spesi e 0 lead: mancano €14.31 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": {
+        "spend": 0.67,
+        "leads": 0.0,
+        "cpl": null
+       },
+       "trend": null
       }
      ],
+     "vivo": {
+      "spend": 291.89,
+      "leads": 23.0,
+      "clicks": 589.0,
+      "impressions": 33030.0,
+      "cpl": 12.69,
+      "cvr": 3.9,
+      "ctr": 1.78,
+      "recent_cpl": 12.82,
+      "recent_spend": 205.11,
+      "recent_leads": 16.0
+     },
      "n_ads": 6,
      "n_ads_attivi": 3,
      "sprecato": 0.0,
      "status": "ok",
      "reason": "inserzioni accese dentro i parametri",
      "flags": [
-      "frequenza 4.8: pubblico bruciato, cambia audience",
+      "frequenza 4.9: pubblico bruciato, cambia audience",
       "solo 3.3% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 214.4,
-      "leads": 15.0,
-      "cpl": 14.29
+      "spend": 227.68,
+      "leads": 16.0,
+      "cpl": 14.23
      },
-     "trend": -3.48
+     "trend": -3.37
     },
     {
      "id": "120246542937170629",
@@ -423,9 +513,12 @@
        "sprecato": 0.0,
        "flags": [
         "frequenza 2.8: pubblico bruciato, cambia audience"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -475,9 +568,12 @@
        "status": "ok",
        "reason": "CPL €15.26: dentro i parametri",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -526,9 +622,12 @@
        "sprecato": 0.0,
        "flags": [
         "frequenza 3.0: pubblico bruciato, cambia audience"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -580,9 +679,12 @@
        "sprecato": 0.0,
        "flags": [
         "frequenza 2.6: pubblico bruciato, cambia audience"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -633,9 +735,12 @@
        "sprecato": 0.0,
        "flags": [
         "frequenza 2.9: pubblico bruciato, cambia audience"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -686,9 +791,12 @@
        "sprecato": 0.0,
        "flags": [
         "frequenza 2.6: pubblico bruciato, cambia audience"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -737,9 +845,12 @@
        "status": "winner",
        "reason": "CPL €7.41: sotto €10, ci si mette budget",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -788,9 +899,12 @@
        "sprecato": 0.0,
        "flags": [
         "solo 2.8% dei click diventa lead: modulo o landing da rivedere"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -841,9 +955,12 @@
        "sprecato": 0.0,
        "flags": [
         "solo 3.5% dei click diventa lead: modulo o landing da rivedere"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -892,9 +1009,12 @@
        "status": "ok",
        "reason": "CPL €19.07: dentro i parametri",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -943,9 +1063,12 @@
        "sprecato": 14.35,
        "flags": [
         "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -996,9 +1119,12 @@
        "sprecato": 0.0,
        "flags": [
         "solo 3.2% dei click diventa lead: modulo o landing da rivedere"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -1049,9 +1175,12 @@
        "sprecato": 0.0,
        "flags": [
         "solo 2.9% dei click diventa lead: modulo o landing da rivedere"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -1100,9 +1229,12 @@
        "status": "ok",
        "reason": "CPL €19.62: dentro i parametri",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -1111,6 +1243,81 @@
      "flags": [],
      "recent": null,
      "trend": null
+    },
+    {
+     "id": "120250059758910629",
+     "name": "ORO - Promotori - Moduli - statica v1",
+     "spend": 38.64,
+     "leads": 2.0,
+     "cpl": 19.32,
+     "impressions": 2033.0,
+     "clicks": 57.0,
+     "cvr": 3.51,
+     "ctr": 2.803738,
+     "cpm": 19.006394,
+     "reach": 884.0,
+     "frequency": 2.299774,
+     "attiva": true,
+     "effective_status": "ACTIVE",
+     "daily_budget": null,
+     "ads": [
+      {
+       "id": "120250059912560629",
+       "name": "ORO - statica v1 - 14 giorni e x2",
+       "campaign_id": "120250059758910629",
+       "campaign_name": "ORO - Promotori - Moduli - statica v1",
+       "spend": 38.64,
+       "leads": 2.0,
+       "cpl": 19.32,
+       "impressions": 2033.0,
+       "clicks": 57.0,
+       "cvr": 3.51,
+       "ctr": 2.803738,
+       "cpm": 19.006394,
+       "reach": 884.0,
+       "frequency": 2.299774,
+       "attiva": true,
+       "effective_status": "ACTIVE",
+       "status": "ok",
+       "reason": "CPL €19.32: dentro i parametri",
+       "sprecato": 0.0,
+       "flags": [
+        "solo 3.5% dei click diventa lead: modulo o landing da rivedere"
+       ],
+       "recent": {
+        "spend": 38.64,
+        "leads": 2.0,
+        "cpl": 19.32
+       },
+       "trend": 0.0
+      }
+     ],
+     "vivo": {
+      "spend": 38.64,
+      "leads": 2.0,
+      "clicks": 57.0,
+      "impressions": 2033.0,
+      "cpl": 19.32,
+      "cvr": 3.51,
+      "ctr": 2.8,
+      "recent_cpl": 19.32,
+      "recent_spend": 38.64,
+      "recent_leads": 2.0
+     },
+     "n_ads": 1,
+     "n_ads_attivi": 1,
+     "sprecato": 0.0,
+     "status": "ok",
+     "reason": "inserzioni accese dentro i parametri",
+     "flags": [
+      "solo 3.5% dei click diventa lead: modulo o landing da rivedere"
+     ],
+     "recent": {
+      "spend": 38.64,
+      "leads": 2.0,
+      "cpl": 19.32
+     },
+     "trend": 0.0
     },
     {
      "id": "120249034644270629",
@@ -1151,9 +1358,12 @@
        "sprecato": 0.0,
        "flags": [
         "solo 3.8% dei click diventa lead: modulo o landing da rivedere"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -1164,59 +1374,6 @@
      ],
      "recent": null,
      "trend": null
-    },
-    {
-     "id": "120250059758910629",
-     "name": "ORO - Promotori - Moduli - statica v1",
-     "spend": 32.38,
-     "leads": 2.0,
-     "cpl": 16.19,
-     "impressions": 1707.0,
-     "clicks": 50.0,
-     "cvr": 4.0,
-     "ctr": 2.929115,
-     "cpm": 18.968951,
-     "reach": 778.0,
-     "frequency": 2.194087,
-     "attiva": true,
-     "effective_status": "ACTIVE",
-     "daily_budget": null,
-     "ads": [
-      {
-       "id": "120250059912560629",
-       "name": "ORO - statica v1 - 14 giorni e x2",
-       "campaign_id": "120250059758910629",
-       "campaign_name": "ORO - Promotori - Moduli - statica v1",
-       "spend": 32.38,
-       "leads": 2.0,
-       "cpl": 16.19,
-       "impressions": 1707.0,
-       "clicks": 50.0,
-       "cvr": 4.0,
-       "ctr": 2.929115,
-       "cpm": 18.968951,
-       "reach": 778.0,
-       "frequency": 2.194087,
-       "attiva": true,
-       "effective_status": "ACTIVE",
-       "status": "ok",
-       "reason": "CPL €16.19: dentro i parametri",
-       "sprecato": 0.0,
-       "flags": []
-      }
-     ],
-     "n_ads": 1,
-     "n_ads_attivi": 1,
-     "sprecato": 0.0,
-     "status": "ok",
-     "reason": "inserzioni accese dentro i parametri",
-     "flags": [],
-     "recent": {
-      "spend": 32.38,
-      "leads": 2.0,
-      "cpl": 16.19
-     },
-     "trend": 0.0
     },
     {
      "id": "120246019719600629",
@@ -1255,9 +1412,12 @@
        "status": "ok",
        "reason": "CPL €16.05: dentro i parametri",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -1304,9 +1464,12 @@
        "status": "kill",
        "reason": "€30.21 spesi e 0 lead: oltre il limite di €30",
        "sprecato": 0.21,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -1353,9 +1516,12 @@
        "status": "early",
        "reason": "1 lead a €27.69: si lascia girare, ma entro €50 (mancano €22.31) deve arrivare il 2° lead, cioe' CPL sotto €25",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -1402,9 +1568,12 @@
        "status": "early",
        "reason": "1 lead a €27.50: si lascia girare, ma entro €50 (mancano €22.50) deve arrivare il 2° lead, cioe' CPL sotto €25",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -1453,9 +1622,12 @@
        "sprecato": 0.0,
        "flags": [
         "solo 2.9% dei click diventa lead: modulo o landing da rivedere"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -1506,9 +1678,12 @@
        "sprecato": 0.0,
        "flags": [
         "solo 2.9% dei click diventa lead: modulo o landing da rivedere"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -1557,9 +1732,12 @@
        "status": "early",
        "reason": "1 lead a €24.78: si lascia girare, ma entro €50 (mancano €25.22) deve arrivare il 2° lead, cioe' CPL sotto €25",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -1608,9 +1786,12 @@
        "sprecato": 0.0,
        "flags": [
         "solo 2.8% dei click diventa lead: modulo o landing da rivedere"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -1659,9 +1840,12 @@
        "status": "early",
        "reason": "1 lead a €24.27: si lascia girare, ma entro €50 (mancano €25.73) deve arrivare il 2° lead, cioe' CPL sotto €25",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -1708,9 +1892,12 @@
        "status": "early",
        "reason": "solo 105 impression: troppo presto per giudicare",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -1757,9 +1944,12 @@
        "status": "early",
        "reason": "solo 166 impression: troppo presto per giudicare",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -1806,9 +1996,12 @@
        "status": "early",
        "reason": "solo 236 impression: troppo presto per giudicare",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -1855,9 +2048,12 @@
        "status": "early",
        "reason": "1 lead a €22.42: si lascia girare, ma entro €50 (mancano €27.58) deve arrivare il 2° lead, cioe' CPL sotto €25",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -1906,9 +2102,12 @@
        "sprecato": 0.0,
        "flags": [
         "solo 2.5% dei click diventa lead: modulo o landing da rivedere"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -1959,9 +2158,12 @@
        "sprecato": 0.0,
        "flags": [
         "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -2010,9 +2212,12 @@
        "status": "early",
        "reason": "1 lead a €21.48: si lascia girare, ma entro €50 (mancano €28.52) deve arrivare il 2° lead, cioe' CPL sotto €25",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -2059,9 +2264,12 @@
        "status": "watch",
        "reason": "€20.87 spesi e 0 lead: mancano €9.13 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -2110,9 +2318,12 @@
        "sprecato": 0.0,
        "flags": [
         "solo 3.3% dei click diventa lead: modulo o landing da rivedere"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -2161,9 +2372,12 @@
        "status": "early",
        "reason": "1 lead a €20.75: si lascia girare, ma entro €50 (mancano €29.25) deve arrivare il 2° lead, cioe' CPL sotto €25",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -2210,9 +2424,12 @@
        "status": "early",
        "reason": "1 lead a €20.59: si lascia girare, ma entro €50 (mancano €29.41) deve arrivare il 2° lead, cioe' CPL sotto €25",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -2259,9 +2476,12 @@
        "status": "early",
        "reason": "1 lead a €20.50: si lascia girare, ma entro €50 (mancano €29.50) deve arrivare il 2° lead, cioe' CPL sotto €25",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -2308,9 +2528,12 @@
        "status": "early",
        "reason": "1 lead a €20.16: si lascia girare, ma entro €50 (mancano €29.84) deve arrivare il 2° lead, cioe' CPL sotto €25",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -2359,9 +2582,12 @@
        "sprecato": 0.0,
        "flags": [
         "solo 2.4% dei click diventa lead: modulo o landing da rivedere"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -2412,9 +2638,12 @@
        "sprecato": 0.0,
        "flags": [
         "CTR 0.82%: il creativo non ferma nessuno"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -2463,9 +2692,12 @@
        "status": "early",
        "reason": "solo 247 impression: troppo presto per giudicare",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -2514,9 +2746,12 @@
        "sprecato": 0.0,
        "flags": [
         "solo 2.4% dei click diventa lead: modulo o landing da rivedere"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -2567,9 +2802,12 @@
        "sprecato": 0.0,
        "flags": [
         "CTR 0.94%: il creativo non ferma nessuno"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -2620,9 +2858,12 @@
        "sprecato": 0.0,
        "flags": [
         "solo 2.6% dei click diventa lead: modulo o landing da rivedere"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -2673,9 +2914,12 @@
        "sprecato": 0.0,
        "flags": [
         "solo 2.6% dei click diventa lead: modulo o landing da rivedere"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -2724,9 +2968,12 @@
        "status": "early",
        "reason": "1 lead a €18.76: si lascia girare, ma entro €50 (mancano €31.24) deve arrivare il 2° lead, cioe' CPL sotto €25",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -2773,9 +3020,12 @@
        "status": "early",
        "reason": "1 lead a €18.63: si lascia girare, ma entro €50 (mancano €31.37) deve arrivare il 2° lead, cioe' CPL sotto €25",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -2822,9 +3072,12 @@
        "status": "early",
        "reason": "1 lead a €18.54: si lascia girare, ma entro €50 (mancano €31.46) deve arrivare il 2° lead, cioe' CPL sotto €25",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -2871,9 +3124,12 @@
        "status": "early",
        "reason": "solo 103 impression: troppo presto per giudicare",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -2920,9 +3176,12 @@
        "status": "watch",
        "reason": "€18.43 spesi e 0 lead: mancano €11.57 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -2969,9 +3228,12 @@
        "status": "watch",
        "reason": "€18.21 spesi e 0 lead: mancano €11.79 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -3020,9 +3282,12 @@
        "sprecato": 0.0,
        "flags": [
         "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -3073,9 +3338,12 @@
        "sprecato": 0.0,
        "flags": [
         "CTR 0.85%: il creativo non ferma nessuno"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -3124,9 +3392,12 @@
        "status": "watch",
        "reason": "€17.96 spesi e 0 lead: mancano €12.04 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -3175,9 +3446,12 @@
        "sprecato": 0.0,
        "flags": [
         "CTR 0.84%: il creativo non ferma nessuno"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -3226,9 +3500,12 @@
        "status": "early",
        "reason": "1 lead a €17.39: si lascia girare, ma entro €50 (mancano €32.61) deve arrivare il 2° lead, cioe' CPL sotto €25",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -3275,9 +3552,12 @@
        "status": "watch",
        "reason": "€17.13 spesi e 0 lead: mancano €12.87 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -3324,9 +3604,12 @@
        "status": "early",
        "reason": "1 lead a €17.12: si lascia girare, ma entro €50 (mancano €32.88) deve arrivare il 2° lead, cioe' CPL sotto €25",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -3373,9 +3656,12 @@
        "status": "early",
        "reason": "solo 208 impression: troppo presto per giudicare",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -3422,9 +3708,12 @@
        "status": "watch",
        "reason": "€16.71 spesi e 0 lead: mancano €13.29 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -3471,9 +3760,12 @@
        "status": "watch",
        "reason": "€16.64 spesi e 0 lead: mancano €13.36 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -3520,9 +3812,12 @@
        "status": "watch",
        "reason": "€16.40 spesi e 0 lead: mancano €13.60 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -3571,9 +3866,12 @@
        "sprecato": 0.0,
        "flags": [
         "CTR 0.89%: il creativo non ferma nessuno"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -3622,9 +3920,12 @@
        "status": "watch",
        "reason": "€16.01 spesi e 0 lead: mancano €13.99 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -3673,9 +3974,12 @@
        "sprecato": 0.0,
        "flags": [
         "CTR 0.96%: il creativo non ferma nessuno"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -3724,9 +4028,12 @@
        "status": "early",
        "reason": "1 lead a €15.83: si lascia girare, ma entro €50 (mancano €34.17) deve arrivare il 2° lead, cioe' CPL sotto €25",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -3773,9 +4080,12 @@
        "status": "watch",
        "reason": "€15.60 spesi e 0 lead: mancano €14.40 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -3824,9 +4134,12 @@
        "sprecato": 0.0,
        "flags": [
         "CTR 0.94%: il creativo non ferma nessuno"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -3875,9 +4188,12 @@
        "status": "watch",
        "reason": "€15.42 spesi e 0 lead: mancano €14.58 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -3924,9 +4240,12 @@
        "status": "watch",
        "reason": "€15.37 spesi e 0 lead: mancano €14.63 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -3973,9 +4292,12 @@
        "status": "watch",
        "reason": "€15.34 spesi e 0 lead: mancano €14.66 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -4022,9 +4344,12 @@
        "status": "watch",
        "reason": "€15.30 spesi e 0 lead: mancano €14.70 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -4071,9 +4396,12 @@
        "status": "watch",
        "reason": "€15.28 spesi e 0 lead: mancano €14.72 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -4120,9 +4448,12 @@
        "status": "watch",
        "reason": "€15.28 spesi e 0 lead: mancano €14.72 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -4169,9 +4500,12 @@
        "status": "watch",
        "reason": "€15.25 spesi e 0 lead: mancano €14.75 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -4218,9 +4552,12 @@
        "status": "watch",
        "reason": "€15.19 spesi e 0 lead: mancano €14.81 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -4269,9 +4606,12 @@
        "sprecato": 0.0,
        "flags": [
         "CTR 0.44%: il creativo non ferma nessuno"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -4320,9 +4660,12 @@
        "status": "watch",
        "reason": "€15.08 spesi e 0 lead: mancano €14.92 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -4371,9 +4714,12 @@
        "sprecato": 0.0,
        "flags": [
         "CTR 0.66%: il creativo non ferma nessuno"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -4424,9 +4770,12 @@
        "sprecato": 0.0,
        "flags": [
         "CTR 0.46%: il creativo non ferma nessuno"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -4475,9 +4824,12 @@
        "status": "watch",
        "reason": "€15.06 spesi e 0 lead: mancano €14.94 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -4524,9 +4876,12 @@
        "status": "watch",
        "reason": "€15.00 spesi e 0 lead: mancano €15.00 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -4573,9 +4928,12 @@
        "status": "watch",
        "reason": "€14.95 spesi e 0 lead: mancano €15.05 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -4622,9 +4980,12 @@
        "status": "watch",
        "reason": "€14.85 spesi e 0 lead: mancano €15.15 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -4671,9 +5032,12 @@
        "status": "watch",
        "reason": "€14.82 spesi e 0 lead: mancano €15.18 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -4720,9 +5084,12 @@
        "status": "early",
        "reason": "solo 119 impression: troppo presto per giudicare",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -4769,9 +5136,12 @@
        "status": "early",
        "reason": "solo 111 impression: troppo presto per giudicare",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -4818,9 +5188,12 @@
        "status": "watch",
        "reason": "€14.49 spesi e 0 lead: mancano €15.51 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -4869,9 +5242,12 @@
        "sprecato": 0.0,
        "flags": [
         "CTR 0.94%: il creativo non ferma nessuno"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -4920,9 +5296,12 @@
        "status": "watch",
        "reason": "€14.38 spesi e 0 lead: mancano €15.62 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -4969,9 +5348,12 @@
        "status": "watch",
        "reason": "€14.26 spesi e 0 lead: mancano €15.74 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -5018,9 +5400,12 @@
        "status": "watch",
        "reason": "€14.23 spesi e 0 lead: mancano €15.77 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -5067,9 +5452,12 @@
        "status": "watch",
        "reason": "€14.13 spesi e 0 lead: mancano €15.87 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -5116,9 +5504,12 @@
        "status": "watch",
        "reason": "€14.00 spesi e 0 lead: mancano €16.00 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -5165,9 +5556,12 @@
        "status": "watch",
        "reason": "€13.88 spesi e 0 lead: mancano €16.12 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -5214,9 +5608,12 @@
        "status": "early",
        "reason": "1 lead a €13.85: si lascia girare, ma entro €50 (mancano €36.15) deve arrivare il 2° lead, cioe' CPL sotto €25",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -5265,9 +5662,12 @@
        "sprecato": 0.0,
        "flags": [
         "CTR 0.80%: il creativo non ferma nessuno"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -5316,9 +5716,12 @@
        "status": "watch",
        "reason": "€13.55 spesi e 0 lead: mancano €16.45 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -5367,9 +5770,12 @@
        "sprecato": 0.0,
        "flags": [
         "CTR 0.83%: il creativo non ferma nessuno"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -5418,9 +5824,12 @@
        "status": "watch",
        "reason": "€13.33 spesi e 0 lead: mancano €16.67 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -5469,9 +5878,12 @@
        "sprecato": 0.0,
        "flags": [
         "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -5520,9 +5932,12 @@
        "status": "watch",
        "reason": "€12.89 spesi e 0 lead: mancano €17.11 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -5572,9 +5987,12 @@
        "flags": [
         "CTR 0.74%: il creativo non ferma nessuno",
         "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -5627,9 +6045,12 @@
        "flags": [
         "CTR 0.81%: il creativo non ferma nessuno",
         "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -5679,9 +6100,12 @@
        "status": "early",
        "reason": "solo 127 impression: troppo presto per giudicare",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -5728,9 +6152,12 @@
        "status": "early",
        "reason": "solo 136 impression: troppo presto per giudicare",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -5777,9 +6204,12 @@
        "status": "watch",
        "reason": "€10.83 spesi e 0 lead: mancano €19.17 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -5826,9 +6256,12 @@
        "status": "watch",
        "reason": "€10.27 spesi e 0 lead: mancano €19.73 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -5875,9 +6308,12 @@
        "status": "early",
        "reason": "solo 106 impression: troppo presto per giudicare",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -5924,9 +6360,12 @@
        "status": "early",
        "reason": "solo 104 impression: troppo presto per giudicare",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -5975,9 +6414,12 @@
        "sprecato": 0.0,
        "flags": [
         "CTR 0.99%: il creativo non ferma nessuno"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -6026,9 +6468,12 @@
        "status": "watch",
        "reason": "€8.88 spesi e 0 lead: mancano €21.12 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -6077,9 +6522,12 @@
        "sprecato": 0.0,
        "flags": [
         "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -6128,9 +6576,12 @@
        "status": "watch",
        "reason": "€8.07 spesi e 0 lead: mancano €21.93 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -6177,9 +6628,12 @@
        "status": "early",
        "reason": "solo 142 impression: troppo presto per giudicare",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -6226,9 +6680,12 @@
        "status": "early",
        "reason": "1 lead a €7.24: si lascia girare, ma entro €50 (mancano €42.76) deve arrivare il 2° lead, cioe' CPL sotto €25",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -6275,9 +6732,12 @@
        "status": "watch",
        "reason": "€6.32 spesi e 0 lead: mancano €23.68 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -6324,9 +6784,12 @@
        "status": "watch",
        "reason": "€5.61 spesi e 0 lead: mancano €24.39 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -6375,9 +6838,12 @@
        "sprecato": 0.0,
        "flags": [
         "CTR 0.71%: il creativo non ferma nessuno"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -6428,9 +6894,12 @@
        "sprecato": 0.0,
        "flags": [
         "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -6479,9 +6948,12 @@
        "status": "watch",
        "reason": "€5.16 spesi e 0 lead: mancano €24.84 allo stacco",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -6530,9 +7002,12 @@
        "sprecato": 0.0,
        "flags": [
         "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-       ]
+       ],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -6581,9 +7056,12 @@
        "status": "early",
        "reason": "solo 61 impression: troppo presto per giudicare",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -6630,9 +7108,12 @@
        "status": "early",
        "reason": "solo 67 impression: troppo presto per giudicare",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -6679,9 +7160,12 @@
        "status": "early",
        "reason": "solo 6 impression: troppo presto per giudicare",
        "sprecato": 0.0,
-       "flags": []
+       "flags": [],
+       "recent": null,
+       "trend": null
       }
      ],
+     "vivo": null,
      "n_ads": 1,
      "n_ads_attivi": 0,
      "sprecato": 0,
@@ -6694,7 +7178,7 @@
    ],
    "hiring": {
     "n": 6,
-    "spend": 283.66,
+    "spend": 286.56,
     "leads": 123.0
    },
    "campagne_hiring": [
@@ -6755,16 +7239,16 @@
     {
      "id": "120246443902370629",
      "name": "Venditore - Moduli",
-     "spend": 211.06,
+     "spend": 213.96,
      "leads": 50.0,
-     "cpl": 4.22,
-     "impressions": 8705.0,
-     "clicks": 410.0,
-     "cvr": 12.2,
-     "ctr": 4.709937,
-     "cpm": 24.245836,
-     "reach": 3063.0,
-     "frequency": 2.841985,
+     "cpl": 4.28,
+     "impressions": 8780.0,
+     "clicks": 417.0,
+     "cvr": 11.99,
+     "ctr": 4.749431,
+     "cpm": 24.369021,
+     "reach": 3084.0,
+     "frequency": 2.846952,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 6.0,

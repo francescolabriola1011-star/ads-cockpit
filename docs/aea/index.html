@@ -92,6 +92,8 @@ tr:last-child td{border-bottom:none}
 .cname .r{font-size:12px;color:var(--muted);margin-top:2px}
 .flag{font-size:12px;color:var(--serious);margin-top:3px}
 .off{opacity:.5}
+tr.camp td{background:rgba(127,127,127,.07)}
+tr.ad .cname .n{font-weight:450;padding-left:10px}
 .flag.riprova{background:#fff4d6;border-left:3px solid #e0a800;color:#7a5600;font-weight:600;padding-left:6px}
 .tag-off{font-size:10.5px;color:var(--muted);border:1px solid var(--line);
   border-radius:4px;padding:1px 5px;margin-left:6px}
@@ -155,7 +157,7 @@ footer{margin-top:44px;color:var(--muted);font-size:12px;border-top:1px solid va
       <option value="watch">Solo sorvegliate</option>
       <option value="winner">Solo vincenti</option>
     </select>
-    <button class="tgl" id="fAttive" aria-pressed="false">Solo campagne ancora accese</button>
+    <button class="tgl" id="fAttive" aria-pressed="false">Solo creative ancora accese</button>
     <button class="tgl" id="fExp" aria-pressed="false">Apri tutti i clienti</button>
   </div>
   <div id="clienti"></div>
@@ -247,6 +249,10 @@ const R2 = () => (DATA && DATA.regole) || {};
    Sotto la soglia il collo e' il MODULO (o la landing), non le ads. */
 const cvrCli  = c => (c.clicks ? c.leads / c.clicks * 100 : null);
 const cvrCamp = k => (k.clicks ? k.leads / k.clicks * 100 : null);
+/* letture sulle sole creative accese (campo "vivo" del motore) */
+const vCpl  = c => (c.vivo ? c.vivo.cpl : null);
+const vLead = c => (c.vivo ? c.vivo.leads : 0);
+const vCvr  = c => (c.vivo ? c.vivo.cvr : null);
 
 function scope(){
   if (!state.cliente) return DATA.clienti;
@@ -261,11 +267,21 @@ function totali(sel){
   const spr   = sel.reduce((s,c)=>s+c.sprecato,0);
   const click = sel.reduce((s,c)=>s+(c.clicks||0),0);
   const g = DATA.periodo.giorni || 1;
+  /* CPL e CVR si leggono sulle CREATIVE ACCESE (c.vivo), non sulla media
+     di campagna: con una campagna sola sempre accesa la media include le
+     creative gia' staccate e racconta un CPL che non esiste piu' (16/9/2026). */
+  const vivi = sel.filter(c => c.vivo);
+  const vs = vivi.reduce((s,c)=>s+c.vivo.spend,0);
+  const vl = vivi.reduce((s,c)=>s+c.vivo.leads,0);
+  const vc = vivi.reduce((s,c)=>s+(c.vivo.cvr != null ? c.vivo.leads / (c.vivo.cvr/100) : 0),0);
+  const ncr = vivi.reduce((s,c)=>s+(c.vivo.n_creative||0),0);
   return {
     spesa, lead, sprecato: spr,
-    cpl: lead ? spesa/lead : null,
+    cpl: vl ? vs/vl : null,
+    cpl_storico: lead ? spesa/lead : null,
+    creative_accese: ncr,
     clicks: click,
-    cvr: click ? lead/click*100 : null,
+    cvr: vc ? vl/vc*100 : null,
     quota: spesa ? spr/spesa*100 : 0,
     al_mese: spr/g*30,
     brucia_oggi: sel.reduce((s,c)=>s+c.brucia_oggi,0),
@@ -340,9 +356,10 @@ function render(){
          t.brucia_oggi > 0 ? `bruciano ${eur(t.brucia_oggi)} al giorno` : "campagne fuori regola ancora accese", "act"),
     tile("Spesa", eur0(t.spesa), `${d.periodo.giorni} giorni`),
     tile("Lead", int(t.lead), "moduli e conversioni Meta"),
-    tile("CPL medio", t.cpl ? eur(t.cpl) : "n/d",
-         t.cpl ? (t.cpl > R.cpl_kill_eur ? `sopra il limite di ${eur0(R.cpl_kill_eur)}`
-                                         : `sotto il limite di ${eur0(R.cpl_kill_eur)}`) : ""),
+    tile("CPL creative accese", t.cpl ? eur(t.cpl) : "n/d",
+         t.cpl ? `${int(t.creative_accese)} creative accese · ${t.cpl > R.cpl_kill_eur ? "sopra" : "sotto"} il limite di ${eur0(R.cpl_kill_eur)}`
+               + (t.cpl_storico ? ` · media storica ${eur(t.cpl_storico)}` : "")
+               : (t.cpl_storico ? `nessuna creativa accesa · media storica ${eur(t.cpl_storico)}` : "")),
     tile("CVR click → lead", t.cvr != null ? t.cvr.toFixed(1) + "%" : "n/d",
          t.cvr == null ? "" : (t.cvr < CVRMIN
             ? `sotto il ${CVRMIN}% minimo: il collo è il modulo, non le ads`
@@ -409,13 +426,14 @@ function renderClienti(){
         <div class="alias">${esc(nomeCli(c))}</div>
         <div><div class="k">Spesa</div><div class="v mono">${eur0(c.spend)}</div></div>
         <div><div class="k">Lead</div><div class="v mono">${int(c.leads)}</div></div>
-        <div><div class="k">CPL</div><div class="v mono" style="color:${
-          c.cpl == null ? "var(--muted)" : (c.leads >= 2 && c.cpl > d.regole.cpl_kill_eur) ? "var(--crit)"
-          : c.cpl <= d.regole.cpl_winner_eur ? "var(--good)" : "inherit"}">${
-          c.cpl ? eur(c.cpl) : "n/d"}</div></div>
-        <div><div class="k">CVR</div><div class="v mono" style="color:${
-          cvrCli(c) == null ? "var(--muted)" : cvrCli(c) < CVRMIN ? "var(--crit)" : "var(--good)"}">${
-          cvrCli(c) == null ? "n/d" : cvrCli(c).toFixed(1) + "%"}</div></div>
+        <div><div class="k">CPL creative accese</div><div class="v mono" style="color:${
+          vCpl(c) == null ? "var(--muted)" : (vLead(c) >= 2 && vCpl(c) > d.regole.cpl_kill_eur) ? "var(--crit)"
+          : vCpl(c) <= d.regole.cpl_winner_eur ? "var(--good)" : "inherit"}">${
+          vCpl(c) ? eur(vCpl(c)) : "n/d"}</div>${
+          c.cpl ? `<div class="k">storico ${eur(c.cpl)}</div>` : ""}</div>
+        <div><div class="k">CVR creative accese</div><div class="v mono" style="color:${
+          vCvr(c) == null ? "var(--muted)" : vCvr(c) < CVRMIN ? "var(--crit)" : "var(--good)"}">${
+          vCvr(c) == null ? "n/d" : vCvr(c).toFixed(1) + "%"}</div></div>
         <div><div class="k">Sprecato</div><div class="v mono" style="color:var(--crit)">${eur0(c.sprecato)}</div></div>
         <div class="spark"><div class="k">${c.quota_sprecata}% sprecato · ${c.n_kill} fuori regola${
           c.n_kill_ancora_accese ? `, <b style="color:var(--crit)">${c.n_kill_ancora_accese} accese</b>` : ""}</div>
@@ -424,9 +442,12 @@ function renderClienti(){
       </div>
       <div class="cbody">${camp.length ? `
         <table><thead><tr>
-          <th>Campagna</th><th>Stato</th><th>Spesa</th><th>Lead</th><th>CPL</th>
+          <th>Creativa</th><th>Stato</th><th>Spesa</th><th>Lead</th><th>CPL</th>
           <th>CPL 7g</th><th>CTR</th><th>CVR</th><th>Sprecato</th></tr></thead><tbody>
-          ${camp.map(k => `<tr class="${k.attiva ? "" : "off"}">
+          ${camp.map(k => {
+            const ads = (k.ads || []).filter(a => !state.soloAttive || a.attiva);
+            const v = k.vivo;
+            const rigaCamp = `<tr class="camp ${k.attiva ? "" : "off"}">
             <td class="cname"><div class="n">${esc(nomeCamp(k))}${
               k.attiva ? "" : `<span class="tag-off">${esc(k.effective_status)}</span>`}</div>
               <div class="r">${esc(k.reason)}</div>
@@ -434,20 +455,44 @@ function renderClienti(){
             <td>${chip(k.status)}</td>
             <td class="mono">${eur(k.spend)}</td>
             <td class="mono">${int(k.leads)}</td>
-            <td class="mono">${k.cpl ? eur(k.cpl) : "—"}</td>
-            <td class="mono">${k.recent && k.recent.cpl ? eur(k.recent.cpl) + (
-                k.trend ? ` <span class="${k.trend > 0 ? "up" : "down"}">${k.trend > 0 ? "▲" : "▼"}</span>` : "")
-              : '<span style="color:var(--muted)">—</span>'}</td>
-            <td class="mono">${k.ctr ? k.ctr.toFixed(2) + "%" : "—"}</td>
+            <td class="mono">${v && v.cpl ? eur(v.cpl) : "—"}${
+              k.cpl ? `<div class="k">storico ${eur(k.cpl)}</div>` : ""}</td>
+            <td class="mono">${v && v.recent_cpl ? eur(v.recent_cpl) : '<span style="color:var(--muted)">—</span>'}</td>
+            <td class="mono">${v && v.ctr ? v.ctr.toFixed(2) + "%" : "—"}</td>
             <td class="mono" style="color:${
-              cvrCamp(k) == null ? "var(--muted)"
-              : (k.clicks >= (R2().cvr_min_clicks || 30) && cvrCamp(k) < CVRMIN) ? "var(--crit)"
-              : cvrCamp(k) >= CVRMIN ? "var(--good)" : "inherit"}">${
-              cvrCamp(k) == null ? "—" : cvrCamp(k).toFixed(1) + "%"}</td>
+              !v || v.cvr == null ? "var(--muted)"
+              : (v.clicks >= (R2().cvr_min_clicks || 30) && v.cvr < CVRMIN) ? "var(--crit)"
+              : v.cvr >= CVRMIN ? "var(--good)" : "inherit"}">${
+              !v || v.cvr == null ? "—" : v.cvr.toFixed(1) + "%"}</td>
             <td class="mono" style="color:${k.sprecato > 0 ? "var(--crit)" : "var(--muted)"}">${
               k.sprecato > 0 ? eur(k.sprecato) : "—"}</td>
-          </tr>`).join("")}
-        </tbody></table>`
+          </tr>`;
+            const righeAds = ads.map(a => `<tr class="ad ${a.attiva ? "" : "off"}">
+            <td class="cname"><div class="n">↳ ${esc(a.name)}${
+              a.attiva ? "" : `<span class="tag-off">${esc(a.effective_status)}</span>`}</div>
+              <div class="r">${esc(a.reason)}</div></td>
+            <td>${chip(a.status)}</td>
+            <td class="mono">${eur(a.spend)}</td>
+            <td class="mono">${int(a.leads)}</td>
+            <td class="mono">${a.cpl ? eur(a.cpl) : "—"}</td>
+            <td class="mono">${a.recent && a.recent.cpl ? eur(a.recent.cpl) + (
+                a.trend ? ` <span class="${a.trend > 0 ? "up" : "down"}">${a.trend > 0 ? "▲" : "▼"}</span>` : "")
+              : '<span style="color:var(--muted)">—</span>'}</td>
+            <td class="mono">${a.ctr ? a.ctr.toFixed(2) + "%" : "—"}</td>
+            <td class="mono" style="color:${
+              a.cvr == null ? "var(--muted)"
+              : (a.clicks >= (R2().cvr_min_clicks || 30) && a.cvr < CVRMIN) ? "var(--crit)"
+              : a.cvr >= CVRMIN ? "var(--good)" : "inherit"}">${
+              a.cvr == null ? "—" : a.cvr.toFixed(1) + "%"}</td>
+            <td class="mono" style="color:${a.sprecato > 0 ? "var(--crit)" : "var(--muted)"}">${
+              a.sprecato > 0 ? eur(a.sprecato) : "—"}</td>
+          </tr>`).join("");
+            return rigaCamp + righeAds;
+          }).join("")}
+        </tbody></table>
+        <div style="font-size:12px;color:var(--muted);margin-top:6px">
+          La riga della campagna e' il contenitore: spesa e lead sono il totale storico, CPL, CPL 7g, CTR e CVR
+          sono delle sole creative ancora accese. Le righe ↳ sono le singole creative.</div>`
         : `<div class="empty">Nessuna campagna con questo filtro.</div>`}
       </div>
     </div>`;
