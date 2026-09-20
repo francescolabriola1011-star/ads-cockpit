@@ -198,6 +198,7 @@ let state = {cliente: new URLSearchParams(location.search).get("cliente") || "",
 /* Nome cliente e campagna: sigla finche' non si sbloccano i nomi veri. */
 /* Con anonymize:false il nome vero arriva gia' nel dato; altrimenti si
    parte dalla sigla e lo si sblocca con la passphrase. */
+const gg = iso => { const p = String(iso||"").split("-"); return p.length===3 ? p[2]+"/"+p[1] : String(iso||""); };
 const nomeCli = a => (NAMES && NAMES.clienti[a.alias]) || a.nome_reale || a.alias;
 const nomeCamp = k => (NAMES && NAMES.campagne[k.id]) || k.name;
 
@@ -423,7 +424,7 @@ function renderClienti(){
     return `
     <div class="client ${open ? "open" : ""}">
       <div class="chead" role="button" tabindex="0">
-        <div class="alias">${esc(nomeCli(c))}</div>
+        <div class="alias">${esc(nomeCli(c))}${c.solo_nostre_dal ? `<span style="margin-left:8px;font-size:11px;font-weight:400;color:var(--muted)">solo nostre ads, dal ${esc(gg(c.solo_nostre_dal))}</span>` : ""}</div>
         <div><div class="k">Spesa</div><div class="v mono">${eur0(c.spend)}</div></div>
         <div><div class="k">Lead</div><div class="v mono">${int(c.leads)}</div></div>
         <div><div class="k">CPL creative accese</div><div class="v mono" style="color:${
