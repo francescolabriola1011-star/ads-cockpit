@@ -1,6 +1,6 @@
 {
- "generato": "21/09 07:00",
- "n_account_rossi": 14,
+ "generato": "24/09 08:16",
+ "n_account_rossi": 13,
  "n_puliti": 0,
  "puliti": [],
  "voci": [
@@ -20,24 +20,6 @@
    "cliente": "ASS-AR1",
    "tipo": "NON CONSEGNA",
    "dettaglio": "Moduli - stai spendendo troppo foto - Copia · ieri 0.00 €",
-   "gravita": 3
-  },
-  {
-   "cliente": "CF-ES",
-   "tipo": "NON CONSEGNA",
-   "dettaglio": "Moduli - anche con 100€ al mese - Copia · ieri 0.00 €",
-   "gravita": 3
-  },
-  {
-   "cliente": "CF-ES",
-   "tipo": "NON CONSEGNA",
-   "dettaglio": "Moduli - inizia con meno di 1500 - Copia · ieri 0.00 €",
-   "gravita": 3
-  },
-  {
-   "cliente": "CF-ES",
-   "tipo": "NON CONSEGNA",
-   "dettaglio": "Moduli - versamenti da 1200 - Copia · ieri 0.00 €",
    "gravita": 3
   },
   {
@@ -170,48 +152,6 @@
    "cliente": "ASS-AR1",
    "tipo": "REELS ATTIVI ['facebook_reels_overlay']",
    "dettaglio": "Moduli - stai spendendo troppo foto - Copia",
-   "gravita": 1
-  },
-  {
-   "cliente": "CF-ES",
-   "tipo": "FASCIA ETA' FUORI STANDARD",
-   "dettaglio": "18-65 invece di 30-63 · Moduli - anche con 100€ al mese - Copia",
-   "gravita": 1
-  },
-  {
-   "cliente": "CF-ES",
-   "tipo": "FASCIA ETA' FUORI STANDARD",
-   "dettaglio": "18-65 invece di 30-63 · Moduli - inizia con meno di 1500 - Copia",
-   "gravita": 1
-  },
-  {
-   "cliente": "CF-ES",
-   "tipo": "FASCIA ETA' FUORI STANDARD",
-   "dettaglio": "18-65 invece di 30-63 · Moduli - versamenti da 1200 - Copia",
-   "gravita": 1
-  },
-  {
-   "cliente": "CF-ES",
-   "tipo": "PIU' DI UNA DOMANDA DI QUALIFICA",
-   "dettaglio": "Emanuele 16/6-copy-copy · 4 domande",
-   "gravita": 1
-  },
-  {
-   "cliente": "CF-ES",
-   "tipo": "REELS ATTIVI ['facebook_reels_overlay']",
-   "dettaglio": "Moduli - anche con 100€ al mese - Copia",
-   "gravita": 1
-  },
-  {
-   "cliente": "CF-ES",
-   "tipo": "REELS ATTIVI ['facebook_reels_overlay']",
-   "dettaglio": "Moduli - inizia con meno di 1500 - Copia",
-   "gravita": 1
-  },
-  {
-   "cliente": "CF-ES",
-   "tipo": "REELS ATTIVI ['facebook_reels_overlay']",
-   "dettaglio": "Moduli - versamenti da 1200 - Copia",
    "gravita": 1
   },
   {
