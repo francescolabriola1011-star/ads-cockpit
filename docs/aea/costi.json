@@ -1,5 +1,5 @@
 {
- "generato": "26/09/2026 08:12",
+ "generato": "26/09/2026 18:22",
  "quota_mese": 87,
  "totale_corrente": 4600,
  "totale_m1": 6332,
@@ -62,10 +62,10 @@
    "stato": "sparito"
   },
   {
-   "voce": "Tax Dome",
+   "voce": "Davide Mazzucco",
    "mese_corrente": 0,
-   "media_precedenti": 350,
-   "atteso_a_oggi": 303,
+   "media_precedenti": 150,
+   "atteso_a_oggi": 130,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -78,18 +78,18 @@
    "stato": "sparito"
   },
   {
-   "voce": "Rimborso Spese Francesco Labriola",
+   "voce": "Tax Dome",
    "mese_corrente": 0,
-   "media_precedenti": 100,
-   "atteso_a_oggi": 87,
+   "media_precedenti": 350,
+   "atteso_a_oggi": 303,
    "variazione": -100,
    "stato": "sparito"
   },
   {
-   "voce": "Davide Mazzucco",
+   "voce": "Rimborso Spese Francesco Labriola",
    "mese_corrente": 0,
-   "media_precedenti": 150,
-   "atteso_a_oggi": 130,
+   "media_precedenti": 100,
+   "atteso_a_oggi": 87,
    "variazione": -100,
    "stato": "sparito"
   },
