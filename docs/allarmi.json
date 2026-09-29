@@ -1,5 +1,5 @@
 {
- "generato": "24/09 08:16",
+ "generato": "29/09 04:03",
  "n_account_rossi": 13,
  "n_puliti": 0,
  "puliti": [],
@@ -77,12 +77,6 @@
    "gravita": 3
   },
   {
-   "cliente": "LMB",
-   "tipo": "PIU' DI UN MODULO VIVO",
-   "dettaglio": "Lead Gen - New 1Q - Luigi Micheloni, Lead Gen 1 Q - Luigi Micheloni",
-   "gravita": 2
-  },
-  {
    "cliente": "URO",
    "tipo": "CARTELLA DRIVE NON TROVATA",
    "dettaglio": "attesa «Clienti10X - unknown (Read-Only)»",
@@ -105,6 +99,12 @@
    "tipo": "POSIZIONAMENTI AUTOMATICI",
    "dettaglio": "Nuova campagna Contatti step - Copia",
    "gravita": 2
+  },
+  {
+   "cliente": "AEA-HOUSE",
+   "tipo": "REELS ATTIVI ['facebook_reels', 'facebook_reels_overlay']",
+   "dettaglio": "Venditore - Moduli",
+   "gravita": 1
   },
   {
    "cliente": "AEA-HOUSE",
@@ -247,7 +247,7 @@
   {
    "cliente": "CF-RD",
    "tipo": "FASCIA ETA' FUORI STANDARD",
-   "dettaglio": "30-60 invece di 30-63 · Moduli - Campagna Principale Attiva",
+   "dettaglio": "29-60 invece di 30-63 · Moduli - Campagna Principale Attiva",
    "gravita": 1
   },
   {
