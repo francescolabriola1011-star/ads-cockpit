@@ -1,9 +1,15 @@
 {
- "generato": "29/09 04:03",
- "n_account_rossi": 13,
+ "generato": "01/10 04:03",
+ "n_account_rossi": 12,
  "n_puliti": 0,
  "puliti": [],
  "voci": [
+  {
+   "cliente": "AEA-HOUSE",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "instagram/instagram_reels · 0.92 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "gravita": 3
+  },
   {
    "cliente": "ASS-AR1",
    "tipo": "NON CONSEGNA",
@@ -77,6 +83,12 @@
    "gravita": 3
   },
   {
+   "cliente": "AEA-HOUSE",
+   "tipo": "POSIZIONAMENTI AUTOMATICI",
+   "dettaglio": "Nuova campagna Traffico",
+   "gravita": 2
+  },
+  {
    "cliente": "URO",
    "tipo": "CARTELLA DRIVE NON TROVATA",
    "dettaglio": "attesa «Clienti10X - unknown (Read-Only)»",
@@ -86,18 +98,6 @@
    "cliente": "ZAP",
    "tipo": "CARTELLA DRIVE NON TROVATA",
    "dettaglio": "attesa «Clienti10X - Zaghini Account Pubblicitario»",
-   "gravita": 2
-  },
-  {
-   "cliente": "ZEN",
-   "tipo": "POSIZIONAMENTI AUTOMATICI",
-   "dettaglio": "Nuova campagna Contatti step",
-   "gravita": 2
-  },
-  {
-   "cliente": "ZEN",
-   "tipo": "POSIZIONAMENTI AUTOMATICI",
-   "dettaglio": "Nuova campagna Contatti step - Copia",
    "gravita": 2
   },
   {

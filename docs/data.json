@@ -1,11 +1,11 @@
 {
  "titolo": "ADS Cockpit",
  "sottotitolo": "tutti gli account",
- "generato": "2026-09-30T08:11:23+02:00",
+ "generato": "2026-10-01T08:15:15+02:00",
  "periodo": {
   "da": "2026-01-01",
-  "a": "2026-09-30",
-  "giorni": 272,
+  "a": "2026-10-01",
+  "giorni": 273,
   "finestra_recente_giorni": 7
  },
  "regole": {
@@ -22,16 +22,16 @@
   "cvr_min_clicks": 30
  },
  "totali": {
-  "spesa": 4507.75,
-  "lead": 155.0,
-  "cpl": 29.08,
+  "spesa": 4628.59,
+  "lead": 163.0,
+  "cpl": 28.4,
   "sprecato": 0.0,
   "quota_sprecata": 0.0,
   "sprecato_al_mese": 0.0,
   "brucia_oggi": 0,
   "da_staccare_ora": 0,
-  "clicks": 8815.0,
-  "cvr": 1.76,
+  "clicks": 9055.0,
+  "cvr": 1.8,
   "clienti": 7,
   "campagne": 75
  },
@@ -43,29 +43,29 @@
    "dal": "2026-01-01",
    "solo_nostre_dal": null,
    "currency": "EUR",
-   "spend": 813.3,
-   "leads": 27.0,
-   "cpl": 30.12,
+   "spend": 842.54,
+   "leads": 32.0,
+   "cpl": 26.33,
    "sprecato": 0.0,
    "quota_sprecata": 0.0,
-   "impressions": 89882.0,
-   "clicks": 1243.0,
-   "cvr": 2.17,
+   "impressions": 92395.0,
+   "clicks": 1318.0,
+   "cvr": 2.43,
    "n_campagne": 14,
    "n_kill": 0,
    "n_kill_ancora_accese": 0,
    "brucia_oggi": 0,
    "vivo": {
-    "spend": 361.62,
-    "leads": 16.0,
-    "cpl": 22.6,
-    "cvr": 2.63,
-    "recent_cpl": 106.05,
+    "spend": 26.71,
+    "leads": 6.0,
+    "cpl": 4.45,
+    "cvr": 8.45,
+    "recent_cpl": 4.45,
     "n_creative": 1
    },
    "riallocazione": {
     "budget_da_spostare": 0,
-    "cpl_vincente": null,
+    "cpl_vincente": 21.26,
     "lead_prudente": 0,
     "lead_ottimistico": 0
    },
@@ -73,50 +73,78 @@
     {
      "id": "52581507761861",
      "name": "Moduli - Campagna Attiva",
-     "spend": 587.42,
-     "leads": 24.0,
-     "cpl": 24.48,
-     "impressions": 69522.0,
-     "clicks": 923.0,
-     "cvr": 2.6,
-     "ctr": 1.327637,
-     "cpm": 8.449412,
-     "reach": 26313.0,
-     "frequency": 2.642116,
+     "spend": 616.66,
+     "leads": 29.0,
+     "cpl": 21.26,
+     "impressions": 72035.0,
+     "clicks": 998.0,
+     "cvr": 2.91,
+     "ctr": 1.385438,
+     "cpm": 8.560561,
+     "reach": 26745.0,
+     "frequency": 2.693401,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 15.0,
      "ads": [
       {
+       "id": "52589938053061",
+       "name": "Statica - Dispongo di € 100.000 per la pensione",
+       "campaign_id": "52581507761861",
+       "campaign_name": "Moduli - Campagna Attiva",
+       "spend": 26.71,
+       "leads": 6.0,
+       "cpl": 4.45,
+       "impressions": 2229.0,
+       "clicks": 71.0,
+       "cvr": 8.45,
+       "ctr": 3.185285,
+       "cpm": 11.982952,
+       "reach": 1567.0,
+       "frequency": 1.422463,
+       "attiva": true,
+       "effective_status": "ACTIVE",
+       "status": "winner",
+       "reason": "CPL €4.45: sotto €10, ci si mette budget",
+       "sprecato": 0.0,
+       "flags": [],
+       "recent": {
+        "spend": 26.71,
+        "leads": 6.0,
+        "cpl": 4.45
+       },
+       "trend": 0.0
+      },
+      {
        "id": "52587136401661",
        "name": "Statica - ETF diversi",
        "campaign_id": "52581507761861",
        "campaign_name": "Moduli - Campagna Attiva",
-       "spend": 361.62,
+       "spend": 364.15,
        "leads": 16.0,
-       "cpl": 22.6,
-       "impressions": 44858.0,
-       "clicks": 609.0,
-       "cvr": 2.63,
-       "ctr": 1.357617,
-       "cpm": 8.061438,
-       "reach": 17145.0,
-       "frequency": 2.61639,
-       "attiva": true,
-       "effective_status": "ACTIVE",
+       "cpl": 22.76,
+       "impressions": 45142.0,
+       "clicks": 613.0,
+       "cvr": 2.61,
+       "ctr": 1.357937,
+       "cpm": 8.066767,
+       "reach": 17236.0,
+       "frequency": 2.619053,
+       "attiva": false,
+       "effective_status": "PAUSED",
        "status": "ok",
-       "reason": "CPL €22.60: dentro i parametri",
+       "reason": "CPL €22.76: dentro i parametri",
        "sprecato": 0.0,
        "flags": [
         "frequenza 2.6: pubblico bruciato, cambia audience",
         "solo 2.6% dei click diventa lead: modulo o landing da rivedere"
        ],
        "recent": {
-        "spend": 106.05,
+        "spend": 93.06,
         "leads": 1.0,
-        "cpl": 106.05
+        "cpl": 93.06
        },
-       "trend": 83.45
+       "trend": 70.3
       },
       {
        "id": "52585101003061",
@@ -198,32 +226,32 @@
       }
      ],
      "vivo": {
-      "spend": 361.62,
-      "leads": 16.0,
-      "clicks": 609.0,
-      "impressions": 44858.0,
-      "cpl": 22.6,
-      "cvr": 2.63,
-      "ctr": 1.36,
-      "recent_cpl": 106.05,
-      "recent_spend": 106.05,
-      "recent_leads": 1.0
+      "spend": 26.71,
+      "leads": 6.0,
+      "clicks": 71.0,
+      "impressions": 2229.0,
+      "cpl": 4.45,
+      "cvr": 8.45,
+      "ctr": 3.19,
+      "recent_cpl": 4.45,
+      "recent_spend": 26.71,
+      "recent_leads": 6.0
      },
-     "n_ads": 4,
+     "n_ads": 5,
      "n_ads_attivi": 1,
      "sprecato": 0.0,
-     "status": "ok",
-     "reason": "inserzioni accese dentro i parametri",
+     "status": "winner",
+     "reason": "1 inserzione/i vincente/i ancora accesa/e",
      "flags": [
-      "frequenza 2.6: pubblico bruciato, cambia audience",
-      "solo 2.6% dei click diventa lead: modulo o landing da rivedere"
+      "frequenza 2.7: pubblico bruciato, cambia audience",
+      "solo 2.9% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 106.05,
-      "leads": 1.0,
-      "cpl": 106.05
+      "spend": 119.77,
+      "leads": 6.0,
+      "cpl": 19.96
      },
-     "trend": 81.57
+     "trend": -1.3
     },
     {
      "id": "52583479530461",
@@ -940,29 +968,29 @@
    "dal": "2026-01-01",
    "solo_nostre_dal": null,
    "currency": "EUR",
-   "spend": 832.63,
+   "spend": 847.61,
    "leads": 27.0,
-   "cpl": 30.84,
+   "cpl": 31.39,
    "sprecato": 0.0,
    "quota_sprecata": 0.0,
-   "impressions": 122131.0,
-   "clicks": 1970.0,
-   "cvr": 1.37,
+   "impressions": 124193.0,
+   "clicks": 2002.0,
+   "cvr": 1.35,
    "n_campagne": 14,
    "n_kill": 0,
    "n_kill_ancora_accese": 0,
    "brucia_oggi": 0,
    "vivo": {
-    "spend": 57.75,
+    "spend": 72.73,
     "leads": 6.0,
-    "cpl": 9.62,
-    "cvr": 3.87,
-    "recent_cpl": 9.62,
+    "cpl": 12.12,
+    "cvr": 3.21,
+    "recent_cpl": 12.12,
     "n_creative": 1
    },
    "riallocazione": {
     "budget_da_spostare": 0,
-    "cpl_vincente": 34.01,
+    "cpl_vincente": null,
     "lead_prudente": 0,
     "lead_ottimistico": 0
    },
@@ -970,16 +998,16 @@
     {
      "id": "52616908898947",
      "name": "Moduli - Campagna Attiva",
-     "spend": 544.23,
+     "spend": 559.21,
      "leads": 16.0,
-     "cpl": 34.01,
-     "impressions": 79844.0,
-     "clicks": 1287.0,
-     "cvr": 1.24,
-     "ctr": 1.611893,
-     "cpm": 6.816167,
-     "reach": 26825.0,
-     "frequency": 2.976477,
+     "cpl": 34.95,
+     "impressions": 81906.0,
+     "clicks": 1319.0,
+     "cvr": 1.21,
+     "ctr": 1.610383,
+     "cpm": 6.827461,
+     "reach": 27214.0,
+     "frequency": 3.009701,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 15.0,
@@ -989,28 +1017,28 @@
        "name": "Statica - Ho consigliato questi 3 ETF",
        "campaign_id": "52616908898947",
        "campaign_name": "Moduli - Campagna Attiva",
-       "spend": 57.75,
+       "spend": 72.73,
        "leads": 6.0,
-       "cpl": 9.62,
-       "impressions": 6224.0,
-       "clicks": 155.0,
-       "cvr": 3.87,
-       "ctr": 2.49036,
-       "cpm": 9.278599,
-       "reach": 3297.0,
-       "frequency": 1.887777,
+       "cpl": 12.12,
+       "impressions": 8286.0,
+       "clicks": 187.0,
+       "cvr": 3.21,
+       "ctr": 2.256819,
+       "cpm": 8.777456,
+       "reach": 4013.0,
+       "frequency": 2.064789,
        "attiva": true,
        "effective_status": "ACTIVE",
-       "status": "winner",
-       "reason": "CPL €9.62: sotto €10, ci si mette budget",
+       "status": "ok",
+       "reason": "CPL €12.12: dentro i parametri",
        "sprecato": 0.0,
        "flags": [
-        "solo 3.9% dei click diventa lead: modulo o landing da rivedere"
+        "solo 3.2% dei click diventa lead: modulo o landing da rivedere"
        ],
        "recent": {
-        "spend": 57.75,
+        "spend": 72.73,
         "leads": 6.0,
-        "cpl": 9.62
+        "cpl": 12.12
        },
        "trend": 0.0
       },
@@ -1038,7 +1066,7 @@
         "solo 2.1% dei click diventa lead: modulo o landing da rivedere"
        ],
        "recent": {
-        "spend": 20.91,
+        "spend": 6.17,
         "leads": 0.0,
         "cpl": null
        },
@@ -1307,11 +1335,7 @@
        "flags": [
         "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
        ],
-       "recent": {
-        "spend": 4.48,
-        "leads": 0.0,
-        "cpl": null
-       },
+       "recent": null,
        "trend": null
       },
       {
@@ -1418,32 +1442,32 @@
       }
      ],
      "vivo": {
-      "spend": 57.75,
+      "spend": 72.73,
       "leads": 6.0,
-      "clicks": 155.0,
-      "impressions": 6224.0,
-      "cpl": 9.62,
-      "cvr": 3.87,
-      "ctr": 2.49,
-      "recent_cpl": 9.62,
-      "recent_spend": 57.75,
+      "clicks": 187.0,
+      "impressions": 8286.0,
+      "cpl": 12.12,
+      "cvr": 3.21,
+      "ctr": 2.26,
+      "recent_cpl": 12.12,
+      "recent_spend": 72.73,
       "recent_leads": 6.0
      },
      "n_ads": 16,
      "n_ads_attivi": 1,
      "sprecato": 0.0,
-     "status": "winner",
-     "reason": "1 inserzione/i vincente/i ancora accesa/e",
+     "status": "ok",
+     "reason": "inserzioni accese dentro i parametri",
      "flags": [
       "frequenza 3.0: pubblico bruciato, cambia audience",
       "solo 1.2% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 114.45,
+      "spend": 110.21,
       "leads": 6.0,
-      "cpl": 19.07
+      "cpl": 18.37
      },
-     "trend": -14.94
+     "trend": -16.58
     },
     {
      "id": "52605999729747",
@@ -2172,24 +2196,24 @@
    "dal": "2026-01-01",
    "solo_nostre_dal": null,
    "currency": "EUR",
-   "spend": 184.76,
+   "spend": 199.93,
    "leads": 12.0,
-   "cpl": 15.4,
+   "cpl": 16.66,
    "sprecato": 0.0,
    "quota_sprecata": 0.0,
-   "impressions": 12480.0,
-   "clicks": 236.0,
-   "cvr": 5.08,
+   "impressions": 13591.0,
+   "clicks": 249.0,
+   "cvr": 4.82,
    "n_campagne": 1,
    "n_kill": 0,
    "n_kill_ancora_accese": 0,
    "brucia_oggi": 0,
    "vivo": {
-    "spend": 136.07,
+    "spend": 151.24,
     "leads": 11.0,
-    "cpl": 12.37,
-    "cvr": 6.83,
-    "recent_cpl": 17.93,
+    "cpl": 13.75,
+    "cvr": 6.32,
+    "recent_cpl": 22.23,
     "n_creative": 1
    },
    "riallocazione": {
@@ -2202,16 +2226,16 @@
     {
      "id": "52607805236816",
      "name": "Moduli AI Elite - Campagna Attiva",
-     "spend": 184.76,
+     "spend": 199.93,
      "leads": 12.0,
-     "cpl": 15.4,
-     "impressions": 12480.0,
-     "clicks": 236.0,
-     "cvr": 5.08,
-     "ctr": 1.891026,
-     "cpm": 14.804487,
-     "reach": 4830.0,
-     "frequency": 2.583851,
+     "cpl": 16.66,
+     "impressions": 13591.0,
+     "clicks": 249.0,
+     "cvr": 4.82,
+     "ctr": 1.832095,
+     "cpm": 14.71047,
+     "reach": 5120.0,
+     "frequency": 2.654492,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 15.0,
@@ -2221,30 +2245,30 @@
        "name": "Statica - €7.500 in commissioni",
        "campaign_id": "52607805236816",
        "campaign_name": "Moduli AI Elite - Campagna Attiva",
-       "spend": 136.07,
+       "spend": 151.24,
        "leads": 11.0,
-       "cpl": 12.37,
-       "impressions": 8891.0,
-       "clicks": 161.0,
-       "cvr": 6.83,
-       "ctr": 1.81082,
-       "cpm": 15.30424,
-       "reach": 3489.0,
-       "frequency": 2.548295,
+       "cpl": 13.75,
+       "impressions": 10002.0,
+       "clicks": 174.0,
+       "cvr": 6.32,
+       "ctr": 1.739652,
+       "cpm": 15.120976,
+       "reach": 3817.0,
+       "frequency": 2.620383,
        "attiva": true,
        "effective_status": "ACTIVE",
        "status": "ok",
-       "reason": "CPL €12.37: dentro i parametri",
+       "reason": "CPL €13.75: dentro i parametri",
        "sprecato": 0.0,
        "flags": [
-        "frequenza 2.5: pubblico bruciato, cambia audience"
+        "frequenza 2.6: pubblico bruciato, cambia audience"
        ],
        "recent": {
-        "spend": 107.58,
-        "leads": 6.0,
-        "cpl": 17.93
+        "spend": 111.17,
+        "leads": 5.0,
+        "cpl": 22.23
        },
-       "trend": 5.56
+       "trend": 8.48
       },
       {
        "id": "52607805236616",
@@ -2274,16 +2298,16 @@
       }
      ],
      "vivo": {
-      "spend": 136.07,
+      "spend": 151.24,
       "leads": 11.0,
-      "clicks": 161.0,
-      "impressions": 8891.0,
-      "cpl": 12.37,
-      "cvr": 6.83,
-      "ctr": 1.81,
-      "recent_cpl": 17.93,
-      "recent_spend": 107.58,
-      "recent_leads": 6.0
+      "clicks": 174.0,
+      "impressions": 10002.0,
+      "cpl": 13.75,
+      "cvr": 6.32,
+      "ctr": 1.74,
+      "recent_cpl": 22.23,
+      "recent_spend": 111.17,
+      "recent_leads": 5.0
      },
      "n_ads": 2,
      "n_ads_attivi": 1,
@@ -2291,14 +2315,14 @@
      "status": "ok",
      "reason": "inserzioni accese dentro i parametri",
      "flags": [
-      "frequenza 2.6: pubblico bruciato, cambia audience"
+      "frequenza 2.7: pubblico bruciato, cambia audience"
      ],
      "recent": {
-      "spend": 107.58,
-      "leads": 6.0,
-      "cpl": 17.93
+      "spend": 111.23,
+      "leads": 5.0,
+      "cpl": 22.25
      },
-     "trend": 2.53
+     "trend": 5.59
     }
    ],
    "hiring": {
@@ -2315,24 +2339,24 @@
    "dal": "2026-09-17",
    "solo_nostre_dal": "2026-09-17",
    "currency": "EUR",
-   "spend": 202.54,
+   "spend": 216.67,
    "leads": 12.0,
-   "cpl": 16.88,
+   "cpl": 18.06,
    "sprecato": 0.0,
    "quota_sprecata": 0.0,
-   "impressions": 22273.0,
-   "clicks": 307.0,
-   "cvr": 3.91,
+   "impressions": 23723.0,
+   "clicks": 326.0,
+   "cvr": 3.68,
    "n_campagne": 1,
    "n_kill": 0,
    "n_kill_ancora_accese": 0,
    "brucia_oggi": 0,
    "vivo": {
-    "spend": 101.47,
-    "leads": 8.0,
-    "cpl": 12.68,
-    "cvr": 5.67,
-    "recent_cpl": 12.68,
+    "spend": 12.79,
+    "leads": 0.0,
+    "cpl": null,
+    "cvr": 0.0,
+    "recent_cpl": null,
     "n_creative": 1
    },
    "riallocazione": {
@@ -2345,47 +2369,75 @@
     {
      "id": "120247578608830476",
      "name": "Moduli AI ELITE - Campagna Attiva",
-     "spend": 202.54,
+     "spend": 216.67,
      "leads": 12.0,
-     "cpl": 16.88,
-     "impressions": 22273.0,
-     "clicks": 307.0,
-     "cvr": 3.91,
-     "ctr": 1.37835,
-     "cpm": 9.093521,
-     "reach": 7468.0,
-     "frequency": 2.982458,
+     "cpl": 18.06,
+     "impressions": 23723.0,
+     "clicks": 326.0,
+     "cvr": 3.68,
+     "ctr": 1.374194,
+     "cpm": 9.133331,
+     "reach": 7673.0,
+     "frequency": 3.09175,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 15.0,
      "ads": [
       {
+       "id": "120247685952730476",
+       "name": "Statica - Ho consigliato oro fisico",
+       "campaign_id": "120247578608830476",
+       "campaign_name": "Moduli AI ELITE - Campagna Attiva",
+       "spend": 12.79,
+       "leads": 0.0,
+       "cpl": null,
+       "impressions": 1273.0,
+       "clicks": 14.0,
+       "cvr": 0.0,
+       "ctr": 1.099764,
+       "cpm": 10.047133,
+       "reach": 898.0,
+       "frequency": 1.417595,
+       "attiva": true,
+       "effective_status": "ACTIVE",
+       "status": "watch",
+       "reason": "€12.79 spesi e 0 lead: mancano €17.21 allo stacco",
+       "sprecato": 0.0,
+       "flags": [],
+       "recent": {
+        "spend": 12.79,
+        "leads": 0.0,
+        "cpl": null
+       },
+       "trend": null
+      },
+      {
        "id": "120247595112620476",
        "name": "Statica - Liquidità ferma e inflazione",
        "campaign_id": "120247578608830476",
        "campaign_name": "Moduli AI ELITE - Campagna Attiva",
-       "spend": 101.47,
+       "spend": 102.81,
        "leads": 8.0,
-       "cpl": 12.68,
-       "impressions": 10056.0,
-       "clicks": 141.0,
-       "cvr": 5.67,
-       "ctr": 1.402148,
-       "cpm": 10.090493,
-       "reach": 4630.0,
-       "frequency": 2.171922,
-       "attiva": true,
-       "effective_status": "ACTIVE",
+       "cpl": 12.85,
+       "impressions": 10233.0,
+       "clicks": 146.0,
+       "cvr": 5.48,
+       "ctr": 1.426757,
+       "cpm": 10.046907,
+       "reach": 4718.0,
+       "frequency": 2.168928,
+       "attiva": false,
+       "effective_status": "PAUSED",
        "status": "ok",
-       "reason": "CPL €12.68: dentro i parametri",
+       "reason": "CPL €12.85: dentro i parametri",
        "sprecato": 0.0,
        "flags": [],
        "recent": {
-        "spend": 101.47,
-        "leads": 8.0,
-        "cpl": 12.68
+        "spend": 87.01,
+        "leads": 5.0,
+        "cpl": 17.4
        },
-       "trend": 0.0
+       "trend": 4.55
       },
       {
        "id": "120247578608850476",
@@ -2410,41 +2462,37 @@
        "flags": [
         "solo 2.4% dei click diventa lead: modulo o landing da rivedere"
        ],
-       "recent": {
-        "spend": 2.87,
-        "leads": 0.0,
-        "cpl": null
-       },
+       "recent": null,
        "trend": null
       }
      ],
      "vivo": {
-      "spend": 101.47,
-      "leads": 8.0,
-      "clicks": 141.0,
-      "impressions": 10056.0,
-      "cpl": 12.68,
-      "cvr": 5.67,
-      "ctr": 1.4,
-      "recent_cpl": 12.68,
-      "recent_spend": 101.47,
-      "recent_leads": 8.0
+      "spend": 12.79,
+      "leads": 0.0,
+      "clicks": 14.0,
+      "impressions": 1273.0,
+      "cpl": null,
+      "cvr": 0.0,
+      "ctr": 1.1,
+      "recent_cpl": null,
+      "recent_spend": 12.79,
+      "recent_leads": 0.0
      },
-     "n_ads": 2,
+     "n_ads": 3,
      "n_ads_attivi": 1,
      "sprecato": 0.0,
-     "status": "ok",
-     "reason": "inserzioni accese dentro i parametri",
+     "status": "watch",
+     "reason": "1 inserzione/i ancora accesa/e da sorvegliare",
      "flags": [
-      "frequenza 3.0: pubblico bruciato, cambia audience",
-      "solo 3.9% dei click diventa lead: modulo o landing da rivedere"
+      "frequenza 3.1: pubblico bruciato, cambia audience",
+      "solo 3.7% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 104.34,
-      "leads": 8.0,
-      "cpl": 13.04
+      "spend": 99.8,
+      "leads": 5.0,
+      "cpl": 19.96
      },
-     "trend": -3.84
+     "trend": 1.9
     }
    ],
    "hiring": {
@@ -2461,24 +2509,24 @@
    "dal": "2026-01-01",
    "solo_nostre_dal": null,
    "currency": "EUR",
-   "spend": 1005.11,
-   "leads": 30.0,
-   "cpl": 33.5,
+   "spend": 1025.35,
+   "leads": 32.0,
+   "cpl": 32.04,
    "sprecato": 0.0,
    "quota_sprecata": 0.0,
-   "impressions": 132259.0,
-   "clicks": 1961.0,
-   "cvr": 1.53,
+   "impressions": 135202.0,
+   "clicks": 2012.0,
+   "cvr": 1.59,
    "n_campagne": 24,
    "n_kill": 0,
    "n_kill_ancora_accese": 0,
    "brucia_oggi": 0,
    "vivo": {
-    "spend": 205.4,
-    "leads": 15.0,
-    "cpl": 13.69,
-    "cvr": 2.67,
-    "recent_cpl": 20.75,
+    "spend": 225.64,
+    "leads": 17.0,
+    "cpl": 13.27,
+    "cvr": 2.78,
+    "recent_cpl": 21.56,
     "n_creative": 1
    },
    "riallocazione": {
@@ -2491,16 +2539,16 @@
     {
      "id": "120253921757410427",
      "name": "Moduli - Campagna Attiva",
-     "spend": 507.67,
-     "leads": 20.0,
-     "cpl": 25.38,
-     "impressions": 66433.0,
-     "clicks": 1079.0,
-     "cvr": 1.85,
-     "ctr": 1.624193,
-     "cpm": 7.641835,
-     "reach": 21096.0,
-     "frequency": 3.14908,
+     "spend": 527.91,
+     "leads": 22.0,
+     "cpl": 24.0,
+     "impressions": 69376.0,
+     "clicks": 1130.0,
+     "cvr": 1.95,
+     "ctr": 1.628805,
+     "cpm": 7.609404,
+     "reach": 21635.0,
+     "frequency": 3.206656,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 15.0,
@@ -2510,31 +2558,31 @@
        "name": "Statica - Quando andrai in pensione?",
        "campaign_id": "120253921757410427",
        "campaign_name": "Moduli - Campagna Attiva",
-       "spend": 205.4,
-       "leads": 15.0,
-       "cpl": 13.69,
-       "impressions": 25346.0,
-       "clicks": 561.0,
-       "cvr": 2.67,
-       "ctr": 2.213367,
-       "cpm": 8.103843,
-       "reach": 9009.0,
-       "frequency": 2.813409,
+       "spend": 225.64,
+       "leads": 17.0,
+       "cpl": 13.27,
+       "impressions": 28289.0,
+       "clicks": 612.0,
+       "cvr": 2.78,
+       "ctr": 2.163385,
+       "cpm": 7.976245,
+       "reach": 9797.0,
+       "frequency": 2.887517,
        "attiva": true,
        "effective_status": "ACTIVE",
        "status": "ok",
-       "reason": "CPL €13.69: dentro i parametri",
+       "reason": "CPL €13.27: dentro i parametri",
        "sprecato": 0.0,
        "flags": [
-        "frequenza 2.8: pubblico bruciato, cambia audience",
-        "solo 2.7% dei click diventa lead: modulo o landing da rivedere"
+        "frequenza 2.9: pubblico bruciato, cambia audience",
+        "solo 2.8% dei click diventa lead: modulo o landing da rivedere"
        ],
        "recent": {
-        "spend": 103.73,
+        "spend": 107.81,
         "leads": 5.0,
-        "cpl": 20.75
+        "cpl": 21.56
        },
-       "trend": 7.06
+       "trend": 8.29
       },
       {
        "id": "120254183991120427",
@@ -2747,15 +2795,15 @@
       }
      ],
      "vivo": {
-      "spend": 205.4,
-      "leads": 15.0,
-      "clicks": 561.0,
-      "impressions": 25346.0,
-      "cpl": 13.69,
-      "cvr": 2.67,
-      "ctr": 2.21,
-      "recent_cpl": 20.75,
-      "recent_spend": 103.73,
+      "spend": 225.64,
+      "leads": 17.0,
+      "clicks": 612.0,
+      "impressions": 28289.0,
+      "cpl": 13.27,
+      "cvr": 2.78,
+      "ctr": 2.16,
+      "recent_cpl": 21.56,
+      "recent_spend": 107.81,
       "recent_leads": 5.0
      },
      "n_ads": 9,
@@ -2764,15 +2812,15 @@
      "status": "ok",
      "reason": "inserzioni accese dentro i parametri",
      "flags": [
-      "frequenza 3.1: pubblico bruciato, cambia audience",
+      "frequenza 3.2: pubblico bruciato, cambia audience",
       "solo 1.9% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 103.73,
+      "spend": 107.81,
       "leads": 5.0,
-      "cpl": 20.75
+      "cpl": 21.56
      },
-     "trend": -4.63
+     "trend": -2.44
     },
     {
      "id": "120253809545780427",
@@ -4045,24 +4093,24 @@
    "dal": "2026-01-01",
    "solo_nostre_dal": null,
    "currency": "EUR",
-   "spend": 555.49,
+   "spend": 568.45,
    "leads": 17.0,
-   "cpl": 32.68,
+   "cpl": 33.44,
    "sprecato": 0.0,
    "quota_sprecata": 0.0,
-   "impressions": 56007.0,
-   "clicks": 1071.0,
-   "cvr": 1.59,
+   "impressions": 57238.0,
+   "clicks": 1090.0,
+   "cvr": 1.56,
    "n_campagne": 1,
    "n_kill": 0,
    "n_kill_ancora_accese": 0,
    "brucia_oggi": 0,
    "vivo": {
-    "spend": 24.35,
+    "spend": 37.32,
     "leads": 1.0,
-    "cpl": 24.35,
-    "cvr": 3.57,
-    "recent_cpl": 24.35,
+    "cpl": 37.32,
+    "cvr": 2.13,
+    "recent_cpl": 37.32,
     "n_creative": 1
    },
    "riallocazione": {
@@ -4075,16 +4123,16 @@
     {
      "id": "120255864019140012",
      "name": "Moduli - Campagna Principale Attiva",
-     "spend": 555.49,
+     "spend": 568.45,
      "leads": 17.0,
-     "cpl": 32.68,
-     "impressions": 56007.0,
-     "clicks": 1071.0,
-     "cvr": 1.59,
-     "ctr": 1.912261,
-     "cpm": 9.918225,
-     "reach": 17099.0,
-     "frequency": 3.275455,
+     "cpl": 33.44,
+     "impressions": 57238.0,
+     "clicks": 1090.0,
+     "cvr": 1.56,
+     "ctr": 1.904329,
+     "cpm": 9.931339,
+     "reach": 17409.0,
+     "frequency": 3.28784,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 15.0,
@@ -4094,26 +4142,28 @@
        "name": "Statica - Ti fidi del tuo consulente finanziario?",
        "campaign_id": "120255864019140012",
        "campaign_name": "Moduli - Campagna Principale Attiva",
-       "spend": 24.35,
+       "spend": 37.32,
        "leads": 1.0,
-       "cpl": 24.35,
-       "impressions": 1983.0,
-       "clicks": 28.0,
-       "cvr": 3.57,
-       "ctr": 1.412002,
-       "cpm": 12.279375,
-       "reach": 1305.0,
-       "frequency": 1.51954,
+       "cpl": 37.32,
+       "impressions": 3216.0,
+       "clicks": 47.0,
+       "cvr": 2.13,
+       "ctr": 1.461443,
+       "cpm": 11.604478,
+       "reach": 1902.0,
+       "frequency": 1.690852,
        "attiva": true,
        "effective_status": "ACTIVE",
        "status": "early",
-       "reason": "1 lead a €24.35: si lascia girare, ma entro €50 (mancano €25.65) deve arrivare il 2° lead, cioe' CPL sotto €25",
+       "reason": "1 lead a €37.32: si lascia girare, ma entro €50 (mancano €12.68) deve arrivare il 2° lead, cioe' CPL sotto €25",
        "sprecato": 0.0,
-       "flags": [],
+       "flags": [
+        "solo 2.1% dei click diventa lead: modulo o landing da rivedere"
+       ],
        "recent": {
-        "spend": 24.35,
+        "spend": 37.32,
         "leads": 1.0,
-        "cpl": 24.35
+        "cpl": 37.32
        },
        "trend": 0.0
       },
@@ -4245,11 +4295,11 @@
         "solo 1.0% dei click diventa lead: modulo o landing da rivedere"
        ],
        "recent": {
-        "spend": 51.17,
+        "spend": 43.6,
         "leads": 1.0,
-        "cpl": 51.17
+        "cpl": 43.6
        },
-       "trend": 0.0
+       "trend": -7.57
       },
       {
        "id": "120256297715630012",
@@ -4406,11 +4456,7 @@
        "flags": [
         "solo 2.4% dei click diventa lead: modulo o landing da rivedere"
        ],
-       "recent": {
-        "spend": 4.92,
-        "leads": 0.0,
-        "cpl": null
-       },
+       "recent": null,
        "trend": null
       },
       {
@@ -4465,15 +4511,15 @@
       }
      ],
      "vivo": {
-      "spend": 24.35,
+      "spend": 37.32,
       "leads": 1.0,
-      "clicks": 28.0,
-      "impressions": 1983.0,
-      "cpl": 24.35,
-      "cvr": 3.57,
-      "ctr": 1.41,
-      "recent_cpl": 24.35,
-      "recent_spend": 24.35,
+      "clicks": 47.0,
+      "impressions": 3216.0,
+      "cpl": 37.32,
+      "cvr": 2.13,
+      "ctr": 1.46,
+      "recent_cpl": 37.32,
+      "recent_spend": 37.32,
       "recent_leads": 1.0
      },
      "n_ads": 14,
@@ -4486,11 +4532,11 @@
       "solo 1.6% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 111.86,
+      "spend": 112.33,
       "leads": 2.0,
-      "cpl": 55.93
+      "cpl": 56.16
      },
-     "trend": 23.25
+     "trend": 22.72
     }
    ],
    "hiring": {
@@ -4507,24 +4553,24 @@
    "dal": "2026-01-01",
    "solo_nostre_dal": null,
    "currency": "EUR",
-   "spend": 913.92,
-   "leads": 30.0,
-   "cpl": 30.46,
+   "spend": 928.04,
+   "leads": 31.0,
+   "cpl": 29.94,
    "sprecato": 0.0,
    "quota_sprecata": 0.0,
-   "impressions": 121876.0,
-   "clicks": 2027.0,
-   "cvr": 1.48,
+   "impressions": 123345.0,
+   "clicks": 2058.0,
+   "cvr": 1.51,
    "n_campagne": 20,
    "n_kill": 0,
    "n_kill_ancora_accese": 0,
    "brucia_oggi": 0,
    "vivo": {
-    "spend": 54.54,
-    "leads": 3.0,
-    "cpl": 18.18,
-    "cvr": 2.08,
-    "recent_cpl": 18.18,
+    "spend": 68.66,
+    "leads": 4.0,
+    "cpl": 17.16,
+    "cvr": 2.29,
+    "recent_cpl": 17.16,
     "n_creative": 1
    },
    "riallocazione": {
@@ -4537,16 +4583,16 @@
     {
      "id": "120251346937780566",
      "name": "Moduli - Campagna Attiva",
-     "spend": 544.3,
-     "leads": 20.0,
-     "cpl": 27.21,
-     "impressions": 68873.0,
-     "clicks": 1166.0,
-     "cvr": 1.72,
-     "ctr": 1.692971,
-     "cpm": 7.902952,
-     "reach": 26690.0,
-     "frequency": 2.58048,
+     "spend": 558.42,
+     "leads": 21.0,
+     "cpl": 26.59,
+     "impressions": 70342.0,
+     "clicks": 1197.0,
+     "cvr": 1.75,
+     "ctr": 1.701686,
+     "cpm": 7.938643,
+     "reach": 27028.0,
+     "frequency": 2.60256,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 15.0,
@@ -4556,28 +4602,28 @@
        "name": "Statica - Dispongo di € 100.000 per la pensione",
        "campaign_id": "120251346937780566",
        "campaign_name": "Moduli - Campagna Attiva",
-       "spend": 54.54,
-       "leads": 3.0,
-       "cpl": 18.18,
-       "impressions": 6034.0,
-       "clicks": 144.0,
-       "cvr": 2.08,
-       "ctr": 2.386477,
-       "cpm": 9.03878,
-       "reach": 3176.0,
-       "frequency": 1.899874,
+       "spend": 68.66,
+       "leads": 4.0,
+       "cpl": 17.16,
+       "impressions": 7503.0,
+       "clicks": 175.0,
+       "cvr": 2.29,
+       "ctr": 2.3324,
+       "cpm": 9.151006,
+       "reach": 3828.0,
+       "frequency": 1.960031,
        "attiva": true,
        "effective_status": "ACTIVE",
        "status": "ok",
-       "reason": "CPL €18.18: dentro i parametri",
+       "reason": "CPL €17.16: dentro i parametri",
        "sprecato": 0.0,
        "flags": [
-        "solo 2.1% dei click diventa lead: modulo o landing da rivedere"
+        "solo 2.3% dei click diventa lead: modulo o landing da rivedere"
        ],
        "recent": {
-        "spend": 54.54,
-        "leads": 3.0,
-        "cpl": 18.18
+        "spend": 68.66,
+        "leads": 4.0,
+        "cpl": 17.16
        },
        "trend": 0.0
       },
@@ -4631,7 +4677,7 @@
         "solo 2.0% dei click diventa lead: modulo o landing da rivedere"
        ],
        "recent": {
-        "spend": 18.53,
+        "spend": 6.96,
         "leads": 0.0,
         "cpl": null
        },
@@ -4853,16 +4899,16 @@
       }
      ],
      "vivo": {
-      "spend": 54.54,
-      "leads": 3.0,
-      "clicks": 144.0,
-      "impressions": 6034.0,
-      "cpl": 18.18,
-      "cvr": 2.08,
-      "ctr": 2.39,
-      "recent_cpl": 18.18,
-      "recent_spend": 54.54,
-      "recent_leads": 3.0
+      "spend": 68.66,
+      "leads": 4.0,
+      "clicks": 175.0,
+      "impressions": 7503.0,
+      "cpl": 17.16,
+      "cvr": 2.29,
+      "ctr": 2.33,
+      "recent_cpl": 17.16,
+      "recent_spend": 68.66,
+      "recent_leads": 4.0
      },
      "n_ads": 11,
      "n_ads_attivi": 1,
@@ -4871,14 +4917,14 @@
      "reason": "inserzioni accese dentro i parametri",
      "flags": [
       "frequenza 2.6: pubblico bruciato, cambia audience",
-      "solo 1.7% dei click diventa lead: modulo o landing da rivedere"
+      "solo 1.8% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 101.54,
-      "leads": 3.0,
-      "cpl": 33.85
+      "spend": 104.09,
+      "leads": 4.0,
+      "cpl": 26.02
      },
-     "trend": 6.64
+     "trend": -0.57
     },
     {
      "id": "120251031963370566",
