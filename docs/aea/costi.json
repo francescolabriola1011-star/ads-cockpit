@@ -1,55 +1,47 @@
 {
- "generato": "01/10/2026 08:17",
- "quota_mese": 3,
- "totale_corrente": 0,
- "totale_m1": 7020,
+ "generato": "02/10/2026 08:13",
+ "quota_mese": 6,
+ "totale_corrente": 8850,
+ "totale_m1": 9188,
  "totale_m2": 6332,
  "voci": [
   {
-   "voce": "Zoom",
-   "mese_corrente": 0,
-   "media_precedenti": 20,
-   "atteso_a_oggi": 1,
-   "variazione": -100,
-   "stato": "sparito"
+   "voce": "Carlo Parodi",
+   "mese_corrente": 3595,
+   "media_precedenti": 458,
+   "atteso_a_oggi": 30,
+   "variazione": 12066,
+   "stato": "scappato"
   },
   {
-   "voce": "Davide Mazzucco",
-   "mese_corrente": 0,
-   "media_precedenti": 150,
-   "atteso_a_oggi": 5,
-   "variazione": -100,
-   "stato": "sparito"
+   "voce": "Francesco Labriola",
+   "mese_corrente": 3440,
+   "media_precedenti": 4360,
+   "atteso_a_oggi": 281,
+   "variazione": 1123,
+   "stato": "scappato"
+  },
+  {
+   "voce": "Alessandro Cugini",
+   "mese_corrente": 1815,
+   "media_precedenti": 695,
+   "atteso_a_oggi": 45,
+   "variazione": 3948,
+   "stato": "scappato"
   },
   {
    "voce": "Go High Level",
    "mese_corrente": 0,
-   "media_precedenti": 297,
-   "atteso_a_oggi": 10,
+   "media_precedenti": 594,
+   "atteso_a_oggi": 38,
    "variazione": -100,
    "stato": "sparito"
   },
   {
-   "voce": "Chat Gpt",
+   "voce": "Facebook",
    "mese_corrente": 0,
-   "media_precedenti": 187,
-   "atteso_a_oggi": 6,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Francesco Labriola",
-   "mese_corrente": 0,
-   "media_precedenti": 4360,
-   "atteso_a_oggi": 141,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Alessandro Cugini",
-   "mese_corrente": 0,
-   "media_precedenti": 695,
-   "atteso_a_oggi": 22,
+   "media_precedenti": 1558,
+   "atteso_a_oggi": 101,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -57,63 +49,7 @@
    "voce": "Rimborso Spese Francesco Labriola",
    "mese_corrente": 0,
    "media_precedenti": 100,
-   "atteso_a_oggi": 3,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Carlo Parodi",
-   "mese_corrente": 0,
-   "media_precedenti": 458,
-   "atteso_a_oggi": 15,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Claude",
-   "mese_corrente": 0,
-   "media_precedenti": 60,
-   "atteso_a_oggi": 2,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Mara (Setter)",
-   "mese_corrente": 0,
-   "media_precedenti": 250,
-   "atteso_a_oggi": 8,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Tax Dome",
-   "mese_corrente": 0,
-   "media_precedenti": 350,
-   "atteso_a_oggi": 11,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Cost Of Goods Sold",
-   "mese_corrente": 0,
-   "media_precedenti": 1500,
-   "atteso_a_oggi": 48,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Michele De Sena",
-   "mese_corrente": 0,
-   "media_precedenti": 780,
-   "atteso_a_oggi": 25,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Compenso Francesco Labriola",
-   "mese_corrente": 0,
-   "media_precedenti": 860,
-   "atteso_a_oggi": 28,
+   "atteso_a_oggi": 6,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -126,16 +62,80 @@
    "stato": "sparito"
   },
   {
-   "voce": "Facebook",
+   "voce": "Michele De Sena",
    "mese_corrente": 0,
-   "media_precedenti": 1246,
-   "atteso_a_oggi": 40,
+   "media_precedenti": 780,
+   "atteso_a_oggi": 50,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Zoom",
+   "mese_corrente": 0,
+   "media_precedenti": 20,
+   "atteso_a_oggi": 1,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Mara (Setter)",
+   "mese_corrente": 0,
+   "media_precedenti": 250,
+   "atteso_a_oggi": 16,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Chat Gpt",
+   "mese_corrente": 0,
+   "media_precedenti": 187,
+   "atteso_a_oggi": 12,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Claude",
+   "mese_corrente": 0,
+   "media_precedenti": 60,
+   "atteso_a_oggi": 4,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Tax Dome",
+   "mese_corrente": 0,
+   "media_precedenti": 350,
+   "atteso_a_oggi": 23,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Davide Mazzucco",
+   "mese_corrente": 0,
+   "media_precedenti": 150,
+   "atteso_a_oggi": 10,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Compenso Francesco Labriola",
+   "mese_corrente": 0,
+   "media_precedenti": 860,
+   "atteso_a_oggi": 55,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Cost Of Goods Sold",
+   "mese_corrente": 0,
+   "media_precedenti": 1500,
+   "atteso_a_oggi": 97,
    "variazione": -100,
    "stato": "sparito"
   }
  ],
- "extra_del_mese": 0,
- "n_scappati": 0,
+ "extra_del_mese": 8494,
+ "n_scappati": 3,
  "n_nuovi": 0,
- "n_spariti": 16
+ "n_spariti": 13
 }
