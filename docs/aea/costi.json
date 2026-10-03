@@ -1,47 +1,39 @@
 {
- "generato": "02/10/2026 08:13",
- "quota_mese": 6,
- "totale_corrente": 8850,
- "totale_m1": 9188,
- "totale_m2": 6332,
+ "generato": "03/10/2026 08:13",
+ "quota_mese": 10,
+ "totale_corrente": 9330,
+ "totale_m1": 9483,
+ "totale_m2": 6495,
  "voci": [
   {
    "voce": "Carlo Parodi",
-   "mese_corrente": 3595,
+   "mese_corrente": 4075,
    "media_precedenti": 458,
-   "atteso_a_oggi": 30,
-   "variazione": 12066,
+   "atteso_a_oggi": 44,
+   "variazione": 9094,
    "stato": "scappato"
   },
   {
    "voce": "Francesco Labriola",
    "mese_corrente": 3440,
    "media_precedenti": 4360,
-   "atteso_a_oggi": 281,
-   "variazione": 1123,
+   "atteso_a_oggi": 422,
+   "variazione": 715,
    "stato": "scappato"
   },
   {
    "voce": "Alessandro Cugini",
    "mese_corrente": 1815,
    "media_precedenti": 695,
-   "atteso_a_oggi": 45,
-   "variazione": 3948,
+   "atteso_a_oggi": 67,
+   "variazione": 2599,
    "stato": "scappato"
   },
   {
-   "voce": "Go High Level",
+   "voce": "Mara (Setter)",
    "mese_corrente": 0,
-   "media_precedenti": 594,
-   "atteso_a_oggi": 38,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Facebook",
-   "mese_corrente": 0,
-   "media_precedenti": 1558,
-   "atteso_a_oggi": 101,
+   "media_precedenti": 375,
+   "atteso_a_oggi": 36,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -49,39 +41,7 @@
    "voce": "Rimborso Spese Francesco Labriola",
    "mese_corrente": 0,
    "media_precedenti": 100,
-   "atteso_a_oggi": 6,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Twilio",
-   "mese_corrente": 0,
-   "media_precedenti": 20,
-   "atteso_a_oggi": 1,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Michele De Sena",
-   "mese_corrente": 0,
-   "media_precedenti": 780,
-   "atteso_a_oggi": 50,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Zoom",
-   "mese_corrente": 0,
-   "media_precedenti": 20,
-   "atteso_a_oggi": 1,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Mara (Setter)",
-   "mese_corrente": 0,
-   "media_precedenti": 250,
-   "atteso_a_oggi": 16,
+   "atteso_a_oggi": 10,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -89,15 +49,47 @@
    "voce": "Chat Gpt",
    "mese_corrente": 0,
    "media_precedenti": 187,
-   "atteso_a_oggi": 12,
+   "atteso_a_oggi": 18,
    "variazione": -100,
    "stato": "sparito"
   },
   {
-   "voce": "Claude",
+   "voce": "Go High Level",
    "mese_corrente": 0,
-   "media_precedenti": 60,
-   "atteso_a_oggi": 4,
+   "media_precedenti": 430,
+   "atteso_a_oggi": 42,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Facebook",
+   "mese_corrente": 0,
+   "media_precedenti": 1567,
+   "atteso_a_oggi": 152,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Michele De Sena",
+   "mese_corrente": 0,
+   "media_precedenti": 780,
+   "atteso_a_oggi": 75,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Zoom",
+   "mese_corrente": 0,
+   "media_precedenti": 20,
+   "atteso_a_oggi": 2,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Davide Mazzucco",
+   "mese_corrente": 0,
+   "media_precedenti": 200,
+   "atteso_a_oggi": 19,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -105,15 +97,15 @@
    "voce": "Tax Dome",
    "mese_corrente": 0,
    "media_precedenti": 350,
-   "atteso_a_oggi": 23,
+   "atteso_a_oggi": 34,
    "variazione": -100,
    "stato": "sparito"
   },
   {
-   "voce": "Davide Mazzucco",
+   "voce": "Claude",
    "mese_corrente": 0,
-   "media_precedenti": 150,
-   "atteso_a_oggi": 10,
+   "media_precedenti": 60,
+   "atteso_a_oggi": 6,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -121,7 +113,15 @@
    "voce": "Compenso Francesco Labriola",
    "mese_corrente": 0,
    "media_precedenti": 860,
-   "atteso_a_oggi": 55,
+   "atteso_a_oggi": 83,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Twilio",
+   "mese_corrente": 0,
+   "media_precedenti": 20,
+   "atteso_a_oggi": 2,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -129,12 +129,12 @@
    "voce": "Cost Of Goods Sold",
    "mese_corrente": 0,
    "media_precedenti": 1500,
-   "atteso_a_oggi": 97,
+   "atteso_a_oggi": 145,
    "variazione": -100,
    "stato": "sparito"
   }
  ],
- "extra_del_mese": 8494,
+ "extra_del_mese": 8797,
  "n_scappati": 3,
  "n_nuovi": 0,
  "n_spariti": 13

@@ -1,11 +1,11 @@
 {
  "titolo": "AI Elite Advisory",
  "sottotitolo": "casa nostra",
- "generato": "2026-10-02T08:11:02+02:00",
+ "generato": "2026-10-03T08:11:03+02:00",
  "periodo": {
   "da": "2026-01-01",
-  "a": "2026-10-02",
-  "giorni": 274,
+  "a": "2026-10-03",
+  "giorni": 275,
   "finestra_recente_giorni": 7
  },
  "regole": {
@@ -22,16 +22,16 @@
   "cvr_min_clicks": 30
  },
  "totali": {
-  "spesa": 5916.55,
-  "lead": 317.0,
-  "cpl": 18.66,
+  "spesa": 6013.83,
+  "lead": 325.0,
+  "cpl": 18.5,
   "sprecato": 0.0,
   "quota_sprecata": 0.0,
   "sprecato_al_mese": 0.0,
   "brucia_oggi": 0,
   "da_staccare_ora": 0,
-  "clicks": 9429.0,
-  "cvr": 3.36,
+  "clicks": 9593.0,
+  "cvr": 3.39,
   "clienti": 1,
   "campagne": 128
  },
@@ -43,29 +43,29 @@
    "dal": "2026-01-01",
    "solo_nostre_dal": null,
    "currency": "EUR",
-   "spend": 5916.55,
-   "leads": 317.0,
-   "cpl": 18.66,
+   "spend": 6013.83,
+   "leads": 325.0,
+   "cpl": 18.5,
    "sprecato": 0.0,
    "quota_sprecata": 0.0,
-   "impressions": 585400.0,
-   "clicks": 9429.0,
-   "cvr": 3.36,
+   "impressions": 594744.0,
+   "clicks": 9593.0,
+   "cvr": 3.39,
    "n_campagne": 128,
    "n_kill": 0,
    "n_kill_ancora_accese": 0,
    "brucia_oggi": 0,
    "vivo": {
-    "spend": 1374.12,
-    "leads": 83.0,
-    "cpl": 16.56,
-    "cvr": 3.92,
-    "recent_cpl": 20.97,
+    "spend": 1471.49,
+    "leads": 91.0,
+    "cpl": 16.17,
+    "cvr": 3.99,
+    "recent_cpl": 17.85,
     "n_creative": 10
    },
    "riallocazione": {
     "budget_da_spostare": 0,
-    "cpl_vincente": 8.97,
+    "cpl_vincente": 8.37,
     "lead_prudente": 0,
     "lead_ottimistico": 0
    },
@@ -73,16 +73,16 @@
     {
      "id": "120249502985680629",
      "name": "Moduli -immagine - Copia 9",
-     "spend": 1561.61,
-     "leads": 56.0,
-     "cpl": 27.89,
-     "impressions": 146327.0,
-     "clicks": 2061.0,
-     "cvr": 2.72,
-     "ctr": 1.408489,
-     "cpm": 10.672056,
-     "reach": 22205.0,
-     "frequency": 6.589822,
+     "spend": 1636.45,
+     "leads": 59.0,
+     "cpl": 27.74,
+     "impressions": 153173.0,
+     "clicks": 2154.0,
+     "cvr": 2.74,
+     "ctr": 1.406253,
+     "cpm": 10.683671,
+     "reach": 22578.0,
+     "frequency": 6.78417,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 70.0,
@@ -92,87 +92,115 @@
        "name": "Nuova inserzione Contatti",
        "campaign_id": "120249502985680629",
        "campaign_name": "Moduli -immagine - Copia 9",
-       "spend": 763.0,
-       "leads": 37.0,
-       "cpl": 20.62,
-       "impressions": 73254.0,
-       "clicks": 1185.0,
-       "cvr": 3.12,
-       "ctr": 1.617659,
-       "cpm": 10.415813,
-       "reach": 17887.0,
-       "frequency": 4.095377,
+       "spend": 797.04,
+       "leads": 38.0,
+       "cpl": 20.97,
+       "impressions": 76719.0,
+       "clicks": 1221.0,
+       "cvr": 3.11,
+       "ctr": 1.591522,
+       "cpm": 10.389082,
+       "reach": 18024.0,
+       "frequency": 4.256491,
        "attiva": true,
        "effective_status": "ACTIVE",
        "status": "ok",
-       "reason": "CPL €20.62: dentro i parametri",
+       "reason": "CPL €20.97: dentro i parametri",
        "sprecato": 0.0,
        "flags": [
-        "frequenza 4.1: pubblico bruciato, cambia audience",
+        "frequenza 4.3: pubblico bruciato, cambia audience",
         "solo 3.1% dei click diventa lead: modulo o landing da rivedere"
        ],
        "recent": {
-        "spend": 184.51,
-        "leads": 5.0,
-        "cpl": 36.9
+        "spend": 172.53,
+        "leads": 6.0,
+        "cpl": 28.75
        },
-       "trend": 16.28
+       "trend": 7.78
       },
       {
        "id": "120250335041700629",
        "name": "Nuova inserzione Contatti - Copia 2",
        "campaign_id": "120249502985680629",
        "campaign_name": "Moduli -immagine - Copia 9",
-       "spend": 229.58,
-       "leads": 9.0,
-       "cpl": 25.51,
-       "impressions": 16692.0,
-       "clicks": 303.0,
-       "cvr": 2.97,
-       "ctr": 1.815241,
-       "cpm": 13.753894,
-       "reach": 7630.0,
-       "frequency": 2.18768,
+       "spend": 258.03,
+       "leads": 11.0,
+       "cpl": 23.46,
+       "impressions": 19103.0,
+       "clicks": 339.0,
+       "cvr": 3.24,
+       "ctr": 1.77459,
+       "cpm": 13.507303,
+       "reach": 8295.0,
+       "frequency": 2.302954,
        "attiva": true,
        "effective_status": "ACTIVE",
        "status": "ok",
-       "reason": "CPL €25.51: dentro i parametri",
+       "reason": "CPL €23.46: dentro i parametri",
        "sprecato": 0.0,
        "flags": [
-        "solo 3.0% dei click diventa lead: modulo o landing da rivedere"
+        "solo 3.2% dei click diventa lead: modulo o landing da rivedere"
        ],
        "recent": {
-        "spend": 229.58,
-        "leads": 9.0,
-        "cpl": 25.51
+        "spend": 258.03,
+        "leads": 11.0,
+        "cpl": 23.46
        },
        "trend": 0.0
+      },
+      {
+       "id": "120250409743700629",
+       "name": "Nuova inserzione Contatti - Copia 4",
+       "campaign_id": "120249502985680629",
+       "campaign_name": "Moduli -immagine - Copia 9",
+       "spend": 18.27,
+       "leads": 0.0,
+       "cpl": null,
+       "impressions": 1477.0,
+       "clicks": 24.0,
+       "cvr": 0.0,
+       "ctr": 1.624915,
+       "cpm": 12.369668,
+       "reach": 855.0,
+       "frequency": 1.727485,
+       "attiva": true,
+       "effective_status": "ACTIVE",
+       "status": "watch",
+       "reason": "€18.27 spesi e 0 lead: mancano €11.73 allo stacco",
+       "sprecato": 0.0,
+       "flags": [],
+       "recent": {
+        "spend": 18.27,
+        "leads": 0.0,
+        "cpl": null
+       },
+       "trend": null
       },
       {
        "id": "120250375954740629",
        "name": "Nuova inserzione Contatti - Copia",
        "campaign_id": "120249502985680629",
        "campaign_name": "Moduli -immagine - Copia 9",
-       "spend": 15.08,
+       "spend": 16.05,
        "leads": 0.0,
        "cpl": null,
-       "impressions": 1230.0,
-       "clicks": 9.0,
+       "impressions": 1286.0,
+       "clicks": 10.0,
        "cvr": 0.0,
-       "ctr": 0.731707,
-       "cpm": 12.260163,
-       "reach": 915.0,
-       "frequency": 1.344262,
+       "ctr": 0.777605,
+       "cpm": 12.48056,
+       "reach": 961.0,
+       "frequency": 1.338189,
        "attiva": true,
        "effective_status": "ACTIVE",
        "status": "watch",
-       "reason": "€15.08 spesi e 0 lead: mancano €14.92 allo stacco",
+       "reason": "€16.05 spesi e 0 lead: mancano €13.95 allo stacco",
        "sprecato": 0.0,
        "flags": [
-        "CTR 0.73%: il creativo non ferma nessuno"
+        "CTR 0.78%: il creativo non ferma nessuno"
        ],
        "recent": {
-        "spend": 15.08,
+        "spend": 16.05,
         "leads": 0.0,
         "cpl": null
        },
@@ -183,56 +211,26 @@
        "name": "Nuova inserzione Contatti - Copia",
        "campaign_id": "120249502985680629",
        "campaign_name": "Moduli -immagine - Copia 9",
-       "spend": 10.7,
+       "spend": 13.09,
        "leads": 0.0,
        "cpl": null,
-       "impressions": 879.0,
-       "clicks": 8.0,
+       "impressions": 1019.0,
+       "clicks": 10.0,
        "cvr": 0.0,
-       "ctr": 0.910125,
-       "cpm": 12.172924,
-       "reach": 588.0,
-       "frequency": 1.494898,
+       "ctr": 0.981354,
+       "cpm": 12.845927,
+       "reach": 643.0,
+       "frequency": 1.584759,
        "attiva": true,
        "effective_status": "ACTIVE",
        "status": "watch",
-       "reason": "€10.70 spesi e 0 lead: mancano €19.30 allo stacco",
+       "reason": "€13.09 spesi e 0 lead: mancano €16.91 allo stacco",
        "sprecato": 0.0,
        "flags": [
-        "CTR 0.91%: il creativo non ferma nessuno"
+        "CTR 0.98%: il creativo non ferma nessuno"
        ],
        "recent": {
-        "spend": 10.7,
-        "leads": 0.0,
-        "cpl": null
-       },
-       "trend": null
-      },
-      {
-       "id": "120250409743700629",
-       "name": "Nuova inserzione Contatti - Copia 4",
-       "campaign_id": "120249502985680629",
-       "campaign_name": "Moduli -immagine - Copia 9",
-       "spend": 9.93,
-       "leads": 0.0,
-       "cpl": null,
-       "impressions": 762.0,
-       "clicks": 7.0,
-       "cvr": 0.0,
-       "ctr": 0.918635,
-       "cpm": 13.031496,
-       "reach": 494.0,
-       "frequency": 1.54251,
-       "attiva": true,
-       "effective_status": "ACTIVE",
-       "status": "watch",
-       "reason": "€9.93 spesi e 0 lead: mancano €20.07 allo stacco",
-       "sprecato": 0.0,
-       "flags": [
-        "CTR 0.92%: il creativo non ferma nessuno"
-       ],
-       "recent": {
-        "spend": 9.93,
+        "spend": 13.09,
         "leads": 0.0,
         "cpl": null
        },
@@ -243,24 +241,24 @@
        "name": "Nuova inserzione Contatti - Copia 2",
        "campaign_id": "120249502985680629",
        "campaign_name": "Moduli -immagine - Copia 9",
-       "spend": 6.42,
+       "spend": 7.08,
        "leads": 0.0,
        "cpl": null,
-       "impressions": 348.0,
-       "clicks": 6.0,
+       "impressions": 409.0,
+       "clicks": 7.0,
        "cvr": 0.0,
-       "ctr": 1.724138,
-       "cpm": 18.448276,
-       "reach": 262.0,
-       "frequency": 1.328244,
+       "ctr": 1.711491,
+       "cpm": 17.310513,
+       "reach": 284.0,
+       "frequency": 1.440141,
        "attiva": true,
        "effective_status": "ACTIVE",
        "status": "watch",
-       "reason": "€6.42 spesi e 0 lead: mancano €23.58 allo stacco",
+       "reason": "€7.08 spesi e 0 lead: mancano €22.92 allo stacco",
        "sprecato": 0.0,
        "flags": [],
        "recent": {
-        "spend": 6.42,
+        "spend": 7.08,
         "leads": 0.0,
         "cpl": null
        },
@@ -271,24 +269,24 @@
        "name": "Nuova inserzione Contatti - Copia 3",
        "campaign_id": "120249502985680629",
        "campaign_name": "Moduli -immagine - Copia 9",
-       "spend": 3.84,
+       "spend": 3.92,
        "leads": 0.0,
        "cpl": null,
-       "impressions": 152.0,
+       "impressions": 163.0,
        "clicks": 2.0,
        "cvr": 0.0,
-       "ctr": 1.315789,
-       "cpm": 25.263158,
-       "reach": 110.0,
-       "frequency": 1.381818,
+       "ctr": 1.226994,
+       "cpm": 24.04908,
+       "reach": 118.0,
+       "frequency": 1.381356,
        "attiva": true,
        "effective_status": "ACTIVE",
        "status": "early",
-       "reason": "solo 152 impression: troppo presto per giudicare",
+       "reason": "solo 163 impression: troppo presto per giudicare",
        "sprecato": 0.0,
        "flags": [],
        "recent": {
-        "spend": 3.84,
+        "spend": 3.92,
         "leads": 0.0,
         "cpl": null
        },
@@ -319,11 +317,7 @@
         "frequenza 2.6: pubblico bruciato, cambia audience",
         "solo 3.2% dei click diventa lead: modulo o landing da rivedere"
        ],
-       "recent": {
-        "spend": 1.56,
-        "leads": 0.0,
-        "cpl": null
-       },
+       "recent": null,
        "trend": null
       },
       {
@@ -434,7 +428,7 @@
         "CTR 0.80%: il creativo non ferma nessuno"
        ],
        "recent": {
-        "spend": 27.14,
+        "spend": 11.9,
         "leads": 0.0,
         "cpl": null
        },
@@ -516,7 +510,7 @@
         "CTR 0.82%: il creativo non ferma nessuno"
        ],
        "recent": {
-        "spend": 12.57,
+        "spend": 9.59,
         "leads": 0.0,
         "cpl": null
        },
@@ -546,7 +540,7 @@
         "CTR 0.75%: il creativo non ferma nessuno"
        ],
        "recent": {
-        "spend": 7.15,
+        "spend": 4.77,
         "leads": 0.0,
         "cpl": null
        },
@@ -578,16 +572,16 @@
       }
      ],
      "vivo": {
-      "spend": 1038.55,
-      "leads": 46.0,
-      "clicks": 1520.0,
-      "impressions": 93317.0,
-      "cpl": 22.58,
-      "cvr": 3.03,
-      "ctr": 1.63,
-      "recent_cpl": 32.86,
-      "recent_spend": 460.06,
-      "recent_leads": 14.0
+      "spend": 1113.48,
+      "leads": 49.0,
+      "clicks": 1613.0,
+      "impressions": 100176.0,
+      "cpl": 22.72,
+      "cvr": 3.04,
+      "ctr": 1.61,
+      "recent_cpl": 28.76,
+      "recent_spend": 488.97,
+      "recent_leads": 17.0
      },
      "n_ads": 17,
      "n_ads_attivi": 7,
@@ -595,15 +589,15 @@
      "status": "watch",
      "reason": "4 inserzione/i ancora accesa/e da sorvegliare",
      "flags": [
-      "frequenza 6.6: pubblico bruciato, cambia audience",
+      "frequenza 6.8: pubblico bruciato, cambia audience",
       "solo 2.7% dei click diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 539.39,
-      "leads": 14.0,
-      "cpl": 38.53
+      "spend": 546.14,
+      "leads": 17.0,
+      "cpl": 32.13
      },
-     "trend": 10.64
+     "trend": 4.39
     },
     {
      "id": "120249368205620629",
@@ -821,16 +815,16 @@
     {
      "id": "120250059758910629",
      "name": "ORO - Promotori - Moduli - statica v1",
-     "spend": 332.0,
-     "leads": 37.0,
-     "cpl": 8.97,
-     "impressions": 18097.0,
-     "clicks": 516.0,
-     "cvr": 7.17,
-     "ctr": 2.851301,
-     "cpm": 18.345582,
-     "reach": 4080.0,
-     "frequency": 4.435539,
+     "spend": 351.58,
+     "leads": 42.0,
+     "cpl": 8.37,
+     "impressions": 19013.0,
+     "clicks": 543.0,
+     "cvr": 7.73,
+     "ctr": 2.855941,
+     "cpm": 18.491558,
+     "reach": 4316.0,
+     "frequency": 4.405236,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": null,
@@ -859,37 +853,37 @@
         "frequenza 4.3: pubblico bruciato, cambia audience"
        ],
        "recent": {
-        "spend": 97.33,
-        "leads": 8.0,
-        "cpl": 12.17
+        "spend": 80.63,
+        "leads": 7.0,
+        "cpl": 11.52
        },
-       "trend": 2.67
+       "trend": 2.02
       },
       {
        "id": "120250394986670629",
        "name": "ORO - statica v1 - 14 giorni e x2 - Copia",
        "campaign_id": "120250059758910629",
        "campaign_name": "ORO - Promotori - Moduli - statica v1",
-       "spend": 39.13,
-       "leads": 7.0,
-       "cpl": 5.59,
-       "impressions": 2083.0,
-       "clicks": 88.0,
-       "cvr": 7.95,
-       "ctr": 4.224676,
-       "cpm": 18.785406,
-       "reach": 1169.0,
-       "frequency": 1.781865,
+       "spend": 58.71,
+       "leads": 12.0,
+       "cpl": 4.89,
+       "impressions": 2999.0,
+       "clicks": 115.0,
+       "cvr": 10.43,
+       "ctr": 3.834612,
+       "cpm": 19.576526,
+       "reach": 1565.0,
+       "frequency": 1.916294,
        "attiva": true,
        "effective_status": "ACTIVE",
        "status": "winner",
-       "reason": "CPL €5.59: sotto €10, ci si mette budget",
+       "reason": "CPL €4.89: sotto €10, ci si mette budget",
        "sprecato": 0.0,
        "flags": [],
        "recent": {
-        "spend": 39.13,
-        "leads": 7.0,
-        "cpl": 5.59
+        "spend": 58.71,
+        "leads": 12.0,
+        "cpl": 4.89
        },
        "trend": 0.0
       },
@@ -923,16 +917,16 @@
       }
      ],
      "vivo": {
-      "spend": 324.07,
-      "leads": 37.0,
-      "clicks": 508.0,
-      "impressions": 17644.0,
-      "cpl": 8.76,
-      "cvr": 7.28,
+      "spend": 343.65,
+      "leads": 42.0,
+      "clicks": 535.0,
+      "impressions": 18560.0,
+      "cpl": 8.18,
+      "cvr": 7.85,
       "ctr": 2.88,
-      "recent_cpl": 9.1,
-      "recent_spend": 136.46,
-      "recent_leads": 15.0
+      "recent_cpl": 7.33,
+      "recent_spend": 139.34,
+      "recent_leads": 19.0
      },
      "n_ads": 3,
      "n_ads_attivi": 2,
@@ -943,11 +937,11 @@
       "frequenza 4.4: pubblico bruciato, cambia audience"
      ],
      "recent": {
-      "spend": 144.39,
-      "leads": 15.0,
-      "cpl": 9.63
+      "spend": 147.27,
+      "leads": 19.0,
+      "cpl": 7.75
      },
-     "trend": 0.66
+     "trend": -0.62
     },
     {
      "id": "120246542889040629",
@@ -5655,6 +5649,81 @@
      "trend": null
     },
     {
+     "id": "120250385309710629",
+     "name": "Nuova campagna Traffico",
+     "spend": 14.36,
+     "leads": 0.0,
+     "cpl": null,
+     "impressions": 3597.0,
+     "clicks": 134.0,
+     "cvr": 0.0,
+     "ctr": 3.725327,
+     "cpm": 3.992216,
+     "reach": 3414.0,
+     "frequency": 1.053603,
+     "attiva": true,
+     "effective_status": "ACTIVE",
+     "daily_budget": 4.0,
+     "ads": [
+      {
+       "id": "120250385309730629",
+       "name": "Nuova inserzione Traffico",
+       "campaign_id": "120250385309710629",
+       "campaign_name": "Nuova campagna Traffico",
+       "spend": 14.36,
+       "leads": 0.0,
+       "cpl": null,
+       "impressions": 3597.0,
+       "clicks": 134.0,
+       "cvr": 0.0,
+       "ctr": 3.725327,
+       "cpm": 3.992216,
+       "reach": 3414.0,
+       "frequency": 1.053603,
+       "attiva": true,
+       "effective_status": "ACTIVE",
+       "status": "watch",
+       "reason": "€14.36 spesi e 0 lead: mancano €15.64 allo stacco",
+       "sprecato": 0.0,
+       "flags": [
+        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
+       ],
+       "recent": {
+        "spend": 14.36,
+        "leads": 0.0,
+        "cpl": null
+       },
+       "trend": null
+      }
+     ],
+     "vivo": {
+      "spend": 14.36,
+      "leads": 0.0,
+      "clicks": 134.0,
+      "impressions": 3597.0,
+      "cpl": null,
+      "cvr": 0.0,
+      "ctr": 3.73,
+      "recent_cpl": null,
+      "recent_spend": 14.36,
+      "recent_leads": 0.0
+     },
+     "n_ads": 1,
+     "n_ads_attivi": 1,
+     "sprecato": 0.0,
+     "status": "watch",
+     "reason": "1 inserzione/i ancora accesa/e da sorvegliare",
+     "flags": [
+      "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
+     ],
+     "recent": {
+      "spend": 14.36,
+      "leads": 0.0,
+      "cpl": null
+     },
+     "trend": null
+    },
+    {
      "id": "120249111677640629",
      "name": "Moduli -video cfa - c - Copia 8",
      "spend": 14.26,
@@ -6508,81 +6577,6 @@
      "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
-     "trend": null
-    },
-    {
-     "id": "120250385309710629",
-     "name": "Nuova campagna Traffico",
-     "spend": 11.5,
-     "leads": 0.0,
-     "cpl": null,
-     "impressions": 2015.0,
-     "clicks": 90.0,
-     "cvr": 0.0,
-     "ctr": 4.466501,
-     "cpm": 5.707196,
-     "reach": 1850.0,
-     "frequency": 1.089189,
-     "attiva": true,
-     "effective_status": "ACTIVE",
-     "daily_budget": 4.0,
-     "ads": [
-      {
-       "id": "120250385309730629",
-       "name": "Nuova inserzione Traffico",
-       "campaign_id": "120250385309710629",
-       "campaign_name": "Nuova campagna Traffico",
-       "spend": 11.5,
-       "leads": 0.0,
-       "cpl": null,
-       "impressions": 2015.0,
-       "clicks": 90.0,
-       "cvr": 0.0,
-       "ctr": 4.466501,
-       "cpm": 5.707196,
-       "reach": 1850.0,
-       "frequency": 1.089189,
-       "attiva": true,
-       "effective_status": "ACTIVE",
-       "status": "watch",
-       "reason": "€11.50 spesi e 0 lead: mancano €18.50 allo stacco",
-       "sprecato": 0.0,
-       "flags": [
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-       ],
-       "recent": {
-        "spend": 11.5,
-        "leads": 0.0,
-        "cpl": null
-       },
-       "trend": null
-      }
-     ],
-     "vivo": {
-      "spend": 11.5,
-      "leads": 0.0,
-      "clicks": 90.0,
-      "impressions": 2015.0,
-      "cpl": null,
-      "cvr": 0.0,
-      "ctr": 4.47,
-      "recent_cpl": null,
-      "recent_spend": 11.5,
-      "recent_leads": 0.0
-     },
-     "n_ads": 1,
-     "n_ads_attivi": 1,
-     "sprecato": 0.0,
-     "status": "watch",
-     "reason": "1 inserzione/i ancora accesa/e da sorvegliare",
-     "flags": [
-      "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-     ],
-     "recent": {
-      "spend": 11.5,
-      "leads": 0.0,
-      "cpl": null
-     },
      "trend": null
     },
     {
@@ -7596,8 +7590,8 @@
    ],
    "hiring": {
     "n": 6,
-    "spend": 356.27,
-    "leads": 133.0
+    "spend": 360.9,
+    "leads": 136.0
    },
    "campagne_hiring": [
     {
@@ -7657,16 +7651,16 @@
     {
      "id": "120246443902370629",
      "name": "Venditore - Moduli",
-     "spend": 283.67,
-     "leads": 60.0,
-     "cpl": 4.73,
-     "impressions": 10632.0,
-     "clicks": 504.0,
-     "cvr": 11.9,
-     "ctr": 4.740406,
-     "cpm": 26.680775,
-     "reach": 3503.0,
-     "frequency": 3.035113,
+     "spend": 288.3,
+     "leads": 63.0,
+     "cpl": 4.58,
+     "impressions": 10755.0,
+     "clicks": 514.0,
+     "cvr": 12.26,
+     "ctr": 4.779172,
+     "cpm": 26.806137,
+     "reach": 3523.0,
+     "frequency": 3.052796,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 6.0,
