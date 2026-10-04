@@ -1,9 +1,15 @@
 {
- "generato": "03/10 04:03",
+ "generato": "04/10 04:03",
  "n_account_rossi": 14,
  "n_puliti": 0,
  "puliti": [],
  "voci": [
+  {
+   "cliente": "AEA-HOUSE",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "instagram/instagram_reels · 0.87 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "gravita": 3
+  },
   {
    "cliente": "ASS-AR1",
    "tipo": "NON CONSEGNA",
@@ -20,6 +26,12 @@
    "cliente": "ASS-AR1",
    "tipo": "NON CONSEGNA",
    "dettaglio": "Moduli - stai spendendo troppo foto - Copia · ieri 0.00 €",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-FR",
+   "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
+   "dettaglio": "Lead Gen N - Fabio Ricciarelli",
    "gravita": 3
   },
   {
@@ -47,15 +59,15 @@
    "gravita": 3
   },
   {
-   "cliente": "CF-MLC",
-   "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
-   "dettaglio": "Lead Gen 2 - Marco La Corte",
+   "cliente": "CF-RD",
+   "tipo": "NON CONSEGNA",
+   "dettaglio": "Moduli - Campagna Principale Attiva · ieri 0.00 €",
    "gravita": 3
   },
   {
-   "cliente": "CF-MLC",
-   "tipo": "PIU' MODULI SULLE ADS ATTIVE",
-   "dettaglio": "Lead Gen - New 1 Q - Marco La Corte + Lead Gen 2 - Marco La Corte",
+   "cliente": "FR",
+   "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
+   "dettaglio": "Lead Gen N - Fabio Ricciarelli",
    "gravita": 3
   },
   {
@@ -75,6 +87,18 @@
    "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
    "dettaglio": "Lead Gen 1 Q - Alessandro Zaghini",
    "gravita": 3
+  },
+  {
+   "cliente": "CF-MLC",
+   "tipo": "PIU' DI UN MODULO VIVO",
+   "dettaglio": "Lead Marco La Corte, Lead Gen - New 1Q - Marco La Corte",
+   "gravita": 2
+  },
+  {
+   "cliente": "FB",
+   "tipo": "PIU' DI UN MODULO VIVO",
+   "dettaglio": "Lead Flavio Bosia, Lead Gen - New 1Q - Flavio Bosia",
+   "gravita": 2
   },
   {
    "cliente": "URO",
@@ -98,12 +122,6 @@
    "cliente": "AEA-HOUSE",
    "tipo": "REELS ATTIVI ['facebook_reels_overlay']",
    "dettaglio": "Moduli -immagine - Copia 9",
-   "gravita": 1
-  },
-  {
-   "cliente": "AEA-HOUSE",
-   "tipo": "REELS ATTIVI ['reels']",
-   "dettaglio": "Nuova campagna Traffico",
    "gravita": 1
   },
   {
@@ -230,18 +248,6 @@
    "cliente": "CF-MLC",
    "tipo": "FASCIA ETA' FUORI STANDARD",
    "dettaglio": "30-60 invece di 30-63 · Moduli - Campagna Attiva",
-   "gravita": 1
-  },
-  {
-   "cliente": "CF-MLC",
-   "tipo": "MODULO SENZA HEADLINE",
-   "dettaglio": "Lead Gen 2 - Marco La Corte",
-   "gravita": 1
-  },
-  {
-   "cliente": "CF-MLC",
-   "tipo": "PIU' DI UNA DOMANDA DI QUALIFICA",
-   "dettaglio": "Lead Gen 2 - Marco La Corte · 3 domande",
    "gravita": 1
   },
   {
