@@ -1,5 +1,5 @@
 {
- "generato": "04/10 04:03",
+ "generato": "05/10 04:03",
  "n_account_rossi": 14,
  "n_puliti": 0,
  "puliti": [],
@@ -7,7 +7,7 @@
   {
    "cliente": "AEA-HOUSE",
    "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "instagram/instagram_reels · 0.87 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "dettaglio": "instagram/instagram_reels · 2.06 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
    "gravita": 3
   },
   {
@@ -89,12 +89,6 @@
    "gravita": 3
   },
   {
-   "cliente": "CF-MLC",
-   "tipo": "PIU' DI UN MODULO VIVO",
-   "dettaglio": "Lead Marco La Corte, Lead Gen - New 1Q - Marco La Corte",
-   "gravita": 2
-  },
-  {
    "cliente": "FB",
    "tipo": "PIU' DI UN MODULO VIVO",
    "dettaglio": "Lead Flavio Bosia, Lead Gen - New 1Q - Flavio Bosia",
@@ -116,6 +110,12 @@
    "cliente": "AEA-HOUSE",
    "tipo": "REELS ATTIVI ['facebook_reels', 'facebook_reels_overlay']",
    "dettaglio": "Venditore - Moduli",
+   "gravita": 1
+  },
+  {
+   "cliente": "AEA-HOUSE",
+   "tipo": "REELS ATTIVI ['facebook_reels', 'facebook_reels_overlay']",
+   "dettaglio": "Venditore - Moduli - Copia",
    "gravita": 1
   },
   {
