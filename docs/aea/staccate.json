@@ -1,5 +1,17 @@
 [
  {
+  "quando": "2026-10-08T08:14:23+02:00",
+  "account": "859478370532394",
+  "campagna": "Moduli -immagine - Copia 9",
+  "annuncio": "Nuova inserzione Contatti - Copia 2",
+  "ad_id": "120250522715910629",
+  "campaign_id": "120249502985680629",
+  "motivo": "€30.98 spesi e 0 lead (limite €30)",
+  "spesa": 30.98,
+  "lead": 0.0,
+  "eseguito": true
+ },
+ {
   "quando": "2026-09-23T08:12:58+02:00",
   "account": "859478370532394",
   "campagna": "Moduli -immagine - Copia 9",
