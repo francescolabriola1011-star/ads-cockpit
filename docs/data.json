@@ -1,7 +1,7 @@
 {
  "titolo": "ADS Cockpit",
- "sottotitolo": "tutti gli account",
- "generato": "2026-10-10T14:32:09+02:00",
+ "sottotitolo": "Controllo campagne e creative",
+ "generato": "2026-10-10T15:23:27+02:00",
  "periodo": {
   "da": "2026-01-01",
   "a": "2026-10-10",
@@ -23,167 +23,52 @@
   "cvr_min_clicks": 30
  },
  "totali": {
-  "spesa": 5984.76,
-  "lead": 233.0,
-  "cpl": 25.69,
-  "sprecato": 15.48,
-  "quota_sprecata": 0.3,
-  "sprecato_al_mese": 1.65,
-  "brucia_oggi": 15.0,
-  "da_staccare_ora": 1,
-  "clicks": 11856.0,
-  "cvr": 1.97,
+  "spesa": 5992.75,
+  "lead": 234.0,
+  "cpl": 25.61,
+  "sprecato": 0.0,
+  "quota_sprecata": 0.0,
+  "sprecato_al_mese": 0.0,
+  "brucia_oggi": 0,
+  "da_staccare_ora": 0,
+  "clicks": 11876.0,
+  "link_clicks": 6398.0,
+  "cvr": 3.66,
   "clienti": 11,
   "campagne": 79
  },
  "clienti": [
-  {
-   "alias": "CF-FR",
-   "nome_reale": "CF-FR",
-   "dal": "2026-01-01",
-   "solo_nostre_dal": null,
-   "currency": "EUR",
-   "spend": 169.48,
-   "leads": 7.0,
-   "cpl": 24.21,
-   "sprecato": 15.48,
-   "quota_sprecata": 9.1,
-   "impressions": 13261.0,
-   "clicks": 255.0,
-   "cvr": 2.75,
-   "n_campagne": 1,
-   "n_kill": 1,
-   "n_kill_ancora_accese": 1,
-   "brucia_oggi": 15.0,
-   "vivo": {
-    "spend": 169.48,
-    "leads": 7.0,
-    "cpl": 24.21,
-    "cvr": 2.75,
-    "recent_cpl": 31.48,
-    "n_creative": 1
-   },
-   "riallocazione": {
-    "budget_da_spostare": 169.48,
-    "cpl_vincente": null,
-    "lead_prudente": 7,
-    "lead_ottimistico": 0
-   },
-   "campagne": [
-    {
-     "id": "120252259223900659",
-     "name": "Moduli - Campagna Attiva",
-     "spend": 169.48,
-     "leads": 7.0,
-     "cpl": 24.21,
-     "impressions": 13261.0,
-     "clicks": 255.0,
-     "cvr": 2.75,
-     "ctr": 1.922932,
-     "cpm": 12.780333,
-     "reach": 4952.0,
-     "frequency": 2.677908,
-     "attiva": true,
-     "effective_status": "ACTIVE",
-     "daily_budget": 15.0,
-     "ads": [
-      {
-       "id": "120252570293560659",
-       "name": "Statica - Quando potrai andare in pensione?",
-       "campaign_id": "120252259223900659",
-       "campaign_name": "Moduli - Campagna Attiva",
-       "spend": 169.48,
-       "leads": 7.0,
-       "cpl": 24.21,
-       "impressions": 13261.0,
-       "clicks": 255.0,
-       "cvr": 2.75,
-       "ctr": 1.922932,
-       "cpm": 12.780333,
-       "reach": 4952.0,
-       "frequency": 2.677908,
-       "attiva": true,
-       "effective_status": "ACTIVE",
-       "status": "kill",
-       "reason": "7 lead e CPL €24.21: sopra il limite di €22",
-       "sprecato": 15.48,
-       "flags": [
-        "frequenza 2.7: pubblico bruciato, cambia audience",
-        "solo 2.7% dei click diventa lead: modulo o landing da rivedere"
-       ],
-       "recent": {
-        "spend": 125.93,
-        "leads": 4.0,
-        "cpl": 31.48
-       },
-       "trend": 7.27
-      }
-     ],
-     "vivo": {
-      "spend": 169.48,
-      "leads": 7.0,
-      "clicks": 255.0,
-      "impressions": 13261.0,
-      "cpl": 24.21,
-      "cvr": 2.75,
-      "ctr": 1.92,
-      "recent_cpl": 31.48,
-      "recent_spend": 125.93,
-      "recent_leads": 4.0
-     },
-     "n_ads": 1,
-     "n_ads_attivi": 1,
-     "sprecato": 15.48,
-     "status": "kill",
-     "reason": "1 inserzione/i ancora accesa/e fuori soglia (la peggiore: Statica - Quando potrai andare in pensione?, 7 lead e CPL €24.21: sopra il limite di €22)",
-     "flags": [
-      "frequenza 2.7: pubblico bruciato, cambia audience",
-      "solo 2.7% dei click diventa lead: modulo o landing da rivedere"
-     ],
-     "recent": {
-      "spend": 125.93,
-      "leads": 4.0,
-      "cpl": 31.48
-     },
-     "trend": 7.27
-    }
-   ],
-   "hiring": {
-    "n": 0,
-    "spend": 0,
-    "leads": 0
-   },
-   "campagne_hiring": []
-  },
   {
    "alias": "CF-FB",
    "nome_reale": "CF-FB",
    "dal": "2026-01-01",
    "solo_nostre_dal": null,
    "currency": "EUR",
-   "spend": 969.89,
+   "spend": 970.71,
    "leads": 44.0,
-   "cpl": 22.04,
+   "cpl": 22.06,
    "sprecato": 0.0,
    "quota_sprecata": 0.0,
-   "impressions": 106058.0,
-   "clicks": 1727.0,
-   "cvr": 2.55,
+   "impressions": 106116.0,
+   "clicks": 1731.0,
+   "link_clicks": 879.0,
+   "cvr": 5.01,
    "n_campagne": 14,
    "n_kill": 0,
    "n_kill_ancora_accese": 0,
    "brucia_oggi": 0,
    "vivo": {
-    "spend": 154.04,
+    "spend": 154.86,
     "leads": 17.0,
-    "cpl": 9.06,
-    "cvr": 3.54,
-    "recent_cpl": 11.01,
+    "cpl": 9.11,
+    "cvr": 7.98,
+    "link_clicks": 213.0,
+    "recent_cpl": 11.09,
     "n_creative": 1
    },
    "riallocazione": {
     "budget_da_spostare": 0,
-    "cpl_vincente": 18.15,
+    "cpl_vincente": 18.17,
     "lead_prudente": 0,
     "lead_ottimistico": 0
    },
@@ -191,16 +76,17 @@
     {
      "id": "52581507761861",
      "name": "Moduli - Campagna Attiva",
-     "spend": 744.01,
+     "spend": 744.83,
      "leads": 41.0,
-     "cpl": 18.15,
-     "impressions": 85698.0,
-     "clicks": 1407.0,
-     "cvr": 2.91,
-     "ctr": 1.641812,
-     "cpm": 8.681766,
-     "reach": 29173.0,
-     "frequency": 2.937579,
+     "cpl": 18.17,
+     "impressions": 85756.0,
+     "clicks": 1411.0,
+     "link_clicks": 671.0,
+     "cvr": 6.11,
+     "ctr": 1.645366,
+     "cpm": 8.685456,
+     "reach": 29186.0,
+     "frequency": 2.938258,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 15.0,
@@ -210,30 +96,29 @@
        "name": "Statica - Dispongo di € 100.000 per la pensione",
        "campaign_id": "52581507761861",
        "campaign_name": "Moduli - Campagna Attiva",
-       "spend": 154.04,
+       "spend": 154.86,
        "leads": 17.0,
-       "cpl": 9.06,
-       "impressions": 15891.0,
-       "clicks": 480.0,
-       "cvr": 3.54,
-       "ctr": 3.020578,
-       "cpm": 9.693537,
-       "reach": 7290.0,
-       "frequency": 2.179835,
+       "cpl": 9.11,
+       "impressions": 15949.0,
+       "clicks": 484.0,
+       "link_clicks": 213.0,
+       "cvr": 7.98,
+       "ctr": 3.034673,
+       "cpm": 9.7097,
+       "reach": 7309.0,
+       "frequency": 2.182104,
        "attiva": true,
        "effective_status": "ACTIVE",
        "status": "winner",
-       "reason": "CPL €9.06: sotto €10, ci si mette budget",
+       "reason": "CPL €9.11: sotto €10, ci si mette budget",
        "sprecato": 0.0,
-       "flags": [
-        "solo 3.5% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": {
-        "spend": 110.09,
+        "spend": 110.91,
         "leads": 10.0,
-        "cpl": 11.01
+        "cpl": 11.09
        },
-       "trend": 1.95
+       "trend": 1.98
       },
       {
        "id": "52587136401661",
@@ -245,19 +130,19 @@
        "cpl": 22.76,
        "impressions": 45143.0,
        "clicks": 613.0,
-       "cvr": 2.61,
+       "link_clicks": 271.0,
+       "cvr": 5.9,
        "ctr": 1.357907,
        "cpm": 8.067031,
        "reach": 17236.0,
        "frequency": 2.619111,
        "attiva": false,
        "effective_status": "PAUSED",
-       "status": "kill",
-       "reason": "16 lead e CPL €22.76: sopra il limite di €22",
-       "sprecato": 12.17,
+       "status": "ok",
+       "reason": "CPL €22.76 sopra €22, ma CVR 5.9% sopra il 4%: non si stacca",
+       "sprecato": 0.0,
        "flags": [
-        "frequenza 2.6: pubblico bruciato, cambia audience",
-        "solo 2.6% dei click diventa lead: modulo o landing da rivedere"
+        "frequenza 2.6: pubblico bruciato, cambia audience"
        ],
        "recent": null,
        "trend": null
@@ -272,7 +157,8 @@
        "cpl": 23.06,
        "impressions": 14533.0,
        "clicks": 124.0,
-       "cvr": 4.03,
+       "link_clicks": 88.0,
+       "cvr": 5.68,
        "ctr": 0.853231,
        "cpm": 7.932292,
        "reach": 7572.0,
@@ -298,7 +184,8 @@
        "cpl": 33.66,
        "impressions": 4778.0,
        "clicks": 86.0,
-       "cvr": 2.33,
+       "link_clicks": 51.0,
+       "cvr": 3.92,
        "ctr": 1.799916,
        "cpm": 14.087484,
        "reach": 2683.0,
@@ -309,7 +196,7 @@
        "reason": "2 lead a CPL €33.66: sotto i 6 lead il CPL non stacca",
        "sprecato": 0.0,
        "flags": [
-        "solo 2.3% dei click diventa lead: modulo o landing da rivedere"
+        "solo 3.9% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -324,7 +211,8 @@
        "cpl": 43.21,
        "impressions": 5353.0,
        "clicks": 104.0,
-       "cvr": 0.96,
+       "link_clicks": 48.0,
+       "cvr": 2.08,
        "ctr": 1.942836,
        "cpm": 8.072109,
        "reach": 3166.0,
@@ -335,22 +223,23 @@
        "reason": "1 lead a €43.21: si lascia girare, ma entro €50 (mancano €6.79) deve arrivare il 2° lead, cioe' CPL sotto €25",
        "sprecato": 0.0,
        "flags": [
-        "solo 1.0% dei click diventa lead: modulo o landing da rivedere"
+        "solo 2.1% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
       }
      ],
      "vivo": {
-      "spend": 154.04,
+      "spend": 154.86,
       "leads": 17.0,
-      "clicks": 480.0,
-      "impressions": 15891.0,
-      "cpl": 9.06,
-      "cvr": 3.54,
-      "ctr": 3.02,
-      "recent_cpl": 11.01,
-      "recent_spend": 110.09,
+      "clicks": 484.0,
+      "link_clicks": 213.0,
+      "impressions": 15949.0,
+      "cpl": 9.11,
+      "cvr": 7.98,
+      "ctr": 3.03,
+      "recent_cpl": 11.09,
+      "recent_spend": 110.91,
       "recent_leads": 10.0
      },
      "n_ads": 5,
@@ -359,15 +248,14 @@
      "status": "winner",
      "reason": "1 inserzione/i vincente/i ancora accesa/e",
      "flags": [
-      "frequenza 2.9: pubblico bruciato, cambia audience",
-      "solo 2.9% dei click diventa lead: modulo o landing da rivedere"
+      "frequenza 2.9: pubblico bruciato, cambia audience"
      ],
      "recent": {
-      "spend": 110.09,
+      "spend": 110.91,
       "leads": 10.0,
-      "cpl": 11.01
+      "cpl": 11.09
      },
-     "trend": -7.14
+     "trend": -7.08
     },
     {
      "id": "52583479530461",
@@ -377,6 +265,7 @@
      "cpl": null,
      "impressions": 2640.0,
      "clicks": 36.0,
+     "link_clicks": 14.0,
      "cvr": 0.0,
      "ctr": 1.363636,
      "cpm": 12.393939,
@@ -396,6 +285,7 @@
        "cpl": null,
        "impressions": 2640.0,
        "clicks": 36.0,
+       "link_clicks": 14.0,
        "cvr": 0.0,
        "ctr": 1.363636,
        "cpm": 12.393939,
@@ -406,9 +296,7 @@
        "status": "kill",
        "reason": "€32.72 spesi e 0 lead: oltre il limite di €30",
        "sprecato": 2.72,
-       "flags": [
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": null,
        "trend": null
       }
@@ -419,9 +307,7 @@
      "sprecato": 0,
      "status": "ok",
      "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
-     "flags": [
-      "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-     ],
+     "flags": [],
      "recent": null,
      "trend": null
     },
@@ -433,7 +319,8 @@
      "cpl": 26.2,
      "impressions": 1776.0,
      "clicks": 30.0,
-     "cvr": 3.33,
+     "link_clicks": 23.0,
+     "cvr": 4.35,
      "ctr": 1.689189,
      "cpm": 14.752252,
      "reach": 1223.0,
@@ -452,7 +339,8 @@
        "cpl": 26.2,
        "impressions": 1776.0,
        "clicks": 30.0,
-       "cvr": 3.33,
+       "link_clicks": 23.0,
+       "cvr": 4.35,
        "ctr": 1.689189,
        "cpm": 14.752252,
        "reach": 1223.0,
@@ -462,9 +350,7 @@
        "status": "early",
        "reason": "1 lead a €26.20: si lascia girare, ma entro €50 (mancano €23.80) deve arrivare il 2° lead, cioe' CPL sotto €25",
        "sprecato": 0.0,
-       "flags": [
-        "solo 3.3% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": null,
        "trend": null
       }
@@ -475,9 +361,7 @@
      "sprecato": 0,
      "status": "ok",
      "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
-     "flags": [
-      "solo 3.3% dei click diventa lead: modulo o landing da rivedere"
-     ],
+     "flags": [],
      "recent": null,
      "trend": null
     },
@@ -489,7 +373,8 @@
      "cpl": 22.32,
      "impressions": 2599.0,
      "clicks": 29.0,
-     "cvr": 3.45,
+     "link_clicks": 24.0,
+     "cvr": 4.17,
      "ctr": 1.115814,
      "cpm": 8.587918,
      "reach": 1632.0,
@@ -508,7 +393,8 @@
        "cpl": 22.32,
        "impressions": 2599.0,
        "clicks": 29.0,
-       "cvr": 3.45,
+       "link_clicks": 24.0,
+       "cvr": 4.17,
        "ctr": 1.115814,
        "cpm": 8.587918,
        "reach": 1632.0,
@@ -541,7 +427,8 @@
      "cpl": 22.05,
      "impressions": 2782.0,
      "clicks": 37.0,
-     "cvr": 2.7,
+     "link_clicks": 23.0,
+     "cvr": 4.35,
      "ctr": 1.329978,
      "cpm": 7.925953,
      "reach": 1630.0,
@@ -560,7 +447,8 @@
        "cpl": 22.05,
        "impressions": 2782.0,
        "clicks": 37.0,
-       "cvr": 2.7,
+       "link_clicks": 23.0,
+       "cvr": 4.35,
        "ctr": 1.329978,
        "cpm": 7.925953,
        "reach": 1630.0,
@@ -570,9 +458,7 @@
        "status": "early",
        "reason": "1 lead a €22.05: si lascia girare, ma entro €50 (mancano €27.95) deve arrivare il 2° lead, cioe' CPL sotto €25",
        "sprecato": 0.0,
-       "flags": [
-        "solo 2.7% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": null,
        "trend": null
       }
@@ -583,9 +469,7 @@
      "sprecato": 0,
      "status": "ok",
      "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
-     "flags": [
-      "solo 2.7% dei click diventa lead: modulo o landing da rivedere"
-     ],
+     "flags": [],
      "recent": null,
      "trend": null
     },
@@ -597,6 +481,7 @@
      "cpl": null,
      "impressions": 933.0,
      "clicks": 14.0,
+     "link_clicks": 8.0,
      "cvr": 0.0,
      "ctr": 1.500536,
      "cpm": 18.252947,
@@ -616,6 +501,7 @@
        "cpl": null,
        "impressions": 933.0,
        "clicks": 14.0,
+       "link_clicks": 8.0,
        "cvr": 0.0,
        "ctr": 1.500536,
        "cpm": 18.252947,
@@ -649,6 +535,7 @@
      "cpl": null,
      "impressions": 2090.0,
      "clicks": 33.0,
+     "link_clicks": 25.0,
      "cvr": 0.0,
      "ctr": 1.578947,
      "cpm": 7.717703,
@@ -668,6 +555,7 @@
        "cpl": null,
        "impressions": 2090.0,
        "clicks": 33.0,
+       "link_clicks": 25.0,
        "cvr": 0.0,
        "ctr": 1.578947,
        "cpm": 7.717703,
@@ -678,9 +566,7 @@
        "status": "watch",
        "reason": "€16.13 spesi e 0 lead: mancano €13.87 allo stacco",
        "sprecato": 0.0,
-       "flags": [
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": null,
        "trend": null
       }
@@ -691,9 +577,7 @@
      "sprecato": 0,
      "status": "ok",
      "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
-     "flags": [
-      "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-     ],
+     "flags": [],
      "recent": null,
      "trend": null
     },
@@ -705,6 +589,7 @@
      "cpl": null,
      "impressions": 1477.0,
      "clicks": 15.0,
+     "link_clicks": 9.0,
      "cvr": 0.0,
      "ctr": 1.015572,
      "cpm": 10.649966,
@@ -724,6 +609,7 @@
        "cpl": null,
        "impressions": 1477.0,
        "clicks": 15.0,
+       "link_clicks": 9.0,
        "cvr": 0.0,
        "ctr": 1.015572,
        "cpm": 10.649966,
@@ -757,6 +643,7 @@
      "cpl": null,
      "impressions": 1719.0,
      "clicks": 34.0,
+     "link_clicks": 26.0,
      "cvr": 0.0,
      "ctr": 1.977894,
      "cpm": 8.964514,
@@ -776,6 +663,7 @@
        "cpl": null,
        "impressions": 1719.0,
        "clicks": 34.0,
+       "link_clicks": 26.0,
        "cvr": 0.0,
        "ctr": 1.977894,
        "cpm": 8.964514,
@@ -786,9 +674,7 @@
        "status": "watch",
        "reason": "€15.41 spesi e 0 lead: mancano €14.59 allo stacco",
        "sprecato": 0.0,
-       "flags": [
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": null,
        "trend": null
       }
@@ -799,9 +685,7 @@
      "sprecato": 0,
      "status": "ok",
      "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
-     "flags": [
-      "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-     ],
+     "flags": [],
      "recent": null,
      "trend": null
     },
@@ -813,6 +697,7 @@
      "cpl": null,
      "impressions": 1274.0,
      "clicks": 31.0,
+     "link_clicks": 17.0,
      "cvr": 0.0,
      "ctr": 2.433281,
      "cpm": 12.080063,
@@ -832,6 +717,7 @@
        "cpl": null,
        "impressions": 1274.0,
        "clicks": 31.0,
+       "link_clicks": 17.0,
        "cvr": 0.0,
        "ctr": 2.433281,
        "cpm": 12.080063,
@@ -842,9 +728,7 @@
        "status": "watch",
        "reason": "€15.39 spesi e 0 lead: mancano €14.61 allo stacco",
        "sprecato": 0.0,
-       "flags": [
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": null,
        "trend": null
       }
@@ -855,9 +739,7 @@
      "sprecato": 0,
      "status": "ok",
      "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
-     "flags": [
-      "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-     ],
+     "flags": [],
      "recent": null,
      "trend": null
     },
@@ -869,6 +751,7 @@
      "cpl": null,
      "impressions": 1081.0,
      "clicks": 20.0,
+     "link_clicks": 12.0,
      "cvr": 0.0,
      "ctr": 1.850139,
      "cpm": 14.051804,
@@ -888,6 +771,7 @@
        "cpl": null,
        "impressions": 1081.0,
        "clicks": 20.0,
+       "link_clicks": 12.0,
        "cvr": 0.0,
        "ctr": 1.850139,
        "cpm": 14.051804,
@@ -921,6 +805,7 @@
      "cpl": null,
      "impressions": 899.0,
      "clicks": 17.0,
+     "link_clicks": 12.0,
      "cvr": 0.0,
      "ctr": 1.89099,
      "cpm": 16.062291,
@@ -940,6 +825,7 @@
        "cpl": null,
        "impressions": 899.0,
        "clicks": 17.0,
+       "link_clicks": 12.0,
        "cvr": 0.0,
        "ctr": 1.89099,
        "cpm": 16.062291,
@@ -973,6 +859,7 @@
      "cpl": null,
      "impressions": 662.0,
      "clicks": 15.0,
+     "link_clicks": 7.0,
      "cvr": 0.0,
      "ctr": 2.265861,
      "cpm": 11.661631,
@@ -992,6 +879,7 @@
        "cpl": null,
        "impressions": 662.0,
        "clicks": 15.0,
+       "link_clicks": 7.0,
        "cvr": 0.0,
        "ctr": 2.265861,
        "cpm": 11.661631,
@@ -1025,6 +913,7 @@
      "cpl": null,
      "impressions": 428.0,
      "clicks": 9.0,
+     "link_clicks": 8.0,
      "cvr": 0.0,
      "ctr": 2.102804,
      "cpm": 12.96729,
@@ -1044,6 +933,7 @@
        "cpl": null,
        "impressions": 428.0,
        "clicks": 9.0,
+       "link_clicks": 8.0,
        "cvr": 0.0,
        "ctr": 2.102804,
        "cpm": 12.96729,
@@ -1083,24 +973,26 @@
    "dal": "2026-01-01",
    "solo_nostre_dal": null,
    "currency": "EUR",
-   "spend": 97.22,
+   "spend": 97.63,
    "leads": 2.0,
-   "cpl": 48.61,
+   "cpl": 48.81,
    "sprecato": 0.0,
    "quota_sprecata": 0.0,
-   "impressions": 6185.0,
-   "clicks": 125.0,
-   "cvr": 1.6,
+   "impressions": 6226.0,
+   "clicks": 128.0,
+   "link_clicks": 63.0,
+   "cvr": 3.17,
    "n_campagne": 1,
    "n_kill": 0,
    "n_kill_ancora_accese": 0,
    "brucia_oggi": 0,
    "vivo": {
-    "spend": 56.03,
+    "spend": 56.44,
     "leads": 2.0,
-    "cpl": 28.02,
-    "cvr": 3.45,
-    "recent_cpl": 28.02,
+    "cpl": 28.22,
+    "cvr": 6.9,
+    "link_clicks": 29.0,
+    "recent_cpl": 28.22,
     "n_creative": 1
    },
    "riallocazione": {
@@ -1113,16 +1005,17 @@
     {
      "id": "52545072602371",
      "name": "AI Elite - Moduli Campagna Attiva",
-     "spend": 97.22,
+     "spend": 97.63,
      "leads": 2.0,
-     "cpl": 48.61,
-     "impressions": 6185.0,
-     "clicks": 125.0,
-     "cvr": 1.6,
-     "ctr": 2.021019,
-     "cpm": 15.718674,
-     "reach": 3066.0,
-     "frequency": 2.017286,
+     "cpl": 48.81,
+     "impressions": 6226.0,
+     "clicks": 128.0,
+     "link_clicks": 63.0,
+     "cvr": 3.17,
+     "ctr": 2.055895,
+     "cpm": 15.681015,
+     "reach": 3074.0,
+     "frequency": 2.025374,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 15.0,
@@ -1132,28 +1025,27 @@
        "name": "Statica - I ribassi non fanno paura",
        "campaign_id": "52545072602371",
        "campaign_name": "AI Elite - Moduli Campagna Attiva",
-       "spend": 56.03,
+       "spend": 56.44,
        "leads": 2.0,
-       "cpl": 28.02,
-       "impressions": 3053.0,
-       "clicks": 58.0,
-       "cvr": 3.45,
-       "ctr": 1.899771,
-       "cpm": 18.35244,
-       "reach": 1693.0,
-       "frequency": 1.803308,
+       "cpl": 28.22,
+       "impressions": 3094.0,
+       "clicks": 61.0,
+       "link_clicks": 29.0,
+       "cvr": 6.9,
+       "ctr": 1.971558,
+       "cpm": 18.241758,
+       "reach": 1702.0,
+       "frequency": 1.817861,
        "attiva": true,
        "effective_status": "ACTIVE",
        "status": "ok",
-       "reason": "2 lead a CPL €28.02: sotto i 6 lead il CPL non stacca",
+       "reason": "2 lead a CPL €28.22: sotto i 6 lead il CPL non stacca",
        "sprecato": 0.0,
-       "flags": [
-        "solo 3.4% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": {
-        "spend": 56.03,
+        "spend": 56.44,
         "leads": 2.0,
-        "cpl": 28.02
+        "cpl": 28.22
        },
        "trend": 0.0
       },
@@ -1167,6 +1059,7 @@
        "cpl": null,
        "impressions": 2681.0,
        "clicks": 52.0,
+       "link_clicks": 28.0,
        "cvr": 0.0,
        "ctr": 1.939575,
        "cpm": 11.480791,
@@ -1177,9 +1070,7 @@
        "status": "kill",
        "reason": "€30.78 spesi e 0 lead: oltre il limite di €30",
        "sprecato": 0.78,
-       "flags": [
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": {
         "spend": 30.78,
         "leads": 0.0,
@@ -1197,6 +1088,7 @@
        "cpl": null,
        "impressions": 451.0,
        "clicks": 15.0,
+       "link_clicks": 6.0,
        "cvr": 0.0,
        "ctr": 3.325942,
        "cpm": 23.08204,
@@ -1217,15 +1109,16 @@
       }
      ],
      "vivo": {
-      "spend": 56.03,
+      "spend": 56.44,
       "leads": 2.0,
-      "clicks": 58.0,
-      "impressions": 3053.0,
-      "cpl": 28.02,
-      "cvr": 3.45,
-      "ctr": 1.9,
-      "recent_cpl": 28.02,
-      "recent_spend": 56.03,
+      "clicks": 61.0,
+      "link_clicks": 29.0,
+      "impressions": 3094.0,
+      "cpl": 28.22,
+      "cvr": 6.9,
+      "ctr": 1.97,
+      "recent_cpl": 28.22,
+      "recent_spend": 56.44,
       "recent_leads": 2.0
      },
      "n_ads": 3,
@@ -1234,12 +1127,12 @@
      "status": "ok",
      "reason": "inserzioni accese dentro i parametri",
      "flags": [
-      "solo 1.6% dei click diventa lead: modulo o landing da rivedere"
+      "solo 3.2% dei click al link diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 97.22,
+      "spend": 97.63,
       "leads": 2.0,
-      "cpl": 48.61
+      "cpl": 48.81
      },
      "trend": 0.0
     }
@@ -1257,24 +1150,26 @@
    "dal": "2026-01-01",
    "solo_nostre_dal": null,
    "currency": "EUR",
-   "spend": 985.58,
+   "spend": 986.31,
    "leads": 31.0,
-   "cpl": 31.79,
+   "cpl": 31.82,
    "sprecato": 0.0,
    "quota_sprecata": 0.0,
-   "impressions": 138226.0,
-   "clicks": 2317.0,
-   "cvr": 1.34,
+   "impressions": 138278.0,
+   "clicks": 2319.0,
+   "link_clicks": 1465.0,
+   "cvr": 2.12,
    "n_campagne": 14,
    "n_kill": 0,
    "n_kill_ancora_accese": 0,
    "brucia_oggi": 0,
    "vivo": {
-    "spend": 49.61,
+    "spend": 50.34,
     "leads": 3.0,
-    "cpl": 16.54,
-    "cvr": 3.12,
-    "recent_cpl": 16.54,
+    "cpl": 16.78,
+    "cvr": 5.26,
+    "link_clicks": 57.0,
+    "recent_cpl": 16.78,
     "n_creative": 1
    },
    "riallocazione": {
@@ -1287,16 +1182,17 @@
     {
      "id": "52616908898947",
      "name": "Moduli - Campagna Attiva",
-     "spend": 697.18,
+     "spend": 697.91,
      "leads": 20.0,
-     "cpl": 34.86,
-     "impressions": 95939.0,
-     "clicks": 1634.0,
-     "cvr": 1.22,
-     "ctr": 1.703166,
-     "cpm": 7.266909,
-     "reach": 30056.0,
-     "frequency": 3.192008,
+     "cpl": 34.9,
+     "impressions": 95991.0,
+     "clicks": 1636.0,
+     "link_clicks": 1004.0,
+     "cvr": 1.99,
+     "ctr": 1.704326,
+     "cpm": 7.270577,
+     "reach": 30064.0,
+     "frequency": 3.192889,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 15.0,
@@ -1306,28 +1202,27 @@
        "name": "Statica - Dispongo di € 100.000 per la pensione",
        "campaign_id": "52616908898947",
        "campaign_name": "Moduli - Campagna Attiva",
-       "spend": 49.61,
+       "spend": 50.34,
        "leads": 3.0,
-       "cpl": 16.54,
-       "impressions": 3572.0,
-       "clicks": 96.0,
-       "cvr": 3.12,
-       "ctr": 2.68757,
-       "cpm": 13.888578,
-       "reach": 2066.0,
-       "frequency": 1.728945,
+       "cpl": 16.78,
+       "impressions": 3624.0,
+       "clicks": 98.0,
+       "link_clicks": 57.0,
+       "cvr": 5.26,
+       "ctr": 2.704194,
+       "cpm": 13.890728,
+       "reach": 2085.0,
+       "frequency": 1.73813,
        "attiva": true,
        "effective_status": "ACTIVE",
        "status": "ok",
-       "reason": "3 lead a CPL €16.54: sotto i 6 lead il CPL non stacca",
+       "reason": "3 lead a CPL €16.78: sotto i 6 lead il CPL non stacca",
        "sprecato": 0.0,
-       "flags": [
-        "solo 3.1% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": {
-        "spend": 49.61,
+        "spend": 50.34,
         "leads": 3.0,
-        "cpl": 16.54
+        "cpl": 16.78
        },
        "trend": 0.0
       },
@@ -1341,7 +1236,8 @@
        "cpl": 18.24,
        "impressions": 13150.0,
        "clicks": 305.0,
-       "cvr": 1.97,
+       "link_clicks": 197.0,
+       "cvr": 3.05,
        "ctr": 2.319392,
        "cpm": 8.323954,
        "reach": 5762.0,
@@ -1352,7 +1248,7 @@
        "reason": "CPL €18.24: dentro i parametri",
        "sprecato": 0.0,
        "flags": [
-        "solo 2.0% dei click diventa lead: modulo o landing da rivedere"
+        "solo 3.0% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": {
         "spend": 12.32,
@@ -1371,7 +1267,8 @@
        "cpl": 17.08,
        "impressions": 13447.0,
        "clicks": 284.0,
-       "cvr": 2.11,
+       "link_clicks": 151.0,
+       "cvr": 3.97,
        "ctr": 2.111995,
        "cpm": 7.620287,
        "reach": 6242.0,
@@ -1382,7 +1279,7 @@
        "reason": "CPL €17.08: dentro i parametri",
        "sprecato": 0.0,
        "flags": [
-        "solo 2.1% dei click diventa lead: modulo o landing da rivedere"
+        "solo 4.0% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -1397,7 +1294,8 @@
        "cpl": 51.63,
        "impressions": 5597.0,
        "clicks": 101.0,
-       "cvr": 0.99,
+       "link_clicks": 84.0,
+       "cvr": 1.19,
        "ctr": 1.804538,
        "cpm": 9.224585,
        "reach": 2789.0,
@@ -1408,7 +1306,7 @@
        "reason": "1 solo lead a €51.63: oltre il limite di €50",
        "sprecato": 1.63,
        "flags": [
-        "solo 1.0% dei click diventa lead: modulo o landing da rivedere"
+        "solo 1.2% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": {
         "spend": 51.63,
@@ -1427,7 +1325,8 @@
        "cpl": 24.2,
        "impressions": 9898.0,
        "clicks": 133.0,
-       "cvr": 1.5,
+       "link_clicks": 84.0,
+       "cvr": 2.38,
        "ctr": 1.343706,
        "cpm": 4.889877,
        "reach": 4988.0,
@@ -1438,7 +1337,7 @@
        "reason": "2 lead a CPL €24.20: sotto i 6 lead il CPL non stacca",
        "sprecato": 0.0,
        "flags": [
-        "solo 1.5% dei click diventa lead: modulo o landing da rivedere"
+        "solo 2.4% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -1453,6 +1352,7 @@
        "cpl": null,
        "impressions": 4657.0,
        "clicks": 36.0,
+       "link_clicks": 22.0,
        "cvr": 0.0,
        "ctr": 0.77303,
        "cpm": 6.800515,
@@ -1464,8 +1364,7 @@
        "reason": "€31.67 spesi e 0 lead: oltre il limite di €30",
        "sprecato": 1.67,
        "flags": [
-        "CTR 0.77%: il creativo non ferma nessuno",
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
+        "CTR 0.77%: il creativo non ferma nessuno"
        ],
        "recent": null,
        "trend": null
@@ -1480,6 +1379,7 @@
        "cpl": null,
        "impressions": 4618.0,
        "clicks": 40.0,
+       "link_clicks": 16.0,
        "cvr": 0.0,
        "ctr": 0.866176,
        "cpm": 6.788653,
@@ -1491,8 +1391,7 @@
        "reason": "€31.35 spesi e 0 lead: oltre il limite di €30",
        "sprecato": 1.35,
        "flags": [
-        "CTR 0.87%: il creativo non ferma nessuno",
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
+        "CTR 0.87%: il creativo non ferma nessuno"
        ],
        "recent": null,
        "trend": null
@@ -1507,6 +1406,7 @@
        "cpl": null,
        "impressions": 2647.0,
        "clicks": 46.0,
+       "link_clicks": 33.0,
        "cvr": 0.0,
        "ctr": 1.737816,
        "cpm": 11.828485,
@@ -1518,7 +1418,7 @@
        "reason": "€31.31 spesi e 0 lead: oltre il limite di €30",
        "sprecato": 1.31,
        "flags": [
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
+        "solo 0.0% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -1533,6 +1433,7 @@
        "cpl": null,
        "impressions": 5601.0,
        "clicks": 70.0,
+       "link_clicks": 36.0,
        "cvr": 0.0,
        "ctr": 1.249777,
        "cpm": 5.48652,
@@ -1544,7 +1445,7 @@
        "reason": "€30.73 spesi e 0 lead: oltre il limite di €30",
        "sprecato": 0.73,
        "flags": [
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
+        "solo 0.0% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -1559,6 +1460,7 @@
        "cpl": null,
        "impressions": 5469.0,
        "clicks": 70.0,
+       "link_clicks": 47.0,
        "cvr": 0.0,
        "ctr": 1.279941,
        "cpm": 5.492777,
@@ -1570,7 +1472,7 @@
        "reason": "€30.04 spesi e 0 lead: oltre il limite di €30",
        "sprecato": 0.04,
        "flags": [
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
+        "solo 0.0% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -1585,7 +1487,8 @@
        "cpl": 14.8,
        "impressions": 6825.0,
        "clicks": 92.0,
-       "cvr": 2.17,
+       "link_clicks": 53.0,
+       "cvr": 3.77,
        "ctr": 1.347985,
        "cpm": 4.336996,
        "reach": 3924.0,
@@ -1596,7 +1499,7 @@
        "reason": "2 lead a CPL €14.80: sotto i 6 lead il CPL non stacca",
        "sprecato": 0.0,
        "flags": [
-        "solo 2.2% dei click diventa lead: modulo o landing da rivedere"
+        "solo 3.8% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -1611,6 +1514,7 @@
        "cpl": null,
        "impressions": 4522.0,
        "clicks": 60.0,
+       "link_clicks": 51.0,
        "cvr": 0.0,
        "ctr": 1.326847,
        "cpm": 6.329058,
@@ -1622,7 +1526,7 @@
        "reason": "€28.62 spesi e 0 lead: mancano €1.38 allo stacco",
        "sprecato": 0.0,
        "flags": [
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
+        "solo 0.0% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -1637,6 +1541,7 @@
        "cpl": null,
        "impressions": 5008.0,
        "clicks": 68.0,
+       "link_clicks": 37.0,
        "cvr": 0.0,
        "ctr": 1.357827,
        "cpm": 5.714856,
@@ -1648,7 +1553,7 @@
        "reason": "€28.62 spesi e 0 lead: mancano €1.38 allo stacco",
        "sprecato": 0.0,
        "flags": [
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
+        "solo 0.0% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -1663,6 +1568,7 @@
        "cpl": null,
        "impressions": 2791.0,
        "clicks": 71.0,
+       "link_clicks": 45.0,
        "cvr": 0.0,
        "ctr": 2.543891,
        "cpm": 10.150484,
@@ -1674,7 +1580,7 @@
        "reason": "€28.33 spesi e 0 lead: mancano €1.67 allo stacco",
        "sprecato": 0.0,
        "flags": [
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
+        "solo 0.0% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -1689,6 +1595,7 @@
        "cpl": null,
        "impressions": 2744.0,
        "clicks": 44.0,
+       "link_clicks": 31.0,
        "cvr": 0.0,
        "ctr": 1.603499,
        "cpm": 9.781341,
@@ -1700,7 +1607,7 @@
        "reason": "€26.84 spesi e 0 lead: mancano €3.16 allo stacco",
        "sprecato": 0.0,
        "flags": [
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
+        "solo 0.0% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -1715,6 +1622,7 @@
        "cpl": null,
        "impressions": 3705.0,
        "clicks": 47.0,
+       "link_clicks": 32.0,
        "cvr": 0.0,
        "ctr": 1.268556,
        "cpm": 6.510121,
@@ -1726,7 +1634,7 @@
        "reason": "€24.12 spesi e 0 lead: mancano €5.88 allo stacco",
        "sprecato": 0.0,
        "flags": [
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
+        "solo 0.0% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -1741,6 +1649,7 @@
        "cpl": null,
        "impressions": 1686.0,
        "clicks": 71.0,
+       "link_clicks": 28.0,
        "cvr": 0.0,
        "ctr": 4.211151,
        "cpm": 8.523132,
@@ -1751,9 +1660,7 @@
        "status": "watch",
        "reason": "€14.37 spesi e 0 lead: mancano €15.63 allo stacco",
        "sprecato": 0.0,
-       "flags": [
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": null,
        "trend": null
       },
@@ -1767,6 +1674,7 @@
        "cpl": null,
        "impressions": 2.0,
        "clicks": 0.0,
+       "link_clicks": 0.0,
        "cvr": null,
        "ctr": 0.0,
        "cpm": 5.0,
@@ -1783,15 +1691,16 @@
       }
      ],
      "vivo": {
-      "spend": 49.61,
+      "spend": 50.34,
       "leads": 3.0,
-      "clicks": 96.0,
-      "impressions": 3572.0,
-      "cpl": 16.54,
-      "cvr": 3.12,
-      "ctr": 2.69,
-      "recent_cpl": 16.54,
-      "recent_spend": 49.61,
+      "clicks": 98.0,
+      "link_clicks": 57.0,
+      "impressions": 3624.0,
+      "cpl": 16.78,
+      "cvr": 5.26,
+      "ctr": 2.7,
+      "recent_cpl": 16.78,
+      "recent_spend": 50.34,
       "recent_leads": 3.0
      },
      "n_ads": 18,
@@ -1801,14 +1710,14 @@
      "reason": "inserzioni accese dentro i parametri",
      "flags": [
       "frequenza 3.2: pubblico bruciato, cambia audience",
-      "solo 1.2% dei click diventa lead: modulo o landing da rivedere"
+      "solo 2.0% dei click al link diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 113.56,
+      "spend": 114.29,
       "leads": 4.0,
-      "cpl": 28.39
+      "cpl": 28.57
      },
-     "trend": -6.47
+     "trend": -6.33
     },
     {
      "id": "52605999729747",
@@ -1818,7 +1727,8 @@
      "cpl": 12.12,
      "impressions": 12752.0,
      "clicks": 193.0,
-     "cvr": 3.11,
+     "link_clicks": 133.0,
+     "cvr": 4.51,
      "ctr": 1.513488,
      "cpm": 5.701067,
      "reach": 6898.0,
@@ -1837,7 +1747,8 @@
        "cpl": 12.12,
        "impressions": 12752.0,
        "clicks": 193.0,
-       "cvr": 3.11,
+       "link_clicks": 133.0,
+       "cvr": 4.51,
        "ctr": 1.513488,
        "cpm": 5.701067,
        "reach": 6898.0,
@@ -1847,9 +1758,7 @@
        "status": "ok",
        "reason": "CPL €12.12: dentro i parametri",
        "sprecato": 0.0,
-       "flags": [
-        "solo 3.1% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": null,
        "trend": null
       }
@@ -1860,9 +1769,7 @@
      "sprecato": 0,
      "status": "ok",
      "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
-     "flags": [
-      "solo 3.1% dei click diventa lead: modulo o landing da rivedere"
-     ],
+     "flags": [],
      "recent": null,
      "trend": null
     },
@@ -1874,7 +1781,8 @@
      "cpl": 47.81,
      "impressions": 5770.0,
      "clicks": 123.0,
-     "cvr": 0.81,
+     "link_clicks": 68.0,
+     "cvr": 1.47,
      "ctr": 2.131716,
      "cpm": 8.285962,
      "reach": 3631.0,
@@ -1893,7 +1801,8 @@
        "cpl": 47.81,
        "impressions": 5770.0,
        "clicks": 123.0,
-       "cvr": 0.81,
+       "link_clicks": 68.0,
+       "cvr": 1.47,
        "ctr": 2.131716,
        "cpm": 8.285962,
        "reach": 3631.0,
@@ -1904,7 +1813,7 @@
        "reason": "1 lead a €47.81: si lascia girare, ma entro €50 (mancano €2.19) deve arrivare il 2° lead, cioe' CPL sotto €25",
        "sprecato": 0.0,
        "flags": [
-        "solo 0.8% dei click diventa lead: modulo o landing da rivedere"
+        "solo 1.5% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -1917,7 +1826,7 @@
      "status": "ok",
      "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
      "flags": [
-      "solo 0.8% dei click diventa lead: modulo o landing da rivedere"
+      "solo 1.5% dei click al link diventa lead: modulo o landing da rivedere"
      ],
      "recent": null,
      "trend": null
@@ -1930,7 +1839,8 @@
      "cpl": 22.58,
      "impressions": 3006.0,
      "clicks": 40.0,
-     "cvr": 2.5,
+     "link_clicks": 33.0,
+     "cvr": 3.03,
      "ctr": 1.330672,
      "cpm": 7.511643,
      "reach": 1737.0,
@@ -1949,7 +1859,8 @@
        "cpl": 22.58,
        "impressions": 3006.0,
        "clicks": 40.0,
-       "cvr": 2.5,
+       "link_clicks": 33.0,
+       "cvr": 3.03,
        "ctr": 1.330672,
        "cpm": 7.511643,
        "reach": 1737.0,
@@ -1960,7 +1871,7 @@
        "reason": "1 lead a €22.58: si lascia girare, ma entro €50 (mancano €27.42) deve arrivare il 2° lead, cioe' CPL sotto €25",
        "sprecato": 0.0,
        "flags": [
-        "solo 2.5% dei click diventa lead: modulo o landing da rivedere"
+        "solo 3.0% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -1973,7 +1884,7 @@
      "status": "ok",
      "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
      "flags": [
-      "solo 2.5% dei click diventa lead: modulo o landing da rivedere"
+      "solo 3.0% dei click al link diventa lead: modulo o landing da rivedere"
      ],
      "recent": null,
      "trend": null
@@ -1986,7 +1897,8 @@
      "cpl": 22.28,
      "impressions": 3262.0,
      "clicks": 66.0,
-     "cvr": 1.52,
+     "link_clicks": 40.0,
+     "cvr": 2.5,
      "ctr": 2.023299,
      "cpm": 6.830166,
      "reach": 2111.0,
@@ -2005,7 +1917,8 @@
        "cpl": 22.28,
        "impressions": 3262.0,
        "clicks": 66.0,
-       "cvr": 1.52,
+       "link_clicks": 40.0,
+       "cvr": 2.5,
        "ctr": 2.023299,
        "cpm": 6.830166,
        "reach": 2111.0,
@@ -2016,7 +1929,7 @@
        "reason": "1 lead a €22.28: si lascia girare, ma entro €50 (mancano €27.72) deve arrivare il 2° lead, cioe' CPL sotto €25",
        "sprecato": 0.0,
        "flags": [
-        "solo 1.5% dei click diventa lead: modulo o landing da rivedere"
+        "solo 2.5% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -2029,7 +1942,7 @@
      "status": "ok",
      "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
      "flags": [
-      "solo 1.5% dei click diventa lead: modulo o landing da rivedere"
+      "solo 2.5% dei click al link diventa lead: modulo o landing da rivedere"
      ],
      "recent": null,
      "trend": null
@@ -2042,7 +1955,8 @@
      "cpl": 22.11,
      "impressions": 2699.0,
      "clicks": 33.0,
-     "cvr": 3.03,
+     "link_clicks": 19.0,
+     "cvr": 5.26,
      "ctr": 1.222675,
      "cpm": 8.191923,
      "reach": 1604.0,
@@ -2061,7 +1975,8 @@
        "cpl": 22.11,
        "impressions": 2699.0,
        "clicks": 33.0,
-       "cvr": 3.03,
+       "link_clicks": 19.0,
+       "cvr": 5.26,
        "ctr": 1.222675,
        "cpm": 8.191923,
        "reach": 1604.0,
@@ -2071,9 +1986,7 @@
        "status": "early",
        "reason": "1 lead a €22.11: si lascia girare, ma entro €50 (mancano €27.89) deve arrivare il 2° lead, cioe' CPL sotto €25",
        "sprecato": 0.0,
-       "flags": [
-        "solo 3.0% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": null,
        "trend": null
       }
@@ -2084,9 +1997,7 @@
      "sprecato": 0,
      "status": "ok",
      "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
-     "flags": [
-      "solo 3.0% dei click diventa lead: modulo o landing da rivedere"
-     ],
+     "flags": [],
      "recent": null,
      "trend": null
     },
@@ -2098,6 +2009,7 @@
      "cpl": null,
      "impressions": 2897.0,
      "clicks": 39.0,
+     "link_clicks": 25.0,
      "cvr": 0.0,
      "ctr": 1.34622,
      "cpm": 6.882982,
@@ -2117,6 +2029,7 @@
        "cpl": null,
        "impressions": 2897.0,
        "clicks": 39.0,
+       "link_clicks": 25.0,
        "cvr": 0.0,
        "ctr": 1.34622,
        "cpm": 6.882982,
@@ -2127,9 +2040,7 @@
        "status": "watch",
        "reason": "€19.94 spesi e 0 lead: mancano €10.06 allo stacco",
        "sprecato": 0.0,
-       "flags": [
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": null,
        "trend": null
       }
@@ -2140,9 +2051,7 @@
      "sprecato": 0,
      "status": "ok",
      "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
-     "flags": [
-      "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-     ],
+     "flags": [],
      "recent": null,
      "trend": null
     },
@@ -2154,6 +2063,7 @@
      "cpl": null,
      "impressions": 1735.0,
      "clicks": 44.0,
+     "link_clicks": 25.0,
      "cvr": 0.0,
      "ctr": 2.536023,
      "cpm": 8.766571,
@@ -2173,6 +2083,7 @@
        "cpl": null,
        "impressions": 1735.0,
        "clicks": 44.0,
+       "link_clicks": 25.0,
        "cvr": 0.0,
        "ctr": 2.536023,
        "cpm": 8.766571,
@@ -2183,9 +2094,7 @@
        "status": "watch",
        "reason": "€15.21 spesi e 0 lead: mancano €14.79 allo stacco",
        "sprecato": 0.0,
-       "flags": [
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": null,
        "trend": null
       }
@@ -2196,9 +2105,7 @@
      "sprecato": 0,
      "status": "ok",
      "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
-     "flags": [
-      "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-     ],
+     "flags": [],
      "recent": null,
      "trend": null
     },
@@ -2210,6 +2117,7 @@
      "cpl": null,
      "impressions": 2635.0,
      "clicks": 34.0,
+     "link_clicks": 30.0,
      "cvr": 0.0,
      "ctr": 1.290323,
      "cpm": 5.734345,
@@ -2229,6 +2137,7 @@
        "cpl": null,
        "impressions": 2635.0,
        "clicks": 34.0,
+       "link_clicks": 30.0,
        "cvr": 0.0,
        "ctr": 1.290323,
        "cpm": 5.734345,
@@ -2240,7 +2149,7 @@
        "reason": "€15.11 spesi e 0 lead: mancano €14.89 allo stacco",
        "sprecato": 0.0,
        "flags": [
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
+        "solo 0.0% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -2253,7 +2162,7 @@
      "status": "ok",
      "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
      "flags": [
-      "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
+      "solo 0.0% dei click al link diventa lead: modulo o landing da rivedere"
      ],
      "recent": null,
      "trend": null
@@ -2266,6 +2175,7 @@
      "cpl": null,
      "impressions": 2025.0,
      "clicks": 29.0,
+     "link_clicks": 23.0,
      "cvr": 0.0,
      "ctr": 1.432099,
      "cpm": 7.422222,
@@ -2285,6 +2195,7 @@
        "cpl": null,
        "impressions": 2025.0,
        "clicks": 29.0,
+       "link_clicks": 23.0,
        "cvr": 0.0,
        "ctr": 1.432099,
        "cpm": 7.422222,
@@ -2318,6 +2229,7 @@
      "cpl": null,
      "impressions": 2376.0,
      "clicks": 27.0,
+     "link_clicks": 23.0,
      "cvr": 0.0,
      "ctr": 1.136364,
      "cpm": 6.25,
@@ -2337,6 +2249,7 @@
        "cpl": null,
        "impressions": 2376.0,
        "clicks": 27.0,
+       "link_clicks": 23.0,
        "cvr": 0.0,
        "ctr": 1.136364,
        "cpm": 6.25,
@@ -2370,7 +2283,8 @@
      "cpl": 7.48,
      "impressions": 1282.0,
      "clicks": 30.0,
-     "cvr": 3.33,
+     "link_clicks": 20.0,
+     "cvr": 5.0,
      "ctr": 2.340094,
      "cpm": 5.834633,
      "reach": 993.0,
@@ -2389,7 +2303,8 @@
        "cpl": 7.48,
        "impressions": 1282.0,
        "clicks": 30.0,
-       "cvr": 3.33,
+       "link_clicks": 20.0,
+       "cvr": 5.0,
        "ctr": 2.340094,
        "cpm": 5.834633,
        "reach": 993.0,
@@ -2399,9 +2314,7 @@
        "status": "early",
        "reason": "1 lead a €7.48: si lascia girare, ma entro €50 (mancano €42.52) deve arrivare il 2° lead, cioe' CPL sotto €25",
        "sprecato": 0.0,
-       "flags": [
-        "solo 3.3% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": null,
        "trend": null
       }
@@ -2412,9 +2325,7 @@
      "sprecato": 0,
      "status": "ok",
      "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
-     "flags": [
-      "solo 3.3% dei click diventa lead: modulo o landing da rivedere"
-     ],
+     "flags": [],
      "recent": null,
      "trend": null
     },
@@ -2426,6 +2337,7 @@
      "cpl": null,
      "impressions": 1007.0,
      "clicks": 13.0,
+     "link_clicks": 13.0,
      "cvr": 0.0,
      "ctr": 1.290963,
      "cpm": 7.298908,
@@ -2445,6 +2357,7 @@
        "cpl": null,
        "impressions": 1007.0,
        "clicks": 13.0,
+       "link_clicks": 13.0,
        "cvr": 0.0,
        "ctr": 1.290963,
        "cpm": 7.298908,
@@ -2478,6 +2391,7 @@
      "cpl": null,
      "impressions": 841.0,
      "clicks": 12.0,
+     "link_clicks": 9.0,
      "cvr": 0.0,
      "ctr": 1.426873,
      "cpm": 7.074911,
@@ -2497,6 +2411,7 @@
        "cpl": null,
        "impressions": 841.0,
        "clicks": 12.0,
+       "link_clicks": 9.0,
        "cvr": 0.0,
        "ctr": 1.426873,
        "cpm": 7.074911,
@@ -2536,29 +2451,31 @@
    "dal": "2026-01-01",
    "solo_nostre_dal": null,
    "currency": "EUR",
-   "spend": 335.53,
+   "spend": 335.94,
    "leads": 23.0,
-   "cpl": 14.59,
+   "cpl": 14.61,
    "sprecato": 0.0,
    "quota_sprecata": 0.0,
-   "impressions": 24293.0,
-   "clicks": 434.0,
-   "cvr": 5.3,
+   "impressions": 24334.0,
+   "clicks": 437.0,
+   "link_clicks": 276.0,
+   "cvr": 8.33,
    "n_campagne": 1,
    "n_kill": 0,
    "n_kill_ancora_accese": 0,
    "brucia_oggi": 0,
    "vivo": {
-    "spend": 39.36,
+    "spend": 39.77,
     "leads": 7.0,
-    "cpl": 5.62,
-    "cvr": 9.46,
-    "recent_cpl": 5.62,
+    "cpl": 5.68,
+    "cvr": 18.42,
+    "link_clicks": 38.0,
+    "recent_cpl": 5.68,
     "n_creative": 1
    },
    "riallocazione": {
     "budget_da_spostare": 0,
-    "cpl_vincente": 14.59,
+    "cpl_vincente": 14.61,
     "lead_prudente": 0,
     "lead_ottimistico": 0
    },
@@ -2566,16 +2483,17 @@
     {
      "id": "52607805236816",
      "name": "Moduli AI Elite - Campagna Attiva",
-     "spend": 335.53,
+     "spend": 335.94,
      "leads": 23.0,
-     "cpl": 14.59,
-     "impressions": 24293.0,
-     "clicks": 434.0,
-     "cvr": 5.3,
-     "ctr": 1.786523,
-     "cpm": 13.811798,
-     "reach": 8866.0,
-     "frequency": 2.740018,
+     "cpl": 14.61,
+     "impressions": 24334.0,
+     "clicks": 437.0,
+     "link_clicks": 276.0,
+     "cvr": 8.33,
+     "ctr": 1.795841,
+     "cpm": 13.805375,
+     "reach": 8876.0,
+     "frequency": 2.74155,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 15.0,
@@ -2585,26 +2503,27 @@
        "name": "Statica - Dispongo di € 100.000 per la pensione",
        "campaign_id": "52607805236816",
        "campaign_name": "Moduli AI Elite - Campagna Attiva",
-       "spend": 39.36,
+       "spend": 39.77,
        "leads": 7.0,
-       "cpl": 5.62,
-       "impressions": 2594.0,
-       "clicks": 74.0,
-       "cvr": 9.46,
-       "ctr": 2.852737,
-       "cpm": 15.173477,
-       "reach": 1357.0,
-       "frequency": 1.91157,
+       "cpl": 5.68,
+       "impressions": 2635.0,
+       "clicks": 77.0,
+       "link_clicks": 38.0,
+       "cvr": 18.42,
+       "ctr": 2.922201,
+       "cpm": 15.092979,
+       "reach": 1372.0,
+       "frequency": 1.920554,
        "attiva": true,
        "effective_status": "ACTIVE",
        "status": "winner",
-       "reason": "CPL €5.62: sotto €10, ci si mette budget",
+       "reason": "CPL €5.68: sotto €10, ci si mette budget",
        "sprecato": 0.0,
        "flags": [],
        "recent": {
-        "spend": 39.36,
+        "spend": 39.77,
         "leads": 7.0,
-        "cpl": 5.62
+        "cpl": 5.68
        },
        "trend": 0.0
       },
@@ -2618,7 +2537,8 @@
        "cpl": 14.73,
        "impressions": 15742.0,
        "clicks": 250.0,
-       "cvr": 6.0,
+       "link_clicks": 173.0,
+       "cvr": 8.67,
        "ctr": 1.588108,
        "cpm": 14.036336,
        "reach": 6302.0,
@@ -2646,7 +2566,8 @@
        "cpl": 48.69,
        "impressions": 3589.0,
        "clicks": 75.0,
-       "cvr": 1.33,
+       "link_clicks": 39.0,
+       "cvr": 2.56,
        "ctr": 2.089719,
        "cpm": 13.566453,
        "reach": 2051.0,
@@ -2657,7 +2578,7 @@
        "reason": "1 lead a €48.69: si lascia girare, ma entro €50 (mancano €1.31) deve arrivare il 2° lead, cioe' CPL sotto €25",
        "sprecato": 0.0,
        "flags": [
-        "solo 1.3% dei click diventa lead: modulo o landing da rivedere"
+        "solo 2.6% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -2672,6 +2593,7 @@
        "cpl": null,
        "impressions": 2368.0,
        "clicks": 35.0,
+       "link_clicks": 26.0,
        "cvr": 0.0,
        "ctr": 1.478041,
        "cpm": 11.199324,
@@ -2682,9 +2604,7 @@
        "status": "watch",
        "reason": "€26.52 spesi e 0 lead: mancano €3.48 allo stacco",
        "sprecato": 0.0,
-       "flags": [
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": {
         "spend": 26.52,
         "leads": 0.0,
@@ -2694,15 +2614,16 @@
       }
      ],
      "vivo": {
-      "spend": 39.36,
+      "spend": 39.77,
       "leads": 7.0,
-      "clicks": 74.0,
-      "impressions": 2594.0,
-      "cpl": 5.62,
-      "cvr": 9.46,
-      "ctr": 2.85,
-      "recent_cpl": 5.62,
-      "recent_spend": 39.36,
+      "clicks": 77.0,
+      "link_clicks": 38.0,
+      "impressions": 2635.0,
+      "cpl": 5.68,
+      "cvr": 18.42,
+      "ctr": 2.92,
+      "recent_cpl": 5.68,
+      "recent_spend": 39.77,
       "recent_leads": 7.0
      },
      "n_ads": 4,
@@ -2714,11 +2635,11 @@
       "frequenza 2.7: pubblico bruciato, cambia audience"
      ],
      "recent": {
-      "spend": 108.7,
+      "spend": 109.11,
       "leads": 10.0,
-      "cpl": 10.87
+      "cpl": 10.91
      },
-     "trend": -3.72
+     "trend": -3.7
     }
    ],
    "hiring": {
@@ -2734,24 +2655,26 @@
    "dal": "2026-09-17",
    "solo_nostre_dal": "2026-09-17",
    "currency": "EUR",
-   "spend": 356.65,
+   "spend": 358.34,
    "leads": 15.0,
-   "cpl": 23.78,
+   "cpl": 23.89,
    "sprecato": 0.0,
    "quota_sprecata": 0.0,
-   "impressions": 35168.0,
-   "clicks": 484.0,
-   "cvr": 3.1,
+   "impressions": 35382.0,
+   "clicks": 485.0,
+   "link_clicks": 267.0,
+   "cvr": 5.62,
    "n_campagne": 1,
    "n_kill": 0,
    "n_kill_ancora_accese": 0,
    "brucia_oggi": 0,
    "vivo": {
-    "spend": 147.79,
+    "spend": 149.61,
     "leads": 9.0,
-    "cpl": 16.42,
-    "cvr": 4.84,
-    "recent_cpl": 44.98,
+    "cpl": 16.62,
+    "cvr": 8.91,
+    "link_clicks": 101.0,
+    "recent_cpl": 46.8,
     "n_creative": 1
    },
    "riallocazione": {
@@ -2764,16 +2687,17 @@
     {
      "id": "120247578608830476",
      "name": "Moduli AI ELITE - Campagna Attiva",
-     "spend": 356.65,
+     "spend": 358.34,
      "leads": 15.0,
-     "cpl": 23.78,
-     "impressions": 35168.0,
-     "clicks": 484.0,
-     "cvr": 3.1,
-     "ctr": 1.376251,
-     "cpm": 10.141322,
-     "reach": 9612.0,
-     "frequency": 3.65876,
+     "cpl": 23.89,
+     "impressions": 35382.0,
+     "clicks": 485.0,
+     "link_clicks": 267.0,
+     "cvr": 5.62,
+     "ctr": 1.370753,
+     "cpm": 10.127749,
+     "reach": 9682.0,
+     "frequency": 3.65441,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 15.0,
@@ -2783,28 +2707,29 @@
        "name": "Statica - Liquidità ferma e inflazione",
        "campaign_id": "120247578608830476",
        "campaign_name": "Moduli AI ELITE - Campagna Attiva",
-       "spend": 147.79,
+       "spend": 149.61,
        "leads": 9.0,
-       "cpl": 16.42,
-       "impressions": 13970.0,
-       "clicks": 186.0,
-       "cvr": 4.84,
-       "ctr": 1.331424,
-       "cpm": 10.579098,
-       "reach": 5907.0,
-       "frequency": 2.364991,
+       "cpl": 16.62,
+       "impressions": 14186.0,
+       "clicks": 187.0,
+       "link_clicks": 101.0,
+       "cvr": 8.91,
+       "ctr": 1.318201,
+       "cpm": 10.546313,
+       "reach": 5973.0,
+       "frequency": 2.375021,
        "attiva": true,
        "effective_status": "ACTIVE",
        "status": "ok",
-       "reason": "CPL €16.42: dentro i parametri",
+       "reason": "CPL €16.62: dentro i parametri",
        "sprecato": 0.0,
        "flags": [],
        "recent": {
-        "spend": 44.98,
+        "spend": 46.8,
         "leads": 1.0,
-        "cpl": 44.98
+        "cpl": 46.8
        },
-       "trend": 28.56
+       "trend": 30.18
       },
       {
        "id": "120247578608850476",
@@ -2816,7 +2741,8 @@
        "cpl": 25.27,
        "impressions": 12217.0,
        "clicks": 166.0,
-       "cvr": 2.41,
+       "link_clicks": 97.0,
+       "cvr": 4.12,
        "ctr": 1.358762,
        "cpm": 8.272898,
        "reach": 5049.0,
@@ -2826,9 +2752,7 @@
        "status": "ok",
        "reason": "4 lead a CPL €25.27: sotto i 6 lead il CPL non stacca",
        "sprecato": 0.0,
-       "flags": [
-        "solo 2.4% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": null,
        "trend": null
       },
@@ -2842,7 +2766,8 @@
        "cpl": 24.95,
        "impressions": 3769.0,
        "clicks": 44.0,
-       "cvr": 4.55,
+       "link_clicks": 29.0,
+       "cvr": 6.9,
        "ctr": 1.167418,
        "cpm": 13.242239,
        "reach": 2095.0,
@@ -2870,6 +2795,7 @@
        "cpl": null,
        "impressions": 2841.0,
        "clicks": 58.0,
+       "link_clicks": 21.0,
        "cvr": 0.0,
        "ctr": 2.041535,
        "cpm": 10.436466,
@@ -2880,9 +2806,7 @@
        "status": "watch",
        "reason": "€29.65 spesi e 0 lead: mancano €0.35 allo stacco",
        "sprecato": 0.0,
-       "flags": [
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": {
         "spend": 29.65,
         "leads": 0.0,
@@ -2900,6 +2824,7 @@
        "cpl": null,
        "impressions": 2371.0,
        "clicks": 30.0,
+       "link_clicks": 19.0,
        "cvr": 0.0,
        "ctr": 1.265289,
        "cpm": 11.906369,
@@ -2910,23 +2835,22 @@
        "status": "watch",
        "reason": "€28.23 spesi e 0 lead: mancano €1.77 allo stacco",
        "sprecato": 0.0,
-       "flags": [
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": null,
        "trend": null
       }
      ],
      "vivo": {
-      "spend": 147.79,
+      "spend": 149.61,
       "leads": 9.0,
-      "clicks": 186.0,
-      "impressions": 13970.0,
-      "cpl": 16.42,
-      "cvr": 4.84,
-      "ctr": 1.33,
-      "recent_cpl": 44.98,
-      "recent_spend": 44.98,
+      "clicks": 187.0,
+      "link_clicks": 101.0,
+      "impressions": 14186.0,
+      "cpl": 16.62,
+      "cvr": 8.91,
+      "ctr": 1.32,
+      "recent_cpl": 46.8,
+      "recent_spend": 46.8,
       "recent_leads": 1.0
      },
      "n_ads": 5,
@@ -2935,15 +2859,14 @@
      "status": "ok",
      "reason": "inserzioni accese dentro i parametri",
      "flags": [
-      "frequenza 3.7: pubblico bruciato, cambia audience",
-      "solo 3.1% dei click diventa lead: modulo o landing da rivedere"
+      "frequenza 3.7: pubblico bruciato, cambia audience"
      ],
      "recent": {
-      "spend": 109.49,
+      "spend": 111.18,
       "leads": 2.0,
-      "cpl": 54.74
+      "cpl": 55.59
      },
-     "trend": 30.96
+     "trend": 31.7
     }
    ],
    "hiring": {
@@ -2959,24 +2882,26 @@
    "dal": "2026-01-01",
    "solo_nostre_dal": null,
    "currency": "EUR",
-   "spend": 1169.52,
+   "spend": 1170.44,
    "leads": 39.0,
-   "cpl": 29.99,
+   "cpl": 30.01,
    "sprecato": 0.0,
    "quota_sprecata": 0.0,
-   "impressions": 152666.0,
-   "clicks": 2348.0,
-   "cvr": 1.66,
+   "impressions": 152727.0,
+   "clicks": 2349.0,
+   "link_clicks": 1214.0,
+   "cvr": 3.21,
    "n_campagne": 24,
    "n_kill": 0,
    "n_kill_ancora_accese": 0,
    "brucia_oggi": 0,
    "vivo": {
-    "spend": 369.81,
+    "spend": 370.73,
     "leads": 24.0,
-    "cpl": 15.41,
-    "cvr": 2.53,
-    "recent_cpl": 19.26,
+    "cpl": 15.45,
+    "cvr": 6.82,
+    "link_clicks": 352.0,
+    "recent_cpl": 19.41,
     "n_creative": 1
    },
    "riallocazione": {
@@ -2989,16 +2914,17 @@
     {
      "id": "120253921757410427",
      "name": "Moduli - Campagna Attiva",
-     "spend": 672.08,
+     "spend": 673.0,
      "leads": 29.0,
-     "cpl": 23.18,
-     "impressions": 86840.0,
-     "clicks": 1466.0,
-     "cvr": 1.98,
-     "ctr": 1.688162,
-     "cpm": 7.739291,
+     "cpl": 23.21,
+     "impressions": 86901.0,
+     "clicks": 1467.0,
+     "link_clicks": 603.0,
+     "cvr": 4.81,
+     "ctr": 1.688128,
+     "cpm": 7.744445,
      "reach": 24337.0,
-     "frequency": 3.568229,
+     "frequency": 3.570736,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 15.0,
@@ -3008,31 +2934,31 @@
        "name": "Statica - Quando andrai in pensione?",
        "campaign_id": "120253921757410427",
        "campaign_name": "Moduli - Campagna Attiva",
-       "spend": 369.81,
+       "spend": 370.73,
        "leads": 24.0,
-       "cpl": 15.41,
-       "impressions": 45753.0,
-       "clicks": 948.0,
-       "cvr": 2.53,
-       "ctr": 2.071995,
-       "cpm": 8.082749,
+       "cpl": 15.45,
+       "impressions": 45814.0,
+       "clicks": 949.0,
+       "link_clicks": 352.0,
+       "cvr": 6.82,
+       "ctr": 2.071419,
+       "cpm": 8.092068,
        "reach": 13308.0,
-       "frequency": 3.438007,
+       "frequency": 3.442591,
        "attiva": true,
        "effective_status": "ACTIVE",
        "status": "ok",
-       "reason": "CPL €15.41: dentro i parametri",
+       "reason": "CPL €15.45: dentro i parametri",
        "sprecato": 0.0,
        "flags": [
-        "frequenza 3.4: pubblico bruciato, cambia audience",
-        "solo 2.5% dei click diventa lead: modulo o landing da rivedere"
+        "frequenza 3.4: pubblico bruciato, cambia audience"
        ],
        "recent": {
-        "spend": 115.57,
+        "spend": 116.49,
         "leads": 6.0,
-        "cpl": 19.26
+        "cpl": 19.41
        },
-       "trend": 3.85
+       "trend": 3.96
       },
       {
        "id": "120254183991120427",
@@ -3044,7 +2970,8 @@
        "cpl": 23.91,
        "impressions": 10017.0,
        "clicks": 131.0,
-       "cvr": 2.29,
+       "link_clicks": 51.0,
+       "cvr": 5.88,
        "ctr": 1.307777,
        "cpm": 7.160827,
        "reach": 5301.0,
@@ -3054,9 +2981,7 @@
        "status": "ok",
        "reason": "3 lead a CPL €23.91: sotto i 6 lead il CPL non stacca",
        "sprecato": 0.0,
-       "flags": [
-        "solo 2.3% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": null,
        "trend": null
       },
@@ -3070,7 +2995,8 @@
        "cpl": 51.58,
        "impressions": 4483.0,
        "clicks": 104.0,
-       "cvr": 0.96,
+       "link_clicks": 32.0,
+       "cvr": 3.12,
        "ctr": 2.319875,
        "cpm": 11.505688,
        "reach": 2053.0,
@@ -3081,7 +3007,7 @@
        "reason": "1 solo lead a €51.58: oltre il limite di €50",
        "sprecato": 1.58,
        "flags": [
-        "solo 1.0% dei click diventa lead: modulo o landing da rivedere"
+        "solo 3.1% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -3096,7 +3022,8 @@
        "cpl": 50.98,
        "impressions": 9331.0,
        "clicks": 87.0,
-       "cvr": 1.15,
+       "link_clicks": 62.0,
+       "cvr": 1.61,
        "ctr": 0.932376,
        "cpm": 5.463509,
        "reach": 5052.0,
@@ -3108,7 +3035,7 @@
        "sprecato": 0.98,
        "flags": [
         "CTR 0.93%: il creativo non ferma nessuno",
-        "solo 1.1% dei click diventa lead: modulo o landing da rivedere"
+        "solo 1.6% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -3123,6 +3050,7 @@
        "cpl": null,
        "impressions": 3981.0,
        "clicks": 37.0,
+       "link_clicks": 20.0,
        "cvr": 0.0,
        "ctr": 0.929415,
        "cpm": 8.487817,
@@ -3134,8 +3062,7 @@
        "reason": "€33.79 spesi e 0 lead: oltre il limite di €30",
        "sprecato": 3.79,
        "flags": [
-        "CTR 0.93%: il creativo non ferma nessuno",
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
+        "CTR 0.93%: il creativo non ferma nessuno"
        ],
        "recent": null,
        "trend": null
@@ -3150,6 +3077,7 @@
        "cpl": null,
        "impressions": 4377.0,
        "clicks": 45.0,
+       "link_clicks": 23.0,
        "cvr": 0.0,
        "ctr": 1.028101,
        "cpm": 7.02536,
@@ -3160,9 +3088,7 @@
        "status": "kill",
        "reason": "€30.75 spesi e 0 lead: oltre il limite di €30",
        "sprecato": 0.75,
-       "flags": [
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": null,
        "trend": null
       },
@@ -3176,6 +3102,7 @@
        "cpl": null,
        "impressions": 3745.0,
        "clicks": 56.0,
+       "link_clicks": 26.0,
        "cvr": 0.0,
        "ctr": 1.495327,
        "cpm": 7.449933,
@@ -3186,9 +3113,7 @@
        "status": "watch",
        "reason": "€27.90 spesi e 0 lead: mancano €2.10 allo stacco",
        "sprecato": 0.0,
-       "flags": [
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": null,
        "trend": null
       },
@@ -3202,6 +3127,7 @@
        "cpl": null,
        "impressions": 3563.0,
        "clicks": 35.0,
+       "link_clicks": 23.0,
        "cvr": 0.0,
        "ctr": 0.982318,
        "cpm": 6.98288,
@@ -3213,8 +3139,7 @@
        "reason": "€24.88 spesi e 0 lead: mancano €5.12 allo stacco",
        "sprecato": 0.0,
        "flags": [
-        "CTR 0.98%: il creativo non ferma nessuno",
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
+        "CTR 0.98%: il creativo non ferma nessuno"
        ],
        "recent": null,
        "trend": null
@@ -3229,6 +3154,7 @@
        "cpl": null,
        "impressions": 1590.0,
        "clicks": 23.0,
+       "link_clicks": 14.0,
        "cvr": 0.0,
        "ctr": 1.446541,
        "cpm": 6.704403,
@@ -3245,15 +3171,16 @@
       }
      ],
      "vivo": {
-      "spend": 369.81,
+      "spend": 370.73,
       "leads": 24.0,
-      "clicks": 948.0,
-      "impressions": 45753.0,
-      "cpl": 15.41,
-      "cvr": 2.53,
+      "clicks": 949.0,
+      "link_clicks": 352.0,
+      "impressions": 45814.0,
+      "cpl": 15.45,
+      "cvr": 6.82,
       "ctr": 2.07,
-      "recent_cpl": 19.26,
-      "recent_spend": 115.57,
+      "recent_cpl": 19.41,
+      "recent_spend": 116.49,
       "recent_leads": 6.0
      },
      "n_ads": 9,
@@ -3262,15 +3189,14 @@
      "status": "ok",
      "reason": "inserzioni accese dentro i parametri",
      "flags": [
-      "frequenza 3.6: pubblico bruciato, cambia audience",
-      "solo 2.0% dei click diventa lead: modulo o landing da rivedere"
+      "frequenza 3.6: pubblico bruciato, cambia audience"
      ],
      "recent": {
-      "spend": 115.57,
+      "spend": 116.49,
       "leads": 6.0,
-      "cpl": 19.26
+      "cpl": 19.41
      },
-     "trend": -3.92
+     "trend": -3.8
     },
     {
      "id": "120253809545780427",
@@ -3280,7 +3206,8 @@
      "cpl": 28.85,
      "impressions": 8932.0,
      "clicks": 115.0,
-     "cvr": 2.61,
+     "link_clicks": 55.0,
+     "cvr": 5.45,
      "ctr": 1.287506,
      "cpm": 9.689879,
      "reach": 4199.0,
@@ -3299,7 +3226,8 @@
        "cpl": 28.85,
        "impressions": 8932.0,
        "clicks": 115.0,
-       "cvr": 2.61,
+       "link_clicks": 55.0,
+       "cvr": 5.45,
        "ctr": 1.287506,
        "cpm": 9.689879,
        "reach": 4199.0,
@@ -3309,9 +3237,7 @@
        "status": "ok",
        "reason": "3 lead a CPL €28.85: sotto i 6 lead il CPL non stacca",
        "sprecato": 0.0,
-       "flags": [
-        "solo 2.6% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": null,
        "trend": null
       }
@@ -3322,9 +3248,7 @@
      "sprecato": 0,
      "status": "ok",
      "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
-     "flags": [
-      "solo 2.6% dei click diventa lead: modulo o landing da rivedere"
-     ],
+     "flags": [],
      "recent": null,
      "trend": null
     },
@@ -3336,7 +3260,8 @@
      "cpl": 41.78,
      "impressions": 6218.0,
      "clicks": 73.0,
-     "cvr": 1.37,
+     "link_clicks": 55.0,
+     "cvr": 1.82,
      "ctr": 1.174011,
      "cpm": 6.719202,
      "reach": 2759.0,
@@ -3355,7 +3280,8 @@
        "cpl": 41.78,
        "impressions": 6218.0,
        "clicks": 73.0,
-       "cvr": 1.37,
+       "link_clicks": 55.0,
+       "cvr": 1.82,
        "ctr": 1.174011,
        "cpm": 6.719202,
        "reach": 2759.0,
@@ -3366,7 +3292,7 @@
        "reason": "1 lead a €41.78: si lascia girare, ma entro €50 (mancano €8.22) deve arrivare il 2° lead, cioe' CPL sotto €25",
        "sprecato": 0.0,
        "flags": [
-        "solo 1.4% dei click diventa lead: modulo o landing da rivedere"
+        "solo 1.8% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -3379,7 +3305,7 @@
      "status": "ok",
      "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
      "flags": [
-      "solo 1.4% dei click diventa lead: modulo o landing da rivedere"
+      "solo 1.8% dei click al link diventa lead: modulo o landing da rivedere"
      ],
      "recent": null,
      "trend": null
@@ -3392,6 +3318,7 @@
      "cpl": null,
      "impressions": 2960.0,
      "clicks": 69.0,
+     "link_clicks": 40.0,
      "cvr": 0.0,
      "ctr": 2.331081,
      "cpm": 11.361486,
@@ -3411,6 +3338,7 @@
        "cpl": null,
        "impressions": 2960.0,
        "clicks": 69.0,
+       "link_clicks": 40.0,
        "cvr": 0.0,
        "ctr": 2.331081,
        "cpm": 11.361486,
@@ -3422,7 +3350,7 @@
        "reason": "€33.63 spesi e 0 lead: oltre il limite di €30",
        "sprecato": 3.63,
        "flags": [
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
+        "solo 0.0% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -3435,7 +3363,7 @@
      "status": "ok",
      "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
      "flags": [
-      "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
+      "solo 0.0% dei click al link diventa lead: modulo o landing da rivedere"
      ],
      "recent": null,
      "trend": null
@@ -3448,7 +3376,8 @@
      "cpl": 23.12,
      "impressions": 4021.0,
      "clicks": 50.0,
-     "cvr": 2.0,
+     "link_clicks": 41.0,
+     "cvr": 2.44,
      "ctr": 1.243472,
      "cpm": 5.749813,
      "reach": 2690.0,
@@ -3467,7 +3396,8 @@
        "cpl": 23.12,
        "impressions": 4021.0,
        "clicks": 50.0,
-       "cvr": 2.0,
+       "link_clicks": 41.0,
+       "cvr": 2.44,
        "ctr": 1.243472,
        "cpm": 5.749813,
        "reach": 2690.0,
@@ -3478,7 +3408,7 @@
        "reason": "1 lead a €23.12: si lascia girare, ma entro €50 (mancano €26.88) deve arrivare il 2° lead, cioe' CPL sotto €25",
        "sprecato": 0.0,
        "flags": [
-        "solo 2.0% dei click diventa lead: modulo o landing da rivedere"
+        "solo 2.4% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -3491,7 +3421,7 @@
      "status": "ok",
      "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
      "flags": [
-      "solo 2.0% dei click diventa lead: modulo o landing da rivedere"
+      "solo 2.4% dei click al link diventa lead: modulo o landing da rivedere"
      ],
      "recent": null,
      "trend": null
@@ -3504,7 +3434,8 @@
      "cpl": 23.05,
      "impressions": 2949.0,
      "clicks": 34.0,
-     "cvr": 2.94,
+     "link_clicks": 23.0,
+     "cvr": 4.35,
      "ctr": 1.152933,
      "cpm": 7.816209,
      "reach": 2044.0,
@@ -3523,7 +3454,8 @@
        "cpl": 23.05,
        "impressions": 2949.0,
        "clicks": 34.0,
-       "cvr": 2.94,
+       "link_clicks": 23.0,
+       "cvr": 4.35,
        "ctr": 1.152933,
        "cpm": 7.816209,
        "reach": 2044.0,
@@ -3533,9 +3465,7 @@
        "status": "early",
        "reason": "1 lead a €23.05: si lascia girare, ma entro €50 (mancano €26.95) deve arrivare il 2° lead, cioe' CPL sotto €25",
        "sprecato": 0.0,
-       "flags": [
-        "solo 2.9% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": null,
        "trend": null
       }
@@ -3546,9 +3476,7 @@
      "sprecato": 0,
      "status": "ok",
      "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
-     "flags": [
-      "solo 2.9% dei click diventa lead: modulo o landing da rivedere"
-     ],
+     "flags": [],
      "recent": null,
      "trend": null
     },
@@ -3560,7 +3488,8 @@
      "cpl": 22.46,
      "impressions": 2585.0,
      "clicks": 22.0,
-     "cvr": 4.55,
+     "link_clicks": 17.0,
+     "cvr": 5.88,
      "ctr": 0.851064,
      "cpm": 8.688588,
      "reach": 1817.0,
@@ -3579,7 +3508,8 @@
        "cpl": 22.46,
        "impressions": 2585.0,
        "clicks": 22.0,
-       "cvr": 4.55,
+       "link_clicks": 17.0,
+       "cvr": 5.88,
        "ctr": 0.851064,
        "cpm": 8.688588,
        "reach": 1817.0,
@@ -3616,7 +3546,8 @@
      "cpl": 22.4,
      "impressions": 3028.0,
      "clicks": 62.0,
-     "cvr": 1.61,
+     "link_clicks": 34.0,
+     "cvr": 2.94,
      "ctr": 2.047556,
      "cpm": 7.397622,
      "reach": 2018.0,
@@ -3635,7 +3566,8 @@
        "cpl": 22.4,
        "impressions": 3028.0,
        "clicks": 62.0,
-       "cvr": 1.61,
+       "link_clicks": 34.0,
+       "cvr": 2.94,
        "ctr": 2.047556,
        "cpm": 7.397622,
        "reach": 2018.0,
@@ -3646,7 +3578,7 @@
        "reason": "1 lead a €22.40: si lascia girare, ma entro €50 (mancano €27.60) deve arrivare il 2° lead, cioe' CPL sotto €25",
        "sprecato": 0.0,
        "flags": [
-        "solo 1.6% dei click diventa lead: modulo o landing da rivedere"
+        "solo 2.9% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -3659,7 +3591,7 @@
      "status": "ok",
      "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
      "flags": [
-      "solo 1.6% dei click diventa lead: modulo o landing da rivedere"
+      "solo 2.9% dei click al link diventa lead: modulo o landing da rivedere"
      ],
      "recent": null,
      "trend": null
@@ -3672,7 +3604,8 @@
      "cpl": 22.3,
      "impressions": 3144.0,
      "clicks": 53.0,
-     "cvr": 1.89,
+     "link_clicks": 40.0,
+     "cvr": 2.5,
      "ctr": 1.685751,
      "cpm": 7.092875,
      "reach": 2099.0,
@@ -3691,7 +3624,8 @@
        "cpl": 22.3,
        "impressions": 3144.0,
        "clicks": 53.0,
-       "cvr": 1.89,
+       "link_clicks": 40.0,
+       "cvr": 2.5,
        "ctr": 1.685751,
        "cpm": 7.092875,
        "reach": 2099.0,
@@ -3702,7 +3636,7 @@
        "reason": "1 lead a €22.30: si lascia girare, ma entro €50 (mancano €27.70) deve arrivare il 2° lead, cioe' CPL sotto €25",
        "sprecato": 0.0,
        "flags": [
-        "solo 1.9% dei click diventa lead: modulo o landing da rivedere"
+        "solo 2.5% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -3715,7 +3649,7 @@
      "status": "ok",
      "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
      "flags": [
-      "solo 1.9% dei click diventa lead: modulo o landing da rivedere"
+      "solo 2.5% dei click al link diventa lead: modulo o landing da rivedere"
      ],
      "recent": null,
      "trend": null
@@ -3728,6 +3662,7 @@
      "cpl": null,
      "impressions": 2073.0,
      "clicks": 18.0,
+     "link_clicks": 10.0,
      "cvr": 0.0,
      "ctr": 0.868307,
      "cpm": 10.347323,
@@ -3747,6 +3682,7 @@
        "cpl": null,
        "impressions": 2073.0,
        "clicks": 18.0,
+       "link_clicks": 10.0,
        "cvr": 0.0,
        "ctr": 0.868307,
        "cpm": 10.347323,
@@ -3784,7 +3720,8 @@
      "cpl": 20.93,
      "impressions": 3572.0,
      "clicks": 43.0,
-     "cvr": 2.33,
+     "link_clicks": 35.0,
+     "cvr": 2.86,
      "ctr": 1.203807,
      "cpm": 5.859462,
      "reach": 2622.0,
@@ -3803,7 +3740,8 @@
        "cpl": 20.93,
        "impressions": 3572.0,
        "clicks": 43.0,
-       "cvr": 2.33,
+       "link_clicks": 35.0,
+       "cvr": 2.86,
        "ctr": 1.203807,
        "cpm": 5.859462,
        "reach": 2622.0,
@@ -3814,7 +3752,7 @@
        "reason": "1 lead a €20.93: si lascia girare, ma entro €50 (mancano €29.07) deve arrivare il 2° lead, cioe' CPL sotto €25",
        "sprecato": 0.0,
        "flags": [
-        "solo 2.3% dei click diventa lead: modulo o landing da rivedere"
+        "solo 2.9% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -3827,7 +3765,7 @@
      "status": "ok",
      "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
      "flags": [
-      "solo 2.3% dei click diventa lead: modulo o landing da rivedere"
+      "solo 2.9% dei click al link diventa lead: modulo o landing da rivedere"
      ],
      "recent": null,
      "trend": null
@@ -3840,6 +3778,7 @@
      "cpl": null,
      "impressions": 2682.0,
      "clicks": 33.0,
+     "link_clicks": 22.0,
      "cvr": 0.0,
      "ctr": 1.230425,
      "cpm": 6.510067,
@@ -3859,6 +3798,7 @@
        "cpl": null,
        "impressions": 2682.0,
        "clicks": 33.0,
+       "link_clicks": 22.0,
        "cvr": 0.0,
        "ctr": 1.230425,
        "cpm": 6.510067,
@@ -3869,9 +3809,7 @@
        "status": "watch",
        "reason": "€17.46 spesi e 0 lead: mancano €12.54 allo stacco",
        "sprecato": 0.0,
-       "flags": [
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": null,
        "trend": null
       }
@@ -3882,9 +3820,7 @@
      "sprecato": 0,
      "status": "ok",
      "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
-     "flags": [
-      "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-     ],
+     "flags": [],
      "recent": null,
      "trend": null
     },
@@ -3896,6 +3832,7 @@
      "cpl": null,
      "impressions": 1732.0,
      "clicks": 23.0,
+     "link_clicks": 18.0,
      "cvr": 0.0,
      "ctr": 1.327945,
      "cpm": 9.191686,
@@ -3915,6 +3852,7 @@
        "cpl": null,
        "impressions": 1732.0,
        "clicks": 23.0,
+       "link_clicks": 18.0,
        "cvr": 0.0,
        "ctr": 1.327945,
        "cpm": 9.191686,
@@ -3948,6 +3886,7 @@
      "cpl": null,
      "impressions": 2051.0,
      "clicks": 26.0,
+     "link_clicks": 21.0,
      "cvr": 0.0,
      "ctr": 1.267674,
      "cpm": 7.610922,
@@ -3967,6 +3906,7 @@
        "cpl": null,
        "impressions": 2051.0,
        "clicks": 26.0,
+       "link_clicks": 21.0,
        "cvr": 0.0,
        "ctr": 1.267674,
        "cpm": 7.610922,
@@ -4000,6 +3940,7 @@
      "cpl": null,
      "impressions": 2598.0,
      "clicks": 36.0,
+     "link_clicks": 25.0,
      "cvr": 0.0,
      "ctr": 1.385681,
      "cpm": 5.904542,
@@ -4019,6 +3960,7 @@
        "cpl": null,
        "impressions": 2598.0,
        "clicks": 36.0,
+       "link_clicks": 25.0,
        "cvr": 0.0,
        "ctr": 1.385681,
        "cpm": 5.904542,
@@ -4029,9 +3971,7 @@
        "status": "watch",
        "reason": "€15.34 spesi e 0 lead: mancano €14.66 allo stacco",
        "sprecato": 0.0,
-       "flags": [
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": null,
        "trend": null
       }
@@ -4042,9 +3982,7 @@
      "sprecato": 0,
      "status": "ok",
      "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
-     "flags": [
-      "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-     ],
+     "flags": [],
      "recent": null,
      "trend": null
     },
@@ -4056,6 +3994,7 @@
      "cpl": null,
      "impressions": 2722.0,
      "clicks": 32.0,
+     "link_clicks": 22.0,
      "cvr": 0.0,
      "ctr": 1.175606,
      "cpm": 5.635562,
@@ -4075,6 +4014,7 @@
        "cpl": null,
        "impressions": 2722.0,
        "clicks": 32.0,
+       "link_clicks": 22.0,
        "cvr": 0.0,
        "ctr": 1.175606,
        "cpm": 5.635562,
@@ -4085,9 +4025,7 @@
        "status": "watch",
        "reason": "€15.34 spesi e 0 lead: mancano €14.66 allo stacco",
        "sprecato": 0.0,
-       "flags": [
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": null,
        "trend": null
       }
@@ -4098,9 +4036,7 @@
      "sprecato": 0,
      "status": "ok",
      "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
-     "flags": [
-      "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-     ],
+     "flags": [],
      "recent": null,
      "trend": null
     },
@@ -4112,6 +4048,7 @@
      "cpl": null,
      "impressions": 2447.0,
      "clicks": 42.0,
+     "link_clicks": 35.0,
      "cvr": 0.0,
      "ctr": 1.716387,
      "cpm": 6.248468,
@@ -4131,6 +4068,7 @@
        "cpl": null,
        "impressions": 2447.0,
        "clicks": 42.0,
+       "link_clicks": 35.0,
        "cvr": 0.0,
        "ctr": 1.716387,
        "cpm": 6.248468,
@@ -4142,7 +4080,7 @@
        "reason": "€15.29 spesi e 0 lead: mancano €14.71 allo stacco",
        "sprecato": 0.0,
        "flags": [
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
+        "solo 0.0% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -4155,7 +4093,7 @@
      "status": "ok",
      "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
      "flags": [
-      "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
+      "solo 0.0% dei click al link diventa lead: modulo o landing da rivedere"
      ],
      "recent": null,
      "trend": null
@@ -4168,6 +4106,7 @@
      "cpl": null,
      "impressions": 2262.0,
      "clicks": 33.0,
+     "link_clicks": 26.0,
      "cvr": 0.0,
      "ctr": 1.458886,
      "cpm": 6.697613,
@@ -4187,6 +4126,7 @@
        "cpl": null,
        "impressions": 2262.0,
        "clicks": 33.0,
+       "link_clicks": 26.0,
        "cvr": 0.0,
        "ctr": 1.458886,
        "cpm": 6.697613,
@@ -4197,9 +4137,7 @@
        "status": "watch",
        "reason": "€15.15 spesi e 0 lead: mancano €14.85 allo stacco",
        "sprecato": 0.0,
-       "flags": [
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": null,
        "trend": null
       }
@@ -4210,9 +4148,7 @@
      "sprecato": 0,
      "status": "ok",
      "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
-     "flags": [
-      "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-     ],
+     "flags": [],
      "recent": null,
      "trend": null
     },
@@ -4224,6 +4160,7 @@
      "cpl": null,
      "impressions": 2262.0,
      "clicks": 28.0,
+     "link_clicks": 21.0,
      "cvr": 0.0,
      "ctr": 1.237843,
      "cpm": 6.671088,
@@ -4243,6 +4180,7 @@
        "cpl": null,
        "impressions": 2262.0,
        "clicks": 28.0,
+       "link_clicks": 21.0,
        "cvr": 0.0,
        "ctr": 1.237843,
        "cpm": 6.671088,
@@ -4276,6 +4214,7 @@
      "cpl": null,
      "impressions": 1305.0,
      "clicks": 17.0,
+     "link_clicks": 13.0,
      "cvr": 0.0,
      "ctr": 1.302682,
      "cpm": 11.532567,
@@ -4295,6 +4234,7 @@
        "cpl": null,
        "impressions": 1305.0,
        "clicks": 17.0,
+       "link_clicks": 13.0,
        "cvr": 0.0,
        "ctr": 1.302682,
        "cpm": 11.532567,
@@ -4328,6 +4268,7 @@
      "cpl": null,
      "impressions": 2200.0,
      "clicks": 23.0,
+     "link_clicks": 18.0,
      "cvr": 0.0,
      "ctr": 1.045455,
      "cpm": 6.822727,
@@ -4347,6 +4288,7 @@
        "cpl": null,
        "impressions": 2200.0,
        "clicks": 23.0,
+       "link_clicks": 18.0,
        "cvr": 0.0,
        "ctr": 1.045455,
        "cpm": 6.822727,
@@ -4380,6 +4322,7 @@
      "cpl": null,
      "impressions": 2364.0,
      "clicks": 24.0,
+     "link_clicks": 19.0,
      "cvr": 0.0,
      "ctr": 1.015228,
      "cpm": 5.791032,
@@ -4399,6 +4342,7 @@
        "cpl": null,
        "impressions": 2364.0,
        "clicks": 24.0,
+       "link_clicks": 19.0,
        "cvr": 0.0,
        "ctr": 1.015228,
        "cpm": 5.791032,
@@ -4432,6 +4376,7 @@
      "cpl": null,
      "impressions": 1087.0,
      "clicks": 19.0,
+     "link_clicks": 14.0,
      "cvr": 0.0,
      "ctr": 1.74793,
      "cpm": 5.832567,
@@ -4451,6 +4396,7 @@
        "cpl": null,
        "impressions": 1087.0,
        "clicks": 19.0,
+       "link_clicks": 14.0,
        "cvr": 0.0,
        "ctr": 1.74793,
        "cpm": 5.832567,
@@ -4484,6 +4430,7 @@
      "cpl": null,
      "impressions": 632.0,
      "clicks": 7.0,
+     "link_clicks": 7.0,
      "cvr": 0.0,
      "ctr": 1.107595,
      "cpm": 7.088608,
@@ -4503,6 +4450,7 @@
        "cpl": null,
        "impressions": 632.0,
        "clicks": 7.0,
+       "link_clicks": 7.0,
        "cvr": 0.0,
        "ctr": 1.107595,
        "cpm": 7.088608,
@@ -4542,24 +4490,26 @@
    "dal": "2026-01-01",
    "solo_nostre_dal": null,
    "currency": "EUR",
-   "spend": 679.48,
+   "spend": 679.77,
    "leads": 21.0,
-   "cpl": 32.36,
+   "cpl": 32.37,
    "sprecato": 0.0,
    "quota_sprecata": 0.0,
-   "impressions": 68878.0,
+   "impressions": 68925.0,
    "clicks": 1439.0,
-   "cvr": 1.46,
+   "link_clicks": 680.0,
+   "cvr": 3.09,
    "n_campagne": 1,
    "n_kill": 0,
    "n_kill_ancora_accese": 0,
    "brucia_oggi": 0,
    "vivo": {
-    "spend": 35.68,
+    "spend": 35.97,
     "leads": 3.0,
-    "cpl": 11.89,
-    "cvr": 1.43,
-    "recent_cpl": 11.89,
+    "cpl": 11.99,
+    "cvr": 4.84,
+    "link_clicks": 62.0,
+    "recent_cpl": 11.99,
     "n_creative": 1
    },
    "riallocazione": {
@@ -4572,16 +4522,17 @@
     {
      "id": "120255864019140012",
      "name": "Moduli - Campagna Principale Attiva",
-     "spend": 679.48,
+     "spend": 679.77,
      "leads": 21.0,
-     "cpl": 32.36,
-     "impressions": 68878.0,
+     "cpl": 32.37,
+     "impressions": 68925.0,
      "clicks": 1439.0,
-     "cvr": 1.46,
-     "ctr": 2.089201,
-     "cpm": 9.864979,
+     "link_clicks": 680.0,
+     "cvr": 3.09,
+     "ctr": 2.087777,
+     "cpm": 9.862459,
      "reach": 19720.0,
-     "frequency": 3.492799,
+     "frequency": 3.495183,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 15.0,
@@ -4591,28 +4542,27 @@
        "name": "Statica - 100.000€ alle Poste",
        "campaign_id": "120255864019140012",
        "campaign_name": "Moduli - Campagna Principale Attiva",
-       "spend": 35.68,
+       "spend": 35.97,
        "leads": 3.0,
-       "cpl": 11.89,
-       "impressions": 4648.0,
+       "cpl": 11.99,
+       "impressions": 4695.0,
        "clicks": 210.0,
-       "cvr": 1.43,
-       "ctr": 4.518072,
-       "cpm": 7.67642,
-       "reach": 2429.0,
-       "frequency": 1.913545,
+       "link_clicks": 62.0,
+       "cvr": 4.84,
+       "ctr": 4.472843,
+       "cpm": 7.661342,
+       "reach": 2432.0,
+       "frequency": 1.93051,
        "attiva": true,
        "effective_status": "ACTIVE",
        "status": "ok",
-       "reason": "3 lead a CPL €11.89: sotto i 6 lead il CPL non stacca",
+       "reason": "3 lead a CPL €11.99: sotto i 6 lead il CPL non stacca",
        "sprecato": 0.0,
-       "flags": [
-        "solo 1.4% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": {
-        "spend": 35.68,
+        "spend": 35.97,
         "leads": 3.0,
-        "cpl": 11.89
+        "cpl": 11.99
        },
        "trend": 0.0
       },
@@ -4626,7 +4576,8 @@
        "cpl": 22.94,
        "impressions": 6164.0,
        "clicks": 168.0,
-       "cvr": 1.79,
+       "link_clicks": 75.0,
+       "cvr": 4.0,
        "ctr": 2.725503,
        "cpm": 11.163206,
        "reach": 4226.0,
@@ -4636,9 +4587,7 @@
        "status": "ok",
        "reason": "3 lead a CPL €22.94: sotto i 6 lead il CPL non stacca",
        "sprecato": 0.0,
-       "flags": [
-        "solo 1.8% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": null,
        "trend": null
       },
@@ -4652,7 +4601,8 @@
        "cpl": 34.27,
        "impressions": 5768.0,
        "clicks": 115.0,
-       "cvr": 1.74,
+       "link_clicks": 51.0,
+       "cvr": 3.92,
        "ctr": 1.993759,
        "cpm": 11.884535,
        "reach": 2879.0,
@@ -4663,7 +4613,7 @@
        "reason": "2 lead a CPL €34.27: sotto i 6 lead il CPL non stacca",
        "sprecato": 0.0,
        "flags": [
-        "solo 1.7% dei click diventa lead: modulo o landing da rivedere"
+        "solo 3.9% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -4678,7 +4628,8 @@
        "cpl": 30.39,
        "impressions": 7694.0,
        "clicks": 93.0,
-       "cvr": 2.15,
+       "link_clicks": 41.0,
+       "cvr": 4.88,
        "ctr": 1.208734,
        "cpm": 7.899662,
        "reach": 3719.0,
@@ -4688,9 +4639,7 @@
        "status": "ok",
        "reason": "2 lead a CPL €30.39: sotto i 6 lead il CPL non stacca",
        "sprecato": 0.0,
-       "flags": [
-        "solo 2.2% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": null,
        "trend": null
       },
@@ -4704,7 +4653,8 @@
        "cpl": 29.39,
        "impressions": 4856.0,
        "clicks": 135.0,
-       "cvr": 1.48,
+       "link_clicks": 55.0,
+       "cvr": 3.64,
        "ctr": 2.780066,
        "cpm": 12.106672,
        "reach": 2748.0,
@@ -4715,7 +4665,7 @@
        "reason": "2 lead a CPL €29.39: sotto i 6 lead il CPL non stacca",
        "sprecato": 0.0,
        "flags": [
-        "solo 1.5% dei click diventa lead: modulo o landing da rivedere"
+        "solo 3.6% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": {
         "spend": 31.01,
@@ -4734,7 +4684,8 @@
        "cpl": 27.29,
        "impressions": 7134.0,
        "clicks": 108.0,
-       "cvr": 1.85,
+       "link_clicks": 52.0,
+       "cvr": 3.85,
        "ctr": 1.513877,
        "cpm": 7.649285,
        "reach": 3415.0,
@@ -4745,7 +4696,7 @@
        "reason": "2 lead a CPL €27.29: sotto i 6 lead il CPL non stacca",
        "sprecato": 0.0,
        "flags": [
-        "solo 1.9% dei click diventa lead: modulo o landing da rivedere"
+        "solo 3.8% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -4760,7 +4711,8 @@
        "cpl": 51.17,
        "impressions": 3936.0,
        "clicks": 104.0,
-       "cvr": 0.96,
+       "link_clicks": 59.0,
+       "cvr": 1.69,
        "ctr": 2.642276,
        "cpm": 13.000508,
        "reach": 1840.0,
@@ -4771,7 +4723,7 @@
        "reason": "1 solo lead a €51.17: oltre il limite di €50",
        "sprecato": 1.17,
        "flags": [
-        "solo 1.0% dei click diventa lead: modulo o landing da rivedere"
+        "solo 1.7% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -4786,7 +4738,8 @@
        "cpl": 50.19,
        "impressions": 4598.0,
        "clicks": 62.0,
-       "cvr": 1.61,
+       "link_clicks": 51.0,
+       "cvr": 1.96,
        "ctr": 1.348412,
        "cpm": 10.915615,
        "reach": 2565.0,
@@ -4797,7 +4750,7 @@
        "reason": "1 solo lead a €50.19: oltre il limite di €50",
        "sprecato": 0.19,
        "flags": [
-        "solo 1.6% dei click diventa lead: modulo o landing da rivedere"
+        "solo 2.0% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -4812,7 +4765,8 @@
        "cpl": 22.78,
        "impressions": 5430.0,
        "clicks": 84.0,
-       "cvr": 2.38,
+       "link_clicks": 36.0,
+       "cvr": 5.56,
        "ctr": 1.546961,
        "cpm": 8.390424,
        "reach": 3130.0,
@@ -4822,9 +4776,7 @@
        "status": "ok",
        "reason": "2 lead a CPL €22.78: sotto i 6 lead il CPL non stacca",
        "sprecato": 0.0,
-       "flags": [
-        "solo 2.4% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": null,
        "trend": null
       },
@@ -4838,6 +4790,7 @@
        "cpl": null,
        "impressions": 2748.0,
        "clicks": 30.0,
+       "link_clicks": 26.0,
        "cvr": 0.0,
        "ctr": 1.091703,
        "cpm": 11.448326,
@@ -4848,9 +4801,7 @@
        "status": "kill",
        "reason": "€31.46 spesi e 0 lead: oltre il limite di €30",
        "sprecato": 1.46,
-       "flags": [
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": {
         "spend": 31.46,
         "leads": 0.0,
@@ -4868,6 +4819,7 @@
        "cpl": null,
        "impressions": 2053.0,
        "clicks": 29.0,
+       "link_clicks": 19.0,
        "cvr": 0.0,
        "ctr": 1.412567,
        "cpm": 15.304433,
@@ -4892,6 +4844,7 @@
        "cpl": null,
        "impressions": 3724.0,
        "clicks": 59.0,
+       "link_clicks": 24.0,
        "cvr": 0.0,
        "ctr": 1.584318,
        "cpm": 8.243824,
@@ -4902,9 +4855,7 @@
        "status": "kill",
        "reason": "€30.70 spesi e 0 lead: oltre il limite di €30",
        "sprecato": 0.7,
-       "flags": [
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": null,
        "trend": null
       },
@@ -4918,6 +4869,7 @@
        "cpl": null,
        "impressions": 2578.0,
        "clicks": 60.0,
+       "link_clicks": 36.0,
        "cvr": 0.0,
        "ctr": 2.327386,
        "cpm": 11.889061,
@@ -4929,7 +4881,7 @@
        "reason": "€30.65 spesi e 0 lead: oltre il limite di €30",
        "sprecato": 0.65,
        "flags": [
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
+        "solo 0.0% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -4944,6 +4896,7 @@
        "cpl": null,
        "impressions": 3701.0,
        "clicks": 92.0,
+       "link_clicks": 38.0,
        "cvr": 0.0,
        "ctr": 2.485815,
        "cpm": 7.981627,
@@ -4955,7 +4908,7 @@
        "reason": "€29.54 spesi e 0 lead: mancano €0.46 allo stacco",
        "sprecato": 0.0,
        "flags": [
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
+        "solo 0.0% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -4970,7 +4923,8 @@
        "cpl": 7.37,
        "impressions": 2219.0,
        "clicks": 42.0,
-       "cvr": 7.14,
+       "link_clicks": 22.0,
+       "cvr": 13.64,
        "ctr": 1.892744,
        "cpm": 9.959441,
        "reach": 1275.0,
@@ -4994,6 +4948,7 @@
        "cpl": null,
        "impressions": 1627.0,
        "clicks": 48.0,
+       "link_clicks": 33.0,
        "cvr": 0.0,
        "ctr": 2.950215,
        "cpm": 5.845114,
@@ -5005,22 +4960,23 @@
        "reason": "€9.51 spesi e 0 lead: mancano €20.49 allo stacco",
        "sprecato": 0.0,
        "flags": [
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
+        "solo 0.0% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
       }
      ],
      "vivo": {
-      "spend": 35.68,
+      "spend": 35.97,
       "leads": 3.0,
       "clicks": 210.0,
-      "impressions": 4648.0,
-      "cpl": 11.89,
-      "cvr": 1.43,
-      "ctr": 4.52,
-      "recent_cpl": 11.89,
-      "recent_spend": 35.68,
+      "link_clicks": 62.0,
+      "impressions": 4695.0,
+      "cpl": 11.99,
+      "cvr": 4.84,
+      "ctr": 4.47,
+      "recent_cpl": 11.99,
+      "recent_spend": 35.97,
       "recent_leads": 3.0
      },
      "n_ads": 16,
@@ -5030,14 +4986,14 @@
      "reason": "inserzioni accese dentro i parametri",
      "flags": [
       "frequenza 3.5: pubblico bruciato, cambia audience",
-      "solo 1.5% dei click diventa lead: modulo o landing da rivedere"
+      "solo 3.1% dei click al link diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 98.15,
+      "spend": 98.44,
       "leads": 4.0,
-      "cpl": 24.54
+      "cpl": 24.61
      },
-     "trend": -7.82
+     "trend": -7.76
     }
    ],
    "hiring": {
@@ -5053,24 +5009,26 @@
    "dal": "2026-01-01",
    "solo_nostre_dal": null,
    "currency": "EUR",
-   "spend": 90.49,
+   "spend": 91.2,
    "leads": 5.0,
-   "cpl": 18.1,
+   "cpl": 18.24,
    "sprecato": 0.0,
    "quota_sprecata": 0.0,
-   "impressions": 6867.0,
-   "clicks": 121.0,
-   "cvr": 4.13,
+   "impressions": 6938.0,
+   "clicks": 122.0,
+   "link_clicks": 58.0,
+   "cvr": 8.62,
    "n_campagne": 1,
    "n_kill": 0,
    "n_kill_ancora_accese": 0,
    "brucia_oggi": 0,
    "vivo": {
-    "spend": 90.49,
+    "spend": 91.2,
     "leads": 5.0,
-    "cpl": 18.1,
-    "cvr": 4.13,
-    "recent_cpl": 18.1,
+    "cpl": 18.24,
+    "cvr": 8.62,
+    "link_clicks": 58.0,
+    "recent_cpl": 18.24,
     "n_creative": 1
    },
    "riallocazione": {
@@ -5083,16 +5041,17 @@
     {
      "id": "120250104054800497",
      "name": "AI Elite - Moduli - Campagna Attiva",
-     "spend": 90.49,
+     "spend": 91.2,
      "leads": 5.0,
-     "cpl": 18.1,
-     "impressions": 6867.0,
-     "clicks": 121.0,
-     "cvr": 4.13,
-     "ctr": 1.76205,
-     "cpm": 13.177516,
-     "reach": 3169.0,
-     "frequency": 2.16693,
+     "cpl": 18.24,
+     "impressions": 6938.0,
+     "clicks": 122.0,
+     "link_clicks": 58.0,
+     "cvr": 8.62,
+     "ctr": 1.758432,
+     "cpm": 13.144999,
+     "reach": 3204.0,
+     "frequency": 2.165418,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 15.0,
@@ -5102,40 +5061,42 @@
        "name": "Statica - Dispongo di 100.000€",
        "campaign_id": "120250104054800497",
        "campaign_name": "AI Elite - Moduli - Campagna Attiva",
-       "spend": 90.49,
+       "spend": 91.2,
        "leads": 5.0,
-       "cpl": 18.1,
-       "impressions": 6867.0,
-       "clicks": 121.0,
-       "cvr": 4.13,
-       "ctr": 1.76205,
-       "cpm": 13.177516,
-       "reach": 3169.0,
-       "frequency": 2.16693,
+       "cpl": 18.24,
+       "impressions": 6938.0,
+       "clicks": 122.0,
+       "link_clicks": 58.0,
+       "cvr": 8.62,
+       "ctr": 1.758432,
+       "cpm": 13.144999,
+       "reach": 3204.0,
+       "frequency": 2.165418,
        "attiva": true,
        "effective_status": "ACTIVE",
        "status": "ok",
-       "reason": "5 lead a CPL €18.10: sotto i 6 lead il CPL non stacca",
+       "reason": "5 lead a CPL €18.24: sotto i 6 lead il CPL non stacca",
        "sprecato": 0.0,
        "flags": [],
        "recent": {
-        "spend": 90.49,
+        "spend": 91.2,
         "leads": 5.0,
-        "cpl": 18.1
+        "cpl": 18.24
        },
        "trend": 0.0
       }
      ],
      "vivo": {
-      "spend": 90.49,
+      "spend": 91.2,
       "leads": 5.0,
-      "clicks": 121.0,
-      "impressions": 6867.0,
-      "cpl": 18.1,
-      "cvr": 4.13,
+      "clicks": 122.0,
+      "link_clicks": 58.0,
+      "impressions": 6938.0,
+      "cpl": 18.24,
+      "cvr": 8.62,
       "ctr": 1.76,
-      "recent_cpl": 18.1,
-      "recent_spend": 90.49,
+      "recent_cpl": 18.24,
+      "recent_spend": 91.2,
       "recent_leads": 5.0
      },
      "n_ads": 1,
@@ -5145,9 +5106,9 @@
      "reason": "inserzioni accese dentro i parametri",
      "flags": [],
      "recent": {
-      "spend": 90.49,
+      "spend": 91.2,
       "leads": 5.0,
-      "cpl": 18.1
+      "cpl": 18.24
      },
      "trend": 0.0
     }
@@ -5165,24 +5126,26 @@
    "dal": "2026-01-01",
    "solo_nostre_dal": null,
    "currency": "EUR",
-   "spend": 1068.91,
-   "leads": 41.0,
-   "cpl": 26.07,
+   "spend": 1069.64,
+   "leads": 42.0,
+   "cpl": 25.47,
    "sprecato": 0.0,
    "quota_sprecata": 0.0,
-   "impressions": 142052.0,
-   "clicks": 2486.0,
-   "cvr": 1.65,
+   "impressions": 142161.0,
+   "clicks": 2491.0,
+   "link_clicks": 1328.0,
+   "cvr": 3.16,
    "n_campagne": 20,
    "n_kill": 0,
    "n_kill_ancora_accese": 0,
    "brucia_oggi": 0,
    "vivo": {
-    "spend": 209.53,
-    "leads": 14.0,
-    "cpl": 14.97,
-    "cvr": 2.32,
-    "recent_cpl": 14.08,
+    "spend": 210.26,
+    "leads": 15.0,
+    "cpl": 14.02,
+    "cvr": 4.85,
+    "link_clicks": 309.0,
+    "recent_cpl": 12.6,
     "n_creative": 1
    },
    "riallocazione": {
@@ -5195,16 +5158,17 @@
     {
      "id": "120251346937780566",
      "name": "Moduli - Campagna Attiva",
-     "spend": 699.29,
-     "leads": 31.0,
-     "cpl": 22.56,
-     "impressions": 89049.0,
-     "clicks": 1625.0,
-     "cvr": 1.91,
-     "ctr": 1.824838,
-     "cpm": 7.852868,
+     "spend": 700.02,
+     "leads": 32.0,
+     "cpl": 21.88,
+     "impressions": 89158.0,
+     "clicks": 1630.0,
+     "link_clicks": 860.0,
+     "cvr": 3.72,
+     "ctr": 1.828215,
+     "cpm": 7.851455,
      "reach": 31883.0,
-     "frequency": 2.792993,
+     "frequency": 2.796412,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 15.0,
@@ -5214,31 +5178,31 @@
        "name": "Statica - Dispongo di € 100.000 per la pensione",
        "campaign_id": "120251346937780566",
        "campaign_name": "Moduli - Campagna Attiva",
-       "spend": 209.53,
-       "leads": 14.0,
-       "cpl": 14.97,
-       "impressions": 26210.0,
-       "clicks": 603.0,
-       "cvr": 2.32,
-       "ctr": 2.300649,
-       "cpm": 7.994277,
-       "reach": 10327.0,
-       "frequency": 2.538007,
+       "spend": 210.26,
+       "leads": 15.0,
+       "cpl": 14.02,
+       "impressions": 26319.0,
+       "clicks": 608.0,
+       "link_clicks": 309.0,
+       "cvr": 4.85,
+       "ctr": 2.310118,
+       "cpm": 7.988905,
+       "reach": 10357.0,
+       "frequency": 2.54118,
        "attiva": true,
        "effective_status": "ACTIVE",
        "status": "ok",
-       "reason": "CPL €14.97: dentro i parametri",
+       "reason": "CPL €14.02: dentro i parametri",
        "sprecato": 0.0,
        "flags": [
-        "frequenza 2.5: pubblico bruciato, cambia audience",
-        "solo 2.3% dei click diventa lead: modulo o landing da rivedere"
+        "frequenza 2.5: pubblico bruciato, cambia audience"
        ],
        "recent": {
-        "spend": 112.66,
-        "leads": 8.0,
-        "cpl": 14.08
+        "spend": 113.39,
+        "leads": 9.0,
+        "cpl": 12.6
        },
-       "trend": -0.89
+       "trend": -1.42
       },
       {
        "id": "120251375883050566",
@@ -5250,7 +5214,8 @@
        "cpl": 18.36,
        "impressions": 15110.0,
        "clicks": 191.0,
-       "cvr": 3.14,
+       "link_clicks": 125.0,
+       "cvr": 4.8,
        "ctr": 1.264064,
        "cpm": 7.291198,
        "reach": 8947.0,
@@ -5260,9 +5225,7 @@
        "status": "ok",
        "reason": "CPL €18.36: dentro i parametri",
        "sprecato": 0.0,
-       "flags": [
-        "solo 3.1% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": null,
        "trend": null
       },
@@ -5276,7 +5239,8 @@
        "cpl": 21.12,
        "impressions": 14132.0,
        "clicks": 251.0,
-       "cvr": 1.99,
+       "link_clicks": 125.0,
+       "cvr": 4.0,
        "ctr": 1.776111,
        "cpm": 7.472403,
        "reach": 6877.0,
@@ -5286,9 +5250,7 @@
        "status": "ok",
        "reason": "5 lead a CPL €21.12: sotto i 6 lead il CPL non stacca",
        "sprecato": 0.0,
-       "flags": [
-        "solo 2.0% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": null,
        "trend": null
       },
@@ -5302,7 +5264,8 @@
        "cpl": 24.79,
        "impressions": 9759.0,
        "clicks": 142.0,
-       "cvr": 2.11,
+       "link_clicks": 76.0,
+       "cvr": 3.95,
        "ctr": 1.455067,
        "cpm": 7.621683,
        "reach": 5292.0,
@@ -5313,7 +5276,7 @@
        "reason": "3 lead a CPL €24.79: sotto i 6 lead il CPL non stacca",
        "sprecato": 0.0,
        "flags": [
-        "solo 2.1% dei click diventa lead: modulo o landing da rivedere"
+        "solo 3.9% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -5328,7 +5291,8 @@
        "cpl": 26.99,
        "impressions": 6519.0,
        "clicks": 87.0,
-       "cvr": 2.3,
+       "link_clicks": 57.0,
+       "cvr": 3.51,
        "ctr": 1.334561,
        "cpm": 8.280411,
        "reach": 4195.0,
@@ -5339,7 +5303,7 @@
        "reason": "2 lead a CPL €26.99: sotto i 6 lead il CPL non stacca",
        "sprecato": 0.0,
        "flags": [
-        "solo 2.3% dei click diventa lead: modulo o landing da rivedere"
+        "solo 3.5% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -5354,6 +5318,7 @@
        "cpl": null,
        "impressions": 4399.0,
        "clicks": 59.0,
+       "link_clicks": 32.0,
        "cvr": 0.0,
        "ctr": 1.341214,
        "cpm": 7.015231,
@@ -5365,7 +5330,7 @@
        "reason": "€30.86 spesi e 0 lead: oltre il limite di €30",
        "sprecato": 0.86,
        "flags": [
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
+        "solo 0.0% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -5380,6 +5345,7 @@
        "cpl": null,
        "impressions": 3080.0,
        "clicks": 104.0,
+       "link_clicks": 32.0,
        "cvr": 0.0,
        "ctr": 3.376623,
        "cpm": 9.974026,
@@ -5391,7 +5357,7 @@
        "reason": "€30.72 spesi e 0 lead: oltre il limite di €30",
        "sprecato": 0.72,
        "flags": [
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
+        "solo 0.0% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -5406,7 +5372,8 @@
        "cpl": 29.28,
        "impressions": 3495.0,
        "clicks": 91.0,
-       "cvr": 1.1,
+       "link_clicks": 42.0,
+       "cvr": 2.38,
        "ctr": 2.60372,
        "cpm": 8.377682,
        "reach": 2160.0,
@@ -5417,7 +5384,7 @@
        "reason": "1 lead a €29.28: si lascia girare, ma entro €50 (mancano €20.72) deve arrivare il 2° lead, cioe' CPL sotto €25",
        "sprecato": 0.0,
        "flags": [
-        "solo 1.1% dei click diventa lead: modulo o landing da rivedere"
+        "solo 2.4% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -5432,6 +5399,7 @@
        "cpl": null,
        "impressions": 2659.0,
        "clicks": 41.0,
+       "link_clicks": 29.0,
        "cvr": 0.0,
        "ctr": 1.541933,
        "cpm": 10.455058,
@@ -5442,9 +5410,7 @@
        "status": "watch",
        "reason": "€27.80 spesi e 0 lead: mancano €2.20 allo stacco",
        "sprecato": 0.0,
-       "flags": [
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": null,
        "trend": null
       },
@@ -5458,6 +5424,7 @@
        "cpl": null,
        "impressions": 3620.0,
        "clicks": 52.0,
+       "link_clicks": 29.0,
        "cvr": 0.0,
        "ctr": 1.436464,
        "cpm": 7.265193,
@@ -5468,9 +5435,7 @@
        "status": "watch",
        "reason": "€26.30 spesi e 0 lead: mancano €3.70 allo stacco",
        "sprecato": 0.0,
-       "flags": [
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": null,
        "trend": null
       },
@@ -5484,6 +5449,7 @@
        "cpl": null,
        "impressions": 66.0,
        "clicks": 4.0,
+       "link_clicks": 4.0,
        "cvr": 0.0,
        "ctr": 6.060606,
        "cpm": 10.151515,
@@ -5500,16 +5466,17 @@
       }
      ],
      "vivo": {
-      "spend": 209.53,
-      "leads": 14.0,
-      "clicks": 603.0,
-      "impressions": 26210.0,
-      "cpl": 14.97,
-      "cvr": 2.32,
-      "ctr": 2.3,
-      "recent_cpl": 14.08,
-      "recent_spend": 112.66,
-      "recent_leads": 8.0
+      "spend": 210.26,
+      "leads": 15.0,
+      "clicks": 608.0,
+      "link_clicks": 309.0,
+      "impressions": 26319.0,
+      "cpl": 14.02,
+      "cvr": 4.85,
+      "ctr": 2.31,
+      "recent_cpl": 12.6,
+      "recent_spend": 113.39,
+      "recent_leads": 9.0
      },
      "n_ads": 11,
      "n_ads_attivi": 1,
@@ -5518,14 +5485,14 @@
      "reason": "inserzioni accese dentro i parametri",
      "flags": [
       "frequenza 2.8: pubblico bruciato, cambia audience",
-      "solo 1.9% dei click diventa lead: modulo o landing da rivedere"
+      "solo 3.7% dei click al link diventa lead: modulo o landing da rivedere"
      ],
      "recent": {
-      "spend": 112.66,
-      "leads": 8.0,
-      "cpl": 14.08
+      "spend": 113.39,
+      "leads": 9.0,
+      "cpl": 12.6
      },
-     "trend": -8.48
+     "trend": -9.28
     },
     {
      "id": "120251031963370566",
@@ -5535,7 +5502,8 @@
      "cpl": 19.2,
      "impressions": 7377.0,
      "clicks": 165.0,
-     "cvr": 1.82,
+     "link_clicks": 92.0,
+     "cvr": 3.26,
      "ctr": 2.236682,
      "cpm": 7.809408,
      "reach": 3972.0,
@@ -5554,7 +5522,8 @@
        "cpl": 19.2,
        "impressions": 7377.0,
        "clicks": 165.0,
-       "cvr": 1.82,
+       "link_clicks": 92.0,
+       "cvr": 3.26,
        "ctr": 2.236682,
        "cpm": 7.809408,
        "reach": 3972.0,
@@ -5565,7 +5534,7 @@
        "reason": "3 lead a CPL €19.20: sotto i 6 lead il CPL non stacca",
        "sprecato": 0.0,
        "flags": [
-        "solo 1.8% dei click diventa lead: modulo o landing da rivedere"
+        "solo 3.3% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -5578,7 +5547,7 @@
      "status": "ok",
      "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
      "flags": [
-      "solo 1.8% dei click diventa lead: modulo o landing da rivedere"
+      "solo 3.3% dei click al link diventa lead: modulo o landing da rivedere"
      ],
      "recent": null,
      "trend": null
@@ -5591,7 +5560,8 @@
      "cpl": 35.73,
      "impressions": 4131.0,
      "clicks": 63.0,
-     "cvr": 1.59,
+     "link_clicks": 30.0,
+     "cvr": 3.33,
      "ctr": 1.525054,
      "cpm": 8.649237,
      "reach": 2379.0,
@@ -5610,7 +5580,8 @@
        "cpl": 35.73,
        "impressions": 4131.0,
        "clicks": 63.0,
-       "cvr": 1.59,
+       "link_clicks": 30.0,
+       "cvr": 3.33,
        "ctr": 1.525054,
        "cpm": 8.649237,
        "reach": 2379.0,
@@ -5621,7 +5592,7 @@
        "reason": "1 lead a €35.73: si lascia girare, ma entro €50 (mancano €14.27) deve arrivare il 2° lead, cioe' CPL sotto €25",
        "sprecato": 0.0,
        "flags": [
-        "solo 1.6% dei click diventa lead: modulo o landing da rivedere"
+        "solo 3.3% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -5634,7 +5605,7 @@
      "status": "ok",
      "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
      "flags": [
-      "solo 1.6% dei click diventa lead: modulo o landing da rivedere"
+      "solo 3.3% dei click al link diventa lead: modulo o landing da rivedere"
      ],
      "recent": null,
      "trend": null
@@ -5647,7 +5618,8 @@
      "cpl": 22.58,
      "impressions": 2877.0,
      "clicks": 41.0,
-     "cvr": 2.44,
+     "link_clicks": 18.0,
+     "cvr": 5.56,
      "ctr": 1.425096,
      "cpm": 7.848453,
      "reach": 1565.0,
@@ -5666,7 +5638,8 @@
        "cpl": 22.58,
        "impressions": 2877.0,
        "clicks": 41.0,
-       "cvr": 2.44,
+       "link_clicks": 18.0,
+       "cvr": 5.56,
        "ctr": 1.425096,
        "cpm": 7.848453,
        "reach": 1565.0,
@@ -5676,9 +5649,7 @@
        "status": "early",
        "reason": "1 lead a €22.58: si lascia girare, ma entro €50 (mancano €27.42) deve arrivare il 2° lead, cioe' CPL sotto €25",
        "sprecato": 0.0,
-       "flags": [
-        "solo 2.4% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": null,
        "trend": null
       }
@@ -5689,9 +5660,7 @@
      "sprecato": 0,
      "status": "ok",
      "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
-     "flags": [
-      "solo 2.4% dei click diventa lead: modulo o landing da rivedere"
-     ],
+     "flags": [],
      "recent": null,
      "trend": null
     },
@@ -5703,7 +5672,8 @@
      "cpl": 22.35,
      "impressions": 3722.0,
      "clicks": 36.0,
-     "cvr": 2.78,
+     "link_clicks": 26.0,
+     "cvr": 3.85,
      "ctr": 0.967222,
      "cpm": 6.004836,
      "reach": 2781.0,
@@ -5722,7 +5692,8 @@
        "cpl": 22.35,
        "impressions": 3722.0,
        "clicks": 36.0,
-       "cvr": 2.78,
+       "link_clicks": 26.0,
+       "cvr": 3.85,
        "ctr": 0.967222,
        "cpm": 6.004836,
        "reach": 2781.0,
@@ -5733,8 +5704,7 @@
        "reason": "1 lead a €22.35: si lascia girare, ma entro €50 (mancano €27.65) deve arrivare il 2° lead, cioe' CPL sotto €25",
        "sprecato": 0.0,
        "flags": [
-        "CTR 0.97%: il creativo non ferma nessuno",
-        "solo 2.8% dei click diventa lead: modulo o landing da rivedere"
+        "CTR 0.97%: il creativo non ferma nessuno"
        ],
        "recent": null,
        "trend": null
@@ -5747,8 +5717,7 @@
      "status": "ok",
      "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
      "flags": [
-      "CTR 0.97%: il creativo non ferma nessuno",
-      "solo 2.8% dei click diventa lead: modulo o landing da rivedere"
+      "CTR 0.97%: il creativo non ferma nessuno"
      ],
      "recent": null,
      "trend": null
@@ -5761,7 +5730,8 @@
      "cpl": 22.34,
      "impressions": 3969.0,
      "clicks": 106.0,
-     "cvr": 0.94,
+     "link_clicks": 38.0,
+     "cvr": 2.63,
      "ctr": 2.670698,
      "cpm": 5.628622,
      "reach": 2791.0,
@@ -5780,7 +5750,8 @@
        "cpl": 22.34,
        "impressions": 3969.0,
        "clicks": 106.0,
-       "cvr": 0.94,
+       "link_clicks": 38.0,
+       "cvr": 2.63,
        "ctr": 2.670698,
        "cpm": 5.628622,
        "reach": 2791.0,
@@ -5791,7 +5762,7 @@
        "reason": "1 lead a €22.34: si lascia girare, ma entro €50 (mancano €27.66) deve arrivare il 2° lead, cioe' CPL sotto €25",
        "sprecato": 0.0,
        "flags": [
-        "solo 0.9% dei click diventa lead: modulo o landing da rivedere"
+        "solo 2.6% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -5804,7 +5775,7 @@
      "status": "ok",
      "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
      "flags": [
-      "solo 0.9% dei click diventa lead: modulo o landing da rivedere"
+      "solo 2.6% dei click al link diventa lead: modulo o landing da rivedere"
      ],
      "recent": null,
      "trend": null
@@ -5817,7 +5788,8 @@
      "cpl": 22.22,
      "impressions": 3114.0,
      "clicks": 75.0,
-     "cvr": 1.33,
+     "link_clicks": 33.0,
+     "cvr": 3.03,
      "ctr": 2.408478,
      "cpm": 7.135517,
      "reach": 1612.0,
@@ -5836,7 +5808,8 @@
        "cpl": 22.22,
        "impressions": 3114.0,
        "clicks": 75.0,
-       "cvr": 1.33,
+       "link_clicks": 33.0,
+       "cvr": 3.03,
        "ctr": 2.408478,
        "cpm": 7.135517,
        "reach": 1612.0,
@@ -5847,7 +5820,7 @@
        "reason": "1 lead a €22.22: si lascia girare, ma entro €50 (mancano €27.78) deve arrivare il 2° lead, cioe' CPL sotto €25",
        "sprecato": 0.0,
        "flags": [
-        "solo 1.3% dei click diventa lead: modulo o landing da rivedere"
+        "solo 3.0% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -5860,7 +5833,7 @@
      "status": "ok",
      "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
      "flags": [
-      "solo 1.3% dei click diventa lead: modulo o landing da rivedere"
+      "solo 3.0% dei click al link diventa lead: modulo o landing da rivedere"
      ],
      "recent": null,
      "trend": null
@@ -5873,7 +5846,8 @@
      "cpl": 22.07,
      "impressions": 3625.0,
      "clicks": 64.0,
-     "cvr": 1.56,
+     "link_clicks": 39.0,
+     "cvr": 2.56,
      "ctr": 1.765517,
      "cpm": 6.088276,
      "reach": 2534.0,
@@ -5892,7 +5866,8 @@
        "cpl": 22.07,
        "impressions": 3625.0,
        "clicks": 64.0,
-       "cvr": 1.56,
+       "link_clicks": 39.0,
+       "cvr": 2.56,
        "ctr": 1.765517,
        "cpm": 6.088276,
        "reach": 2534.0,
@@ -5903,7 +5878,7 @@
        "reason": "1 lead a €22.07: si lascia girare, ma entro €50 (mancano €27.93) deve arrivare il 2° lead, cioe' CPL sotto €25",
        "sprecato": 0.0,
        "flags": [
-        "solo 1.6% dei click diventa lead: modulo o landing da rivedere"
+        "solo 2.6% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -5916,7 +5891,7 @@
      "status": "ok",
      "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
      "flags": [
-      "solo 1.6% dei click diventa lead: modulo o landing da rivedere"
+      "solo 2.6% dei click al link diventa lead: modulo o landing da rivedere"
      ],
      "recent": null,
      "trend": null
@@ -5929,6 +5904,7 @@
      "cpl": null,
      "impressions": 3062.0,
      "clicks": 33.0,
+     "link_clicks": 25.0,
      "cvr": 0.0,
      "ctr": 1.077727,
      "cpm": 5.378837,
@@ -5948,6 +5924,7 @@
        "cpl": null,
        "impressions": 3062.0,
        "clicks": 33.0,
+       "link_clicks": 25.0,
        "cvr": 0.0,
        "ctr": 1.077727,
        "cpm": 5.378837,
@@ -5958,9 +5935,7 @@
        "status": "watch",
        "reason": "€16.47 spesi e 0 lead: mancano €13.53 allo stacco",
        "sprecato": 0.0,
-       "flags": [
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": null,
        "trend": null
       }
@@ -5971,9 +5946,7 @@
      "sprecato": 0,
      "status": "ok",
      "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
-     "flags": [
-      "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-     ],
+     "flags": [],
      "recent": null,
      "trend": null
     },
@@ -5985,6 +5958,7 @@
      "cpl": null,
      "impressions": 2429.0,
      "clicks": 28.0,
+     "link_clicks": 17.0,
      "cvr": 0.0,
      "ctr": 1.152738,
      "cpm": 6.628242,
@@ -6004,6 +5978,7 @@
        "cpl": null,
        "impressions": 2429.0,
        "clicks": 28.0,
+       "link_clicks": 17.0,
        "cvr": 0.0,
        "ctr": 1.152738,
        "cpm": 6.628242,
@@ -6037,6 +6012,7 @@
      "cpl": null,
      "impressions": 1757.0,
      "clicks": 24.0,
+     "link_clicks": 20.0,
      "cvr": 0.0,
      "ctr": 1.365965,
      "cpm": 9.021059,
@@ -6056,6 +6032,7 @@
        "cpl": null,
        "impressions": 1757.0,
        "clicks": 24.0,
+       "link_clicks": 20.0,
        "cvr": 0.0,
        "ctr": 1.365965,
        "cpm": 9.021059,
@@ -6089,6 +6066,7 @@
      "cpl": null,
      "impressions": 3068.0,
      "clicks": 57.0,
+     "link_clicks": 30.0,
      "cvr": 0.0,
      "ctr": 1.857888,
      "cpm": 5.071708,
@@ -6108,6 +6086,7 @@
        "cpl": null,
        "impressions": 3068.0,
        "clicks": 57.0,
+       "link_clicks": 30.0,
        "cvr": 0.0,
        "ctr": 1.857888,
        "cpm": 5.071708,
@@ -6119,7 +6098,7 @@
        "reason": "€15.56 spesi e 0 lead: mancano €14.44 allo stacco",
        "sprecato": 0.0,
        "flags": [
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
+        "solo 0.0% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": null,
        "trend": null
@@ -6132,7 +6111,7 @@
      "status": "ok",
      "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
      "flags": [
-      "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
+      "solo 0.0% dei click al link diventa lead: modulo o landing da rivedere"
      ],
      "recent": null,
      "trend": null
@@ -6145,6 +6124,7 @@
      "cpl": null,
      "impressions": 2077.0,
      "clicks": 20.0,
+     "link_clicks": 16.0,
      "cvr": 0.0,
      "ctr": 0.962927,
      "cpm": 7.361579,
@@ -6164,6 +6144,7 @@
        "cpl": null,
        "impressions": 2077.0,
        "clicks": 20.0,
+       "link_clicks": 16.0,
        "cvr": 0.0,
        "ctr": 0.962927,
        "cpm": 7.361579,
@@ -6201,6 +6182,7 @@
      "cpl": null,
      "impressions": 2360.0,
      "clicks": 30.0,
+     "link_clicks": 16.0,
      "cvr": 0.0,
      "ctr": 1.271186,
      "cpm": 6.440678,
@@ -6220,6 +6202,7 @@
        "cpl": null,
        "impressions": 2360.0,
        "clicks": 30.0,
+       "link_clicks": 16.0,
        "cvr": 0.0,
        "ctr": 1.271186,
        "cpm": 6.440678,
@@ -6230,9 +6213,7 @@
        "status": "watch",
        "reason": "€15.20 spesi e 0 lead: mancano €14.80 allo stacco",
        "sprecato": 0.0,
-       "flags": [
-        "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-       ],
+       "flags": [],
        "recent": null,
        "trend": null
       }
@@ -6243,9 +6224,7 @@
      "sprecato": 0,
      "status": "ok",
      "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
-     "flags": [
-      "solo 0.0% dei click diventa lead: modulo o landing da rivedere"
-     ],
+     "flags": [],
      "recent": null,
      "trend": null
     },
@@ -6257,6 +6236,7 @@
      "cpl": null,
      "impressions": 2451.0,
      "clicks": 29.0,
+     "link_clicks": 16.0,
      "cvr": 0.0,
      "ctr": 1.183191,
      "cpm": 6.177071,
@@ -6276,6 +6256,7 @@
        "cpl": null,
        "impressions": 2451.0,
        "clicks": 29.0,
+       "link_clicks": 16.0,
        "cvr": 0.0,
        "ctr": 1.183191,
        "cpm": 6.177071,
@@ -6309,6 +6290,7 @@
      "cpl": null,
      "impressions": 1636.0,
      "clicks": 24.0,
+     "link_clicks": 16.0,
      "cvr": 0.0,
      "ctr": 1.466993,
      "cpm": 9.229829,
@@ -6328,6 +6310,7 @@
        "cpl": null,
        "impressions": 1636.0,
        "clicks": 24.0,
+       "link_clicks": 16.0,
        "cvr": 0.0,
        "ctr": 1.466993,
        "cpm": 9.229829,
@@ -6361,7 +6344,8 @@
      "cpl": 13.18,
      "impressions": 1568.0,
      "clicks": 24.0,
-     "cvr": 4.17,
+     "link_clicks": 15.0,
+     "cvr": 6.67,
      "ctr": 1.530612,
      "cpm": 8.405612,
      "reach": 1029.0,
@@ -6380,7 +6364,8 @@
        "cpl": 13.18,
        "impressions": 1568.0,
        "clicks": 24.0,
-       "cvr": 4.17,
+       "link_clicks": 15.0,
+       "cvr": 6.67,
        "ctr": 1.530612,
        "cpm": 8.405612,
        "reach": 1029.0,
@@ -6413,6 +6398,7 @@
      "cpl": null,
      "impressions": 1480.0,
      "clicks": 22.0,
+     "link_clicks": 11.0,
      "cvr": 0.0,
      "ctr": 1.486486,
      "cpm": 8.777027,
@@ -6432,6 +6418,7 @@
        "cpl": null,
        "impressions": 1480.0,
        "clicks": 22.0,
+       "link_clicks": 11.0,
        "cvr": 0.0,
        "ctr": 1.486486,
        "cpm": 8.777027,
@@ -6465,6 +6452,7 @@
      "cpl": null,
      "impressions": 1250.0,
      "clicks": 11.0,
+     "link_clicks": 3.0,
      "cvr": 0.0,
      "ctr": 0.88,
      "cpm": 6.264,
@@ -6484,6 +6472,7 @@
        "cpl": null,
        "impressions": 1250.0,
        "clicks": 11.0,
+       "link_clicks": 3.0,
        "cvr": 0.0,
        "ctr": 0.88,
        "cpm": 6.264,
@@ -6521,6 +6510,7 @@
      "cpl": null,
      "impressions": 1050.0,
      "clicks": 9.0,
+     "link_clicks": 7.0,
      "cvr": 0.0,
      "ctr": 0.857143,
      "cpm": 5.72381,
@@ -6540,6 +6530,7 @@
        "cpl": null,
        "impressions": 1050.0,
        "clicks": 9.0,
+       "link_clicks": 7.0,
        "cvr": 0.0,
        "ctr": 0.857143,
        "cpm": 5.72381,
@@ -6583,24 +6574,26 @@
    "dal": "2026-01-01",
    "solo_nostre_dal": null,
    "currency": "EUR",
-   "spend": 62.01,
+   "spend": 62.63,
    "leads": 5.0,
-   "cpl": 12.4,
+   "cpl": 12.53,
    "sprecato": 0.0,
    "quota_sprecata": 0.0,
-   "impressions": 4107.0,
+   "impressions": 4151.0,
    "clicks": 120.0,
-   "cvr": 4.17,
+   "link_clicks": 43.0,
+   "cvr": 11.63,
    "n_campagne": 1,
    "n_kill": 0,
    "n_kill_ancora_accese": 0,
    "brucia_oggi": 0,
    "vivo": {
-    "spend": 62.01,
+    "spend": 62.63,
     "leads": 5.0,
-    "cpl": 12.4,
-    "cvr": 4.17,
-    "recent_cpl": 12.4,
+    "cpl": 12.53,
+    "cvr": 11.63,
+    "link_clicks": 43.0,
+    "recent_cpl": 12.53,
     "n_creative": 1
    },
    "riallocazione": {
@@ -6613,16 +6606,17 @@
     {
      "id": "120251373326490263",
      "name": "AI Elite - Campagna Attiva",
-     "spend": 62.01,
+     "spend": 62.63,
      "leads": 5.0,
-     "cpl": 12.4,
-     "impressions": 4107.0,
+     "cpl": 12.53,
+     "impressions": 4151.0,
      "clicks": 120.0,
-     "cvr": 4.17,
-     "ctr": 2.921841,
-     "cpm": 15.098612,
-     "reach": 2064.0,
-     "frequency": 1.989826,
+     "link_clicks": 43.0,
+     "cvr": 11.63,
+     "ctr": 2.89087,
+     "cpm": 15.087931,
+     "reach": 2070.0,
+     "frequency": 2.005314,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 15.0,
@@ -6632,40 +6626,42 @@
        "name": "Statica - Quando potrai andare in pensione?",
        "campaign_id": "120251373326490263",
        "campaign_name": "AI Elite - Campagna Attiva",
-       "spend": 62.01,
+       "spend": 62.63,
        "leads": 5.0,
-       "cpl": 12.4,
-       "impressions": 4107.0,
+       "cpl": 12.53,
+       "impressions": 4151.0,
        "clicks": 120.0,
-       "cvr": 4.17,
-       "ctr": 2.921841,
-       "cpm": 15.098612,
-       "reach": 2064.0,
-       "frequency": 1.989826,
+       "link_clicks": 43.0,
+       "cvr": 11.63,
+       "ctr": 2.89087,
+       "cpm": 15.087931,
+       "reach": 2070.0,
+       "frequency": 2.005314,
        "attiva": true,
        "effective_status": "ACTIVE",
        "status": "ok",
-       "reason": "5 lead a CPL €12.40: sotto i 6 lead il CPL non stacca",
+       "reason": "5 lead a CPL €12.53: sotto i 6 lead il CPL non stacca",
        "sprecato": 0.0,
        "flags": [],
        "recent": {
-        "spend": 62.01,
+        "spend": 62.64,
         "leads": 5.0,
-        "cpl": 12.4
+        "cpl": 12.53
        },
        "trend": 0.0
       }
      ],
      "vivo": {
-      "spend": 62.01,
+      "spend": 62.63,
       "leads": 5.0,
       "clicks": 120.0,
-      "impressions": 4107.0,
-      "cpl": 12.4,
-      "cvr": 4.17,
-      "ctr": 2.92,
-      "recent_cpl": 12.4,
-      "recent_spend": 62.01,
+      "link_clicks": 43.0,
+      "impressions": 4151.0,
+      "cpl": 12.53,
+      "cvr": 11.63,
+      "ctr": 2.89,
+      "recent_cpl": 12.53,
+      "recent_spend": 62.64,
       "recent_leads": 5.0
      },
      "n_ads": 1,
@@ -6675,11 +6671,132 @@
      "reason": "inserzioni accese dentro i parametri",
      "flags": [],
      "recent": {
-      "spend": 62.01,
+      "spend": 62.63,
       "leads": 5.0,
-      "cpl": 12.4
+      "cpl": 12.53
      },
      "trend": 0.0
+    }
+   ],
+   "hiring": {
+    "n": 0,
+    "spend": 0,
+    "leads": 0
+   },
+   "campagne_hiring": []
+  },
+  {
+   "alias": "CF-FR",
+   "nome_reale": "CF-FR",
+   "dal": "2026-01-01",
+   "solo_nostre_dal": null,
+   "currency": "EUR",
+   "spend": 170.14,
+   "leads": 7.0,
+   "cpl": 24.31,
+   "sprecato": 0.0,
+   "quota_sprecata": 0.0,
+   "impressions": 13296.0,
+   "clicks": 255.0,
+   "link_clicks": 125.0,
+   "cvr": 5.6,
+   "n_campagne": 1,
+   "n_kill": 0,
+   "n_kill_ancora_accese": 0,
+   "brucia_oggi": 0,
+   "vivo": {
+    "spend": 170.14,
+    "leads": 7.0,
+    "cpl": 24.31,
+    "cvr": 5.6,
+    "link_clicks": 125.0,
+    "recent_cpl": 31.65,
+    "n_creative": 1
+   },
+   "riallocazione": {
+    "budget_da_spostare": 0,
+    "cpl_vincente": null,
+    "lead_prudente": 0,
+    "lead_ottimistico": 0
+   },
+   "campagne": [
+    {
+     "id": "120252259223900659",
+     "name": "Moduli - Campagna Attiva",
+     "spend": 170.14,
+     "leads": 7.0,
+     "cpl": 24.31,
+     "impressions": 13296.0,
+     "clicks": 255.0,
+     "link_clicks": 125.0,
+     "cvr": 5.6,
+     "ctr": 1.91787,
+     "cpm": 12.79633,
+     "reach": 4965.0,
+     "frequency": 2.677946,
+     "attiva": true,
+     "effective_status": "ACTIVE",
+     "daily_budget": 15.0,
+     "ads": [
+      {
+       "id": "120252570293560659",
+       "name": "Statica - Quando potrai andare in pensione?",
+       "campaign_id": "120252259223900659",
+       "campaign_name": "Moduli - Campagna Attiva",
+       "spend": 170.14,
+       "leads": 7.0,
+       "cpl": 24.31,
+       "impressions": 13296.0,
+       "clicks": 255.0,
+       "link_clicks": 125.0,
+       "cvr": 5.6,
+       "ctr": 1.91787,
+       "cpm": 12.79633,
+       "reach": 4965.0,
+       "frequency": 2.677946,
+       "attiva": true,
+       "effective_status": "ACTIVE",
+       "status": "ok",
+       "reason": "CPL €24.31 sopra €22, ma CVR 5.6% sopra il 4%: non si stacca",
+       "sprecato": 0.0,
+       "flags": [
+        "frequenza 2.7: pubblico bruciato, cambia audience"
+       ],
+       "recent": {
+        "spend": 126.59,
+        "leads": 4.0,
+        "cpl": 31.65
+       },
+       "trend": 7.34
+      }
+     ],
+     "vivo": {
+      "spend": 170.14,
+      "leads": 7.0,
+      "clicks": 255.0,
+      "link_clicks": 125.0,
+      "impressions": 13296.0,
+      "cpl": 24.31,
+      "cvr": 5.6,
+      "ctr": 1.92,
+      "recent_cpl": 31.65,
+      "recent_spend": 126.59,
+      "recent_leads": 4.0
+     },
+     "n_ads": 1,
+     "n_ads_attivi": 1,
+     "sprecato": 0.0,
+     "status": "ok",
+     "reason": "inserzioni accese dentro i parametri",
+     "flags": [
+      "frequenza 2.7: pubblico bruciato, cambia audience"
+     ],
+     "recent": {
+      "spend": 126.59,
+      "leads": 4.0,
+      "cpl": 31.65
+     },
+     "trend": 7.34
     }
    ],
    "hiring": {

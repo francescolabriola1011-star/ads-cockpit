@@ -248,8 +248,8 @@ let CVRMIN = 4;
 const R2 = () => (DATA && DATA.regole) || {};
 /* CVR click -> lead: quanti dei click che abbiamo pagato diventano un contatto vero.
    Sotto la soglia il collo e' il MODULO (o la landing), non le ads. */
-const cvrCli  = c => (c.clicks ? c.leads / c.clicks * 100 : null);
-const cvrCamp = k => (k.clicks ? k.leads / k.clicks * 100 : null);
+const cvrCli  = c => (c.link_clicks ? c.leads / c.link_clicks * 100 : null);
+const cvrCamp = k => (k.link_clicks ? k.leads / k.link_clicks * 100 : null);
 /* letture sulle sole creative accese (campo "vivo" del motore) */
 const vCpl  = c => (c.vivo ? c.vivo.cpl : null);
 const vLead = c => (c.vivo ? c.vivo.leads : 0);
@@ -266,7 +266,7 @@ function totali(sel){
   const spesa = sel.reduce((s,c)=>s+c.spend,0);
   const lead  = sel.reduce((s,c)=>s+c.leads,0);
   const spr   = sel.reduce((s,c)=>s+c.sprecato,0);
-  const click = sel.reduce((s,c)=>s+(c.clicks||0),0);
+  const linkClicks = sel.reduce((s,c)=>s+(c.link_clicks||0),0);
   const g = DATA.periodo.giorni || 1;
   /* CPL e CVR si leggono sulle CREATIVE ACCESE (c.vivo), non sulla media
      di campagna: con una campagna sola sempre accesa la media include le
@@ -274,14 +274,14 @@ function totali(sel){
   const vivi = sel.filter(c => c.vivo);
   const vs = vivi.reduce((s,c)=>s+c.vivo.spend,0);
   const vl = vivi.reduce((s,c)=>s+c.vivo.leads,0);
-  const vc = vivi.reduce((s,c)=>s+(c.vivo.cvr != null ? c.vivo.leads / (c.vivo.cvr/100) : 0),0);
+  const vc = vivi.reduce((s,c)=>s+(c.vivo.link_clicks||0),0);
   const ncr = vivi.reduce((s,c)=>s+(c.vivo.n_creative||0),0);
   return {
     spesa, lead, sprecato: spr,
     cpl: vl ? vs/vl : null,
     cpl_storico: lead ? spesa/lead : null,
     creative_accese: ncr,
-    clicks: click,
+    linkClicks,
     cvr: vc ? vl/vc*100 : null,
     quota: spesa ? spr/spesa*100 : 0,
     al_mese: spr/g*30,
@@ -318,7 +318,9 @@ function render(){
     `<b>0 lead</b> sopra ${eur0(R.spend_kill_zero_lead_eur || R.spend_warn_eur)} di spesa → si stacca`,
     `<b>1 lead</b>: si lascia girare fino a ${eur0(R.spend_kill_eur)}, il CPL non si guarda`,
     `entro ${eur0(R.spend_kill_eur)} servono <b>2 lead</b> (CPL sotto ${eur0(R.spend_kill_eur/2)}) → altrimenti si stacca`,
-    `da <b>2 lead</b> in su, CPL sopra <b>${eur0(R.cpl_kill_eur)}</b> → si stacca`,
+    `da <b>2 a ${int((R.cpl_kill_lead_minimi || 6) - 1)} lead</b> il CPL non stacca`,
+    `da <b>${int(R.cpl_kill_lead_minimi || 6)} lead</b>, CPL sopra <b>${eur0(R.cpl_kill_eur)}</b> e CVR sotto <b>${CVRMIN}%</b> → si stacca`,
+    `CVR di almeno <b>${CVRMIN}%</b> sui click al link → il solo CPL alto non stacca`,
     `CPL sotto <b>${eur0(R.cpl_winner_eur)}</b> → vincente, ci si mette budget`,
     `<b>CVR click → lead</b> sotto <b>${CVRMIN}%</b> → il problema è il modulo, non le ads`,
     `<b>CPL target ${eur0(CPLT)}</b> → il metro dei lead mancati (${eur0(R.cpl_kill_eur)} è il limite di stacco, non l'obiettivo)`
@@ -359,12 +361,13 @@ function render(){
     tile("Lead", int(t.lead), "moduli e conversioni Meta"),
     tile("CPL creative accese", t.cpl ? eur(t.cpl) : "n/d",
          t.cpl ? `${int(t.creative_accese)} creative accese · ${t.cpl > R.cpl_kill_eur ? "sopra" : "sotto"} il limite di ${eur0(R.cpl_kill_eur)}`
+               + (t.cpl > R.cpl_kill_eur && t.cvr >= CVRMIN ? ` · CVR ${t.cvr.toFixed(1)}%: non stacca` : "")
                + (t.cpl_storico ? ` · media storica ${eur(t.cpl_storico)}` : "")
                : (t.cpl_storico ? `nessuna creativa accesa · media storica ${eur(t.cpl_storico)}` : "")),
     tile("CVR click → lead", t.cvr != null ? t.cvr.toFixed(1) + "%" : "n/d",
          t.cvr == null ? "" : (t.cvr < CVRMIN
             ? `sotto il ${CVRMIN}% minimo: il collo è il modulo, non le ads`
-            : `sopra il ${CVRMIN}% minimo · ${int(t.clicks)} click`)),
+            : `sopra il ${CVRMIN}% minimo · ${int(t.linkClicks)} click al link`)),
     tile("Lead mancati", int(t.lead_mancati),
          `${eur0(t.spesa)} al CPL target di ${eur0(CPLT)} valgono ${int(t.lead_attesi)} lead, ne sono arrivati ${int(t.lead)}`,
          t.lead_mancati > 0 ? "act" : "")
@@ -373,19 +376,25 @@ function render(){
   /* azioni di oggi */
   const azioni = [];
   sel.forEach(c => c.campagne.forEach(k => {
-    if (k.status === "kill" && k.attiva) azioni.push({cli:c, ...k});
+    (k.ads || []).forEach(a => {
+      if (a.status === "kill" && a.attiva) azioni.push({
+        cli:c, campagna:k, creativa:a, daily_budget:k.daily_budget || 0
+      });
+    });
   }));
-  azioni.sort((a,b) => (b.daily_budget||0) - (a.daily_budget||0) || b.sprecato - a.sprecato);
+  azioni.sort((a,b) => (b.daily_budget||0) - (a.daily_budget||0)
+    || b.creativa.sprecato - a.creativa.sprecato);
   document.getElementById("nact").textContent = azioni.length ? `(${azioni.length})` : "";
   document.getElementById("azioni").innerHTML = azioni.length ? azioni.map(a => `
     <div class="act-row">
       <div class="who">${esc(nomeCli(a.cli))}</div>
-      <div><div class="what">${esc(nomeCamp(a))}</div>
-        <div class="why">${esc(a.reason)}${a.flags.length ? " · " + esc(a.flags[0]) : ""}</div></div>
+      <div><div class="what">Creativa: ${esc(a.creativa.name)}</div>
+        <div class="why">Campagna: ${esc(nomeCamp(a.campagna))} · ${esc(a.creativa.reason)}${
+          a.creativa.flags.length ? " · " + esc(a.creativa.flags[0]) : ""}</div></div>
       <div class="burn">${a.daily_budget ? eur(a.daily_budget)+"/giorno" : "attiva"}<br>
-        <span style="color:var(--muted);font-weight:400">già sprecati ${eur(a.sprecato)}</span></div>
+        <span style="color:var(--muted);font-weight:400">già sprecati ${eur(a.creativa.sprecato)}</span></div>
     </div>`).join("")
-    : `<div class="empty">Nessuna campagna fuori regola ancora accesa. Tutto pulito.</div>`;
+    : `<div class="empty">Nessuna creativa fuori regola ancora accesa. Tutto pulito.</div>`;
 
   /* riallocazione */
   const rr = sel.filter(c => c.riallocazione.budget_da_spostare > 0);
@@ -428,7 +437,7 @@ function renderClienti(){
         <div><div class="k">Spesa</div><div class="v mono">${eur0(c.spend)}</div></div>
         <div><div class="k">Lead</div><div class="v mono">${int(c.leads)}</div></div>
         <div><div class="k">CPL creative accese</div><div class="v mono" style="color:${
-          vCpl(c) == null ? "var(--muted)" : (vLead(c) >= 2 && vCpl(c) > d.regole.cpl_kill_eur) ? "var(--crit)"
+          vCpl(c) == null ? "var(--muted)" : c.n_kill_ancora_accese > 0 ? "var(--crit)"
           : vCpl(c) <= d.regole.cpl_winner_eur ? "var(--good)" : "inherit"}">${
           vCpl(c) ? eur(vCpl(c)) : "n/d"}</div>${
           c.cpl ? `<div class="k">storico ${eur(c.cpl)}</div>` : ""}</div>
@@ -462,7 +471,7 @@ function renderClienti(){
             <td class="mono">${v && v.ctr ? v.ctr.toFixed(2) + "%" : "—"}</td>
             <td class="mono" style="color:${
               !v || v.cvr == null ? "var(--muted)"
-              : (v.clicks >= (R2().cvr_min_clicks || 30) && v.cvr < CVRMIN) ? "var(--crit)"
+              : (v.link_clicks >= (R2().cvr_min_clicks || 30) && v.cvr < CVRMIN) ? "var(--crit)"
               : v.cvr >= CVRMIN ? "var(--good)" : "inherit"}">${
               !v || v.cvr == null ? "—" : v.cvr.toFixed(1) + "%"}</td>
             <td class="mono" style="color:${k.sprecato > 0 ? "var(--crit)" : "var(--muted)"}">${
@@ -482,7 +491,7 @@ function renderClienti(){
             <td class="mono">${a.ctr ? a.ctr.toFixed(2) + "%" : "—"}</td>
             <td class="mono" style="color:${
               a.cvr == null ? "var(--muted)"
-              : (a.clicks >= (R2().cvr_min_clicks || 30) && a.cvr < CVRMIN) ? "var(--crit)"
+              : (a.link_clicks >= (R2().cvr_min_clicks || 30) && a.cvr < CVRMIN) ? "var(--crit)"
               : a.cvr >= CVRMIN ? "var(--good)" : "inherit"}">${
               a.cvr == null ? "—" : a.cvr.toFixed(1) + "%"}</td>
             <td class="mono" style="color:${a.sprecato > 0 ? "var(--crit)" : "var(--muted)"}">${
