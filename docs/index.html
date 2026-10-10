@@ -318,7 +318,8 @@ function render(){
     `<b>0 lead</b> sopra ${eur0(R.spend_kill_zero_lead_eur || R.spend_warn_eur)} di spesa → si stacca`,
     `<b>1 lead</b>: si lascia girare fino a ${eur0(R.spend_kill_eur)}, il CPL non si guarda`,
     `entro ${eur0(R.spend_kill_eur)} servono <b>2 lead</b> (CPL sotto ${eur0(R.spend_kill_eur/2)}) → altrimenti si stacca`,
-    `da <b>2 lead</b> in su, CPL sopra <b>${eur0(R.cpl_kill_eur)}</b> → si stacca`,
+    `da <b>2 a ${int((R.cpl_kill_lead_minimi || 6) - 1)} lead</b> il CPL non stacca`,
+    `da <b>${int(R.cpl_kill_lead_minimi || 6)} lead</b>, CPL della creativa sopra <b>${eur0(R.cpl_kill_eur)}</b> → si stacca`,
     `CPL sotto <b>${eur0(R.cpl_winner_eur)}</b> → vincente, ci si mette budget`,
     `<b>CVR click → lead</b> sotto <b>${CVRMIN}%</b> → il problema è il modulo, non le ads`,
     `<b>CPL target ${eur0(CPLT)}</b> → il metro dei lead mancati (${eur0(R.cpl_kill_eur)} è il limite di stacco, non l'obiettivo)`
@@ -373,19 +374,25 @@ function render(){
   /* azioni di oggi */
   const azioni = [];
   sel.forEach(c => c.campagne.forEach(k => {
-    if (k.status === "kill" && k.attiva) azioni.push({cli:c, ...k});
+    (k.ads || []).forEach(a => {
+      if (a.status === "kill" && a.attiva) azioni.push({
+        cli:c, campagna:k, creativa:a, daily_budget:k.daily_budget || 0
+      });
+    });
   }));
-  azioni.sort((a,b) => (b.daily_budget||0) - (a.daily_budget||0) || b.sprecato - a.sprecato);
+  azioni.sort((a,b) => (b.daily_budget||0) - (a.daily_budget||0)
+    || b.creativa.sprecato - a.creativa.sprecato);
   document.getElementById("nact").textContent = azioni.length ? `(${azioni.length})` : "";
   document.getElementById("azioni").innerHTML = azioni.length ? azioni.map(a => `
     <div class="act-row">
       <div class="who">${esc(nomeCli(a.cli))}</div>
-      <div><div class="what">${esc(nomeCamp(a))}</div>
-        <div class="why">${esc(a.reason)}${a.flags.length ? " · " + esc(a.flags[0]) : ""}</div></div>
+      <div><div class="what">Creativa: ${esc(a.creativa.name)}</div>
+        <div class="why">Campagna: ${esc(nomeCamp(a.campagna))} · ${esc(a.creativa.reason)}${
+          a.creativa.flags.length ? " · " + esc(a.creativa.flags[0]) : ""}</div></div>
       <div class="burn">${a.daily_budget ? eur(a.daily_budget)+"/giorno" : "attiva"}<br>
-        <span style="color:var(--muted);font-weight:400">già sprecati ${eur(a.sprecato)}</span></div>
+        <span style="color:var(--muted);font-weight:400">già sprecati ${eur(a.creativa.sprecato)}</span></div>
     </div>`).join("")
-    : `<div class="empty">Nessuna campagna fuori regola ancora accesa. Tutto pulito.</div>`;
+    : `<div class="empty">Nessuna creativa fuori regola ancora accesa. Tutto pulito.</div>`;
 
   /* riallocazione */
   const rr = sel.filter(c => c.riallocazione.budget_da_spostare > 0);
