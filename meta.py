@@ -1,4 +1,4 @@
-"""Client Meta Marketing API — legge account e campagne.
+"""Client Meta Marketing API — legge account, campagne e inserzioni (creativita').
 
 Usa lo stesso token gia' configurato in ~/.config/meta-ads/config.json
 (token utente lungo con auto-rinnovo settimanale, vedi skill meta-ads-insights).
@@ -70,20 +70,10 @@ def list_accounts(tok: str) -> list[dict]:
     return out
 
 
-def campaign_insights(account: str, since: str, until: str, tok: str) -> list[dict]:
-    """Insight a livello CAMPAGNA sul periodo. account = 'act_xxx'."""
-    params = {
-        "level": "campaign",
-        "fields": (
-            "campaign_id,campaign_name,spend,impressions,clicks,ctr,cpm,"
-            "reach,frequency,actions,cost_per_action_type"
-        ),
-        "time_range": json.dumps({"since": since, "until": until}),
-        "limit": 500,
-    }
-    rows, d = [], _get(f"{account}/insights", params, tok)
-    rows.extend(d.get("data", []))
-    # paginazione
+def _paged(path: str, params: dict, tok: str) -> list[dict]:
+    """Tutte le pagine di una lista Graph (segue paging.next)."""
+    d = _get(path, params, tok)
+    rows = list(d.get("data", []))
     nxt = d.get("paging", {}).get("next")
     while nxt:
         with urllib.request.urlopen(nxt, timeout=90) as r:
@@ -93,30 +83,78 @@ def campaign_insights(account: str, since: str, until: str, tok: str) -> list[di
     return rows
 
 
-def campaign_status(account: str, tok: str) -> dict[str, dict]:
-    """Stato/budget delle campagne, per capire cosa e' ANCORA ACCESO."""
+INSIGHT_FIELDS = "spend,impressions,clicks,ctr,cpm,reach,frequency,actions,cost_per_action_type"
+
+
+def campaign_insights(account: str, since: str, until: str, tok: str) -> list[dict]:
+    """Insight a livello CAMPAGNA sul periodo. account = 'act_xxx'."""
     params = {
-        "fields": "id,name,status,effective_status,daily_budget,lifetime_budget,created_time",
+        "level": "campaign",
+        "fields": "campaign_id,campaign_name," + INSIGHT_FIELDS,
+        "time_range": json.dumps({"since": since, "until": until}),
         "limit": 500,
     }
+    return _paged(f"{account}/insights", params, tok)
+
+
+def ad_insights(account: str, since: str, until: str, tok: str) -> list[dict]:
+    """Insight a livello CREATIVITA' (inserzione) sul periodo. account = 'act_xxx'.
+
+    Una riga per inserzione, col campaign_id per riagganciarla alla campagna.
+    """
+    params = {
+        "level": "ad",
+        "fields": "ad_id,ad_name,adset_id,campaign_id,campaign_name," + INSIGHT_FIELDS,
+        "time_range": json.dumps({"since": since, "until": until}),
+        "limit": 500,
+    }
+    return _paged(f"{account}/insights", params, tok)
+
+
+def _status_map(path: str, fields: str, tok: str) -> dict[str, dict]:
+    """Stato per id.
+
+    Una pagina successiva che fallisce non butta via quelle gia' lette: se la
+    mappa tornasse vuota, ogni creativa sembrerebbe spenta e una campagna ancora
+    accesa fuori soglia verrebbe raccontata come gia' staccata.
+    """
     out: dict[str, dict] = {}
     try:
-        d = _get(f"{account}/campaigns", params, tok)
-    except MetaError:
+        d = _get(path, {"fields": fields, "limit": 500}, tok)
+    except Exception:
         return out
-    for c in d.get("data", []):
-        out[c["id"]] = c
-    nxt = d.get("paging", {}).get("next")
-    while nxt:
+    while True:
+        for c in d.get("data") or []:
+            if c.get("id"):
+                out[c["id"]] = c
+        nxt = (d.get("paging") or {}).get("next")
+        if not nxt:
+            break
         try:
             with urllib.request.urlopen(nxt, timeout=90) as r:
                 d = json.load(r)
         except Exception:
             break
-        for c in d.get("data", []):
-            out[c["id"]] = c
-        nxt = d.get("paging", {}).get("next")
     return out
+
+
+def campaign_status(account: str, tok: str) -> dict[str, dict]:
+    """Stato/budget delle campagne, per capire cosa e' ANCORA ACCESO."""
+    return _status_map(
+        f"{account}/campaigns",
+        "id,name,status,effective_status,daily_budget,lifetime_budget,created_time",
+        tok,
+    )
+
+
+def ad_status(account: str, tok: str) -> dict[str, dict]:
+    """Stato delle inserzioni. effective_status ACTIVE = la creativita' gira davvero
+    (se e' spento l'adset o la campagna Meta restituisce ADSET_PAUSED / CAMPAIGN_PAUSED)."""
+    return _status_map(
+        f"{account}/ads",
+        "id,name,status,effective_status,campaign_id,adset_id",
+        tok,
+    )
 
 
 def leads_of(row: dict) -> float:

@@ -116,29 +116,114 @@ def is_hiring(name: str) -> bool:
     return bool(HIRING_RE.match(name or ""))
 
 
-def normalize(row: dict, status_map: dict) -> dict:
+def metrics(row: dict) -> dict:
+    """Numeri comuni a campagna e inserzione, da una riga di insight Meta."""
     leads = meta.leads_of(row)
     spend = num(row.get("spend"))
+    clicks = num(row.get("clicks"))
+    return {
+        "spend": round(spend, 2),
+        "leads": leads,
+        "cpl": round(spend / leads, 2) if leads else None,
+        "impressions": num(row.get("impressions")),
+        "clicks": clicks,
+        # CVR click->lead: dice se il collo e' il MODULO invece delle ads
+        "cvr": round(leads / clicks * 100, 2) if clicks else None,
+        "ctr": num(row.get("ctr")),
+        "cpm": num(row.get("cpm")),
+        "reach": num(row.get("reach")),
+        "frequency": num(row.get("frequency")),
+    }
+
+
+def normalize(row: dict, status_map: dict) -> dict:
     st = status_map.get(row.get("campaign_id"), {})
     eff = st.get("effective_status", "UNKNOWN")
     return {
         "id": row.get("campaign_id"),
         "name": row.get("campaign_name", "(senza nome)"),
-        "spend": round(spend, 2),
-        "leads": leads,
-        "cpl": round(spend / leads, 2) if leads else None,
-        "impressions": num(row.get("impressions")),
-        "clicks": num(row.get("clicks")),
-        # CVR click->lead: dice se il collo e' il MODULO invece delle ads
-        "cvr": round(leads / num(row.get("clicks")) * 100, 2) if num(row.get("clicks")) else None,
-        "ctr": num(row.get("ctr")),
-        "cpm": num(row.get("cpm")),
-        "reach": num(row.get("reach")),
-        "frequency": num(row.get("frequency")),
-        "attiva": eff in ("ACTIVE", "CAMPAIGN_PAUSED") and eff == "ACTIVE",
+        **metrics(row),
+        "attiva": eff == "ACTIVE",
         "effective_status": eff,
         "daily_budget": round(num(st.get("daily_budget")) / 100, 2) if st.get("daily_budget") else None,
     }
+
+
+def normalize_ad(row: dict, ad_status: dict) -> dict:
+    st = ad_status.get(row.get("ad_id"), {})
+    # ACTIVE solo se gira davvero: con adset o campagna spenti Meta da'
+    # ADSET_PAUSED / CAMPAIGN_PAUSED anche se l'inserzione in se' e' accesa.
+    eff = st.get("effective_status", "UNKNOWN")
+    return {
+        "id": row.get("ad_id"),
+        "name": row.get("ad_name", "(senza nome)"),
+        "campaign_id": row.get("campaign_id"),
+        "campaign_name": row.get("campaign_name", "(senza nome)"),
+        **metrics(row),
+        "attiva": eff == "ACTIVE",
+        "effective_status": eff,
+    }
+
+
+def with_recent(x: dict, rr: dict | None) -> None:
+    """CPL della finestra recente e trend rispetto allo storico."""
+    if not rr:
+        x["recent"] = None
+        x["trend"] = None
+        return
+    rs, rl = num(rr.get("spend")), meta.leads_of(rr)
+    x["recent"] = {"spend": round(rs, 2), "leads": rl, "cpl": round(rs / rl, 2) if rl else None}
+    x["trend"] = round(x["recent"]["cpl"] - x["cpl"], 2) if x["cpl"] and x["recent"]["cpl"] else None
+
+
+def vivo_of(ads: list[dict]) -> dict | None:
+    """Le sole creative ANCORA ACCESE: e' su queste che si legge CPL/CVR/CTR
+    attuali. La media di campagna include le creative gia' staccate e racconta
+    un CPL che non esiste piu'. None se non c'e' nessuna creativa accesa."""
+    on = [a for a in ads if a["attiva"]]
+    if not on:
+        return None
+    spend = sum(a["spend"] for a in on)
+    leads = sum(a["leads"] for a in on)
+    clicks = sum(a["clicks"] for a in on)
+    impr = sum(a["impressions"] for a in on)
+    r_spend = sum((a.get("recent") or {}).get("spend", 0) for a in on)
+    r_leads = sum((a.get("recent") or {}).get("leads", 0) for a in on)
+    return {
+        "spend": round(spend, 2),
+        "leads": leads,
+        "clicks": clicks,
+        "impressions": impr,
+        "cpl": round(spend / leads, 2) if leads else None,
+        "cvr": round(leads / clicks * 100, 2) if clicks else None,
+        "ctr": round(clicks / impr * 100, 2) if impr else None,
+        "recent_cpl": round(r_spend / r_leads, 2) if r_leads else None,
+        "recent_spend": round(r_spend, 2),
+        "recent_leads": r_leads,
+    }
+
+
+def verdict_from_ads(ads: list[dict]) -> tuple[str, str, float]:
+    """Stato, motivo e sprecato della CAMPAGNA letti sulle creative accese.
+
+    Una creativa gia' staccata non e' piu' un'azione da fare: non rende la
+    campagna "da staccare" e il suo sprecato e' storia, non budget che brucia.
+    """
+    on = [a for a in ads if a["attiva"]]
+    kill_on = [a for a in on if a["status"] == "kill"]
+    win_on = [a for a in on if a["status"] == "winner"]
+    sprecato = round(sum(a["sprecato"] for a in on), 2)
+    if kill_on:
+        worst = max(kill_on, key=lambda a: a["sprecato"])
+        return "kill", (f"{len(kill_on)} inserzione/i ancora accesa/e fuori soglia "
+                        f"(la peggiore: {worst['name']}, {worst['reason']})"), sprecato
+    if win_on:
+        return "winner", f"{len(win_on)} inserzione/i vincente/i ancora accesa/e", sprecato
+    if on:
+        return "ok", "inserzioni accese dentro i parametri", sprecato
+    if any(a["status"] == "kill" for a in ads):
+        return "ok", "tutte le inserzioni fuori soglia sono gia' state staccate", sprecato
+    return "ok", "nessuna inserzione accesa", sprecato
 
 
 def build_account(acct: dict, cfg: dict, R: Rules, tok: str, since: str, until: str,
@@ -151,13 +236,30 @@ def build_account(acct: dict, cfg: dict, R: Rules, tok: str, since: str, until: 
         return None
     status_map = meta.campaign_status(aid, tok)
 
-    # finestra recente, per il trend CPL
-    recent = {}
+    # Livello CREATIVITA': una riga per inserzione, riagganciata alla campagna.
+    ad_rows = meta.ad_insights(aid, since, until, tok)
+    ad_status = meta.ad_status(aid, tok)
+
+    # finestra recente, per il trend CPL (campagna e creativita')
+    recent, recent_ads = {}, {}
     try:
         for r in meta.campaign_insights(aid, recent_since, until, tok):
             recent[r.get("campaign_id")] = r
+        for r in meta.ad_insights(aid, recent_since, until, tok):
+            recent_ads[r.get("ad_id")] = r
     except meta.MetaError:
         pass
+
+    ads_by_camp: dict[str, list[dict]] = {}
+    for row in ad_rows:
+        a = normalize_ad(row, ad_status)
+        status, reason = R.verdict(a)
+        a["status"] = status
+        a["reason"] = reason
+        a["sprecato"] = round(R.wasted(a), 2)
+        a["flags"] = R.flags(a)
+        with_recent(a, recent_ads.get(a["id"]))
+        ads_by_camp.setdefault(a["campaign_id"], []).append(a)
 
     campaigns = []
     hiring = []
@@ -167,27 +269,22 @@ def build_account(acct: dict, cfg: dict, R: Rules, tok: str, since: str, until: 
             c["hiring"] = True
             hiring.append(c)
             continue
-        status, reason = R.verdict(c)
-        c["status"] = status
-        c["reason"] = reason
-        c["sprecato"] = round(R.wasted(c), 2)
-        c["flags"] = R.flags(c)
-
-        rr = recent.get(c["id"])
-        if rr:
-            rs, rl = num(rr.get("spend")), meta.leads_of(rr)
-            c["recent"] = {
-                "spend": round(rs, 2),
-                "leads": rl,
-                "cpl": round(rs / rl, 2) if rl else None,
-            }
-            if c["cpl"] and c["recent"]["cpl"]:
-                c["trend"] = round(c["recent"]["cpl"] - c["cpl"], 2)
-            else:
-                c["trend"] = None
+        ads = sorted(ads_by_camp.get(c["id"], []),
+                     key=lambda a: (not a["attiva"], -a["spend"]))
+        c["ads"] = ads
+        c["n_ads"] = len(ads)
+        c["n_ads_attivi"] = sum(1 for a in ads if a["attiva"])
+        c["vivo"] = vivo_of(ads)
+        # Senza almeno uno stato letto non si puo' sapere cosa e' acceso: il
+        # verdetto di campagna e' meglio che dichiarare le creative "gia' staccate".
+        stati_noti = any(a.get("effective_status") not in (None, "", "UNKNOWN") for a in ads)
+        if ads and stati_noti:
+            c["status"], c["reason"], c["sprecato"] = verdict_from_ads(ads)
         else:
-            c["recent"] = None
-            c["trend"] = None
+            c["status"], c["reason"] = R.verdict(c)
+            c["sprecato"] = round(R.wasted(c), 2)
+        c["flags"] = R.flags(c)
+        with_recent(c, recent.get(c["id"]))
         campaigns.append(c)
 
     campaigns.sort(key=lambda c: (-c["sprecato"], -c["spend"]))
@@ -196,6 +293,22 @@ def build_account(acct: dict, cfg: dict, R: Rules, tok: str, since: str, until: 
     leads = sum(c["leads"] for c in campaigns)
     sprecato = sum(c["sprecato"] for c in campaigns)
     kill_now = [c for c in campaigns if c["status"] == "kill" and c["attiva"]]
+
+    # creative accese di tutto l'account
+    vivi = [c["vivo"] for c in campaigns if c["vivo"]]
+    v_spend = sum(v["spend"] for v in vivi)
+    v_leads = sum(v["leads"] for v in vivi)
+    v_clicks = sum(v["clicks"] for v in vivi)
+    v_rs = sum(v["recent_spend"] for v in vivi)
+    v_rl = sum(v["recent_leads"] for v in vivi)
+    vivo = {
+        "spend": round(v_spend, 2),
+        "leads": v_leads,
+        "cpl": round(v_spend / v_leads, 2) if v_leads else None,
+        "cvr": round(v_leads / v_clicks * 100, 2) if v_clicks else None,
+        "recent_cpl": round(v_rs / v_rl, 2) if v_rl else None,
+        "n_creative": sum(c["n_ads_attivi"] for c in campaigns),
+    } if vivi else None
 
     alias = cfg.get("aliases", {}).get(raw_id) or slugify(acct.get("name", raw_id))
     nome = cfg.get("client_names", {}).get(raw_id) or acct.get("name")
@@ -218,6 +331,7 @@ def build_account(acct: dict, cfg: dict, R: Rules, tok: str, since: str, until: 
         "n_kill": len([c for c in campaigns if c["status"] == "kill"]),
         "n_kill_ancora_accese": len(kill_now),
         "brucia_oggi": round(sum(c["daily_budget"] or 0 for c in kill_now), 2),
+        "vivo": vivo,
         "riallocazione": R.reallocation(campaigns),
         "campagne": campaigns,
         # tenute da parte, mai sommate: servono solo a spiegare il delta col conto Meta
@@ -228,6 +342,42 @@ def build_account(acct: dict, cfg: dict, R: Rules, tok: str, since: str, until: 
         },
         "campagne_hiring": hiring,
     }
+
+
+# Parole dei nomi account che NON identificano una persona (e il nome di casa
+# "AI Elite Advisory", che compare anche nel titolo della dashboard aea).
+NON_NOMI = {"read", "only", "elite", "advisory", "account", "ufficiale",
+            "consulente", "assicurativo", "personal"}
+
+
+def identifica(nome: str | None) -> bool:
+    """True se il nome contiene almeno una parola che puo' identificare qualcuno."""
+    return any(len(w) > 3 and w.lower() not in NON_NOMI
+               for w in re.split(r"[^A-Za-zÀ-ÿ]+", nome or ""))
+
+
+def is_public(path: str) -> bool:
+    """True se la cartella sta sotto docs/, cioe' viene pubblicata su GitHub Pages."""
+    pub = os.path.realpath(os.path.join(HERE, "docs"))
+    p = os.path.realpath(path)
+    return p == pub or p.startswith(pub + os.sep)
+
+
+def leaks(payload: dict, nomi: set, ids: set) -> list[str]:
+    """Ultimo controllo prima di scrivere un data.json anonimo: nessun nome vero
+    di cliente e nessun id di ad account deve comparire, in nessun campo."""
+    testo = json.dumps(payload, ensure_ascii=False).lower()
+    trovati = []
+    if any(a.get("nome_reale") not in (None, a.get("alias"))
+           for a in payload["clienti"] + payload["fermi"]):
+        trovati.append("nome_reale diverso dalla sigla")
+    if '"account_id"' in testo:
+        trovati.append("campo account_id")
+    if any(i and re.search(r"(?<!\d)" + re.escape(i) + r"(?!\d)", testo) for i in ids):
+        trovati.append("id di ad account")
+    if any(identifica(n) and n.lower() in testo for n in nomi):
+        trovati.append("nome vero di un cliente")
+    return trovati
 
 
 def main() -> int:
@@ -330,13 +480,23 @@ def main() -> int:
         "errori": errors,
     }
 
-    anon = cfg.get("anonymize", True) and not args.no_anon
+    docs = args.out if os.path.isabs(args.out) else os.path.join(HERE, args.out)
+    # Tutto cio' che sta sotto docs/ finisce su GitHub Pages PUBBLICO: li'
+    # l'anonimizzazione e' obbligatoria, ne' --no-anon ne' anonymize:false
+    # possono spegnerla. I nomi veri in chiaro solo fuori da docs/ (es. privato/).
+    pubblico = is_public(docs)
+    anon = (cfg.get("anonymize", True) and not args.no_anon) or pubblico
+    if pubblico and (args.no_anon or not cfg.get("anonymize", True)):
+        print(f"  ATTENZIONE: {docs} e' pubblicato, nomi veri ignorati: "
+              "per i nomi in chiaro usa --out privato", file=sys.stderr)
 
     # I nomi VERI, messi da parte prima di anonimizzare: finiscono cifrati
     # in names.enc e in chiaro solo in clients_private.json (mai committato).
     clear_names = {
         "clienti": {a["alias"]: a["nome_reale"] for a in out + fermi},
         "campagne": {c["id"]: c["name"] for a in out for c in a["campagne"]},
+        "inserzioni": {ad["id"]: ad["name"] for a in out for c in a["campagne"]
+                       for ad in c.get("ads", [])},
     }
     # La mappa in chiaro si AGGIORNA, non si sovrascrive: ogni build vede solo
     # il suo perimetro e cancellerebbe gli altri clienti.
@@ -350,31 +510,59 @@ def main() -> int:
     with open(privfile, "w") as f:
         json.dump(priv, f, indent=2, ensure_ascii=False, sort_keys=True)
 
-    # Nomi di persona dentro i nomi campagna: oscurati prima di pubblicare.
+    # Nomi di persona dentro i nomi di campagne e creative: oscurati prima di pubblicare.
     scrub = {t.lower() for t in cfg.get("scrub_terms", [])}
     for a in accounts:
         for w in re.split(r"[^A-Za-zÀ-ÿ]+", a.get("name") or ""):
             if len(w) > 3:
                 scrub.add(w.lower())
-    scrub -= {"read", "only", "elite", "advisory", "account", "ufficiale",
-              "consulente", "assicurativo", "personal"}
+    for a in out + fermi:
+        for w in re.split(r"[^A-Za-zÀ-ÿ]+", a.get("nome_reale") or ""):
+            if len(w) > 3:
+                scrub.add(w.lower())
+    scrub -= NON_NOMI
     if anon and scrub:
         pat = re.compile(r"\b(" + "|".join(sorted(map(re.escape, scrub), key=len, reverse=True)) + r")\b",
                          re.IGNORECASE)
+        clean = lambda t: re.sub(r"\s{2,}", " ", pat.sub("…", t or "")).strip()
         for a in payload["clienti"]:
             for c in a["campagne"] + a.get("campagne_hiring", []):
-                c["name"] = re.sub(r"\s{2,}", " ", pat.sub("…", c["name"])).strip()
+                c["name"] = clean(c["name"])
+                if c.get("reason"):
+                    c["reason"] = clean(c["reason"])  # cita il nome della creativa peggiore
+                if c.get("flags"):
+                    c["flags"] = [clean(f) for f in c["flags"]]
+                for ad in c.get("ads", []):
+                    ad["name"] = clean(ad["name"])
+                    ad["campaign_name"] = clean(ad["campaign_name"])
+                    if ad.get("reason"):
+                        ad["reason"] = clean(ad["reason"])
+                    if ad.get("flags"):
+                        ad["flags"] = [clean(f) for f in ad["flags"]]
+
+    # nomi e id veri messi da parte PRIMA di anonimizzare (gli oggetti del
+    # payload sono gli stessi di out/fermi): servono al controllo finale
+    nomi_veri = {a.get("nome_reale") for a in out + fermi} | {a.get("name") for a in accounts}
+    ids_veri = {a["id"].replace("act_", "") for a in accounts} | {a["account_id"] for a in out + fermi}
 
     if anon:
+        # nome_reale resta come campo ma porta solo la sigla: il nome vero
+        # si legge solo sbloccando names.enc con la passphrase.
         for a in payload["clienti"] + payload["fermi"]:
-            a.pop("nome_reale", None)
+            a["nome_reale"] = a["alias"]
             a.pop("account_id", None)
         for e in payload["errori"]:
             e["account"] = "(account)"
+            e["errore"] = "(dettaglio nel log)"
 
-    docs = args.out if os.path.isabs(args.out) else os.path.join(HERE, args.out)
     os.makedirs(docs, exist_ok=True)
     payload["nomi_sbloccabili"] = anon
+    if anon:
+        trapelati = leaks(payload, nomi_veri, ids_veri)
+        if trapelati:
+            print(f"STOP: data.json conterrebbe dati in chiaro ({', '.join(trapelati)}), "
+                  "non scritto", file=sys.stderr)
+            return 2
     with open(os.path.join(docs, "data.json"), "w") as f:
         json.dump(payload, f, indent=1, ensure_ascii=False)
 
