@@ -1,6 +1,6 @@
 {
- "generato": "10/10/2026 08:43",
- "quota_mese": 32,
+ "generato": "11/10/2026 09:45",
+ "quota_mese": 35,
  "totale_corrente": 12414,
  "totale_m1": 9483,
  "totale_m2": 6495,
@@ -9,32 +9,32 @@
    "voce": "Carlo Parodi",
    "mese_corrente": 4075,
    "media_precedenti": 458,
-   "atteso_a_oggi": 148,
-   "variazione": 2658,
+   "atteso_a_oggi": 163,
+   "variazione": 2407,
    "stato": "scappato"
   },
   {
    "voce": "Francesco Labriola",
    "mese_corrente": 3440,
    "media_precedenti": 4360,
-   "atteso_a_oggi": 1406,
-   "variazione": 145,
+   "atteso_a_oggi": 1547,
+   "variazione": 122,
    "stato": "scappato"
   },
   {
    "voce": "Michele De Sena",
    "mese_corrente": 2745,
    "media_precedenti": 780,
-   "atteso_a_oggi": 252,
-   "variazione": 991,
+   "atteso_a_oggi": 277,
+   "variazione": 892,
    "stato": "scappato"
   },
   {
    "voce": "Alessandro Cugini",
    "mese_corrente": 1815,
    "media_precedenti": 695,
-   "atteso_a_oggi": 224,
-   "variazione": 710,
+   "atteso_a_oggi": 247,
+   "variazione": 636,
    "stato": "scappato"
   },
   {
@@ -54,18 +54,10 @@
    "stato": "nuovo"
   },
   {
-   "voce": "Facebook",
+   "voce": "Chat Gpt",
    "mese_corrente": 0,
-   "media_precedenti": 1567,
-   "atteso_a_oggi": 505,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Zoom",
-   "mese_corrente": 0,
-   "media_precedenti": 20,
-   "atteso_a_oggi": 6,
+   "media_precedenti": 187,
+   "atteso_a_oggi": 66,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -73,55 +65,15 @@
    "voce": "Davide Mazzucco",
    "mese_corrente": 0,
    "media_precedenti": 200,
-   "atteso_a_oggi": 65,
+   "atteso_a_oggi": 71,
    "variazione": -100,
    "stato": "sparito"
   },
   {
-   "voce": "Claude",
+   "voce": "Zoom",
    "mese_corrente": 0,
-   "media_precedenti": 60,
-   "atteso_a_oggi": 19,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Chat Gpt",
-   "mese_corrente": 0,
-   "media_precedenti": 187,
-   "atteso_a_oggi": 60,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Tax Dome",
-   "mese_corrente": 0,
-   "media_precedenti": 350,
-   "atteso_a_oggi": 113,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Cost Of Goods Sold",
-   "mese_corrente": 0,
-   "media_precedenti": 1500,
-   "atteso_a_oggi": 484,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Compenso Francesco Labriola",
-   "mese_corrente": 0,
-   "media_precedenti": 860,
-   "atteso_a_oggi": 277,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Go High Level",
-   "mese_corrente": 0,
-   "media_precedenti": 430,
-   "atteso_a_oggi": 139,
+   "media_precedenti": 20,
+   "atteso_a_oggi": 7,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -129,7 +81,47 @@
    "voce": "Mara (Setter)",
    "mese_corrente": 0,
    "media_precedenti": 375,
-   "atteso_a_oggi": 121,
+   "atteso_a_oggi": 133,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Cost Of Goods Sold",
+   "mese_corrente": 0,
+   "media_precedenti": 1500,
+   "atteso_a_oggi": 532,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Go High Level",
+   "mese_corrente": 0,
+   "media_precedenti": 430,
+   "atteso_a_oggi": 153,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Compenso Francesco Labriola",
+   "mese_corrente": 0,
+   "media_precedenti": 860,
+   "atteso_a_oggi": 305,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Facebook",
+   "mese_corrente": 0,
+   "media_precedenti": 1567,
+   "atteso_a_oggi": 556,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Claude",
+   "mese_corrente": 0,
+   "media_precedenti": 60,
+   "atteso_a_oggi": 21,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -137,7 +129,7 @@
    "voce": "Rimborso Spese Francesco Labriola",
    "mese_corrente": 0,
    "media_precedenti": 100,
-   "atteso_a_oggi": 32,
+   "atteso_a_oggi": 35,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -145,12 +137,20 @@
    "voce": "Twilio",
    "mese_corrente": 0,
    "media_precedenti": 20,
-   "atteso_a_oggi": 6,
+   "atteso_a_oggi": 7,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Tax Dome",
+   "mese_corrente": 0,
+   "media_precedenti": 350,
+   "atteso_a_oggi": 124,
    "variazione": -100,
    "stato": "sparito"
   }
  ],
- "extra_del_mese": 10045,
+ "extra_del_mese": 9841,
  "n_scappati": 4,
  "n_nuovi": 2,
  "n_spariti": 12
