@@ -1,5 +1,5 @@
 {
- "generato": "08/10 04:04",
+ "generato": "12/10 04:05",
  "n_account_rossi": 22,
  "n_puliti": 0,
  "puliti": [],
@@ -8,6 +8,12 @@
    "cliente": "AEA-HOUSE",
    "tipo": "NON CONSEGNA",
    "dettaglio": "Venditore - Moduli · ieri 0.00 €",
+   "gravita": 3
+  },
+  {
+   "cliente": "AEA-HOUSE",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "instagram/instagram_reels · 0.81 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
    "gravita": 3
   },
   {
@@ -29,51 +35,27 @@
    "gravita": 3
   },
   {
-   "cliente": "CF-DDB",
-   "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
-   "dettaglio": "Lead Gen N - Davide Dal Bosco",
-   "gravita": 3
-  },
-  {
-   "cliente": "GC",
-   "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
-   "dettaglio": "Lead Gen N - Giovanni Caruso",
-   "gravita": 3
-  },
-  {
-   "cliente": "CF-MDL",
+   "cliente": "MDL",
    "tipo": "NON CONSEGNA",
    "dettaglio": "Moduli - avangers · ieri 0.00 €",
    "gravita": 3
   },
   {
-   "cliente": "CF-MDL",
+   "cliente": "MDL",
    "tipo": "NON CONSEGNA",
    "dettaglio": "Moduli - costruire port · ieri 0.00 €",
    "gravita": 3
   },
   {
-   "cliente": "CF-MDL",
+   "cliente": "MDL",
    "tipo": "NON CONSEGNA",
    "dettaglio": "Moduli - rifatta - Copia · ieri 0.00 €",
    "gravita": 3
   },
   {
-   "cliente": "CF-MDL",
+   "cliente": "MDL",
    "tipo": "NON CONSEGNA",
    "dettaglio": "Moduli - rifatta · ieri 0.00 €",
-   "gravita": 3
-  },
-  {
-   "cliente": "CF-RD",
-   "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
-   "dettaglio": "Lead Gen N - Raffaele De Leonardis",
-   "gravita": 3
-  },
-  {
-   "cliente": "CF-SM",
-   "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
-   "dettaglio": "Lead Gen N - Stefano Moratti",
    "gravita": 3
   },
   {
@@ -83,15 +65,21 @@
    "gravita": 3
   },
   {
-   "cliente": "GC",
-   "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
-   "dettaglio": "Lead Gen N - Giovanni Caruso",
-   "gravita": 3
-  },
-  {
    "cliente": "ORO-AZ",
    "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
    "dettaglio": "Lead Gen 1 Q - Alessandro Zaghini",
+   "gravita": 3
+  },
+  {
+   "cliente": "URO",
+   "tipo": "ANNUNCIO BLOCCATO",
+   "dettaglio": "Traffic Campaign · Two-factor authentication required",
+   "gravita": 3
+  },
+  {
+   "cliente": "URO",
+   "tipo": "NON CONSEGNA",
+   "dettaglio": "MM_LITE_DEFAULT_AD_CAMPAIGN_GROUP · ieri 0.00 €",
    "gravita": 3
   },
   {
@@ -113,27 +101,9 @@
    "gravita": 2
   },
   {
-   "cliente": "FB",
-   "tipo": "PIU' DI UN MODULO VIVO",
-   "dettaglio": "Lead Flavio Bosia, Lead Gen - New 1Q - Flavio Bosia",
-   "gravita": 2
-  },
-  {
-   "cliente": "CF-LM",
-   "tipo": "PIU' DI UN MODULO VIVO",
-   "dettaglio": "Lead Luigi Micheloni, Lead Gen - New 1Q - Luigi Micheloni",
-   "gravita": 2
-  },
-  {
    "cliente": "CF-RD",
    "tipo": "MODULO SENZA TELEFONO",
    "dettaglio": "Lead Gen N - Raffaele De Leonardis",
-   "gravita": 2
-  },
-  {
-   "cliente": "CF-RD",
-   "tipo": "PIU' DI UN MODULO VIVO",
-   "dettaglio": "Lead Raffaele De Leonardis,  Lead Gen 2 - 1 Q - Raffaele De Leonardis",
    "gravita": 2
   },
   {
@@ -149,18 +119,6 @@
    "gravita": 2
   },
   {
-   "cliente": "FB",
-   "tipo": "PIU' DI UN MODULO VIVO",
-   "dettaglio": "Lead Flavio Bosia, Lead Gen - New 1Q - Flavio Bosia",
-   "gravita": 2
-  },
-  {
-   "cliente": "LMB",
-   "tipo": "PIU' DI UN MODULO VIVO",
-   "dettaglio": "Lead Luigi Micheloni, Lead Gen - New 1Q - Luigi Micheloni",
-   "gravita": 2
-  },
-  {
    "cliente": "URO",
    "tipo": "CARTELLA DRIVE NON TROVATA",
    "dettaglio": "attesa «Clienti10X - unknown (Read-Only)»",
@@ -171,12 +129,6 @@
    "tipo": "CARTELLA DRIVE NON TROVATA",
    "dettaglio": "attesa «Clienti10X - Zaghini Account Pubblicitario»",
    "gravita": 2
-  },
-  {
-   "cliente": "AEA-HOUSE",
-   "tipo": "FUORI REGOLA",
-   "dettaglio": "Moduli -immagine - Copia 9 / Nuova inserzione Contatti · CPL 22.19 €",
-   "gravita": 1
   },
   {
    "cliente": "AEA-HOUSE",
@@ -300,6 +252,12 @@
   },
   {
    "cliente": "CF-FR",
+   "tipo": "FUORI REGOLA",
+   "dettaglio": "Moduli - Campagna Attiva / Statica - Quando potrai andare in pensione? · CPL 24.13 €",
+   "gravita": 1
+  },
+  {
+   "cliente": "CF-FR",
    "tipo": "REELS ATTIVI ['facebook_reels', 'facebook_reels_overlay', 'reels']",
    "dettaglio": "Moduli - Campagna Attiva",
    "gravita": 1
@@ -341,55 +299,55 @@
    "gravita": 1
   },
   {
-   "cliente": "CF-MDL",
+   "cliente": "MDL",
    "tipo": "FASCIA ETA' FUORI STANDARD",
    "dettaglio": "18-65 invece di 30-63 · Moduli - avangers",
    "gravita": 1
   },
   {
-   "cliente": "CF-MDL",
+   "cliente": "MDL",
    "tipo": "FASCIA ETA' FUORI STANDARD",
    "dettaglio": "18-65 invece di 30-63 · Moduli - costruire port",
    "gravita": 1
   },
   {
-   "cliente": "CF-MDL",
+   "cliente": "MDL",
    "tipo": "FASCIA ETA' FUORI STANDARD",
    "dettaglio": "18-65 invece di 30-63 · Moduli - rifatta",
    "gravita": 1
   },
   {
-   "cliente": "CF-MDL",
+   "cliente": "MDL",
    "tipo": "FASCIA ETA' FUORI STANDARD",
    "dettaglio": "18-65 invece di 30-63 · Moduli - rifatta - Copia",
    "gravita": 1
   },
   {
-   "cliente": "CF-MDL",
+   "cliente": "MDL",
    "tipo": "PIU' DI UNA DOMANDA DI QUALIFICA",
    "dettaglio": "Modulo guida · 5 domande",
    "gravita": 1
   },
   {
-   "cliente": "CF-MDL",
+   "cliente": "MDL",
    "tipo": "REELS ATTIVI ['facebook_reels_overlay']",
    "dettaglio": "Moduli - avangers",
    "gravita": 1
   },
   {
-   "cliente": "CF-MDL",
+   "cliente": "MDL",
    "tipo": "REELS ATTIVI ['facebook_reels_overlay']",
    "dettaglio": "Moduli - costruire port",
    "gravita": 1
   },
   {
-   "cliente": "CF-MDL",
+   "cliente": "MDL",
    "tipo": "REELS ATTIVI ['facebook_reels_overlay']",
    "dettaglio": "Moduli - rifatta",
    "gravita": 1
   },
   {
-   "cliente": "CF-MDL",
+   "cliente": "MDL",
    "tipo": "REELS ATTIVI ['facebook_reels_overlay']",
    "dettaglio": "Moduli - rifatta - Copia",
    "gravita": 1
@@ -474,6 +432,12 @@
   },
   {
    "cliente": "FR",
+   "tipo": "FUORI REGOLA",
+   "dettaglio": "Moduli - Campagna Attiva / Statica - Quando potrai andare in pensione? · CPL 24.13 €",
+   "gravita": 1
+  },
+  {
+   "cliente": "FR",
    "tipo": "REELS ATTIVI ['facebook_reels', 'facebook_reels_overlay', 'reels']",
    "dettaglio": "Moduli - Campagna Attiva",
    "gravita": 1
@@ -518,6 +482,12 @@
    "cliente": "URO",
    "tipo": "BUDGET SCOPERTO",
    "dettaglio": "0.00 €/g sotto i 15",
+   "gravita": 1
+  },
+  {
+   "cliente": "URO",
+   "tipo": "FASCIA ETA' FUORI STANDARD",
+   "dettaglio": "13-65 invece di 30-63 · MM_LITE_DEFAULT_AD_CAMPAIGN_GROUP",
    "gravita": 1
   },
   {
