@@ -1,6 +1,6 @@
 {
- "generato": "12/10 04:05",
- "n_account_rossi": 22,
+ "generato": "13/10 04:04",
+ "n_account_rossi": 24,
  "n_puliti": 0,
  "puliti": [],
  "voci": [
@@ -13,7 +13,13 @@
   {
    "cliente": "AEA-HOUSE",
    "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "instagram/instagram_reels · 0.81 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "dettaglio": "facebook/facebook_notification · 0.51 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "gravita": 3
+  },
+  {
+   "cliente": "AEA-HOUSE",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "instagram/instagram_reels · 0.61 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
    "gravita": 3
   },
   {
@@ -62,6 +68,12 @@
    "cliente": "DDB",
    "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
    "dettaglio": "Lead Gen N - Davide Dal Bosco",
+   "gravita": 3
+  },
+  {
+   "cliente": "MPC",
+   "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
+   "dettaglio": "Lead Gen N - Marco Pellegatta",
    "gravita": 3
   },
   {
@@ -116,6 +128,12 @@
    "cliente": "DDB",
    "tipo": "MODULO SENZA TELEFONO",
    "dettaglio": "Lead Gen N - Davide Dal Bosco",
+   "gravita": 2
+  },
+  {
+   "cliente": "MPC",
+   "tipo": "CARTELLA DRIVE NON TROVATA",
+   "dettaglio": "attesa «Clienti10X - Marco Pellegatta - Consulente Finanziario»",
    "gravita": 2
   },
   {
@@ -252,12 +270,6 @@
   },
   {
    "cliente": "CF-FR",
-   "tipo": "FUORI REGOLA",
-   "dettaglio": "Moduli - Campagna Attiva / Statica - Quando potrai andare in pensione? · CPL 24.13 €",
-   "gravita": 1
-  },
-  {
-   "cliente": "CF-FR",
    "tipo": "REELS ATTIVI ['facebook_reels', 'facebook_reels_overlay', 'reels']",
    "dettaglio": "Moduli - Campagna Attiva",
    "gravita": 1
@@ -365,6 +377,18 @@
    "gravita": 1
   },
   {
+   "cliente": "CF-MP",
+   "tipo": "FASCIA ETA' FUORI STANDARD",
+   "dettaglio": "30-60 invece di 30-63 · AI Elite - Campagna Attiva",
+   "gravita": 1
+  },
+  {
+   "cliente": "CF-MP",
+   "tipo": "REELS ATTIVI ['facebook_reels', 'reels']",
+   "dettaglio": "AI Elite - Campagna Attiva",
+   "gravita": 1
+  },
+  {
    "cliente": "CF-RD",
    "tipo": "FASCIA ETA' FUORI STANDARD",
    "dettaglio": "29-60 invece di 30-63 · Moduli - Campagna Principale Attiva",
@@ -432,12 +456,6 @@
   },
   {
    "cliente": "FR",
-   "tipo": "FUORI REGOLA",
-   "dettaglio": "Moduli - Campagna Attiva / Statica - Quando potrai andare in pensione? · CPL 24.13 €",
-   "gravita": 1
-  },
-  {
-   "cliente": "FR",
    "tipo": "REELS ATTIVI ['facebook_reels', 'facebook_reels_overlay', 'reels']",
    "dettaglio": "Moduli - Campagna Attiva",
    "gravita": 1
@@ -464,6 +482,18 @@
    "cliente": "LMB",
    "tipo": "REELS ATTIVI ['facebook_reels', 'reels']",
    "dettaglio": "Moduli - Campagna Attiva",
+   "gravita": 1
+  },
+  {
+   "cliente": "MPC",
+   "tipo": "FASCIA ETA' FUORI STANDARD",
+   "dettaglio": "30-60 invece di 30-63 · AI Elite - Campagna Attiva",
+   "gravita": 1
+  },
+  {
+   "cliente": "MPC",
+   "tipo": "REELS ATTIVI ['facebook_reels', 'reels']",
+   "dettaglio": "AI Elite - Campagna Attiva",
    "gravita": 1
   },
   {

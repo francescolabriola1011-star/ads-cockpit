@@ -318,7 +318,7 @@ function render(){
     `<b>0 lead</b> sopra ${eur0(R.spend_kill_zero_lead_eur || R.spend_warn_eur)} di spesa → si stacca`,
     `<b>1 lead</b>: si lascia girare fino a ${eur0(R.spend_kill_eur)}, il CPL non si guarda`,
     `entro ${eur0(R.spend_kill_eur)} servono <b>2 lead</b> (CPL sotto ${eur0(R.spend_kill_eur/2)}) → altrimenti si stacca`,
-    `da <b>2 a ${int((R.cpl_kill_lead_minimi || 6) - 1)} lead</b> il CPL non stacca`,
+    `da <b>2 a ${int((R.cpl_kill_lead_minimi || 6) - 1)} lead</b> si lascia girare` + (R.cpl_allarme_pochi_lead_eur ? `, CPL sopra <b>${eur0(R.cpl_allarme_pochi_lead_eur)}</b> → si stacca (tetto di allarme)` : ``),
     `da <b>${int(R.cpl_kill_lead_minimi || 6)} lead</b>, CPL sopra <b>${eur0(R.cpl_kill_eur)}</b> e CVR sotto <b>${CVRMIN}%</b> → si stacca`,
     `CVR di almeno <b>${CVRMIN}%</b> sui click al link → il solo CPL alto non stacca`,
     `CPL sotto <b>${eur0(R.cpl_winner_eur)}</b> → vincente, ci si mette budget`,
