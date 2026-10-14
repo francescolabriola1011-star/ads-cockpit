@@ -1,5 +1,5 @@
 {
- "generato": "13/10 04:04",
+ "generato": "14/10 04:04",
  "n_account_rossi": 24,
  "n_puliti": 0,
  "puliti": [],
@@ -13,13 +13,7 @@
   {
    "cliente": "AEA-HOUSE",
    "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "facebook/facebook_notification · 0.51 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
-   "gravita": 3
-  },
-  {
-   "cliente": "AEA-HOUSE",
-   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "instagram/instagram_reels · 0.61 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "dettaglio": "instagram/instagram_reels · 2.56 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
    "gravita": 3
   },
   {
@@ -157,7 +151,7 @@
   {
    "cliente": "AEA-HOUSE",
    "tipo": "REELS ATTIVI ['facebook_reels', 'facebook_reels_overlay']",
-   "dettaglio": "Venditore - Moduli - Copia",
+   "dettaglio": "Venditore - Moduli - Copia 2",
    "gravita": 1
   },
   {
@@ -211,7 +205,7 @@
   {
    "cliente": "CF-CC",
    "tipo": "FASCIA ETA' FUORI STANDARD",
-   "dettaglio": "30-60 invece di 30-63 · AI Elite - Moduli - Campagna Attiva",
+   "dettaglio": "25-63 invece di 30-63 · AI Elite - Moduli - Campagna Attiva",
    "gravita": 1
   },
   {
@@ -223,7 +217,7 @@
   {
    "cliente": "CF-CC",
    "tipo": "FASCIA ETA' FUORI STANDARD",
-   "dettaglio": "30-60 invece di 30-63 · AI Elite - Moduli - Campagna Attiva",
+   "dettaglio": "25-63 invece di 30-63 · AI Elite - Moduli - Campagna Attiva",
    "gravita": 1
   },
   {
