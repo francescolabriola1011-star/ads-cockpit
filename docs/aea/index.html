@@ -599,5 +599,71 @@ fetch("costi.json", {cache:"no-store"}).then(r => r.ok ? r.json() : null).then(d
   el.hidden = false;
 }).catch(() => {});
 </script>
+<style id="tema-blu">
+:root, :root[data-theme], html, body {
+  --bg: #0B1A3A !important;
+  --paper: #0B1A3A !important;
+  --plane: #0B1A3A !important;
+  --panel: rgba(30,64,140,.42) !important;
+  --surface: rgba(30,64,140,.42) !important;
+  --card: rgba(30,64,140,.42) !important;
+  --white: rgba(30,64,140,.42) !important;
+  --panel2: rgba(52,98,196,.45) !important;
+  --card2: rgba(52,98,196,.45) !important;
+  --soft: rgba(255,255,255,.08) !important;
+  --ink: #F3F6FD !important;
+  --txt: #F3F6FD !important;
+  --ink2: #D6E0F5 !important;
+  --muted: #A9BBE0 !important;
+  --faint: #7F93BF !important;
+  --muted2: #7F93BF !important;
+  --line: rgba(150,190,255,.20) !important;
+  --border: rgba(150,190,255,.20) !important;
+  --grid: rgba(150,190,255,.12) !important;
+  --track: rgba(255,255,255,.10) !important;
+  --accent: #FFD21F !important;
+  --gold: #D4A537 !important;
+  --yellow: #FFD21F !important;
+  --navy: #0E2454 !important;
+  --navy2: #1A3A80 !important;
+  --blue: #6EA8FF !important;
+  --accent2: #8FB3FF !important;
+  --violet: #8FB3FF !important;
+  --green: #4FD1A1 !important;
+  --jade: #4FD1A1 !important;
+  --good: #4FD1A1 !important;
+  --ok: #4FD1A1 !important;
+  --amber: #F5B942 !important;
+  --warn: #F5B942 !important;
+  --serious: #FF9A6B !important;
+  --red: #FF7A59 !important;
+  --crit: #FF7A59 !important;
+  --shadow: 0 10px 30px rgba(0,0,0,.30) !important;
+  --shadow-lg: 0 16px 40px rgba(0,0,0,.35) !important;
+  --surface-2: rgba(52,98,196,.45) !important;
+  --panel-2: rgba(52,98,196,.45) !important;
+  --text: #F3F6FD !important;
+  --green-ink: #4FD1A1 !important;
+  --amber-soft: rgba(245,185,66,.16) !important;
+  --gold-soft: rgba(245,185,66,.16) !important;
+  --jade-soft: rgba(79,209,161,.16) !important;
+  --green-soft: rgba(79,209,161,.16) !important;
+  --red-soft: rgba(255,122,89,.16) !important;
+  --blue-soft: rgba(110,168,255,.16) !important;
+  --border-strong: rgba(150,190,255,.32) !important;
+  --line-2: rgba(150,190,255,.32) !important;
+  --gold-line: rgba(212,165,55,.55) !important;
+  color-scheme: dark;
+}
+html { background: #0B1A3A !important; }
+body { background: radial-gradient(900px 600px at 0% -10%, rgba(212,165,55,.38), transparent 60%),
+  radial-gradient(900px 700px at 100% 0%, rgba(59,130,246,.55), transparent 62%),
+  radial-gradient(1000px 800px at 50% 100%, rgba(37,99,235,.35), transparent 65%),
+  linear-gradient(180deg, #13306b 0%, #0e2454 45%, #0B1A3A 100%) !important; background-attachment: fixed !important; color: #F3F6FD; min-height: 100vh; }
+.wrap { background: transparent !important; }
+a { color: inherit; }
+table th { color: #A9BBE0; }
+::selection { background: rgba(255,210,31,.35); }
+</style>
 </body>
 </html>
