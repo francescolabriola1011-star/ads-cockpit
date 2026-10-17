@@ -1,5 +1,5 @@
 {
- "generato": "14/10 04:04",
+ "generato": "17/10 04:04",
  "n_account_rossi": 24,
  "n_puliti": 0,
  "puliti": [],
@@ -8,12 +8,6 @@
    "cliente": "AEA-HOUSE",
    "tipo": "NON CONSEGNA",
    "dettaglio": "Venditore - Moduli · ieri 0.00 €",
-   "gravita": 3
-  },
-  {
-   "cliente": "AEA-HOUSE",
-   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "instagram/instagram_reels · 2.56 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
    "gravita": 3
   },
   {
@@ -71,12 +65,6 @@
    "gravita": 3
   },
   {
-   "cliente": "ORO-AZ",
-   "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
-   "dettaglio": "Lead Gen 1 Q - Alessandro Zaghini",
-   "gravita": 3
-  },
-  {
    "cliente": "URO",
    "tipo": "ANNUNCIO BLOCCATO",
    "dettaglio": "Traffic Campaign · Two-factor authentication required",
@@ -97,7 +85,7 @@
   {
    "cliente": "ZAP",
    "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
-   "dettaglio": "Lead Gen 1 Q - Alessandro Zaghini",
+   "dettaglio": "Lead Gen N Alessandro Zaghini",
    "gravita": 3
   },
   {
@@ -131,6 +119,18 @@
    "gravita": 2
   },
   {
+   "cliente": "ORO-AZ",
+   "tipo": "MODULO SENZA TELEFONO",
+   "dettaglio": "Lead Gen N Alessandro Zaghini",
+   "gravita": 2
+  },
+  {
+   "cliente": "ORO-AZ",
+   "tipo": "PIU' DI UN MODULO VIVO",
+   "dettaglio": "Lead Alessandro Zaghini, Lead Meta Ads – Alessandro Zaghini",
+   "gravita": 2
+  },
+  {
    "cliente": "URO",
    "tipo": "CARTELLA DRIVE NON TROVATA",
    "dettaglio": "attesa «Clienti10X - unknown (Read-Only)»",
@@ -140,6 +140,12 @@
    "cliente": "ZAP",
    "tipo": "CARTELLA DRIVE NON TROVATA",
    "dettaglio": "attesa «Clienti10X - Zaghini Account Pubblicitario»",
+   "gravita": 2
+  },
+  {
+   "cliente": "ZAP",
+   "tipo": "MODULO SENZA TELEFONO",
+   "dettaglio": "Lead Gen N Alessandro Zaghini",
    "gravita": 2
   },
   {
@@ -264,7 +270,7 @@
   },
   {
    "cliente": "CF-FR",
-   "tipo": "REELS ATTIVI ['facebook_reels', 'facebook_reels_overlay', 'reels']",
+   "tipo": "REELS ATTIVI ['facebook_reels', 'reels']",
    "dettaglio": "Moduli - Campagna Attiva",
    "gravita": 1
   },
@@ -450,7 +456,7 @@
   },
   {
    "cliente": "FR",
-   "tipo": "REELS ATTIVI ['facebook_reels', 'facebook_reels_overlay', 'reels']",
+   "tipo": "REELS ATTIVI ['facebook_reels', 'reels']",
    "dettaglio": "Moduli - Campagna Attiva",
    "gravita": 1
   },
@@ -498,7 +504,13 @@
   },
   {
    "cliente": "ORO-AZ",
-   "tipo": "REELS ATTIVI ['facebook_reels', 'reels']",
+   "tipo": "PIU' DI UNA DOMANDA DI QUALIFICA",
+   "dettaglio": "Lead Gen N Alessandro Zaghini · 2 domande",
+   "gravita": 1
+  },
+  {
+   "cliente": "ORO-AZ",
+   "tipo": "REELS ATTIVI ['facebook_reels']",
    "dettaglio": "Moduli AI ELITE - Campagna Attiva",
    "gravita": 1
   },
@@ -528,7 +540,13 @@
   },
   {
    "cliente": "ZAP",
-   "tipo": "REELS ATTIVI ['facebook_reels', 'reels']",
+   "tipo": "PIU' DI UNA DOMANDA DI QUALIFICA",
+   "dettaglio": "Lead Gen N Alessandro Zaghini · 2 domande",
+   "gravita": 1
+  },
+  {
+   "cliente": "ZAP",
+   "tipo": "REELS ATTIVI ['facebook_reels']",
    "dettaglio": "Moduli AI ELITE - Campagna Attiva",
    "gravita": 1
   }
