@@ -1,5 +1,5 @@
 {
- "generato": "17/10 04:04",
+ "generato": "18/10 04:04",
  "n_account_rossi": 24,
  "n_puliti": 0,
  "puliti": [],
@@ -8,6 +8,12 @@
    "cliente": "AEA-HOUSE",
    "tipo": "NON CONSEGNA",
    "dettaglio": "Venditore - Moduli · ieri 0.00 €",
+   "gravita": 3
+  },
+  {
+   "cliente": "AEA-HOUSE",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "instagram/instagram_reels · 0.70 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
    "gravita": 3
   },
   {
