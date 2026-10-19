@@ -1,6 +1,6 @@
 {
- "generato": "18/10/2026 08:15",
- "quota_mese": 58,
+ "generato": "19/10/2026 08:15",
+ "quota_mese": 61,
  "totale_corrente": 13274,
  "totale_m1": 9483,
  "totale_m2": 6495,
@@ -9,32 +9,32 @@
    "voce": "Francesco Labriola",
    "mese_corrente": 4300,
    "media_precedenti": 4360,
-   "atteso_a_oggi": 2532,
-   "variazione": 70,
+   "atteso_a_oggi": 2672,
+   "variazione": 61,
    "stato": "scappato"
   },
   {
    "voce": "Carlo Parodi",
    "mese_corrente": 4075,
    "media_precedenti": 458,
-   "atteso_a_oggi": 266,
-   "variazione": 1432,
+   "atteso_a_oggi": 281,
+   "variazione": 1352,
    "stato": "scappato"
   },
   {
    "voce": "Michele De Sena",
    "mese_corrente": 2745,
    "media_precedenti": 780,
-   "atteso_a_oggi": 453,
-   "variazione": 506,
+   "atteso_a_oggi": 478,
+   "variazione": 474,
    "stato": "scappato"
   },
   {
    "voce": "Alessandro Cugini",
    "mese_corrente": 1815,
    "media_precedenti": 695,
-   "atteso_a_oggi": 404,
-   "variazione": 350,
+   "atteso_a_oggi": 426,
+   "variazione": 326,
    "stato": "scappato"
   },
   {
@@ -54,34 +54,34 @@
    "stato": "nuovo"
   },
   {
+   "voce": "Davide Mazzucco",
+   "mese_corrente": 0,
+   "media_precedenti": 200,
+   "atteso_a_oggi": 123,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Claude",
+   "mese_corrente": 0,
+   "media_precedenti": 60,
+   "atteso_a_oggi": 37,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Chat Gpt",
+   "mese_corrente": 0,
+   "media_precedenti": 187,
+   "atteso_a_oggi": 115,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
    "voce": "Cost Of Goods Sold",
    "mese_corrente": 0,
    "media_precedenti": 1500,
-   "atteso_a_oggi": 871,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Zoom",
-   "mese_corrente": 0,
-   "media_precedenti": 20,
-   "atteso_a_oggi": 12,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Facebook",
-   "mese_corrente": 0,
-   "media_precedenti": 1567,
-   "atteso_a_oggi": 910,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Mara (Setter)",
-   "mese_corrente": 0,
-   "media_precedenti": 375,
-   "atteso_a_oggi": 218,
+   "atteso_a_oggi": 919,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -89,31 +89,23 @@
    "voce": "Go High Level",
    "mese_corrente": 0,
    "media_precedenti": 430,
-   "atteso_a_oggi": 250,
+   "atteso_a_oggi": 264,
    "variazione": -100,
    "stato": "sparito"
   },
   {
-   "voce": "Compenso Francesco Labriola",
+   "voce": "Facebook",
    "mese_corrente": 0,
-   "media_precedenti": 860,
-   "atteso_a_oggi": 499,
+   "media_precedenti": 1567,
+   "atteso_a_oggi": 960,
    "variazione": -100,
    "stato": "sparito"
   },
   {
-   "voce": "Davide Mazzucco",
+   "voce": "Mara (Setter)",
    "mese_corrente": 0,
-   "media_precedenti": 200,
-   "atteso_a_oggi": 116,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Rimborso Spese Francesco Labriola",
-   "mese_corrente": 0,
-   "media_precedenti": 100,
-   "atteso_a_oggi": 58,
+   "media_precedenti": 375,
+   "atteso_a_oggi": 230,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -126,31 +118,39 @@
    "stato": "sparito"
   },
   {
-   "voce": "Chat Gpt",
-   "mese_corrente": 0,
-   "media_precedenti": 187,
-   "atteso_a_oggi": 109,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
    "voce": "Tax Dome",
    "mese_corrente": 0,
    "media_precedenti": 350,
-   "atteso_a_oggi": 203,
+   "atteso_a_oggi": 215,
    "variazione": -100,
    "stato": "sparito"
   },
   {
-   "voce": "Claude",
+   "voce": "Rimborso Spese Francesco Labriola",
    "mese_corrente": 0,
-   "media_precedenti": 60,
-   "atteso_a_oggi": 35,
+   "media_precedenti": 100,
+   "atteso_a_oggi": 61,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Compenso Francesco Labriola",
+   "mese_corrente": 0,
+   "media_precedenti": 860,
+   "atteso_a_oggi": 527,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Zoom",
+   "mese_corrente": 0,
+   "media_precedenti": 20,
+   "atteso_a_oggi": 12,
    "variazione": -100,
    "stato": "sparito"
   }
  ],
- "extra_del_mese": 9280,
+ "extra_del_mese": 9078,
  "n_scappati": 4,
  "n_nuovi": 2,
  "n_spariti": 12

@@ -1,5 +1,5 @@
 {
- "generato": "18/10 04:04",
+ "generato": "19/10 04:04",
  "n_account_rossi": 24,
  "n_puliti": 0,
  "puliti": [],
@@ -13,7 +13,7 @@
   {
    "cliente": "AEA-HOUSE",
    "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "instagram/instagram_reels · 0.70 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "dettaglio": "instagram/instagram_reels · 0.89 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
    "gravita": 3
   },
   {
@@ -169,7 +169,37 @@
   {
    "cliente": "AEA-HOUSE",
    "tipo": "REELS ATTIVI ['facebook_reels_overlay']",
-   "dettaglio": "Moduli -immagine - Copia 9",
+   "dettaglio": "CF - Modulo 1",
+   "gravita": 1
+  },
+  {
+   "cliente": "AEA-HOUSE",
+   "tipo": "REELS ATTIVI ['facebook_reels_overlay']",
+   "dettaglio": "CF - Modulo 2",
+   "gravita": 1
+  },
+  {
+   "cliente": "AEA-HOUSE",
+   "tipo": "REELS ATTIVI ['facebook_reels_overlay']",
+   "dettaglio": "CF - Modulo 3",
+   "gravita": 1
+  },
+  {
+   "cliente": "AEA-HOUSE",
+   "tipo": "REELS ATTIVI ['facebook_reels_overlay']",
+   "dettaglio": "CF - Modulo 4",
+   "gravita": 1
+  },
+  {
+   "cliente": "AEA-HOUSE",
+   "tipo": "REELS ATTIVI ['facebook_reels_overlay']",
+   "dettaglio": "CF - Modulo 5",
+   "gravita": 1
+  },
+  {
+   "cliente": "AEA-HOUSE",
+   "tipo": "REELS ATTIVI ['facebook_reels_overlay']",
+   "dettaglio": "CF - Modulo 6",
    "gravita": 1
   },
   {
