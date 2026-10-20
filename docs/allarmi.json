@@ -1,5 +1,5 @@
 {
- "generato": "19/10 04:04",
+ "generato": "20/10 04:04",
  "n_account_rossi": 24,
  "n_puliti": 0,
  "puliti": [],
@@ -13,7 +13,7 @@
   {
    "cliente": "AEA-HOUSE",
    "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "instagram/instagram_reels · 0.89 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "dettaglio": "instagram/instagram_reels · 1.24 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
    "gravita": 3
   },
   {
@@ -32,6 +32,30 @@
    "cliente": "ASS-AR1",
    "tipo": "NON CONSEGNA",
    "dettaglio": "Moduli - stai spendendo troppo foto - Copia · ieri 0.00 €",
+   "gravita": 3
+  },
+  {
+   "cliente": "FB",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "instagram/instagram_reels · 0.97 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-LM",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "instagram/instagram_reels · 3.79 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-MDG",
+   "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
+   "dettaglio": "Lead Gen 1Q - Marcello Del Gaudio",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-MDG",
+   "tipo": "PIU' MODULI SULLE ADS ATTIVE",
+   "dettaglio": "Lead Gen 1Q - Marcello Del Gaudio + Lead Gen 1Q - Marcello Del Gaudio (v2)",
    "gravita": 3
   },
   {
@@ -59,15 +83,51 @@
    "gravita": 3
   },
   {
+   "cliente": "CF-MLC",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "instagram/instagram_reels · 2.11 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-MP",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "facebook/facebook_reels · 0.90 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "gravita": 3
+  },
+  {
    "cliente": "DDB",
    "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
    "dettaglio": "Lead Gen N - Davide Dal Bosco",
    "gravita": 3
   },
   {
+   "cliente": "FB",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "instagram/instagram_reels · 0.97 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "gravita": 3
+  },
+  {
+   "cliente": "LMB",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "instagram/instagram_reels · 3.79 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "gravita": 3
+  },
+  {
    "cliente": "MPC",
    "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
    "dettaglio": "Lead Gen N - Marco Pellegatta",
+   "gravita": 3
+  },
+  {
+   "cliente": "MPC",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "facebook/facebook_reels · 0.90 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "gravita": 3
+  },
+  {
+   "cliente": "ORO-AZ",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "facebook/facebook_reels · 2.04 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
    "gravita": 3
   },
   {
@@ -95,9 +155,21 @@
    "gravita": 3
   },
   {
+   "cliente": "ZAP",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "facebook/facebook_reels · 2.04 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "gravita": 3
+  },
+  {
    "cliente": "CF-DDB",
    "tipo": "MODULO SENZA TELEFONO",
    "dettaglio": "Lead Gen N - Davide Dal Bosco",
+   "gravita": 2
+  },
+  {
+   "cliente": "CF-MDG",
+   "tipo": "MODULO SENZA TELEFONO",
+   "dettaglio": "Lead Gen 1Q - Marcello Del Gaudio",
    "gravita": 2
   },
   {
@@ -153,6 +225,12 @@
    "tipo": "MODULO SENZA TELEFONO",
    "dettaglio": "Lead Gen N Alessandro Zaghini",
    "gravita": 2
+  },
+  {
+   "cliente": "AEA-HOUSE",
+   "tipo": "REELS ATTIVI ['facebook_reels', 'facebook_reels_overlay']",
+   "dettaglio": "MB - Moduli",
+   "gravita": 1
   },
   {
    "cliente": "AEA-HOUSE",
@@ -294,7 +372,7 @@
   },
   {
    "cliente": "FB",
-   "tipo": "REELS ATTIVI ['facebook_reels', 'reels']",
+   "tipo": "REELS ATTIVI ['facebook_reels']",
    "dettaglio": "Moduli - Campagna Attiva",
    "gravita": 1
   },
@@ -330,7 +408,7 @@
   },
   {
    "cliente": "CF-LM",
-   "tipo": "REELS ATTIVI ['facebook_reels', 'reels']",
+   "tipo": "REELS ATTIVI ['facebook_reels']",
    "dettaglio": "Moduli - Campagna Attiva",
    "gravita": 1
   },
@@ -338,6 +416,12 @@
    "cliente": "CF-MDG",
    "tipo": "FASCIA ETA' FUORI STANDARD",
    "dettaglio": "30-60 invece di 30-63 · Moduli AI Elite - Campagna Attiva",
+   "gravita": 1
+  },
+  {
+   "cliente": "CF-MDG",
+   "tipo": "PIU' DI UNA DOMANDA DI QUALIFICA",
+   "dettaglio": "Lead Gen 1Q - Marcello Del Gaudio · 2 domande",
    "gravita": 1
   },
   {
@@ -407,12 +491,6 @@
    "gravita": 1
   },
   {
-   "cliente": "CF-MLC",
-   "tipo": "REELS ATTIVI ['reels']",
-   "dettaglio": "Moduli - Campagna Attiva",
-   "gravita": 1
-  },
-  {
    "cliente": "CF-MP",
    "tipo": "FASCIA ETA' FUORI STANDARD",
    "dettaglio": "30-60 invece di 30-63 · AI Elite - Campagna Attiva",
@@ -420,7 +498,7 @@
   },
   {
    "cliente": "CF-MP",
-   "tipo": "REELS ATTIVI ['facebook_reels', 'reels']",
+   "tipo": "REELS ATTIVI ['reels']",
    "dettaglio": "AI Elite - Campagna Attiva",
    "gravita": 1
   },
@@ -480,7 +558,7 @@
   },
   {
    "cliente": "FB",
-   "tipo": "REELS ATTIVI ['facebook_reels', 'reels']",
+   "tipo": "REELS ATTIVI ['facebook_reels']",
    "dettaglio": "Moduli - Campagna Attiva",
    "gravita": 1
   },
@@ -516,7 +594,7 @@
   },
   {
    "cliente": "LMB",
-   "tipo": "REELS ATTIVI ['facebook_reels', 'reels']",
+   "tipo": "REELS ATTIVI ['facebook_reels']",
    "dettaglio": "Moduli - Campagna Attiva",
    "gravita": 1
   },
@@ -528,26 +606,14 @@
   },
   {
    "cliente": "MPC",
-   "tipo": "REELS ATTIVI ['facebook_reels', 'reels']",
+   "tipo": "REELS ATTIVI ['reels']",
    "dettaglio": "AI Elite - Campagna Attiva",
-   "gravita": 1
-  },
-  {
-   "cliente": "ORO-AZ",
-   "tipo": "FASCIA ETA' FUORI STANDARD",
-   "dettaglio": "30-60 invece di 30-63 · Moduli AI ELITE - Campagna Attiva",
    "gravita": 1
   },
   {
    "cliente": "ORO-AZ",
    "tipo": "PIU' DI UNA DOMANDA DI QUALIFICA",
    "dettaglio": "Lead Gen N Alessandro Zaghini · 2 domande",
-   "gravita": 1
-  },
-  {
-   "cliente": "ORO-AZ",
-   "tipo": "REELS ATTIVI ['facebook_reels']",
-   "dettaglio": "Moduli AI ELITE - Campagna Attiva",
    "gravita": 1
   },
   {
@@ -570,20 +636,8 @@
   },
   {
    "cliente": "ZAP",
-   "tipo": "FASCIA ETA' FUORI STANDARD",
-   "dettaglio": "30-60 invece di 30-63 · Moduli AI ELITE - Campagna Attiva",
-   "gravita": 1
-  },
-  {
-   "cliente": "ZAP",
    "tipo": "PIU' DI UNA DOMANDA DI QUALIFICA",
    "dettaglio": "Lead Gen N Alessandro Zaghini · 2 domande",
-   "gravita": 1
-  },
-  {
-   "cliente": "ZAP",
-   "tipo": "REELS ATTIVI ['facebook_reels']",
-   "dettaglio": "Moduli AI ELITE - Campagna Attiva",
    "gravita": 1
   }
  ]
