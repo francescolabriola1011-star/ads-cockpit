@@ -393,7 +393,7 @@ function render(){
     .filter(x => x.voci.length);
   const nAz = azioni.length + azPos.length;
   document.getElementById("nact").textContent = nAz ? `(${nAz})` : "";
-  document.getElementById("azioni").innerHTML = azioni.length ? azioni.map(a => `
+  document.getElementById("azioni").innerHTML = nAz ? azioni.map(a => `
     <div class="act-row">
       <div class="who">${esc(nomeCli(a.cli))}</div>
       <div><div class="what">Creativa: ${esc(a.creativa.name)}</div>
