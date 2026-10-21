@@ -1,6 +1,6 @@
 {
- "generato": "20/10 04:04",
- "n_account_rossi": 24,
+ "generato": "21/10 04:07",
+ "n_account_rossi": 23,
  "n_puliti": 0,
  "puliti": [],
  "voci": [
@@ -13,7 +13,7 @@
   {
    "cliente": "AEA-HOUSE",
    "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "instagram/instagram_reels · 1.24 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "dettaglio": "instagram/instagram_reels · 1.58 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
    "gravita": 3
   },
   {
@@ -37,13 +37,7 @@
   {
    "cliente": "FB",
    "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "instagram/instagram_reels · 0.97 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
-   "gravita": 3
-  },
-  {
-   "cliente": "CF-LM",
-   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "instagram/instagram_reels · 3.79 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "dettaglio": "instagram/instagram_reels · 0.93 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
    "gravita": 3
   },
   {
@@ -85,13 +79,13 @@
   {
    "cliente": "CF-MLC",
    "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "instagram/instagram_reels · 2.11 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "dettaglio": "instagram/instagram_reels · 0.62 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
    "gravita": 3
   },
   {
    "cliente": "CF-MP",
    "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "facebook/facebook_reels · 0.90 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "dettaglio": "facebook/facebook_reels · 0.61 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
    "gravita": 3
   },
   {
@@ -103,13 +97,7 @@
   {
    "cliente": "FB",
    "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "instagram/instagram_reels · 0.97 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
-   "gravita": 3
-  },
-  {
-   "cliente": "LMB",
-   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "instagram/instagram_reels · 3.79 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "dettaglio": "instagram/instagram_reels · 0.93 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
    "gravita": 3
   },
   {
@@ -121,13 +109,7 @@
   {
    "cliente": "MPC",
    "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "facebook/facebook_reels · 0.90 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
-   "gravita": 3
-  },
-  {
-   "cliente": "ORO-AZ",
-   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "facebook/facebook_reels · 2.04 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "dettaglio": "facebook/facebook_reels · 0.61 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
    "gravita": 3
   },
   {
@@ -152,12 +134,6 @@
    "cliente": "ZAP",
    "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
    "dettaglio": "Lead Gen N Alessandro Zaghini",
-   "gravita": 3
-  },
-  {
-   "cliente": "ZAP",
-   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "facebook/facebook_reels · 2.04 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
    "gravita": 3
   },
   {
@@ -225,12 +201,6 @@
    "tipo": "MODULO SENZA TELEFONO",
    "dettaglio": "Lead Gen N Alessandro Zaghini",
    "gravita": 2
-  },
-  {
-   "cliente": "AEA-HOUSE",
-   "tipo": "REELS ATTIVI ['facebook_reels', 'facebook_reels_overlay']",
-   "dettaglio": "MB - Moduli",
-   "gravita": 1
   },
   {
    "cliente": "AEA-HOUSE",
@@ -518,18 +488,6 @@
    "cliente": "CF-RD",
    "tipo": "REELS ATTIVI ['facebook_reels', 'reels']",
    "dettaglio": "Moduli - Campagna Principale Attiva",
-   "gravita": 1
-  },
-  {
-   "cliente": "CF-SM",
-   "tipo": "FASCIA ETA' FUORI STANDARD",
-   "dettaglio": "30-60 invece di 30-63 · Moduli - Campagna Attiva",
-   "gravita": 1
-  },
-  {
-   "cliente": "CF-SM",
-   "tipo": "REELS ATTIVI ['facebook_reels']",
-   "dettaglio": "Moduli - Campagna Attiva",
    "gravita": 1
   },
   {
