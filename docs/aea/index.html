@@ -53,6 +53,10 @@ h2{font-size:15px;text-transform:uppercase;letter-spacing:.08em;color:var(--mute
 .act-row .who{font-weight:650;font-size:13px;color:var(--accent)}
 .act-row .what{font-size:14px}
 .act-row .why{font-size:12.5px;color:var(--muted);margin-top:2px}
+.pos{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 12px;font-size:12px}
+.pos .pl{color:var(--muted);margin-right:2px}
+.pos span.p{border:1px solid var(--line);border-radius:999px;padding:3px 9px;white-space:nowrap}
+.pos span.p.kill{border-color:var(--crit);color:var(--crit);font-weight:600}
 .act-row .burn{text-align:right;font-size:13px;color:var(--crit);font-weight:600;white-space:nowrap}
 
 /* chip stato */
@@ -384,7 +388,11 @@ function render(){
   }));
   azioni.sort((a,b) => (b.daily_budget||0) - (a.daily_budget||0)
     || b.creativa.sprecato - a.creativa.sprecato);
-  document.getElementById("nact").textContent = azioni.length ? `(${azioni.length})` : "";
+  /* posizionamenti fuori regola ancora in spesa: UNA riga per account */
+  const azPos = sel.map(c => ({cli:c, voci:((c.posizionamenti||{}).voci||[]).filter(p => p.da_staccare)}))
+    .filter(x => x.voci.length);
+  const nAz = azioni.length + azPos.length;
+  document.getElementById("nact").textContent = nAz ? `(${nAz})` : "";
   document.getElementById("azioni").innerHTML = azioni.length ? azioni.map(a => `
     <div class="act-row">
       <div class="who">${esc(nomeCli(a.cli))}</div>
@@ -393,6 +401,13 @@ function render(){
           a.creativa.flags.length ? " · " + esc(a.creativa.flags[0]) : ""}</div></div>
       <div class="burn">${a.daily_budget ? eur(a.daily_budget)+"/giorno" : "attiva"}<br>
         <span style="color:var(--muted);font-weight:400">già sprecati ${eur(a.creativa.sprecato)}</span></div>
+    </div>`).join("") + azPos.map(x => `
+    <div class="act-row">
+      <div class="who">${esc(nomeCli(x.cli))}</div>
+      <div><div class="what">Posizionamenti da escludere: ${x.voci.map(p => esc(p.nome)).join(", ")}</div>
+        <div class="why">ultimi 30 giorni · ${x.voci.map(p => `${esc(p.nome)}: ${esc(p.reason)}`).join(" · ")}</div></div>
+      <div class="burn">${eur(x.voci.reduce((t,p) => t + p.spend_7g, 0))} negli ultimi 7g<br>
+        <span style="color:var(--muted);font-weight:400">speso ${eur(x.voci.reduce((t,p) => t + p.spend, 0))} in 30g</span></div>
     </div>`).join("")
     : `<div class="empty">Nessuna creativa fuori regola ancora accesa. Tutto pulito.</div>`;
 
@@ -417,6 +432,19 @@ function render(){
     : `<div class="empty">Niente budget parcheggiato su campagne fuori regola.</div>`;
 
   renderClienti();
+}
+
+function posLine(c){
+  const tutte = (c.posizionamenti || {}).voci || [];
+  if (!tutte.length) return "";
+  /* sotto i 5 euro in 30 giorni non dicono niente: una voce sola "altri" */
+  const v = tutte.filter(p => p.spend >= 5 || p.da_staccare);
+  const resto = tutte.filter(p => !v.includes(p));
+  if (resto.length) v.push({nome:`altri ${resto.length}`, reason:resto.map(p => p.nome).join(", "),
+    spend:resto.reduce((t,p) => t + p.spend, 0), leads:resto.reduce((t,p) => t + p.leads, 0)});
+  return `<div class="pos"><span class="pl">Posizionamenti 30g:</span>${v.map(p =>
+    `<span class="p ${p.da_staccare ? "kill" : ""}" title="${esc(p.reason)}">${esc(p.nome)} ${eur0(p.spend)} · ${int(p.leads)} lead${
+      p.cpl ? " · " + eur0(p.cpl) : ""}${p.da_staccare ? " · stacca" : ""}</span>`).join("")}</div>`;
 }
 
 function renderClienti(){
@@ -450,7 +478,7 @@ function renderClienti(){
           <div class="bar"><i style="width:${Math.max(2, c.sprecato / maxSpr * 100)}%"></i></div></div>
         <div class="caret">›</div>
       </div>
-      <div class="cbody">${camp.length ? `
+      <div class="cbody">${posLine(c)}${camp.length ? `
         <table><thead><tr>
           <th>Creativa</th><th>Stato</th><th>Spesa</th><th>Lead</th><th>CPL</th>
           <th>CPL 7g</th><th>CTR</th><th>CVR</th><th>Sprecato</th></tr></thead><tbody>
