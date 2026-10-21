@@ -529,16 +529,8 @@ function renderEsiti(sel){
   hA.innerHTML = `<div class="tiles">
       ${tile("Appuntamenti fatti", int(apt), "tutti, sommati dall'inizio dei moduli", "hero")}
       ${tile("Da creative ads", int(T.apt2), `${int(T.lead)} lead tracciati · ${T.lead ? Math.round(T.apt2/T.lead*100) : 0}% diventa appuntamento`)}
-      ${tile("Senza creativa", int(T.s_apt2), "inbound, outbound, moduli scritti a mano")}
       ${tile("Costo medio per appuntamento", T.apt2 && T.spesa ? eur(T.spesa / T.apt2) : "n.d.", "spesa di tutte le creative con lead nei moduli ÷ appuntamenti")}
     </div>
-    ${multi ? `<div style="overflow-x:auto;margin-top:14px"><table><thead><tr><th>Cliente</th><th>Appuntamenti</th>
-      <th>Lead</th><th>Lead → appuntamento</th></tr></thead><tbody>
-      ${per.filter(x => x.apt || x.lead).sort((a,b) => b.apt - a.apt).map(x => `<tr>
-        <td><b style="color:var(--accent)">${esc(nomeCli(x.cli))}</b></td>
-        <td class="mono"><b>${muto(x.apt)}</b></td><td class="mono">${int(x.lead)}</td>
-        <td class="mono">${x.lead ? Math.round(x.apt/x.lead*100) + "%" : nd}</td></tr>`).join("")}
-      </tbody></table></div>` : ""}
     <div style="overflow-x:auto;margin-top:14px"><table><thead><tr>
       ${multi ? "<th>Cliente</th>" : ""}<th>Creativa che ha portato appuntamenti</th><th>Appuntamenti</th>
       <th>Lead</th><th>Lead → appuntamento</th><th>Costo per appuntamento</th></tr></thead><tbody>
@@ -557,7 +549,6 @@ function renderEsiti(sel){
   hC.innerHTML = `<div class="tiles">
       ${tile("Clienti arrivati", int(cli), "casella CHIUSO, sommati dall'inizio dei moduli", cli ? "" : "act")}
       ${tile("Da creative ads", int(T.chiusi), apt ? `${Math.round(cli/apt*100)}% degli appuntamenti diventa cliente` : "")}
-      ${tile("Senza creativa", int(T.s_chiusi), "inbound, outbound, moduli scritti a mano")}
       ${tile("Appuntamenti di chiusura", int(T.apt3 + T.s_apt3), "casella 3 APT")}
     </div>
     <div style="overflow-x:auto;margin-top:14px"><table><thead><tr>
