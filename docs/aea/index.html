@@ -153,6 +153,9 @@ footer{margin-top:44px;color:var(--muted);font-size:12px;border-top:1px solid va
   <h2>Azioni di oggi <span id="nact" style="color:var(--crit)"></span></h2>
   <div id="azioni"></div>
 
+  <h2>Da quale creativa arrivano appuntamenti e clienti</h2>
+  <div id="esiti"></div>
+
   <h2>Dove riallocare</h2>
   <div id="realloc"></div>
 
@@ -381,6 +384,7 @@ function render(){
   ].join("");
 
   renderAzioni(sel);
+  renderEsiti(sel);
 
   /* riallocazione */
   const rr = sel.filter(c => c.riallocazione.budget_da_spostare > 0);
@@ -484,6 +488,54 @@ function renderAzioni(sel){
     cb.addEventListener("change", () => spunta(cb.dataset.az, cb.checked)));
 }
 leggiSpunte();
+
+/* ---------- esiti per creativa ----------
+   Dai moduli lead: le caselle 1-2-3 APT e CHIUSO sommate per creativa (ad_id).
+   Il CPL dice quanto costa un contatto; questa tabella dice quale creativa
+   porta gente che si presenta e compra. */
+function renderEsiti(sel){
+  const host = document.getElementById("esiti");
+  const righe = [], tot = {lead:0, apt1:0, apt2:0, apt3:0, chiusi:0}, senza = {lead:0, apt2:0, chiusi:0};
+  let letto = null, altre = 0;
+  sel.forEach(c => {
+    const e = c.esiti_creative; if (!e) return;
+    letto = letto || e.letto; altre += e.altre_con_esiti || 0;
+    e.righe.forEach(r => righe.push({...r, cli:c}));
+    ["lead","apt1","apt2","apt3","chiusi"].forEach(k => tot[k] += e.totale_creative[k] || 0);
+    ["lead","apt2","chiusi"].forEach(k => senza[k] += e.senza_creativa[k] || 0);
+  });
+  if (!righe.length){
+    host.innerHTML = `<div class="empty">Nessuna creativa con contatti qualificati, appuntamenti o clienti nei moduli lead${
+      sel.some(c => c.esiti_creative) ? "" : " (per questo account non c'è un modulo collegato)"}.</div>`;
+    return;
+  }
+  righe.sort((a,b) => b.chiusi - a.chiusi || b.apt3 - a.apt3 || b.apt2 - a.apt2 || b.apt1 - a.apt1 || b.lead - a.lead);
+  const multi = sel.length > 1;
+  const n = v => v ? int(v) : '<span style="color:var(--muted)">0</span>';
+  const pct = (a,b) => b ? ` <span style="color:var(--muted);font-size:11.5px">${Math.round(a/b*100)}%</span>` : "";
+  host.innerHTML = `<div style="overflow-x:auto"><table><thead><tr>
+      ${multi ? "<th>Cliente</th>" : ""}<th>Creativa</th><th>Lead</th><th>Qualificati<br>1 APT</th>
+      <th>Appuntamenti<br>2 APT</th><th>Chiusura<br>3 APT</th><th>Clienti<br>chiusi</th>
+      <th>Costo per<br>appuntamento</th><th>Costo per<br>cliente</th></tr></thead><tbody>
+    ${righe.slice(0, multi ? 25 : 15).map(r => `<tr>
+      ${multi ? `<td><b style="color:var(--accent)">${esc(nomeCli(r.cli))}</b></td>` : ""}
+      <td>${esc(r.nome)} ${r.attiva ? '<span class="chip c-ok"><span class="dot"></span>ACCESA</span>' : ""}
+        <div class="sub" style="font-size:11.5px">${esc(r.campagna || "")}</div></td>
+      <td class="mono">${int(r.lead)}</td>
+      <td class="mono">${n(r.apt1)}</td>
+      <td class="mono"><b>${n(r.apt2)}</b>${pct(r.apt2, r.lead)}</td>
+      <td class="mono">${n(r.apt3)}</td>
+      <td class="mono" style="color:${r.chiusi ? "var(--good)" : "inherit"}"><b>${n(r.chiusi)}</b></td>
+      <td class="mono">${r.costo_apt ? eur(r.costo_apt) : '<span style="color:var(--muted)">n.d.</span>'}</td>
+      <td class="mono">${r.costo_cliente ? eur(r.costo_cliente) : '<span style="color:var(--muted)">n.d.</span>'}</td>
+    </tr>`).join("")}</tbody></table></div>
+    <p class="sub" style="margin-top:10px">Dai moduli lead${letto ? ", letti il " + new Date(letto).toLocaleString("it-IT",{dateStyle:"short",timeStyle:"short"}) : ""}:
+      su tutte le creative ${int(tot.lead)} lead, ${int(tot.apt2)} appuntamenti, ${int(tot.chiusi)} clienti chiusi.
+      ${senza.lead ? `Fuori da ogni creativa (righe senza ad_id: inbound, outbound, moduli scritti a mano): ${int(senza.lead)} lead, ${int(senza.apt2)} appuntamenti, ${int(senza.chiusi)} chiusi.` : ""}
+      ${altre ? `${int(altre)} creative con esiti minori non mostrate.` : ""}
+      Il costo usa la spesa della creativa nel periodo del cockpit; n.d. se la creativa non è nel periodo letto o non ha ancora quell'esito.
+      Le caselle non hanno data: l'appuntamento conta sulla creativa del lead, non sul giorno in cui è avvenuto.</p>`;
+}
 
 function posLine(c){
   const tutte = (c.posizionamenti || {}).voci || [];
