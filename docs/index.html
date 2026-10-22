@@ -457,11 +457,26 @@ function renderAzioni(sel){
   voci.sort((a,b) => (b.daily_budget||0) - (a.daily_budget||0) || b.creativa.sprecato - a.creativa.sprecato);
   /* posizionamenti fuori regola ancora in spesa: UNA riga per account; se si
      aggiunge un posizionamento nuovo la chiave cambia e la riga torna fuori */
+  /* 22/10/2026: la spunta vale per il SINGOLO posizionamento. Prima la chiave
+     era l'insieme, e se ne entrava uno nuovo tornavano fuori anche quelli gia'
+     esclusi (Dal Bosco, De Leonardis). Ora esce solo cio' che non e' stato spuntato. */
+  const posFatti = {};
+  Object.keys(SPUNTE).forEach(k => {
+    const m = k.match(/^(.+)\|pos\|(.+)$/);
+    if (m) m[2].split("+").forEach(n => {
+      const kk = m[1] + "|" + n;
+      if (!posFatti[kk] || SPUNTE[k] > posFatti[kk]) posFatti[kk] = SPUNTE[k];
+    });
+  });
+  const vecchiePos = [];
   sel.forEach(c => {
     const v = ((c.posizionamenti || {}).voci || []).filter(p => p.da_staccare);
-    if (v.length) voci.push({id: c.alias + "|pos|" + v.map(p => p.nome).sort().join("+"), cli:c, pos:v});
+    const prima = v.filter(p => posFatti[c.alias + "|" + p.nome] && posFatti[c.alias + "|" + p.nome] < OGGI);
+    const nuove = v.filter(p => !prima.includes(p));
+    if (nuove.length) voci.push({id: c.alias + "|pos|" + nuove.map(p => p.nome).sort().join("+"), cli:c, pos:nuove});
+    prima.forEach(p => vecchiePos.push({cli:c, pos:[p], giorno: posFatti[c.alias + "|" + p.nome]}));
   });
-  const nascoste = voci.filter(x => SPUNTE[x.id] && SPUNTE[x.id] < OGGI).length;
+  const nascoste = voci.filter(x => SPUNTE[x.id] && SPUNTE[x.id] < OGGI).length + vecchiePos.length;
   const vive = voci.filter(x => !(SPUNTE[x.id] && SPUNTE[x.id] < OGGI));
   const daFare = vive.filter(x => !SPUNTE[x.id]).length;
   vive.sort((a,b) => (SPUNTE[a.id] ? 1 : 0) - (SPUNTE[b.id] ? 1 : 0));
@@ -497,15 +512,24 @@ function renderAzioni(sel){
     : `<div class="act-row" style="grid-template-columns:1fr;border-left-color:var(--crit)">
         <div><div class="what" style="color:var(--crit);font-weight:650">Dati non di oggi: fermi al ${genOra}</div>
         <div class="why">Il giro del mattino non ha aggiornato il cockpit. Le azioni sotto sono quelle di quel giorno e possono mancarne di nuove.</div></div></div>`;
-  const vecchie = voci.filter(x => SPUNTE[x.id] && SPUNTE[x.id] < OGGI);
+  /* Creative: "attiva" e' lo stato vero su Meta, quindi spuntata e ancora in
+     lista vuol dire non spenta. Posizionamenti: la spesa e' a 7 giorni, quindi
+     dice qualcosa solo quando la spunta ha piu' di 7 giorni. */
+  const g7 = new Date(Date.now() - 7 * 864e5).toLocaleDateString("sv-SE", {timeZone:"Europe/Rome"});
+  const vecchie = voci.filter(x => SPUNTE[x.id] && SPUNTE[x.id] < OGGI)
+    .map(x => Object.assign({giorno: SPUNTE[x.id]}, x))
+    .concat(vecchiePos.filter(x => x.giorno < g7 && x.pos[0].spend_7g > 0));
+  const inVerifica = vecchiePos.length - vecchiePos.filter(x => x.giorno < g7 && x.pos[0].spend_7g > 0).length;
   const rigaVecchia = x => `<div class="sub" style="margin:4px 0">${esc(nomeCli(x.cli))} · ${
-      x.pos ? "posizionamenti " + x.pos.map(p => esc(p.nome)).join(", ") : "creativa " + esc(x.creativa.name)
-    } · spuntata il ${esc(SPUNTE[x.id])}, ancora accesa ${
-      x.pos ? "(" + eur(x.pos.reduce((t,p) => t + p.spend_7g, 0)) + " in 7g)" : (x.daily_budget ? "a " + eur(x.daily_budget) + "/giorno" : "")}</div>`;
+      x.pos ? "posizionamento " + x.pos.map(p => esc(p.nome)).join(", ") : "creativa " + esc(x.creativa.name)
+    } · spuntata il ${esc(x.giorno)}, ancora ${x.pos ? "in spesa (" + eur(x.pos.reduce((t,p) => t + p.spend_7g, 0)) + " negli ultimi 7g)"
+      : "accesa" + (x.daily_budget ? " a " + eur(x.daily_budget) + "/giorno" : "")}</div>`;
   const host = document.getElementById("azioni");
   host.innerHTML = stato + (vive.length ? vive.map(riga).join("")
       : `<div class="empty">Nessuna creativa fuori regola ancora accesa${fresco ? "" : " nei dati di quel giorno"}.</div>`)
-    + (nascoste ? `<details style="margin-top:8px"><summary class="sub" style="cursor:pointer;color:var(--serious)">${nascoste} ${nascoste === 1 ? "spuntata" : "spuntate"} nei giorni scorsi ma ancora ${nascoste === 1 ? "accesa" : "accese"} su Meta: non sono in lista, controlla che siano state spente davvero</summary>${vecchie.map(rigaVecchia).join("")}</details>` : "");
+    + (nascoste ? `<p class="sub" style="margin-top:6px">${nascoste} ${nascoste === 1 ? "azione spuntata" : "azioni spuntate"} nei giorni scorsi: non compaiono più.${
+        inVerifica ? ` ${inVerifica} ${inVerifica === 1 ? "posizionamento si verifica" : "posizionamenti si verificano"} da soli a 7 giorni dalla spunta.` : ""}</p>` : "")
+    + (vecchie.length ? `<details style="margin-top:4px"><summary class="sub" style="cursor:pointer;color:var(--serious)">Di queste, ${vecchie.length} ${vecchie.length === 1 ? "risulta ancora accesa" : "risultano ancora accese"} su Meta: la spunta non le ha spente</summary>${vecchie.map(rigaVecchia).join("")}</details>` : "");
   host.querySelectorAll("input[data-az]").forEach(cb =>
     cb.addEventListener("change", () => spunta(cb.dataset.az, cb.checked)));
 }
