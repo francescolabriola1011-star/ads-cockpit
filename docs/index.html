@@ -484,10 +484,28 @@ function renderAzioni(sel){
       <div class="burn">${x.daily_budget ? eur(x.daily_budget)+"/giorno" : "attiva"}<br>
         <span style="color:var(--muted);font-weight:400">già sprecati ${eur(x.creativa.sprecato)}</span></div>
     </div>`;
+  /* 22/10/2026: controllo del mattino. Una lista vuota con i dati di ieri
+     sembra "tutto pulito" e non lo e'. E le spuntate nascoste sono, per
+     costruzione, creative ANCORA accese e fuori regola su Meta (nella lista
+     entrano solo le attive): restano fuori dalla lista, ma si dicono. */
+  const gen = DATA && DATA.generato ? new Date(DATA.generato) : null;
+  const genGiorno = gen ? gen.toLocaleDateString("sv-SE", {timeZone:"Europe/Rome"}) : "";
+  const genOra = gen ? gen.toLocaleString("it-IT", {dateStyle:"short", timeStyle:"short", timeZone:"Europe/Rome"}) : "n.d.";
+  const fresco = genGiorno === OGGI;
+  const stato = fresco
+    ? `<p class="sub" style="margin:0 0 8px">Controllo del mattino: dati di oggi, letti da Meta il ${genOra}.</p>`
+    : `<div class="act-row" style="grid-template-columns:1fr;border-left-color:var(--crit)">
+        <div><div class="what" style="color:var(--crit);font-weight:650">Dati non di oggi: fermi al ${genOra}</div>
+        <div class="why">Il giro del mattino non ha aggiornato il cockpit. Le azioni sotto sono quelle di quel giorno e possono mancarne di nuove.</div></div></div>`;
+  const vecchie = voci.filter(x => SPUNTE[x.id] && SPUNTE[x.id] < OGGI);
+  const rigaVecchia = x => `<div class="sub" style="margin:4px 0">${esc(nomeCli(x.cli))} · ${
+      x.pos ? "posizionamenti " + x.pos.map(p => esc(p.nome)).join(", ") : "creativa " + esc(x.creativa.name)
+    } · spuntata il ${esc(SPUNTE[x.id])}, ancora accesa ${
+      x.pos ? "(" + eur(x.pos.reduce((t,p) => t + p.spend_7g, 0)) + " in 7g)" : (x.daily_budget ? "a " + eur(x.daily_budget) + "/giorno" : "")}</div>`;
   const host = document.getElementById("azioni");
-  host.innerHTML = (vive.length ? vive.map(riga).join("")
-      : `<div class="empty">Nessuna creativa fuori regola ancora accesa. Tutto pulito.</div>`)
-    + (nascoste ? `<p class="sub" style="margin-top:6px">${nascoste} ${nascoste === 1 ? "azione spuntata" : "azioni spuntate"} nei giorni scorsi: non compaiono più.</p>` : "");
+  host.innerHTML = stato + (vive.length ? vive.map(riga).join("")
+      : `<div class="empty">Nessuna creativa fuori regola ancora accesa${fresco ? "" : " nei dati di quel giorno"}.</div>`)
+    + (nascoste ? `<details style="margin-top:8px"><summary class="sub" style="cursor:pointer;color:var(--serious)">${nascoste} ${nascoste === 1 ? "spuntata" : "spuntate"} nei giorni scorsi ma ancora ${nascoste === 1 ? "accesa" : "accese"} su Meta: non sono in lista, controlla che siano state spente davvero</summary>${vecchie.map(rigaVecchia).join("")}</details>` : "");
   host.querySelectorAll("input[data-az]").forEach(cb =>
     cb.addEventListener("change", () => spunta(cb.dataset.az, cb.checked)));
 }
