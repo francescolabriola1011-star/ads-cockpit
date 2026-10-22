@@ -1,5 +1,5 @@
 {
- "generato": "22/10/2026 08:55",
+ "generato": "22/10/2026 09:29",
  "quota_mese": 71,
  "totale_corrente": 13274,
  "totale_m1": 9483,
@@ -54,34 +54,18 @@
    "stato": "nuovo"
   },
   {
-   "voce": "Zoom",
-   "mese_corrente": 0,
-   "media_precedenti": 20,
-   "atteso_a_oggi": 14,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Claude",
-   "mese_corrente": 0,
-   "media_precedenti": 60,
-   "atteso_a_oggi": 43,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Compenso Francesco Labriola",
-   "mese_corrente": 0,
-   "media_precedenti": 860,
-   "atteso_a_oggi": 610,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
    "voce": "Twilio",
    "mese_corrente": 0,
    "media_precedenti": 20,
    "atteso_a_oggi": 14,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Go High Level",
+   "mese_corrente": 0,
+   "media_precedenti": 430,
+   "atteso_a_oggi": 305,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -102,26 +86,26 @@
    "stato": "sparito"
   },
   {
-   "voce": "Chat Gpt",
+   "voce": "Claude",
    "mese_corrente": 0,
-   "media_precedenti": 187,
-   "atteso_a_oggi": 133,
+   "media_precedenti": 60,
+   "atteso_a_oggi": 43,
    "variazione": -100,
    "stato": "sparito"
   },
   {
-   "voce": "Rimborso Spese Francesco Labriola",
+   "voce": "Zoom",
    "mese_corrente": 0,
-   "media_precedenti": 100,
-   "atteso_a_oggi": 71,
+   "media_precedenti": 20,
+   "atteso_a_oggi": 14,
    "variazione": -100,
    "stato": "sparito"
   },
   {
-   "voce": "Mara (Setter)",
+   "voce": "Compenso Francesco Labriola",
    "mese_corrente": 0,
-   "media_precedenti": 375,
-   "atteso_a_oggi": 266,
+   "media_precedenti": 860,
+   "atteso_a_oggi": 610,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -134,6 +118,14 @@
    "stato": "sparito"
   },
   {
+   "voce": "Rimborso Spese Francesco Labriola",
+   "mese_corrente": 0,
+   "media_precedenti": 100,
+   "atteso_a_oggi": 71,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
    "voce": "Facebook",
    "mese_corrente": 0,
    "media_precedenti": 1567,
@@ -142,10 +134,18 @@
    "stato": "sparito"
   },
   {
-   "voce": "Go High Level",
+   "voce": "Mara (Setter)",
    "mese_corrente": 0,
-   "media_precedenti": 430,
-   "atteso_a_oggi": 305,
+   "media_precedenti": 375,
+   "atteso_a_oggi": 266,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Chat Gpt",
+   "mese_corrente": 0,
+   "media_precedenti": 187,
+   "atteso_a_oggi": 133,
    "variazione": -100,
    "stato": "sparito"
   }

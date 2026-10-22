@@ -487,9 +487,9 @@ function renderAzioni(sel){
     <div class="act-row${SPUNTE[x.id] ? " done" : ""}">${box(x)}
       <div class="who">${esc(nomeCli(x.cli))}</div>
       <div><div class="what">Posizionamenti da escludere: ${x.pos.map(p => esc(p.nome)).join(", ")}</div>
-        <div class="why">ultimi 30 giorni · ${x.pos.map(p => `${esc(p.nome)}: ${esc(p.reason)}`).join(" · ")}</div></div>
-      <div class="burn">${eur(x.pos.reduce((t,p) => t + p.spend_7g, 0))} negli ultimi 7g<br>
-        <span style="color:var(--muted);font-weight:400">speso ${eur(x.pos.reduce((t,p) => t + p.spend, 0))} in 30g</span></div>
+        <div class="why">durata massima, per ad set attivo · ${x.pos.map(p => `${esc(p.nome)}: ${esc(p.reason)}`).join(" · ")}</div></div>
+      <div class="burn">speso ${eur(x.pos.reduce((t,p) => t + p.spend, 0))} in totale<br>
+        <span style="color:var(--muted);font-weight:400">${int(x.pos.reduce((t,p) => t + p.leads, 0))} lead in tutto</span></div>
     </div>` : `
     <div class="act-row${SPUNTE[x.id] ? " done" : ""}">${box(x)}
       <div class="who">${esc(nomeCli(x.cli))}</div>
@@ -513,16 +513,15 @@ function renderAzioni(sel){
         <div><div class="what" style="color:var(--crit);font-weight:650">Dati non di oggi: fermi al ${genOra}</div>
         <div class="why">Il giro del mattino non ha aggiornato il cockpit. Le azioni sotto sono quelle di quel giorno e possono mancarne di nuove.</div></div></div>`;
   /* Creative: "attiva" e' lo stato vero su Meta, quindi spuntata e ancora in
-     lista vuol dire non spenta. Posizionamenti: la spesa e' a 7 giorni, quindi
-     dice qualcosa solo quando la spunta ha piu' di 7 giorni. */
-  const g7 = new Date(Date.now() - 7 * 864e5).toLocaleDateString("sv-SE", {timeZone:"Europe/Rome"});
+     lista vuol dire non spenta. Posizionamenti (22/10/2026): da_staccare vuol dire
+     che il targeting dell'ad set acceso lo compra ancora, quindi idem. */
   const vecchie = voci.filter(x => SPUNTE[x.id] && SPUNTE[x.id] < OGGI)
     .map(x => Object.assign({giorno: SPUNTE[x.id]}, x))
-    .concat(vecchiePos.filter(x => x.giorno < g7 && x.pos[0].spend_7g > 0));
-  const inVerifica = vecchiePos.length - vecchiePos.filter(x => x.giorno < g7 && x.pos[0].spend_7g > 0).length;
+    .concat(vecchiePos);  // da_staccare = l'ad set acceso lo compra ancora (targeting letto da Meta)
+  const inVerifica = 0;
   const rigaVecchia = x => `<div class="sub" style="margin:4px 0">${esc(nomeCli(x.cli))} · ${
       x.pos ? "posizionamento " + x.pos.map(p => esc(p.nome)).join(", ") : "creativa " + esc(x.creativa.name)
-    } · spuntata il ${esc(x.giorno)}, ancora ${x.pos ? "in spesa (" + eur(x.pos.reduce((t,p) => t + p.spend_7g, 0)) + " negli ultimi 7g)"
+    } · spuntata il ${esc(x.giorno)}, ancora ${x.pos ? "comprato dall'ad set (" + eur(x.pos.reduce((t,p) => t + p.spend, 0)) + " in totale)"
       : "accesa" + (x.daily_budget ? " a " + eur(x.daily_budget) + "/giorno" : "")}</div>`;
   const host = document.getElementById("azioni");
   host.innerHTML = stato + (vive.length ? vive.map(riga).join("")
