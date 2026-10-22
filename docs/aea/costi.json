@@ -1,5 +1,5 @@
 {
- "generato": "22/10/2026 09:29",
+ "generato": "22/10/2026 11:16",
  "quota_mese": 71,
  "totale_corrente": 13274,
  "totale_m1": 9483,
@@ -54,30 +54,6 @@
    "stato": "nuovo"
   },
   {
-   "voce": "Twilio",
-   "mese_corrente": 0,
-   "media_precedenti": 20,
-   "atteso_a_oggi": 14,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Go High Level",
-   "mese_corrente": 0,
-   "media_precedenti": 430,
-   "atteso_a_oggi": 305,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Davide Mazzucco",
-   "mese_corrente": 0,
-   "media_precedenti": 200,
-   "atteso_a_oggi": 142,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
    "voce": "Cost Of Goods Sold",
    "mese_corrente": 0,
    "media_precedenti": 1500,
@@ -94,18 +70,10 @@
    "stato": "sparito"
   },
   {
-   "voce": "Zoom",
+   "voce": "Rimborso Spese Francesco Labriola",
    "mese_corrente": 0,
-   "media_precedenti": 20,
-   "atteso_a_oggi": 14,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Compenso Francesco Labriola",
-   "mese_corrente": 0,
-   "media_precedenti": 860,
-   "atteso_a_oggi": 610,
+   "media_precedenti": 100,
+   "atteso_a_oggi": 71,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -118,10 +86,42 @@
    "stato": "sparito"
   },
   {
-   "voce": "Rimborso Spese Francesco Labriola",
+   "voce": "Zoom",
    "mese_corrente": 0,
-   "media_precedenti": 100,
-   "atteso_a_oggi": 71,
+   "media_precedenti": 20,
+   "atteso_a_oggi": 14,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Davide Mazzucco",
+   "mese_corrente": 0,
+   "media_precedenti": 200,
+   "atteso_a_oggi": 142,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Twilio",
+   "mese_corrente": 0,
+   "media_precedenti": 20,
+   "atteso_a_oggi": 14,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Go High Level",
+   "mese_corrente": 0,
+   "media_precedenti": 430,
+   "atteso_a_oggi": 305,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Chat Gpt",
+   "mese_corrente": 0,
+   "media_precedenti": 187,
+   "atteso_a_oggi": 133,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -142,10 +142,10 @@
    "stato": "sparito"
   },
   {
-   "voce": "Chat Gpt",
+   "voce": "Compenso Francesco Labriola",
    "mese_corrente": 0,
-   "media_precedenti": 187,
-   "atteso_a_oggi": 133,
+   "media_precedenti": 860,
+   "atteso_a_oggi": 610,
    "variazione": -100,
    "stato": "sparito"
   }
