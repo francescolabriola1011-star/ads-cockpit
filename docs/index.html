@@ -139,6 +139,7 @@ footer{margin-top:44px;color:var(--muted);font-size:12px;border-top:1px solid va
     </div>
     <button class="tgl" id="unlock">Mostra nomi veri</button>
   </div>
+  <div id="ruolo"></div>
   <div class="rules" id="rules"></div>
   <div id="nuovi"></div>
 
@@ -249,6 +250,7 @@ fetch("data.json?" + Date.now())
   .then(r => r.json())
   .then(d => {
     DATA = d;
+    document.getElementById("ruolo").innerHTML = d.ruolo_html || "";
     render();
     document.getElementById("unlock").style.display = d.nomi_sbloccabili ? "" : "none";
     const saved = sessionStorage.getItem("adscockpit_pw");
