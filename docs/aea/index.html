@@ -61,6 +61,8 @@ h2{font-size:15px;text-transform:uppercase;letter-spacing:.08em;color:var(--mute
 .act-row.done{opacity:.5;border-left-color:var(--good)}
 .act-row.done .what{text-decoration:line-through}
 .act-row .burn{text-align:right;font-size:13px;color:var(--crit);font-weight:600;white-space:nowrap}
+.act-row.near{grid-template-columns:88px 1fr auto;border-left-color:var(--warn)}
+.act-row.near .burn{color:var(--warn)}
 
 /* chip stato */
 .chip{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:650;
@@ -191,6 +193,9 @@ footer{margin-top:44px;color:var(--muted);font-size:12px;border-top:1px solid va
   <div id="azioni"></div>
   <h3 class="h3">Da monitorare <span id="nmon" style="color:var(--warn,#d4a537)"></span></h3>
   <div id="monitorare"></div>
+  <h3 class="h3">Vicini alla soglia <span id="nnear" style="color:var(--warn,#d4a537)"></span></h3>
+  <p class="sub" id="nearNote" style="margin:-4px 0 8px"></p>
+  <div id="vicini"></div>
 
   <h2>Come va ogni cliente <span class="h2note">dal peggiore al migliore · clic per il dettaglio</span></h2>
   <div class="griglia" id="griglia"></div>
@@ -531,8 +536,44 @@ function renderMonitorare(sel){
     cb.addEventListener("change", () => spunta(cb.dataset.az, cb.checked)));
 }
 
+function renderVicini(sel){
+  const host = document.getElementById("vicini");
+  if (!host) return;
+  const limite = Number((DATA && DATA.regole && DATA.regole.placement_max_eur) || 45);
+  const minimo = limite * 2 / 3;
+  const voci = [];
+  sel.forEach(c => ((c.posizionamenti || {}).voci || []).forEach(p => {
+    if (p.escluso || p.da_staccare) return;
+    const metro = p.leads ? Number(p.cpl || 0) : Number(p.spend || 0);
+    if (metro >= minimo && metro < limite) voci.push({cli:c, pos:p, metro});
+  }));
+  voci.sort((a,b) => b.metro - a.metro);
+  document.getElementById("nnear").textContent = voci.length ? `(${voci.length})` : "";
+  document.getElementById("nearNote").innerHTML =
+    `Posizionamenti ancora abilitati fra <b>${eur(minimo)}</b> e <b>${eur(limite)}</b>. ` +
+    `Con lead si guarda il CPL, senza lead si guarda la spesa.`;
+  if (!voci.length) {
+    host.innerHTML = `<p class="sub">Nessun posizionamento vicino alla soglia.</p>`;
+    return;
+  }
+  host.innerHTML = voci.map(x => {
+    const p = x.pos;
+    const periodo = (x.cli.posizionamenti || {}).periodo || "durata massima";
+    const valore = p.leads ? `CPL ${eur(p.cpl)}` : `${eur(p.spend)} spesi · 0 lead`;
+    const distanza = p.leads ? "al limite CPL" : "al limite di spesa";
+    return `<div class="act-row near">
+      <div class="who">${esc(nomeCli(x.cli))}</div>
+      <div><div class="what">${esc(p.posto || p.nome)}</div>
+        <div class="why">${esc(p.adset || "")} · ${esc(periodo)} · ${int(p.leads)} lead</div></div>
+      <div class="burn">${valore}<br>
+        <span style="color:var(--muted);font-weight:400">mancano ${eur(limite - x.metro)} ${distanza}</span></div>
+    </div>`;
+  }).join("");
+}
+
 function renderAzioni(sel){
   renderMonitorare(sel);
+  renderVicini(sel);
   const voci = [];
   sel.forEach(c => c.campagne.forEach(k => (k.ads || []).forEach(a => {
     if (a.status === "kill" && a.attiva) voci.push({
@@ -760,12 +801,13 @@ function renderStatiche(sel){
 function posLine(c){
   const tutte = (c.posizionamenti || {}).voci || [];
   if (!tutte.length) return "";
-  /* sotto i 5 euro in 30 giorni non dicono niente: una voce sola "altri" */
+  /* sotto i 5 euro nel periodo non dicono niente: una voce sola "altri" */
   const v = tutte.filter(p => p.spend >= 5 || p.da_staccare);
   const resto = tutte.filter(p => !v.includes(p));
   if (resto.length) v.push({nome:`altri ${resto.length}`, reason:resto.map(p => p.nome).join(", "),
     spend:resto.reduce((t,p) => t + p.spend, 0), leads:resto.reduce((t,p) => t + p.leads, 0)});
-  return `<div class="pos"><span class="pl">Posizionamenti 30g:</span>${v.map(p =>
+  const periodo = (c.posizionamenti || {}).periodo || "durata massima";
+  return `<div class="pos"><span class="pl">Posizionamenti, ${esc(periodo)}:</span>${v.map(p =>
     `<span class="p ${p.da_staccare ? "kill" : ""}" title="${esc(p.reason)}">${esc(p.nome)} ${eur0(p.spend)} · ${int(p.leads)} lead${
       p.cpl ? " · " + eur0(p.cpl) : ""}${p.da_staccare ? " · stacca" : ""}</span>`).join("")}</div>`;
 }
