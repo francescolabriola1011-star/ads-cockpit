@@ -153,6 +153,8 @@ footer{margin-top:44px;color:var(--muted);font-size:12px;border-top:1px solid va
 
   <h2>Azioni di oggi <span id="nact" style="color:var(--crit)"></span></h2>
   <div id="azioni"></div>
+  <h2>Da monitorare <span id="nmon" style="color:var(--warn,#d4a537)"></span></h2>
+  <div id="monitorare"></div>
 
   <h2>Appuntamenti fatti</h2>
   <div id="esiti"></div>
@@ -450,7 +452,36 @@ function spunta(id, on){
     body: JSON.stringify({set})}).catch(() => {});
 }
 
+/* 23/10/2026: voci "da monitorare" scritte in monitorare.json. Giornaliera =
+   torna ogni mattina, la spunta vale per oggi. Una volta = spuntata sparisce. */
+function renderMonitorare(sel){
+  const host = document.getElementById("monitorare");
+  if (!host) return;
+  const al = new Set(sel.map(c => c.alias));
+  const cli = {}; ((DATA && DATA.clienti) || []).concat((DATA && DATA.fermi) || []).forEach(c => cli[c.alias] = c);
+  const voci = ((DATA && DATA.monitorare) || []).filter(v => al.has(v.alias))
+    .filter(v => !(v.tipo === "una_volta" && SPUNTE[v.id] && SPUNTE[v.id] < OGGI));
+  const fatta = v => v.tipo === "una_volta" ? !!SPUNTE[v.id] : SPUNTE[v.id] === OGGI;
+  voci.sort((a,b) => (fatta(a) ? 1 : 0) - (fatta(b) ? 1 : 0));
+  const daFare = voci.filter(v => !fatta(v)).length;
+  document.getElementById("nmon").textContent = daFare ? `(${daFare})` : "";
+  if (!voci.length) { host.innerHTML = `<p class="sub">Niente da monitorare.</p>`; return; }
+  host.innerHTML = voci.map(v => `
+    <div class="act-row${fatta(v) ? " done" : ""}">
+      <label class="tick" title="${v.tipo === "una_volta" ? "Spunta quando e' controllato: da domani non esce piu'" : "Spunta quando l'hai guardato oggi: domani torna"}">
+        <input type="checkbox" data-az="${esc(v.id)}" ${fatta(v) ? "checked" : ""}></label>
+      <div class="who">${esc(cli[v.alias] ? nomeCli(cli[v.alias]) : v.alias)}</div>
+      <div><div class="what">${esc(v.cosa)}</div>
+        <div class="why">${esc(v.perche)}</div></div>
+      <div class="burn">${v.tipo === "una_volta" ? "una volta" : "ogni giorno"}<br>
+        <span style="color:var(--muted);font-weight:400">dal ${esc(v.dal)}</span></div>
+    </div>`).join("");
+  host.querySelectorAll("input[data-az]").forEach(cb =>
+    cb.addEventListener("change", () => spunta(cb.dataset.az, cb.checked)));
+}
+
 function renderAzioni(sel){
+  renderMonitorare(sel);
   const voci = [];
   sel.forEach(c => c.campagne.forEach(k => (k.ads || []).forEach(a => {
     if (a.status === "kill" && a.attiva) voci.push({
