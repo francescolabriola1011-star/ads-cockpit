@@ -120,8 +120,48 @@ button.tgl[aria-pressed="true"]{border-color:var(--accent);color:var(--accent)}
 .nuovo{background:var(--card);border:1px solid var(--good);border-left:3px solid var(--good);
   border-radius:10px;padding:11px 16px;margin-top:14px;font-size:13.5px}
 .nuovo b{color:var(--good)}
+.h2note{font-size:12px;text-transform:none;letter-spacing:0;font-weight:400;margin-left:6px}
+.h3{font-size:13px;color:var(--muted);font-weight:600;margin:18px 0 8px}
+details.regole{margin-top:12px}
+details.regole summary{cursor:pointer;color:var(--muted);font-size:13px}
+/* griglia clienti */
+.griglia{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(270px,1fr))}
+.cc{all:unset;box-sizing:border-box;cursor:pointer;display:block;background:var(--card);
+  border:1px solid var(--line);border-top:4px solid var(--good);border-radius:12px;padding:13px 15px}
+.cc:hover,.cc:focus-visible{border-color:var(--accent);outline:none}
+.cc.l1{border-top-color:var(--warn)} .cc.l2{border-top-color:var(--crit)}
+.cc-top{display:flex;align-items:center;gap:8px}
+.cc-top b{font-size:15px;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cc-st{font-size:10.5px;font-weight:700;letter-spacing:.05em;padding:2px 7px;border-radius:5px;
+  color:var(--good);border:1px solid var(--good);white-space:nowrap}
+.cc.l1 .cc-st{color:var(--warn);border-color:var(--warn)} .cc.l2 .cc-st{color:var(--crit);border-color:var(--crit)}
+.cc-big{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-top:9px}
+.cc-big .v{font-size:25px;font-weight:700;margin:0;letter-spacing:-.02em}
+.cc-big .tr{font-size:12.5px;font-weight:600}
+.cc-nums{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:9px}
+.cc-nums .v{font-size:15px}
+.cc-nums .k{white-space:nowrap}
+.cc svg{display:block;width:100%;height:46px;margin-top:10px}
+.cc-why{font-size:12px;color:var(--ink2);margin-top:8px;line-height:1.4}
+/* galleria statiche */
+.galleria{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(210px,1fr))}
+.st{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.st.cli{border-color:var(--good)}
+.st .img{aspect-ratio:4/5;background:rgba(127,127,127,.12);display:flex;align-items:center;justify-content:center;
+  text-align:center;padding:14px;font-size:13px;color:var(--muted)}
+.st .img img{width:100%;height:100%;object-fit:cover;display:block}
+.st .img:has(img){padding:0}
+.st .tx{padding:11px 13px 13px}
+.st .tx .n{font-weight:650;font-size:13.5px;line-height:1.3}
+.st .tx .c{font-size:12px;color:var(--accent);font-weight:650;margin-bottom:3px}
+.st .res{display:flex;gap:14px;margin-top:8px}
+.st .res .v{font-size:20px}
+.st .nota{font-size:11.5px;color:var(--muted);margin-top:8px;line-height:1.4}
 footer{margin-top:44px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:14px}
 @media(max-width:820px){
+  .wrap{padding:20px 16px 60px}
+  .griglia{grid-template-columns:1fr}
+  .galleria{grid-template-columns:repeat(2,1fr);gap:10px}
   .chead{grid-template-columns:1fr 1fr;gap:10px}
   .chead .spark{grid-column:1/-1}
   .act-row{grid-template-columns:1fr;gap:6px}
@@ -140,7 +180,6 @@ footer{margin-top:44px;color:var(--muted);font-size:12px;border-top:1px solid va
     <button class="tgl" id="unlock">Mostra nomi veri</button>
   </div>
   <div id="ruolo"></div>
-  <div class="rules" id="rules"></div>
   <div id="nuovi"></div>
 
   <div class="filters" id="scopebar">
@@ -148,13 +187,22 @@ footer{margin-top:44px;color:var(--muted);font-size:12px;border-top:1px solid va
     <span class="sub" id="scopeNote"></span>
   </div>
 
-  <h2 id="h-quadro">Il quadro</h2>
-  <div class="tiles" id="tiles"></div>
-
-  <h2>Azioni di oggi <span id="nact" style="color:var(--crit)"></span></h2>
+  <h2>Da fare oggi <span id="nact" style="color:var(--crit)"></span></h2>
   <div id="azioni"></div>
-  <h2>Da monitorare <span id="nmon" style="color:var(--warn,#d4a537)"></span></h2>
+  <h3 class="h3">Da monitorare <span id="nmon" style="color:var(--warn,#d4a537)"></span></h3>
   <div id="monitorare"></div>
+
+  <h2>Come va ogni cliente <span class="h2note">dal peggiore al migliore · clic per il dettaglio</span></h2>
+  <div class="griglia" id="griglia"></div>
+  <p class="sub" id="legenda" style="margin-top:10px"></p>
+
+  <h2>Statiche che portano appuntamenti e clienti</h2>
+  <div class="galleria" id="statiche"></div>
+
+  <h2 id="h-quadro">Il quadro del periodo</h2>
+  <div class="tiles" id="tiles"></div>
+  <details class="regole"><summary>Le regole di stacco</summary>
+    <div class="rules" id="rules"></div></details>
 
   <h2>Appuntamenti fatti</h2>
   <div id="esiti"></div>
@@ -165,7 +213,7 @@ footer{margin-top:44px;color:var(--muted);font-size:12px;border-top:1px solid va
   <h2>Dove riallocare</h2>
   <div id="realloc"></div>
 
-  <h2>Clienti <span id="ntitle" style="color:var(--muted);font-weight:400"></span></h2>
+  <h2>Dettaglio per cliente <span id="ntitle" style="color:var(--muted);font-weight:400"></span></h2>
   <div class="filters">
     <select id="fStato">
       <option value="">Tutti gli stati</option>
@@ -205,7 +253,7 @@ const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;
 const LABEL = {kill:"STACCA", watch:"SORVEGLIA", winner:"VINCENTE", ok:"OK", early:"PRESTO"};
 const chip = s => `<span class="chip c-${s}"><span class="dot"></span>${LABEL[s]||s}</span>`;
 
-let DATA = null, NAMES = null;
+let DATA = null, NAMES = null, THUMBS = null, THUMBS_CHIARO = null;
 /* ?cliente=SIGLA apre la pagina già sul singolo account: è il link
    che si manda al cliente perché veda solo il suo. */
 let state = {cliente: new URLSearchParams(location.search).get("cliente") || "",
@@ -221,8 +269,8 @@ const nomeCamp = k => (NAMES && NAMES.campagne[k.id]) || k.name;
 /* ---------- sblocco nomi veri (AES-GCM, chiave da passphrase) ---------- */
 const b64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
 
-async function decryptNames(pass){
-  const enc = await (await fetch("names.enc?" + Date.now())).json();
+async function decryptFile(file, pass){
+  const enc = await (await fetch(file + "?" + Date.now())).json();
   const base = await crypto.subtle.importKey("raw", new TextEncoder().encode(pass),
     "PBKDF2", false, ["deriveKey"]);
   const key = await crypto.subtle.deriveKey(
@@ -235,7 +283,9 @@ async function decryptNames(pass){
 async function unlock(pass, silent){
   const btn = document.getElementById("unlock");
   try {
-    NAMES = await decryptNames(pass);
+    NAMES = await decryptFile("names.enc", pass);
+    /* miniature delle statiche: stessa passphrase, possono mostrare volto o nome */
+    try { THUMBS = await decryptFile("thumbs.enc", pass); } catch(e) {}
     sessionStorage.setItem("adscockpit_pw", pass);
     btn.textContent = "Nascondi nomi veri";
     btn.setAttribute("aria-pressed","true");
@@ -259,6 +309,12 @@ fetch("data.json?" + Date.now())
     if (saved && d.nomi_sbloccabili) unlock(saved, true);
   })
   .catch(e => document.getElementById("meta").textContent = "Impossibile leggere data.json: " + e);
+
+fetch("thumbs.json?" + Date.now()).then(r => r.ok ? r.json() : null).then(t => {
+  if (!t) return;
+  THUMBS_CHIARO = t; THUMBS = THUMBS || t;
+  if (DATA) renderStatiche(scope());
+}).catch(() => {});
 
 /* Il perimetro di TUTTA la pagina: tutti i clienti, o quello selezionato. */
 let CVRMIN = 4;
@@ -392,6 +448,8 @@ function render(){
   ].join("");
 
   renderAzioni(sel);
+  renderGriglia(sel);
+  renderStatiche(sel);
   renderEsiti(sel);
 
   /* riallocazione */
@@ -567,6 +625,120 @@ function renderAzioni(sel){
 }
 leggiSpunte();
 
+/* ---------- come va ogni cliente ----------
+   Semaforo dalle ultime due settimane (giornaliero di Meta, hiring escluso):
+   rosso  = creative da staccare ancora accese, 0 lead in 7 giorni con almeno
+            la soglia "0 lead" spesa, o CPL 7 gg sopra il tetto di allarme
+   giallo = CPL 7 gg sopra il limite di stacco, peggiorato oltre il 30% sulla
+            settimana prima, o 5 giorni senza lead
+   verde  = il resto. */
+const esitiCli = c => {
+  const e = c.esiti_creative; if (!e) return null;
+  return {apt: e.totale_creative.apt2 + e.senza_creativa.apt2, chiusi: e.totale_creative.chiusi + e.senza_creativa.chiusi};
+};
+function salute(c){
+  const R = DATA.regole, a = c.andamento || {}, u = a.ultimi7 || {}, p = a.prima7 || {};
+  const allarme = R.cpl_allarme_pochi_lead_eur || 35, kill = R.cpl_kill_eur || 25;
+  const zero = R.spend_kill_zero_lead_eur || 30;
+  const m = []; let liv = 0;
+  if (c.n_kill_ancora_accese > 0){ liv = 2; m.push(`${c.n_kill_ancora_accese} ${c.n_kill_ancora_accese === 1 ? "creativa da staccare ancora accesa" : "creative da staccare ancora accese"}`); }
+  if (!u.lead && (u.spesa || 0) >= zero){ liv = 2; m.push(`0 lead in 7 giorni con ${eur0(u.spesa)} spesi`); }
+  else if (u.cpl > allarme){ liv = 2; m.push(`CPL 7 gg sopra ${eur0(allarme)}`); }
+  else if (u.cpl > kill){ liv = Math.max(liv, 1); m.push(`CPL 7 gg sopra ${eur0(kill)}`); }
+  if (u.cpl && p.cpl && u.cpl > p.cpl * 1.3){ liv = Math.max(liv, 1); m.push(`CPL peggiorato del ${Math.round((u.cpl / p.cpl - 1) * 100)}% sulla settimana prima`); }
+  if (a.giorni_da_ultimo_lead >= 5){ liv = Math.max(liv, 1); m.push(`ultimo lead ${a.giorni_da_ultimo_lead} giorni fa`); }
+  return {liv, m, u, p, a};
+}
+function spark(serie, kill){
+  if (!serie || !serie.length) return "";
+  const W = 300, H = 46, n = serie.length, bw = W / n;
+  const maxL = Math.max(1, ...serie.map(x => x.l));
+  const cpl = serie.map((x, i) => {
+    if (i < 6) return null;
+    const w = serie.slice(i - 6, i + 1), s = w.reduce((t, y) => t + y.s, 0), l = w.reduce((t, y) => t + y.l, 0);
+    return l ? s / l : null;
+  });
+  const top = Math.max(kill * 2, ...cpl.filter(v => v != null).map(v => Math.min(v, kill * 3)));
+  const y = v => H - 2 - Math.min(v, top) / top * (H - 6);
+  let path = "", su = false;
+  cpl.forEach((v, i) => { if (v == null){ su = false; return; }
+    path += (su ? "L" : "M") + (i * bw + bw / 2).toFixed(1) + " " + y(v).toFixed(1); su = true; });
+  return `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-label="lead al giorno e CPL a 7 giorni, ultimi 30 giorni">
+    ${serie.map((x, i) => x.l ? `<rect x="${(i * bw + 1).toFixed(1)}" y="${(H - x.l / maxL * (H * .55)).toFixed(1)}" width="${(bw - 2).toFixed(1)}" height="${(x.l / maxL * (H * .55)).toFixed(1)}" rx="1" fill="var(--accent)" opacity=".45"><title>${gg(x.g)}: ${x.l} lead, ${eur(x.s)}</title></rect>` : "").join("")}
+    <line x1="0" x2="${W}" y1="${y(kill).toFixed(1)}" y2="${y(kill).toFixed(1)}" stroke="var(--muted)" stroke-dasharray="3 3" stroke-width="1" vector-effect="non-scaling-stroke"/>
+    <path d="${path}" fill="none" stroke="var(--ink)" stroke-width="1.8" vector-effect="non-scaling-stroke"/></svg>`;
+}
+const STLAB = ["IN LINEA", "DA GUARDARE", "DA SISTEMARE"];
+function renderGriglia(sel){
+  const host = document.getElementById("griglia");
+  const kill = DATA.regole.cpl_kill_eur || 25;
+  const righe = sel.map(c => ({c, h: salute(c), e: esitiCli(c)}));
+  const peso = r => r.h.u.lead ? r.h.u.cpl : 1e6 + (r.h.u.spesa || 0);
+  righe.sort((a, b) => b.h.liv - a.h.liv || peso(b) - peso(a));
+  host.innerHTML = righe.map(({c, h, e}) => {
+    const u = h.u, p = h.p, a = h.a;
+    const tr = (u.cpl && p.cpl) ? (u.cpl > p.cpl
+        ? `<span class="tr up">▲ da ${eur(p.cpl)}</span>` : `<span class="tr down">▼ da ${eur(p.cpl)}</span>`)
+      : (p.cpl ? `<span class="tr" style="color:var(--muted)">prima ${eur(p.cpl)}</span>` : "");
+    const col = !u.spesa ? "var(--muted)" : !u.lead ? "var(--crit)" : u.cpl > (DATA.regole.cpl_allarme_pochi_lead_eur || 35) ? "var(--crit)"
+      : u.cpl > kill ? "var(--warn)" : "var(--good)";
+    return `<button class="cc l${h.liv}" data-alias="${esc(c.alias)}">
+      <div class="cc-top"><b>${esc(nomeCli(c))}</b><span class="cc-st">${STLAB[h.liv]}</span></div>
+      <div class="k" style="margin-top:9px">CPL ultimi 7 giorni</div>
+      <div class="cc-big"><span class="v mono" style="color:${col}">${u.lead ? eur(u.cpl) : u.spesa ? "0 lead" : "nessuna spesa"}</span>${tr}</div>
+      <div class="cc-nums">
+        <div><div class="k">Lead 7g</div><div class="v mono">${int(u.lead)}<span class="k"> / ${int(p.lead)}</span></div></div>
+        <div><div class="k">Ultimo</div><div class="v mono">${a.giorni_da_ultimo_lead == null ? "n.d." : a.giorni_da_ultimo_lead === 0 ? "oggi" : a.giorni_da_ultimo_lead + " gg"}</div></div>
+        <div><div class="k">Apt</div><div class="v mono">${e ? int(e.apt) : "n.d."}</div></div>
+        <div><div class="k">Clienti</div><div class="v mono" style="color:${e && e.chiusi ? "var(--good)" : "inherit"}">${e ? int(e.chiusi) : "n.d."}</div></div>
+      </div>
+      ${spark(a.serie, kill)}
+      <div class="cc-why">${h.m.length ? h.m.map(esc).join(" · ") : "nessun segnale storto nelle ultime due settimane"}</div>
+    </button>`;
+  }).join("") || `<div class="empty">Nessun account con spesa nel periodo.</div>`;
+  document.getElementById("legenda").innerHTML = `Lead 7g: ultimi 7 giorni / i 7 prima. Ultimo: giorni dall'ultimo lead. Apt e clienti: caselle 2 APT e CHIUSO dei moduli, tutto lo storico.
+    Grafico: barre = lead al giorno negli ultimi 30 giorni, linea = CPL mobile a 7 giorni, tratteggio = limite di stacco ${eur0(kill)}.
+    Rosso: creative da staccare accese, 0 lead in 7 giorni o CPL 7 gg sopra ${eur0(DATA.regole.cpl_allarme_pochi_lead_eur || 35)}.
+    Giallo: CPL 7 gg sopra ${eur0(kill)}, peggiorato oltre il 30% o 5 giorni senza lead.`;
+  host.querySelectorAll(".cc").forEach(b => b.addEventListener("click", () => {
+    const el = document.querySelector(`.client[data-alias="${CSS.escape(b.dataset.alias)}"]`);
+    if (!el) return;
+    el.classList.add("open");
+    el.scrollIntoView({behavior: "smooth", block: "start"});
+  }));
+}
+
+/* ---------- statiche che portano ----------
+   Le creative con almeno un appuntamento (2 APT) o un cliente (CHIUSO) nei
+   moduli. L'immagine arriva da thumbs.enc (si vede sbloccando i nomi) o, nel
+   privato, da thumbs.json. */
+function renderStatiche(sel){
+  const host = document.getElementById("statiche");
+  const r = [];
+  sel.forEach(c => ((c.esiti_creative || {}).righe || []).forEach(x => {
+    if (x.apt2 || x.chiusi) r.push({...x, cli: c});
+  }));
+  r.sort((a, b) => b.chiusi - a.chiusi || b.apt2 - a.apt2 || (a.costo_apt || 1e9) - (b.costo_apt || 1e9));
+  if (!r.length){ host.innerHTML = `<div class="empty">Nessuna creativa ha ancora portato un appuntamento.</div>`; return; }
+  host.innerHTML = r.map(x => {
+    const img = THUMBS && THUMBS[x.ad_id];
+    return `<div class="st${x.chiusi ? " cli" : ""}">
+      <div class="img">${img ? `<img src="${img}" alt="${esc(x.nome)}" loading="lazy">`
+        : esc(x.nome) + (DATA.nomi_sbloccabili && !THUMBS ? `<br><span style="font-size:11px">immagine visibile con "Mostra nomi veri"</span>` : "")}</div>
+      <div class="tx"><div class="c">${esc(nomeCli(x.cli))}</div>
+        <div class="n">${esc(x.nome)}</div>
+        <div class="res">
+          <div><div class="k">Clienti</div><div class="v mono" style="color:${x.chiusi ? "var(--good)" : "inherit"}">${int(x.chiusi)}</div></div>
+          <div><div class="k">Apt</div><div class="v mono">${int(x.apt2)}</div></div>
+          <div><div class="k">Lead</div><div class="v mono">${int(x.lead)}</div></div>
+        </div>
+        <div class="nota">${x.costo_apt ? eur(x.costo_apt) + " per appuntamento · " : ""}${x.attiva ? "accesa"
+          : x.copia_accesa ? "accesa in copia (stessa immagine)"
+          : "spenta: prima di riaccenderla o duplicarla, controllo ads-bocciate"}</div>
+      </div></div>`;
+  }).join("");
+}
+
 /* ---------- esiti per creativa ----------
    Dai moduli lead: le caselle 1-2-3 APT e CHIUSO sommate per creativa (ad_id).
    Il CPL dice quanto costa un contatto; questa tabella dice quale creativa
@@ -664,7 +836,7 @@ function renderClienti(){
       (!state.stato || k.status === state.stato) && (!state.soloAttive || k.attiva));
     const open = state.expand || sel.length === 1 || c.n_kill_ancora_accese > 0;
     return `
-    <div class="client ${open ? "open" : ""}">
+    <div class="client ${open ? "open" : ""}" data-alias="${esc(c.alias)}">
       <div class="chead" role="button" tabindex="0">
         <div class="alias">${esc(nomeCli(c))}${c.solo_nostre_dal ? `<span style="margin-left:8px;font-size:11px;font-weight:400;color:var(--muted)">solo nostre ads, dal ${esc(gg(c.solo_nostre_dal))}</span>` : ""}</div>
         <div><div class="k">Spesa</div><div class="v mono">${eur0(c.spend)}</div></div>
@@ -784,7 +956,7 @@ document.getElementById("fExp").addEventListener("click", e => {
 });
 document.getElementById("unlock").addEventListener("click", e => {
   if (NAMES){
-    NAMES = null; sessionStorage.removeItem("adscockpit_pw");
+    NAMES = null; THUMBS = THUMBS_CHIARO; sessionStorage.removeItem("adscockpit_pw");
     e.target.textContent = "Mostra nomi veri";
     e.target.setAttribute("aria-pressed","false");
     render(); return;
