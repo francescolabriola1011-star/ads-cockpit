@@ -196,19 +196,13 @@ footer{margin-top:44px;color:var(--muted);font-size:12px;border-top:1px solid va
   <div class="griglia" id="griglia"></div>
   <p class="sub" id="legenda" style="margin-top:10px"></p>
 
-  <h2>Statiche che portano appuntamenti e clienti</h2>
-  <div class="galleria" id="statiche"></div>
+  <h2>Statiche che portano clienti e appuntamenti</h2>
+  <div id="statiche"></div>
 
   <h2 id="h-quadro">Il quadro del periodo</h2>
   <div class="tiles" id="tiles"></div>
   <details class="regole"><summary>Le regole di stacco</summary>
     <div class="rules" id="rules"></div></details>
-
-  <h2>Appuntamenti fatti</h2>
-  <div id="esiti"></div>
-
-  <h2>Clienti arrivati</h2>
-  <div id="chiusi"></div>
 
   <h2>Dove riallocare</h2>
   <div id="realloc"></div>
@@ -450,7 +444,6 @@ function render(){
   renderAzioni(sel);
   renderGriglia(sel);
   renderStatiche(sel);
-  renderEsiti(sel);
 
   /* riallocazione */
   const rr = sel.filter(c => c.riallocazione.budget_da_spostare > 0);
@@ -710,18 +703,29 @@ function renderGriglia(sel){
 
 /* ---------- statiche che portano ----------
    Le creative con almeno un appuntamento (2 APT) o un cliente (CHIUSO) nei
-   moduli. L'immagine arriva da thumbs.enc (si vede sbloccando i nomi) o, nel
-   privato, da thumbs.json. */
+   moduli, in due blocchi: prima quelle che hanno portato clienti, poi quelle
+   che hanno portato solo appuntamenti. L'immagine arriva da thumbs.enc (si vede
+   sbloccando i nomi) o, nel privato, da thumbs.json. */
 function renderStatiche(sel){
   const host = document.getElementById("statiche");
+  if (!sel.some(c => c.esiti_creative)){
+    host.innerHTML = `<div class="empty">Per questo account non c'è un modulo lead collegato.</div>`; return;
+  }
   const r = [];
-  sel.forEach(c => ((c.esiti_creative || {}).righe || []).forEach(x => {
-    if (x.apt2 || x.chiusi) r.push({...x, cli: c});
-  }));
-  r.sort((a, b) => b.chiusi - a.chiusi || b.apt2 - a.apt2 || (a.costo_apt || 1e9) - (b.costo_apt || 1e9));
-  if (!r.length){ host.innerHTML = `<div class="empty">Nessuna creativa ha ancora portato un appuntamento.</div>`; return; }
-  host.innerHTML = r.map(x => {
+  const T = {lead:0, apt2:0, chiusi:0, s_apt2:0, s_chiusi:0, spesa:0};
+  let letto = null;
+  sel.forEach(c => {
+    const e = c.esiti_creative; if (!e) return;
+    letto = letto || e.letto;
+    (e.righe || []).forEach(x => { if (x.apt2 || x.chiusi) r.push({...x, cli: c}); });
+    const t = e.totale_creative || {}, z = e.senza_creativa || {};
+    T.lead += t.lead || 0; T.apt2 += t.apt2 || 0; T.chiusi += t.chiusi || 0; T.spesa += t.spesa || 0;
+    T.s_apt2 += z.apt2 || 0; T.s_chiusi += z.chiusi || 0;
+  });
+  const apt = T.apt2 + T.s_apt2, cli = T.chiusi + T.s_chiusi;
+  const card = x => {
     const img = THUMBS && THUMBS[x.ad_id];
+    const costo = x.chiusi && x.costo_cliente ? eur(x.costo_cliente) + " per cliente · " : "";
     return `<div class="st${x.chiusi ? " cli" : ""}">
       <div class="img">${img ? `<img src="${img}" alt="${esc(x.nome)}" loading="lazy">`
         : esc(x.nome) + (DATA.nomi_sbloccabili && !THUMBS ? `<br><span style="font-size:11px">immagine visibile con "Mostra nomi veri"</span>` : "")}</div>
@@ -732,83 +736,25 @@ function renderStatiche(sel){
           <div><div class="k">Apt</div><div class="v mono">${int(x.apt2)}</div></div>
           <div><div class="k">Lead</div><div class="v mono">${int(x.lead)}</div></div>
         </div>
-        <div class="nota">${x.costo_apt ? eur(x.costo_apt) + " per appuntamento · " : ""}${x.attiva ? "accesa"
+        <div class="nota">${costo}${x.costo_apt ? eur(x.costo_apt) + " per appuntamento · " : ""}${x.lead ? Math.round(x.apt2 / x.lead * 100) + "% lead → apt · " : ""}${x.attiva ? "accesa"
           : x.copia_accesa ? "accesa in copia (stessa immagine)"
           : "spenta: prima di riaccenderla o duplicarla, controllo ads-bocciate"}</div>
       </div></div>`;
-  }).join("");
-}
-
-/* ---------- esiti per creativa ----------
-   Dai moduli lead: le caselle 1-2-3 APT e CHIUSO sommate per creativa (ad_id).
-   Il CPL dice quanto costa un contatto; questa tabella dice quale creativa
-   porta gente che si presenta e compra. */
-function renderEsiti(sel){
-  const hA = document.getElementById("esiti"), hC = document.getElementById("chiusi");
-  const righe = [], per = [];
-  const T = {lead:0, apt2:0, apt3:0, chiusi:0, s_apt2:0, s_apt3:0, s_chiusi:0, spesa:0};
-  let letto = null;
-  sel.forEach(c => {
-    const e = c.esiti_creative; if (!e) return;
-    letto = letto || e.letto;
-    e.righe.forEach(r => righe.push({...r, cli:c}));
-    const t = e.totale_creative, z = e.senza_creativa;
-    T.lead += t.lead; T.apt2 += t.apt2; T.apt3 += t.apt3; T.chiusi += t.chiusi; T.spesa += t.spesa || 0;
-    T.s_apt2 += z.apt2; T.s_apt3 += z.apt3; T.s_chiusi += z.chiusi;
-    per.push({cli:c, apt:t.apt2 + z.apt2, apt3:t.apt3 + z.apt3, chiusi:t.chiusi + z.chiusi, lead:t.lead + z.lead});
-  });
-  if (!sel.some(c => c.esiti_creative)){
-    const vuoto = `<div class="empty">Per questo account non c'è un modulo lead collegato.</div>`;
-    hA.innerHTML = vuoto; hC.innerHTML = vuoto; return;
-  }
-  const multi = sel.length > 1;
-  const apt = T.apt2 + T.s_apt2, cli = T.chiusi + T.s_chiusi;
-  const muto = v => v ? int(v) : '<span style="color:var(--muted)">0</span>';
-  const nd = '<span style="color:var(--muted)">n.d.</span>';
-  const fonte = `<p class="sub" style="margin-top:10px">Dai moduli lead${letto ? ", letti il " +
-    new Date(letto).toLocaleString("it-IT",{dateStyle:"short",timeStyle:"short"}) : ""}: appuntamento = casella 2 APT
-    (il lead si è presentato), cliente = casella CHIUSO. Somma di tutto lo storico dei moduli: le caselle non hanno data.
-    Il costo usa la spesa della creativa nel periodo del cockpit.</p>`;
-
-  /* ---- APPUNTAMENTI ---- */
-  const rA = righe.filter(r => r.apt2).sort((a,b) => b.apt2 - a.apt2 || (a.costo_apt||1e9) - (b.costo_apt||1e9));
-  hA.innerHTML = `<div class="tiles">
-      ${tile("Appuntamenti fatti", int(apt), "tutti, sommati dall'inizio dei moduli", "hero")}
-      ${tile("Da creative ads", int(T.apt2), `${int(T.lead)} lead tracciati · ${T.lead ? Math.round(T.apt2/T.lead*100) : 0}% diventa appuntamento`)}
-      ${tile("Costo medio per appuntamento", T.apt2 && T.spesa ? eur(T.spesa / T.apt2) : "n.d.", "spesa di tutte le creative con lead nei moduli ÷ appuntamenti")}
+  };
+  const rC = r.filter(x => x.chiusi).sort((a, b) => b.chiusi - a.chiusi || b.apt2 - a.apt2 || (a.costo_cliente || 1e9) - (b.costo_cliente || 1e9));
+  const rA = r.filter(x => !x.chiusi).sort((a, b) => b.apt2 - a.apt2 || (a.costo_apt || 1e9) - (b.costo_apt || 1e9));
+  const blocco = (titolo, righe, vuoto) => `<h3 class="h3">${titolo} <span style="color:var(--muted);font-weight:400">${righe.length}</span></h3>
+    ${righe.length ? `<div class="galleria">${righe.map(card).join("")}</div>` : `<div class="empty">${vuoto}</div>`}`;
+  host.innerHTML = `<div class="tiles">
+      ${tile("Clienti arrivati", int(cli), `${int(T.chiusi)} da creative ads${apt ? " · " + Math.round(cli / apt * 100) + "% degli appuntamenti" : ""}`, cli ? "" : "act")}
+      ${tile("Appuntamenti fatti", int(apt), `${int(T.apt2)} da creative ads · ${T.lead ? Math.round(T.apt2 / T.lead * 100) : 0}% di ${int(T.lead)} lead`)}
+      ${tile("Costo medio per appuntamento", T.apt2 && T.spesa ? eur(T.spesa / T.apt2) : "n.d.", "spesa delle creative con lead nei moduli ÷ appuntamenti")}
     </div>
-    <div style="overflow-x:auto;margin-top:14px"><table><thead><tr>
-      ${multi ? "<th>Cliente</th>" : ""}<th>Creativa che ha portato appuntamenti</th><th>Appuntamenti</th>
-      <th>Lead</th><th>Lead → appuntamento</th><th>Costo per appuntamento</th></tr></thead><tbody>
-      ${rA.length ? rA.map(r => `<tr>
-        ${multi ? `<td><b style="color:var(--accent)">${esc(nomeCli(r.cli))}</b></td>` : ""}
-        <td>${esc(r.nome)} ${r.attiva ? '<span class="chip c-ok"><span class="dot"></span>ACCESA</span>' : '<span class="chip c-early"><span class="dot"></span>SPENTA</span>'}
-          <div class="sub" style="font-size:11.5px">${esc(r.campagna || "")}</div></td>
-        <td class="mono"><b>${int(r.apt2)}</b></td><td class="mono">${int(r.lead)}</td>
-        <td class="mono">${Math.round(r.apt2 / r.lead * 100)}%</td>
-        <td class="mono">${r.costo_apt ? eur(r.costo_apt) : nd}</td></tr>`).join("")
-        : `<tr><td colspan="6" class="empty">Nessuna creativa ha ancora portato un appuntamento.</td></tr>`}
-    </tbody></table></div>${fonte}`;
-
-  /* ---- CLIENTI ---- */
-  const rC = righe.filter(r => r.chiusi).sort((a,b) => b.chiusi - a.chiusi || (a.costo_cliente||1e9) - (b.costo_cliente||1e9));
-  hC.innerHTML = `<div class="tiles">
-      ${tile("Clienti arrivati", int(cli), "casella CHIUSO, sommati dall'inizio dei moduli", cli ? "" : "act")}
-      ${tile("Da creative ads", int(T.chiusi), apt ? `${Math.round(cli/apt*100)}% degli appuntamenti diventa cliente` : "")}
-      ${tile("Appuntamenti di chiusura", int(T.apt3 + T.s_apt3), "casella 3 APT")}
-    </div>
-    <div style="overflow-x:auto;margin-top:14px"><table><thead><tr>
-      ${multi ? "<th>Cliente</th>" : ""}<th>Creativa che ha portato clienti</th><th>Clienti</th>
-      <th>Appuntamenti</th><th>Lead</th><th>Costo per cliente</th></tr></thead><tbody>
-      ${rC.length ? rC.map(r => `<tr>
-        ${multi ? `<td><b style="color:var(--accent)">${esc(nomeCli(r.cli))}</b></td>` : ""}
-        <td>${esc(r.nome)} ${r.attiva ? '<span class="chip c-ok"><span class="dot"></span>ACCESA</span>' : '<span class="chip c-early"><span class="dot"></span>SPENTA</span>'}
-          <div class="sub" style="font-size:11.5px">${esc(r.campagna || "")}</div></td>
-        <td class="mono" style="color:var(--good)"><b>${int(r.chiusi)}</b></td>
-        <td class="mono">${muto(r.apt2)}</td><td class="mono">${int(r.lead)}</td>
-        <td class="mono">${r.costo_cliente ? eur(r.costo_cliente) : nd}</td></tr>`).join("")
-        : `<tr><td colspan="6" class="empty">Nessuna creativa ha ancora portato un cliente chiuso.</td></tr>`}
-    </tbody></table></div>`;
+    ${blocco("Hanno portato clienti", rC, "Nessuna statica ha ancora portato un cliente chiuso.")}
+    ${blocco("Hanno portato appuntamenti", rA, "Nessun'altra statica ha portato appuntamenti.")}
+    <p class="sub" style="margin-top:10px">Dai moduli lead${letto ? ", letti il " +
+      new Date(letto).toLocaleString("it-IT",{dateStyle:"short",timeStyle:"short"}) : ""}: appuntamento = casella 2 APT,
+      cliente = casella CHIUSO, sommati su tutto lo storico. Il costo usa la spesa della creativa nel periodo del cockpit.</p>`;
 }
 
 function posLine(c){
