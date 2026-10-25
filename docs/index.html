@@ -309,6 +309,24 @@ fetch("data.json?" + Date.now())
   })
   .catch(e => document.getElementById("meta").textContent = "Impossibile leggere data.json: " + e);
 
+/* pagina sempre aperta (25/10/2026): quando esce un data.json nuovo o cambia
+   il giorno si ricarica da sola, mai mentre si sta cliccando */
+(function () {
+  const giorno = new Date().toDateString();
+  let ultimo = Date.now();
+  ["click", "keydown", "input"].forEach(e => document.addEventListener(e, () => { ultimo = Date.now(); }, true));
+  const quieto = () => Date.now() - ultimo > 30000 && !document.querySelector("input:focus,textarea:focus,select:focus");
+  const guarda = () => {
+    if (document.hidden || !DATA) return;
+    if (new Date().toDateString() !== giorno && quieto()) { location.reload(); return; }
+    fetch("data.json?" + Date.now(), { cache: "no-store" }).then(r => r.ok ? r.json() : null)
+      .then(d => { if (d && d.generato && d.generato !== DATA.generato && quieto()) location.reload(); })
+      .catch(() => {});
+  };
+  setInterval(guarda, 120000);
+  document.addEventListener("visibilitychange", () => { if (!document.hidden) guarda(); });
+})();
+
 fetch("thumbs.json?" + Date.now()).then(r => r.ok ? r.json() : null).then(t => {
   if (!t) return;
   THUMBS_CHIARO = t; THUMBS = THUMBS || t;
