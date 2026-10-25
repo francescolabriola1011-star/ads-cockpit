@@ -1,5 +1,5 @@
 {
- "generato": "24/10 04:05",
+ "generato": "25/10 04:03",
  "n_account_rossi": 20,
  "n_puliti": 0,
  "puliti": [],
@@ -7,7 +7,67 @@
   {
    "cliente": "AEA-HOUSE",
    "tipo": "NON CONSEGNA",
+   "dettaglio": "CF - Modulo 2 · ieri 0.00 €",
+   "gravita": 3
+  },
+  {
+   "cliente": "AEA-HOUSE",
+   "tipo": "NON CONSEGNA",
+   "dettaglio": "CF - Modulo 3 · ieri 0.00 €",
+   "gravita": 3
+  },
+  {
+   "cliente": "AEA-HOUSE",
+   "tipo": "NON CONSEGNA",
+   "dettaglio": "CF - Modulo 4 · ieri 0.00 €",
+   "gravita": 3
+  },
+  {
+   "cliente": "AEA-HOUSE",
+   "tipo": "NON CONSEGNA",
+   "dettaglio": "CF - Modulo 5 · ieri 0.00 €",
+   "gravita": 3
+  },
+  {
+   "cliente": "AEA-HOUSE",
+   "tipo": "NON CONSEGNA",
+   "dettaglio": "CF - Modulo 6 · ieri 0.00 €",
+   "gravita": 3
+  },
+  {
+   "cliente": "AEA-HOUSE",
+   "tipo": "NON CONSEGNA",
    "dettaglio": "Venditore - Moduli · ieri 0.00 €",
+   "gravita": 3
+  },
+  {
+   "cliente": "AEA-HOUSE",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "instagram/instagram_reels · 0.66 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-LM",
+   "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
+   "dettaglio": "Lead Gen N3 - Luigi Micheloni",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-LM",
+   "tipo": "PIU' MODULI SULLE ADS ATTIVE",
+   "dettaglio": "Lead Gen N - Luigi Micheloni + Lead Gen N3 - Luigi Micheloni",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-LM",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "facebook/facebook_stories · 1.19 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-LM",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "instagram/instagram_stories · 1.26 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
    "gravita": 3
   },
   {
@@ -23,9 +83,39 @@
    "gravita": 3
   },
   {
+   "cliente": "CF-MP",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "facebook/facebook_stories · 1.35 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "gravita": 3
+  },
+  {
    "cliente": "DDB",
    "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
    "dettaglio": "Lead Gen N - Davide Dal Bosco",
+   "gravita": 3
+  },
+  {
+   "cliente": "LMB",
+   "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
+   "dettaglio": "Lead Gen N3 - Luigi Micheloni",
+   "gravita": 3
+  },
+  {
+   "cliente": "LMB",
+   "tipo": "PIU' MODULI SULLE ADS ATTIVE",
+   "dettaglio": "Lead Gen N - Luigi Micheloni + Lead Gen N3 - Luigi Micheloni",
+   "gravita": 3
+  },
+  {
+   "cliente": "LMB",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "facebook/facebook_stories · 1.19 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "gravita": 3
+  },
+  {
+   "cliente": "LMB",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "instagram/instagram_stories · 1.26 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
    "gravita": 3
   },
   {
@@ -35,9 +125,9 @@
    "gravita": 3
   },
   {
-   "cliente": "ORO-AZ",
+   "cliente": "MPC",
    "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "facebook/facebook_stories · 1.43 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "dettaglio": "facebook/facebook_stories · 1.35 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
    "gravita": 3
   },
   {
@@ -47,15 +137,21 @@
    "gravita": 3
   },
   {
-   "cliente": "ZAP",
-   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "facebook/facebook_stories · 1.43 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
-   "gravita": 3
+   "cliente": "CF-LM",
+   "tipo": "PIU' DI UN MODULO VIVO",
+   "dettaglio": "Lead Micheloni Luigi, Lead Luigi Micheloni",
+   "gravita": 2
   },
   {
    "cliente": "DDB",
    "tipo": "CARTELLA DRIVE NON TROVATA",
    "dettaglio": "attesa «Clienti10X - Davide Dal Bosco - Consulente Finanziario»",
+   "gravita": 2
+  },
+  {
+   "cliente": "LMB",
+   "tipo": "PIU' DI UN MODULO VIVO",
+   "dettaglio": "Lead Micheloni Luigi, Lead Luigi Micheloni",
    "gravita": 2
   },
   {
@@ -75,6 +171,18 @@
    "tipo": "CARTELLA DRIVE NON TROVATA",
    "dettaglio": "attesa «Clienti10X - Zaghini Account Pubblicitario»",
    "gravita": 2
+  },
+  {
+   "cliente": "AEA-HOUSE",
+   "tipo": "FUORI REGOLA",
+   "dettaglio": "CF - Modulo 1 / ABO Mod2 video Gatto 15 milioni · 49.38 € e 0 lead",
+   "gravita": 1
+  },
+  {
+   "cliente": "AEA-HOUSE",
+   "tipo": "REELS ATTIVI ['facebook_reels', 'facebook_reels_overlay']",
+   "dettaglio": "MB - Moduli",
+   "gravita": 1
   },
   {
    "cliente": "AEA-HOUSE",
