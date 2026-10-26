@@ -870,27 +870,29 @@ function renderStatiche(sel){
     host.innerHTML = `<div class="empty">Per questo account non c'è un modulo lead collegato.</div>`; return;
   }
   const r = [];
-  const T = {lead:0, apt2:0, chiusi:0, s_apt2:0, s_chiusi:0, spesa:0};
+  const T = {lead:0, apt2:0, chiusi:0, k100:0, s_apt2:0, s_chiusi:0, s_k100:0, spesa:0};
   let letto = null;
   sel.forEach(c => {
     const e = c.esiti_creative; if (!e) return;
     letto = letto || e.letto;
-    (e.righe || []).forEach(x => { if (x.apt2 || x.chiusi) r.push({...x, cli: c}); });
+    (e.righe || []).forEach(x => { if (x.apt2 || x.chiusi || x.k100) r.push({...x, cli: c}); });
     const t = e.totale_creative || {}, z = e.senza_creativa || {};
     T.lead += t.lead || 0; T.apt2 += t.apt2 || 0; T.chiusi += t.chiusi || 0; T.spesa += t.spesa || 0;
     T.s_apt2 += z.apt2 || 0; T.s_chiusi += z.chiusi || 0;
+    T.k100 += t.k100 || 0; T.s_k100 += z.k100 || 0;
   });
   const apt = T.apt2 + T.s_apt2, cli = T.chiusi + T.s_chiusi;
   const card = x => {
     const img = THUMBS && THUMBS[x.ad_id];
     const costo = x.chiusi && x.costo_cliente ? eur(x.costo_cliente) + " per cliente · " : "";
-    return `<div class="st${x.chiusi ? " cli" : ""}">
+    return `<div class="st${x.chiusi || x.k100 ? " cli" : ""}">
       <div class="img">${img ? `<img src="${img}" alt="${esc(x.nome)}" loading="lazy">`
         : esc(x.nome) + (DATA.nomi_sbloccabili && !THUMBS ? `<br><span style="font-size:11px">immagine visibile con "Mostra nomi veri"</span>` : "")}</div>
       <div class="tx"><div class="c">${esc(nomeCli(x.cli))}</div>
         <div class="n">${esc(x.nome)}</div>
         <div class="res">
           <div><div class="k">Clienti</div><div class="v mono" style="color:${x.chiusi ? "var(--good)" : "inherit"}">${int(x.chiusi)}</div></div>
+          <div><div class="k">Apt 100k</div><div class="v mono" style="color:${x.k100 ? "var(--good)" : "inherit"}">${int(x.k100)}</div></div>
           <div><div class="k">Apt</div><div class="v mono">${int(x.apt2)}</div></div>
           <div><div class="k">Lead</div><div class="v mono">${int(x.lead)}</div></div>
         </div>
@@ -899,20 +901,22 @@ function renderStatiche(sel){
           : "spenta: prima di riaccenderla o duplicarla, controllo ads-bocciate"}</div>
       </div></div>`;
   };
-  const rC = r.filter(x => x.chiusi).sort((a, b) => b.chiusi - a.chiusi || b.apt2 - a.apt2 || (a.costo_cliente || 1e9) - (b.costo_cliente || 1e9));
-  const rA = r.filter(x => !x.chiusi).sort((a, b) => b.apt2 - a.apt2 || (a.costo_apt || 1e9) - (b.costo_apt || 1e9));
+  const rC = r.filter(x => x.chiusi || x.k100).sort((a, b) => b.chiusi - a.chiusi || b.k100 - a.k100 || b.apt2 - a.apt2 || (a.costo_cliente || 1e9) - (b.costo_cliente || 1e9));
+  const rA = r.filter(x => !x.chiusi && !x.k100).sort((a, b) => b.apt2 - a.apt2 || (a.costo_apt || 1e9) - (b.costo_apt || 1e9));
   const blocco = (titolo, righe, vuoto) => `<h3 class="h3">${titolo} <span style="color:var(--muted);font-weight:400">${righe.length}</span></h3>
     ${righe.length ? `<div class="galleria">${righe.map(card).join("")}</div>` : `<div class="empty">${vuoto}</div>`}`;
   host.innerHTML = `<div class="tiles">
       ${tile("Clienti arrivati", int(cli), `${int(T.chiusi)} da creative ads${apt ? " · " + Math.round(cli / apt * 100) + "% degli appuntamenti" : ""}`, cli ? "" : "act")}
+      ${tile("Appuntamenti 100k", int(T.k100 + T.s_k100), `${int(T.k100)} da creative ads · patrimonio sopra 100k`)}
       ${tile("Appuntamenti fatti", int(apt), `${int(T.apt2)} da creative ads · ${T.lead ? Math.round(T.apt2 / T.lead * 100) : 0}% di ${int(T.lead)} lead`)}
       ${tile("Costo medio per appuntamento", T.apt2 && T.spesa ? eur(T.spesa / T.apt2) : "n.d.", "spesa delle creative con lead nei moduli ÷ appuntamenti")}
     </div>
-    ${blocco("Hanno portato clienti", rC, "Nessuna statica ha ancora portato un cliente chiuso.")}
+    ${blocco("Hanno portato clienti e appuntamenti 100k", rC, "Nessuna statica ha ancora portato un cliente chiuso o un appuntamento 100k.")}
     ${blocco("Hanno portato appuntamenti", rA, "Nessun'altra statica ha portato appuntamenti.")}
     <p class="sub" style="margin-top:10px">Dai moduli lead${letto ? ", letti il " +
-      new Date(letto).toLocaleString("it-IT",{dateStyle:"short",timeStyle:"short"}) : ""}: appuntamento = casella 2 APT,
-      cliente = casella CHIUSO, sommati su tutto lo storico. Il costo usa la spesa della creativa nel periodo del cockpit.</p>`;
+      new Date(letto).toLocaleString("it-IT",{dateStyle:"short",timeStyle:"short"}) : ""}: per i clienti appuntamento = Fatto
+      nel Modulo Fatturato, appuntamento 100k = Fatto con patrimonio sopra 100k, cliente = Chiuso nel Modulo Fatturato o
+      casella CHIUSO del foglio lead; per casa nostra caselle 2 APT e CHIUSO del modulo. Sommati su tutto lo storico. Il costo usa la spesa della creativa nel periodo del cockpit.</p>`;
 }
 
 function posLine(c){
