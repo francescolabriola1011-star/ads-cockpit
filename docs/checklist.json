@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-26T12:22:12+01:00",
+ "generato": "2026-10-26T13:09:30+01:00",
  "procedura": "https://docs.google.com/document/d/1vn5K-biqWNt40FmqPAzCpsSSZcaTjX25dpWTKnxVoyQ/edit",
  "cartella": "https://drive.google.com/drive/folders/13BFaDvX2ShhlhR4qHG1U5B01BmsE9G5m",
  "sezioni": [
@@ -37,13 +37,6 @@
      "c": "tardi"
     },
     {
-     "k": "ckcsm:mb|imp|111",
-     "t": "Accendere l'automazione che compila il KPI Tracker dal Modulo Fatturato",
-     "d": "",
-     "m": "era il 18/10",
-     "c": "tardi"
-    },
-    {
      "k": "ckcsm:mb|imp|20",
      "t": "Creare la lookalike 1% da CSV unico",
      "d": "",
@@ -75,13 +68,6 @@
      "k": "ckcsm:mb|imp|159",
      "t": "Creative nuove, una statica e un video",
      "d": "Giovanni C.",
-     "m": "era il 25/10",
-     "c": "tardi"
-    },
-    {
-     "k": "ckcsm:mb|imp|161",
-     "t": "Modulo senza domanda sul patrimonio",
-     "d": "Davide D.B.",
      "m": "era il 25/10",
      "c": "tardi"
     },
