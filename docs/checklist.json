@@ -1,0 +1,318 @@
+{
+ "generato": "2026-10-26T12:02:25+01:00",
+ "procedura": "https://docs.google.com/document/d/1vn5K-biqWNt40FmqPAzCpsSSZcaTjX25dpWTKnxVoyQ/edit",
+ "cartella": "https://drive.google.com/drive/folders/13BFaDvX2ShhlhR4qHG1U5B01BmsE9G5m",
+ "sezioni": [
+  {
+   "id": "chiudere",
+   "titolo": "Da chiudere",
+   "sotto": "Le cose dette in riunione o in chat. Quando la spunti, si chiude anche nel registro.",
+   "voci": [
+    {
+     "k": "ckcsm:mb|imp|78",
+     "t": "Portare Alessandro Z. ad almeno 5 lead questa settimana",
+     "d": "Alessandro Z.",
+     "m": "era il 21/10 · priorita alta",
+     "c": "tardi"
+    },
+    {
+     "k": "ckcsm:mb|imp|125",
+     "t": "Fare il secondo WhatsApp",
+     "d": "",
+     "m": "era il 25/10 · priorita alta",
+     "c": "tardi"
+    },
+    {
+     "k": "ckcsm:mb|imp|69",
+     "t": "Passare a Carlo la sua routine di aggiornamento KPI Tracker",
+     "d": "",
+     "m": "era il 15/10",
+     "c": "tardi"
+    },
+    {
+     "k": "ckcsm:mb|imp|80",
+     "t": "Analisi posizionamenti sulle campagne di 2-3 mesi e togliere quelli senza lead (esempio Stefano M.)",
+     "d": "",
+     "m": "era il 18/10",
+     "c": "tardi"
+    },
+    {
+     "k": "ckcsm:mb|imp|111",
+     "t": "Accendere l'automazione che compila il KPI Tracker dal Modulo Fatturato",
+     "d": "",
+     "m": "era il 18/10",
+     "c": "tardi"
+    },
+    {
+     "k": "ckcsm:mb|imp|20",
+     "t": "Creare la lookalike 1% da CSV unico",
+     "d": "",
+     "m": "era il 21/10",
+     "c": "tardi"
+    },
+    {
+     "k": "ckcsm:mb|imp|149",
+     "t": "Avvisare subito il gruppo quando un cliente porta persone esterne nel suo BM (caso Ferrauto su Alessandro Z.)",
+     "d": "Alessandro Z.",
+     "m": "era il 25/10",
+     "c": "tardi"
+    },
+    {
+     "k": "ckcsm:mb|imp|151",
+     "t": "Cambiare modulo a Davide D.B. senza domanda sul patrimonio, come Marcello D.G.",
+     "d": "Davide D.B.",
+     "m": "era il 25/10",
+     "c": "tardi"
+    },
+    {
+     "k": "ckcsm:mb|imp|158",
+     "t": "Ricerca creative nuove su un angolo diverso",
+     "d": "Marco P.",
+     "m": "era il 25/10",
+     "c": "tardi"
+    },
+    {
+     "k": "ckcsm:mb|imp|159",
+     "t": "Creative nuove, una statica e un video",
+     "d": "Giovanni C.",
+     "m": "era il 25/10",
+     "c": "tardi"
+    },
+    {
+     "k": "ckcsm:mb|imp|161",
+     "t": "Modulo senza domanda sul patrimonio",
+     "d": "Davide D.B.",
+     "m": "era il 25/10",
+     "c": "tardi"
+    },
+    {
+     "k": "ckcsm:mb|imp|187",
+     "t": "Davide D.B.: analisi CPC, CPM e CVR prima di togliere il patrimonio dal modulo",
+     "d": "Davide D.B.",
+     "m": "entro il 28/10",
+     "c": "ok"
+    },
+    {
+     "k": "ckcsm:mb|imp|185",
+     "t": "Luigi M.: almeno 4 posizionamenti, rivedere dopo 2-3 giorni",
+     "d": "Luigi M.",
+     "m": "entro il 29/10",
+     "c": "ok"
+    },
+    {
+     "k": "ckcsm:mb|imp|186",
+     "t": "Marco P.: creativa nuova",
+     "d": "Marco P.",
+     "m": "entro il 30/10",
+     "c": "ok"
+    },
+    {
+     "k": "ckcsm:mb|imp|188",
+     "t": "Ricerca quotidiana sugli account messi peggio (CPL, CPM, CVR, CPC) e ricerca creative",
+     "d": "",
+     "m": "entro il 01/11",
+     "c": "ok"
+    }
+   ],
+   "vuoto": "Niente di aperto."
+  },
+  {
+   "id": "ads",
+   "titolo": "Altre mosse ads",
+   "sotto": "Spesa senza lead, moduli sotto il 4% di CVR, vincenti. Si azzera domani.",
+   "voci": [
+    {
+     "k": "ckcsm:mb|ads|senza|luigi-m-cf-lm:2026-10-26",
+     "t": "Luigi M. (CF-LM): acceso senza lead recenti",
+     "d": "106 euro in 7 giorni. Trova la causa: annuncio, modulo o target.",
+     "m": "spesa",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|ads|modulo|davide-d-b-cf-ddb:2026-10-26",
+     "t": "Davide D.B. (CF-DDB): CVR 3,95% sotto il 4%",
+     "d": "76 click al link, 3 lead. Si guarda il modulo, non l'annuncio.",
+     "m": "modulo",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|ads|scala|oro-statica-v1-14-giorni-e-x2-copia-2:2026-10-26",
+     "t": "Casa nostra: vincente, valuta se scalare",
+     "d": "ORO - statica v1 - 14 giorni e x2 - Copia 2: 18 lead a CPL 8.50. Lo decide Francesco.",
+     "m": "vincente",
+     "c": ""
+    }
+   ],
+   "vuoto": "Nessuna altra mossa ads oggi."
+  },
+  {
+   "id": "oggi",
+   "titolo": "Oggi",
+   "sotto": "Ogni giorno, prima delle 10. Si azzera domani. Accanto, quante volte e' stato fatto negli ultimi 5 giorni lavorativi.",
+   "voci": [
+    {
+     "k": "ckcsm:mb|g|cpl:2026-10-26",
+     "t": "CPL e CVR di ogni annuncio contro le soglie",
+     "d": "Soglie in sezione 7. Si guarda l'annuncio, mai la campagna.",
+     "m": "",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|g|lead:2026-10-26",
+     "t": "Lead Meta, Foglio Lead e GHL coincidono",
+     "d": "Un lead che manca in uno dei tre si recupera subito.",
+     "m": "",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|g|target:2026-10-26",
+     "t": "Lead fuori target: subito al CSM con esempi",
+     "d": "",
+     "m": "",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|g|account:2026-10-26",
+     "t": "Account: pagamento, annunci rifiutati, blocchi",
+     "d": "Un blocco si dice subito al cliente e al CSM.",
+     "m": "",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|g|msg:2026-10-26",
+     "t": "WhatsApp 1 e mail 1 consegnati ai lead di ieri",
+     "d": "In GHL, sulle conversazioni. Fallito o fermo su inviato: trovi la causa, sistemi, lo dici al CSM.",
+     "m": "",
+     "c": ""
+    }
+   ],
+   "vuoto": "Niente qui."
+  },
+  {
+   "id": "settimana",
+   "titolo": "Questa settimana",
+   "sotto": "Entro venerdi. Si azzera lunedi.",
+   "voci": [
+    {
+     "k": "ckcsm:mb|s|posiz:2026-10-26",
+     "t": "Posizionamenti: escludi quelli fuori soglia",
+     "d": "Ultimi 30 giorni: CPL oltre 45 euro, oppure 0 lead e spesa oltre 45. Processo 10.",
+     "m": "",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|s|auto:2026-10-26",
+     "t": "Automazioni GHL: partono davvero e una volta sola",
+     "d": "Controllate sui messaggi arrivati, non sulla configurazione.",
+     "m": "",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|s|seq:2026-10-26",
+     "t": "Sequenza completa su 3 lead per cliente",
+     "d": "WhatsApp 1, 2, 3 e mail. Chi esce prima della fine va al CSM col nome.",
+     "m": "",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|s|rami:2026-10-26",
+     "t": "Workflow senza rami vuoti",
+     "d": "Undelivered, Scarica la guida e Time Out portano al messaggio dopo. Poi rifai il lead di prova.",
+     "m": "",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|s|creative:2026-10-26",
+     "t": "Ricerca creative e proposte nuove",
+     "d": "Ad Library e creative vincenti degli altri clienti.",
+     "m": "",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|s|feedback:2026-10-26",
+     "t": "Feedback dei clienti: follower IG e lead del modulo",
+     "d": "Se sono amici e parenti o fuori target, si rivede il target col CSM.",
+     "m": "",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|s|report:2026-10-26",
+     "t": "Venerdi: report cliente per cliente",
+     "d": "KPI Tracker e PM compilati prima. Numeri, cosa e' cambiato, cosa si fa, una causa sistemica.",
+     "m": "",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|s|registro:2026-10-26",
+     "t": "Vincenti, bocciate e test aperti scritti",
+     "d": "Ogni stacco ha il verdetto e la condizione di riprova.",
+     "m": "",
+     "c": ""
+    }
+   ],
+   "vuoto": "Niente qui."
+  },
+  {
+   "id": "partiti",
+   "titolo": "Clienti partiti da 1 a 3 settimane",
+   "sotto": "Una volta per cliente, dopo la prima settimana di ads.",
+   "voci": [
+    {
+     "k": "ckcsm:mb|ig|Davide D.B.",
+     "t": "Davide D.B.: chiedi chi lo segue su Instagram",
+     "d": "Target oppure amici, parenti, colleghi. Ricordagli di mandare il messaggio Instagram a ogni nuovo follower.",
+     "m": "partito il 06/10",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|ig|Cosimo C.",
+     "t": "Cosimo C.: chiedi chi lo segue su Instagram",
+     "d": "Target oppure amici, parenti, colleghi. Ricordagli di mandare il messaggio Instagram a ogni nuovo follower.",
+     "m": "partito il 06/10",
+     "c": ""
+    }
+   ],
+   "vuoto": "Nessun cliente in quella finestra."
+  },
+  {
+   "id": "mese",
+   "titolo": "Questo mese",
+   "sotto": "Si azzera il 6: dal 1 al 5 si chiude il mese prima.",
+   "voci": [
+    {
+     "k": "ckcsm:mb|m|apt:2026-10-06",
+     "t": "Appuntamenti e vendite del modulo contro Modulo Fatturato",
+     "d": "Se non tornano, al CSM con nome e data.",
+     "m": "",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|m|report:2026-10-06",
+     "t": "Entro il 5: fatturato, CAC e LTV nel KPI Tracker",
+     "d": "Righe 36, 37, 38 di ogni cliente. Processo 04.",
+     "m": "",
+     "c": ""
+    }
+   ],
+   "vuoto": "Niente qui."
+  }
+ ],
+ "obiettivi": [
+  {
+   "t": "Portare almeno 5 lead a Luigi M.",
+   "m": "entro il 28/10"
+  },
+  {
+   "t": "Ottobre: portare ogni cliente a 30 contatti, 6 appuntamenti, 2 appuntamenti oltre 100k",
+   "m": "entro il 31/10"
+  },
+  {
+   "t": "Portare almeno 4 clienti su 12 sotto 15 euro di CPL a ottobre",
+   "m": "entro il 31/10"
+  },
+  {
+   "t": "Portare almeno 5 lead a Alessandro Z. e chiudere il mese con CPL almeno a 30",
+   "m": "entro il 31/10"
+  }
+ ]
+}

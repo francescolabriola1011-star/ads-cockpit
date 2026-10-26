@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>ADS Cockpit</title>
+<title>Checklist MB</title>
 <style>
 :root{
   --surface:#1a1a19; --plane:#0d0d0d; --card:#212120; --line:#33322f;
@@ -63,6 +63,23 @@ h2{font-size:15px;text-transform:uppercase;letter-spacing:.08em;color:var(--mute
 .act-row .burn{text-align:right;font-size:13px;color:var(--crit);font-weight:600;white-space:nowrap}
 .act-row.near{grid-template-columns:88px 1fr auto;border-left-color:var(--warn)}
 .act-row.near .burn{color:var(--warn)}
+/* checklist MB (26/10/2026): stesse righe delle azioni, bordo per stato */
+.act-row.ck{grid-template-columns:22px 1fr auto;border-left-color:var(--line)}
+.act-row.ck.tardi{border-left-color:var(--crit)}
+.act-row.ck.oggi{border-left-color:var(--warn)}
+.act-row.ck.done{border-left-color:var(--good)}
+.act-row.ck .burn{color:var(--muted);font-weight:500;font-size:12px;white-space:normal;max-width:180px}
+.act-row.ck.tardi .burn{color:var(--crit);font-weight:600}
+.indice{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0}
+.indice a{border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:12.5px;
+  color:var(--ink2);text-decoration:none;background:var(--card)}
+.indice a:hover{border-color:var(--accent);color:var(--accent)}
+.indice a b{color:var(--crit);margin-left:4px}
+.parte{font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);
+  margin:34px 0 -8px;border-top:1px solid var(--line);padding-top:14px}
+.obiettivo{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--accent);
+  border-radius:10px;padding:11px 16px;margin-bottom:8px;display:flex;justify-content:space-between;gap:14px;font-size:14px}
+.obiettivo span{color:var(--muted);font-size:12.5px;white-space:nowrap}
 
 /* chip stato */
 .chip{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:650;
@@ -176,7 +193,7 @@ footer{margin-top:44px;color:var(--muted);font-size:12px;border-top:1px solid va
 <div class="wrap">
   <div class="topbar">
     <div>
-      <h1 id="titolo">ADS Cockpit</h1>
+      <h1 id="titolo">Checklist MB</h1>
       <p class="sub" id="meta">caricamento…</p>
     </div>
     <button class="tgl" id="unlock">Mostra nomi veri</button>
@@ -189,15 +206,23 @@ footer{margin-top:44px;color:var(--muted);font-size:12px;border-top:1px solid va
     <span class="sub" id="scopeNote"></span>
   </div>
 
-  <h2>Da fare oggi <span id="nact" style="color:var(--crit)"></span></h2>
+  <nav class="indice" id="indice"></nav>
+
+  <div class="parte">La giornata</div>
+  <div id="ck-chiudere"></div>
+
+  <h2 id="h-ads">Da fare oggi sulle ads <span id="nact" style="color:var(--crit)"></span></h2>
   <div id="azioni"></div>
   <h3 class="h3">Da monitorare <span id="nmon" style="color:var(--warn,#d4a537)"></span></h3>
   <div id="monitorare"></div>
   <h3 class="h3">Vicini alla soglia <span id="nnear" style="color:var(--warn,#d4a537)"></span></h3>
   <p class="sub" id="nearNote" style="margin:-4px 0 8px"></p>
   <div id="vicini"></div>
+  <div id="ck-resto"></div>
 
-  <h2>Come va ogni cliente <span class="h2note">dal peggiore al migliore · clic per il dettaglio</span></h2>
+  <div class="parte">I numeri</div>
+
+  <h2 id="h-griglia">Come va ogni cliente <span class="h2note">dal peggiore al migliore · clic per il dettaglio</span></h2>
   <div class="griglia" id="griglia"></div>
   <p class="sub" id="legenda" style="margin-top:10px"></p>
 
@@ -322,6 +347,9 @@ fetch("data.json?" + Date.now())
     fetch("data.json?" + Date.now(), { cache: "no-store" }).then(r => r.ok ? r.json() : null)
       .then(d => { if (d && d.generato && d.generato !== DATA.generato && quieto()) location.reload(); })
       .catch(() => {});
+    fetch("checklist.json?" + Date.now(), { cache: "no-store" }).then(r => r.ok ? r.json() : null)
+      .then(c => { if (c && CK && c.generato !== CK.generato && quieto()) location.reload(); })
+      .catch(() => {});
   };
   setInterval(guarda, 120000);
   document.addEventListener("visibilitychange", () => { if (!document.hidden) guarda(); });
@@ -398,9 +426,9 @@ function render(){
   t.lead_mancati = Math.max(0, t.lead_attesi - t.lead);
   const uno = sel.length === 1;
 
-  document.title = d.titolo || "ADS Cockpit";
+  document.title = d.titolo || "Checklist MB";
   document.getElementById("titolo").textContent =
-    (state.cliente && uno) ? nomeCli(sel[0]) : (d.titolo || "ADS Cockpit");
+    (state.cliente && uno) ? nomeCli(sel[0]) : (d.titolo || "Checklist MB");
 
   const gen = new Date(d.generato);
   document.getElementById("meta").innerHTML =
@@ -512,7 +540,14 @@ function leggiSpunte(){
       if (m && (!nuove[m[1]] || m[2] > nuove[m[1]])) nuove[m[1]] = m[2];
     });
     SPUNTE = nuove; salvaLocale();
+    /* checklist MB: la chiave intera, valore "1" = spuntata */
+    const mb = {};
+    Object.entries((j && j.stato) || {}).forEach(([k, v]) => {
+      if (k.startsWith("ckcsm:mb|") && String(v) === "1") mb[k] = 1;
+    });
+    SPUNTE_MB = mb;
     if (DATA) renderAzioni(scope());
+    renderChecklist();
   }).catch(() => {});
 }
 
@@ -676,6 +711,70 @@ function renderAzioni(sel){
     cb.addEventListener("change", () => spunta(cb.dataset.az, cb.checked)));
 }
 leggiSpunte();
+
+/* ---------- checklist MB (26/10/2026) ----------
+   Le voci le scrive checklist_mb.py in checklist.json a ogni giro (cockpit,
+   carico delivery, campanello). Le spunte stanno nello stesso archivio della
+   checklist CSM: chiave intera ckcsm:mb|..., la data nella chiave azzera la
+   voce il giorno, la settimana o il mese dopo. */
+let CK = null, SPUNTE_MB = {};
+function spuntaMb(k, on){
+  if (on) SPUNTE_MB[k] = 1; else delete SPUNTE_MB[k];
+  renderChecklist();
+  fetch(SYNC, {method:"POST", headers:{"Content-Type":"text/plain;charset=utf-8"},
+    body: JSON.stringify({set:{[k]: on ? 1 : 0}})}).catch(() => {});
+}
+function righeCk(voci){
+  const fatta = v => !!SPUNTE_MB[v.k];
+  return voci.slice().sort((a,b) => (fatta(a) ? 1 : 0) - (fatta(b) ? 1 : 0)).map(v => `
+    <div class="act-row ck${v.c ? " " + esc(v.c) : ""}${fatta(v) ? " done" : ""}">
+      <label class="tick"><input type="checkbox" data-mb="${esc(v.k)}" ${fatta(v) ? "checked" : ""}></label>
+      <div><div class="what">${esc(v.t)}</div>${v.d ? `<div class="why">${esc(v.d)}</div>` : ""}</div>
+      <div class="burn">${esc(v.m || "")}</div>
+    </div>`).join("");
+}
+function bloccoCk(sz, tag){
+  const aperte = sz.voci.filter(v => !SPUNTE_MB[v.k]).length;
+  const corpo = sz.voci.length ? righeCk(sz.voci) : `<p class="sub">${esc(sz.vuoto || "Niente qui.")}</p>`;
+  return `<${tag} id="ck-${esc(sz.id)}"${tag === "h3" ? ' class="h3"' : ""}>${esc(sz.titolo)}
+      <span style="color:var(--crit)">${aperte ? `(${aperte})` : ""}</span></${tag}>
+    ${sz.sotto ? `<p class="sub" style="margin:-4px 0 8px">${esc(sz.sotto)}</p>` : ""}${corpo}`;
+}
+function renderChecklist(){
+  const top = document.getElementById("ck-chiudere"), resto = document.getElementById("ck-resto");
+  if (!top || !resto || !CK) return;
+  const sz = id => (CK.sezioni || []).find(x => x.id === id);
+  top.innerHTML = sz("chiudere") ? bloccoCk(sz("chiudere"), "h2") : "";
+  const ordine = ["oggi", "settimana", "partiti", "mese"];
+  resto.innerHTML = (sz("ads") ? bloccoCk(sz("ads"), "h3") : "")
+    + ordine.filter(sz).map(id => bloccoCk(sz(id), "h2")).join("")
+    + ((CK.obiettivi || []).length ? `<h2 id="ck-obiettivi">Obiettivi</h2>` + CK.obiettivi.map(o =>
+        `<div class="obiettivo"><div>${esc(o.t)}</div><span>${esc(o.m || "")}</span></div>`).join("") : "")
+    + (CK.generato ? `<p class="sub" style="margin-top:10px">Checklist aggiornata ${esc(new Date(CK.generato).toLocaleString("it-IT",{dateStyle:"short",timeStyle:"short"}))}${
+        CK.procedura ? ` · <a href="${esc(CK.procedura)}" target="_blank" rel="noopener">Procedura ruolo</a>` : ""}${
+        CK.cartella ? ` · <a href="${esc(CK.cartella)}" target="_blank" rel="noopener">Cartella MB</a>` : ""}</p>` : "");
+  document.querySelectorAll("input[data-mb]").forEach(cb =>
+    cb.addEventListener("change", () => spuntaMb(cb.dataset.mb, cb.checked)));
+  const conta = id => { const x = sz(id); return x ? x.voci.filter(v => !SPUNTE_MB[v.k]).length : 0; };
+  const voce = (href, nome, n) => `<a href="#${href}">${nome}${n ? `<b>${n}</b>` : ""}</a>`;
+  document.getElementById("indice").innerHTML = [
+    sz("chiudere") && voce("ck-chiudere", "Da chiudere", conta("chiudere")),
+    voce("h-ads", "Ads oggi", 0),
+    sz("oggi") && voce("ck-oggi", "Oggi", conta("oggi")),
+    sz("settimana") && voce("ck-settimana", "Settimana", conta("settimana")),
+    sz("partiti") && voce("ck-partiti", "Clienti partiti", conta("partiti")),
+    sz("mese") && voce("ck-mese", "Mese", conta("mese")),
+    (CK.obiettivi || []).length && voce("ck-obiettivi", "Obiettivi", 0),
+    voce("h-griglia", "Clienti", 0), voce("h-quadro", "Quadro", 0)
+  ].filter(Boolean).join("");
+}
+function caricaChecklist(){
+  return fetch("checklist.json?" + Date.now(), {cache:"no-store"}).then(r => r.ok ? r.json() : null)
+    .then(c => { if (c) { CK = c; renderChecklist(); } }).catch(() => {});
+}
+caricaChecklist();
+/* le spunte fatte da un altro telefono arrivano senza ricaricare */
+setInterval(() => { if (!document.hidden && !document.querySelector("input:focus")) leggiSpunte(); }, 15000);
 
 /* ---------- come va ogni cliente ----------
    Semaforo dalle ultime due settimane (giornaliero di Meta, hiring escluso):
