@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-26T12:02:25+01:00",
+ "generato": "2026-10-26T12:22:12+01:00",
  "procedura": "https://docs.google.com/document/d/1vn5K-biqWNt40FmqPAzCpsSSZcaTjX25dpWTKnxVoyQ/edit",
  "cartella": "https://drive.google.com/drive/folders/13BFaDvX2ShhlhR4qHG1U5B01BmsE9G5m",
  "sezioni": [
@@ -119,8 +119,50 @@
   {
    "id": "ads",
    "titolo": "Altre mosse ads",
-   "sotto": "Spesa senza lead, moduli sotto il 4% di CVR, vincenti. Si azzera domani.",
+   "sotto": "Posizionamenti fuori regola e a limite, spesa senza lead, moduli sotto il 4% di CVR, vincenti. Si azzera domani.",
    "voci": [
+    {
+     "k": "ckcsm:mb|ads|lim|luigi-m-cf-lm-fb-reels-gruppo-inserzioni-campagna-attiva:2026-10-26",
+     "t": "Luigi M. (CF-LM): FB Reels a limite",
+     "d": "CPL 39,17, mancano 5,83 al limite. Si guarda, non si esclude.",
+     "m": "a limite",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|ads|lim|luigi-m-cf-lm-fb-feed-gruppo-inserzioni-campagna-attiva:2026-10-26",
+     "t": "Luigi M. (CF-LM): FB feed a limite",
+     "d": "CPL 36,79, mancano 8,21 al limite. Si guarda, non si esclude.",
+     "m": "a limite",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|ads|lim|luigi-m-cf-lm-ig-reels-gruppo-inserzioni-campagna-attiva:2026-10-26",
+     "t": "Luigi M. (CF-LM): IG Reels a limite",
+     "d": "CPL 35,29, mancano 9,71 al limite. Si guarda, non si esclude.",
+     "m": "a limite",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|ads|lim|marcello-d-g-cf-mdg-ig-feed-gruppo-inserzioni-campagna-ai-elite:2026-10-26",
+     "t": "Marcello D.G. (CF-MDG): IG feed a limite",
+     "d": "CPL 30,89, mancano 14,11 al limite. Si guarda, non si esclude.",
+     "m": "a limite",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|ads|lim|cosimo-c-cf-cc-ig-reels-gruppo-inserzioni-campagna-attiva:2026-10-26",
+     "t": "Cosimo C. (CF-CC): IG Reels a limite",
+     "d": "CPL 30,27, mancano 14,73 al limite. Si guarda, non si esclude.",
+     "m": "a limite",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|ads|lim|davide-d-b-cf-ddb-fb-feed-ai-elite-gruppo-inserzioni-campagna-atti:2026-10-26",
+     "t": "Davide D.B. (CF-DDB): FB feed a limite",
+     "d": "CPL 30,08, mancano 14,92 al limite. Si guarda, non si esclude.",
+     "m": "a limite",
+     "c": ""
+    },
     {
      "k": "ckcsm:mb|ads|senza|luigi-m-cf-lm:2026-10-26",
      "t": "Luigi M. (CF-LM): acceso senza lead recenti",
