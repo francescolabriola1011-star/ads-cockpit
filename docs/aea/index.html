@@ -900,6 +900,21 @@ function renderStatiche(sel){
     T.k100 += t.k100 || 0; T.s_k100 += z.k100 || 0;
   });
   const apt = T.apt2 + T.s_apt2, cli = T.chiusi + T.s_chiusi;
+  /* 26/10/2026: da dove sono arrivati clienti e appuntamenti. Piattaforma dal modulo lead,
+     posizionamento dagli insight Meta dell'ad nel giorno del lead (non univoco se quel giorno
+     piu' posizioni hanno portato lead). */
+  const PF = {fb: "Facebook", ig: "Instagram"};
+  const fonte = x => {
+    const cl = (x.fonti_clienti || []).map((f, i) => {
+      const g = f.giorno ? new Date(f.giorno + "T12:00").toLocaleDateString("it-IT", {day: "numeric", month: "numeric"}) : "";
+      return `<div><b>Cliente${x.fonti_clienti.length > 1 ? " " + (i + 1) : ""}:</b> ${esc(PF[f.piattaforma] || f.piattaforma)}`
+        + (f.posizione ? ` · ${esc(f.posizione)}` : "") + (f.nota ? ` <span style="color:var(--muted)">(${esc(f.nota)})</span>` : "")
+        + (g ? ` · lead del ${g}` : "") + `</div>`;
+    }).join("");
+    const ap = Object.entries(x.apt_piattaforme || {}).sort((a, b) => b[1] - a[1])
+      .map(([k, n]) => `${n} ${PF[k] || k}`).join(", ");
+    return cl || ap ? `<div class="nota" style="margin-top:6px">${cl}${ap ? `<div><b>Appuntamenti da:</b> ${esc(ap)}</div>` : ""}</div>` : "";
+  };
   const card = x => {
     const img = THUMBS && THUMBS[x.ad_id];
     const costo = x.chiusi && x.costo_cliente ? eur(x.costo_cliente) + " per cliente · " : "";
@@ -914,6 +929,7 @@ function renderStatiche(sel){
           <div><div class="k">Apt</div><div class="v mono">${int(x.apt2)}</div></div>
           <div><div class="k">Lead</div><div class="v mono">${int(x.lead)}</div></div>
         </div>
+        ${fonte(x)}
         <div class="nota">${costo}${x.costo_apt ? eur(x.costo_apt) + " per appuntamento · " : ""}${x.lead ? Math.round(x.apt2 / x.lead * 100) + "% lead → apt · " : ""}${x.attiva ? "accesa"
           : x.copia_accesa ? "accesa in copia (stessa immagine)"
           : "spenta: prima di riaccenderla o duplicarla, controllo ads-bocciate"}</div>
