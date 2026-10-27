@@ -1,6 +1,6 @@
 {
- "generato": "26/10/2026 08:06",
- "quota_mese": 84,
+ "generato": "27/10/2026 08:06",
+ "quota_mese": 87,
  "totale_corrente": 15234,
  "totale_m1": 9483,
  "totale_m2": 6495,
@@ -9,32 +9,32 @@
    "voce": "Carlo Parodi",
    "mese_corrente": 4075,
    "media_precedenti": 458,
-   "atteso_a_oggi": 384,
-   "variazione": 961,
+   "atteso_a_oggi": 399,
+   "variazione": 922,
    "stato": "scappato"
   },
   {
    "voce": "Michele De Sena",
    "mese_corrente": 2745,
    "media_precedenti": 780,
-   "atteso_a_oggi": 654,
-   "variazione": 320,
+   "atteso_a_oggi": 679,
+   "variazione": 304,
    "stato": "scappato"
   },
   {
    "voce": "Cost Of Goods Sold",
    "mese_corrente": 1960,
    "media_precedenti": 1500,
-   "atteso_a_oggi": 1258,
-   "variazione": 56,
+   "atteso_a_oggi": 1306,
+   "variazione": 50,
    "stato": "scappato"
   },
   {
    "voce": "Alessandro Cugini",
    "mese_corrente": 1815,
    "media_precedenti": 695,
-   "atteso_a_oggi": 583,
-   "variazione": 211,
+   "atteso_a_oggi": 605,
+   "variazione": 200,
    "stato": "scappato"
   },
   {
@@ -54,30 +54,6 @@
    "stato": "nuovo"
   },
   {
-   "voce": "Mara (Setter)",
-   "mese_corrente": 0,
-   "media_precedenti": 375,
-   "atteso_a_oggi": 315,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Rimborso Spese Francesco Labriola",
-   "mese_corrente": 0,
-   "media_precedenti": 100,
-   "atteso_a_oggi": 84,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Go High Level",
-   "mese_corrente": 0,
-   "media_precedenti": 430,
-   "atteso_a_oggi": 361,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
    "voce": "Zoom",
    "mese_corrente": 0,
    "media_precedenti": 20,
@@ -86,10 +62,42 @@
    "stato": "sparito"
   },
   {
+   "voce": "Tax Dome",
+   "mese_corrente": 0,
+   "media_precedenti": 350,
+   "atteso_a_oggi": 305,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Chat Gpt",
+   "mese_corrente": 0,
+   "media_precedenti": 187,
+   "atteso_a_oggi": 163,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Rimborso Spese Francesco Labriola",
+   "mese_corrente": 0,
+   "media_precedenti": 100,
+   "atteso_a_oggi": 87,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
    "voce": "Claude",
    "mese_corrente": 0,
    "media_precedenti": 60,
-   "atteso_a_oggi": 50,
+   "atteso_a_oggi": 52,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Go High Level",
+   "mese_corrente": 0,
+   "media_precedenti": 430,
+   "atteso_a_oggi": 374,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -97,15 +105,7 @@
    "voce": "Compenso Francesco Labriola",
    "mese_corrente": 0,
    "media_precedenti": 860,
-   "atteso_a_oggi": 721,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Facebook",
-   "mese_corrente": 0,
-   "media_precedenti": 1567,
-   "atteso_a_oggi": 1314,
+   "atteso_a_oggi": 749,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -121,23 +121,23 @@
    "voce": "Davide Mazzucco",
    "mese_corrente": 0,
    "media_precedenti": 200,
-   "atteso_a_oggi": 168,
+   "atteso_a_oggi": 174,
    "variazione": -100,
    "stato": "sparito"
   },
   {
-   "voce": "Chat Gpt",
+   "voce": "Mara (Setter)",
    "mese_corrente": 0,
-   "media_precedenti": 187,
-   "atteso_a_oggi": 157,
+   "media_precedenti": 375,
+   "atteso_a_oggi": 327,
    "variazione": -100,
    "stato": "sparito"
   },
   {
-   "voce": "Tax Dome",
+   "voce": "Facebook",
    "mese_corrente": 0,
-   "media_precedenti": 350,
-   "atteso_a_oggi": 294,
+   "media_precedenti": 1567,
+   "atteso_a_oggi": 1365,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -145,12 +145,12 @@
    "voce": "Francesco Labriola",
    "mese_corrente": 4300,
    "media_precedenti": 4360,
-   "atteso_a_oggi": 3657,
-   "variazione": 18,
+   "atteso_a_oggi": 3797,
+   "variazione": 13,
    "stato": "stabile"
   }
  ],
- "extra_del_mese": 7716,
+ "extra_del_mese": 7606,
  "n_scappati": 4,
  "n_nuovi": 2,
  "n_spariti": 11
