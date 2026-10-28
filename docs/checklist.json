@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-28T07:11:08+01:00",
+ "generato": "2026-10-28T08:12:00+01:00",
  "procedura": "https://docs.google.com/document/d/1vn5K-biqWNt40FmqPAzCpsSSZcaTjX25dpWTKnxVoyQ/edit",
  "cartella": "https://drive.google.com/drive/folders/13BFaDvX2ShhlhR4qHG1U5B01BmsE9G5m",
  "sezioni": [
@@ -13,75 +13,82 @@
   {
    "id": "ads",
    "titolo": "Altre mosse ads",
-   "sotto": "Posizionamenti fuori regola e a limite, spesa senza lead, moduli sotto il 4% di CVR, vincenti. Si azzera domani. Nota: dati del cockpit del 2026-10-27, non di oggi.",
+   "sotto": "Posizionamenti fuori regola e a limite, spesa senza lead, moduli sotto il 4% di CVR, vincenti. Si azzera domani.",
    "voci": [
-    {
-     "k": "ckcsm:mb|ads|lim|giovanni-c-cf-gc-ig-storie-ai-elite-gruppo-inserzioni-campagna-atti:2026-10-28",
-     "t": "Giovanni C. (CF-GC): IG Storie a limite",
-     "d": "CPL 41,83, mancano 3,17 al limite. Si guarda, non si esclude.",
-     "m": "a limite",
-     "c": ""
-    },
     {
      "k": "ckcsm:mb|ads|lim|luigi-m-cf-lm-fb-reels-gruppo-inserzioni-campagna-attiva:2026-10-28",
      "t": "Luigi M. (CF-LM): FB Reels a limite",
-     "d": "CPL 40,66, mancano 4,34 al limite. Si guarda, non si esclude.",
+     "d": "CPL 42,15, mancano 2,85 al limite. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
      "k": "ckcsm:mb|ads|lim|alessandro-z-oro-az-ig-reels-gruppo-inserzioni-ai-elite-campagna-atti:2026-10-28",
      "t": "Alessandro Z. (ORO-AZ): IG Reels a limite",
-     "d": "CPL 40,50, mancano 4,50 al limite. Si guarda, non si esclude.",
+     "d": "CPL 41,57, mancano 3,43 al limite. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
      "k": "ckcsm:mb|ads|lim|luigi-m-cf-lm-ig-reels-gruppo-inserzioni-campagna-attiva:2026-10-28",
      "t": "Luigi M. (CF-LM): IG Reels a limite",
-     "d": "CPL 36,05, mancano 8,95 al limite. Si guarda, non si esclude.",
+     "d": "CPL 36,73, mancano 8,27 al limite. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
      "k": "ckcsm:mb|ads|lim|luigi-m-cf-lm-fb-feed-gruppo-inserzioni-campagna-attiva:2026-10-28",
      "t": "Luigi M. (CF-LM): FB feed a limite",
-     "d": "CPL 33,96, mancano 11,04 al limite. Si guarda, non si esclude.",
-     "m": "a limite",
-     "c": ""
-    },
-    {
-     "k": "ckcsm:mb|ads|lim|davide-d-b-cf-ddb-fb-feed-ai-elite-gruppo-inserzioni-campagna-atti:2026-10-28",
-     "t": "Davide D.B. (CF-DDB): FB feed a limite",
-     "d": "CPL 32,14, mancano 12,86 al limite. Si guarda, non si esclude.",
+     "d": "CPL 35,33, mancano 9,67 al limite. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
      "k": "ckcsm:mb|ads|lim|marcello-d-g-cf-mdg-ig-feed-gruppo-inserzioni-campagna-ai-elite:2026-10-28",
      "t": "Marcello D.G. (CF-MDG): IG feed a limite",
-     "d": "CPL 31,83, mancano 13,17 al limite. Si guarda, non si esclude.",
+     "d": "CPL 32,52, mancano 12,48 al limite. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
      "k": "ckcsm:mb|ads|lim|cosimo-c-cf-cc-ig-reels-gruppo-inserzioni-campagna-attiva:2026-10-28",
      "t": "Cosimo C. (CF-CC): IG Reels a limite",
-     "d": "CPL 31,06, mancano 13,94 al limite. Si guarda, non si esclude.",
+     "d": "CPL 32,47, mancano 12,53 al limite. Si guarda, non si esclude.",
+     "m": "a limite",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|ads|lim|raffaele-d-l-cf-rd-ig-feed-gruppo-inserzioni-campagna:2026-10-28",
+     "t": "Raffaele D.L. (CF-RD): IG feed a limite",
+     "d": "CPL 30,83, mancano 14,17 al limite. Si guarda, non si esclude.",
+     "m": "a limite",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|ads|lim|casa-nostra-fb-storie-nuovo-gruppo-di-inserzioni-contatti-copi:2026-10-28",
+     "t": "Casa nostra: FB Storie a limite",
+     "d": "CPL 30,17, mancano 14,83 al limite. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
      "k": "ckcsm:mb|ads|modulo|davide-d-b-cf-ddb:2026-10-28",
-     "t": "Davide D.B. (CF-DDB): CVR 3,06% sotto il 4%",
-     "d": "98 click al link, 3 lead. Si guarda il modulo, non l'annuncio.",
+     "t": "Davide D.B. (CF-DDB): CVR 3,05% sotto il 4%",
+     "d": "131 click al link, 4 lead. Si guarda il modulo, non l'annuncio.",
      "m": "modulo",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|ads|scala|statica-quando-potrai-andare-in-pensione:2026-10-28",
+     "t": "Elisa M. (EM): vincente, valuta se scalare",
+     "d": "Statica - Quando potrai andare in pensione?: 3 lead a CPL 4.55. Lo decide Francesco.",
+     "m": "vincente",
      "c": ""
     },
     {
      "k": "ckcsm:mb|ads|scala|oro-statica-v1-14-giorni-e-x2-copia-2:2026-10-28",
      "t": "Casa nostra: vincente, valuta se scalare",
-     "d": "ORO - statica v1 - 14 giorni e x2 - Copia 2: 18 lead a CPL 8.87. Lo decide Francesco.",
+     "d": "ORO - statica v1 - 14 giorni e x2 - Copia 2: 21 lead a CPL 8.35. Lo decide Francesco.",
      "m": "vincente",
      "c": ""
     }

@@ -70,6 +70,32 @@ h2{font-size:15px;text-transform:uppercase;letter-spacing:.08em;color:var(--mute
 .act-row.ck.done{border-left-color:var(--good)}
 .act-row.ck .burn{color:var(--muted);font-weight:500;font-size:12px;white-space:normal;max-width:180px}
 .act-row.ck.tardi .burn{color:var(--crit);font-weight:600}
+/* calendario lun-ven (27/10/2026), come la checklist CSM */
+.week{display:grid;grid-template-columns:repeat(5,minmax(190px,1fr));gap:10px;overflow-x:auto;padding-bottom:4px}
+.giorno{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 10px 8px;min-width:0}
+.giorno.oggi-col{border:2px solid var(--gold);box-shadow:0 0 0 3px rgba(212,165,55,.18)}
+.giorno.passato{opacity:.6}
+.giorno .gh{font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:baseline;gap:6px}
+.giorno .gh span{color:var(--muted);font-weight:500;font-size:12px}
+.giorno .gh .tag{background:var(--gold);color:#0B1A3A;border-radius:999px;padding:1px 8px;font-size:11px;font-weight:700}
+.giorno ul{list-style:none;margin:8px 0 0;padding:0}
+.giorno li{display:grid;grid-template-columns:18px 1fr;gap:6px;align-items:start;font-size:13px;line-height:1.35;
+  padding:6px 0;border-top:1px solid var(--line)}
+.giorno li:first-child{border-top:0}
+.giorno li input{width:16px;height:16px;margin:1px 0 0;cursor:pointer;accent-color:var(--good)}
+.giorno li .d{color:var(--muted);font-size:11.5px;margin-top:2px}
+.giorno li.tardi .t{color:var(--crit)}
+.giorno li.done{opacity:.5}
+.giorno li.done .t{text-decoration:line-through}
+.giorno .vuoto{color:var(--muted);font-size:12.5px;margin:8px 0 0}
+.giorno details.rout{margin-top:8px;border-top:1px dashed var(--line);padding-top:6px}
+.giorno details.rout summary{cursor:pointer;font-size:12.5px;color:var(--ink2);font-weight:600}
+.giorno details.rout summary b{color:var(--crit)}
+.giorno details.rout summary b.ok{color:var(--good)}
+.obiettivi-riga{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0}
+.obiettivi-riga span{border:1px solid var(--line);border-radius:999px;padding:4px 11px;font-size:12.5px;color:var(--ink2);background:var(--card)}
+.obiettivi-riga span b{color:var(--muted);font-weight:500}
+@media (max-width:700px){.week{grid-template-columns:repeat(5,minmax(78vw,1fr));scroll-snap-type:x mandatory}.giorno{scroll-snap-align:start}}
 .indice{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0}
 .indice a{border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:12.5px;
   color:var(--ink2);text-decoration:none;background:var(--card)}
@@ -216,11 +242,10 @@ footer{margin-top:44px;color:var(--muted);font-size:12px;border-top:1px solid va
   <nav class="indice" id="indice"></nav>
 
   <div class="parte">La giornata</div>
-  <div class="testa">
-    <div id="ck-chiudere"></div>
-    <div id="ck-obiettivi-box"></div>
-  </div>
-  <div id="ck-resto"></div>
+  <div id="ck-imminenti"></div>
+  <div id="ck-calendario"></div>
+  <div id="ck-obiettivi-box"></div>
+  <div id="ck-piede"></div>
 
   <h2 id="h-statiche">Statiche che portano clienti e appuntamenti</h2>
   <div id="statiche"></div>
@@ -753,34 +778,50 @@ function bloccoCk(sz, tag){
     ${sz.sotto ? `<p class="sub" style="margin:-4px 0 8px">${esc(sz.sotto)}</p>` : ""}${corpo}`;
 }
 function renderChecklist(){
-  const top = document.getElementById("ck-chiudere"), resto = document.getElementById("ck-resto");
-  const obBox = document.getElementById("ck-obiettivi-box");
-  if (!top || !resto || !CK) return;
-  const sz = id => (CK.sezioni || []).find(x => x.id === id);
-  /* in alto: da chiudere, con dentro le altre mosse ads chiuse a tendina */
-  const altre = sz("ads"), apriAltre = document.querySelector("details.altre")?.open;
-  const nAltre = altre ? altre.voci.filter(v => !SPUNTE_MB[v.k]).length : 0;
-  top.innerHTML = (sz("chiudere") ? bloccoCk(sz("chiudere"), "h2") : "")
-    + (altre ? `<details class="altre"${apriAltre ? " open" : ""}><summary>${esc(altre.titolo)}${nAltre ? ` <b style="color:var(--crit)">(${nAltre})</b>` : ""}</summary>
-        ${altre.sotto ? `<p class="sub" style="margin:0 0 8px">${esc(altre.sotto)}</p>` : ""}${altre.voci.length ? righeCk(altre.voci) : `<p class="sub">${esc(altre.vuoto || "Niente qui.")}</p>`}</details>` : "");
-  if (obBox) obBox.innerHTML = (CK.obiettivi || []).length ? `<h2 id="ck-obiettivi">Obiettivi della settimana</h2>` + CK.obiettivi.map(o =>
-        `<div class="obiettivo"><div>${esc(o.t)}</div><span>${esc(o.m || "")}</span></div>`).join("") : "";
-  const ordine = ["oggi", "settimana", "mese", "partiti"];
-  resto.innerHTML = ordine.filter(sz).map(id => bloccoCk(sz(id), "h2")).join("")
-    + (CK.generato ? `<p class="sub" style="margin-top:10px">Checklist aggiornata ${esc(new Date(CK.generato).toLocaleString("it-IT",{dateStyle:"short",timeStyle:"short"}))}${
+  const imm = document.getElementById("ck-imminenti"), cal = document.getElementById("ck-calendario");
+  const obBox = document.getElementById("ck-obiettivi-box"), piede = document.getElementById("ck-piede");
+  if (!imm || !cal || !CK) return;
+  const fatta = v => !!SPUNTE_MB[v.k];
+  const aperte = l => (l || []).filter(v => !fatta(v)).length;
+  const oggiIso = OGGI;
+  /* cose imminenti: impegni scaduti o senza giorno, clienti partiti, mosse ads */
+  const lista = CK.imminenti || [];
+  imm.innerHTML = `<h2 id="ck-imm">Cose imminenti da fare oggi <span style="color:var(--crit)">${aperte(lista) ? `(${aperte(lista)})` : ""}</span></h2>
+    <p class="sub" style="margin:-4px 0 8px">Quello che non ha un giorno nel calendario: impegni scaduti o senza data, clienti da sentire, posizionamenti, moduli, vincenti. Quando spunti un impegno, si chiude anche nel registro.</p>`
+    + (lista.length ? righeCk(lista) : `<p class="sub">Niente di imminente.</p>`);
+  /* calendario lun-ven: passi della settimana sul loro giorno, routine del giorno a tendina */
+  const aperta = new Set([...document.querySelectorAll("details.rout[open]")].map(d => d.dataset.g));
+  const li = (v, passato) => `<li class="${fatta(v) ? "done" : (v.c === "tardi" || (passato && !fatta(v))) ? "tardi" : ""}">
+      <input type="checkbox" data-mb="${esc(v.k)}" ${fatta(v) ? "checked" : ""}>
+      <div><div class="t">${esc(v.t)}</div>${v.m ? `<div class="d">${esc(v.m)}</div>` : ""}</div></li>`;
+  cal.innerHTML = `<h2 id="ck-cal">Settimana <span style="color:var(--crit)">${
+      aperte((CK.calendario || []).flatMap(g => g.voci)) ? `(${aperte((CK.calendario || []).flatMap(g => g.voci))})` : ""}</span></h2>
+    <p class="sub" style="margin:-4px 0 8px">I passi della settimana stanno su un giorno, ma valgono fino a venerdi. La routine si fa ogni giorno prima delle 10.</p>
+    <div class="week">` + (CK.calendario || []).map(g => {
+      const passato = g.data < oggiIso, oggi = g.data === oggiIso;
+      const voci = g.voci.slice().sort((a,b) => (fatta(a) ? 1 : 0) - (fatta(b) ? 1 : 0));
+      const nr = aperte(g.routine), tot = g.routine.length;
+      const [, m, d] = g.data.split("-");
+      return `<div class="giorno${oggi ? " oggi-col" : ""}${passato ? " passato" : ""}">
+        <div class="gh">${esc(g.nome)} <span>${d}/${m}</span>${oggi ? `<span class="tag">oggi</span>` : ""}</div>
+        ${voci.length ? `<ul>${voci.map(v => li(v, passato)).join("")}</ul>` : `<p class="vuoto">Solo la routine.</p>`}
+        <details class="rout" data-g="${esc(g.data)}"${(oggi || aperta.has(g.data)) ? " open" : ""}>
+          <summary>Routine · ${!nr ? `<b class="ok">fatta</b>` : (passato || oggi) ? `<b>${nr} su ${tot}</b>` : `${tot} passi`}</summary>
+          <ul>${g.routine.map(v => li(v, passato)).join("")}</ul>
+        </details></div>`;
+    }).join("") + `</div>`;
+  if (obBox) obBox.innerHTML = (CK.obiettivi || []).length ? `<div class="obiettivi-riga" id="ck-obiettivi">` + CK.obiettivi.map(o =>
+        `<span>${esc(o.t)}${o.m ? ` <b>· ${esc(o.m)}</b>` : ""}</span>`).join("") + `</div>` : "";
+  if (piede) piede.innerHTML = CK.generato ? `<p class="sub" style="margin-top:10px">Checklist aggiornata ${esc(new Date(CK.generato).toLocaleString("it-IT",{dateStyle:"short",timeStyle:"short"}))}${
         CK.procedura ? ` · <a href="${esc(CK.procedura)}" target="_blank" rel="noopener">Procedura ruolo</a>` : ""}${
-        CK.cartella ? ` · <a href="${esc(CK.cartella)}" target="_blank" rel="noopener">Cartella MB</a>` : ""}</p>` : "");
+        CK.cartella ? ` · <a href="${esc(CK.cartella)}" target="_blank" rel="noopener">Cartella MB</a>` : ""}</p>` : "";
   document.querySelectorAll("input[data-mb]").forEach(cb =>
     cb.addEventListener("change", () => spuntaMb(cb.dataset.mb, cb.checked)));
-  const conta = id => { const x = sz(id); return x ? x.voci.filter(v => !SPUNTE_MB[v.k]).length : 0; };
+  const giornoOggi = (CK.calendario || []).find(g => g.data === oggiIso);
   const voce = (href, nome, n) => `<a href="#${href}">${nome}${n ? `<b>${n}</b>` : ""}</a>`;
   document.getElementById("indice").innerHTML = [
-    sz("chiudere") && voce("ck-chiudere", "Da chiudere", conta("chiudere")),
-    (CK.obiettivi || []).length && voce("ck-obiettivi", "Obiettivi", 0),
-    sz("oggi") && voce("ck-oggi", "Oggi", conta("oggi")),
-    sz("settimana") && voce("ck-settimana", "Settimana", conta("settimana")),
-    sz("mese") && voce("ck-mese", "Mese", conta("mese")),
-    sz("partiti") && voce("ck-partiti", "Clienti partiti", conta("partiti")),
+    voce("ck-imm", "Imminenti", aperte(lista)),
+    voce("ck-cal", "Settimana", giornoOggi ? aperte(giornoOggi.voci.concat(giornoOggi.routine)) : 0),
     voce("h-statiche", "Statiche", 0),
     voce("h-ads", "Ads oggi", 0),
     voce("h-griglia", "Clienti", 0), voce("h-quadro", "Quadro", 0)

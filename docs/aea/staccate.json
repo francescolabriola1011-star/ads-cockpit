@@ -1,5 +1,17 @@
 [
  {
+  "quando": "2026-10-28T09:07:59+02:00",
+  "account": "859478370532394",
+  "campagna": "CF - Modulo 1",
+  "annuncio": "ABO Mod2 video Gatto 15 milioni - Copia",
+  "ad_id": "120250837139330629",
+  "campaign_id": "120249502985680629",
+  "motivo": "€33.63 spesi e 0 lead (limite €30)",
+  "spesa": 33.63,
+  "lead": 0.0,
+  "eseguito": true
+ },
+ {
   "quando": "2026-10-27T09:06:19+02:00",
   "account": "859478370532394",
   "campagna": "CF - Modulo 1",
