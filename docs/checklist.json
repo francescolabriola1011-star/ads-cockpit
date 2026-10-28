@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-28T13:14:30+01:00",
+ "generato": "2026-10-28T17:42:10+01:00",
  "procedura": "https://docs.google.com/document/d/1vn5K-biqWNt40FmqPAzCpsSSZcaTjX25dpWTKnxVoyQ/edit",
  "cartella": "https://drive.google.com/drive/folders/13BFaDvX2ShhlhR4qHG1U5B01BmsE9G5m",
  "sezioni": [
@@ -8,13 +8,6 @@
    "titolo": "Da chiudere",
    "sotto": "Le cose dette in riunione o in chat. Quando la spunti, si chiude anche nel registro.",
    "voci": [
-    {
-     "k": "ckcsm:mb|imp|207",
-     "t": "Davide D.B.: statica 'trasforma i risparmi in serenita', fondo bianco, senza inflazione, col modulo nuovo",
-     "d": "Davide D.B.",
-     "m": "oggi",
-     "c": "oggi"
-    },
     {
      "k": "ckcsm:mb|imp|206",
      "t": "Cambiare modulo a Luigi M., Marco P. e Davide D.B. (era uguale a Cosimo C.), eta minima 35; Alessandro Z. tiene il suo",
@@ -581,13 +574,6 @@
   }
  ],
  "imminenti": [
-  {
-   "k": "ckcsm:mb|imp|207",
-   "t": "Davide D.B.: statica 'trasforma i risparmi in serenita', fondo bianco, senza inflazione, col modulo nuovo",
-   "d": "Davide D.B.",
-   "m": "oggi",
-   "c": "oggi"
-  },
   {
    "k": "ckcsm:mb|imp|208",
    "t": "Creativa ETF validata su Luigi M. provata su 3-4 clienti (non Marcello D.G., Mediolanum, Raffaele D.L.)",
