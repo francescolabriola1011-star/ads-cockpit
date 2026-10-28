@@ -686,29 +686,36 @@ function renderAzioni(sel){
   const vecchiePos = [];
   sel.forEach(c => {
     const v = ((c.posizionamenti || {}).voci || []).filter(p => p.da_staccare);
-    const prima = v.filter(p => posFatti[c.alias + "|" + p.nome] && posFatti[c.alias + "|" + p.nome] < OGGI);
-    const nuove = v.filter(p => !prima.includes(p));
-    if (nuove.length) voci.push({id: c.alias + "|pos|" + nuove.map(p => p.nome).sort().join("+"), cli:c, pos:nuove});
-    prima.forEach(p => vecchiePos.push({cli:c, pos:[p], giorno: posFatti[c.alias + "|" + p.nome]}));
+    /* 28/10/2026: da_staccare = l'ad set acceso lo compra ancora. Spuntato in un giorno
+       passato e ancora qui vuol dire esclusione non fatta: torna in lista, non in fondo
+       (caso Zaghini FB Reels, spuntato il 27/10 e ancora comprato). */
+    if (v.length) voci.push({id: c.alias + "|pos|" + v.map(p => p.nome).sort().join("+"), cli:c, pos:v,
+      giorno: v.map(p => posFatti[c.alias + "|" + p.nome] || "").filter(g => g && g < OGGI).sort().pop() || ""});
   });
-  const nascoste = voci.filter(x => SPUNTE[x.id] && SPUNTE[x.id] < OGGI).length + vecchiePos.length;
-  const vive = voci.filter(x => !(SPUNTE[x.id] && SPUNTE[x.id] < OGGI));
-  const daFare = vive.filter(x => !SPUNTE[x.id]).length;
-  vive.sort((a,b) => (SPUNTE[a.id] ? 1 : 0) - (SPUNTE[b.id] ? 1 : 0));
+  /* 28/10/2026: si nasconde solo cio' che e' spuntato OGGI. Una spunta vecchia su una
+     voce ancora in lista = non fatta su Meta, quindi la voce resta da fare col suo giorno. */
+  voci.forEach(x => { if (!x.giorno && SPUNTE[x.id] && SPUNTE[x.id] < OGGI) x.giorno = SPUNTE[x.id]; });
+  const fattaOggi = x => SPUNTE[x.id] === OGGI;
+  const nascoste = 0;
+  const vive = voci;
+  const daFare = vive.filter(x => !fattaOggi(x)).length;
+  vive.sort((a,b) => (fattaOggi(a) ? 1 : 0) - (fattaOggi(b) ? 1 : 0));
   document.getElementById("nact").textContent = daFare ? `(${daFare})` : "";
   const box = x => `<label class="tick" title="Spunta quando e' fatto: da domani non esce piu'">
-      <input type="checkbox" data-az="${esc(x.id)}" ${SPUNTE[x.id] ? "checked" : ""}></label>`;
+      <input type="checkbox" data-az="${esc(x.id)}" ${fattaOggi(x) ? "checked" : ""}></label>`;
   const riga = x => x.pos ? `
-    <div class="act-row${SPUNTE[x.id] ? " done" : ""}">${box(x)}
+    <div class="act-row${fattaOggi(x) ? " done" : ""}">${box(x)}
       <div class="who">${esc(nomeCli(x.cli))}</div>
-      <div><div class="what">Posizionamenti da escludere: ${x.pos.map(p => esc(p.nome)).join(", ")}</div>
+      <div><div class="what">Posizionamenti da escludere: ${x.pos.map(p => esc(p.nome)).join(", ")}${
+        x.giorno ? ` <span style="color:var(--crit)">· spuntato il ${esc(x.giorno)} ma su Meta ancora comprato</span>` : ""}</div>
         <div class="why">durata massima, per ad set attivo · ${x.pos.map(p => `${esc(p.nome)}: ${esc(p.reason)}`).join(" · ")}</div></div>
       <div class="burn">speso ${eur(x.pos.reduce((t,p) => t + p.spend, 0))} in totale<br>
         <span style="color:var(--muted);font-weight:400">${int(x.pos.reduce((t,p) => t + p.leads, 0))} lead in tutto</span></div>
     </div>` : `
-    <div class="act-row${SPUNTE[x.id] ? " done" : ""}">${box(x)}
+    <div class="act-row${fattaOggi(x) ? " done" : ""}">${box(x)}
       <div class="who">${esc(nomeCli(x.cli))}</div>
-      <div><div class="what">Creativa: ${esc(x.creativa.name)}</div>
+      <div><div class="what">Creativa: ${esc(x.creativa.name)}${
+        x.giorno ? ` <span style="color:var(--crit)">· spuntata il ${esc(x.giorno)} ma su Meta ancora accesa</span>` : ""}</div>
         <div class="why">Campagna: ${esc(nomeCamp(x.campagna))} · ${esc(x.creativa.reason)}${
           x.creativa.flags.length ? " · " + esc(x.creativa.flags[0]) : ""}</div></div>
       <div class="burn">${x.daily_budget ? eur(x.daily_budget)+"/giorno" : "attiva"}<br>
@@ -730,9 +737,7 @@ function renderAzioni(sel){
   /* Creative: "attiva" e' lo stato vero su Meta, quindi spuntata e ancora in
      lista vuol dire non spenta. Posizionamenti (22/10/2026): da_staccare vuol dire
      che il targeting dell'ad set acceso lo compra ancora, quindi idem. */
-  const vecchie = voci.filter(x => SPUNTE[x.id] && SPUNTE[x.id] < OGGI)
-    .map(x => Object.assign({giorno: SPUNTE[x.id]}, x))
-    .concat(vecchiePos);  // da_staccare = l'ad set acceso lo compra ancora (targeting letto da Meta)
+  const vecchie = [];  // da_staccare = l'ad set acceso lo compra ancora (targeting letto da Meta)
   const inVerifica = 0;
   const rigaVecchia = x => `<div class="sub" style="margin:4px 0">${esc(nomeCli(x.cli))} · ${
       x.pos ? "posizionamento " + x.pos.map(p => esc(p.nome)).join(", ") : "creativa " + esc(x.creativa.name)
