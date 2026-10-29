@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-28T17:42:10+01:00",
+ "generato": "2026-10-29T07:11:27+01:00",
  "procedura": "https://docs.google.com/document/d/1vn5K-biqWNt40FmqPAzCpsSSZcaTjX25dpWTKnxVoyQ/edit",
  "cartella": "https://drive.google.com/drive/folders/13BFaDvX2ShhlhR4qHG1U5B01BmsE9G5m",
  "sezioni": [
@@ -14,34 +14,6 @@
      "d": "",
      "m": "entro il 30/10",
      "c": "ok"
-    },
-    {
-     "k": "ckcsm:mb|imp|208",
-     "t": "Creativa ETF validata su Luigi M. provata su 3-4 clienti (non Marcello D.G., Mediolanum, Raffaele D.L.)",
-     "d": "",
-     "m": "entro il 04/11",
-     "c": "ok"
-    },
-    {
-     "k": "ckcsm:mb|imp|209",
-     "t": "2-3 creative di massa sul problema (costi, bollette, pensione) per gli account con CPM alto, spunti dalla Ad Library",
-     "d": "",
-     "m": "entro il 04/11",
-     "c": "ok"
-    },
-    {
-     "k": "ckcsm:mb|imp|210",
-     "t": "Riportare a verde nella dashboard Luigi M., Marco P. e Flavio B.",
-     "d": "",
-     "m": "entro il 04/11",
-     "c": "ok"
-    },
-    {
-     "k": "ckcsm:mb|imp|211",
-     "t": "Analisi generale delle creative per livello di consapevolezza, piu specifiche ('investire centomila in sette anni')",
-     "d": "",
-     "m": "entro il 04/11",
-     "c": "ok"
     }
    ],
    "vuoto": "Niente di aperto."
@@ -49,87 +21,87 @@
   {
    "id": "ads",
    "titolo": "Altre mosse ads",
-   "sotto": "Posizionamenti fuori regola e a limite, spesa senza lead, moduli sotto il 4% di CVR, vincenti. Si azzera domani.",
+   "sotto": "Posizionamenti fuori regola e a limite, spesa senza lead, moduli sotto il 4% di CVR, vincenti. Si azzera domani. Nota: dati del cockpit del 2026-10-28, non di oggi.",
    "voci": [
     {
-     "k": "ckcsm:mb|ads|pos|alessandro-z-oro-az-gruppo-inserzioni-ai-elite-campagna-atti:2026-10-28",
+     "k": "ckcsm:mb|ads|pos|alessandro-z-oro-az-gruppo-inserzioni-ai-elite-campagna-atti:2026-10-29",
      "t": "Alessandro Z. (ORO-AZ): escludi FB Reels",
      "d": "CPL 70,09, oltre il limite di 45. Spuntato il 27/10 ma su Meta ancora comprato.",
      "m": "fuori regola",
      "c": "oggi"
     },
     {
-     "k": "ckcsm:mb|ads|lim|luigi-m-cf-lm-fb-reels-gruppo-inserzioni-campagna-attiva:2026-10-28",
+     "k": "ckcsm:mb|ads|lim|luigi-m-cf-lm-fb-reels-gruppo-inserzioni-campagna-attiva:2026-10-29",
      "t": "Luigi M. (CF-LM): FB Reels a limite",
      "d": "CPL 42,15, mancano 2,85 al limite. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|ads|lim|alessandro-z-oro-az-ig-reels-gruppo-inserzioni-ai-elite-campagna-atti:2026-10-28",
+     "k": "ckcsm:mb|ads|lim|alessandro-z-oro-az-ig-reels-gruppo-inserzioni-ai-elite-campagna-atti:2026-10-29",
      "t": "Alessandro Z. (ORO-AZ): IG Reels a limite",
      "d": "CPL 41,57, mancano 3,43 al limite. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|ads|lim|luigi-m-cf-lm-ig-reels-gruppo-inserzioni-campagna-attiva:2026-10-28",
+     "k": "ckcsm:mb|ads|lim|luigi-m-cf-lm-ig-reels-gruppo-inserzioni-campagna-attiva:2026-10-29",
      "t": "Luigi M. (CF-LM): IG Reels a limite",
      "d": "CPL 36,73, mancano 8,27 al limite. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|ads|lim|luigi-m-cf-lm-fb-feed-gruppo-inserzioni-campagna-attiva:2026-10-28",
+     "k": "ckcsm:mb|ads|lim|luigi-m-cf-lm-fb-feed-gruppo-inserzioni-campagna-attiva:2026-10-29",
      "t": "Luigi M. (CF-LM): FB feed a limite",
      "d": "CPL 35,33, mancano 9,67 al limite. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|ads|lim|marcello-d-g-cf-mdg-ig-feed-gruppo-inserzioni-campagna-ai-elite:2026-10-28",
+     "k": "ckcsm:mb|ads|lim|marcello-d-g-cf-mdg-ig-feed-gruppo-inserzioni-campagna-ai-elite:2026-10-29",
      "t": "Marcello D.G. (CF-MDG): IG feed a limite",
      "d": "CPL 32,52, mancano 12,48 al limite. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|ads|lim|cosimo-c-cf-cc-ig-reels-gruppo-inserzioni-campagna-attiva:2026-10-28",
+     "k": "ckcsm:mb|ads|lim|cosimo-c-cf-cc-ig-reels-gruppo-inserzioni-campagna-attiva:2026-10-29",
      "t": "Cosimo C. (CF-CC): IG Reels a limite",
      "d": "CPL 32,47, mancano 12,53 al limite. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|ads|lim|raffaele-d-l-cf-rd-ig-feed-gruppo-inserzioni-campagna:2026-10-28",
+     "k": "ckcsm:mb|ads|lim|raffaele-d-l-cf-rd-ig-feed-gruppo-inserzioni-campagna:2026-10-29",
      "t": "Raffaele D.L. (CF-RD): IG feed a limite",
      "d": "CPL 30,83, mancano 14,17 al limite. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|ads|lim|casa-nostra-fb-storie-nuovo-gruppo-di-inserzioni-contatti-copi:2026-10-28",
+     "k": "ckcsm:mb|ads|lim|casa-nostra-fb-storie-nuovo-gruppo-di-inserzioni-contatti-copi:2026-10-29",
      "t": "Casa nostra: FB Storie a limite",
      "d": "CPL 30,17, mancano 14,83 al limite. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|ads|modulo|davide-d-b-cf-ddb:2026-10-28",
+     "k": "ckcsm:mb|ads|modulo|davide-d-b-cf-ddb:2026-10-29",
      "t": "Davide D.B. (CF-DDB): CVR 3,05% sotto il 4%",
      "d": "131 click al link, 4 lead. Si guarda il modulo, non l'annuncio.",
      "m": "modulo",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|ads|scala|statica-quando-potrai-andare-in-pensione:2026-10-28",
+     "k": "ckcsm:mb|ads|scala|statica-quando-potrai-andare-in-pensione:2026-10-29",
      "t": "Elisa M. (EM): vincente, valuta se scalare",
      "d": "Statica - Quando potrai andare in pensione?: 3 lead a CPL 4.55. Lo decide Francesco.",
      "m": "vincente",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|ads|scala|oro-statica-v1-14-giorni-e-x2-copia-2:2026-10-28",
+     "k": "ckcsm:mb|ads|scala|oro-statica-v1-14-giorni-e-x2-copia-2:2026-10-29",
      "t": "Casa nostra: vincente, valuta se scalare",
      "d": "ORO - statica v1 - 14 giorni e x2 - Copia 2: 21 lead a CPL 8.35. Lo decide Francesco.",
      "m": "vincente",
@@ -144,38 +116,38 @@
    "sotto": "Ogni giorno, prima delle 10. Si azzera domani. Accanto, quante volte e' stato fatto negli ultimi 5 giorni lavorativi.",
    "voci": [
     {
-     "k": "ckcsm:mb|g|cpl:2026-10-28",
+     "k": "ckcsm:mb|g|cpl:2026-10-29",
      "t": "CPL e CVR di ogni annuncio contro le soglie",
      "d": "Soglie in sezione 7. Si guarda l'annuncio, mai la campagna.",
-     "m": "1 su 5 giorni",
+     "m": "2 su 5 giorni",
      "c": "tardi"
     },
     {
-     "k": "ckcsm:mb|g|lead:2026-10-28",
+     "k": "ckcsm:mb|g|lead:2026-10-29",
      "t": "Lead Meta, Foglio Lead e GHL coincidono",
      "d": "Un lead che manca in uno dei tre si recupera subito.",
-     "m": "1 su 5 giorni",
+     "m": "2 su 5 giorni",
      "c": "tardi"
     },
     {
-     "k": "ckcsm:mb|g|target:2026-10-28",
+     "k": "ckcsm:mb|g|target:2026-10-29",
      "t": "Lead fuori target: subito al CSM con esempi",
      "d": "",
-     "m": "1 su 5 giorni",
+     "m": "2 su 5 giorni",
      "c": "tardi"
     },
     {
-     "k": "ckcsm:mb|g|account:2026-10-28",
+     "k": "ckcsm:mb|g|account:2026-10-29",
      "t": "Account: pagamento, annunci rifiutati, blocchi",
      "d": "Un blocco si dice subito al cliente e al CSM.",
-     "m": "1 su 5 giorni",
+     "m": "2 su 5 giorni",
      "c": "tardi"
     },
     {
-     "k": "ckcsm:mb|g|msg:2026-10-28",
+     "k": "ckcsm:mb|g|msg:2026-10-29",
      "t": "WhatsApp 1 e mail 1 consegnati ai lead di ieri",
      "d": "In GHL, sulle conversazioni. Fallito o fermo su inviato: trovi la causa, sistemi, lo dici al CSM.",
-     "m": "1 su 5 giorni",
+     "m": "2 su 5 giorni",
      "c": "tardi"
     }
    ],
@@ -278,7 +250,7 @@
  "obiettivi": [
   {
    "t": "Portare almeno 5 lead a Luigi M.",
-   "m": "oggi"
+   "m": "era il 28/10"
   },
   {
    "t": "Ottobre: portare ogni cliente a 30 contatti, 6 appuntamenti, 2 appuntamenti oltre 100k",
@@ -425,35 +397,35 @@
      "k": "ckcsm:mb|g|cpl:2026-10-28",
      "t": "CPL e CVR di ogni annuncio contro le soglie",
      "d": "Soglie in sezione 7. Si guarda l'annuncio, mai la campagna.",
-     "m": "1 su 5",
+     "m": "",
      "c": ""
     },
     {
      "k": "ckcsm:mb|g|lead:2026-10-28",
      "t": "Lead Meta, Foglio Lead e GHL coincidono",
      "d": "Un lead che manca in uno dei tre si recupera subito.",
-     "m": "1 su 5",
+     "m": "",
      "c": ""
     },
     {
      "k": "ckcsm:mb|g|target:2026-10-28",
      "t": "Lead fuori target: subito al CSM con esempi",
      "d": "",
-     "m": "1 su 5",
+     "m": "",
      "c": ""
     },
     {
      "k": "ckcsm:mb|g|account:2026-10-28",
      "t": "Account: pagamento, annunci rifiutati, blocchi",
      "d": "Un blocco si dice subito al cliente e al CSM.",
-     "m": "1 su 5",
+     "m": "",
      "c": ""
     },
     {
      "k": "ckcsm:mb|g|msg:2026-10-28",
      "t": "WhatsApp 1 e mail 1 consegnati ai lead di ieri",
      "d": "In GHL, sulle conversazioni. Fallito o fermo su inviato: trovi la causa, sistemi, lo dici al CSM.",
-     "m": "1 su 5",
+     "m": "",
      "c": ""
     }
    ]
@@ -482,35 +454,35 @@
      "k": "ckcsm:mb|g|cpl:2026-10-29",
      "t": "CPL e CVR di ogni annuncio contro le soglie",
      "d": "Soglie in sezione 7. Si guarda l'annuncio, mai la campagna.",
-     "m": "",
+     "m": "2 su 5",
      "c": ""
     },
     {
      "k": "ckcsm:mb|g|lead:2026-10-29",
      "t": "Lead Meta, Foglio Lead e GHL coincidono",
      "d": "Un lead che manca in uno dei tre si recupera subito.",
-     "m": "",
+     "m": "2 su 5",
      "c": ""
     },
     {
      "k": "ckcsm:mb|g|target:2026-10-29",
      "t": "Lead fuori target: subito al CSM con esempi",
      "d": "",
-     "m": "",
+     "m": "2 su 5",
      "c": ""
     },
     {
      "k": "ckcsm:mb|g|account:2026-10-29",
      "t": "Account: pagamento, annunci rifiutati, blocchi",
      "d": "Un blocco si dice subito al cliente e al CSM.",
-     "m": "",
+     "m": "2 su 5",
      "c": ""
     },
     {
      "k": "ckcsm:mb|g|msg:2026-10-29",
      "t": "WhatsApp 1 e mail 1 consegnati ai lead di ieri",
      "d": "In GHL, sulle conversazioni. Fallito o fermo su inviato: trovi la causa, sistemi, lo dici al CSM.",
-     "m": "",
+     "m": "2 su 5",
      "c": ""
     }
    ]
@@ -573,34 +545,5 @@
    ]
   }
  ],
- "imminenti": [
-  {
-   "k": "ckcsm:mb|imp|208",
-   "t": "Creativa ETF validata su Luigi M. provata su 3-4 clienti (non Marcello D.G., Mediolanum, Raffaele D.L.)",
-   "d": "",
-   "m": "entro il 04/11",
-   "c": "ok"
-  },
-  {
-   "k": "ckcsm:mb|imp|209",
-   "t": "2-3 creative di massa sul problema (costi, bollette, pensione) per gli account con CPM alto, spunti dalla Ad Library",
-   "d": "",
-   "m": "entro il 04/11",
-   "c": "ok"
-  },
-  {
-   "k": "ckcsm:mb|imp|210",
-   "t": "Riportare a verde nella dashboard Luigi M., Marco P. e Flavio B.",
-   "d": "",
-   "m": "entro il 04/11",
-   "c": "ok"
-  },
-  {
-   "k": "ckcsm:mb|imp|211",
-   "t": "Analisi generale delle creative per livello di consapevolezza, piu specifiche ('investire centomila in sette anni')",
-   "d": "",
-   "m": "entro il 04/11",
-   "c": "ok"
-  }
- ]
+ "imminenti": []
 }
