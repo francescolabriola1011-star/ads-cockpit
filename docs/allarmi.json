@@ -1,5 +1,5 @@
 {
- "generato": "28/10 04:03",
+ "generato": "29/10 04:03",
  "n_account_rossi": 21,
  "n_puliti": 0,
  "puliti": [],
@@ -47,15 +47,27 @@
    "gravita": 3
   },
   {
+   "cliente": "CF-MP",
+   "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
+   "dettaglio": "Lead 2N - Marco Pellegatta",
+   "gravita": 3
+  },
+  {
    "cliente": "DDB",
    "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
-   "dettaglio": "Lead Gen N - Davide Dal Bosco",
+   "dettaglio": "Lead 2N - Davide Dal Bosco",
    "gravita": 3
   },
   {
    "cliente": "MPC",
    "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
-   "dettaglio": "Lead Gen N - Marco Pellegatta",
+   "dettaglio": "Lead 2N - Marco Pellegatta",
+   "gravita": 3
+  },
+  {
+   "cliente": "ORO-AZ",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "facebook/facebook_reels · 0.56 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
    "gravita": 3
   },
   {
@@ -65,9 +77,27 @@
    "gravita": 3
   },
   {
+   "cliente": "ZAP",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "facebook/facebook_reels · 0.56 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-DDB",
+   "tipo": "PIU' DI UN MODULO VIVO",
+   "dettaglio": "Lead Dal Bosco Davide, Lead Davide Dal Bosco",
+   "gravita": 2
+  },
+  {
    "cliente": "CF-LM",
    "tipo": "PIU' DI UN MODULO VIVO",
    "dettaglio": "Lead Micheloni Luigi, Lead Luigi Micheloni",
+   "gravita": 2
+  },
+  {
+   "cliente": "CF-MP",
+   "tipo": "PIU' DI UN MODULO VIVO",
+   "dettaglio": "Lead Pellegatta Marco, Lead Marco Pellegatta",
    "gravita": 2
   },
   {

@@ -1,5 +1,17 @@
 [
  {
+  "quando": "2026-10-29T09:07:38+02:00",
+  "account": "859478370532394",
+  "campagna": "CF - Modulo 1",
+  "annuncio": "CF statica Copia (ripresa 23/10)",
+  "ad_id": "120250809819390629",
+  "campaign_id": "120249502985680629",
+  "motivo": "2 lead a CPL €31.75: oltre il tetto di allarme di €30",
+  "spesa": 63.51,
+  "lead": 2.0,
+  "eseguito": true
+ },
+ {
   "quando": "2026-10-28T09:07:59+02:00",
   "account": "859478370532394",
   "campagna": "CF - Modulo 1",
