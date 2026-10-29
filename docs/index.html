@@ -458,7 +458,8 @@ const tile = (lab,val,note,cls="") =>
 function render(){
   const d = DATA, R = d.regole, sel = scope(), t = totali(sel);
   CVRMIN = R.cvr_floor_pct || 4;
-  const CPLT = R.cpl_target_eur || 15;
+  const CPLT = R.cpl_obiettivo_clienti_eur || R.cpl_target_eur || 15;
+  const OBJ = `obiettivo ${eur0(CPLT)}`;
   t.lead_attesi = CPLT ? Math.floor(t.spesa / CPLT) : 0;
   t.lead_mancati = Math.max(0, t.lead_attesi - t.lead);
   const uno = sel.length === 1;
@@ -482,7 +483,7 @@ function render(){
     `CVR di almeno <b>${CVRMIN}%</b> sui click al link → il solo CPL alto non stacca`,
     `CPL sotto <b>${eur0(R.cpl_winner_eur)}</b> → vincente, ci si mette budget`,
     `<b>CVR click → lead</b> sotto <b>${CVRMIN}%</b> → il problema è il modulo, non le ads`,
-    `<b>CPL target ${eur0(CPLT)}</b> → il metro dei lead mancati (${eur0(R.cpl_kill_eur)} è il limite di stacco, non l'obiettivo)`
+    `<b>CPL obiettivo ${eur0(CPLT)}</b> → il metro dei lead mancati (${eur0(R.cpl_kill_eur)} è il limite di stacco, non l'obiettivo)`
   ].map(r => `<span class="rule">${r}</span>`).join("");
 
   /* clienti entrati da poco: il parco si popola da solo, ma va detto */
@@ -516,7 +517,7 @@ function render(){
     tile("Spesa", eur0(t.spesa), `${d.periodo.giorni} giorni`),
     tile("Lead", int(t.lead), "moduli e conversioni Meta"),
     tile("CPL creative accese", t.cpl ? eur(t.cpl) : "n/d",
-         t.cpl ? `${int(t.creative_accese)} creative accese · ${t.cpl > R.cpl_kill_eur ? "sopra" : "sotto"} il limite di ${eur0(R.cpl_kill_eur)}`
+         t.cpl ? `${OBJ} · ${int(t.creative_accese)} creative accese · ${t.cpl > R.cpl_kill_eur ? "sopra" : "sotto"} il limite di ${eur0(R.cpl_kill_eur)}`
                + (t.cpl > R.cpl_kill_eur && t.cvr >= CVRMIN ? ` · CVR ${t.cvr.toFixed(1)}%: non stacca` : "")
                + (t.cpl_storico ? ` · media storica ${eur(t.cpl_storico)}` : "")
                : (t.cpl_storico ? `nessuna creativa accesa · media storica ${eur(t.cpl_storico)}` : "")),
@@ -899,7 +900,7 @@ function renderGriglia(sel){
       : u.cpl > kill ? "var(--warn)" : "var(--good)";
     return `<button class="cc l${h.liv}" data-alias="${esc(c.alias)}">
       <div class="cc-top"><b>${esc(nomeCli(c))}</b><span class="cc-st">${STLAB[h.liv]}</span></div>
-      <div class="k" style="margin-top:9px">CPL ultimi 7 giorni</div>
+      <div class="k" style="margin-top:9px">CPL ultimi 7 giorni · obiettivo ${eur0(DATA.regole.cpl_obiettivo_clienti_eur || DATA.regole.cpl_target_eur || 15)}</div>
       <div class="cc-big"><span class="v mono" style="color:${col}">${u.lead ? eur(u.cpl) : u.spesa ? "0 lead" : "nessuna spesa"}</span>${tr}</div>
       <div class="cc-nums">
         <div><div class="k">Lead 7g</div><div class="v mono">${int(u.lead)}<span class="k"> / ${int(p.lead)}</span></div></div>
@@ -955,11 +956,26 @@ function renderStatiche(sel){
       const g = f.giorno ? new Date(f.giorno + "T12:00").toLocaleDateString("it-IT", {day: "numeric", month: "numeric"}) : "";
       return `<div><b>Cliente${x.fonti_clienti.length > 1 ? " " + (i + 1) : ""}:</b> ${esc(PF[f.piattaforma] || f.piattaforma)}`
         + (f.posizione ? ` · ${esc(f.posizione)}` : "") + (f.nota ? ` <span style="color:var(--muted)">(${esc(f.nota)})</span>` : "")
-        + (g ? ` · lead del ${g}` : "") + `</div>`;
+        + (g ? ` · lead del ${g}` : "")
+        + (f.raccolta ? ` · raccolta ${eur0(f.raccolta)}` : "") + (f.valore ? ` · provvigione ${eur0(f.valore)}` : "") + `</div>`;
     }).join("");
     const ap = Object.entries(x.apt_piattaforme || {}).sort((a, b) => b[1] - a[1])
       .map(([k, n]) => `${n} ${PF[k] || k}`).join(", ");
     return cl || ap ? `<div class="nota" style="margin-top:6px">${cl}${ap ? `<div><b>Appuntamenti da:</b> ${esc(ap)}</div>` : ""}</div>` : "";
+  };
+  /* 29/10/2026: la stessa immagine su tutti i clienti dello stesso verticale,
+     riconosciuta dall'hash e non dal nome. */
+  const nomeAl = al => { const c = DATA.clienti.find(k => k.alias === al); return c ? nomeCli(c) : al; };
+  const lista = v => v.map(al => esc(nomeAl(al))).join(", ");
+  const diff = x => {
+    const d = x.diffusione; if (!d) return "";
+    const altri = (d.con_risultati || []).length > 1;
+    return `<div class="nota" style="margin-top:6px">`
+      + (altri ? `<div><b>Su tutti i clienti:</b> ${int(d.chiusi)} clienti · ${int(d.k100)} apt 100k · ${int(d.apt2)} apt · ${int(d.lead)} lead</div>` : "")
+      + `<div><b>Accesa su:</b> ${d.accesa.length ? lista(d.accesa) : "nessuno"}</div>`
+      + (d.spenta.length ? `<div><b>Spenta su:</b> ${lista(d.spenta)}</div>` : "")
+      + `<div><b>Non gira su:</b> ${d.mai.length ? `<span style="color:var(--good)">${lista(d.mai)}</span>` : "nessuno, c'è già ovunque"}</div>`
+      + `</div>`;
   };
   const card = x => {
     const img = THUMBS && THUMBS[x.ad_id];
@@ -976,6 +992,7 @@ function renderStatiche(sel){
           <div><div class="k">Lead</div><div class="v mono">${int(x.lead)}</div></div>
         </div>
         ${fonte(x)}
+        ${diff(x)}
         <div class="nota">${costo}${x.costo_apt ? eur(x.costo_apt) + " per appuntamento · " : ""}${x.lead ? Math.round(x.apt2 / x.lead * 100) + "% lead → apt · " : ""}${x.attiva ? "accesa"
           : x.copia_accesa ? "accesa in copia (stessa immagine)"
           : "spenta: prima di riaccenderla o duplicarla, controllo ads-bocciate"}</div>
@@ -1033,7 +1050,7 @@ function renderClienti(){
         <div><div class="k">CPL creative accese</div><div class="v mono" style="color:${
           vCpl(c) == null ? "var(--muted)" : c.n_kill_ancora_accese > 0 ? "var(--crit)"
           : vCpl(c) <= d.regole.cpl_winner_eur ? "var(--good)" : "inherit"}">${
-          vCpl(c) ? eur(vCpl(c)) : "n/d"}</div>${
+          vCpl(c) ? eur(vCpl(c)) : "n/d"}</div><div class="k">obiettivo ${eur0(d.regole.cpl_obiettivo_clienti_eur || d.regole.cpl_target_eur || 15)}</div>${
           c.cpl ? `<div class="k">storico ${eur(c.cpl)}</div>` : ""}</div>
         <div><div class="k">CVR creative accese</div><div class="v mono" style="color:${
           vCvr(c) == null ? "var(--muted)" : vCvr(c) < CVRMIN ? "var(--crit)" : "var(--good)"}">${
@@ -1046,8 +1063,8 @@ function renderClienti(){
       </div>
       <div class="cbody">${posLine(c)}${camp.length ? `
         <table><thead><tr>
-          <th>Creativa</th><th>Stato</th><th>Spesa</th><th>Lead</th><th>CPL</th>
-          <th>CPL 7g</th><th>CTR</th><th>CVR</th><th>Sprecato</th></tr></thead><tbody>
+          <th>Creativa</th><th>Stato</th><th>Spesa</th><th>Lead</th><th>CPL<div class="k">obiettivo ${eur0(d.regole.cpl_obiettivo_clienti_eur || d.regole.cpl_target_eur || 15)}</div></th>
+          <th>CPL 7g<div class="k">obiettivo ${eur0(d.regole.cpl_obiettivo_clienti_eur || d.regole.cpl_target_eur || 15)}</div></th><th>CTR</th><th>CVR</th><th>Sprecato</th></tr></thead><tbody>
           ${camp.map(k => {
             const ads = (k.ads || []).filter(a => !state.soloAttive || a.attiva);
             const v = k.vivo;
