@@ -1,0 +1,1263 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Checklist MB</title>
+<style>
+:root{
+  --surface:#1a1a19; --plane:#0d0d0d; --card:#212120; --line:#33322f;
+  --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781;
+  --good:#0ca30c; --warn:#fab219; --serious:#ec835a; --crit:#d03b3b;
+  --accent:#d4af37;
+}
+@media (prefers-color-scheme: light){
+  :root{ --surface:#fcfcfb; --plane:#f9f9f7; --card:#ffffff; --line:#e4e3df;
+         --ink:#0b0b0b; --ink2:#52514e; --muted:#898781; --accent:#8a6d0b; }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--plane);color:var(--ink);
+  font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:28px 20px 80px}
+a{color:var(--accent)}
+h1{font-size:26px;margin:0 0 4px;letter-spacing:-.02em}
+h2{font-size:15px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);
+   margin:38px 0 12px;font-weight:600}
+.sub{color:var(--muted);font-size:13px;margin:0}
+.mono{font-variant-numeric:tabular-nums}
+
+/* regole */
+.rules{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0}
+.rule{background:var(--card);border:1px solid var(--line);border-radius:999px;
+  padding:5px 12px;font-size:12.5px;color:var(--ink2)}
+.rule b{color:var(--ink)}
+
+/* stat tiles */
+.tiles{display:grid;gap:12px;margin-top:14px;
+  grid-template-columns:repeat(auto-fit,minmax(168px,1fr))}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.tile .lab{font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.tile .val{font-size:27px;font-weight:650;margin-top:5px;letter-spacing:-.02em}
+.tile .note{font-size:12px;color:var(--muted);margin-top:3px}
+.tile.hero{border-color:var(--crit)}
+.tile.hero .val{color:var(--crit)}
+.tile.act{border-color:var(--warn)}
+.tile.act .val{color:var(--warn)}
+
+/* azioni */
+.act-row{display:grid;grid-template-columns:22px 88px 1fr auto;gap:14px;align-items:center;
+  background:var(--card);border:1px solid var(--line);border-left:3px solid var(--crit);
+  border-radius:10px;padding:12px 16px;margin-bottom:8px}
+.act-row .who{font-weight:650;font-size:13px;color:var(--accent)}
+.act-row .what{font-size:14px}
+.act-row .why{font-size:12.5px;color:var(--muted);margin-top:2px}
+.pos{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 12px;font-size:12px}
+.pos .pl{color:var(--muted);margin-right:2px}
+.pos span.p{border:1px solid var(--line);border-radius:999px;padding:3px 9px;white-space:nowrap}
+.pos span.p.kill{border-color:var(--crit);color:var(--crit);font-weight:600}
+.act-row .tick input{width:18px;height:18px;cursor:pointer;accent-color:var(--good)}
+.act-row.done{opacity:.5;border-left-color:var(--good)}
+.act-row.done .what{text-decoration:line-through}
+.act-row .burn{text-align:right;font-size:13px;color:var(--crit);font-weight:600;white-space:nowrap}
+.act-row.near{grid-template-columns:88px 1fr auto;border-left-color:var(--warn)}
+.act-row.near .burn{color:var(--warn)}
+/* checklist MB (26/10/2026): stesse righe delle azioni, bordo per stato */
+.act-row.ck{grid-template-columns:22px 1fr auto;border-left-color:var(--line)}
+.act-row.ck.tardi{border-left-color:var(--crit)}
+.act-row.ck.oggi{border-left-color:var(--warn)}
+.act-row.ck.done{border-left-color:var(--good)}
+.act-row.ck .burn{color:var(--muted);font-weight:500;font-size:12px;white-space:normal;max-width:180px}
+.act-row.ck.tardi .burn{color:var(--crit);font-weight:600}
+/* calendario lun-ven (27/10/2026), come la checklist CSM */
+.week{display:grid;grid-template-columns:repeat(5,minmax(190px,1fr));gap:10px;overflow-x:auto;padding-bottom:4px}
+.giorno{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 10px 8px;min-width:0}
+.giorno.oggi-col{border:2px solid var(--gold);box-shadow:0 0 0 3px rgba(212,165,55,.18)}
+.giorno.passato{opacity:.6}
+.giorno .gh{font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:baseline;gap:6px}
+.giorno .gh span{color:var(--muted);font-weight:500;font-size:12px}
+.giorno .gh .tag{background:var(--gold);color:#0B1A3A;border-radius:999px;padding:1px 8px;font-size:11px;font-weight:700}
+.giorno ul{list-style:none;margin:8px 0 0;padding:0}
+.giorno li{display:grid;grid-template-columns:18px 1fr;gap:6px;align-items:start;font-size:13px;line-height:1.35;
+  padding:6px 0;border-top:1px solid var(--line)}
+.giorno li:first-child{border-top:0}
+.giorno li input{width:16px;height:16px;margin:1px 0 0;cursor:pointer;accent-color:var(--good)}
+.giorno li .d{color:var(--muted);font-size:11.5px;margin-top:2px}
+.giorno li.tardi .t{color:var(--crit)}
+.giorno li.done{opacity:.5}
+.giorno li.done .t{text-decoration:line-through}
+.giorno .vuoto{color:var(--muted);font-size:12.5px;margin:8px 0 0}
+.giorno details.rout{margin-top:8px;border-top:1px dashed var(--line);padding-top:6px}
+.giorno details.rout summary{cursor:pointer;font-size:12.5px;color:var(--ink2);font-weight:600}
+.giorno details.rout summary b{color:var(--crit)}
+.giorno details.rout summary b.ok{color:var(--good)}
+.obiettivi-riga{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0}
+.obiettivi-riga span{border:1px solid var(--line);border-radius:999px;padding:4px 11px;font-size:12.5px;color:var(--ink2);background:var(--card)}
+.obiettivi-riga span b{color:var(--muted);font-weight:500}
+@media (max-width:700px){.week{grid-template-columns:repeat(5,minmax(78vw,1fr));scroll-snap-type:x mandatory}.giorno{scroll-snap-align:start}}
+.indice{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0}
+.indice a{border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:12.5px;
+  color:var(--ink2);text-decoration:none;background:var(--card)}
+.indice a:hover{border-color:var(--accent);color:var(--accent)}
+.indice a b{color:var(--crit);margin-left:4px}
+.parte{font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);
+  margin:34px 0 -8px;border-top:1px solid var(--line);padding-top:14px}
+.obiettivo{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--accent);
+  border-radius:10px;padding:11px 16px;margin-bottom:8px;display:flex;justify-content:space-between;gap:14px;font-size:14px}
+.obiettivo span{color:var(--muted);font-size:12.5px;white-space:nowrap}
+.testa{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:24px;align-items:start}
+.testa #ck-obiettivi-box{position:sticky;top:12px}
+.testa #ck-obiettivi-box h2{margin-top:24px}
+.testa .obiettivo{flex-direction:column;gap:4px;font-size:13.5px}
+details.altre{margin-top:10px}
+details.altre summary{cursor:pointer;color:var(--muted);font-size:13.5px;padding:6px 0}
+@media(max-width:820px){.testa{grid-template-columns:1fr}.testa #ck-obiettivi-box{position:static}}
+
+/* chip stato */
+.chip{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:650;
+  padding:3px 8px;border-radius:6px;white-space:nowrap;border:1px solid}
+.chip .dot{width:7px;height:7px;border-radius:50%}
+.c-kill{color:var(--crit);border-color:var(--crit)} .c-kill .dot{background:var(--crit)}
+.c-watch{color:var(--warn);border-color:var(--warn)} .c-watch .dot{background:var(--warn)}
+.c-winner{color:var(--good);border-color:var(--good)} .c-winner .dot{background:var(--good)}
+.c-ok{color:var(--ink2);border-color:var(--line)} .c-ok .dot{background:var(--ink2)}
+.c-early{color:var(--muted);border-color:var(--line)} .c-early .dot{background:var(--muted)}
+
+/* clienti */
+.client{background:var(--card);border:1px solid var(--line);border-radius:12px;
+  margin-bottom:10px;overflow:hidden}
+.chead{display:grid;grid-template-columns:110px repeat(5,minmax(66px,1fr)) 150px 24px;
+  gap:12px;align-items:center;padding:14px 16px;cursor:pointer;user-select:none}
+.chead:hover{background:rgba(212,175,55,.05)}
+.chead .alias{font-weight:700;color:var(--accent);letter-spacing:.02em}
+.k{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.v{font-size:16px;font-weight:600;margin-top:2px}
+.bar{height:7px;border-radius:4px;background:rgba(137,135,129,.22);overflow:hidden;margin-top:7px}
+.bar > i{display:block;height:100%;border-radius:4px;background:var(--crit)}
+.caret{color:var(--muted);transition:transform .15s}
+.client.open .caret{transform:rotate(90deg)}
+.cbody{display:none;border-top:1px solid var(--line);padding:4px 0 8px}
+.client.open .cbody{display:block}
+
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);
+   text-align:right;padding:10px 12px;font-weight:600;border-bottom:1px solid var(--line)}
+th:first-child,td:first-child{text-align:left}
+td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:right;vertical-align:top}
+tr:last-child td{border-bottom:none}
+.cname{max-width:340px}
+.cname .n{font-weight:550}
+.cname .r{font-size:12px;color:var(--muted);margin-top:2px}
+.flag{font-size:12px;color:var(--serious);margin-top:3px}
+.off{opacity:.5}
+tr.camp td{background:rgba(127,127,127,.07)}
+tr.ad .cname .n{font-weight:450;padding-left:10px}
+.flag.riprova{background:#fff4d6;border-left:3px solid #e0a800;color:#7a5600;font-weight:600;padding-left:6px}
+.tag-off{font-size:10.5px;color:var(--muted);border:1px solid var(--line);
+  border-radius:4px;padding:1px 5px;margin-left:6px}
+.up{color:var(--crit)} .down{color:var(--good)}
+
+/* filtri */
+.filters{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:14px 0 0}
+select,button.tgl{background:var(--card);color:var(--ink);border:1px solid var(--line);
+  border-radius:8px;padding:7px 11px;font:inherit;font-size:13px;cursor:pointer}
+button.tgl[aria-pressed="true"]{border-color:var(--accent);color:var(--accent)}
+.empty{color:var(--muted);padding:18px;text-align:center;font-size:13.5px}
+.topbar{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}
+.fermi{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.fermo{background:var(--card);border:1px dashed var(--line);border-radius:8px;
+  padding:7px 12px;font-size:13px;color:var(--ink2)}
+.fermo b{color:var(--accent)}
+.nuovo{background:var(--card);border:1px solid var(--good);border-left:3px solid var(--good);
+  border-radius:10px;padding:11px 16px;margin-top:14px;font-size:13.5px}
+.nuovo b{color:var(--good)}
+.h2note{font-size:12px;text-transform:none;letter-spacing:0;font-weight:400;margin-left:6px}
+.h3{font-size:13px;color:var(--muted);font-weight:600;margin:18px 0 8px}
+details.regole{margin-top:12px}
+details.regole summary{cursor:pointer;color:var(--muted);font-size:13px}
+/* griglia clienti */
+.griglia{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(270px,1fr))}
+.cc{all:unset;box-sizing:border-box;cursor:pointer;display:block;background:var(--card);
+  border:1px solid var(--line);border-top:4px solid var(--good);border-radius:12px;padding:13px 15px}
+.cc:hover,.cc:focus-visible{border-color:var(--accent);outline:none}
+.cc.l1{border-top-color:var(--warn)} .cc.l2{border-top-color:var(--crit)}
+.cc-top{display:flex;align-items:center;gap:8px}
+.cc-top b{font-size:15px;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cc-st{font-size:10.5px;font-weight:700;letter-spacing:.05em;padding:2px 7px;border-radius:5px;
+  color:var(--good);border:1px solid var(--good);white-space:nowrap}
+.cc.l1 .cc-st{color:var(--warn);border-color:var(--warn)} .cc.l2 .cc-st{color:var(--crit);border-color:var(--crit)}
+.cc-big{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-top:9px}
+.cc-big .v{font-size:25px;font-weight:700;margin:0;letter-spacing:-.02em}
+.cc-big .tr{font-size:12.5px;font-weight:600}
+.cc-nums{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:9px}
+.cc-nums .v{font-size:15px}
+.cc-nums .k{white-space:nowrap}
+.cc svg{display:block;width:100%;height:46px;margin-top:10px}
+.cc-why{font-size:12px;color:var(--ink2);margin-top:8px;line-height:1.4}
+/* galleria statiche */
+.galleria{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(210px,1fr))}
+.st{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.st.cli{border-color:var(--good)}
+.st .img{aspect-ratio:4/5;background:rgba(127,127,127,.12);display:flex;align-items:center;justify-content:center;
+  text-align:center;padding:14px;font-size:13px;color:var(--muted)}
+.st .img img{width:100%;height:100%;object-fit:cover;display:block}
+.st .img:has(img){padding:0}
+.st .tx{padding:11px 13px 13px}
+.st .tx .n{font-weight:650;font-size:13.5px;line-height:1.3}
+.st .tx .c{font-size:12px;color:var(--accent);font-weight:650;margin-bottom:3px}
+.st .res{display:flex;gap:14px;margin-top:8px}
+.st .res .v{font-size:20px}
+.st .nota{font-size:11.5px;color:var(--muted);margin-top:8px;line-height:1.4}
+footer{margin-top:44px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:14px}
+@media(max-width:820px){
+  .wrap{padding:20px 16px 60px}
+  .griglia{grid-template-columns:1fr}
+  .galleria{grid-template-columns:repeat(2,1fr);gap:10px}
+  .chead{grid-template-columns:1fr 1fr;gap:10px}
+  .chead .spark{grid-column:1/-1}
+  .act-row{grid-template-columns:1fr;gap:6px}
+  .act-row .burn{text-align:left}
+  table{font-size:12.5px} td,th{padding:8px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <div>
+      <h1 id="titolo">Checklist MB</h1>
+      <p class="sub" id="meta">caricamento…</p>
+    </div>
+    <button class="tgl" id="unlock">Mostra nomi veri</button>
+  </div>
+  <div id="ruolo"></div>
+  <div id="nuovi"></div>
+
+  <div class="filters" id="scopebar">
+    <select id="fCliente"><option value="">Tutti i clienti</option></select>
+    <span class="sub" id="scopeNote"></span>
+  </div>
+
+  <nav class="indice" id="indice"></nav>
+
+  <div class="parte">La giornata</div>
+  <div id="ck-imminenti"></div>
+  <div id="ck-calendario"></div>
+  <div id="ck-obiettivi-box"></div>
+  <div id="ck-piede"></div>
+
+  <h2 id="h-statiche">Statiche che portano clienti e appuntamenti</h2>
+  <div id="statiche"></div>
+
+  <div class="parte">Le ads</div>
+
+  <h2 id="h-ads">Da fare oggi sulle ads <span id="nact" style="color:var(--crit)"></span></h2>
+  <div id="azioni"></div>
+  <h3 class="h3">Da monitorare <span id="nmon" style="color:var(--warn,#d4a537)"></span></h3>
+  <div id="monitorare"></div>
+  <h3 class="h3">Vicini alla soglia <span id="nnear" style="color:var(--warn,#d4a537)"></span></h3>
+  <p class="sub" id="nearNote" style="margin:-4px 0 8px"></p>
+  <div id="vicini"></div>
+
+  <div class="parte">I numeri</div>
+
+  <h2 id="h-griglia">Come va ogni cliente <span class="h2note">dal peggiore al migliore · clic per il dettaglio</span></h2>
+  <div class="griglia" id="griglia"></div>
+  <p class="sub" id="legenda" style="margin-top:10px"></p>
+
+  <h2 id="h-quadro">Il quadro del periodo</h2>
+  <div class="tiles" id="tiles"></div>
+  <details class="regole"><summary>Le regole di stacco</summary>
+    <div class="rules" id="rules"></div></details>
+
+  <h2>Dove riallocare</h2>
+  <div id="realloc"></div>
+
+  <h2>Dettaglio per cliente <span id="ntitle" style="color:var(--muted);font-weight:400"></span></h2>
+  <div class="filters">
+    <select id="fStato">
+      <option value="">Tutti gli stati</option>
+      <option value="kill">Solo da staccare</option>
+      <option value="watch">Solo sorvegliate</option>
+      <option value="winner">Solo vincenti</option>
+    </select>
+    <button class="tgl" id="fAttive" aria-pressed="false">Solo creative ancora accese</button>
+    <button class="tgl" id="fExp" aria-pressed="false">Apri tutti i clienti</button>
+  </div>
+  <div id="clienti"></div>
+  <div class="fermi" id="fermi"></div>
+
+  <!-- ALLARMI CONFIGURAZIONE — compare solo dove esiste allarmi.json. Sta in ALTO
+       perche' e' l'unica cosa che va guardata prima dei numeri: se una campagna e'
+       nata male, i numeri sotto stanno misurando una cosa rotta.
+       Dati da motore/collaudo_ads.py (Meta + Drive). -->
+  <section id="allarmi" hidden></section>
+  <style>#allarmi .grave{color:var(--crit);font-weight:700}
+  #allarmi .medio{color:var(--accent);font-weight:650}
+  #allarmi .lieve{color:var(--muted)}</style>
+  <!-- COSTI CHE SCAPPANO — compare solo dove esiste costi.json (la dashboard di
+       casa AEA). Stessa domanda delle ads, sull'altro lato: dove escono soldi
+       che non dovrebbero. Dati da motore/costi_che_scappano.py (Zoho Books). -->
+  <section id="costi" hidden></section>
+  <style>#costi .num{text-align:right;font-variant-numeric:tabular-nums}</style>
+
+  <footer id="foot"></footer>
+</div>
+
+<script>
+const eur = n => "€" + (n ?? 0).toLocaleString("it-IT",{minimumFractionDigits:2,maximumFractionDigits:2});
+const eur0 = n => "€" + Math.round(n ?? 0).toLocaleString("it-IT");
+const int = n => Math.round(n ?? 0).toLocaleString("it-IT");
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+const LABEL = {kill:"STACCA", watch:"SORVEGLIA", winner:"VINCENTE", ok:"OK", early:"PRESTO"};
+const chip = s => `<span class="chip c-${s}"><span class="dot"></span>${LABEL[s]||s}</span>`;
+
+let DATA = null, NAMES = null, THUMBS = null, THUMBS_CHIARO = null;
+/* ?cliente=SIGLA apre la pagina già sul singolo account: è il link
+   che si manda al cliente perché veda solo il suo. */
+let state = {cliente: new URLSearchParams(location.search).get("cliente") || "",
+             stato:"", soloAttive:false, expand:false};
+
+/* Nome cliente e campagna: sigla finche' non si sbloccano i nomi veri. */
+/* Con anonymize:false il nome vero arriva gia' nel dato; altrimenti si
+   parte dalla sigla e lo si sblocca con la passphrase. */
+const gg = iso => { const p = String(iso||"").split("-"); return p.length===3 ? p[2]+"/"+p[1] : String(iso||""); };
+const nomeCli = a => (NAMES && NAMES.clienti[a.alias]) || a.nome_breve || a.nome_reale || a.alias;
+const nomeCamp = k => (NAMES && NAMES.campagne[k.id]) || k.name;
+
+/* ---------- sblocco nomi veri (AES-GCM, chiave da passphrase) ---------- */
+const b64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
+
+async function decryptFile(file, pass){
+  const enc = await (await fetch(file + "?" + Date.now())).json();
+  const base = await crypto.subtle.importKey("raw", new TextEncoder().encode(pass),
+    "PBKDF2", false, ["deriveKey"]);
+  const key = await crypto.subtle.deriveKey(
+    {name:"PBKDF2", salt:b64(enc.salt), iterations:enc.iter, hash:"SHA-256"},
+    base, {name:"AES-GCM", length:256}, false, ["decrypt"]);
+  const plain = await crypto.subtle.decrypt({name:"AES-GCM", iv:b64(enc.nonce)}, key, b64(enc.ct));
+  return JSON.parse(new TextDecoder().decode(plain));
+}
+
+async function unlock(pass, silent){
+  const btn = document.getElementById("unlock");
+  try {
+    NAMES = await decryptFile("names.enc", pass);
+    /* miniature delle statiche: stessa passphrase, possono mostrare volto o nome */
+    try { THUMBS = await decryptFile("thumbs.enc", pass); } catch(e) {}
+    sessionStorage.setItem("adscockpit_pw", pass);
+    btn.textContent = "Nascondi nomi veri";
+    btn.setAttribute("aria-pressed","true");
+    render();
+  } catch(e){
+    NAMES = null;
+    sessionStorage.removeItem("adscockpit_pw");
+    if (!silent) alert("Passphrase sbagliata.");
+  }
+}
+
+/* ---------- caricamento ---------- */
+fetch("data.json?" + Date.now())
+  .then(r => r.json())
+  .then(d => {
+    DATA = d;
+    document.getElementById("ruolo").innerHTML = d.ruolo_html || "";
+    render();
+    document.getElementById("unlock").style.display = d.nomi_sbloccabili ? "" : "none";
+    const saved = sessionStorage.getItem("adscockpit_pw");
+    if (saved && d.nomi_sbloccabili) unlock(saved, true);
+  })
+  .catch(e => document.getElementById("meta").textContent = "Impossibile leggere data.json: " + e);
+
+/* pagina sempre aperta (25/10/2026): quando esce un data.json nuovo o cambia
+   il giorno si ricarica da sola, mai mentre si sta cliccando */
+(function () {
+  const giorno = new Date().toDateString();
+  let ultimo = Date.now();
+  ["click", "keydown", "input"].forEach(e => document.addEventListener(e, () => { ultimo = Date.now(); }, true));
+  const quieto = () => Date.now() - ultimo > 30000 && !document.querySelector("input:focus,textarea:focus,select:focus");
+  const guarda = () => {
+    if (document.hidden || !DATA) return;
+    if (new Date().toDateString() !== giorno && quieto()) { location.reload(); return; }
+    fetch("data.json?" + Date.now(), { cache: "no-store" }).then(r => r.ok ? r.json() : null)
+      .then(d => { if (d && d.generato && d.generato !== DATA.generato && quieto()) location.reload(); })
+      .catch(() => {});
+    fetch("checklist.json?" + Date.now(), { cache: "no-store" }).then(r => r.ok ? r.json() : null)
+      .then(c => { if (c && CK && c.generato !== CK.generato && quieto()) location.reload(); })
+      .catch(() => {});
+  };
+  setInterval(guarda, 120000);
+  document.addEventListener("visibilitychange", () => { if (!document.hidden) guarda(); });
+})();
+
+fetch("thumbs.json?" + Date.now()).then(r => r.ok ? r.json() : null).then(t => {
+  if (!t) return;
+  THUMBS_CHIARO = t; THUMBS = THUMBS || t;
+  if (DATA) renderStatiche(scope());
+}).catch(() => {});
+
+/* Il perimetro di TUTTA la pagina: tutti i clienti, o quello selezionato. */
+let CVRMIN = 4;
+const R2 = () => (DATA && DATA.regole) || {};
+/* CVR click -> lead: quanti dei click che abbiamo pagato diventano un contatto vero.
+   Sotto la soglia il collo e' il MODULO (o la landing), non le ads. */
+const cvrCli  = c => (c.link_clicks ? c.leads / c.link_clicks * 100 : null);
+const cvrCamp = k => (k.link_clicks ? k.leads / k.link_clicks * 100 : null);
+/* letture sulle sole creative accese (campo "vivo" del motore) */
+const vCpl  = c => (c.vivo ? c.vivo.cpl : null);
+const vLead = c => (c.vivo ? c.vivo.leads : 0);
+const vCvr  = c => (c.vivo ? c.vivo.cvr : null);
+
+function scope(){
+  if (!state.cliente) return DATA.clienti;
+  return DATA.clienti.filter(c => c.alias === state.cliente);
+}
+
+/* I totali vengono ricalcolati sul perimetro, non letti dal file:
+   così selezionando un cliente ogni numero in pagina parla solo di lui. */
+function totali(sel){
+  const spesa = sel.reduce((s,c)=>s+c.spend,0);
+  const lead  = sel.reduce((s,c)=>s+c.leads,0);
+  const spr   = sel.reduce((s,c)=>s+c.sprecato,0);
+  const linkClicks = sel.reduce((s,c)=>s+(c.link_clicks||0),0);
+  const g = DATA.periodo.giorni || 1;
+  /* CPL e CVR si leggono sulle CREATIVE ACCESE (c.vivo), non sulla media
+     di campagna: con una campagna sola sempre accesa la media include le
+     creative gia' staccate e racconta un CPL che non esiste piu' (16/9/2026). */
+  const vivi = sel.filter(c => c.vivo);
+  const vs = vivi.reduce((s,c)=>s+c.vivo.spend,0);
+  const vl = vivi.reduce((s,c)=>s+c.vivo.leads,0);
+  const vc = vivi.reduce((s,c)=>s+(c.vivo.link_clicks||0),0);
+  const ncr = vivi.reduce((s,c)=>s+(c.vivo.n_creative||0),0);
+  return {
+    spesa, lead, sprecato: spr,
+    cpl: vl ? vs/vl : null,
+    cpl_storico: lead ? spesa/lead : null,
+    creative_accese: ncr,
+    linkClicks,
+    cvr: vc ? vl/vc*100 : null,
+    quota: spesa ? spr/spesa*100 : 0,
+    al_mese: spr/g*30,
+    brucia_oggi: sel.reduce((s,c)=>s+c.brucia_oggi,0),
+    da_staccare: sel.reduce((s,c)=>s+c.n_kill_ancora_accese,0),
+    /* Lead mancati = quanti lead avrebbe dato TUTTO il budget girando al CPL
+       target, meno quelli arrivati davvero. Non e' il budget parcheggiato sui
+       perdenti (quello sta nella tabella di riallocazione): e' il divario col
+       target, e per questo e' un numero grosso. */
+    lead_mancati: 0,
+    campagne: sel.reduce((s,c)=>s+c.n_campagne,0)
+  };
+}
+
+const tile = (lab,val,note,cls="") =>
+  `<div class="tile ${cls}"><div class="lab">${lab}</div>
+   <div class="val mono">${val}</div><div class="note">${note||""}</div></div>`;
+
+function render(){
+  const d = DATA, R = d.regole, sel = scope(), t = totali(sel);
+  CVRMIN = R.cvr_floor_pct || 4;
+  const CPLT = R.cpl_target_eur || 15;
+  t.lead_attesi = CPLT ? Math.floor(t.spesa / CPLT) : 0;
+  t.lead_mancati = Math.max(0, t.lead_attesi - t.lead);
+  const uno = sel.length === 1;
+
+  document.title = d.titolo || "Checklist MB";
+  document.getElementById("titolo").textContent =
+    (state.cliente && uno) ? nomeCli(sel[0]) : (d.titolo || "Checklist MB");
+
+  const gen = new Date(d.generato);
+  document.getElementById("meta").innerHTML =
+    `Periodo <b>${d.periodo.da}</b> → <b>${d.periodo.a}</b> (${d.periodo.giorni} giorni) ·
+     ${sel.length} ${sel.length === 1 ? "account" : "account"} · ${int(t.campagne)} campagne ·
+     aggiornato ${gen.toLocaleString("it-IT",{dateStyle:"short",timeStyle:"short"})}`;
+
+  document.getElementById("rules").innerHTML = [
+    `<b>0 lead</b> sopra ${eur0(R.spend_kill_zero_lead_eur || R.spend_warn_eur)} di spesa → si stacca`,
+    `<b>1 lead</b>: si lascia girare fino a ${eur0(R.spend_kill_eur)}, il CPL non si guarda`,
+    `entro ${eur0(R.spend_kill_eur)} servono <b>2 lead</b> (CPL sotto ${eur0(R.spend_kill_eur/2)}) → altrimenti si stacca`,
+    `da <b>2 a ${int((R.cpl_kill_lead_minimi || 6) - 1)} lead</b> si lascia girare` + (R.cpl_allarme_pochi_lead_eur ? `, CPL sopra <b>${eur0(R.cpl_allarme_pochi_lead_eur)}</b> → si stacca (tetto di allarme)` : ``),
+    `da <b>${int(R.cpl_kill_lead_minimi || 6)} lead</b>, CPL sopra <b>${eur0(R.cpl_kill_eur)}</b> e CVR sotto <b>${CVRMIN}%</b> → si stacca`,
+    `CVR di almeno <b>${CVRMIN}%</b> sui click al link → il solo CPL alto non stacca`,
+    `CPL sotto <b>${eur0(R.cpl_winner_eur)}</b> → vincente, ci si mette budget`,
+    `<b>CVR click → lead</b> sotto <b>${CVRMIN}%</b> → il problema è il modulo, non le ads`,
+    `<b>CPL target ${eur0(CPLT)}</b> → il metro dei lead mancati (${eur0(R.cpl_kill_eur)} è il limite di stacco, non l'obiettivo)`
+  ].map(r => `<span class="rule">${r}</span>`).join("");
+
+  /* clienti entrati da poco: il parco si popola da solo, ma va detto */
+  const nuovi = (d.nuovi || []).map(al => {
+    const c = d.clienti.find(x => x.alias === al) || (d.fermi||[]).find(x => x.alias === al);
+    return c ? nomeCli(c) : al;
+  });
+  document.getElementById("nuovi").innerHTML = nuovi.length
+    ? `<div class="nuovo"><b>Nuovo account entrato</b> · ${nuovi.map(esc).join(", ")}
+        · aggiunto in automatico, nessuna configurazione richiesta</div>`
+    : "";
+
+  /* selettore account */
+  const selEl = document.getElementById("fCliente");
+  const cur = state.cliente;
+  selEl.innerHTML = `<option value="">Tutti i clienti (${d.clienti.length})</option>` +
+    d.clienti.map(c => `<option value="${esc(c.alias)}">${esc(nomeCli(c))}</option>`).join("");
+  selEl.value = cur;
+  document.getElementById("scopebar").style.display = d.clienti.length > 1 ? "" : "none";
+  document.getElementById("scopeNote").textContent = state.cliente
+    ? "tutta la pagina parla solo di questo account"
+    : "seleziona un account per vedere solo il suo";
+
+  /* tiles */
+
+  document.getElementById("tiles").innerHTML = [
+    tile("Budget sprecato", eur0(t.sprecato),
+         `${t.quota.toFixed(1)}% di tutto lo speso · ${eur0(t.al_mese)} al mese a questo ritmo`, "hero"),
+    tile("Da staccare ora", int(t.da_staccare),
+         t.brucia_oggi > 0 ? `bruciano ${eur(t.brucia_oggi)} al giorno` : "campagne fuori regola ancora accese", "act"),
+    tile("Spesa", eur0(t.spesa), `${d.periodo.giorni} giorni`),
+    tile("Lead", int(t.lead), "moduli e conversioni Meta"),
+    tile("CPL creative accese", t.cpl ? eur(t.cpl) : "n/d",
+         t.cpl ? `${int(t.creative_accese)} creative accese · ${t.cpl > R.cpl_kill_eur ? "sopra" : "sotto"} il limite di ${eur0(R.cpl_kill_eur)}`
+               + (t.cpl > R.cpl_kill_eur && t.cvr >= CVRMIN ? ` · CVR ${t.cvr.toFixed(1)}%: non stacca` : "")
+               + (t.cpl_storico ? ` · media storica ${eur(t.cpl_storico)}` : "")
+               : (t.cpl_storico ? `nessuna creativa accesa · media storica ${eur(t.cpl_storico)}` : "")),
+    tile("CVR click → lead", t.cvr != null ? t.cvr.toFixed(1) + "%" : "n/d",
+         t.cvr == null ? "" : (t.cvr < CVRMIN
+            ? `sotto il ${CVRMIN}% minimo: il collo è il modulo, non le ads`
+            : `sopra il ${CVRMIN}% minimo · ${int(t.linkClicks)} click al link`)),
+    tile("Lead mancati", int(t.lead_mancati),
+         `${eur0(t.spesa)} al CPL target di ${eur0(CPLT)} valgono ${int(t.lead_attesi)} lead, ne sono arrivati ${int(t.lead)}`,
+         t.lead_mancati > 0 ? "act" : "")
+  ].join("");
+
+  renderAzioni(sel);
+  renderGriglia(sel);
+  renderStatiche(sel);
+
+  /* riallocazione */
+  const rr = sel.filter(c => c.riallocazione.budget_da_spostare > 0);
+  document.getElementById("realloc").innerHTML = rr.length ? `
+    <table><thead><tr><th>${state.cliente ? "Account" : "Cliente"}</th>
+      <th>Budget finito sui perdenti</th><th>Lead mancati (prudente)</th>
+      <th>CPL delle vincenti</th><th>Se reggesse lo scale</th></tr></thead><tbody>
+      ${rr.sort((a,b)=>b.riallocazione.budget_da_spostare-a.riallocazione.budget_da_spostare).map(c=>`
+        <tr><td><b style="color:var(--accent)">${esc(nomeCli(c))}</b></td>
+          <td class="mono">${eur(c.riallocazione.budget_da_spostare)}</td>
+          <td class="mono" style="color:var(--good)">${c.riallocazione.lead_prudente ? "+"+int(c.riallocazione.lead_prudente) : "—"}</td>
+          <td class="mono">${c.riallocazione.cpl_vincente ? eur(c.riallocazione.cpl_vincente)
+              : '<span style="color:var(--muted)">nessuna vincente</span>'}</td>
+          <td class="mono" style="color:var(--muted)">${c.riallocazione.lead_ottimistico ? "+"+int(c.riallocazione.lead_ottimistico) : "—"}</td>
+        </tr>`).join("")}
+    </tbody></table>
+    <p class="sub" style="margin-top:10px">Il numero su cui contare è quello prudente.
+      La colonna a destra vale solo se le campagne vincenti tengono lo stesso CPL a budget più alto,
+      cosa che quasi mai succede.</p>`
+    : `<div class="empty">Niente budget parcheggiato su campagne fuori regola.</div>`;
+
+  renderClienti();
+}
+
+/* ---------- azioni di oggi, spuntabili ----------
+   Le spunte stanno nel ponte condiviso della checklist CSM (foglio Google via
+   Apps Script), cosi' chi spunta da un telefono lo vede anche l'altro.
+   Chiave: ckcsm:ads|<sigla>|ad|<id inserzione>:<giorno della spunta>.
+   Spuntata oggi resta barrata fino a domani; dal giorno dopo non esce piu'.
+   Il ponte toglie da solo le spunte oltre 21 giorni: se una creativa e' ancora
+   accesa e fuori regola dopo tre settimane, torna fuori, ed e' giusto cosi'. */
+const SYNC = "https://script.google.com/macros/s/AKfycbyYBeMPQ6wKtKeScl-XAK5dgqb7TOlUZTsE3u2ZyXZwMbcE7qQnV3oQly9dDEzcrDcC/exec";
+const OGGI = new Date().toLocaleDateString("sv-SE", {timeZone:"Europe/Rome"});
+let SPUNTE = {};
+try { SPUNTE = JSON.parse(localStorage.getItem("adscockpit_spunte") || "{}"); } catch(e) {}
+const salvaLocale = () => { try { localStorage.setItem("adscockpit_spunte", JSON.stringify(SPUNTE)); } catch(e) {} };
+
+function leggiSpunte(){
+  return fetch(SYNC + "?t=" + Date.now()).then(r => r.json()).then(j => {
+    const nuove = {};
+    Object.keys((j && j.stato) || {}).forEach(k => {
+      const m = k.match(/^ckcsm:ads\|(.+):(\d{4}-\d{2}-\d{2})$/);
+      if (m && (!nuove[m[1]] || m[2] > nuove[m[1]])) nuove[m[1]] = m[2];
+    });
+    SPUNTE = nuove; salvaLocale();
+    /* checklist MB: la chiave intera, valore "1" = spuntata */
+    const mb = {};
+    Object.entries((j && j.stato) || {}).forEach(([k, v]) => {
+      if (k.startsWith("ckcsm:mb|") && String(v) === "1") mb[k] = 1;
+    });
+    SPUNTE_MB = mb;
+    if (DATA) renderAzioni(scope());
+    renderChecklist();
+  }).catch(() => {});
+}
+
+function spunta(id, on){
+  const set = {};
+  if (on) { set["ckcsm:ads|" + id + ":" + OGGI] = 1; SPUNTE[id] = OGGI; }
+  else if (SPUNTE[id]) { set["ckcsm:ads|" + id + ":" + SPUNTE[id]] = 0; delete SPUNTE[id]; }
+  salvaLocale();
+  renderAzioni(scope());
+  fetch(SYNC, {method:"POST", headers:{"Content-Type":"text/plain;charset=utf-8"},
+    body: JSON.stringify({set})}).catch(() => {});
+}
+
+/* 23/10/2026: voci "da monitorare" scritte in monitorare.json. Giornaliera =
+   torna ogni mattina, la spunta vale per oggi. Una volta = spuntata sparisce. */
+function renderMonitorare(sel){
+  const host = document.getElementById("monitorare");
+  if (!host) return;
+  const al = new Set(sel.map(c => c.alias));
+  const cli = {}; ((DATA && DATA.clienti) || []).concat((DATA && DATA.fermi) || []).forEach(c => cli[c.alias] = c);
+  const voci = ((DATA && DATA.monitorare) || []).filter(v => al.has(v.alias))
+    .filter(v => !(v.tipo === "una_volta" && SPUNTE[v.id] && SPUNTE[v.id] < OGGI));
+  const fatta = v => v.tipo === "una_volta" ? !!SPUNTE[v.id] : SPUNTE[v.id] === OGGI;
+  voci.sort((a,b) => (fatta(a) ? 1 : 0) - (fatta(b) ? 1 : 0));
+  const daFare = voci.filter(v => !fatta(v)).length;
+  document.getElementById("nmon").textContent = daFare ? `(${daFare})` : "";
+  if (!voci.length) { host.innerHTML = `<p class="sub">Niente da monitorare.</p>`; return; }
+  host.innerHTML = voci.map(v => `
+    <div class="act-row${fatta(v) ? " done" : ""}">
+      <label class="tick" title="${v.tipo === "una_volta" ? "Spunta quando e' controllato: da domani non esce piu'" : "Spunta quando l'hai guardato oggi: domani torna"}">
+        <input type="checkbox" data-az="${esc(v.id)}" ${fatta(v) ? "checked" : ""}></label>
+      <div class="who">${esc(cli[v.alias] ? nomeCli(cli[v.alias]) : v.alias)}</div>
+      <div><div class="what">${esc(v.cosa)}</div>
+        <div class="why">${esc(v.perche)}</div></div>
+      <div class="burn">${v.tipo === "una_volta" ? "una volta" : "ogni giorno"}<br>
+        <span style="color:var(--muted);font-weight:400">dal ${esc(v.dal)}</span></div>
+    </div>`).join("");
+  host.querySelectorAll("input[data-az]").forEach(cb =>
+    cb.addEventListener("change", () => spunta(cb.dataset.az, cb.checked)));
+}
+
+function renderVicini(sel){
+  const host = document.getElementById("vicini");
+  if (!host) return;
+  const limite = Number((DATA && DATA.regole && DATA.regole.placement_max_eur) || 45);
+  const minimo = limite * 2 / 3;
+  const voci = [];
+  sel.forEach(c => ((c.posizionamenti || {}).voci || []).forEach(p => {
+    if (p.escluso || p.da_staccare) return;
+    const metro = p.leads ? Number(p.cpl || 0) : Number(p.spend || 0);
+    if (metro >= minimo && metro < limite) voci.push({cli:c, pos:p, metro});
+  }));
+  voci.sort((a,b) => b.metro - a.metro);
+  document.getElementById("nnear").textContent = voci.length ? `(${voci.length})` : "";
+  document.getElementById("nearNote").innerHTML =
+    `Posizionamenti ancora abilitati fra <b>${eur(minimo)}</b> e <b>${eur(limite)}</b>. ` +
+    `Con lead si guarda il CPL, senza lead si guarda la spesa.`;
+  if (!voci.length) {
+    host.innerHTML = `<p class="sub">Nessun posizionamento vicino alla soglia.</p>`;
+    return;
+  }
+  host.innerHTML = voci.map(x => {
+    const p = x.pos;
+    const periodo = (x.cli.posizionamenti || {}).periodo || "durata massima";
+    const valore = p.leads ? `CPL ${eur(p.cpl)}` : `${eur(p.spend)} spesi · 0 lead`;
+    const distanza = p.leads ? "al limite CPL" : "al limite di spesa";
+    return `<div class="act-row near">
+      <div class="who">${esc(nomeCli(x.cli))}</div>
+      <div><div class="what">${esc(p.posto || p.nome)}</div>
+        <div class="why">${esc(p.adset || "")} · ${esc(periodo)} · ${int(p.leads)} lead</div></div>
+      <div class="burn">${valore}<br>
+        <span style="color:var(--muted);font-weight:400">mancano ${eur(limite - x.metro)} ${distanza}</span></div>
+    </div>`;
+  }).join("");
+}
+
+function renderAzioni(sel){
+  renderMonitorare(sel);
+  renderVicini(sel);
+  const voci = [];
+  sel.forEach(c => c.campagne.forEach(k => (k.ads || []).forEach(a => {
+    if (a.status === "kill" && a.attiva) voci.push({
+      id: c.alias + "|ad|" + a.id, cli:c, campagna:k, creativa:a, daily_budget:k.daily_budget || 0});
+  })));
+  voci.sort((a,b) => (b.daily_budget||0) - (a.daily_budget||0) || b.creativa.sprecato - a.creativa.sprecato);
+  /* posizionamenti fuori regola ancora in spesa: UNA riga per account; se si
+     aggiunge un posizionamento nuovo la chiave cambia e la riga torna fuori */
+  /* 22/10/2026: la spunta vale per il SINGOLO posizionamento. Prima la chiave
+     era l'insieme, e se ne entrava uno nuovo tornavano fuori anche quelli gia'
+     esclusi (Dal Bosco, De Leonardis). Ora esce solo cio' che non e' stato spuntato. */
+  const posFatti = {};
+  Object.keys(SPUNTE).forEach(k => {
+    const m = k.match(/^(.+)\|pos\|(.+)$/);
+    if (m) m[2].split("+").forEach(n => {
+      const kk = m[1] + "|" + n;
+      if (!posFatti[kk] || SPUNTE[k] > posFatti[kk]) posFatti[kk] = SPUNTE[k];
+    });
+  });
+  const vecchiePos = [];
+  sel.forEach(c => {
+    const v = ((c.posizionamenti || {}).voci || []).filter(p => p.da_staccare);
+    /* 28/10/2026: da_staccare = l'ad set acceso lo compra ancora. Spuntato in un giorno
+       passato e ancora qui vuol dire esclusione non fatta: torna in lista, non in fondo
+       (caso Zaghini FB Reels, spuntato il 27/10 e ancora comprato). */
+    if (v.length) voci.push({id: c.alias + "|pos|" + v.map(p => p.nome).sort().join("+"), cli:c, pos:v,
+      giorno: v.map(p => posFatti[c.alias + "|" + p.nome] || "").filter(g => g && g < OGGI).sort().pop() || ""});
+  });
+  /* 28/10/2026: si nasconde solo cio' che e' spuntato OGGI. Una spunta vecchia su una
+     voce ancora in lista = non fatta su Meta, quindi la voce resta da fare col suo giorno. */
+  voci.forEach(x => { if (!x.giorno && SPUNTE[x.id] && SPUNTE[x.id] < OGGI) x.giorno = SPUNTE[x.id]; });
+  const fattaOggi = x => SPUNTE[x.id] === OGGI;
+  const nascoste = 0;
+  const vive = voci;
+  const daFare = vive.filter(x => !fattaOggi(x)).length;
+  vive.sort((a,b) => (fattaOggi(a) ? 1 : 0) - (fattaOggi(b) ? 1 : 0));
+  document.getElementById("nact").textContent = daFare ? `(${daFare})` : "";
+  const box = x => `<label class="tick" title="Spunta quando e' fatto: da domani non esce piu'">
+      <input type="checkbox" data-az="${esc(x.id)}" ${fattaOggi(x) ? "checked" : ""}></label>`;
+  const riga = x => x.pos ? `
+    <div class="act-row${fattaOggi(x) ? " done" : ""}">${box(x)}
+      <div class="who">${esc(nomeCli(x.cli))}</div>
+      <div><div class="what">Posizionamenti da escludere: ${x.pos.map(p => esc(p.nome)).join(", ")}${
+        x.giorno ? ` <span style="color:var(--crit)">· spuntato il ${esc(x.giorno)} ma su Meta ancora comprato</span>` : ""}</div>
+        <div class="why">durata massima, per ad set attivo · ${x.pos.map(p => `${esc(p.nome)}: ${esc(p.reason)}`).join(" · ")}</div></div>
+      <div class="burn">speso ${eur(x.pos.reduce((t,p) => t + p.spend, 0))} in totale<br>
+        <span style="color:var(--muted);font-weight:400">${int(x.pos.reduce((t,p) => t + p.leads, 0))} lead in tutto</span></div>
+    </div>` : `
+    <div class="act-row${fattaOggi(x) ? " done" : ""}">${box(x)}
+      <div class="who">${esc(nomeCli(x.cli))}</div>
+      <div><div class="what">Creativa: ${esc(x.creativa.name)}${
+        x.giorno ? ` <span style="color:var(--crit)">· spuntata il ${esc(x.giorno)} ma su Meta ancora accesa</span>` : ""}</div>
+        <div class="why">Campagna: ${esc(nomeCamp(x.campagna))} · ${esc(x.creativa.reason)}${
+          x.creativa.flags.length ? " · " + esc(x.creativa.flags[0]) : ""}</div></div>
+      <div class="burn">${x.daily_budget ? eur(x.daily_budget)+"/giorno" : "attiva"}<br>
+        <span style="color:var(--muted);font-weight:400">già sprecati ${eur(x.creativa.sprecato)}</span></div>
+    </div>`;
+  /* 22/10/2026: controllo del mattino. Una lista vuota con i dati di ieri
+     sembra "tutto pulito" e non lo e'. E le spuntate nascoste sono, per
+     costruzione, creative ANCORA accese e fuori regola su Meta (nella lista
+     entrano solo le attive): restano fuori dalla lista, ma si dicono. */
+  const gen = DATA && DATA.generato ? new Date(DATA.generato) : null;
+  const genGiorno = gen ? gen.toLocaleDateString("sv-SE", {timeZone:"Europe/Rome"}) : "";
+  const genOra = gen ? gen.toLocaleString("it-IT", {dateStyle:"short", timeStyle:"short", timeZone:"Europe/Rome"}) : "n.d.";
+  const fresco = genGiorno === OGGI;
+  const stato = fresco
+    ? `<p class="sub" style="margin:0 0 8px">Controllo del mattino: dati di oggi, letti da Meta il ${genOra}.</p>`
+    : `<div class="act-row" style="grid-template-columns:1fr;border-left-color:var(--crit)">
+        <div><div class="what" style="color:var(--crit);font-weight:650">Dati non di oggi: fermi al ${genOra}</div>
+        <div class="why">Il giro del mattino non ha aggiornato il cockpit. Le azioni sotto sono quelle di quel giorno e possono mancarne di nuove.</div></div></div>`;
+  /* Creative: "attiva" e' lo stato vero su Meta, quindi spuntata e ancora in
+     lista vuol dire non spenta. Posizionamenti (22/10/2026): da_staccare vuol dire
+     che il targeting dell'ad set acceso lo compra ancora, quindi idem. */
+  const vecchie = [];  // da_staccare = l'ad set acceso lo compra ancora (targeting letto da Meta)
+  const inVerifica = 0;
+  const rigaVecchia = x => `<div class="sub" style="margin:4px 0">${esc(nomeCli(x.cli))} · ${
+      x.pos ? "posizionamento " + x.pos.map(p => esc(p.nome)).join(", ") : "creativa " + esc(x.creativa.name)
+    } · spuntata il ${esc(x.giorno)}, ancora ${x.pos ? "comprato dall'ad set (" + eur(x.pos.reduce((t,p) => t + p.spend, 0)) + " in totale)"
+      : "accesa" + (x.daily_budget ? " a " + eur(x.daily_budget) + "/giorno" : "")}</div>`;
+  const host = document.getElementById("azioni");
+  host.innerHTML = stato + (vive.length ? vive.map(riga).join("")
+      : `<div class="empty">Nessuna creativa fuori regola ancora accesa${fresco ? "" : " nei dati di quel giorno"}.</div>`)
+    + (nascoste ? `<p class="sub" style="margin-top:6px">${nascoste} ${nascoste === 1 ? "azione spuntata" : "azioni spuntate"} nei giorni scorsi: non compaiono più.${
+        inVerifica ? ` ${inVerifica} ${inVerifica === 1 ? "posizionamento si verifica" : "posizionamenti si verificano"} da soli a 7 giorni dalla spunta.` : ""}</p>` : "")
+    + (vecchie.length ? `<details style="margin-top:4px"><summary class="sub" style="cursor:pointer;color:var(--serious)">Di queste, ${vecchie.length} ${vecchie.length === 1 ? "risulta ancora accesa" : "risultano ancora accese"} su Meta: la spunta non le ha spente</summary>${vecchie.map(rigaVecchia).join("")}</details>` : "");
+  host.querySelectorAll("input[data-az]").forEach(cb =>
+    cb.addEventListener("change", () => spunta(cb.dataset.az, cb.checked)));
+}
+leggiSpunte();
+
+/* ---------- checklist MB (26/10/2026) ----------
+   Le voci le scrive checklist_mb.py in checklist.json a ogni giro (cockpit,
+   carico delivery, campanello). Le spunte stanno nello stesso archivio della
+   checklist CSM: chiave intera ckcsm:mb|..., la data nella chiave azzera la
+   voce il giorno, la settimana o il mese dopo. */
+let CK = null, SPUNTE_MB = {};
+function spuntaMb(k, on){
+  if (on) SPUNTE_MB[k] = 1; else delete SPUNTE_MB[k];
+  renderChecklist();
+  fetch(SYNC, {method:"POST", headers:{"Content-Type":"text/plain;charset=utf-8"},
+    body: JSON.stringify({set:{[k]: on ? 1 : 0}})}).catch(() => {});
+}
+function righeCk(voci){
+  const fatta = v => !!SPUNTE_MB[v.k];
+  return voci.slice().sort((a,b) => (fatta(a) ? 1 : 0) - (fatta(b) ? 1 : 0)).map(v => `
+    <div class="act-row ck${v.c ? " " + esc(v.c) : ""}${fatta(v) ? " done" : ""}">
+      <label class="tick"><input type="checkbox" data-mb="${esc(v.k)}" ${fatta(v) ? "checked" : ""}></label>
+      <div><div class="what">${esc(v.t)}</div>${v.d ? `<div class="why">${esc(v.d)}</div>` : ""}</div>
+      <div class="burn">${esc(v.m || "")}</div>
+    </div>`).join("");
+}
+function bloccoCk(sz, tag){
+  const aperte = sz.voci.filter(v => !SPUNTE_MB[v.k]).length;
+  const corpo = sz.voci.length ? righeCk(sz.voci) : `<p class="sub">${esc(sz.vuoto || "Niente qui.")}</p>`;
+  return `<${tag} id="ck-${esc(sz.id)}"${tag === "h3" ? ' class="h3"' : ""}>${esc(sz.titolo)}
+      <span style="color:var(--crit)">${aperte ? `(${aperte})` : ""}</span></${tag}>
+    ${sz.sotto ? `<p class="sub" style="margin:-4px 0 8px">${esc(sz.sotto)}</p>` : ""}${corpo}`;
+}
+function renderChecklist(){
+  const imm = document.getElementById("ck-imminenti"), cal = document.getElementById("ck-calendario");
+  const obBox = document.getElementById("ck-obiettivi-box"), piede = document.getElementById("ck-piede");
+  if (!imm || !cal || !CK) return;
+  const fatta = v => !!SPUNTE_MB[v.k];
+  const aperte = l => (l || []).filter(v => !fatta(v)).length;
+  const oggiIso = OGGI;
+  /* cose imminenti: impegni scaduti o senza giorno, clienti partiti, mosse ads */
+  const lista = CK.imminenti || [];
+  imm.innerHTML = `<h2 id="ck-imm">Cose imminenti da fare oggi <span style="color:var(--crit)">${aperte(lista) ? `(${aperte(lista)})` : ""}</span></h2>
+    <p class="sub" style="margin:-4px 0 8px">Quello che non ha un giorno nel calendario: impegni scaduti o senza data, clienti da sentire, posizionamenti, moduli, vincenti. Quando spunti un impegno, si chiude anche nel registro.</p>`
+    + (lista.length ? righeCk(lista) : `<p class="sub">Niente di imminente.</p>`);
+  /* calendario lun-ven: passi della settimana sul loro giorno, routine del giorno a tendina */
+  const aperta = new Set([...document.querySelectorAll("details.rout[open]")].map(d => d.dataset.g));
+  const li = (v, passato) => `<li class="${fatta(v) ? "done" : (v.c === "tardi" || (passato && !fatta(v))) ? "tardi" : ""}">
+      <input type="checkbox" data-mb="${esc(v.k)}" ${fatta(v) ? "checked" : ""}>
+      <div><div class="t">${esc(v.t)}</div>${v.m ? `<div class="d">${esc(v.m)}</div>` : ""}</div></li>`;
+  cal.innerHTML = `<h2 id="ck-cal">Settimana <span style="color:var(--crit)">${
+      aperte((CK.calendario || []).flatMap(g => g.voci)) ? `(${aperte((CK.calendario || []).flatMap(g => g.voci))})` : ""}</span></h2>
+    <p class="sub" style="margin:-4px 0 8px">I passi della settimana stanno su un giorno, ma valgono fino a venerdi. La routine si fa ogni giorno prima delle 10.</p>
+    <div class="week">` + (CK.calendario || []).map(g => {
+      const passato = g.data < oggiIso, oggi = g.data === oggiIso;
+      const voci = g.voci.slice().sort((a,b) => (fatta(a) ? 1 : 0) - (fatta(b) ? 1 : 0));
+      const nr = aperte(g.routine), tot = g.routine.length;
+      const [, m, d] = g.data.split("-");
+      return `<div class="giorno${oggi ? " oggi-col" : ""}${passato ? " passato" : ""}">
+        <div class="gh">${esc(g.nome)} <span>${d}/${m}</span>${oggi ? `<span class="tag">oggi</span>` : ""}</div>
+        ${voci.length ? `<ul>${voci.map(v => li(v, passato)).join("")}</ul>` : `<p class="vuoto">Solo la routine.</p>`}
+        <details class="rout" data-g="${esc(g.data)}"${(oggi || aperta.has(g.data)) ? " open" : ""}>
+          <summary>Routine · ${!nr ? `<b class="ok">fatta</b>` : (passato || oggi) ? `<b>${nr} su ${tot}</b>` : `${tot} passi`}</summary>
+          <ul>${g.routine.map(v => li(v, passato)).join("")}</ul>
+        </details></div>`;
+    }).join("") + `</div>`;
+  if (obBox) obBox.innerHTML = (CK.obiettivi || []).length ? `<div class="obiettivi-riga" id="ck-obiettivi">` + CK.obiettivi.map(o =>
+        `<span>${esc(o.t)}${o.m ? ` <b>· ${esc(o.m)}</b>` : ""}</span>`).join("") + `</div>` : "";
+  if (piede) piede.innerHTML = CK.generato ? `<p class="sub" style="margin-top:10px">Checklist aggiornata ${esc(new Date(CK.generato).toLocaleString("it-IT",{dateStyle:"short",timeStyle:"short"}))}${
+        CK.procedura ? ` · <a href="${esc(CK.procedura)}" target="_blank" rel="noopener">Procedura ruolo</a>` : ""}${
+        CK.cartella ? ` · <a href="${esc(CK.cartella)}" target="_blank" rel="noopener">Cartella MB</a>` : ""}</p>` : "";
+  document.querySelectorAll("input[data-mb]").forEach(cb =>
+    cb.addEventListener("change", () => spuntaMb(cb.dataset.mb, cb.checked)));
+  const giornoOggi = (CK.calendario || []).find(g => g.data === oggiIso);
+  const voce = (href, nome, n) => `<a href="#${href}">${nome}${n ? `<b>${n}</b>` : ""}</a>`;
+  document.getElementById("indice").innerHTML = [
+    voce("ck-imm", "Imminenti", aperte(lista)),
+    voce("ck-cal", "Settimana", giornoOggi ? aperte(giornoOggi.voci.concat(giornoOggi.routine)) : 0),
+    voce("h-statiche", "Statiche", 0),
+    voce("h-ads", "Ads oggi", 0),
+    voce("h-griglia", "Clienti", 0), voce("h-quadro", "Quadro", 0)
+  ].filter(Boolean).join("");
+}
+function caricaChecklist(){
+  return fetch("checklist.json?" + Date.now(), {cache:"no-store"}).then(r => r.ok ? r.json() : null)
+    .then(c => { if (c) { CK = c; renderChecklist(); } }).catch(() => {});
+}
+caricaChecklist();
+/* le spunte fatte da un altro telefono arrivano senza ricaricare */
+setInterval(() => { if (!document.hidden && !document.querySelector("input:focus")) leggiSpunte(); }, 15000);
+
+/* ---------- come va ogni cliente ----------
+   Semaforo dalle ultime due settimane (giornaliero di Meta, hiring escluso):
+   rosso  = creative da staccare ancora accese, 0 lead in 7 giorni con almeno
+            la soglia "0 lead" spesa, o CPL 7 gg sopra il tetto di allarme
+   giallo = CPL 7 gg sopra il limite di stacco, peggiorato oltre il 30% sulla
+            settimana prima, o 5 giorni senza lead
+   verde  = il resto. */
+const esitiCli = c => {
+  const e = c.esiti_creative; if (!e) return null;
+  return {apt: e.totale_creative.apt2 + e.senza_creativa.apt2, chiusi: e.totale_creative.chiusi + e.senza_creativa.chiusi};
+};
+function salute(c){
+  const R = DATA.regole, a = c.andamento || {}, u = a.ultimi7 || {}, p = a.prima7 || {};
+  const allarme = R.cpl_allarme_pochi_lead_eur || 35, kill = R.cpl_kill_eur || 25;
+  const zero = R.spend_kill_zero_lead_eur || 30;
+  const m = []; let liv = 0;
+  if (c.n_kill_ancora_accese > 0){ liv = 2; m.push(`${c.n_kill_ancora_accese} ${c.n_kill_ancora_accese === 1 ? "creativa da staccare ancora accesa" : "creative da staccare ancora accese"}`); }
+  if (!u.lead && (u.spesa || 0) >= zero){ liv = 2; m.push(`0 lead in 7 giorni con ${eur0(u.spesa)} spesi`); }
+  else if (u.cpl > allarme){ liv = 2; m.push(`CPL 7 gg sopra ${eur0(allarme)}`); }
+  else if (u.cpl > kill){ liv = Math.max(liv, 1); m.push(`CPL 7 gg sopra ${eur0(kill)}`); }
+  if (u.cpl && p.cpl && u.cpl > p.cpl * 1.3){ liv = Math.max(liv, 1); m.push(`CPL peggiorato del ${Math.round((u.cpl / p.cpl - 1) * 100)}% sulla settimana prima`); }
+  if (a.giorni_da_ultimo_lead >= 5){ liv = Math.max(liv, 1); m.push(`ultimo lead ${a.giorni_da_ultimo_lead} giorni fa`); }
+  return {liv, m, u, p, a};
+}
+function spark(serie, kill){
+  if (!serie || !serie.length) return "";
+  const W = 300, H = 46, n = serie.length, bw = W / n;
+  const maxL = Math.max(1, ...serie.map(x => x.l));
+  const cpl = serie.map((x, i) => {
+    if (i < 6) return null;
+    const w = serie.slice(i - 6, i + 1), s = w.reduce((t, y) => t + y.s, 0), l = w.reduce((t, y) => t + y.l, 0);
+    return l ? s / l : null;
+  });
+  const top = Math.max(kill * 2, ...cpl.filter(v => v != null).map(v => Math.min(v, kill * 3)));
+  const y = v => H - 2 - Math.min(v, top) / top * (H - 6);
+  let path = "", su = false;
+  cpl.forEach((v, i) => { if (v == null){ su = false; return; }
+    path += (su ? "L" : "M") + (i * bw + bw / 2).toFixed(1) + " " + y(v).toFixed(1); su = true; });
+  return `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-label="lead al giorno e CPL a 7 giorni, ultimi 30 giorni">
+    ${serie.map((x, i) => x.l ? `<rect x="${(i * bw + 1).toFixed(1)}" y="${(H - x.l / maxL * (H * .55)).toFixed(1)}" width="${(bw - 2).toFixed(1)}" height="${(x.l / maxL * (H * .55)).toFixed(1)}" rx="1" fill="var(--accent)" opacity=".45"><title>${gg(x.g)}: ${x.l} lead, ${eur(x.s)}</title></rect>` : "").join("")}
+    <line x1="0" x2="${W}" y1="${y(kill).toFixed(1)}" y2="${y(kill).toFixed(1)}" stroke="var(--muted)" stroke-dasharray="3 3" stroke-width="1" vector-effect="non-scaling-stroke"/>
+    <path d="${path}" fill="none" stroke="var(--ink)" stroke-width="1.8" vector-effect="non-scaling-stroke"/></svg>`;
+}
+const STLAB = ["IN LINEA", "DA GUARDARE", "DA SISTEMARE"];
+function renderGriglia(sel){
+  const host = document.getElementById("griglia");
+  const kill = DATA.regole.cpl_kill_eur || 25;
+  const righe = sel.map(c => ({c, h: salute(c), e: esitiCli(c)}));
+  const peso = r => r.h.u.lead ? r.h.u.cpl : 1e6 + (r.h.u.spesa || 0);
+  righe.sort((a, b) => b.h.liv - a.h.liv || peso(b) - peso(a));
+  host.innerHTML = righe.map(({c, h, e}) => {
+    const u = h.u, p = h.p, a = h.a;
+    const tr = (u.cpl && p.cpl) ? (u.cpl > p.cpl
+        ? `<span class="tr up">▲ da ${eur(p.cpl)}</span>` : `<span class="tr down">▼ da ${eur(p.cpl)}</span>`)
+      : (p.cpl ? `<span class="tr" style="color:var(--muted)">prima ${eur(p.cpl)}</span>` : "");
+    const col = !u.spesa ? "var(--muted)" : !u.lead ? "var(--crit)" : u.cpl > (DATA.regole.cpl_allarme_pochi_lead_eur || 35) ? "var(--crit)"
+      : u.cpl > kill ? "var(--warn)" : "var(--good)";
+    return `<button class="cc l${h.liv}" data-alias="${esc(c.alias)}">
+      <div class="cc-top"><b>${esc(nomeCli(c))}</b><span class="cc-st">${STLAB[h.liv]}</span></div>
+      <div class="k" style="margin-top:9px">CPL ultimi 7 giorni</div>
+      <div class="cc-big"><span class="v mono" style="color:${col}">${u.lead ? eur(u.cpl) : u.spesa ? "0 lead" : "nessuna spesa"}</span>${tr}</div>
+      <div class="cc-nums">
+        <div><div class="k">Lead 7g</div><div class="v mono">${int(u.lead)}<span class="k"> / ${int(p.lead)}</span></div></div>
+        <div><div class="k">Ultimo</div><div class="v mono">${a.giorni_da_ultimo_lead == null ? "n.d." : a.giorni_da_ultimo_lead === 0 ? "oggi" : a.giorni_da_ultimo_lead + " gg"}</div></div>
+        <div><div class="k">Apt</div><div class="v mono">${e ? int(e.apt) : "n.d."}</div></div>
+        <div><div class="k">Clienti</div><div class="v mono" style="color:${e && e.chiusi ? "var(--good)" : "inherit"}">${e ? int(e.chiusi) : "n.d."}</div></div>
+      </div>
+      ${spark(a.serie, kill)}
+      <div class="cc-why">${h.m.length ? h.m.map(esc).join(" · ") : "nessun segnale storto nelle ultime due settimane"}</div>
+    </button>`;
+  }).join("") || `<div class="empty">Nessun account con spesa nel periodo.</div>`;
+  document.getElementById("legenda").innerHTML = `Lead 7g: ultimi 7 giorni / i 7 prima. Ultimo: giorni dall'ultimo lead. Apt e clienti: caselle 2 APT e CHIUSO dei moduli, tutto lo storico.
+    Grafico: barre = lead al giorno negli ultimi 30 giorni, linea = CPL mobile a 7 giorni, tratteggio = limite di stacco ${eur0(kill)}.
+    Rosso: creative da staccare accese, 0 lead in 7 giorni o CPL 7 gg sopra ${eur0(DATA.regole.cpl_allarme_pochi_lead_eur || 35)}.
+    Giallo: CPL 7 gg sopra ${eur0(kill)}, peggiorato oltre il 30% o 5 giorni senza lead.`;
+  host.querySelectorAll(".cc").forEach(b => b.addEventListener("click", () => {
+    const el = document.querySelector(`.client[data-alias="${CSS.escape(b.dataset.alias)}"]`);
+    if (!el) return;
+    el.classList.add("open");
+    el.scrollIntoView({behavior: "smooth", block: "start"});
+  }));
+}
+
+/* ---------- statiche che portano ----------
+   Le creative con almeno un appuntamento (2 APT) o un cliente (CHIUSO) nei
+   moduli, in due blocchi: prima quelle che hanno portato clienti, poi quelle
+   che hanno portato solo appuntamenti. L'immagine arriva da thumbs.enc (si vede
+   sbloccando i nomi) o, nel privato, da thumbs.json. */
+function renderStatiche(sel){
+  const host = document.getElementById("statiche");
+  if (!sel.some(c => c.esiti_creative)){
+    host.innerHTML = `<div class="empty">Per questo account non c'è un modulo lead collegato.</div>`; return;
+  }
+  const r = [];
+  const T = {lead:0, apt2:0, chiusi:0, k100:0, s_apt2:0, s_chiusi:0, s_k100:0, spesa:0};
+  let letto = null;
+  sel.forEach(c => {
+    const e = c.esiti_creative; if (!e) return;
+    letto = letto || e.letto;
+    (e.righe || []).forEach(x => { if (x.apt2 || x.chiusi || x.k100) r.push({...x, cli: c}); });
+    const t = e.totale_creative || {}, z = e.senza_creativa || {};
+    T.lead += t.lead || 0; T.apt2 += t.apt2 || 0; T.chiusi += t.chiusi || 0; T.spesa += t.spesa || 0;
+    T.s_apt2 += z.apt2 || 0; T.s_chiusi += z.chiusi || 0;
+    T.k100 += t.k100 || 0; T.s_k100 += z.k100 || 0;
+  });
+  const apt = T.apt2 + T.s_apt2, cli = T.chiusi + T.s_chiusi;
+  /* 26/10/2026: da dove sono arrivati clienti e appuntamenti. Piattaforma dal modulo lead,
+     posizionamento dagli insight Meta dell'ad nel giorno del lead (non univoco se quel giorno
+     piu' posizioni hanno portato lead). */
+  const PF = {fb: "Facebook", ig: "Instagram"};
+  const fonte = x => {
+    const cl = (x.fonti_clienti || []).map((f, i) => {
+      const g = f.giorno ? new Date(f.giorno + "T12:00").toLocaleDateString("it-IT", {day: "numeric", month: "numeric"}) : "";
+      return `<div><b>Cliente${x.fonti_clienti.length > 1 ? " " + (i + 1) : ""}:</b> ${esc(PF[f.piattaforma] || f.piattaforma)}`
+        + (f.posizione ? ` · ${esc(f.posizione)}` : "") + (f.nota ? ` <span style="color:var(--muted)">(${esc(f.nota)})</span>` : "")
+        + (g ? ` · lead del ${g}` : "") + `</div>`;
+    }).join("");
+    const ap = Object.entries(x.apt_piattaforme || {}).sort((a, b) => b[1] - a[1])
+      .map(([k, n]) => `${n} ${PF[k] || k}`).join(", ");
+    return cl || ap ? `<div class="nota" style="margin-top:6px">${cl}${ap ? `<div><b>Appuntamenti da:</b> ${esc(ap)}</div>` : ""}</div>` : "";
+  };
+  const card = x => {
+    const img = THUMBS && THUMBS[x.ad_id];
+    const costo = x.chiusi && x.costo_cliente ? eur(x.costo_cliente) + " per cliente · " : "";
+    return `<div class="st${x.chiusi || x.k100 ? " cli" : ""}">
+      <div class="img">${img ? `<img src="${img}" alt="${esc(x.nome)}" loading="lazy">`
+        : esc(x.nome) + (DATA.nomi_sbloccabili && !THUMBS ? `<br><span style="font-size:11px">immagine visibile con "Mostra nomi veri"</span>` : "")}</div>
+      <div class="tx"><div class="c">${esc(nomeCli(x.cli))}</div>
+        <div class="n">${esc(x.nome)}</div>
+        <div class="res">
+          <div><div class="k">Clienti</div><div class="v mono" style="color:${x.chiusi ? "var(--good)" : "inherit"}">${int(x.chiusi)}</div></div>
+          <div><div class="k">Apt 100k</div><div class="v mono" style="color:${x.k100 ? "var(--good)" : "inherit"}">${int(x.k100)}</div></div>
+          <div><div class="k">Apt</div><div class="v mono">${int(x.apt2)}</div></div>
+          <div><div class="k">Lead</div><div class="v mono">${int(x.lead)}</div></div>
+        </div>
+        ${fonte(x)}
+        <div class="nota">${costo}${x.costo_apt ? eur(x.costo_apt) + " per appuntamento · " : ""}${x.lead ? Math.round(x.apt2 / x.lead * 100) + "% lead → apt · " : ""}${x.attiva ? "accesa"
+          : x.copia_accesa ? "accesa in copia (stessa immagine)"
+          : "spenta: prima di riaccenderla o duplicarla, controllo ads-bocciate"}</div>
+      </div></div>`;
+  };
+  const rC = r.filter(x => x.chiusi || x.k100).sort((a, b) => b.chiusi - a.chiusi || b.k100 - a.k100 || b.apt2 - a.apt2 || (a.costo_cliente || 1e9) - (b.costo_cliente || 1e9));
+  const rA = r.filter(x => !x.chiusi && !x.k100).sort((a, b) => b.apt2 - a.apt2 || (a.costo_apt || 1e9) - (b.costo_apt || 1e9));
+  const blocco = (titolo, righe, vuoto) => `<h3 class="h3">${titolo} <span style="color:var(--muted);font-weight:400">${righe.length}</span></h3>
+    ${righe.length ? `<div class="galleria">${righe.map(card).join("")}</div>` : `<div class="empty">${vuoto}</div>`}`;
+  host.innerHTML = `<div class="tiles">
+      ${tile("Clienti arrivati", int(cli), `${int(T.chiusi)} da creative ads${apt ? " · " + Math.round(cli / apt * 100) + "% degli appuntamenti" : ""}`, cli ? "" : "act")}
+      ${tile("Appuntamenti 100k", int(T.k100 + T.s_k100), `${int(T.k100)} da creative ads · patrimonio sopra 100k`)}
+      ${tile("Appuntamenti fatti", int(apt), `${int(T.apt2)} da creative ads · ${T.lead ? Math.round(T.apt2 / T.lead * 100) : 0}% di ${int(T.lead)} lead`)}
+      ${tile("Costo medio per appuntamento", T.apt2 && T.spesa ? eur(T.spesa / T.apt2) : "n.d.", "spesa delle creative con lead nei moduli ÷ appuntamenti")}
+    </div>
+    ${blocco("Hanno portato clienti e appuntamenti 100k", rC, "Nessuna statica ha ancora portato un cliente chiuso o un appuntamento 100k.")}
+    ${blocco("Hanno portato appuntamenti", rA, "Nessun'altra statica ha portato appuntamenti.")}
+    <p class="sub" style="margin-top:10px">Dai moduli lead${letto ? ", letti il " +
+      new Date(letto).toLocaleString("it-IT",{dateStyle:"short",timeStyle:"short"}) : ""}: per i clienti appuntamento = Fatto
+      nel Modulo Fatturato, appuntamento 100k = Fatto con patrimonio sopra 100k, cliente = Chiuso nel Modulo Fatturato o
+      casella CHIUSO del foglio lead; per casa nostra caselle 2 APT e CHIUSO del modulo. Sommati su tutto lo storico. Il costo usa la spesa della creativa nel periodo del cockpit.</p>`;
+}
+
+function posLine(c){
+  const tutte = (c.posizionamenti || {}).voci || [];
+  if (!tutte.length) return "";
+  /* sotto i 5 euro nel periodo non dicono niente: una voce sola "altri" */
+  const v = tutte.filter(p => p.spend >= 5 || p.da_staccare);
+  const resto = tutte.filter(p => !v.includes(p));
+  if (resto.length) v.push({nome:`altri ${resto.length}`, reason:resto.map(p => p.nome).join(", "),
+    spend:resto.reduce((t,p) => t + p.spend, 0), leads:resto.reduce((t,p) => t + p.leads, 0)});
+  const periodo = (c.posizionamenti || {}).periodo || "durata massima";
+  return `<div class="pos"><span class="pl">Posizionamenti, ${esc(periodo)}:</span>${v.map(p =>
+    `<span class="p ${p.da_staccare ? "kill" : ""}" title="${esc(p.reason)}">${esc(p.nome)} ${eur0(p.spend)} · ${int(p.leads)} lead${
+      p.cpl ? " · " + eur0(p.cpl) : ""}${p.da_staccare ? " · stacca" : ""}</span>`).join("")}</div>`;
+}
+
+function renderClienti(){
+  const d = DATA, sel = scope();
+  const maxSpr = Math.max(...sel.map(c => c.sprecato), 1);
+  const host = document.getElementById("clienti");
+  document.getElementById("ntitle").textContent =
+    state.cliente ? "· " + nomeCli(sel[0] || {alias:state.cliente}) : (d.sottotitolo ? "· " + d.sottotitolo : "");
+
+  host.innerHTML = sel.map(c => {
+    const camp = c.campagne.filter(k =>
+      (!state.stato || k.status === state.stato) && (!state.soloAttive || k.attiva));
+    const open = state.expand || sel.length === 1 || c.n_kill_ancora_accese > 0;
+    return `
+    <div class="client ${open ? "open" : ""}" data-alias="${esc(c.alias)}">
+      <div class="chead" role="button" tabindex="0">
+        <div class="alias">${esc(nomeCli(c))}${c.solo_nostre_dal ? `<span style="margin-left:8px;font-size:11px;font-weight:400;color:var(--muted)">solo nostre ads, dal ${esc(gg(c.solo_nostre_dal))}</span>` : ""}</div>
+        <div><div class="k">Spesa</div><div class="v mono">${eur0(c.spend)}</div></div>
+        <div><div class="k">Lead</div><div class="v mono">${int(c.leads)}</div></div>
+        <div><div class="k">CPL creative accese</div><div class="v mono" style="color:${
+          vCpl(c) == null ? "var(--muted)" : c.n_kill_ancora_accese > 0 ? "var(--crit)"
+          : vCpl(c) <= d.regole.cpl_winner_eur ? "var(--good)" : "inherit"}">${
+          vCpl(c) ? eur(vCpl(c)) : "n/d"}</div>${
+          c.cpl ? `<div class="k">storico ${eur(c.cpl)}</div>` : ""}</div>
+        <div><div class="k">CVR creative accese</div><div class="v mono" style="color:${
+          vCvr(c) == null ? "var(--muted)" : vCvr(c) < CVRMIN ? "var(--crit)" : "var(--good)"}">${
+          vCvr(c) == null ? "n/d" : vCvr(c).toFixed(1) + "%"}</div></div>
+        <div><div class="k">Sprecato</div><div class="v mono" style="color:var(--crit)">${eur0(c.sprecato)}</div></div>
+        <div class="spark"><div class="k">${c.quota_sprecata}% sprecato · ${c.n_kill} fuori regola${
+          c.n_kill_ancora_accese ? `, <b style="color:var(--crit)">${c.n_kill_ancora_accese} accese</b>` : ""}</div>
+          <div class="bar"><i style="width:${Math.max(2, c.sprecato / maxSpr * 100)}%"></i></div></div>
+        <div class="caret">›</div>
+      </div>
+      <div class="cbody">${posLine(c)}${camp.length ? `
+        <table><thead><tr>
+          <th>Creativa</th><th>Stato</th><th>Spesa</th><th>Lead</th><th>CPL</th>
+          <th>CPL 7g</th><th>CTR</th><th>CVR</th><th>Sprecato</th></tr></thead><tbody>
+          ${camp.map(k => {
+            const ads = (k.ads || []).filter(a => !state.soloAttive || a.attiva);
+            const v = k.vivo;
+            const rigaCamp = `<tr class="camp ${k.attiva ? "" : "off"}">
+            <td class="cname"><div class="n">${esc(nomeCamp(k))}${
+              k.attiva ? "" : `<span class="tag-off">${esc(k.effective_status)}</span>`}</div>
+              <div class="r">${esc(k.reason)}</div>
+              ${k.flags.map(f => `<div class="flag${f.startsWith("DA RIPROVARE") ? " riprova" : ""}">${esc(f)}</div>`).join("")}</td>
+            <td>${chip(k.status)}</td>
+            <td class="mono">${eur(k.spend)}</td>
+            <td class="mono">${int(k.leads)}</td>
+            <td class="mono">${v && v.cpl ? eur(v.cpl) : "—"}${
+              k.cpl ? `<div class="k">storico ${eur(k.cpl)}</div>` : ""}</td>
+            <td class="mono">${v && v.recent_cpl ? eur(v.recent_cpl) : '<span style="color:var(--muted)">—</span>'}</td>
+            <td class="mono">${v && v.ctr ? v.ctr.toFixed(2) + "%" : "—"}</td>
+            <td class="mono" style="color:${
+              !v || v.cvr == null ? "var(--muted)"
+              : (v.link_clicks >= (R2().cvr_min_clicks || 30) && v.cvr < CVRMIN) ? "var(--crit)"
+              : v.cvr >= CVRMIN ? "var(--good)" : "inherit"}">${
+              !v || v.cvr == null ? "—" : v.cvr.toFixed(1) + "%"}</td>
+            <td class="mono" style="color:${k.sprecato > 0 ? "var(--crit)" : "var(--muted)"}">${
+              k.sprecato > 0 ? eur(k.sprecato) : "—"}</td>
+          </tr>`;
+            const righeAds = ads.map(a => `<tr class="ad ${a.attiva ? "" : "off"}">
+            <td class="cname"><div class="n">↳ ${esc(a.name)}${
+              a.attiva ? "" : `<span class="tag-off">${esc(a.effective_status)}</span>`}</div>
+              <div class="r">${esc(a.reason)}</div></td>
+            <td>${chip(a.status)}</td>
+            <td class="mono">${eur(a.spend)}</td>
+            <td class="mono">${int(a.leads)}</td>
+            <td class="mono">${a.cpl ? eur(a.cpl) : "—"}</td>
+            <td class="mono">${a.recent && a.recent.cpl ? eur(a.recent.cpl) + (
+                a.trend ? ` <span class="${a.trend > 0 ? "up" : "down"}">${a.trend > 0 ? "▲" : "▼"}</span>` : "")
+              : '<span style="color:var(--muted)">—</span>'}</td>
+            <td class="mono">${a.ctr ? a.ctr.toFixed(2) + "%" : "—"}</td>
+            <td class="mono" style="color:${
+              a.cvr == null ? "var(--muted)"
+              : (a.link_clicks >= (R2().cvr_min_clicks || 30) && a.cvr < CVRMIN) ? "var(--crit)"
+              : a.cvr >= CVRMIN ? "var(--good)" : "inherit"}">${
+              a.cvr == null ? "—" : a.cvr.toFixed(1) + "%"}</td>
+            <td class="mono" style="color:${a.sprecato > 0 ? "var(--crit)" : "var(--muted)"}">${
+              a.sprecato > 0 ? eur(a.sprecato) : "—"}</td>
+          </tr>`).join("");
+            return rigaCamp + righeAds;
+          }).join("")}
+        </tbody></table>
+        <div style="font-size:12px;color:var(--muted);margin-top:6px">
+          La riga della campagna e' il contenitore: spesa e lead sono il totale storico, CPL, CPL 7g, CTR e CVR
+          sono delle sole creative ancora accese. Le righe ↳ sono le singole creative.</div>`
+        : `<div class="empty">Nessuna campagna con questo filtro.</div>`}
+      </div>
+    </div>`;
+  }).join("");
+
+  host.querySelectorAll(".chead").forEach(h => {
+    const toggle = () => h.parentElement.classList.toggle("open");
+    h.addEventListener("click", toggle);
+    h.addEventListener("keydown", e => {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggle(); }
+    });
+  });
+
+  /* account collegati ma fermi: solo nella vista d'insieme */
+  const fermi = (!state.cliente && DATA.fermi) ? DATA.fermi : [];
+  document.getElementById("fermi").innerHTML = fermi.length
+    ? `<div style="width:100%;color:var(--muted);font-size:12.5px;margin-top:14px">
+         Collegati ma senza spesa nel periodo:</div>` +
+      fermi.map(f => `<div class="fermo"><b>${esc(nomeCli(f))}</b> · nessuna campagna attiva</div>`).join("")
+    : "";
+
+  document.getElementById("foot").innerHTML =
+    `Fonte: Meta Marketing API, letta direttamente dagli ad account.
+     Budget sprecato = euro usciti oltre il punto in cui la regola diceva di staccare.
+     ${DATA.errori.length ? `<br><span style="color:var(--serious)">${DATA.errori.length} account non letti in questo giro.</span>` : ""}`;
+}
+
+/* ---------- controlli ---------- */
+document.getElementById("fCliente").addEventListener("change", e => {
+  state.cliente = e.target.value;
+  const u = new URL(location);
+  state.cliente ? u.searchParams.set("cliente", state.cliente) : u.searchParams.delete("cliente");
+  history.replaceState(null, "", u);   // il link nella barra resta condivisibile
+  render();
+});
+document.getElementById("fStato").addEventListener("change", e => {
+  state.stato = e.target.value; renderClienti();
+});
+document.getElementById("fAttive").addEventListener("click", e => {
+  state.soloAttive = !state.soloAttive;
+  e.target.setAttribute("aria-pressed", state.soloAttive); renderClienti();
+});
+document.getElementById("fExp").addEventListener("click", e => {
+  state.expand = !state.expand;
+  e.target.setAttribute("aria-pressed", state.expand); renderClienti();
+});
+document.getElementById("unlock").addEventListener("click", e => {
+  if (NAMES){
+    NAMES = null; THUMBS = THUMBS_CHIARO; sessionStorage.removeItem("adscockpit_pw");
+    e.target.textContent = "Mostra nomi veri";
+    e.target.setAttribute("aria-pressed","false");
+    render(); return;
+  }
+  const p = prompt("Passphrase per vedere i nomi veri di clienti e campagne:");
+  if (p) unlock(p, false);
+});
+
+
+/* ---------- ALLARMI DI CONFIGURAZIONE ---------- */
+/* Blocco "Campagne e moduli nati male" tolto dalla pagina il 16/9/2026 su richiesta di Francesco:
+   il collaudo resta in privato/allarmi.json e nella notifica, non in dashboard. */
+
+/* ---------- COSTI CHE SCAPPANO ---------- */
+const COSTI_COL = {scappato:"var(--crit)", nuovo:"var(--accent)", sparito:"var(--muted)", stabile:"var(--good)"};
+const COSTI_LAB = {scappato:"sta scappando", nuovo:"nuovo", sparito:"sparito", stabile:"stabile"};
+fetch("costi.json", {cache:"no-store"}).then(r => r.ok ? r.json() : null).then(d => {
+  if (!d || !d.voci) return;
+  const el = document.getElementById("costi");
+  const righe = d.voci.slice(0,20).map(v => `<tr>
+      <td>${v.voce}</td>
+      <td class="num">${eur0(v.mese_corrente)}</td>
+      <td class="num">${v.atteso_a_oggi == null ? "—" : eur0(v.atteso_a_oggi)}</td>
+      <td class="num">${v.variazione == null ? "—" : (v.variazione > 0 ? "+" : "") + v.variazione + "%"}</td>
+      <td style="color:${COSTI_COL[v.stato]};font-weight:650">${COSTI_LAB[v.stato]}</td>
+    </tr>`).join("");
+  el.innerHTML = `
+    <h2 style="font-size:17px;margin:38px 0 6px">Costi che scappano</h2>
+    <p style="font-size:12.5px;color:var(--muted);line-height:1.55;margin:0 0 12px">
+      Spese Zoho del mese in corso (${d.quota_mese}% di mese trascorso) contro la media dei due mesi
+      precedenti, riportata ai giorni gia' passati.
+      <b style="color:var(--ink)">${eur0(d.extra_del_mese)} di troppo</b> su ${d.n_scappati} voci fuori passo ·
+      ${d.n_nuovi} nuove · ${d.n_spariti} sparite. Totale mese ${eur0(d.totale_corrente)},
+      mese scorso ${eur0(d.totale_m1)}.
+    </p>
+    <table>
+      <thead><tr><th>Voce</th><th class="num">Speso ora</th><th class="num">Atteso a oggi</th>
+      <th class="num">Scarto</th><th>Stato</th></tr></thead>
+      <tbody>${righe || '<tr><td colspan="5">Nessun costo sopra la soglia.</td></tr>'}</tbody>
+    </table>
+    <p style="font-size:12px;color:var(--muted);margin-top:10px">
+      Fonte Zoho Books, spese reali. "Atteso a oggi" = media dei due mesi precedenti riportata
+      ai giorni trascorsi, quindi confronta mele con mele a meta' mese. Aggiornato ${d.generato}.
+    </p>`;
+  el.hidden = false;
+}).catch(() => {});
+</script>
+<style id="tema-blu">
+:root, :root[data-theme], html, body {
+  --bg: #0B1A3A !important;
+  --paper: #0B1A3A !important;
+  --plane: #0B1A3A !important;
+  --panel: rgba(30,64,140,.42) !important;
+  --surface: rgba(30,64,140,.42) !important;
+  --card: rgba(30,64,140,.42) !important;
+  --white: rgba(30,64,140,.42) !important;
+  --panel2: rgba(52,98,196,.45) !important;
+  --card2: rgba(52,98,196,.45) !important;
+  --soft: rgba(255,255,255,.08) !important;
+  --ink: #F3F6FD !important;
+  --txt: #F3F6FD !important;
+  --ink2: #D6E0F5 !important;
+  --muted: #A9BBE0 !important;
+  --faint: #7F93BF !important;
+  --muted2: #7F93BF !important;
+  --line: rgba(150,190,255,.20) !important;
+  --border: rgba(150,190,255,.20) !important;
+  --grid: rgba(150,190,255,.12) !important;
+  --track: rgba(255,255,255,.10) !important;
+  --accent: #FFD21F !important;
+  --gold: #D4A537 !important;
+  --yellow: #FFD21F !important;
+  --navy: #0E2454 !important;
+  --navy2: #1A3A80 !important;
+  --blue: #6EA8FF !important;
+  --accent2: #8FB3FF !important;
+  --violet: #8FB3FF !important;
+  --green: #4FD1A1 !important;
+  --jade: #4FD1A1 !important;
+  --good: #4FD1A1 !important;
+  --ok: #4FD1A1 !important;
+  --amber: #F5B942 !important;
+  --warn: #F5B942 !important;
+  --serious: #FF9A6B !important;
+  --red: #FF7A59 !important;
+  --crit: #FF7A59 !important;
+  --shadow: 0 10px 30px rgba(0,0,0,.30) !important;
+  --shadow-lg: 0 16px 40px rgba(0,0,0,.35) !important;
+  --surface-2: rgba(52,98,196,.45) !important;
+  --panel-2: rgba(52,98,196,.45) !important;
+  --text: #F3F6FD !important;
+  --green-ink: #4FD1A1 !important;
+  --amber-soft: rgba(245,185,66,.16) !important;
+  --gold-soft: rgba(245,185,66,.16) !important;
+  --jade-soft: rgba(79,209,161,.16) !important;
+  --green-soft: rgba(79,209,161,.16) !important;
+  --red-soft: rgba(255,122,89,.16) !important;
+  --blue-soft: rgba(110,168,255,.16) !important;
+  --border-strong: rgba(150,190,255,.32) !important;
+  --line-2: rgba(150,190,255,.32) !important;
+  --gold-line: rgba(212,165,55,.55) !important;
+  color-scheme: dark;
+}
+html { background: #0B1A3A !important; }
+body { background: radial-gradient(900px 600px at 0% -10%, rgba(212,165,55,.38), transparent 60%),
+  radial-gradient(900px 700px at 100% 0%, rgba(59,130,246,.55), transparent 62%),
+  radial-gradient(1000px 800px at 50% 100%, rgba(37,99,235,.35), transparent 65%),
+  linear-gradient(180deg, #13306b 0%, #0e2454 45%, #0B1A3A 100%) !important; background-attachment: fixed !important; color: #F3F6FD; min-height: 100vh; }
+.wrap { background: transparent !important; }
+a { color: inherit; }
+table th { color: #A9BBE0; }
+::selection { background: rgba(255,210,31,.35); }
+</style>
+</body>
+</html>

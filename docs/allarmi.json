@@ -1,5 +1,5 @@
 {
- "generato": "29/10 04:03",
+ "generato": "30/10 04:03",
  "n_account_rossi": 21,
  "n_puliti": 0,
  "puliti": [],
@@ -65,28 +65,10 @@
    "gravita": 3
   },
   {
-   "cliente": "ORO-AZ",
-   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "facebook/facebook_reels · 0.56 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
-   "gravita": 3
-  },
-  {
    "cliente": "ZAP",
    "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
    "dettaglio": "Lead Gen N2 Alessandro Zaghini",
    "gravita": 3
-  },
-  {
-   "cliente": "ZAP",
-   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "facebook/facebook_reels · 0.56 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
-   "gravita": 3
-  },
-  {
-   "cliente": "CF-DDB",
-   "tipo": "PIU' DI UN MODULO VIVO",
-   "dettaglio": "Lead Dal Bosco Davide, Lead Davide Dal Bosco",
-   "gravita": 2
   },
   {
    "cliente": "CF-LM",
@@ -129,6 +111,12 @@
    "tipo": "CARTELLA DRIVE NON TROVATA",
    "dettaglio": "attesa «Clienti10X - Zaghini Account Pubblicitario»",
    "gravita": 2
+  },
+  {
+   "cliente": "AEA-HOUSE",
+   "tipo": "FUORI REGOLA",
+   "dettaglio": "CF - Modulo 1 / CF statica Copia 2 (ripresa 23/10) - Copia · 31.24 € e 0 lead",
+   "gravita": 1
   },
   {
    "cliente": "CF-CC",

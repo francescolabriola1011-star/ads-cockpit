@@ -1,5 +1,17 @@
 [
  {
+  "quando": "2026-10-30T09:07:52+02:00",
+  "account": "859478370532394",
+  "campagna": "CF - Modulo 1",
+  "annuncio": "CF statica Copia 2 (ripresa 23/10) - Copia",
+  "ad_id": "120250897763000629",
+  "campaign_id": "120249502985680629",
+  "motivo": "€33.09 spesi e 0 lead (limite €30)",
+  "spesa": 33.09,
+  "lead": 0.0,
+  "eseguito": true
+ },
+ {
   "quando": "2026-10-29T09:07:38+02:00",
   "account": "859478370532394",
   "campagna": "CF - Modulo 1",
