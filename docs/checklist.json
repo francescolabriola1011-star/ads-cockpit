@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-30T13:24:05+01:00",
+ "generato": "2026-10-30T17:46:38+01:00",
  "procedura": "https://docs.google.com/document/d/1vn5K-biqWNt40FmqPAzCpsSSZcaTjX25dpWTKnxVoyQ/edit",
  "cartella": "https://drive.google.com/drive/folders/13BFaDvX2ShhlhR4qHG1U5B01BmsE9G5m",
  "sezioni": [
@@ -7,7 +7,15 @@
    "id": "chiudere",
    "titolo": "Da chiudere",
    "sotto": "Le cose dette in riunione o in chat. Quando la spunti, si chiude anche nel registro.",
-   "voci": [],
+   "voci": [
+    {
+     "k": "ckcsm:mb|imp|223",
+     "t": "Confermare se il trigger guida vista nei primi 5 minuti toglie ancora i lead dal flusso WA 2, e cambiarlo se si'",
+     "d": "",
+     "m": "entro il 01/11",
+     "c": "ok"
+    }
+   ],
    "vuoto": "Niente di aperto."
   },
   {
@@ -537,5 +545,13 @@
    ]
   }
  ],
- "imminenti": []
+ "imminenti": [
+  {
+   "k": "ckcsm:mb|imp|223",
+   "t": "Confermare se il trigger guida vista nei primi 5 minuti toglie ancora i lead dal flusso WA 2, e cambiarlo se si'",
+   "d": "",
+   "m": "entro il 01/11",
+   "c": "ok"
+  }
+ ]
 }
