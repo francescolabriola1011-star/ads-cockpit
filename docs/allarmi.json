@@ -1,5 +1,5 @@
 {
- "generato": "30/10 04:03",
+ "generato": "31/10 04:09",
  "n_account_rossi": 21,
  "n_puliti": 0,
  "puliti": [],
@@ -47,6 +47,18 @@
    "gravita": 3
   },
   {
+   "cliente": "CF-MDG",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "instagram/instagram_reels · 1.08 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-MLC",
+   "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
+   "dettaglio": "Lead Gen 2N - Marco La Corte",
+   "gravita": 3
+  },
+  {
    "cliente": "CF-MP",
    "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
    "dettaglio": "Lead 2N - Marco Pellegatta",
@@ -71,9 +83,15 @@
    "gravita": 3
   },
   {
-   "cliente": "CF-LM",
+   "cliente": "CF-FR",
    "tipo": "PIU' DI UN MODULO VIVO",
-   "dettaglio": "Lead Micheloni Luigi, Lead Luigi Micheloni",
+   "dettaglio": "Lead Ricciarelli Fabio, Lead Gen - 1 Q - Fabio Ricciarelli",
+   "gravita": 2
+  },
+  {
+   "cliente": "CF-MLC",
+   "tipo": "PIU' DI UN MODULO VIVO",
+   "dettaglio": "Lead La Corte Marco, Lead Marco La Corte",
    "gravita": 2
   },
   {
@@ -86,12 +104,6 @@
    "cliente": "DDB",
    "tipo": "CARTELLA DRIVE NON TROVATA",
    "dettaglio": "attesa «Clienti10X - Davide Dal Bosco - Consulente Finanziario»",
-   "gravita": 2
-  },
-  {
-   "cliente": "LMB",
-   "tipo": "PIU' DI UN MODULO VIVO",
-   "dettaglio": "Lead Micheloni Luigi, Lead Luigi Micheloni",
    "gravita": 2
   },
   {
@@ -111,12 +123,6 @@
    "tipo": "CARTELLA DRIVE NON TROVATA",
    "dettaglio": "attesa «Clienti10X - Zaghini Account Pubblicitario»",
    "gravita": 2
-  },
-  {
-   "cliente": "AEA-HOUSE",
-   "tipo": "FUORI REGOLA",
-   "dettaglio": "CF - Modulo 1 / CF statica Copia 2 (ripresa 23/10) - Copia · 31.24 € e 0 lead",
-   "gravita": 1
   },
   {
    "cliente": "CF-CC",
