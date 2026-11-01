@@ -647,17 +647,20 @@ function renderVicini(sel){
     host.innerHTML = `<p class="sub">Nessun posizionamento vicino alla soglia.</p>`;
     return;
   }
-  host.innerHTML = voci.map(x => {
-    const p = x.pos;
-    const periodo = (x.cli.posizionamenti || {}).periodo || "durata massima";
-    const valore = p.leads ? `CPL ${eur(p.cpl)}` : `${eur(p.spend)} spesi · 0 lead`;
-    const distanza = p.leads ? "al limite CPL" : "al limite di spesa";
+  const perCli = new Map();
+  voci.forEach(x => { if (!perCli.has(x.cli)) perCli.set(x.cli, []); perCli.get(x.cli).push(x); });
+  host.innerHTML = [...perCli.entries()].map(([cli, posti]) => {
+    const periodo = (cli.posizionamenti || {}).periodo || "durata massima";
+    const righe = posti.map(x => {
+      const p = x.pos;
+      const valore = p.leads ? `CPL ${eur(p.cpl)}` : `${eur(p.spend)} spesi, 0 lead`;
+      return `${esc(p.posto || p.nome)}: ${valore}, mancano ${eur(limite - x.metro)}`;
+    }).join("<br>");
     return `<div class="act-row near">
-      <div class="who">${esc(nomeCli(x.cli))}</div>
-      <div><div class="what">${esc(p.posto || p.nome)}</div>
-        <div class="why">${esc(p.adset || "")} · ${esc(periodo)} · ${int(p.leads)} lead</div></div>
-      <div class="burn">${valore}<br>
-        <span style="color:var(--muted);font-weight:400">mancano ${eur(limite - x.metro)} ${distanza}</span></div>
+      <div class="who">${esc(nomeCli(cli))}</div>
+      <div><div class="what">${posti.length === 1 ? "1 posizionamento" : posti.length + " posizionamenti"} a limite</div>
+        <div class="why">${righe}<br>${esc(periodo)}</div></div>
+      <div class="burn"></div>
     </div>`;
   }).join("");
 }
