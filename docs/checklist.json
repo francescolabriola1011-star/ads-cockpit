@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-31T17:44:06+01:00",
+ "generato": "2026-11-01T07:09:29+01:00",
  "procedura": "https://docs.google.com/document/d/1vn5K-biqWNt40FmqPAzCpsSSZcaTjX25dpWTKnxVoyQ/edit",
  "cartella": "https://drive.google.com/drive/folders/13BFaDvX2ShhlhR4qHG1U5B01BmsE9G5m",
  "sezioni": [
@@ -12,8 +12,8 @@
      "k": "ckcsm:mb|imp|223",
      "t": "Confermare se il trigger guida vista nei primi 5 minuti toglie ancora i lead dal flusso WA 2, e cambiarlo se si'",
      "d": "",
-     "m": "entro il 01/11",
-     "c": "ok"
+     "m": "oggi",
+     "c": "oggi"
     }
    ],
    "vuoto": "Niente di aperto."
@@ -21,101 +21,101 @@
   {
    "id": "ads",
    "titolo": "Altre mosse ads",
-   "sotto": "Posizionamenti fuori regola e a limite, spesa senza lead, moduli sotto il 4% di CVR, vincenti. Si azzera domani.",
+   "sotto": "Posizionamenti fuori regola e a limite, spesa senza lead, moduli sotto il 4% di CVR, vincenti. Si azzera domani. Nota: dati del cockpit del 2026-10-31, non di oggi.",
    "voci": [
     {
-     "k": "ckcsm:mb|ads|lim|luigi-m-cf-lm:2026-10-31",
+     "k": "ckcsm:mb|ads|lim|luigi-m-cf-lm:2026-11-01",
      "t": "Luigi M. (CF-LM): 3 posizionamenti a limite",
      "d": "FB Reels CPL 44,03, IG Reels CPL 37,86, FB feed CPL 35,03. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|ads|lim|casa-nostra:2026-10-31",
+     "k": "ckcsm:mb|ads|lim|casa-nostra:2026-11-01",
      "t": "Casa nostra: 3 posizionamenti a limite",
      "d": "IG Reels 43,24 spesi, 0 lead, FB Reels 32,53 spesi, 0 lead, FB Storie CPL 31,93. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|ads|lim|alessandro-z-oro-az:2026-10-31",
+     "k": "ckcsm:mb|ads|lim|alessandro-z-oro-az:2026-11-01",
      "t": "Alessandro Z. (ORO-AZ): 1 posizionamento a limite",
      "d": "FB Storie 40,48 spesi, 0 lead. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|ads|lim|marcello-d-g-cf-mdg:2026-10-31",
+     "k": "ckcsm:mb|ads|lim|marcello-d-g-cf-mdg:2026-11-01",
      "t": "Marcello D.G. (CF-MDG): 1 posizionamento a limite",
      "d": "IG feed CPL 35,72. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|ads|lim|fabio-r-cf-fr:2026-10-31",
+     "k": "ckcsm:mb|ads|lim|fabio-r-cf-fr:2026-11-01",
      "t": "Fabio R. (CF-FR): 1 posizionamento a limite",
      "d": "FB Storie CPL 35,46. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|ads|lim|cosimo-c-cf-cc:2026-10-31",
+     "k": "ckcsm:mb|ads|lim|cosimo-c-cf-cc:2026-11-01",
      "t": "Cosimo C. (CF-CC): 1 posizionamento a limite",
      "d": "IG Reels CPL 34,84. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|ads|lim|marco-p-cf-mp:2026-10-31",
+     "k": "ckcsm:mb|ads|lim|marco-p-cf-mp:2026-11-01",
      "t": "Marco P. (CF-MP): 1 posizionamento a limite",
      "d": "FB feed CPL 33,72. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|ads|lim|raffaele-d-l-cf-rd:2026-10-31",
+     "k": "ckcsm:mb|ads|lim|raffaele-d-l-cf-rd:2026-11-01",
      "t": "Raffaele D.L. (CF-RD): 1 posizionamento a limite",
      "d": "IG feed CPL 33,68. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|ads|modulo|marco-l-c-cf-mlc:2026-10-31",
+     "k": "ckcsm:mb|ads|modulo|marco-l-c-cf-mlc:2026-11-01",
      "t": "Marco L.C. (CF-MLC): CVR 3,66% sotto il 4%",
      "d": "82 click al link, 3 lead. Si guarda il modulo, non l'annuncio.",
      "m": "modulo",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|ads|modulo|marco-p-cf-mp:2026-10-31",
+     "k": "ckcsm:mb|ads|modulo|marco-p-cf-mp:2026-11-01",
      "t": "Marco P. (CF-MP): CVR 0,00% sotto il 4%",
      "d": "38 click al link, 0 lead. Si guarda il modulo, non l'annuncio.",
      "m": "modulo",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|ads|modulo|davide-d-b-cf-ddb:2026-10-31",
+     "k": "ckcsm:mb|ads|modulo|davide-d-b-cf-ddb:2026-11-01",
      "t": "Davide D.B. (CF-DDB): CVR 3,98% sotto il 4%",
      "d": "176 click al link, 7 lead. Si guarda il modulo, non l'annuncio.",
      "m": "modulo",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|ads|modulo|fabio-r-cf-fr:2026-10-31",
+     "k": "ckcsm:mb|ads|modulo|fabio-r-cf-fr:2026-11-01",
      "t": "Fabio R. (CF-FR): CVR 3,33% sotto il 4%",
      "d": "30 click al link, 1 lead. Si guarda il modulo, non l'annuncio.",
      "m": "modulo",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|ads|scala|oro-statica-v1-14-giorni-e-x2-copia-2:2026-10-31",
+     "k": "ckcsm:mb|ads|scala|oro-statica-v1-14-giorni-e-x2-copia-2:2026-11-01",
      "t": "Casa nostra: vincente, valuta se scalare",
      "d": "ORO - statica v1 - 14 giorni e x2 - Copia 2: 27 lead a CPL 7.89. Lo decide Francesco.",
      "m": "vincente",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|ads|scala|cf-statica-copia-ripresa-23-10-copia:2026-10-31",
+     "k": "ckcsm:mb|ads|scala|cf-statica-copia-ripresa-23-10-copia:2026-11-01",
      "t": "Casa nostra: vincente, valuta se scalare",
      "d": "CF statica Copia (ripresa 23/10) - Copia: 3 lead a CPL 8.08. Lo decide Francesco.",
      "m": "vincente",
@@ -130,38 +130,38 @@
    "sotto": "Ogni giorno, prima delle 10. Si azzera domani. Accanto, quante volte e' stato fatto negli ultimi 5 giorni lavorativi.",
    "voci": [
     {
-     "k": "ckcsm:mb|g|cpl:2026-10-31",
+     "k": "ckcsm:mb|g|cpl:2026-11-01",
      "t": "CPL e CVR di ogni annuncio contro le soglie",
      "d": "Soglie in sezione 7. Si guarda l'annuncio, mai la campagna.",
-     "m": "4 su 5 giorni",
+     "m": "",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|g|lead:2026-10-31",
+     "k": "ckcsm:mb|g|lead:2026-11-01",
      "t": "Lead Meta, Foglio Lead e GHL coincidono",
      "d": "Un lead che manca in uno dei tre si recupera subito.",
-     "m": "4 su 5 giorni",
+     "m": "",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|g|target:2026-10-31",
+     "k": "ckcsm:mb|g|target:2026-11-01",
      "t": "Lead fuori target: subito al CSM con esempi",
      "d": "",
-     "m": "4 su 5 giorni",
+     "m": "",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|g|account:2026-10-31",
+     "k": "ckcsm:mb|g|account:2026-11-01",
      "t": "Account: pagamento, annunci rifiutati, blocchi",
      "d": "Un blocco si dice subito al cliente e al CSM.",
-     "m": "4 su 5 giorni",
+     "m": "",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|g|msg:2026-10-31",
+     "k": "ckcsm:mb|g|msg:2026-11-01",
      "t": "WhatsApp 1 e mail 1 consegnati ai lead di ieri",
      "d": "In GHL, sulle conversazioni. Fallito o fermo su inviato: trovi la causa, sistemi, lo dici al CSM.",
-     "m": "4 su 5 giorni",
+     "m": "",
      "c": ""
     }
    ],
@@ -255,7 +255,7 @@
      "t": "Entro il 5: fatturato, CAC e LTV nel KPI Tracker",
      "d": "Righe 36, 37, 38 di ogni cliente. Processo 04.",
      "m": "",
-     "c": ""
+     "c": "oggi"
     }
    ],
    "vuoto": "Niente qui."
@@ -268,15 +268,15 @@
   },
   {
    "t": "Ottobre: portare ogni cliente a 30 contatti, 6 appuntamenti, 2 appuntamenti oltre 100k",
-   "m": "oggi"
+   "m": "era il 31/10"
   },
   {
    "t": "Portare almeno 4 clienti su 12 sotto 15 euro di CPL a ottobre",
-   "m": "oggi"
+   "m": "era il 31/10"
   },
   {
    "t": "Portare almeno 5 lead a Alessandro Z. e chiudere il mese con CPL almeno a 30",
-   "m": "oggi"
+   "m": "era il 31/10"
   }
  ],
  "calendario": [
@@ -571,8 +571,8 @@
    "k": "ckcsm:mb|imp|223",
    "t": "Confermare se il trigger guida vista nei primi 5 minuti toglie ancora i lead dal flusso WA 2, e cambiarlo se si'",
    "d": "",
-   "m": "entro il 01/11",
-   "c": "ok"
+   "m": "oggi",
+   "c": "oggi"
   }
  ]
 }
