@@ -13512,14 +13512,6 @@
    "tipo": "una_volta"
   },
   {
-   "id": "CF-LM|mon|feed-ig",
-   "alias": "CF-LM",
-   "cosa": "Feed IG tolto: controllare che non rispettava le soglie",
-   "perche": "IG feed porta il 50% dei lead CF: si toglie solo se fuori soglia sul posizionamento",
-   "dal": "2026-10-23",
-   "tipo": "una_volta"
-  },
-  {
    "id": "ORO-AZ|mon|feed-ig",
    "alias": "ORO-AZ",
    "cosa": "Feed IG tolto: controllare che non rispettava le soglie",
@@ -13544,14 +13536,6 @@
    "tipo": "una_volta"
   },
   {
-   "id": "CF-LM|mon|modulo-senza-patrimonio",
-   "alias": "CF-LM",
-   "cosa": "Cambiare modulo: togliere la domanda sul patrimonio, come il modulo di CF-MDG",
-   "perche": "Il guasto e' il modulo: le creative girano e i click non diventano lead",
-   "dal": "2026-10-24",
-   "tipo": "una_volta"
-  },
-  {
    "id": "CF-DDB|mon|modulo-senza-patrimonio",
    "alias": "CF-DDB",
    "cosa": "Cambiare modulo: togliere la domanda sul patrimonio, come il modulo di CF-MDG",
@@ -13565,14 +13549,6 @@
    "cosa": "Variare la creativa per abbassare CPM e CPC",
    "perche": "Il guasto e' la creativa, non il modulo",
    "dal": "2026-10-24",
-   "tipo": "una_volta"
-  },
-  {
-   "id": "CF-LM|mon|annuncio-bloccato",
-   "alias": "CF-LM",
-   "cosa": "Annuncio bloccato da Meta (Ad Processing Error): rifare l'annuncio, riattivarlo non serve",
-   "perche": "collaudo ads del 26/10: annuncio in errore nella campagna attiva",
-   "dal": "2026-10-26",
    "tipo": "una_volta"
   },
   {
