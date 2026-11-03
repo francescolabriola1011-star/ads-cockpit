@@ -1,8 +1,8 @@
 {
- "generato": "03/11/2026 08:40",
+ "generato": "03/11/2026 20:07",
  "quota_mese": 10,
  "totale_corrente": 1404,
- "totale_m1": 15234,
+ "totale_m1": 17790,
  "totale_m2": 9483,
  "voci": [
   {
@@ -22,10 +22,34 @@
    "stato": "scappato"
   },
   {
+   "voce": "Mara (Setter)",
+   "mese_corrente": 0,
+   "media_precedenti": 375,
+   "atteso_a_oggi": 38,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Chat Gpt",
+   "mese_corrente": 0,
+   "media_precedenti": 187,
+   "atteso_a_oggi": 19,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
    "voce": "Compenso Francesco Labriola",
    "mese_corrente": 0,
    "media_precedenti": 860,
    "atteso_a_oggi": 86,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Grok",
+   "mese_corrente": 0,
+   "media_precedenti": 20,
+   "atteso_a_oggi": 2,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -48,8 +72,8 @@
   {
    "voce": "Facebook",
    "mese_corrente": 0,
-   "media_precedenti": 1888,
-   "atteso_a_oggi": 189,
+   "media_precedenti": 2098,
+   "atteso_a_oggi": 210,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -62,18 +86,10 @@
    "stato": "sparito"
   },
   {
-   "voce": "Go High Level",
+   "voce": "Carlo Parodi",
    "mese_corrente": 0,
-   "media_precedenti": 748,
-   "atteso_a_oggi": 75,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Grok",
-   "mese_corrente": 0,
-   "media_precedenti": 20,
-   "atteso_a_oggi": 2,
+   "media_precedenti": 2286,
+   "atteso_a_oggi": 229,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -86,10 +102,10 @@
    "stato": "sparito"
   },
   {
-   "voce": "Mara (Setter)",
+   "voce": "Go High Level",
    "mese_corrente": 0,
-   "media_precedenti": 375,
-   "atteso_a_oggi": 38,
+   "media_precedenti": 498,
+   "atteso_a_oggi": 50,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -98,22 +114,6 @@
    "mese_corrente": 0,
    "media_precedenti": 20,
    "atteso_a_oggi": 2,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Carlo Parodi",
-   "mese_corrente": 0,
-   "media_precedenti": 2286,
-   "atteso_a_oggi": 229,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Chat Gpt",
-   "mese_corrente": 0,
-   "media_precedenti": 187,
-   "atteso_a_oggi": 19,
    "variazione": -100,
    "stato": "sparito"
   }
