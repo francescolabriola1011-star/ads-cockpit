@@ -1,6 +1,6 @@
 {
- "generato": "01/11 04:04",
- "n_account_rossi": 21,
+ "generato": "03/11 08:28",
+ "n_account_rossi": 22,
  "n_puliti": 0,
  "puliti": [],
  "voci": [
@@ -42,6 +42,18 @@
   },
   {
    "cliente": "CF-MDG",
+   "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
+   "dettaglio": "Lead Gen 1Q - Marcello Del Gaudio",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-MDG",
+   "tipo": "MODULO ATTIVO SENZA FOGLIO NOTO",
+   "dettaglio": "Lead Gen 1Q - Marcello Del Gaudio (v2)",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-MDG",
    "tipo": "PIU' MODULI SULLE ADS ATTIVE",
    "dettaglio": "Lead Gen 1Q - Marcello Del Gaudio + Lead Gen 1Q - Marcello Del Gaudio (v2)",
    "gravita": 3
@@ -71,12 +83,6 @@
    "gravita": 3
   },
   {
-   "cliente": "CF-MLC",
-   "tipo": "PIU' DI UN MODULO VIVO",
-   "dettaglio": "Lead La Corte Marco, Lead Marco La Corte",
-   "gravita": 2
-  },
-  {
    "cliente": "DDB",
    "tipo": "CARTELLA DRIVE NON TROVATA",
    "dettaglio": "attesa «Clienti10X - Davide Dal Bosco - Consulente Finanziario»",
@@ -89,22 +95,10 @@
    "gravita": 2
   },
   {
-   "cliente": "ORO-AZ",
-   "tipo": "PIU' DI UN MODULO VIVO",
-   "dettaglio": "Lead - Zaghini Alessandro, Lead Alessandro Zaghini, Lead Meta Ads – Alessandro Zaghini",
-   "gravita": 2
-  },
-  {
    "cliente": "ZAP",
    "tipo": "CARTELLA DRIVE NON TROVATA",
    "dettaglio": "attesa «Clienti10X - Zaghini Account Pubblicitario»",
    "gravita": 2
-  },
-  {
-   "cliente": "AEA-HOUSE",
-   "tipo": "FUORI REGOLA",
-   "dettaglio": "CF - Modulo 1 / CF statica Copia (ripresa 23/10) - Copia 2 · 2 lead a CPL 39.62 € (tetto 35 € da 2 a 5 lead)",
-   "gravita": 1
   },
   {
    "cliente": "CF-CC",
@@ -170,6 +164,12 @@
    "cliente": "CF-RD",
    "tipo": "FASCIA ETA' FUORI STANDARD",
    "dettaglio": "29-60 invece di 30-63 · Moduli - Campagna Principale Attiva",
+   "gravita": 1
+  },
+  {
+   "cliente": "CF-SM",
+   "tipo": "FASCIA ETA' FUORI STANDARD",
+   "dettaglio": "30-60 invece di 30-63 · Moduli - Campagna Attiva",
    "gravita": 1
   },
   {
