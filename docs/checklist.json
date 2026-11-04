@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-04T07:14:35+01:00",
+ "generato": "2026-11-04T08:41:06+01:00",
  "procedura": "https://docs.google.com/document/d/1vn5K-biqWNt40FmqPAzCpsSSZcaTjX25dpWTKnxVoyQ/edit",
  "cartella": "https://drive.google.com/drive/folders/1Zm7RDFGTeyrXjU2tWQAPyRvkA-maCmYk",
  "sezioni": [
@@ -13,68 +13,75 @@
   {
    "id": "ads",
    "titolo": "Altre mosse ads",
-   "sotto": "Posizionamenti fuori regola e a limite, spesa senza lead, moduli sotto il 4% di CVR, vincenti. Si azzera domani. Nota: dati del cockpit del 2026-11-03, non di oggi.",
+   "sotto": "Posizionamenti fuori regola e a limite, spesa senza lead, moduli sotto il 4% di CVR, vincenti. Si azzera domani.",
    "voci": [
     {
      "k": "ckcsm:mb|ads|pos|casa-nostra-nuovo-gruppo-di-inserzioni-contatti-copi:2026-11-04",
      "t": "Casa nostra: escludi IG Reels",
-     "d": "CPL 57,28, oltre il limite di 45.",
+     "d": "CPL 57,91, oltre il limite di 45.",
      "m": "fuori regola",
      "c": "oggi"
     },
     {
-     "k": "ckcsm:mb|ads|lim|marcello-d-g-cf-mdg:2026-11-04",
-     "t": "Marcello D.G. (CF-MDG): 1 posizionamento a limite",
-     "d": "IG feed CPL 39,37. Limite 45. Si guarda, non si esclude.",
-     "m": "a limite",
-     "c": ""
-    },
-    {
-     "k": "ckcsm:mb|ads|lim|luigi-m-cf-lm:2026-11-04",
-     "t": "Luigi M. (CF-LM): 2 posizionamenti a limite",
-     "d": "IG Reels CPL 38,85, FB feed CPL 38,19. Limite 45. Si guarda, non si esclude.",
+     "k": "ckcsm:mb|ads|lim|fabio-r-cf-fr:2026-11-04",
+     "t": "Fabio R. (CF-FR): 2 posizionamenti a limite",
+     "d": "FB Storie CPL 40,11, IG Storie CPL 32,11. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
      "k": "ckcsm:mb|ads|lim|cosimo-c-cf-cc:2026-11-04",
      "t": "Cosimo C. (CF-CC): 1 posizionamento a limite",
-     "d": "IG Reels CPL 38,80. Limite 45. Si guarda, non si esclude.",
+     "d": "IG Reels CPL 39,76. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|ads|lim|fabio-r-cf-fr:2026-11-04",
-     "t": "Fabio R. (CF-FR): 2 posizionamenti a limite",
-     "d": "FB Storie CPL 38,77, IG Storie CPL 31,91. Limite 45. Si guarda, non si esclude.",
+     "k": "ckcsm:mb|ads|lim|marcello-d-g-cf-mdg:2026-11-04",
+     "t": "Marcello D.G. (CF-MDG): 1 posizionamento a limite",
+     "d": "IG feed CPL 39,62. Limite 45. Si guarda, non si esclude.",
+     "m": "a limite",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|ads|lim|luigi-m-cf-lm:2026-11-04",
+     "t": "Luigi M. (CF-LM): 2 posizionamenti a limite",
+     "d": "IG Reels CPL 39,09, FB feed CPL 38,44. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
      "k": "ckcsm:mb|ads|lim|raffaele-d-l-cf-rd:2026-11-04",
      "t": "Raffaele D.L. (CF-RD): 1 posizionamento a limite",
-     "d": "IG feed CPL 35,10. Limite 45. Si guarda, non si esclude.",
+     "d": "IG feed CPL 35,20. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
      "k": "ckcsm:mb|ads|lim|marco-p-cf-mp:2026-11-04",
      "t": "Marco P. (CF-MP): 1 posizionamento a limite",
-     "d": "FB feed CPL 32,67. Limite 45. Si guarda, non si esclude.",
+     "d": "FB feed CPL 33,42. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|ads|lim|davide-d-b-cf-ddb:2026-11-04",
+     "t": "Davide D.B. (CF-DDB): 1 posizionamento a limite",
+     "d": "FB feed CPL 30,09. Limite 45. Si guarda, non si esclude.",
+     "m": "a limite",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|ads|senza|marco-l-c-cf-mlc:2026-11-04",
+     "t": "Marco L.C. (CF-MLC): acceso senza lead recenti",
+     "d": "94 euro in 7 giorni. Trova la causa: annuncio, modulo o target.",
+     "m": "spesa",
      "c": ""
     },
     {
      "k": "ckcsm:mb|ads|scala|oro-statica-v1-14-giorni-e-x2-copia-2:2026-11-04",
      "t": "Casa nostra: vincente, valuta se scalare",
-     "d": "ORO - statica v1 - 14 giorni e x2 - Copia 2: 29 lead a CPL 8.76. Lo decide Francesco.",
-     "m": "vincente",
-     "c": ""
-    },
-    {
-     "k": "ckcsm:mb|ads|scala|cf-statica-copia-ripresa-23-10-copia:2026-11-04",
-     "t": "Casa nostra: vincente, valuta se scalare",
-     "d": "CF statica Copia (ripresa 23/10) - Copia: 3 lead a CPL 9.64. Lo decide Francesco.",
+     "d": "ORO - statica v1 - 14 giorni e x2 - Copia 2: 30 lead a CPL 8.63. Lo decide Francesco.",
      "m": "vincente",
      "c": ""
     }
