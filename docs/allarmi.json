@@ -1,124 +1,32 @@
 {
- "generato": "04/11 04:03",
- "n_account_rossi": 13,
- "n_puliti": 1,
+ "generato": "05/11 05:55",
+ "n_account_rossi": 2,
+ "n_puliti": 11,
  "puliti": [
-  "EM"
+  "CF-CC",
+  "CF-DDB",
+  "FB",
+  "CF-FR",
+  "GC",
+  "CF-LM",
+  "CF-MDG",
+  "CF-MLC",
+  "CF-MP",
+  "EM",
+  "ORO-AZ"
  ],
  "voci": [
   {
    "cliente": "AEA-HOUSE",
-   "tipo": "NON CONSEGNA",
-   "dettaglio": "CF - Modulo 2 · ieri 0.00 €",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "facebook/facebook_reels · 1.46 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
    "gravita": 3
-  },
-  {
-   "cliente": "AEA-HOUSE",
-   "tipo": "NON CONSEGNA",
-   "dettaglio": "CF - Modulo 3 · ieri 0.00 €",
-   "gravita": 3
-  },
-  {
-   "cliente": "AEA-HOUSE",
-   "tipo": "NON CONSEGNA",
-   "dettaglio": "CF - Modulo 4 · ieri 0.00 €",
-   "gravita": 3
-  },
-  {
-   "cliente": "AEA-HOUSE",
-   "tipo": "NON CONSEGNA",
-   "dettaglio": "CF - Modulo 5 · ieri 0.00 €",
-   "gravita": 3
-  },
-  {
-   "cliente": "AEA-HOUSE",
-   "tipo": "NON CONSEGNA",
-   "dettaglio": "CF - Modulo 6 · ieri 0.00 €",
-   "gravita": 3
-  },
-  {
-   "cliente": "AEA-HOUSE",
-   "tipo": "NON CONSEGNA",
-   "dettaglio": "Venditore - Moduli · ieri 0.00 €",
-   "gravita": 3
-  },
-  {
-   "cliente": "CF-DDB",
-   "tipo": "PIU' MODULI SULLE ADS ATTIVE",
-   "dettaglio": "Lead 2N - Davide Dal Bosco + Lead Gen N - Davide Dal Bosco + Lead Gen N2 - Davide Dal Bosco - guida 4 domande",
-   "gravita": 3
-  },
-  {
-   "cliente": "CF-MDG",
-   "tipo": "PIU' MODULI SULLE ADS ATTIVE",
-   "dettaglio": "Lead Gen 1Q - Marcello Del Gaudio + Lead Gen 1Q - Marcello Del Gaudio (v2)",
-   "gravita": 3
-  },
-  {
-   "cliente": "CF-MLC",
-   "tipo": "PIU' MODULI SULLE ADS ATTIVE",
-   "dettaglio": "Lead Gen 2N - Marco La Corte + Lead Gen Fasce - Marco La Corte",
-   "gravita": 3
-  },
-  {
-   "cliente": "CF-CC",
-   "tipo": "FASCIA ETA' FUORI STANDARD",
-   "dettaglio": "29-61 invece di 30-63 · AI Elite - Moduli - Campagna Attiva",
-   "gravita": 1
-  },
-  {
-   "cliente": "FB",
-   "tipo": "FASCIA ETA' FUORI STANDARD",
-   "dettaglio": "30-60 invece di 30-63 · Moduli - Campagna Attiva",
-   "gravita": 1
-  },
-  {
-   "cliente": "CF-FR",
-   "tipo": "FASCIA ETA' FUORI STANDARD",
-   "dettaglio": "30-60 invece di 30-63 · Moduli - Campagna Attiva",
-   "gravita": 1
-  },
-  {
-   "cliente": "GC",
-   "tipo": "FASCIA ETA' FUORI STANDARD",
-   "dettaglio": "30-60 invece di 30-63 · AI Elite - Moduli Campagna Attiva",
-   "gravita": 1
-  },
-  {
-   "cliente": "CF-LM",
-   "tipo": "FASCIA ETA' FUORI STANDARD",
-   "dettaglio": "30-62 invece di 30-63 · Moduli - Campagna Attiva",
-   "gravita": 1
-  },
-  {
-   "cliente": "CF-MDG",
-   "tipo": "FASCIA ETA' FUORI STANDARD",
-   "dettaglio": "30-60 invece di 30-63 · Moduli AI Elite - Campagna Attiva",
-   "gravita": 1
-  },
-  {
-   "cliente": "CF-MP",
-   "tipo": "FASCIA ETA' FUORI STANDARD",
-   "dettaglio": "35-62 invece di 30-63 · AI Elite - Campagna Attiva",
-   "gravita": 1
   },
   {
    "cliente": "CF-RD",
-   "tipo": "FASCIA ETA' FUORI STANDARD",
-   "dettaglio": "29-60 invece di 30-63 · Moduli - Campagna Principale Attiva",
-   "gravita": 1
-  },
-  {
-   "cliente": "CF-SM",
-   "tipo": "FASCIA ETA' FUORI STANDARD",
-   "dettaglio": "30-60 invece di 30-63 · Moduli - Campagna Attiva",
-   "gravita": 1
-  },
-  {
-   "cliente": "ORO-AZ",
-   "tipo": "FASCIA ETA' FUORI STANDARD",
-   "dettaglio": "40-63 invece di 30-63 · Moduli AI ELITE - Campagna Attiva",
-   "gravita": 1
+   "tipo": "BUCO NELLA ZONA",
+   "dettaglio": "esclusa Monopoli (BA), dentro la provincia del cliente · Gruppo Inserzioni Campagna",
+   "gravita": 2
   }
  ]
 }
