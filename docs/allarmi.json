@@ -1,12 +1,11 @@
 {
- "generato": "05/11 05:55",
- "n_account_rossi": 2,
- "n_puliti": 11,
+ "generato": "06/11 04:03",
+ "n_account_rossi": 3,
+ "n_puliti": 10,
  "puliti": [
   "CF-CC",
   "CF-DDB",
   "FB",
-  "CF-FR",
   "GC",
   "CF-LM",
   "CF-MDG",
@@ -19,8 +18,14 @@
   {
    "cliente": "AEA-HOUSE",
    "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "facebook/facebook_reels · 1.46 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "dettaglio": "facebook/facebook_reels · 0.69 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
    "gravita": 3
+  },
+  {
+   "cliente": "CF-FR",
+   "tipo": "PIU' DI UN MODULO VIVO",
+   "dettaglio": "Lead Gen - Fabio Ricciarelli, Lead Ricciarelli Fabio",
+   "gravita": 2
   },
   {
    "cliente": "CF-RD",
