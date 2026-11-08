@@ -499,7 +499,7 @@ function render(){
   /* selettore account */
   const selEl = document.getElementById("fCliente");
   const cur = state.cliente;
-  selEl.innerHTML = `<option value="">Tutti i clienti (${d.clienti.length})</option>` +
+  selEl.innerHTML = `<option value="">Tutti gli account con spesa nel periodo (${d.clienti.length})</option>` +
     d.clienti.map(c => `<option value="${esc(c.alias)}">${esc(nomeCli(c))}</option>`).join("");
   selEl.value = cur;
   document.getElementById("scopebar").style.display = d.clienti.length > 1 ? "" : "none";
