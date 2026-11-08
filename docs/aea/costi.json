@@ -1,6 +1,6 @@
 {
- "generato": "07/11/2026 08:15",
- "quota_mese": 23,
+ "generato": "08/11/2026 11:46",
+ "quota_mese": 27,
  "totale_corrente": 4854,
  "totale_m1": 17790,
  "totale_m2": 9483,
@@ -9,24 +9,24 @@
    "voce": "Michele De Sena",
    "mese_corrente": 1535,
    "media_precedenti": 1398,
-   "atteso_a_oggi": 326,
-   "variazione": 371,
+   "atteso_a_oggi": 373,
+   "variazione": 312,
    "stato": "scappato"
   },
   {
    "voce": "Carlo Parodi",
    "mese_corrente": 1435,
    "media_precedenti": 2286,
-   "atteso_a_oggi": 533,
-   "variazione": 169,
+   "atteso_a_oggi": 609,
+   "variazione": 135,
    "stato": "scappato"
   },
   {
    "voce": "Claude",
    "mese_corrente": 184,
    "media_precedenti": 80,
-   "atteso_a_oggi": 19,
-   "variazione": 886,
+   "atteso_a_oggi": 21,
+   "variazione": 762,
    "stato": "scappato"
   },
   {
@@ -38,10 +38,26 @@
    "stato": "nuovo"
   },
   {
-   "voce": "Alessandro Cugini",
+   "voce": "Grok",
    "mese_corrente": 0,
-   "media_precedenti": 1118,
-   "atteso_a_oggi": 261,
+   "media_precedenti": 20,
+   "atteso_a_oggi": 5,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Mytrip",
+   "mese_corrente": 0,
+   "media_precedenti": 319,
+   "atteso_a_oggi": 85,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Mara (Setter)",
+   "mese_corrente": 0,
+   "media_precedenti": 375,
+   "atteso_a_oggi": 100,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -54,26 +70,10 @@
    "stato": "sparito"
   },
   {
-   "voce": "Cost Of Goods Sold",
-   "mese_corrente": 0,
-   "media_precedenti": 1960,
-   "atteso_a_oggi": 457,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
    "voce": "Compenso Francesco Labriola",
    "mese_corrente": 0,
    "media_precedenti": 860,
-   "atteso_a_oggi": 201,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Grok",
-   "mese_corrente": 0,
-   "media_precedenti": 20,
-   "atteso_a_oggi": 5,
+   "atteso_a_oggi": 229,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -81,23 +81,15 @@
    "voce": "Chat Gpt",
    "mese_corrente": 0,
    "media_precedenti": 187,
-   "atteso_a_oggi": 44,
+   "atteso_a_oggi": 50,
    "variazione": -100,
    "stato": "sparito"
   },
   {
-   "voce": "Facebook",
+   "voce": "Cost Of Goods Sold",
    "mese_corrente": 0,
-   "media_precedenti": 2098,
-   "atteso_a_oggi": 490,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Mara (Setter)",
-   "mese_corrente": 0,
-   "media_precedenti": 375,
-   "atteso_a_oggi": 88,
+   "media_precedenti": 1960,
+   "atteso_a_oggi": 523,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -105,15 +97,23 @@
    "voce": "Go High Level",
    "mese_corrente": 0,
    "media_precedenti": 498,
-   "atteso_a_oggi": 116,
+   "atteso_a_oggi": 133,
    "variazione": -100,
    "stato": "sparito"
   },
   {
-   "voce": "Mytrip",
+   "voce": "Facebook",
    "mese_corrente": 0,
-   "media_precedenti": 319,
-   "atteso_a_oggi": 74,
+   "media_precedenti": 2098,
+   "atteso_a_oggi": 559,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Alessandro Cugini",
+   "mese_corrente": 0,
+   "media_precedenti": 1118,
+   "atteso_a_oggi": 298,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -121,12 +121,12 @@
    "voce": "Francesco Labriola",
    "mese_corrente": 1220,
    "media_precedenti": 4330,
-   "atteso_a_oggi": 1010,
-   "variazione": 21,
+   "atteso_a_oggi": 1155,
+   "variazione": 6,
    "stato": "stabile"
   }
  ],
- "extra_del_mese": 2276,
+ "extra_del_mese": 2151,
  "n_scappati": 3,
  "n_nuovi": 1,
  "n_spariti": 10

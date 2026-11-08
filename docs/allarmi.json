@@ -1,36 +1,20 @@
 {
- "generato": "07/11 04:03",
- "n_account_rossi": 5,
- "n_puliti": 8,
+ "generato": "08/11 11:11",
+ "n_account_rossi": 3,
+ "n_puliti": 10,
  "puliti": [
+  "CF-CC",
   "CF-DDB",
   "FB",
   "GC",
   "CF-LM",
   "CF-MDG",
+  "CF-MLC",
   "CF-MP",
   "EM",
   "ORO-AZ"
  ],
  "voci": [
-  {
-   "cliente": "AEA-HOUSE",
-   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "facebook/facebook_reels · 1.35 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
-   "gravita": 3
-  },
-  {
-   "cliente": "CF-CC",
-   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "instagram/instagram_reels · 0.56 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
-   "gravita": 3
-  },
-  {
-   "cliente": "CF-MLC",
-   "tipo": "NON CONSEGNA",
-   "dettaglio": "Moduli - Campagna Attiva · ieri 0.00 €",
-   "gravita": 3
-  },
   {
    "cliente": "CF-FR",
    "tipo": "PIU' DI UN MODULO VIVO",
@@ -46,7 +30,7 @@
   {
    "cliente": "AEA-HOUSE",
    "tipo": "FUORI REGOLA",
-   "dettaglio": "CF - Modulo 1 / CF statica 100K Mecarelli (ripresa 23/10) · 36.70 € e 0 lead",
+   "dettaglio": "CF - Modulo 1 / CF statica 100K Mecarelli (ripresa 23/10) · 39.07 € e 0 lead",
    "gravita": 1
   }
  ]
