@@ -1,8 +1,9 @@
 {
- "generato": "08/11 11:11",
- "n_account_rossi": 3,
- "n_puliti": 10,
+ "generato": "09/11 04:07",
+ "n_account_rossi": 2,
+ "n_puliti": 11,
  "puliti": [
+  "AEA-HOUSE",
   "CF-CC",
   "CF-DDB",
   "FB",
@@ -26,12 +27,6 @@
    "tipo": "BUCO NELLA ZONA",
    "dettaglio": "esclusa Monopoli (BA), dentro la provincia del cliente · Gruppo Inserzioni Campagna",
    "gravita": 2
-  },
-  {
-   "cliente": "AEA-HOUSE",
-   "tipo": "FUORI REGOLA",
-   "dettaglio": "CF - Modulo 1 / CF statica 100K Mecarelli (ripresa 23/10) · 39.07 € e 0 lead",
-   "gravita": 1
   }
  ]
 }
