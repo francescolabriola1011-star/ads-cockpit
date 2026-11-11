@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-10T18:01:29+01:00",
+ "generato": "2026-11-11T07:18:59+01:00",
  "procedura": "https://docs.google.com/document/d/1vn5K-biqWNt40FmqPAzCpsSSZcaTjX25dpWTKnxVoyQ/edit",
  "cartella": "https://drive.google.com/drive/folders/1Zm7RDFGTeyrXjU2tWQAPyRvkA-maCmYk",
  "sezioni": [
@@ -13,73 +13,73 @@
   {
    "id": "ads",
    "titolo": "Altre mosse ads",
-   "sotto": "Posizionamenti fuori regola e a limite, spesa senza lead, moduli sotto il 4% di CVR, vincenti. Si azzera domani.",
+   "sotto": "Posizionamenti fuori regola e a limite, spesa senza lead, moduli sotto il 4% di CVR, vincenti. Si azzera domani. Nota: dati del cockpit del 2026-11-10, non di oggi.",
    "voci": [
     {
-     "k": "ckcsm:mb|ads|lim|marcello-d-g-cf-mdg:2026-11-10",
+     "k": "ckcsm:mb|ads|lim|marcello-d-g-cf-mdg:2026-11-11",
      "t": "Marcello D.G. (CF-MDG): 1 posizionamento a limite",
      "d": "IG feed CPL 43,38. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|ads|lim|casa-nostra:2026-11-10",
+     "k": "ckcsm:mb|ads|lim|casa-nostra:2026-11-11",
      "t": "Casa nostra: 1 posizionamento a limite",
      "d": "IG Reels CPL 41,42. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|ads|lim|luigi-m-cf-lm:2026-11-10",
+     "k": "ckcsm:mb|ads|lim|luigi-m-cf-lm:2026-11-11",
      "t": "Luigi M. (CF-LM): 1 posizionamento a limite",
      "d": "IG Reels CPL 40,51. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|ads|lim|cosimo-c-cf-cc:2026-11-10",
+     "k": "ckcsm:mb|ads|lim|cosimo-c-cf-cc:2026-11-11",
      "t": "Cosimo C. (CF-CC): 1 posizionamento a limite",
      "d": "FB Storie CPL 39,30. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|ads|lim|marco-p-cf-mp:2026-11-10",
+     "k": "ckcsm:mb|ads|lim|marco-p-cf-mp:2026-11-11",
      "t": "Marco P. (CF-MP): 2 posizionamenti a limite",
      "d": "FB feed CPL 37,02, FB Storie 33,57 spesi, 0 lead. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|ads|lim|fabio-r-cf-fr:2026-11-10",
+     "k": "ckcsm:mb|ads|lim|fabio-r-cf-fr:2026-11-11",
      "t": "Fabio R. (CF-FR): 1 posizionamento a limite",
      "d": "IG Storie CPL 34,44. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|ads|lim|davide-d-b-cf-ddb:2026-11-10",
+     "k": "ckcsm:mb|ads|lim|davide-d-b-cf-ddb:2026-11-11",
      "t": "Davide D.B. (CF-DDB): 1 posizionamento a limite",
      "d": "FB feed CPL 33,47. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|ads|lim|alessandro-z-oro-az:2026-11-10",
+     "k": "ckcsm:mb|ads|lim|alessandro-z-oro-az:2026-11-11",
      "t": "Alessandro Z. (ORO-AZ): 1 posizionamento a limite",
      "d": "IG Reels CPL 31,63. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|ads|scala|oro-statica-v1-14-giorni-e-x2-copia-2:2026-11-10",
+     "k": "ckcsm:mb|ads|scala|oro-statica-v1-14-giorni-e-x2-copia-2:2026-11-11",
      "t": "Casa nostra: vincente, valuta se scalare",
      "d": "ORO - statica v1 - 14 giorni e x2 - Copia 2: 35 lead a CPL 8.73. Lo decide Francesco.",
      "m": "vincente",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|ads|scala|statica-dispongo-100k-yacht:2026-11-10",
+     "k": "ckcsm:mb|ads|scala|statica-dispongo-100k-yacht:2026-11-11",
      "t": "Luigi M. (CF-LM): vincente, valuta se scalare",
      "d": "Statica - dispongo-100k-yacht: 8 lead a CPL 9.71. Lo decide Francesco.",
      "m": "vincente",
@@ -94,35 +94,35 @@
    "sotto": "Ogni giorno, prima delle 10. Si azzera domani. Accanto, quante volte e' stato fatto negli ultimi 5 giorni lavorativi.",
    "voci": [
     {
-     "k": "ckcsm:mb|g|cpl:2026-11-10",
+     "k": "ckcsm:mb|g|cpl:2026-11-11",
      "t": "CPL e CVR di ogni annuncio contro le soglie",
      "d": "Soglie in sezione 7. Si guarda l'annuncio, mai la campagna.",
      "m": "",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|g|lead:2026-11-10",
+     "k": "ckcsm:mb|g|lead:2026-11-11",
      "t": "Lead Meta, Foglio Lead e GHL coincidono",
      "d": "Un lead che manca in uno dei tre si recupera subito.",
      "m": "",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|g|target:2026-11-10",
+     "k": "ckcsm:mb|g|target:2026-11-11",
      "t": "Lead fuori target: subito al CSM con esempi",
      "d": "",
      "m": "",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|g|account:2026-11-10",
+     "k": "ckcsm:mb|g|account:2026-11-11",
      "t": "Account: pagamento, annunci rifiutati, blocchi",
      "d": "Un blocco si dice subito al cliente e al CSM.",
      "m": "",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|g|msg:2026-11-10",
+     "k": "ckcsm:mb|g|msg:2026-11-11",
      "t": "WhatsApp 1 e mail 1 consegnati ai lead di ieri",
      "d": "In GHL, sulle conversazioni. Fallito o fermo su inviato: trovi la causa, sistemi, lo dici al CSM.",
      "m": "",
