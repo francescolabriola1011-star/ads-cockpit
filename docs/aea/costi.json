@@ -1,32 +1,32 @@
 {
- "generato": "11/11/2026 08:27",
- "quota_mese": 37,
- "totale_corrente": 4854,
- "totale_m1": 17790,
+ "generato": "12/11/2026 10:08",
+ "quota_mese": 40,
+ "totale_corrente": 4894,
+ "totale_m1": 17828,
  "totale_m2": 9483,
  "voci": [
   {
    "voce": "Michele De Sena",
    "mese_corrente": 1535,
    "media_precedenti": 1398,
-   "atteso_a_oggi": 512,
-   "variazione": 200,
+   "atteso_a_oggi": 559,
+   "variazione": 175,
    "stato": "scappato"
   },
   {
    "voce": "Carlo Parodi",
    "mese_corrente": 1435,
    "media_precedenti": 2286,
-   "atteso_a_oggi": 838,
-   "variazione": 71,
+   "atteso_a_oggi": 914,
+   "variazione": 57,
    "stato": "scappato"
   },
   {
    "voce": "Claude",
    "mese_corrente": 184,
    "media_precedenti": 80,
-   "atteso_a_oggi": 29,
-   "variazione": 527,
+   "atteso_a_oggi": 32,
+   "variazione": 475,
    "stato": "scappato"
   },
   {
@@ -38,66 +38,18 @@
    "stato": "nuovo"
   },
   {
-   "voce": "Compenso Francesco Labriola",
-   "mese_corrente": 0,
-   "media_precedenti": 860,
-   "atteso_a_oggi": 315,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Chat Gpt",
-   "mese_corrente": 0,
-   "media_precedenti": 187,
-   "atteso_a_oggi": 69,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Mara (Setter)",
-   "mese_corrente": 0,
-   "media_precedenti": 375,
-   "atteso_a_oggi": 138,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Alessandro Cugini",
-   "mese_corrente": 0,
-   "media_precedenti": 1118,
-   "atteso_a_oggi": 410,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Zoom",
-   "mese_corrente": 0,
-   "media_precedenti": 20,
-   "atteso_a_oggi": 7,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
    "voce": "Mytrip",
    "mese_corrente": 0,
    "media_precedenti": 319,
-   "atteso_a_oggi": 117,
+   "atteso_a_oggi": 128,
    "variazione": -100,
    "stato": "sparito"
   },
   {
-   "voce": "Grok",
+   "voce": "Cursor",
    "mese_corrente": 0,
    "media_precedenti": 20,
-   "atteso_a_oggi": 7,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Cost Of Goods Sold",
-   "mese_corrente": 0,
-   "media_precedenti": 1960,
-   "atteso_a_oggi": 719,
+   "atteso_a_oggi": 8,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -105,7 +57,47 @@
    "voce": "Go High Level",
    "mese_corrente": 0,
    "media_precedenti": 498,
-   "atteso_a_oggi": 182,
+   "atteso_a_oggi": 199,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Grok",
+   "mese_corrente": 0,
+   "media_precedenti": 20,
+   "atteso_a_oggi": 8,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Cost Of Goods Sold",
+   "mese_corrente": 0,
+   "media_precedenti": 1960,
+   "atteso_a_oggi": 784,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Compenso Francesco Labriola",
+   "mese_corrente": 0,
+   "media_precedenti": 860,
+   "atteso_a_oggi": 344,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Mara (Setter)",
+   "mese_corrente": 0,
+   "media_precedenti": 375,
+   "atteso_a_oggi": 150,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Alessandro Cugini",
+   "mese_corrente": 0,
+   "media_precedenti": 1118,
+   "atteso_a_oggi": 447,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -113,7 +105,7 @@
    "voce": "Facebook",
    "mese_corrente": 0,
    "media_precedenti": 2098,
-   "atteso_a_oggi": 769,
+   "atteso_a_oggi": 839,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -121,13 +113,21 @@
    "voce": "Francesco Labriola",
    "mese_corrente": 1220,
    "media_precedenti": 4330,
-   "atteso_a_oggi": 1588,
-   "variazione": -23,
+   "atteso_a_oggi": 1732,
+   "variazione": -30,
+   "stato": "stabile"
+  },
+  {
+   "voce": "Chat Gpt",
+   "mese_corrente": 40,
+   "media_precedenti": 187,
+   "atteso_a_oggi": 75,
+   "variazione": -47,
    "stato": "stabile"
   }
  ],
- "extra_del_mese": 1775,
+ "extra_del_mese": 1649,
  "n_scappati": 3,
  "n_nuovi": 1,
- "n_spariti": 10
+ "n_spariti": 9
 }
