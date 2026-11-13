@@ -57,6 +57,7 @@ h2{font-size:15px;text-transform:uppercase;letter-spacing:.08em;color:var(--mute
 .pos .pl{color:var(--muted);margin-right:2px}
 .pos span.p{border:1px solid var(--line);border-radius:999px;padding:3px 9px;white-space:nowrap}
 .pos span.p.kill{border-color:var(--crit);color:var(--crit);font-weight:600}
+.pos span.p.escl{opacity:.55;text-decoration:line-through}
 .act-row .tick input{width:18px;height:18px;cursor:pointer;accent-color:var(--good)}
 .act-row.done{opacity:.5;border-left-color:var(--good)}
 .act-row.done .what{text-decoration:line-through}
@@ -1029,8 +1030,8 @@ function posLine(c){
     spend:resto.reduce((t,p) => t + p.spend, 0), leads:resto.reduce((t,p) => t + p.leads, 0)});
   const periodo = (c.posizionamenti || {}).periodo || "durata massima";
   return `<div class="pos"><span class="pl">Posizionamenti, ${esc(periodo)}:</span>${v.map(p =>
-    `<span class="p ${p.da_staccare ? "kill" : ""}" title="${esc(p.reason)}">${esc(p.nome)} ${eur0(p.spend)} · ${int(p.leads)} lead${
-      p.cpl ? " · " + eur0(p.cpl) : ""}${p.da_staccare ? " · stacca" : ""}</span>`).join("")}</div>`;
+    `<span class="p ${p.da_staccare ? "kill" : p.escluso ? "escl" : ""}" title="${esc(p.escluso && !p.da_staccare ? "Escluso dal targeting: la spesa e' storica, non si compra piu'" : p.reason)}">${esc(p.nome)} ${eur0(p.spend)} · ${int(p.leads)} lead${
+      p.cpl ? " · " + eur0(p.cpl) : ""}${p.da_staccare ? " · stacca" : p.escluso ? " · escluso" : ""}</span>`).join("")}</div>`;
 }
 
 function renderClienti(){
