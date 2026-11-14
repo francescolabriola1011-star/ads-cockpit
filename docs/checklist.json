@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-12T14:01:08+01:00",
+ "generato": "2026-11-14T17:15:25+01:00",
  "procedura": "https://docs.google.com/document/d/1vn5K-biqWNt40FmqPAzCpsSSZcaTjX25dpWTKnxVoyQ/edit",
  "cartella": "https://drive.google.com/drive/folders/1Zm7RDFGTeyrXjU2tWQAPyRvkA-maCmYk",
  "sezioni": [
@@ -16,65 +16,65 @@
    "sotto": "Posizionamenti fuori regola e a limite, spesa senza lead, moduli sotto il 4% di CVR, vincenti. Si azzera domani.",
    "voci": [
     {
-     "k": "ckcsm:mb|ads|lim|marcello-d-g-cf-mdg:2026-11-12",
-     "t": "Marcello D.G. (CF-MDG): 1 posizionamento a limite",
-     "d": "IG feed CPL 44,32. Limite 45. Si guarda, non si esclude.",
-     "m": "a limite",
-     "c": ""
-    },
-    {
-     "k": "ckcsm:mb|ads|lim|cosimo-c-cf-cc:2026-11-12",
-     "t": "Cosimo C. (CF-CC): 1 posizionamento a limite",
-     "d": "FB Storie CPL 42,58. Limite 45. Si guarda, non si esclude.",
-     "m": "a limite",
-     "c": ""
-    },
-    {
-     "k": "ckcsm:mb|ads|lim|luigi-m-cf-lm:2026-11-12",
-     "t": "Luigi M. (CF-LM): 1 posizionamento a limite",
-     "d": "IG Reels CPL 41,00. Limite 45. Si guarda, non si esclude.",
-     "m": "a limite",
-     "c": ""
-    },
-    {
-     "k": "ckcsm:mb|ads|lim|marco-p-cf-mp:2026-11-12",
+     "k": "ckcsm:mb|ads|lim|marco-p-cf-mp:2026-11-14",
      "t": "Marco P. (CF-MP): 2 posizionamenti a limite",
-     "d": "FB feed CPL 40,31, FB Storie 37,97 spesi, 0 lead. Limite 45. Si guarda, non si esclude.",
+     "d": "FB Storie 42,14 spesi, 0 lead, FB feed CPL 37,82. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|ads|lim|fabio-r-cf-fr:2026-11-12",
+     "k": "ckcsm:mb|ads|lim|luigi-m-cf-lm:2026-11-14",
+     "t": "Luigi M. (CF-LM): 1 posizionamento a limite",
+     "d": "IG Reels CPL 41,21. Limite 45. Si guarda, non si esclude.",
+     "m": "a limite",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|ads|lim|elisa-m-cf-em:2026-11-14",
+     "t": "Elisa M. (CF-EM): 1 posizionamento a limite",
+     "d": "FB Reels CPL 37,21. Limite 45. Si guarda, non si esclude.",
+     "m": "a limite",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|ads|lim|fabio-r-cf-fr:2026-11-14",
      "t": "Fabio R. (CF-FR): 1 posizionamento a limite",
-     "d": "IG Storie CPL 35,15. Limite 45. Si guarda, non si esclude.",
+     "d": "IG Storie CPL 36,21. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|ads|lim|alessandro-z-oro-az:2026-11-12",
+     "k": "ckcsm:mb|ads|lim|alessandro-z-oro-az:2026-11-14",
      "t": "Alessandro Z. (ORO-AZ): 1 posizionamento a limite",
-     "d": "IG Reels CPL 33,09. Limite 45. Si guarda, non si esclude.",
+     "d": "IG Reels CPL 34,02. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|ads|lim|flavio-b-cf-fb:2026-11-12",
+     "k": "ckcsm:mb|ads|lim|marco-l-c-cf-mlc:2026-11-14",
+     "t": "Marco L.C. (CF-MLC): 1 posizionamento a limite",
+     "d": "IG feed CPL 31,31. Limite 45. Si guarda, non si esclude.",
+     "m": "a limite",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|ads|lim|giovanni-c-cf-gc:2026-11-14",
+     "t": "Giovanni C. (CF-GC): 1 posizionamento a limite",
+     "d": "IG Storie CPL 30,75. Limite 45. Si guarda, non si esclude.",
+     "m": "a limite",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|ads|lim|flavio-b-cf-fb:2026-11-14",
      "t": "Flavio B. (CF-FB): 1 posizionamento a limite",
-     "d": "FB Reels CPL 30,17. Limite 45. Si guarda, non si esclude.",
+     "d": "FB Reels CPL 30,62. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|ads|lim|davide-d-b-cf-ddb:2026-11-12",
-     "t": "Davide D.B. (CF-DDB): 1 posizionamento a limite",
-     "d": "FB feed CPL 30,01. Limite 45. Si guarda, non si esclude.",
-     "m": "a limite",
-     "c": ""
-    },
-    {
-     "k": "ckcsm:mb|ads|scala|statica-dispongo-100k-yacht:2026-11-12",
+     "k": "ckcsm:mb|ads|scala|statica-dispongo-100k-yacht:2026-11-14",
      "t": "Luigi M. (CF-LM): vincente, valuta se scalare",
-     "d": "Statica - dispongo-100k-yacht: 12 lead a CPL 9.29. Lo decide Francesco.",
+     "d": "Statica - dispongo-100k-yacht: 15 lead a CPL 9.76. Lo decide Francesco.",
      "m": "vincente",
      "c": ""
     }
@@ -87,35 +87,35 @@
    "sotto": "Ogni giorno, prima delle 10. Si azzera domani. Accanto, quante volte e' stato fatto negli ultimi 5 giorni lavorativi.",
    "voci": [
     {
-     "k": "ckcsm:mb|g|cpl:2026-11-12",
+     "k": "ckcsm:mb|g|cpl:2026-11-14",
      "t": "CPL e CVR di ogni annuncio contro le soglie",
      "d": "Soglie in sezione 7. Si guarda l'annuncio, mai la campagna.",
      "m": "",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|g|lead:2026-11-12",
+     "k": "ckcsm:mb|g|lead:2026-11-14",
      "t": "Lead Meta, Foglio Lead e GHL coincidono",
      "d": "Un lead che manca in uno dei tre si recupera subito.",
      "m": "",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|g|target:2026-11-12",
+     "k": "ckcsm:mb|g|target:2026-11-14",
      "t": "Lead fuori target: subito al CSM con esempi",
      "d": "",
      "m": "",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|g|account:2026-11-12",
+     "k": "ckcsm:mb|g|account:2026-11-14",
      "t": "Account: pagamento, annunci rifiutati, blocchi",
      "d": "Un blocco si dice subito al cliente e al CSM.",
      "m": "",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|g|msg:2026-11-12",
+     "k": "ckcsm:mb|g|msg:2026-11-14",
      "t": "WhatsApp 1 e mail 1 consegnati ai lead di ieri",
      "d": "In GHL, sulle conversazioni. Fallito o fermo su inviato: trovi la causa, sistemi, lo dici al CSM.",
      "m": "",
@@ -192,7 +192,15 @@
    "id": "partiti",
    "titolo": "Clienti partiti da 1 a 3 settimane",
    "sotto": "Una volta per cliente, dopo la prima settimana di ads.",
-   "voci": [],
+   "voci": [
+    {
+     "k": "ckcsm:mb|ig|Elisa M.",
+     "t": "Elisa M.: chiedi chi lo segue su Instagram",
+     "d": "Target oppure amici, parenti, colleghi. Ricordagli di mandare il messaggio Instagram a ogni nuovo follower.",
+     "m": "partito il 27/10",
+     "c": ""
+    }
+   ],
    "vuoto": "Nessun cliente in quella finestra."
   },
   {
@@ -221,11 +229,11 @@
  "obiettivi": [],
  "calendario": [
   {
-   "data": "2026-11-09",
+   "data": "2026-11-16",
    "nome": "Lunedi",
    "voci": [
     {
-     "k": "ckcsm:mb|s|posiz:2026-11-09",
+     "k": "ckcsm:mb|s|posiz:2026-11-16",
      "t": "Posizionamenti: escludi quelli fuori soglia",
      "d": "Ultimi 30 giorni: CPL oltre 45 euro, oppure 0 lead e spesa oltre 45. Processo 10.",
      "m": "settimana",
@@ -234,35 +242,35 @@
    ],
    "routine": [
     {
-     "k": "ckcsm:mb|g|cpl:2026-11-09",
+     "k": "ckcsm:mb|g|cpl:2026-11-16",
      "t": "CPL e CVR di ogni annuncio contro le soglie",
      "d": "Soglie in sezione 7. Si guarda l'annuncio, mai la campagna.",
      "m": "",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|g|lead:2026-11-09",
+     "k": "ckcsm:mb|g|lead:2026-11-16",
      "t": "Lead Meta, Foglio Lead e GHL coincidono",
      "d": "Un lead che manca in uno dei tre si recupera subito.",
      "m": "",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|g|target:2026-11-09",
+     "k": "ckcsm:mb|g|target:2026-11-16",
      "t": "Lead fuori target: subito al CSM con esempi",
      "d": "",
      "m": "",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|g|account:2026-11-09",
+     "k": "ckcsm:mb|g|account:2026-11-16",
      "t": "Account: pagamento, annunci rifiutati, blocchi",
      "d": "Un blocco si dice subito al cliente e al CSM.",
      "m": "",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|g|msg:2026-11-09",
+     "k": "ckcsm:mb|g|msg:2026-11-16",
      "t": "WhatsApp 1 e mail 1 consegnati ai lead di ieri",
      "d": "In GHL, sulle conversazioni. Fallito o fermo su inviato: trovi la causa, sistemi, lo dici al CSM.",
      "m": "",
@@ -271,18 +279,18 @@
    ]
   },
   {
-   "data": "2026-11-10",
+   "data": "2026-11-17",
    "nome": "Martedi",
    "voci": [
     {
-     "k": "ckcsm:mb|s|auto:2026-11-09",
+     "k": "ckcsm:mb|s|auto:2026-11-16",
      "t": "Automazioni GHL: partono davvero e una volta sola",
      "d": "Controllate sui messaggi arrivati, non sulla configurazione.",
      "m": "settimana",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|s|seq:2026-11-09",
+     "k": "ckcsm:mb|s|seq:2026-11-16",
      "t": "Sequenza completa su 3 lead per cliente",
      "d": "WhatsApp 1, 2, 3 e mail. Chi esce prima della fine va al CSM col nome.",
      "m": "settimana",
@@ -291,35 +299,35 @@
    ],
    "routine": [
     {
-     "k": "ckcsm:mb|g|cpl:2026-11-10",
+     "k": "ckcsm:mb|g|cpl:2026-11-17",
      "t": "CPL e CVR di ogni annuncio contro le soglie",
      "d": "Soglie in sezione 7. Si guarda l'annuncio, mai la campagna.",
      "m": "",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|g|lead:2026-11-10",
+     "k": "ckcsm:mb|g|lead:2026-11-17",
      "t": "Lead Meta, Foglio Lead e GHL coincidono",
      "d": "Un lead che manca in uno dei tre si recupera subito.",
      "m": "",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|g|target:2026-11-10",
+     "k": "ckcsm:mb|g|target:2026-11-17",
      "t": "Lead fuori target: subito al CSM con esempi",
      "d": "",
      "m": "",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|g|account:2026-11-10",
+     "k": "ckcsm:mb|g|account:2026-11-17",
      "t": "Account: pagamento, annunci rifiutati, blocchi",
      "d": "Un blocco si dice subito al cliente e al CSM.",
      "m": "",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|g|msg:2026-11-10",
+     "k": "ckcsm:mb|g|msg:2026-11-17",
      "t": "WhatsApp 1 e mail 1 consegnati ai lead di ieri",
      "d": "In GHL, sulle conversazioni. Fallito o fermo su inviato: trovi la causa, sistemi, lo dici al CSM.",
      "m": "",
@@ -328,18 +336,18 @@
    ]
   },
   {
-   "data": "2026-11-11",
+   "data": "2026-11-18",
    "nome": "Mercoledi",
    "voci": [
     {
-     "k": "ckcsm:mb|s|rami:2026-11-09",
+     "k": "ckcsm:mb|s|rami:2026-11-16",
      "t": "Workflow senza rami vuoti",
      "d": "Undelivered, Scarica la guida e Time Out portano al messaggio dopo. Poi rifai il lead di prova.",
      "m": "settimana",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|s|creative:2026-11-09",
+     "k": "ckcsm:mb|s|creative:2026-11-16",
      "t": "Ricerca creative e proposte nuove",
      "d": "Ad Library e creative vincenti degli altri clienti.",
      "m": "settimana",
@@ -348,35 +356,35 @@
    ],
    "routine": [
     {
-     "k": "ckcsm:mb|g|cpl:2026-11-11",
+     "k": "ckcsm:mb|g|cpl:2026-11-18",
      "t": "CPL e CVR di ogni annuncio contro le soglie",
      "d": "Soglie in sezione 7. Si guarda l'annuncio, mai la campagna.",
      "m": "",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|g|lead:2026-11-11",
+     "k": "ckcsm:mb|g|lead:2026-11-18",
      "t": "Lead Meta, Foglio Lead e GHL coincidono",
      "d": "Un lead che manca in uno dei tre si recupera subito.",
      "m": "",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|g|target:2026-11-11",
+     "k": "ckcsm:mb|g|target:2026-11-18",
      "t": "Lead fuori target: subito al CSM con esempi",
      "d": "",
      "m": "",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|g|account:2026-11-11",
+     "k": "ckcsm:mb|g|account:2026-11-18",
      "t": "Account: pagamento, annunci rifiutati, blocchi",
      "d": "Un blocco si dice subito al cliente e al CSM.",
      "m": "",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|g|msg:2026-11-11",
+     "k": "ckcsm:mb|g|msg:2026-11-18",
      "t": "WhatsApp 1 e mail 1 consegnati ai lead di ieri",
      "d": "In GHL, sulle conversazioni. Fallito o fermo su inviato: trovi la causa, sistemi, lo dici al CSM.",
      "m": "",
@@ -385,18 +393,18 @@
    ]
   },
   {
-   "data": "2026-11-12",
+   "data": "2026-11-19",
    "nome": "Giovedi",
    "voci": [
     {
-     "k": "ckcsm:mb|s|feedback:2026-11-09",
+     "k": "ckcsm:mb|s|feedback:2026-11-16",
      "t": "Feedback dei clienti: follower IG e lead del modulo",
      "d": "Se sono amici e parenti o fuori target, si rivede il target col CSM.",
      "m": "settimana",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|s|registro:2026-11-09",
+     "k": "ckcsm:mb|s|registro:2026-11-16",
      "t": "Vincenti, bocciate e test aperti scritti",
      "d": "Ogni stacco ha il verdetto e la condizione di riprova.",
      "m": "settimana",
@@ -405,35 +413,35 @@
    ],
    "routine": [
     {
-     "k": "ckcsm:mb|g|cpl:2026-11-12",
+     "k": "ckcsm:mb|g|cpl:2026-11-19",
      "t": "CPL e CVR di ogni annuncio contro le soglie",
      "d": "Soglie in sezione 7. Si guarda l'annuncio, mai la campagna.",
      "m": "",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|g|lead:2026-11-12",
+     "k": "ckcsm:mb|g|lead:2026-11-19",
      "t": "Lead Meta, Foglio Lead e GHL coincidono",
      "d": "Un lead che manca in uno dei tre si recupera subito.",
      "m": "",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|g|target:2026-11-12",
+     "k": "ckcsm:mb|g|target:2026-11-19",
      "t": "Lead fuori target: subito al CSM con esempi",
      "d": "",
      "m": "",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|g|account:2026-11-12",
+     "k": "ckcsm:mb|g|account:2026-11-19",
      "t": "Account: pagamento, annunci rifiutati, blocchi",
      "d": "Un blocco si dice subito al cliente e al CSM.",
      "m": "",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|g|msg:2026-11-12",
+     "k": "ckcsm:mb|g|msg:2026-11-19",
      "t": "WhatsApp 1 e mail 1 consegnati ai lead di ieri",
      "d": "In GHL, sulle conversazioni. Fallito o fermo su inviato: trovi la causa, sistemi, lo dici al CSM.",
      "m": "",
@@ -442,11 +450,11 @@
    ]
   },
   {
-   "data": "2026-11-13",
+   "data": "2026-11-20",
    "nome": "Venerdi",
    "voci": [
     {
-     "k": "ckcsm:mb|s|report:2026-11-09",
+     "k": "ckcsm:mb|s|report:2026-11-16",
      "t": "Venerdi: report cliente per cliente",
      "d": "KPI Tracker e PM compilati prima. Numeri, cosa e' cambiato, cosa si fa, una causa sistemica.",
      "m": "settimana",
@@ -455,35 +463,35 @@
    ],
    "routine": [
     {
-     "k": "ckcsm:mb|g|cpl:2026-11-13",
+     "k": "ckcsm:mb|g|cpl:2026-11-20",
      "t": "CPL e CVR di ogni annuncio contro le soglie",
      "d": "Soglie in sezione 7. Si guarda l'annuncio, mai la campagna.",
      "m": "",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|g|lead:2026-11-13",
+     "k": "ckcsm:mb|g|lead:2026-11-20",
      "t": "Lead Meta, Foglio Lead e GHL coincidono",
      "d": "Un lead che manca in uno dei tre si recupera subito.",
      "m": "",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|g|target:2026-11-13",
+     "k": "ckcsm:mb|g|target:2026-11-20",
      "t": "Lead fuori target: subito al CSM con esempi",
      "d": "",
      "m": "",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|g|account:2026-11-13",
+     "k": "ckcsm:mb|g|account:2026-11-20",
      "t": "Account: pagamento, annunci rifiutati, blocchi",
      "d": "Un blocco si dice subito al cliente e al CSM.",
      "m": "",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|g|msg:2026-11-13",
+     "k": "ckcsm:mb|g|msg:2026-11-20",
      "t": "WhatsApp 1 e mail 1 consegnati ai lead di ieri",
      "d": "In GHL, sulle conversazioni. Fallito o fermo su inviato: trovi la causa, sistemi, lo dici al CSM.",
      "m": "",
@@ -492,5 +500,13 @@
    ]
   }
  ],
- "imminenti": []
+ "imminenti": [
+  {
+   "k": "ckcsm:mb|ig|Elisa M.",
+   "t": "Elisa M.: chiedi chi lo segue su Instagram",
+   "d": "Target oppure amici, parenti, colleghi. Ricordagli di mandare il messaggio Instagram a ogni nuovo follower.",
+   "m": "partito il 27/10",
+   "c": ""
+  }
+ ]
 }

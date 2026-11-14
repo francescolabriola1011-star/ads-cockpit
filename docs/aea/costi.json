@@ -1,5 +1,5 @@
 {
- "generato": "14/11/2026 08:13",
+ "generato": "14/11/2026 17:09",
  "quota_mese": 47,
  "totale_corrente": 5164,
  "totale_m1": 17828,
@@ -38,6 +38,46 @@
    "stato": "nuovo"
   },
   {
+   "voce": "Mytrip",
+   "mese_corrente": 0,
+   "media_precedenti": 319,
+   "atteso_a_oggi": 149,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Grok",
+   "mese_corrente": 0,
+   "media_precedenti": 20,
+   "atteso_a_oggi": 9,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Facebook",
+   "mese_corrente": 0,
+   "media_precedenti": 2098,
+   "atteso_a_oggi": 979,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Compenso Francesco Labriola",
+   "mese_corrente": 0,
+   "media_precedenti": 860,
+   "atteso_a_oggi": 401,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Mara (Setter)",
+   "mese_corrente": 0,
+   "media_precedenti": 375,
+   "atteso_a_oggi": 175,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
    "voce": "Cursor",
    "mese_corrente": 0,
    "media_precedenti": 20,
@@ -54,10 +94,10 @@
    "stato": "sparito"
   },
   {
-   "voce": "Compenso Francesco Labriola",
+   "voce": "Alessandro Cugini",
    "mese_corrente": 0,
-   "media_precedenti": 860,
-   "atteso_a_oggi": 401,
+   "media_precedenti": 1118,
+   "atteso_a_oggi": 522,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -66,46 +106,6 @@
    "mese_corrente": 0,
    "media_precedenti": 498,
    "atteso_a_oggi": 232,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Facebook",
-   "mese_corrente": 0,
-   "media_precedenti": 2098,
-   "atteso_a_oggi": 979,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Mara (Setter)",
-   "mese_corrente": 0,
-   "media_precedenti": 375,
-   "atteso_a_oggi": 175,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Grok",
-   "mese_corrente": 0,
-   "media_precedenti": 20,
-   "atteso_a_oggi": 9,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Mytrip",
-   "mese_corrente": 0,
-   "media_precedenti": 319,
-   "atteso_a_oggi": 149,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Alessandro Cugini",
-   "mese_corrente": 0,
-   "media_precedenti": 1118,
-   "atteso_a_oggi": 522,
    "variazione": -100,
    "stato": "sparito"
   },
