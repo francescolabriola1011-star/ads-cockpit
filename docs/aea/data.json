@@ -1,11 +1,11 @@
 {
  "titolo": "AI Elite Advisory",
  "sottotitolo": "casa nostra",
- "generato": "2026-11-13T08:04:40+01:00",
+ "generato": "2026-11-14T08:04:20+01:00",
  "periodo": {
   "da": "2026-01-01",
-  "a": "2026-11-13",
-  "giorni": 316,
+  "a": "2026-11-14",
+  "giorni": 317,
   "finestra_recente_giorni": 7
  },
  "regole": {
@@ -28,16 +28,16 @@
   "cvr_min_clicks": 30
  },
  "totali": {
-  "spesa": 9028.2,
-  "lead": 480.0,
-  "cpl": 18.81,
-  "sprecato": 37.13,
-  "quota_sprecata": 0.4,
-  "sprecato_al_mese": 3.53,
-  "brucia_oggi": 70.0,
-  "da_staccare_ora": 1,
-  "clicks": 13069.0,
-  "link_clicks": 7082.0,
+  "spesa": 9079.63,
+  "lead": 482.0,
+  "cpl": 18.84,
+  "sprecato": 0.0,
+  "quota_sprecata": 0.0,
+  "sprecato_al_mese": 0.0,
+  "brucia_oggi": 0,
+  "da_staccare_ora": 0,
+  "clicks": 13120.0,
+  "link_clicks": 7104.0,
   "cvr": 6.78,
   "clienti": 1,
   "campagne": 134
@@ -49,40 +49,35 @@
    "dal": "2026-01-01",
    "solo_nostre_dal": null,
    "currency": "EUR",
-   "spend": 9028.2,
-   "leads": 480.0,
-   "cpl": 18.81,
-   "sprecato": 37.13,
-   "quota_sprecata": 0.4,
-   "impressions": 819441.0,
-   "clicks": 13069.0,
-   "link_clicks": 7082.0,
+   "spend": 9079.63,
+   "leads": 482.0,
+   "cpl": 18.84,
+   "sprecato": 0.0,
+   "quota_sprecata": 0.0,
+   "impressions": 822965.0,
+   "clicks": 13120.0,
+   "link_clicks": 7104.0,
    "cvr": 6.78,
    "n_campagne": 134,
-   "n_kill": 1,
-   "n_kill_ancora_accese": 1,
-   "brucia_oggi": 70.0,
+   "n_kill": 0,
+   "n_kill_ancora_accese": 0,
+   "brucia_oggi": 0,
    "vivo": {
-    "spend": 464.4,
-    "leads": 17.0,
-    "cpl": 27.32,
-    "cvr": 6.27,
-    "link_clicks": 271.0,
-    "recent_cpl": 28.16,
-    "n_creative": 9
+    "spend": 465.23,
+    "leads": 19.0,
+    "cpl": 24.49,
+    "cvr": 6.96,
+    "link_clicks": 273.0,
+    "recent_cpl": 23.51,
+    "n_creative": 7
    },
    "dopo_ultimo_lead": {
-    "spesa_dopo": 16.47,
-    "ultimo_lead": "2026-11-12",
-    "lead_finestra": 246.0
+    "spesa_dopo": 9.81,
+    "ultimo_lead": "2026-11-13",
+    "lead_finestra": 243.0
    },
    "andamento": {
     "serie": [
-     {
-      "g": "2026-10-15",
-      "s": 75.47,
-      "l": 5
-     },
      {
       "g": "2026-10-16",
       "s": 68.33,
@@ -220,30 +215,35 @@
      },
      {
       "g": "2026-11-12",
-      "s": 91.6,
+      "s": 92.5,
       "l": 3
      },
      {
       "g": "2026-11-13",
-      "s": 16.47,
+      "s": 57.19,
+      "l": 2
+     },
+     {
+      "g": "2026-11-14",
+      "s": 9.81,
       "l": 0
      }
     ],
     "ultimi7": {
-     "spesa": 475.77,
-     "lead": 21,
-     "cpl": 22.66
+     "spesa": 466.61,
+     "lead": 20,
+     "cpl": 23.33
     },
     "prima7": {
-     "spesa": 503.23,
-     "lead": 20,
-     "cpl": 25.16
+     "spesa": 506.25,
+     "lead": 21,
+     "cpl": 24.11
     },
-    "ultimo_lead": "2026-11-12",
+    "ultimo_lead": "2026-11-13",
     "giorni_da_ultimo_lead": 1
    },
    "posizionamenti": {
-    "dal": "2023-11-09",
+    "dal": "2023-11-10",
     "periodo": "durata massima",
     "voci": [
      {
@@ -251,19 +251,19 @@
       "posto": "IG feed",
       "piatt": "instagram",
       "pos": "feed",
-      "spend_tot": 1879.82,
-      "leads_tot": 72.0,
+      "spend_tot": 1905.86,
+      "leads_tot": 74.0,
       "ritest_dal": null,
       "adset_id": "120249800005120629",
       "adset": "Nuovo gruppo di inserzioni Contatti - Copia",
       "campagna": "CF - Modulo 1",
-      "spend": 1879.82,
-      "leads": 72.0,
-      "cpl": 26.11,
-      "cvr": 7.59,
-      "spend_7g": 212.39,
+      "spend": 1905.86,
+      "leads": 74.0,
+      "cpl": 25.75,
+      "cvr": 7.72,
+      "spend_7g": 218.8,
       "status": "ok",
-      "reason": "72 lead a CPL €26.11: dentro il limite posizionamenti di €45",
+      "reason": "74 lead a CPL €25.75: dentro il limite posizionamenti di €45",
       "escluso": false,
       "da_staccare": false,
       "sprecato": 0.0
@@ -273,19 +273,19 @@
       "posto": "FB feed",
       "piatt": "facebook",
       "pos": "feed",
-      "spend_tot": 822.94,
+      "spend_tot": 841.64,
       "leads_tot": 32.0,
       "ritest_dal": null,
       "adset_id": "120249800005120629",
       "adset": "Nuovo gruppo di inserzioni Contatti - Copia",
       "campagna": "CF - Modulo 1",
-      "spend": 822.94,
+      "spend": 841.64,
       "leads": 32.0,
-      "cpl": 25.72,
-      "cvr": 6.04,
-      "spend_7g": 125.93,
+      "cpl": 26.3,
+      "cvr": 5.93,
+      "spend_7g": 125.03,
       "status": "ok",
-      "reason": "32 lead a CPL €25.72: dentro il limite posizionamenti di €45",
+      "reason": "32 lead a CPL €26.30: dentro il limite posizionamenti di €45",
       "escluso": false,
       "da_staccare": false,
       "sprecato": 0.0
@@ -295,19 +295,19 @@
       "posto": "IG Storie",
       "piatt": "instagram",
       "pos": "instagram_stories",
-      "spend_tot": 613.44,
+      "spend_tot": 620.17,
       "leads_tot": 21.0,
       "ritest_dal": null,
       "adset_id": "120249800005120629",
       "adset": "Nuovo gruppo di inserzioni Contatti - Copia",
       "campagna": "CF - Modulo 1",
-      "spend": 613.44,
+      "spend": 620.17,
       "leads": 21.0,
-      "cpl": 29.21,
-      "cvr": 4.79,
-      "spend_7g": 59.69,
+      "cpl": 29.53,
+      "cvr": 4.78,
+      "spend_7g": 58.78,
       "status": "ok",
-      "reason": "21 lead a CPL €29.21: dentro il limite posizionamenti di €45",
+      "reason": "21 lead a CPL €29.53: dentro il limite posizionamenti di €45",
       "escluso": false,
       "da_staccare": false,
       "sprecato": 0.0
@@ -317,39 +317,39 @@
       "posto": "IG Reels",
       "piatt": "instagram",
       "pos": "instagram_reels",
-      "spend_tot": 145.71,
+      "spend_tot": 145.69,
       "leads_tot": 3.0,
       "ritest_dal": null,
       "adset_id": "120249800005120629",
       "adset": "Nuovo gruppo di inserzioni Contatti - Copia",
       "campagna": "CF - Modulo 1",
-      "spend": 145.71,
+      "spend": 145.69,
       "leads": 3.0,
-      "cpl": 48.57,
+      "cpl": 48.56,
       "cvr": 2.21,
-      "spend_7g": 82.11,
+      "spend_7g": 76.79,
       "status": "kill",
-      "reason": "3 lead a CPL €48.57: oltre il limite posizionamenti di €45",
+      "reason": "3 lead a CPL €48.56: oltre il limite posizionamenti di €45",
       "escluso": true,
       "da_staccare": false,
-      "sprecato": 55.71
+      "sprecato": 55.69
      },
      {
       "nome": "Nuovo gruppo di inserzioni Contatti - Copia · FB Storie",
       "posto": "FB Storie",
       "piatt": "facebook",
       "pos": "facebook_stories",
-      "spend_tot": 134.15,
+      "spend_tot": 134.14,
       "leads_tot": 6.0,
       "ritest_dal": null,
       "adset_id": "120249800005120629",
       "adset": "Nuovo gruppo di inserzioni Contatti - Copia",
       "campagna": "CF - Modulo 1",
-      "spend": 134.15,
+      "spend": 134.14,
       "leads": 6.0,
       "cpl": 22.36,
       "cvr": 4.69,
-      "spend_7g": 0.18,
+      "spend_7g": 0.0,
       "status": "ok",
       "reason": "6 lead a CPL €22.36: dentro il limite posizionamenti di €45",
       "escluso": true,
@@ -361,22 +361,22 @@
       "posto": "FB Reels",
       "piatt": "facebook",
       "pos": "facebook_reels",
-      "spend_tot": 52.31,
+      "spend_tot": 52.3,
       "leads_tot": 0.0,
       "ritest_dal": null,
       "adset_id": "120249800005120629",
       "adset": "Nuovo gruppo di inserzioni Contatti - Copia",
       "campagna": "CF - Modulo 1",
-      "spend": 52.31,
+      "spend": 52.3,
       "leads": 0.0,
       "cpl": null,
       "cvr": 0.0,
-      "spend_7g": 1.35,
+      "spend_7g": 0.0,
       "status": "kill",
-      "reason": "€52.31 spesi e 0 lead: oltre il limite posizionamenti di €45",
+      "reason": "€52.30 spesi e 0 lead: oltre il limite posizionamenti di €45",
       "escluso": true,
       "da_staccare": false,
-      "sprecato": 22.31
+      "sprecato": 22.3
      },
      {
       "nome": "Nuovo gruppo di inserzioni Contatti - Copia · FB In-stream",
@@ -514,26 +514,26 @@
     "n_da_staccare": 0
    },
    "riallocazione": {
-    "budget_da_spostare": 3899.01,
+    "budget_da_spostare": 0,
     "cpl_vincente": null,
-    "lead_prudente": 111,
+    "lead_prudente": 0,
     "lead_ottimistico": 0
    },
    "campagne": [
     {
      "id": "120249502985680629",
      "name": "CF - Modulo 1",
-     "spend": 3899.01,
-     "leads": 141.0,
-     "cpl": 27.65,
-     "impressions": 330879.0,
-     "clicks": 4636.0,
-     "link_clicks": 2358.0,
-     "cvr": 5.98,
-     "ctr": 1.401116,
-     "cpm": 11.783794,
-     "reach": 32805.0,
-     "frequency": 10.086237,
+     "spend": 3950.44,
+     "leads": 143.0,
+     "cpl": 27.63,
+     "impressions": 334403.0,
+     "clicks": 4687.0,
+     "link_clicks": 2380.0,
+     "cvr": 6.01,
+     "ctr": 1.401602,
+     "cpm": 11.813411,
+     "reach": 32913.0,
+     "frequency": 10.16021,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 70.0,
@@ -543,134 +543,98 @@
        "name": "Video - testimonianza-… (gruppo unico)",
        "campaign_id": "120249502985680629",
        "campaign_name": "CF - Modulo 1",
-       "spend": 279.49,
-       "leads": 7.0,
-       "cpl": 39.93,
-       "impressions": 22112.0,
-       "clicks": 566.0,
-       "link_clicks": 206.0,
-       "cvr": 3.4,
-       "ctr": 2.559696,
-       "cpm": 12.639743,
-       "reach": 9361.0,
-       "frequency": 2.362141,
+       "spend": 294.52,
+       "leads": 9.0,
+       "cpl": 32.72,
+       "impressions": 23139.0,
+       "clicks": 588.0,
+       "link_clicks": 213.0,
+       "cvr": 4.23,
+       "ctr": 2.541164,
+       "cpm": 12.728294,
+       "reach": 9635.0,
+       "frequency": 2.401557,
        "attiva": true,
        "effective_status": "ACTIVE",
        "dopo_lead": {
-        "spesa_dopo": 44.7,
-        "ultimo_lead": "2026-11-11",
-        "lead_finestra": 7.0
+        "spesa_dopo": 3.78,
+        "ultimo_lead": "2026-11-13",
+        "lead_finestra": 9.0
        },
-       "status": "kill",
-       "reason": "7 lead, CPL €39.93 sopra €35",
-       "sprecato": 34.49,
-       "flags": [
-        "solo 3.4% dei click al link diventa lead: modulo o landing da rivedere"
-       ],
+       "status": "ok",
+       "reason": "CPL €32.72: dentro i parametri",
+       "sprecato": 0.0,
+       "flags": [],
        "recent": {
-        "spend": 279.49,
-        "leads": 7.0,
-        "cpl": 39.93
+        "spend": 276.94,
+        "leads": 9.0,
+        "cpl": 30.77
        },
-       "trend": 0.0
+       "trend": -1.95
       },
       {
        "id": "120250809815540629",
        "name": "CF statica 100K … (ripresa 23/10)",
        "campaign_id": "120249502985680629",
        "campaign_name": "CF - Modulo 1",
-       "spend": 78.87,
+       "spend": 95.18,
        "leads": 5.0,
-       "cpl": 15.77,
-       "impressions": 5094.0,
-       "clicks": 68.0,
-       "link_clicks": 27.0,
-       "cvr": 18.52,
-       "ctr": 1.334904,
-       "cpm": 15.482921,
-       "reach": 2390.0,
-       "frequency": 2.131381,
+       "cpl": 19.04,
+       "impressions": 6163.0,
+       "clicks": 85.0,
+       "link_clicks": 35.0,
+       "cvr": 14.29,
+       "ctr": 1.379198,
+       "cpm": 15.443777,
+       "reach": 2733.0,
+       "frequency": 2.255031,
        "attiva": true,
        "effective_status": "ACTIVE",
        "dopo_lead": {
-        "spesa_dopo": 1.86,
+        "spesa_dopo": 18.03,
         "ultimo_lead": "2026-11-12",
         "lead_finestra": 5.0
        },
        "status": "ok",
-       "reason": "5 lead a CPL €15.77: sotto i 6 lead si lascia girare fino a €30 di CPL",
+       "reason": "5 lead a CPL €19.04: sotto i 6 lead si lascia girare fino a €30 di CPL",
        "sprecato": 0.0,
        "flags": [],
        "recent": {
-        "spend": 42.73,
+        "spend": 58.57,
         "leads": 5.0,
-        "cpl": 8.55
+        "cpl": 11.71
        },
-       "trend": -7.22
+       "trend": -7.33
       },
       {
        "id": "120250897976970629",
        "name": "CF statica Copia (ripresa 23/10) - Copia",
        "campaign_id": "120249502985680629",
        "campaign_name": "CF - Modulo 1",
-       "spend": 39.89,
+       "spend": 40.48,
        "leads": 3.0,
-       "cpl": 13.3,
-       "impressions": 2549.0,
+       "cpl": 13.49,
+       "impressions": 2576.0,
        "clicks": 28.0,
        "link_clicks": 14.0,
        "cvr": 21.43,
-       "ctr": 1.09847,
-       "cpm": 15.649274,
-       "reach": 1240.0,
-       "frequency": 2.055645,
+       "ctr": 1.086957,
+       "cpm": 15.714286,
+       "reach": 1247.0,
+       "frequency": 2.065758,
        "attiva": true,
        "effective_status": "ACTIVE",
        "dopo_lead": {
-        "spesa_dopo": 21.42,
+        "spesa_dopo": 22.01,
         "ultimo_lead": "2026-10-29",
         "lead_finestra": 3.0
        },
        "status": "ok",
-       "reason": "3 lead a CPL €13.30: sotto i 6 lead si lascia girare fino a €30 di CPL",
+       "reason": "3 lead a CPL €13.49: sotto i 6 lead si lascia girare fino a €30 di CPL",
        "sprecato": 0.0,
        "flags": [],
        "recent": {
-        "spend": 5.85,
-        "leads": 0.0,
-        "cpl": null
-       },
-       "trend": null
-      },
-      {
-       "id": "120251178106640629",
-       "name": "CF statica sito-gratis-guida black friday (12/11)",
-       "campaign_id": "120249502985680629",
-       "campaign_name": "CF - Modulo 1",
-       "spend": 32.64,
-       "leads": 0.0,
-       "cpl": null,
-       "impressions": 2093.0,
-       "clicks": 26.0,
-       "link_clicks": 16.0,
-       "cvr": 0.0,
-       "ctr": 1.242236,
-       "cpm": 15.59484,
-       "reach": 1307.0,
-       "frequency": 1.601377,
-       "attiva": true,
-       "effective_status": "ACTIVE",
-       "dopo_lead": {
-        "spesa_dopo": 32.64,
-        "ultimo_lead": null,
-        "lead_finestra": 0.0
-       },
-       "status": "kill",
-       "reason": "€32.64 spesi e 0 lead: oltre il limite di €30",
-       "sprecato": 2.64,
-       "flags": [],
-       "recent": {
-        "spend": 32.64,
+        "spend": 5.7,
         "leads": 0.0,
         "cpl": null
        },
@@ -681,136 +645,66 @@
        "name": "Statica - patrimonializzati-senza-contenuti",
        "campaign_id": "120249502985680629",
        "campaign_name": "CF - Modulo 1",
-       "spend": 14.04,
+       "spend": 22.65,
        "leads": 2.0,
-       "cpl": 7.02,
-       "impressions": 986.0,
-       "clicks": 8.0,
-       "link_clicks": 5.0,
-       "cvr": 40.0,
-       "ctr": 0.811359,
-       "cpm": 14.239351,
-       "reach": 621.0,
-       "frequency": 1.587762,
+       "cpl": 11.32,
+       "impressions": 1658.0,
+       "clicks": 12.0,
+       "link_clicks": 8.0,
+       "cvr": 25.0,
+       "ctr": 0.723764,
+       "cpm": 13.661037,
+       "reach": 958.0,
+       "frequency": 1.730689,
        "attiva": true,
        "effective_status": "ACTIVE",
        "dopo_lead": {
-        "spesa_dopo": 0.42,
+        "spesa_dopo": 9.03,
         "ultimo_lead": "2026-11-12",
         "lead_finestra": 2.0
        },
-       "status": "winner",
-       "reason": "CPL €7.02: sotto €10, ci si mette budget",
+       "status": "ok",
+       "reason": "2 lead a CPL €11.32: sotto i 6 lead si lascia girare fino a €30 di CPL",
        "sprecato": 0.0,
        "flags": [
-        "CTR 0,81% sotto 1%: segnalato, da solo non fa cambiare creativa"
+        "CTR 0,72% sotto 1%: segnalato, da solo non fa cambiare creativa"
        ],
        "recent": {
-        "spend": 14.04,
+        "spend": 22.65,
         "leads": 2.0,
-        "cpl": 7.02
+        "cpl": 11.32
        },
        "trend": 0.0
-      },
-      {
-       "id": "120251178100390629",
-       "name": "CF statica primo-google-chatgpt black friday (12/11)",
-       "campaign_id": "120249502985680629",
-       "campaign_name": "CF - Modulo 1",
-       "spend": 11.0,
-       "leads": 0.0,
-       "cpl": null,
-       "impressions": 460.0,
-       "clicks": 6.0,
-       "link_clicks": 2.0,
-       "cvr": 0.0,
-       "ctr": 1.304348,
-       "cpm": 23.913043,
-       "reach": 320.0,
-       "frequency": 1.4375,
-       "attiva": true,
-       "effective_status": "ACTIVE",
-       "dopo_lead": {
-        "spesa_dopo": 11.0,
-        "ultimo_lead": null,
-        "lead_finestra": 0.0
-       },
-       "status": "watch",
-       "reason": "€11.00 spesi e 0 lead: mancano €19.00 allo stacco",
-       "sprecato": 0.0,
-       "flags": [],
-       "recent": {
-        "spend": 11.0,
-        "leads": 0.0,
-        "cpl": null
-       },
-       "trend": null
       },
       {
        "id": "120251078254930629",
        "name": "CF statica … (ripresa 6/11)",
        "campaign_id": "120249502985680629",
        "campaign_name": "CF - Modulo 1",
-       "spend": 6.87,
+       "spend": 7.8,
        "leads": 0.0,
        "cpl": null,
-       "impressions": 578.0,
-       "clicks": 5.0,
-       "link_clicks": 1.0,
+       "impressions": 680.0,
+       "clicks": 7.0,
+       "link_clicks": 2.0,
        "cvr": 0.0,
-       "ctr": 0.865052,
-       "cpm": 11.885813,
-       "reach": 356.0,
-       "frequency": 1.623596,
+       "ctr": 1.029412,
+       "cpm": 11.470588,
+       "reach": 415.0,
+       "frequency": 1.638554,
        "attiva": true,
        "effective_status": "ACTIVE",
        "dopo_lead": {
-        "spesa_dopo": 6.87,
+        "spesa_dopo": 7.8,
         "ultimo_lead": null,
         "lead_finestra": 0.0
        },
        "status": "watch",
-       "reason": "€6.87 spesi e 0 lead: mancano €23.13 allo stacco",
-       "sprecato": 0.0,
-       "flags": [
-        "CTR 0,87% sotto 1%: segnalato, da solo non fa cambiare creativa"
-       ],
-       "recent": {
-        "spend": 6.87,
-        "leads": 0.0,
-        "cpl": null
-       },
-       "trend": null
-      },
-      {
-       "id": "120251169210090629",
-       "name": "Video - costo-rimandare",
-       "campaign_id": "120249502985680629",
-       "campaign_name": "CF - Modulo 1",
-       "spend": 1.14,
-       "leads": 0.0,
-       "cpl": null,
-       "impressions": 89.0,
-       "clicks": 0.0,
-       "link_clicks": 0.0,
-       "cvr": null,
-       "ctr": 0.0,
-       "cpm": 12.808989,
-       "reach": 71.0,
-       "frequency": 1.253521,
-       "attiva": true,
-       "effective_status": "ACTIVE",
-       "dopo_lead": {
-        "spesa_dopo": 1.14,
-        "ultimo_lead": null,
-        "lead_finestra": 0.0
-       },
-       "status": "early",
-       "reason": "solo 89 impression: troppo presto per giudicare",
+       "reason": "€7.80 spesi e 0 lead: mancano €22.20 allo stacco",
        "sprecato": 0.0,
        "flags": [],
        "recent": {
-        "spend": 1.14,
+        "spend": 7.64,
         "leads": 0.0,
         "cpl": null
        },
@@ -821,30 +715,64 @@
        "name": "Video - sito-gratis-chatgpt (3799)",
        "campaign_id": "120249502985680629",
        "campaign_name": "CF - Modulo 1",
-       "spend": 0.46,
+       "spend": 2.94,
        "leads": 0.0,
        "cpl": null,
-       "impressions": 41.0,
-       "clicks": 0.0,
-       "link_clicks": 0.0,
-       "cvr": null,
-       "ctr": 0.0,
-       "cpm": 11.219512,
-       "reach": 38.0,
-       "frequency": 1.078947,
+       "impressions": 227.0,
+       "clicks": 3.0,
+       "link_clicks": 1.0,
+       "cvr": 0.0,
+       "ctr": 1.321586,
+       "cpm": 12.951542,
+       "reach": 173.0,
+       "frequency": 1.312139,
        "attiva": true,
        "effective_status": "ACTIVE",
        "dopo_lead": {
-        "spesa_dopo": 0.46,
+        "spesa_dopo": 2.94,
         "ultimo_lead": null,
         "lead_finestra": 0.0
        },
        "status": "early",
-       "reason": "solo 41 impression: troppo presto per giudicare",
+       "reason": "solo 227 impression: troppo presto per giudicare",
        "sprecato": 0.0,
        "flags": [],
        "recent": {
-        "spend": 0.46,
+        "spend": 2.94,
+        "leads": 0.0,
+        "cpl": null
+       },
+       "trend": null
+      },
+      {
+       "id": "120251169210090629",
+       "name": "Video - costo-rimandare",
+       "campaign_id": "120249502985680629",
+       "campaign_name": "CF - Modulo 1",
+       "spend": 1.66,
+       "leads": 0.0,
+       "cpl": null,
+       "impressions": 145.0,
+       "clicks": 0.0,
+       "link_clicks": 0.0,
+       "cvr": null,
+       "ctr": 0.0,
+       "cpm": 11.448276,
+       "reach": 102.0,
+       "frequency": 1.421569,
+       "attiva": true,
+       "effective_status": "ACTIVE",
+       "dopo_lead": {
+        "spesa_dopo": 1.66,
+        "ultimo_lead": null,
+        "lead_finestra": 0.0
+       },
+       "status": "early",
+       "reason": "solo 145 impression: troppo presto per giudicare",
+       "sprecato": 0.0,
+       "flags": [],
+       "recent": {
+        "spend": 1.66,
         "leads": 0.0,
         "cpl": null
        },
@@ -871,7 +799,7 @@
        "dopo_lead": {
         "spesa_dopo": 18.26,
         "ultimo_lead": "2026-10-14",
-        "lead_finestra": 30.0
+        "lead_finestra": 28.0
        },
        "status": "ok",
        "reason": "CPL €22.01: dentro i parametri",
@@ -1009,11 +937,11 @@
         "frequenza 2.7: pubblico bruciato, cambia audience"
        ],
        "recent": {
-        "spend": 33.39,
-        "leads": 1.0,
-        "cpl": 33.39
+        "spend": 6.08,
+        "leads": 0.0,
+        "cpl": null
        },
-       "trend": 15.43
+       "trend": null
       },
       {
        "id": "120249502985690629",
@@ -1230,11 +1158,45 @@
         "solo 3.2% dei click al link diventa lead: modulo o landing da rivedere"
        ],
        "recent": {
-        "spend": 45.83,
+        "spend": 44.58,
         "leads": 1.0,
-        "cpl": 45.83
+        "cpl": 44.58
        },
-       "trend": 0.0
+       "trend": -1.25
+      },
+      {
+       "id": "120251178106640629",
+       "name": "CF statica sito-gratis-guida black friday (12/11)",
+       "campaign_id": "120249502985680629",
+       "campaign_name": "CF - Modulo 1",
+       "spend": 38.32,
+       "leads": 0.0,
+       "cpl": null,
+       "impressions": 2445.0,
+       "clicks": 29.0,
+       "link_clicks": 18.0,
+       "cvr": 0.0,
+       "ctr": 1.186094,
+       "cpm": 15.672802,
+       "reach": 1497.0,
+       "frequency": 1.633267,
+       "attiva": false,
+       "effective_status": "PAUSED",
+       "dopo_lead": {
+        "spesa_dopo": 38.32,
+        "ultimo_lead": null,
+        "lead_finestra": 0.0
+       },
+       "status": "kill",
+       "reason": "€38.32 spesi e 0 lead: oltre il limite di €30",
+       "sprecato": 8.32,
+       "flags": [],
+       "recent": {
+        "spend": 38.32,
+        "leads": 0.0,
+        "cpl": null
+       },
+       "trend": null
       },
       {
        "id": "120250986508680629",
@@ -1621,7 +1583,7 @@
        "attiva": false,
        "effective_status": "UNKNOWN",
        "dopo_lead": {
-        "spesa_dopo": 12.57,
+        "spesa_dopo": 9.41,
         "ultimo_lead": null,
         "lead_finestra": 0.0
        },
@@ -1659,11 +1621,7 @@
        "reason": "€23.82 spesi e 0 lead: mancano €6.18 allo stacco",
        "sprecato": 0.0,
        "flags": [],
-       "recent": {
-        "spend": 14.57,
-        "leads": 0.0,
-        "cpl": null
-       },
+       "recent": null,
        "trend": null
       },
       {
@@ -1843,11 +1801,7 @@
        "flags": [
         "CTR 0,83% sotto 1%: segnalato, da solo non fa cambiare creativa"
        ],
-       "recent": {
-        "spend": 2.42,
-        "leads": 0.0,
-        "cpl": null
-       },
+       "recent": null,
        "trend": null
       },
       {
@@ -2036,6 +1990,40 @@
        "trend": null
       },
       {
+       "id": "120251178100390629",
+       "name": "CF statica primo-google-chatgpt black friday (12/11)",
+       "campaign_id": "120249502985680629",
+       "campaign_name": "CF - Modulo 1",
+       "spend": 12.28,
+       "leads": 0.0,
+       "cpl": null,
+       "impressions": 493.0,
+       "clicks": 6.0,
+       "link_clicks": 2.0,
+       "cvr": 0.0,
+       "ctr": 1.217039,
+       "cpm": 24.908722,
+       "reach": 337.0,
+       "frequency": 1.462908,
+       "attiva": false,
+       "effective_status": "PAUSED",
+       "dopo_lead": {
+        "spesa_dopo": 12.28,
+        "ultimo_lead": null,
+        "lead_finestra": 0.0
+       },
+       "status": "watch",
+       "reason": "€12.28 spesi e 0 lead: mancano €17.72 allo stacco",
+       "sprecato": 0.0,
+       "flags": [],
+       "recent": {
+        "spend": 12.28,
+        "leads": 0.0,
+        "cpl": null
+       },
+       "trend": null
+      },
+      {
        "id": "120250355894400629",
        "name": "Nuova inserzione Contatti - Copia 3",
        "campaign_id": "120249502985680629",
@@ -2092,12 +2080,8 @@
        "reason": "1 lead a €9.33: si lascia girare, ma entro €45 (mancano €35.67) deve arrivare il 2° lead, cioe' CPL sotto €22",
        "sprecato": 0.0,
        "flags": [],
-       "recent": {
-        "spend": 9.33,
-        "leads": 1.0,
-        "cpl": 9.33
-       },
-       "trend": 0.0
+       "recent": null,
+       "trend": null
       },
       {
        "id": "120251050278030629",
@@ -2128,11 +2112,7 @@
        "flags": [
         "CTR 0,50% sotto 1%: segnalato, da solo non fa cambiare creativa"
        ],
-       "recent": {
-        "spend": 2.54,
-        "leads": 0.0,
-        "cpl": null
-       },
+       "recent": null,
        "trend": null
       },
       {
@@ -2164,11 +2144,7 @@
        "flags": [
         "CTR 0,29% sotto 1%: segnalato, da solo non fa cambiare creativa"
        ],
-       "recent": {
-        "spend": 2.16,
-        "leads": 0.0,
-        "cpl": null
-       },
+       "recent": null,
        "trend": null
       },
       {
@@ -2198,11 +2174,7 @@
        "reason": "€5.42 spesi e 0 lead: mancano €24.58 allo stacco",
        "sprecato": 0.0,
        "flags": [],
-       "recent": {
-        "spend": 0.15,
-        "leads": 0.0,
-        "cpl": null
-       },
+       "recent": null,
        "trend": null
       },
       {
@@ -2232,11 +2204,7 @@
        "reason": "solo 150 impression: troppo presto per giudicare",
        "sprecato": 0.0,
        "flags": [],
-       "recent": {
-        "spend": 1.22,
-        "leads": 0.0,
-        "cpl": null
-       },
+       "recent": null,
        "trend": null
       },
       {
@@ -2369,32 +2337,32 @@
       }
      ],
      "vivo": {
-      "spend": 464.4,
-      "leads": 17.0,
-      "clicks": 707.0,
-      "link_clicks": 271.0,
-      "impressions": 34002.0,
-      "cpl": 27.32,
-      "cvr": 6.27,
-      "ctr": 2.08,
-      "recent_cpl": 28.16,
-      "recent_spend": 394.22,
-      "recent_leads": 14.0
+      "spend": 465.23,
+      "leads": 19.0,
+      "clicks": 723.0,
+      "link_clicks": 273.0,
+      "impressions": 34588.0,
+      "cpl": 24.49,
+      "cvr": 6.96,
+      "ctr": 2.09,
+      "recent_cpl": 23.51,
+      "recent_spend": 376.1,
+      "recent_leads": 16.0
      },
      "n_ads": 57,
-     "n_ads_attivi": 9,
-     "sprecato": 37.13,
-     "status": "kill",
-     "reason": "2 inserzione/i ancora accesa/e fuori soglia (la peggiore: Video - testimonianza-… (gruppo unico), 7 lead, CPL €39.93 sopra €35)",
+     "n_ads_attivi": 7,
+     "sprecato": 0.0,
+     "status": "watch",
+     "reason": "1 inserzione/i ancora accesa/e da sorvegliare",
      "flags": [
-      "frequenza 10.1: pubblico bruciato, cambia audience"
+      "frequenza 10.2: pubblico bruciato, cambia audience"
      ],
      "recent": {
-      "spend": 507.86,
+      "spend": 479.39,
       "leads": 17.0,
-      "cpl": 29.87
+      "cpl": 28.2
      },
-     "trend": 2.22
+     "trend": 0.57
     },
     {
      "id": "120249368205620629",
@@ -2435,7 +2403,7 @@
        "dopo_lead": {
         "spesa_dopo": 6.4,
         "ultimo_lead": "2026-09-16",
-        "lead_finestra": 7.0
+        "lead_finestra": 5.0
        },
        "status": "winner",
        "reason": "CPL €7.83: sotto €10, ci si mette budget",
@@ -2521,7 +2489,7 @@
        "attiva": false,
        "effective_status": "CAMPAIGN_PAUSED",
        "dopo_lead": {
-        "spesa_dopo": 0.9,
+        "spesa_dopo": 0.8,
         "ultimo_lead": null,
         "lead_finestra": 0.0
        },
@@ -2612,7 +2580,7 @@
        "dopo_lead": {
         "spesa_dopo": 0.09,
         "ultimo_lead": "2026-10-12",
-        "lead_finestra": 32.0
+        "lead_finestra": 31.0
        },
        "status": "winner",
        "reason": "CPL €9.12: sotto €10, ci si mette budget",
@@ -2836,11 +2804,11 @@
         "frequenza 3.9: pubblico bruciato, cambia audience"
        ],
        "recent": {
-        "spend": 55.08,
+        "spend": 43.53,
         "leads": 5.0,
-        "cpl": 11.02
+        "cpl": 8.71
        },
-       "trend": 2.08
+       "trend": -0.23
       },
       {
        "id": "120250629789100629",
@@ -2870,11 +2838,11 @@
        "sprecato": 0.0,
        "flags": [],
        "recent": {
-        "spend": 4.59,
+        "spend": 4.28,
         "leads": 1.0,
-        "cpl": 4.59
+        "cpl": 4.28
        },
-       "trend": 0.0
+       "trend": -0.31
       }
      ],
      "vivo": null,
@@ -2887,11 +2855,11 @@
       "frequenza 4.0: pubblico bruciato, cambia audience"
      ],
      "recent": {
-      "spend": 59.67,
+      "spend": 47.81,
       "leads": 6.0,
-      "cpl": 9.95
+      "cpl": 7.97
      },
-     "trend": 1.13
+     "trend": -0.85
     },
     {
      "id": "120246542889040629",
@@ -10254,8 +10222,8 @@
    ],
    "hiring": {
     "n": 8,
-    "spend": 643.99,
-    "leads": 184.0
+    "spend": 652.6,
+    "leads": 187.0
    },
    "campagne_hiring": [
     {
@@ -10356,19 +10324,19 @@
     {
      "id": "120249111594340629",
      "name": "CSM- Moduli - Copia",
-     "spend": 4.51,
-     "leads": 1.0,
-     "cpl": 4.51,
-     "impressions": 282.0,
-     "clicks": 25.0,
-     "link_clicks": 13.0,
-     "cvr": 7.69,
-     "ctr": 8.865248,
-     "cpm": 15.992908,
-     "reach": 199.0,
-     "frequency": 1.417085,
-     "attiva": false,
-     "effective_status": "PAUSED",
+     "spend": 13.12,
+     "leads": 4.0,
+     "cpl": 3.28,
+     "impressions": 900.0,
+     "clicks": 67.0,
+     "link_clicks": 25.0,
+     "cvr": 16.0,
+     "ctr": 7.444444,
+     "cpm": 14.577778,
+     "reach": 592.0,
+     "frequency": 1.52027,
+     "attiva": true,
+     "effective_status": "ACTIVE",
      "daily_budget": 4.0,
      "hiring": true
     },
@@ -10458,10 +10426,10 @@
        "con_risultati": [
         "AEA-HOUSE"
        ],
-       "accesa": [],
-       "spenta": [
+       "accesa": [
         "AEA-HOUSE"
        ],
+       "spenta": [],
        "mai": []
       }
      },
@@ -10511,10 +10479,10 @@
        "con_risultati": [
         "AEA-HOUSE"
        ],
-       "accesa": [],
-       "spenta": [
+       "accesa": [
         "AEA-HOUSE"
        ],
+       "spenta": [],
        "mai": []
       }
      },
@@ -10629,10 +10597,10 @@
        "con_risultati": [
         "AEA-HOUSE"
        ],
-       "accesa": [],
-       "spenta": [
+       "accesa": [
         "AEA-HOUSE"
        ],
+       "spenta": [],
        "mai": []
       }
      },
@@ -10760,10 +10728,10 @@
        "con_risultati": [
         "AEA-HOUSE"
        ],
-       "accesa": [],
-       "spenta": [
+       "accesa": [
         "AEA-HOUSE"
        ],
+       "spenta": [],
        "mai": []
       }
      },
@@ -10847,10 +10815,10 @@
        "con_risultati": [
         "AEA-HOUSE"
        ],
-       "accesa": [],
-       "spenta": [
+       "accesa": [
         "AEA-HOUSE"
        ],
+       "spenta": [],
        "mai": []
       }
      },
@@ -10911,7 +10879,7 @@
       "nome": "ORO - statica v1 - 14 giorni e x2 - Copia 2",
       "campagna": "ORO - Promotori - Moduli - statica v1 - Copia",
       "lead": 36,
-      "apt1": 11,
+      "apt1": 15,
       "apt2": 3,
       "apt3": 1,
       "chiusi": 0,
@@ -11001,10 +10969,10 @@
        "con_risultati": [
         "AEA-HOUSE"
        ],
-       "accesa": [],
-       "spenta": [
+       "accesa": [
         "AEA-HOUSE"
        ],
+       "spenta": [],
        "mai": []
       }
      },
@@ -11034,10 +11002,10 @@
        "con_risultati": [
         "AEA-HOUSE"
        ],
-       "accesa": [],
-       "spenta": [
+       "accesa": [
         "AEA-HOUSE"
        ],
+       "spenta": [],
        "mai": []
       }
      },
@@ -11086,10 +11054,10 @@
        "con_risultati": [
         "AEA-HOUSE"
        ],
-       "accesa": [],
-       "spenta": [
+       "accesa": [
         "AEA-HOUSE"
        ],
+       "spenta": [],
        "mai": []
       }
      },
@@ -11130,6 +11098,25 @@
       "costo_cliente": null
      },
      {
+      "ad_id": "120251078253820629",
+      "nome": "Video - testimonianza-… (gruppo unico)",
+      "campagna": "CF - Modulo 1",
+      "lead": 9,
+      "apt1": 7,
+      "apt2": 1,
+      "apt3": 0,
+      "chiusi": 0,
+      "k100": 0,
+      "spesa": 294.52,
+      "fonti_clienti": [],
+      "apt_piattaforme": {
+       "ig": 1
+      },
+      "attiva": true,
+      "costo_apt": 294.52,
+      "costo_cliente": null
+     },
+     {
       "ad_id": "120248713065590629",
       "nome": "Nuova inserzione Contatti",
       "campagna": "Moduli -immagine - Copia",
@@ -11155,10 +11142,10 @@
        "con_risultati": [
         "AEA-HOUSE"
        ],
-       "accesa": [],
-       "spenta": [
+       "accesa": [
         "AEA-HOUSE"
        ],
+       "spenta": [],
        "mai": []
       }
      },
@@ -11172,13 +11159,13 @@
       "apt3": 0,
       "chiusi": 0,
       "k100": 0,
-      "spesa": 78.87,
+      "spesa": 95.18,
       "fonti_clienti": [],
       "apt_piattaforme": {
        "ig": 1
       },
       "attiva": true,
-      "costo_apt": 78.87,
+      "costo_apt": 95.18,
       "costo_cliente": null,
       "diffusione": {
        "lead": 20,
@@ -11221,10 +11208,10 @@
        "con_risultati": [
         "AEA-HOUSE"
        ],
-       "accesa": [],
-       "spenta": [
+       "accesa": [
         "AEA-HOUSE"
        ],
+       "spenta": [],
        "mai": []
       }
      },
@@ -11254,10 +11241,10 @@
        "con_risultati": [
         "AEA-HOUSE"
        ],
-       "accesa": [],
-       "spenta": [
+       "accesa": [
         "AEA-HOUSE"
        ],
+       "spenta": [],
        "mai": []
       }
      },
@@ -11287,10 +11274,10 @@
        "con_risultati": [
         "AEA-HOUSE"
        ],
-       "accesa": [],
-       "spenta": [
+       "accesa": [
         "AEA-HOUSE"
        ],
+       "spenta": [],
        "mai": []
       }
      },
@@ -11320,10 +11307,10 @@
        "con_risultati": [
         "AEA-HOUSE"
        ],
-       "accesa": [],
-       "spenta": [
+       "accesa": [
         "AEA-HOUSE"
        ],
+       "spenta": [],
        "mai": []
       }
      },
@@ -11353,10 +11340,10 @@
        "con_risultati": [
         "AEA-HOUSE"
        ],
-       "accesa": [],
-       "spenta": [
+       "accesa": [
         "AEA-HOUSE"
        ],
+       "spenta": [],
        "mai": []
       }
      },
@@ -11435,13 +11422,13 @@
     ],
     "altre_con_esiti": 0,
     "totale_creative": {
-     "lead": 384,
-     "apt1": 177,
-     "apt2": 99,
+     "lead": 386,
+     "apt1": 182,
+     "apt2": 100,
      "apt3": 55,
      "chiusi": 10,
      "k100": 0,
-     "spesa": 6381.430000000001
+     "spesa": 6421.970000000001
     },
     "senza_creativa": {
      "lead": 21,
@@ -11451,7 +11438,7 @@
      "apt3": 10,
      "chiusi": 2
     },
-    "letto": "2026-11-13T08:04:03"
+    "letto": "2026-11-14T08:03:48"
    },
    "nome_breve": "AI Elite Advisory"
   }
@@ -11459,7 +11446,7 @@
  "fermi": [],
  "nuovi": [],
  "errori": [],
- "ruolo_html": "<style>\n.nr{display:grid;grid-template-columns:1.25fr 1fr;gap:12px;margin:18px 0 6px}\n.nr-card{background:linear-gradient(160deg,rgba(52,98,196,.45),rgba(30,64,140,.42));border:1px solid rgba(150,190,255,.22);border-radius:16px;padding:16px 18px;color:#F3F6FD;box-shadow:0 10px 30px rgba(0,0,0,.3)}\n.nr-card.num{border-top:3px solid #FFD21F}\n.nr-card.sf{border-top:3px solid #D4A537}\n.nr-k{font-size:11.5px;font-weight:700;color:#A9BBE0;text-transform:uppercase;letter-spacing:.06em}\n.nr-v{font-size:44px;font-weight:800;letter-spacing:-.03em;line-height:1.05;margin:6px 0 2px;font-variant-numeric:tabular-nums}\n.nr-v small{font-size:20px;color:#A9BBE0;font-weight:700}\n.nr-v .nr-ok{color:#FFD21F}\n.nr-bar{position:relative;height:9px;border-radius:99px;background:rgba(255,255,255,.1);overflow:hidden;margin:10px 0 6px}\n.nr-bar i{position:absolute;left:0;top:0;bottom:0;background:linear-gradient(90deg,#FFD21F,#D4A537);border-radius:99px}\n.nr-bar b{position:absolute;top:-2px;bottom:-2px;width:2px;background:#fff;opacity:.85}\n.nr-s{font-size:12.5px;color:#C4CDE0;line-height:1.5}\n.nr-s b{color:#F3F6FD}\n.nr-due{display:grid;grid-template-columns:1fr 1fr;gap:14px}\n.nr-col{display:flex;flex-direction:column;gap:16px}\n.nr-col>div+div{border-top:1px solid rgba(255,255,255,.12);padding-top:14px}\n.nr-t{font-size:15px;font-weight:600;line-height:1.45;margin:8px 0 6px}\n.nr-tag{display:inline-block;font-size:11px;font-weight:800;border-radius:99px;padding:2px 9px;background:rgba(212,165,55,.2);color:#E6C068;border:1px solid rgba(212,165,55,.45)}\n.nr-tag.old{background:rgba(255,255,255,.08);color:#C4CDE0;border-color:rgba(255,255,255,.2)}\n@media (max-width:760px){.nr,.nr-due{grid-template-columns:1fr}}\n</style><div class=\"nr\"><div class=\"nr-card num\"><div><div class=\"nr-k\">Il tuo numero · clienti col CPL sotto 15 euro</div><div class=\"nr-v\">1<small> / obiettivo da chiedere a Francesco</small></div><div class=\"nr-s\"><b>Luigi M. 9,30 · a un passo: Flavio B. 15,48, Giovanni C. 16,95</b> · su 11 clienti con un annuncio vivo · CPL dell'annuncio vivo, mai la media della campagna</div></div></div><div class=\"nr-card sf\"><div class=\"nr-k\">Sfida della settimana</div><div class=\"nr-t\">Trovare un altro venditore e migliorare le offerte</div><span class=\"nr-tag old\">settimana 19-26/10 chiusa · la nuova si scrive lunedì</span> <span class=\"nr-tag\">fatta in parte</span><div class=\"nr-s\" style=\"margin-top:10px\">numeri del 2026-11-12 17:33</div></div></div>",
+ "ruolo_html": "<style>\n.nr{display:grid;grid-template-columns:1.25fr 1fr;gap:12px;margin:18px 0 6px}\n.nr-card{background:linear-gradient(160deg,rgba(52,98,196,.45),rgba(30,64,140,.42));border:1px solid rgba(150,190,255,.22);border-radius:16px;padding:16px 18px;color:#F3F6FD;box-shadow:0 10px 30px rgba(0,0,0,.3)}\n.nr-card.num{border-top:3px solid #FFD21F}\n.nr-card.sf{border-top:3px solid #D4A537}\n.nr-k{font-size:11.5px;font-weight:700;color:#A9BBE0;text-transform:uppercase;letter-spacing:.06em}\n.nr-v{font-size:44px;font-weight:800;letter-spacing:-.03em;line-height:1.05;margin:6px 0 2px;font-variant-numeric:tabular-nums}\n.nr-v small{font-size:20px;color:#A9BBE0;font-weight:700}\n.nr-v .nr-ok{color:#FFD21F}\n.nr-bar{position:relative;height:9px;border-radius:99px;background:rgba(255,255,255,.1);overflow:hidden;margin:10px 0 6px}\n.nr-bar i{position:absolute;left:0;top:0;bottom:0;background:linear-gradient(90deg,#FFD21F,#D4A537);border-radius:99px}\n.nr-bar b{position:absolute;top:-2px;bottom:-2px;width:2px;background:#fff;opacity:.85}\n.nr-s{font-size:12.5px;color:#C4CDE0;line-height:1.5}\n.nr-s b{color:#F3F6FD}\n.nr-due{display:grid;grid-template-columns:1fr 1fr;gap:14px}\n.nr-col{display:flex;flex-direction:column;gap:16px}\n.nr-col>div+div{border-top:1px solid rgba(255,255,255,.12);padding-top:14px}\n.nr-t{font-size:15px;font-weight:600;line-height:1.45;margin:8px 0 6px}\n.nr-tag{display:inline-block;font-size:11px;font-weight:800;border-radius:99px;padding:2px 9px;background:rgba(212,165,55,.2);color:#E6C068;border:1px solid rgba(212,165,55,.45)}\n.nr-tag.old{background:rgba(255,255,255,.08);color:#C4CDE0;border-color:rgba(255,255,255,.2)}\n@media (max-width:760px){.nr,.nr-due{grid-template-columns:1fr}}\n</style><div class=\"nr\"><div class=\"nr-card num\"><div><div class=\"nr-k\">Il tuo numero · clienti col CPL sotto 15 euro</div><div class=\"nr-v\">1<small> / obiettivo da chiedere a Francesco</small></div><div class=\"nr-s\"><b>Luigi M. 10,49 · a un passo: Flavio B. 15,75</b> · su 13 clienti con un annuncio vivo · CPL dell'annuncio vivo, mai la media della campagna</div></div></div><div class=\"nr-card sf\"><div class=\"nr-k\">Sfida della settimana</div><div class=\"nr-t\">Trovare un altro venditore e migliorare le offerte</div><span class=\"nr-tag old\">settimana 19-26/10 chiusa · la nuova si scrive lunedì</span> <span class=\"nr-tag\">fatta in parte</span><div class=\"nr-s\" style=\"margin-top:10px\">numeri del 2026-11-13 17:54</div></div></div>",
  "monitorare": [
   {
    "id": "AEA-HOUSE|mon|mix-troppi-statiche",
