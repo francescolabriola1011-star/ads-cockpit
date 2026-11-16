@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-16T07:13:22+01:00",
+ "generato": "2026-11-16T08:20:00+01:00",
  "procedura": "https://docs.google.com/document/d/1vn5K-biqWNt40FmqPAzCpsSSZcaTjX25dpWTKnxVoyQ/edit",
  "cartella": "https://drive.google.com/drive/folders/1Zm7RDFGTeyrXjU2tWQAPyRvkA-maCmYk",
  "sezioni": [
@@ -13,62 +13,83 @@
   {
    "id": "ads",
    "titolo": "Altre mosse ads",
-   "sotto": "Posizionamenti fuori regola e a limite, spesa senza lead, moduli sotto il 4% di CVR, vincenti. Si azzera domani. Nota: dati del cockpit del 2026-11-15, non di oggi.",
+   "sotto": "Posizionamenti fuori regola e a limite, spesa senza lead, moduli sotto il 4% di CVR, vincenti. Si azzera domani.",
    "voci": [
     {
-     "k": "ckcsm:mb|ads|lim|marco-p-cf-mp:2026-11-16",
-     "t": "Marco P. (CF-MP): 2 posizionamenti a limite",
-     "d": "FB Storie 42,85 spesi, 0 lead, FB feed CPL 38,07. Limite 45. Si guarda, non si esclude.",
+     "k": "ckcsm:mb|ads|pos|marco-p-cf-mp-ai-elite-gruppo-inserzioni-campagna-atti:2026-11-16",
+     "t": "Marco P. (CF-MP): escludi FB Storie",
+     "d": "47,47 spesi, 0 lead, oltre il limite di 45.",
+     "m": "fuori regola",
+     "c": "oggi"
+    },
+    {
+     "k": "ckcsm:mb|ads|lim|marco-l-c-cf-mlc:2026-11-16",
+     "t": "Marco L.C. (CF-MLC): 2 posizionamenti a limite",
+     "d": "IG feed CPL 43,34, FB Reels 30,19 spesi, 0 lead. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
      "k": "ckcsm:mb|ads|lim|luigi-m-cf-lm:2026-11-16",
      "t": "Luigi M. (CF-LM): 1 posizionamento a limite",
-     "d": "IG Reels CPL 41,30. Limite 45. Si guarda, non si esclude.",
+     "d": "IG Reels CPL 41,45. Limite 45. Si guarda, non si esclude.",
+     "m": "a limite",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|ads|lim|marco-p-cf-mp:2026-11-16",
+     "t": "Marco P. (CF-MP): 2 posizionamenti a limite",
+     "d": "FB feed CPL 39,06, IG Reels CPL 32,32. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
      "k": "ckcsm:mb|ads|lim|elisa-m-cf-em:2026-11-16",
      "t": "Elisa M. (CF-EM): 1 posizionamento a limite",
-     "d": "FB Reels CPL 37,56. Limite 45. Si guarda, non si esclude.",
+     "d": "FB Reels CPL 38,94. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
      "k": "ckcsm:mb|ads|lim|fabio-r-cf-fr:2026-11-16",
      "t": "Fabio R. (CF-FR): 1 posizionamento a limite",
-     "d": "IG Storie CPL 36,62. Limite 45. Si guarda, non si esclude.",
+     "d": "IG Storie CPL 37,31. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|ads|lim|alessandro-z-oro-az:2026-11-16",
-     "t": "Alessandro Z. (ORO-AZ): 1 posizionamento a limite",
-     "d": "IG Reels CPL 34,45. Limite 45. Si guarda, non si esclude.",
-     "m": "a limite",
-     "c": ""
-    },
-    {
-     "k": "ckcsm:mb|ads|lim|marco-l-c-cf-mlc:2026-11-16",
-     "t": "Marco L.C. (CF-MLC): 1 posizionamento a limite",
-     "d": "IG feed CPL 34,30. Limite 45. Si guarda, non si esclude.",
-     "m": "a limite",
-     "c": ""
-    },
-    {
-     "k": "ckcsm:mb|ads|lim|flavio-b-cf-fb:2026-11-16",
-     "t": "Flavio B. (CF-FB): 1 posizionamento a limite",
-     "d": "FB Reels CPL 30,89. Limite 45. Si guarda, non si esclude.",
+     "k": "ckcsm:mb|ads|lim|gianluca-c-gc:2026-11-16",
+     "t": "GIANLUCA C. (GC): 1 posizionamento a limite",
+     "d": "FB feed CPL 34,58. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
      "k": "ckcsm:mb|ads|lim|giovanni-c-cf-gc:2026-11-16",
      "t": "Giovanni C. (CF-GC): 1 posizionamento a limite",
-     "d": "IG Storie CPL 30,89. Limite 45. Si guarda, non si esclude.",
+     "d": "IG Storie CPL 31,30. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|ads|lim|flavio-b-cf-fb:2026-11-16",
+     "t": "Flavio B. (CF-FB): 1 posizionamento a limite",
+     "d": "FB Reels CPL 31,16. Limite 45. Si guarda, non si esclude.",
+     "m": "a limite",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|ads|senza|giovanni-c-cf-gc:2026-11-16",
+     "t": "Giovanni C. (CF-GC): acceso senza lead recenti",
+     "d": "105 euro in 7 giorni. Trova la causa: annuncio, modulo o target.",
+     "m": "spesa",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|ads|scala|statica-futuro-migliore-italia:2026-11-16",
+     "t": "Alessandro Z. (ORO-AZ): vincente, valuta se scalare",
+     "d": "Statica - futuro-migliore-italia: 2 lead a CPL 9.57. Lo decide Francesco.",
+     "m": "vincente",
      "c": ""
     }
    ],
