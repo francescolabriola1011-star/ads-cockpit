@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-17T08:54:13+01:00",
+ "generato": "2026-11-17T13:18:59+01:00",
  "procedura": "https://docs.google.com/document/d/1vn5K-biqWNt40FmqPAzCpsSSZcaTjX25dpWTKnxVoyQ/edit",
  "cartella": "https://drive.google.com/drive/folders/1Zm7RDFGTeyrXjU2tWQAPyRvkA-maCmYk",
  "sezioni": [
@@ -13,69 +13,97 @@
   {
    "id": "ads",
    "titolo": "Altre mosse ads",
-   "sotto": "Posizionamenti fuori regola e a limite, spesa senza lead, moduli sotto il 4% di CVR, vincenti. Si azzera domani. Nota: dati del cockpit del 2026-11-16, non di oggi.",
+   "sotto": "Posizionamenti fuori regola e a limite, spesa senza lead, moduli sotto il 4% di CVR, vincenti. Si azzera domani.",
    "voci": [
     {
-     "k": "ckcsm:mb|ads|pos|marco-p-cf-mp-ai-elite-gruppo-inserzioni-campagna-atti:2026-11-17",
-     "t": "Marco P. (CF-MP): escludi FB Storie",
-     "d": "48,53 spesi, 0 lead, oltre il limite di 45.",
+     "k": "ckcsm:mb|ads|pos|alessandro-z-oro-az-gruppo-inserzioni-ai-elite-campagna-atti:2026-11-17",
+     "t": "Alessandro Z. (ORO-AZ): escludi FB Reels",
+     "d": "CPL 70,18, oltre il limite di 45. Spuntato il 27/10 ma su Meta ancora comprato.",
      "m": "fuori regola",
      "c": "oggi"
     },
     {
-     "k": "ckcsm:mb|ads|lim|marco-l-c-cf-mlc:2026-11-17",
-     "t": "Marco L.C. (CF-MLC): 2 posizionamenti a limite",
-     "d": "IG feed CPL 44,57, FB Reels 31,12 spesi, 0 lead. Limite 45. Si guarda, non si esclude.",
+     "k": "ckcsm:mb|ads|pos|alessandro-z-oro-az-gruppo-inserzioni-ai-elite-campagna-atti:2026-11-17",
+     "t": "Alessandro Z. (ORO-AZ): escludi FB Storie",
+     "d": "CPL 46,07, oltre il limite di 45.",
+     "m": "fuori regola",
+     "c": "oggi"
+    },
+    {
+     "k": "ckcsm:mb|ads|pos|marco-p-cf-mp-ai-elite-gruppo-inserzioni-campagna-atti:2026-11-17",
+     "t": "Marco P. (CF-MP): escludi FB Storie",
+     "d": "53,82 spesi, 0 lead, oltre il limite di 45.",
+     "m": "fuori regola",
+     "c": "oggi"
+    },
+    {
+     "k": "ckcsm:mb|ads|pos|marco-l-c-cf-mlc-gruppo-inserzioni-campagna-attiva-rilanc:2026-11-17",
+     "t": "Marco L.C. (CF-MLC): escludi IG feed",
+     "d": "CPL 50,18, oltre il limite di 45.",
+     "m": "fuori regola",
+     "c": "oggi"
+    },
+    {
+     "k": "ckcsm:mb|ads|lim|gianluca-c-cf-gca:2026-11-17",
+     "t": "Gianluca C. (CF-GCA): 1 posizionamento a limite",
+     "d": "FB feed CPL 43,69. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
      "k": "ckcsm:mb|ads|lim|luigi-m-cf-lm:2026-11-17",
      "t": "Luigi M. (CF-LM): 1 posizionamento a limite",
-     "d": "IG Reels CPL 41,46. Limite 45. Si guarda, non si esclude.",
-     "m": "a limite",
-     "c": ""
-    },
-    {
-     "k": "ckcsm:mb|ads|lim|marco-p-cf-mp:2026-11-17",
-     "t": "Marco P. (CF-MP): 2 posizionamenti a limite",
-     "d": "FB feed CPL 39,24, IG Reels CPL 32,90. Limite 45. Si guarda, non si esclude.",
+     "d": "IG Reels CPL 41,56. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
      "k": "ckcsm:mb|ads|lim|elisa-m-cf-em:2026-11-17",
      "t": "Elisa M. (CF-EM): 1 posizionamento a limite",
-     "d": "FB Reels CPL 38,97. Limite 45. Si guarda, non si esclude.",
+     "d": "FB Reels CPL 41,26. Limite 45. Si guarda, non si esclude.",
+     "m": "a limite",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|ads|lim|marco-p-cf-mp:2026-11-17",
+     "t": "Marco P. (CF-MP): 2 posizionamenti a limite",
+     "d": "FB feed CPL 40,36, IG Reels CPL 34,99. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
      "k": "ckcsm:mb|ads|lim|fabio-r-cf-fr:2026-11-17",
      "t": "Fabio R. (CF-FR): 1 posizionamento a limite",
-     "d": "IG Storie CPL 37,58. Limite 45. Si guarda, non si esclude.",
+     "d": "IG Storie CPL 38,19. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|ads|lim|gianluca-c-gc:2026-11-17",
-     "t": "GIANLUCA C. (GC): 1 posizionamento a limite",
-     "d": "FB feed CPL 35,49. Limite 45. Si guarda, non si esclude.",
+     "k": "ckcsm:mb|ads|lim|marco-l-c-cf-mlc:2026-11-17",
+     "t": "Marco L.C. (CF-MLC): 2 posizionamenti a limite",
+     "d": "FB Reels 34,45 spesi, 0 lead, IG Reels CPL 30,53. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
      "k": "ckcsm:mb|ads|lim|giovanni-c-cf-gc:2026-11-17",
      "t": "Giovanni C. (CF-GC): 1 posizionamento a limite",
-     "d": "IG Storie CPL 31,32. Limite 45. Si guarda, non si esclude.",
+     "d": "IG Storie CPL 31,68. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
      "k": "ckcsm:mb|ads|lim|flavio-b-cf-fb:2026-11-17",
      "t": "Flavio B. (CF-FB): 1 posizionamento a limite",
-     "d": "FB Reels CPL 31,17. Limite 45. Si guarda, non si esclude.",
+     "d": "FB Reels CPL 31,27. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|ads|modulo|marco-p-cf-mp:2026-11-17",
+     "t": "Marco P. (CF-MP): CVR 3,45% sotto il 4%",
+     "d": "58 click al link, 2 lead. Si guarda il modulo, non l'annuncio.",
+     "m": "modulo",
      "c": ""
     }
    ],
