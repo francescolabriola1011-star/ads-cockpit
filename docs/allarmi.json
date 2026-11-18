@@ -1,7 +1,7 @@
 {
- "generato": "16/11 04:06",
- "n_account_rossi": 3,
- "n_puliti": 11,
+ "generato": "18/11 04:06",
+ "n_account_rossi": 4,
+ "n_puliti": 10,
  "puliti": [
   "AEA-HOUSE",
   "CF-CC",
@@ -9,17 +9,28 @@
   "FB",
   "CF-FR",
   "CF-GC",
+  "CF-GCA",
   "CF-LM",
   "CF-MDG",
-  "CF-MP",
-  "GC",
   "ORO-AZ"
  ],
  "voci": [
   {
-   "cliente": "EM",
+   "cliente": "CF-EM",
+   "tipo": "LEAD NON MIGRATI",
+   "dettaglio": "(DA ELIMINARE) Lead Mecarelli Elisa · 2 righe",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-EM",
+   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
+   "dettaglio": "facebook/facebook_reels · 1.37 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-MP",
    "tipo": "PIU' DI UN MODULO VIVO",
-   "dettaglio": "Lead Gen - Elisa Mecarelli, Lead Mecarelli Elisa",
+   "dettaglio": "Lead Gen - Marco Pellegatta, Lead Pellegatta Marco",
    "gravita": 2
   },
   {
@@ -32,6 +43,12 @@
    "cliente": "CF-MLC",
    "tipo": "POSSIBILE SCONFINO",
    "dettaglio": "pin 40.291,17.833 sta in provincia LE, l'esclusiva e' TA · Gruppo Inserzioni Campagna Attiva (rilancio 7/11)",
+   "gravita": 1
+  },
+  {
+   "cliente": "CF-MLC",
+   "tipo": "POSSIBILE SCONFINO",
+   "dettaglio": "pin 40.291,17.833 sta in provincia LE, l'esclusiva e' TA · Test pubblico nuovo: esclusi interazioni 90gg (16/11)",
    "gravita": 1
   }
  ]
