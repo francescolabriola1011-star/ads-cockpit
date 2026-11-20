@@ -1,43 +1,49 @@
 {
- "generato": "18/11 04:06",
- "n_account_rossi": 4,
+ "generato": "20/11 04:06",
+ "n_account_rossi": 5,
  "n_puliti": 10,
  "puliti": [
   "AEA-HOUSE",
   "CF-CC",
   "CF-DDB",
+  "CF-EM",
   "FB",
   "CF-FR",
   "CF-GC",
-  "CF-GCA",
   "CF-LM",
   "CF-MDG",
   "ORO-AZ"
  ],
  "voci": [
   {
-   "cliente": "CF-EM",
-   "tipo": "LEAD NON MIGRATI",
-   "dettaglio": "(DA ELIMINARE) Lead Mecarelli Elisa · 2 righe",
-   "gravita": 3
-  },
-  {
-   "cliente": "CF-EM",
-   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "facebook/facebook_reels · 1.37 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
-   "gravita": 3
-  },
-  {
    "cliente": "CF-MP",
-   "tipo": "PIU' DI UN MODULO VIVO",
-   "dettaglio": "Lead Gen - Marco Pellegatta, Lead Pellegatta Marco",
-   "gravita": 2
+   "tipo": "ANNUNCIO BLOCCATO",
+   "dettaglio": "AI Elite - Campagna Attiva · Finserv regulation Ads without verified Identities (Global)",
+   "gravita": 3
+  },
+  {
+   "cliente": "CF-SM",
+   "tipo": "PAGAMENTO BLOCCATO",
+   "dettaglio": "periodo di grazia · 31,69 € da saldare · Mastercard *9451",
+   "gravita": 3
   },
   {
    "cliente": "CF-RD",
    "tipo": "BUCO NELLA ZONA",
    "dettaglio": "esclusa Monopoli (BA), dentro la provincia del cliente · Gruppo Inserzioni Campagna",
    "gravita": 2
+  },
+  {
+   "cliente": "CF-GCA",
+   "tipo": "POSSIBILE SCONFINO",
+   "dettaglio": "pin 41.945,12.530 sta in provincia RM, l'esclusiva e' MI · Gianluca Capuano - Roma Nord CAP",
+   "gravita": 1
+  },
+  {
+   "cliente": "CF-GCA",
+   "tipo": "POSSIBILE SCONFINO",
+   "dettaglio": "pin 41.950,12.445 sta in provincia RM, l'esclusiva e' MI · Gianluca Capuano - Roma Nord CAP",
+   "gravita": 1
   },
   {
    "cliente": "CF-MLC",
