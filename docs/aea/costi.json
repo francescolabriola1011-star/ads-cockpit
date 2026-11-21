@@ -1,5 +1,5 @@
 {
- "generato": "21/11/2026 08:18",
+ "generato": "21/11/2026 17:05",
  "quota_mese": 70,
  "totale_corrente": 5164,
  "totale_m1": 17828,
@@ -30,10 +30,18 @@
    "stato": "nuovo"
   },
   {
-   "voce": "Facebook",
+   "voce": "Grok",
    "mese_corrente": 0,
-   "media_precedenti": 2098,
-   "atteso_a_oggi": 1469,
+   "media_precedenti": 20,
+   "atteso_a_oggi": 14,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Mytrip",
+   "mese_corrente": 0,
+   "media_precedenti": 319,
+   "atteso_a_oggi": 223,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -42,30 +50,6 @@
    "mese_corrente": 0,
    "media_precedenti": 1960,
    "atteso_a_oggi": 1372,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Cursor",
-   "mese_corrente": 0,
-   "media_precedenti": 20,
-   "atteso_a_oggi": 14,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Compenso Francesco Labriola",
-   "mese_corrente": 0,
-   "media_precedenti": 860,
-   "atteso_a_oggi": 602,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Go High Level",
-   "mese_corrente": 0,
-   "media_precedenti": 498,
-   "atteso_a_oggi": 348,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -86,7 +70,15 @@
    "stato": "sparito"
   },
   {
-   "voce": "Grok",
+   "voce": "Compenso Francesco Labriola",
+   "mese_corrente": 0,
+   "media_precedenti": 860,
+   "atteso_a_oggi": 602,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Cursor",
    "mese_corrente": 0,
    "media_precedenti": 20,
    "atteso_a_oggi": 14,
@@ -94,10 +86,18 @@
    "stato": "sparito"
   },
   {
-   "voce": "Mytrip",
+   "voce": "Facebook",
    "mese_corrente": 0,
-   "media_precedenti": 319,
-   "atteso_a_oggi": 223,
+   "media_precedenti": 2098,
+   "atteso_a_oggi": 1469,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Go High Level",
+   "mese_corrente": 0,
+   "media_precedenti": 498,
+   "atteso_a_oggi": 348,
    "variazione": -100,
    "stato": "sparito"
   },

@@ -1,5 +1,29 @@
 [
  {
+  "quando": "2026-11-21T16:41:57+01:00",
+  "account": "859478370532394",
+  "campagna": "Test ABO - CF",
+  "annuncio": "Statica - testimonianze-consulenti (16/11) [ABO test]",
+  "ad_id": "120251295502320629",
+  "campaign_id": "120251295495220629",
+  "motivo": "€30.56 spesi e 0 lead (limite €30)",
+  "spesa": 30.56,
+  "lead": 0.0,
+  "eseguito": true
+ },
+ {
+  "quando": "2026-11-21T13:52:43+01:00",
+  "account": "859478370532394",
+  "campagna": "Test ABO - CF",
+  "annuncio": "Video - costo-rimandare [ABO test]",
+  "ad_id": "120251295499270629",
+  "campaign_id": "120251295495220629",
+  "motivo": "€30.73 spesi e 0 lead (limite €30)",
+  "spesa": 30.73,
+  "lead": 0.0,
+  "eseguito": true
+ },
+ {
   "quando": "2026-11-02T10:08:58+02:00",
   "account": "859478370532394",
   "campagna": "CF - Modulo 1",
