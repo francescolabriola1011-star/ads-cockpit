@@ -1,7 +1,7 @@
 {
- "generato": "20/11 04:06",
- "n_account_rossi": 5,
- "n_puliti": 10,
+ "generato": "21/11 04:06",
+ "n_account_rossi": 4,
+ "n_puliti": 11,
  "puliti": [
   "AEA-HOUSE",
   "CF-CC",
@@ -10,17 +10,12 @@
   "FB",
   "CF-FR",
   "CF-GC",
+  "CF-GCA",
   "CF-LM",
   "CF-MDG",
   "ORO-AZ"
  ],
  "voci": [
-  {
-   "cliente": "CF-MP",
-   "tipo": "ANNUNCIO BLOCCATO",
-   "dettaglio": "AI Elite - Campagna Attiva · Finserv regulation Ads without verified Identities (Global)",
-   "gravita": 3
-  },
   {
    "cliente": "CF-SM",
    "tipo": "PAGAMENTO BLOCCATO",
@@ -28,22 +23,16 @@
    "gravita": 3
   },
   {
+   "cliente": "CF-MP",
+   "tipo": "BUCO NELLA ZONA",
+   "dettaglio": "esclusa pin 45.630,8.723 (VA), dentro la provincia del cliente · AI Elite - Gruppo Inserzioni Campagna Attiva",
+   "gravita": 2
+  },
+  {
    "cliente": "CF-RD",
    "tipo": "BUCO NELLA ZONA",
    "dettaglio": "esclusa Monopoli (BA), dentro la provincia del cliente · Gruppo Inserzioni Campagna",
    "gravita": 2
-  },
-  {
-   "cliente": "CF-GCA",
-   "tipo": "POSSIBILE SCONFINO",
-   "dettaglio": "pin 41.945,12.530 sta in provincia RM, l'esclusiva e' MI · Gianluca Capuano - Roma Nord CAP",
-   "gravita": 1
-  },
-  {
-   "cliente": "CF-GCA",
-   "tipo": "POSSIBILE SCONFINO",
-   "dettaglio": "pin 41.950,12.445 sta in provincia RM, l'esclusiva e' MI · Gianluca Capuano - Roma Nord CAP",
-   "gravita": 1
   },
   {
    "cliente": "CF-MLC",
@@ -55,6 +44,12 @@
    "cliente": "CF-MLC",
    "tipo": "POSSIBILE SCONFINO",
    "dettaglio": "pin 40.291,17.833 sta in provincia LE, l'esclusiva e' TA · Test pubblico nuovo: esclusi interazioni 90gg (16/11)",
+   "gravita": 1
+  },
+  {
+   "cliente": "CF-MP",
+   "tipo": "FUORI REGOLA",
+   "dettaglio": "AI Elite - Campagna Attiva / Statica - pensionamento-milionari (17/11) · €45.17 spesi e 0 lead (limite €30) · solo segnalato, ultimo annuncio acceso",
    "gravita": 1
   }
  ]

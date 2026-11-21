@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-21T07:13:11+01:00",
+ "generato": "2026-11-21T08:27:24+01:00",
  "procedura": "https://docs.google.com/document/d/1vn5K-biqWNt40FmqPAzCpsSSZcaTjX25dpWTKnxVoyQ/edit",
  "cartella": "https://drive.google.com/drive/folders/1Zm7RDFGTeyrXjU2tWQAPyRvkA-maCmYk",
  "sezioni": [
@@ -13,68 +13,75 @@
   {
    "id": "ads",
    "titolo": "Altre mosse ads",
-   "sotto": "Posizionamenti fuori regola e a limite, spesa senza lead, moduli sotto il 4% di CVR, vincenti. Si azzera domani. Nota: dati del cockpit del 2026-11-20, non di oggi.",
+   "sotto": "Posizionamenti fuori regola e a limite, spesa senza lead, moduli sotto il 4% di CVR, vincenti. Si azzera domani.",
    "voci": [
     {
      "k": "ckcsm:mb|ads|pos|marco-l-c-cf-mlc-gruppo-inserzioni-campagna-attiva-rilanc:2026-11-21",
      "t": "Marco L.C. (CF-MLC): escludi IG feed",
-     "d": "CPL 67,47, oltre il limite di 45.",
-     "m": "fuori regola",
-     "c": "oggi"
-    },
-    {
-     "k": "ckcsm:mb|ads|pos|marco-p-cf-mp-ai-elite-gruppo-inserzioni-campagna-atti:2026-11-21",
-     "t": "Marco P. (CF-MP): escludi FB Storie",
-     "d": "57,57 spesi, 0 lead, oltre il limite di 45.",
+     "d": "CPL 76,50, oltre il limite di 45.",
      "m": "fuori regola",
      "c": "oggi"
     },
     {
      "k": "ckcsm:mb|ads|lim|marco-p-cf-mp:2026-11-21",
      "t": "Marco P. (CF-MP): 2 posizionamenti a limite",
-     "d": "FB feed CPL 42,43, IG Reels CPL 38,61. Limite 45. Si guarda, non si esclude.",
+     "d": "FB feed CPL 44,43, IG Reels CPL 41,90. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
      "k": "ckcsm:mb|ads|lim|luigi-m-cf-lm:2026-11-21",
      "t": "Luigi M. (CF-LM): 1 posizionamento a limite",
-     "d": "IG Reels CPL 42,33. Limite 45. Si guarda, non si esclude.",
+     "d": "IG Reels CPL 42,58. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
      "k": "ckcsm:mb|ads|lim|fabio-r-cf-fr:2026-11-21",
      "t": "Fabio R. (CF-FR): 1 posizionamento a limite",
-     "d": "IG Storie CPL 40,19. Limite 45. Si guarda, non si esclude.",
+     "d": "IG Storie CPL 40,93. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
      "k": "ckcsm:mb|ads|lim|marco-l-c-cf-mlc:2026-11-21",
      "t": "Marco L.C. (CF-MLC): 1 posizionamento a limite",
-     "d": "IG Reels CPL 37,89. Limite 45. Si guarda, non si esclude.",
+     "d": "IG Reels CPL 39,32. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
      "k": "ckcsm:mb|ads|lim|davide-d-b-cf-ddb:2026-11-21",
      "t": "Davide D.B. (CF-DDB): 1 posizionamento a limite",
-     "d": "FB Storie CPL 32,46. Limite 45. Si guarda, non si esclude.",
-     "m": "a limite",
-     "c": ""
-    },
-    {
-     "k": "ckcsm:mb|ads|lim|flavio-b-cf-fb:2026-11-21",
-     "t": "Flavio B. (CF-FB): 1 posizionamento a limite",
-     "d": "FB Reels CPL 31,87. Limite 45. Si guarda, non si esclude.",
+     "d": "FB Storie CPL 33,83. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
      "k": "ckcsm:mb|ads|lim|gianluca-c-cf-gca:2026-11-21",
      "t": "Gianluca C. (CF-GCA): 1 posizionamento a limite",
-     "d": "FB feed CPL 30,55. Limite 45. Si guarda, non si esclude.",
+     "d": "FB feed CPL 32,80. Limite 45. Si guarda, non si esclude.",
+     "m": "a limite",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|ads|lim|giovanni-c-cf-gc:2026-11-21",
+     "t": "Giovanni C. (CF-GC): 1 posizionamento a limite",
+     "d": "IG Reels CPL 32,09. Limite 45. Si guarda, non si esclude.",
+     "m": "a limite",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|ads|lim|flavio-b-cf-fb:2026-11-21",
+     "t": "Flavio B. (CF-FB): 1 posizionamento a limite",
+     "d": "FB Reels CPL 31,94. Limite 45. Si guarda, non si esclude.",
+     "m": "a limite",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|ads|lim|elisa-m-cf-em:2026-11-21",
+     "t": "Elisa M. (CF-EM): 1 posizionamento a limite",
+     "d": "FB Storie CPL 31,52. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     }
