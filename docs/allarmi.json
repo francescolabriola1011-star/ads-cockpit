@@ -1,5 +1,5 @@
 {
- "generato": "21/11 04:06",
+ "generato": "22/11 04:05",
  "n_account_rossi": 4,
  "n_puliti": 11,
  "puliti": [
@@ -44,12 +44,6 @@
    "cliente": "CF-MLC",
    "tipo": "POSSIBILE SCONFINO",
    "dettaglio": "pin 40.291,17.833 sta in provincia LE, l'esclusiva e' TA · Test pubblico nuovo: esclusi interazioni 90gg (16/11)",
-   "gravita": 1
-  },
-  {
-   "cliente": "CF-MP",
-   "tipo": "FUORI REGOLA",
-   "dettaglio": "AI Elite - Campagna Attiva / Statica - pensionamento-milionari (17/11) · €45.17 spesi e 0 lead (limite €30) · solo segnalato, ultimo annuncio acceso",
    "gravita": 1
   }
  ]
