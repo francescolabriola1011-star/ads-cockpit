@@ -1,9 +1,8 @@
 {
- "generato": "22/11 04:05",
- "n_account_rossi": 4,
- "n_puliti": 11,
+ "generato": "23/11 04:05",
+ "n_account_rossi": 6,
+ "n_puliti": 9,
  "puliti": [
-  "AEA-HOUSE",
   "CF-CC",
   "CF-DDB",
   "CF-EM",
@@ -12,7 +11,6 @@
   "CF-GC",
   "CF-GCA",
   "CF-LM",
-  "CF-MDG",
   "ORO-AZ"
  ],
  "voci": [
@@ -29,10 +27,28 @@
    "gravita": 2
   },
   {
+   "cliente": "CF-MP",
+   "tipo": "PIU' DI UN MODULO VIVO",
+   "dettaglio": "Lead Gen - Marco Pellegatta, Lead Pellegatta Marco",
+   "gravita": 2
+  },
+  {
    "cliente": "CF-RD",
    "tipo": "BUCO NELLA ZONA",
    "dettaglio": "esclusa Monopoli (BA), dentro la provincia del cliente · Gruppo Inserzioni Campagna",
    "gravita": 2
+  },
+  {
+   "cliente": "AEA-HOUSE",
+   "tipo": "FUORI REGOLA",
+   "dettaglio": "CF - Modulo 1 / Statica - 3-garanzie (ripresa 19/11) · 2 lead a CPL €40.38: oltre il tetto di allarme di €30 · da staccare",
+   "gravita": 1
+  },
+  {
+   "cliente": "CF-MDG",
+   "tipo": "FUORI REGOLA",
+   "dettaglio": "Moduli AI Elite - Campagna Attiva / Statica - Dispongo di € 100.000 per la pensione · 2 lead a CPL €36.45: oltre il tetto di allarme di €35 · solo segnalato, ultimo annuncio acceso",
+   "gravita": 1
   },
   {
    "cliente": "CF-MLC",

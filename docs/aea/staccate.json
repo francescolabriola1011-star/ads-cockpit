@@ -1,5 +1,29 @@
 [
  {
+  "quando": "2026-11-23T08:08:38+01:00",
+  "account": "859478370532394",
+  "campagna": "Test ABO - CF",
+  "annuncio": "Video - Moratti testimonianza v3 (15/11) [ABO test]",
+  "ad_id": "120251295497530629",
+  "campaign_id": "120251295495220629",
+  "motivo": "€45.48 spesi per 1 solo lead (limite €45)",
+  "spesa": 45.48,
+  "lead": 1.0,
+  "eseguito": true
+ },
+ {
+  "quando": "2026-11-23T08:08:41+01:00",
+  "account": "859478370532394",
+  "campagna": "CF - Modulo 1",
+  "annuncio": "Statica - 3-garanzie (ripresa 19/11)",
+  "ad_id": "120251331956590629",
+  "campaign_id": "120249502985680629",
+  "motivo": "2 lead a CPL €41.35: oltre il tetto di allarme di €30",
+  "spesa": 82.71,
+  "lead": 2.0,
+  "eseguito": true
+ },
+ {
   "quando": "2026-11-21T16:41:57+01:00",
   "account": "859478370532394",
   "campagna": "Test ABO - CF",
