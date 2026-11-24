@@ -1,11 +1,11 @@
 {
  "titolo": "AI Elite Advisory",
  "sottotitolo": "casa nostra",
- "generato": "2026-11-23T08:03:45+01:00",
+ "generato": "2026-11-24T08:03:59+01:00",
  "periodo": {
   "da": "2026-01-01",
-  "a": "2026-11-23",
-  "giorni": 326,
+  "a": "2026-11-24",
+  "giorni": 327,
   "finestra_recente_giorni": 7
  },
  "regole": {
@@ -29,17 +29,17 @@
   "cvr_min_clicks": 30
  },
  "totali": {
-  "spesa": 9735.33,
-  "lead": 505.0,
-  "cpl": 19.28,
-  "sprecato": 23.16,
-  "quota_sprecata": 0.2,
-  "sprecato_al_mese": 2.13,
-  "brucia_oggi": 45.0,
-  "da_staccare_ora": 2,
-  "clicks": 13718.0,
-  "link_clicks": 7352.0,
-  "cvr": 6.87,
+  "spesa": 9802.1,
+  "lead": 506.0,
+  "cpl": 19.37,
+  "sprecato": 0.0,
+  "quota_sprecata": 0.0,
+  "sprecato_al_mese": 0.0,
+  "brucia_oggi": 0,
+  "da_staccare_ora": 0,
+  "clicks": 13762.0,
+  "link_clicks": 7375.0,
+  "cvr": 6.86,
   "clienti": 1,
   "campagne": 135
  },
@@ -50,40 +50,35 @@
    "dal": "2026-01-01",
    "solo_nostre_dal": null,
    "currency": "EUR",
-   "spend": 9735.33,
-   "leads": 505.0,
-   "cpl": 19.28,
-   "sprecato": 23.16,
-   "quota_sprecata": 0.2,
-   "impressions": 863166.0,
-   "clicks": 13718.0,
-   "link_clicks": 7352.0,
-   "cvr": 6.87,
+   "spend": 9802.1,
+   "leads": 506.0,
+   "cpl": 19.37,
+   "sprecato": 0.0,
+   "quota_sprecata": 0.0,
+   "impressions": 867771.0,
+   "clicks": 13762.0,
+   "link_clicks": 7375.0,
+   "cvr": 6.86,
    "n_campagne": 135,
-   "n_kill": 2,
-   "n_kill_ancora_accese": 2,
-   "brucia_oggi": 45.0,
+   "n_kill": 0,
+   "n_kill_ancora_accese": 0,
+   "brucia_oggi": 0,
    "vivo": {
-    "spend": 1006.01,
-    "leads": 42.0,
-    "cpl": 23.95,
-    "cvr": 8.59,
-    "link_clicks": 489.0,
-    "recent_cpl": 22.16,
-    "n_creative": 8
+    "spend": 939.24,
+    "leads": 40.0,
+    "cpl": 23.48,
+    "cvr": 8.51,
+    "link_clicks": 470.0,
+    "recent_cpl": 21.1,
+    "n_creative": 7
    },
    "dopo_ultimo_lead": {
-    "spesa_dopo": 12.53,
-    "ultimo_lead": "2026-11-22",
-    "lead_finestra": 223.0
+    "spesa_dopo": 0,
+    "ultimo_lead": "2026-11-24",
+    "lead_finestra": 218.0
    },
    "andamento": {
     "serie": [
-     {
-      "g": "2026-10-25",
-      "s": 30.13,
-      "l": 2
-     },
      {
       "g": "2026-10-26",
       "s": 59.72,
@@ -221,30 +216,35 @@
      },
      {
       "g": "2026-11-22",
-      "s": 85.88,
+      "s": 85.91,
       "l": 2
      },
      {
       "g": "2026-11-23",
-      "s": 12.53,
+      "s": 70.36,
       "l": 0
+     },
+     {
+      "g": "2026-11-24",
+      "s": 8.91,
+      "l": 1
      }
     ],
     "ultimi7": {
-     "spesa": 434.65,
-     "lead": 16,
-     "cpl": 27.17
+     "spesa": 435.3,
+     "lead": 14,
+     "cpl": 31.09
     },
     "prima7": {
-     "spesa": 514.62,
-     "lead": 18,
-     "cpl": 28.59
+     "spesa": 510.54,
+     "lead": 19,
+     "cpl": 26.87
     },
-    "ultimo_lead": "2026-11-22",
-    "giorni_da_ultimo_lead": 1
+    "ultimo_lead": "2026-11-24",
+    "giorni_da_ultimo_lead": 0
    },
    "posizionamenti": {
-    "dal": "2023-11-19",
+    "dal": "2023-11-20",
     "periodo": "durata massima",
     "voci": [
      {
@@ -252,19 +252,19 @@
       "posto": "IG feed",
       "piatt": "instagram",
       "pos": "feed",
-      "spend_tot": 2200.19,
+      "spend_tot": 2228.96,
       "leads_tot": 87.0,
       "ritest_dal": null,
       "adset_id": "120249800005120629",
       "adset": "Nuovo gruppo di inserzioni Contatti - Copia",
       "campagna": "CF - Modulo 1",
-      "spend": 2200.19,
+      "spend": 2228.96,
       "leads": 87.0,
-      "cpl": 25.29,
-      "cvr": 8.2,
-      "spend_7g": 221.63,
+      "cpl": 25.62,
+      "cvr": 8.16,
+      "spend_7g": 201.98,
       "status": "ok",
-      "reason": "87 lead a CPL €25.29: dentro il limite posizionamenti di €45",
+      "reason": "87 lead a CPL €25.62: dentro il limite posizionamenti di €45",
       "escluso": false,
       "da_staccare": false,
       "sprecato": 0.0
@@ -274,19 +274,19 @@
       "posto": "FB feed",
       "piatt": "facebook",
       "pos": "feed",
-      "spend_tot": 1009.93,
+      "spend_tot": 1018.68,
       "leads_tot": 36.0,
       "ritest_dal": null,
       "adset_id": "120249800005120629",
       "adset": "Nuovo gruppo di inserzioni Contatti - Copia",
       "campagna": "CF - Modulo 1",
-      "spend": 1009.93,
+      "spend": 1018.68,
       "leads": 36.0,
-      "cpl": 28.05,
-      "cvr": 5.83,
-      "spend_7g": 114.43,
+      "cpl": 28.3,
+      "cvr": 5.82,
+      "spend_7g": 103.17,
       "status": "ok",
-      "reason": "36 lead a CPL €28.05: dentro il limite posizionamenti di €45",
+      "reason": "36 lead a CPL €28.30: dentro il limite posizionamenti di €45",
       "escluso": false,
       "da_staccare": false,
       "sprecato": 0.0
@@ -296,19 +296,19 @@
       "posto": "IG Storie",
       "piatt": "instagram",
       "pos": "instagram_stories",
-      "spend_tot": 674.88,
+      "spend_tot": 680.05,
       "leads_tot": 25.0,
       "ritest_dal": null,
       "adset_id": "120249800005120629",
       "adset": "Nuovo gruppo di inserzioni Contatti - Copia",
       "campagna": "CF - Modulo 1",
-      "spend": 674.88,
+      "spend": 680.05,
       "leads": 25.0,
-      "cpl": 27.0,
-      "cvr": 5.41,
-      "spend_7g": 36.96,
+      "cpl": 27.2,
+      "cvr": 5.39,
+      "spend_7g": 33.8,
       "status": "ok",
-      "reason": "25 lead a CPL €27.00: dentro il limite posizionamenti di €45",
+      "reason": "25 lead a CPL €27.20: dentro il limite posizionamenti di €45",
       "escluso": false,
       "da_staccare": false,
       "sprecato": 0.0
@@ -318,13 +318,13 @@
       "posto": "IG Reels",
       "piatt": "instagram",
       "pos": "instagram_reels",
-      "spend_tot": 145.69,
+      "spend_tot": 145.68,
       "leads_tot": 3.0,
       "ritest_dal": null,
       "adset_id": "120249800005120629",
       "adset": "Nuovo gruppo di inserzioni Contatti - Copia",
       "campagna": "CF - Modulo 1",
-      "spend": 145.69,
+      "spend": 145.68,
       "leads": 3.0,
       "cpl": 48.56,
       "cvr": 2.21,
@@ -333,20 +333,20 @@
       "reason": "3 lead a CPL €48.56: oltre il limite posizionamenti di €45",
       "escluso": true,
       "da_staccare": false,
-      "sprecato": 55.69
+      "sprecato": 55.68
      },
      {
       "nome": "Nuovo gruppo di inserzioni Contatti - Copia · FB Storie",
       "posto": "FB Storie",
       "piatt": "facebook",
       "pos": "facebook_stories",
-      "spend_tot": 134.14,
+      "spend_tot": 134.13,
       "leads_tot": 6.0,
       "ritest_dal": null,
       "adset_id": "120249800005120629",
       "adset": "Nuovo gruppo di inserzioni Contatti - Copia",
       "campagna": "CF - Modulo 1",
-      "spend": 134.14,
+      "spend": 134.13,
       "leads": 6.0,
       "cpl": 22.36,
       "cvr": 4.69,
@@ -380,50 +380,6 @@
       "sprecato": 22.3
      },
      {
-      "nome": "ABO test - Video … testimonianza v3 · FB feed",
-      "posto": "FB feed",
-      "piatt": "facebook",
-      "pos": "feed",
-      "spend_tot": 16.81,
-      "leads_tot": 0.0,
-      "ritest_dal": null,
-      "adset_id": "120251295496270629",
-      "adset": "ABO test - Video … testimonianza v3",
-      "campagna": "Test ABO - CF",
-      "spend": 16.81,
-      "leads": 0.0,
-      "cpl": null,
-      "cvr": 0.0,
-      "spend_7g": 16.81,
-      "status": "watch",
-      "reason": "€16.81 spesi e 0 lead: dentro il limite posizionamenti di €45",
-      "escluso": false,
-      "da_staccare": false,
-      "sprecato": 0.0
-     },
-     {
-      "nome": "ABO test - Video … testimonianza v3 · IG feed",
-      "posto": "IG feed",
-      "piatt": "instagram",
-      "pos": "feed",
-      "spend_tot": 16.46,
-      "leads_tot": 0.0,
-      "ritest_dal": null,
-      "adset_id": "120251295496270629",
-      "adset": "ABO test - Video … testimonianza v3",
-      "campagna": "Test ABO - CF",
-      "spend": 16.46,
-      "leads": 0.0,
-      "cpl": null,
-      "cvr": 0.0,
-      "spend_7g": 16.46,
-      "status": "watch",
-      "reason": "€16.46 spesi e 0 lead: dentro il limite posizionamenti di €45",
-      "escluso": false,
-      "da_staccare": false,
-      "sprecato": 0.0
-     },
-     {
       "nome": "Nuovo gruppo di inserzioni Contatti - Copia · FB In-stream",
       "posto": "FB In-stream",
       "piatt": "facebook",
@@ -446,45 +402,23 @@
       "sprecato": 0.0
      },
      {
-      "nome": "ABO test - Video … testimonianza v3 · IG Storie",
-      "posto": "IG Storie",
-      "piatt": "instagram",
-      "pos": "instagram_stories",
-      "spend_tot": 12.18,
-      "leads_tot": 1.0,
-      "ritest_dal": null,
-      "adset_id": "120251295496270629",
-      "adset": "ABO test - Video … testimonianza v3",
-      "campagna": "Test ABO - CF",
-      "spend": 12.18,
-      "leads": 1.0,
-      "cpl": 12.18,
-      "cvr": 14.29,
-      "spend_7g": 12.18,
-      "status": "ok",
-      "reason": "1 lead a CPL €12.18: dentro il limite posizionamenti di €45",
-      "escluso": false,
-      "da_staccare": false,
-      "sprecato": 0.0
-     },
-     {
       "nome": "ABO test - CF statica Percorso chiaro 02/11 · FB feed",
       "posto": "FB feed",
       "piatt": "facebook",
       "pos": "feed",
-      "spend_tot": 9.88,
+      "spend_tot": 15.16,
       "leads_tot": 1.0,
       "ritest_dal": null,
       "adset_id": "120251376849210629",
       "adset": "ABO test - CF statica Percorso chiaro 02/11",
       "campagna": "Test ABO - CF",
-      "spend": 9.88,
+      "spend": 15.16,
       "leads": 1.0,
-      "cpl": 9.88,
-      "cvr": 33.33,
-      "spend_7g": 9.88,
+      "cpl": 15.16,
+      "cvr": 25.0,
+      "spend_7g": 15.16,
       "status": "ok",
-      "reason": "1 lead a CPL €9.88: dentro il limite posizionamenti di €45",
+      "reason": "1 lead a CPL €15.16: dentro il limite posizionamenti di €45",
       "escluso": false,
       "da_staccare": false,
       "sprecato": 0.0
@@ -494,19 +428,41 @@
       "posto": "FB feed",
       "piatt": "facebook",
       "pos": "feed",
-      "spend_tot": 9.74,
+      "spend_tot": 14.02,
       "leads_tot": 0.0,
       "ritest_dal": null,
       "adset_id": "120251372834110629",
       "adset": "ABO test - Statica - smetti-di-chiamare",
       "campagna": "Test ABO - CF",
-      "spend": 9.74,
+      "spend": 14.02,
       "leads": 0.0,
       "cpl": null,
       "cvr": 0.0,
-      "spend_7g": 9.74,
+      "spend_7g": 14.02,
       "status": "watch",
-      "reason": "€9.74 spesi e 0 lead: dentro il limite posizionamenti di €45",
+      "reason": "€14.02 spesi e 0 lead: dentro il limite posizionamenti di €45",
+      "escluso": false,
+      "da_staccare": false,
+      "sprecato": 0.0
+     },
+     {
+      "nome": "ABO test - CF statica Percorso chiaro 02/11 · IG feed",
+      "posto": "IG feed",
+      "piatt": "instagram",
+      "pos": "feed",
+      "spend_tot": 5.65,
+      "leads_tot": 0.0,
+      "ritest_dal": null,
+      "adset_id": "120251376849210629",
+      "adset": "ABO test - CF statica Percorso chiaro 02/11",
+      "campagna": "Test ABO - CF",
+      "spend": 5.65,
+      "leads": 0.0,
+      "cpl": null,
+      "cvr": null,
+      "spend_7g": 5.65,
+      "status": "watch",
+      "reason": "€5.65 spesi e 0 lead: dentro il limite posizionamenti di €45",
       "escluso": false,
       "da_staccare": false,
       "sprecato": 0.0
@@ -534,45 +490,23 @@
       "sprecato": 0.0
      },
      {
-      "nome": "ABO test - CF statica Percorso chiaro 02/11 · IG feed",
-      "posto": "IG feed",
-      "piatt": "instagram",
-      "pos": "feed",
-      "spend_tot": 4.08,
-      "leads_tot": 0.0,
-      "ritest_dal": null,
-      "adset_id": "120251376849210629",
-      "adset": "ABO test - CF statica Percorso chiaro 02/11",
-      "campagna": "Test ABO - CF",
-      "spend": 4.08,
-      "leads": 0.0,
-      "cpl": null,
-      "cvr": null,
-      "spend_7g": 4.08,
-      "status": "watch",
-      "reason": "€4.08 spesi e 0 lead: dentro il limite posizionamenti di €45",
-      "escluso": false,
-      "da_staccare": false,
-      "sprecato": 0.0
-     },
-     {
       "nome": "ABO test - Statica - smetti-di-chiamare · IG feed",
       "posto": "IG feed",
       "piatt": "instagram",
       "pos": "feed",
-      "spend_tot": 3.88,
+      "spend_tot": 5.22,
       "leads_tot": 0.0,
       "ritest_dal": null,
       "adset_id": "120251372834110629",
       "adset": "ABO test - Statica - smetti-di-chiamare",
       "campagna": "Test ABO - CF",
-      "spend": 3.88,
+      "spend": 5.22,
       "leads": 0.0,
       "cpl": null,
       "cvr": 0.0,
-      "spend_7g": 3.88,
+      "spend_7g": 5.22,
       "status": "watch",
-      "reason": "€3.88 spesi e 0 lead: dentro il limite posizionamenti di €45",
+      "reason": "€5.22 spesi e 0 lead: dentro il limite posizionamenti di €45",
       "escluso": false,
       "da_staccare": false,
       "sprecato": 0.0
@@ -582,19 +516,85 @@
       "posto": "IG Storie",
       "piatt": "instagram",
       "pos": "instagram_stories",
-      "spend_tot": 2.51,
+      "spend_tot": 3.94,
       "leads_tot": 0.0,
       "ritest_dal": null,
       "adset_id": "120251372834110629",
       "adset": "ABO test - Statica - smetti-di-chiamare",
       "campagna": "Test ABO - CF",
-      "spend": 2.51,
+      "spend": 3.94,
       "leads": 0.0,
       "cpl": null,
       "cvr": 0.0,
-      "spend_7g": 2.51,
+      "spend_7g": 3.94,
       "status": "watch",
-      "reason": "€2.51 spesi e 0 lead: dentro il limite posizionamenti di €45",
+      "reason": "€3.94 spesi e 0 lead: dentro il limite posizionamenti di €45",
+      "escluso": false,
+      "da_staccare": false,
+      "sprecato": 0.0
+     },
+     {
+      "nome": "ABO test - Video - fonte-di-contatti · IG feed",
+      "posto": "IG feed",
+      "piatt": "instagram",
+      "pos": "feed",
+      "spend_tot": 3.61,
+      "leads_tot": 0.0,
+      "ritest_dal": null,
+      "adset_id": "120251398774960629",
+      "adset": "ABO test - Video - fonte-di-contatti",
+      "campagna": "Test ABO - CF",
+      "spend": 3.61,
+      "leads": 0.0,
+      "cpl": null,
+      "cvr": 0.0,
+      "spend_7g": 3.61,
+      "status": "watch",
+      "reason": "€3.61 spesi e 0 lead: dentro il limite posizionamenti di €45",
+      "escluso": false,
+      "da_staccare": false,
+      "sprecato": 0.0
+     },
+     {
+      "nome": "ABO test - Video - fonte-di-contatti · IG Storie",
+      "posto": "IG Storie",
+      "piatt": "instagram",
+      "pos": "instagram_stories",
+      "spend_tot": 2.9,
+      "leads_tot": 1.0,
+      "ritest_dal": null,
+      "adset_id": "120251398774960629",
+      "adset": "ABO test - Video - fonte-di-contatti",
+      "campagna": "Test ABO - CF",
+      "spend": 2.9,
+      "leads": 1.0,
+      "cpl": 2.9,
+      "cvr": 33.33,
+      "spend_7g": 2.9,
+      "status": "ok",
+      "reason": "1 lead a CPL €2.90: dentro il limite posizionamenti di €45",
+      "escluso": false,
+      "da_staccare": false,
+      "sprecato": 0.0
+     },
+     {
+      "nome": "ABO test - Video - fonte-di-contatti · FB feed",
+      "posto": "FB feed",
+      "piatt": "facebook",
+      "pos": "feed",
+      "spend_tot": 2.5,
+      "leads_tot": 0.0,
+      "ritest_dal": null,
+      "adset_id": "120251398774960629",
+      "adset": "ABO test - Video - fonte-di-contatti",
+      "campagna": "Test ABO - CF",
+      "spend": 2.5,
+      "leads": 0.0,
+      "cpl": null,
+      "cvr": 0.0,
+      "spend_7g": 2.5,
+      "status": "watch",
+      "reason": "€2.50 spesi e 0 lead: dentro il limite posizionamenti di €45",
       "escluso": false,
       "da_staccare": false,
       "sprecato": 0.0
@@ -604,19 +604,19 @@
       "posto": "IG Storie",
       "piatt": "instagram",
       "pos": "instagram_stories",
-      "spend_tot": 0.77,
+      "spend_tot": 1.65,
       "leads_tot": 0.0,
       "ritest_dal": null,
       "adset_id": "120251376849210629",
       "adset": "ABO test - CF statica Percorso chiaro 02/11",
       "campagna": "Test ABO - CF",
-      "spend": 0.77,
+      "spend": 1.65,
       "leads": 0.0,
       "cpl": null,
       "cvr": null,
-      "spend_7g": 0.77,
+      "spend_7g": 1.65,
       "status": "watch",
-      "reason": "€0.77 spesi e 0 lead: dentro il limite posizionamenti di €45",
+      "reason": "€1.65 spesi e 0 lead: dentro il limite posizionamenti di €45",
       "escluso": false,
       "da_staccare": false,
       "sprecato": 0.0
@@ -714,6 +714,24 @@
    },
    "targeting_check": [
     {
+     "adset_id": "120251398774960629",
+     "adset": "ABO test - Video - fonte-di-contatti",
+     "eta": [
+      18,
+      65
+     ],
+     "advantage": true,
+     "raggio_max_km": null,
+     "geo_larga": [
+      "countries"
+     ],
+     "automatici": false,
+     "audience_network": false,
+     "reels": [
+      "facebook_reels_overlay"
+     ]
+    },
+    {
      "adset_id": "120251376849210629",
      "adset": "ABO test - CF statica Percorso chiaro 02/11",
      "eta": [
@@ -750,24 +768,6 @@
      ]
     },
     {
-     "adset_id": "120251295496270629",
-     "adset": "ABO test - Video … testimonianza v3",
-     "eta": [
-      18,
-      65
-     ],
-     "advantage": true,
-     "raggio_max_km": null,
-     "geo_larga": [
-      "countries"
-     ],
-     "automatici": false,
-     "audience_network": false,
-     "reels": [
-      "facebook_reels_overlay"
-     ]
-    },
-    {
      "adset_id": "120249800005120629",
      "adset": "Nuovo gruppo di inserzioni Contatti - Copia",
      "eta": [
@@ -787,26 +787,26 @@
     }
    ],
    "riallocazione": {
-    "budget_da_spostare": 4606.14,
+    "budget_da_spostare": 0,
     "cpl_vincente": null,
-    "lead_prudente": 131,
+    "lead_prudente": 0,
     "lead_ottimistico": 0
    },
    "campagne": [
     {
      "id": "120249502985680629",
      "name": "CF - Modulo 1",
-     "spend": 4467.76,
+     "spend": 4510.44,
      "leads": 164.0,
-     "cpl": 27.24,
-     "impressions": 366025.0,
-     "clicks": 5160.0,
-     "link_clicks": 2582.0,
-     "cvr": 6.35,
-     "ctr": 1.40974,
-     "cpm": 12.206161,
-     "reach": 35239.0,
-     "frequency": 10.386929,
+     "cpl": 27.5,
+     "impressions": 368862.0,
+     "clicks": 5185.0,
+     "link_clicks": 2591.0,
+     "cvr": 6.33,
+     "ctr": 1.405675,
+     "cpm": 12.227988,
+     "reach": 35509.0,
+     "frequency": 10.387845,
      "attiva": true,
      "effective_status": "ACTIVE",
      "daily_budget": 45.0,
@@ -816,178 +816,142 @@
        "name": "Video - testimonianza-… (gruppo unico)",
        "campaign_id": "120249502985680629",
        "campaign_name": "CF - Modulo 1",
-       "spend": 446.92,
+       "spend": 462.48,
        "leads": 16.0,
-       "cpl": 27.93,
-       "impressions": 32962.0,
-       "clicks": 816.0,
-       "link_clicks": 300.0,
-       "cvr": 5.33,
-       "ctr": 2.475578,
-       "cpm": 13.558643,
-       "reach": 11983.0,
-       "frequency": 2.75073,
+       "cpl": 28.91,
+       "impressions": 33932.0,
+       "clicks": 829.0,
+       "link_clicks": 303.0,
+       "cvr": 5.28,
+       "ctr": 2.443122,
+       "cpm": 13.629612,
+       "reach": 12222.0,
+       "frequency": 2.776305,
        "attiva": true,
        "effective_status": "ACTIVE",
        "dopo_lead": {
-        "spesa_dopo": 12.09,
+        "spesa_dopo": 27.65,
         "ultimo_lead": "2026-11-21",
         "lead_finestra": 16.0
        },
        "status": "ok",
-       "reason": "CPL €27.93: dentro i parametri",
+       "reason": "CPL €28.91: dentro i parametri",
        "sprecato": 0.0,
        "flags": [
         "frequenza 2.8: pubblico bruciato, cambia audience"
        ],
        "recent": {
-        "spend": 107.75,
-        "leads": 6.0,
-        "cpl": 17.96
+        "spend": 107.95,
+        "leads": 5.0,
+        "cpl": 21.59
        },
-       "trend": -9.97
+       "trend": -7.32
       },
       {
        "id": "120250809815540629",
        "name": "CF statica 100K … (ripresa 23/10)",
        "campaign_id": "120249502985680629",
        "campaign_name": "CF - Modulo 1",
-       "spend": 310.2,
+       "spend": 328.69,
        "leads": 16.0,
-       "cpl": 19.39,
-       "impressions": 18897.0,
-       "clicks": 243.0,
-       "link_clicks": 107.0,
-       "cvr": 14.95,
-       "ctr": 1.285918,
-       "cpm": 16.415304,
-       "reach": 5928.0,
-       "frequency": 3.187753,
+       "cpl": 20.54,
+       "impressions": 20152.0,
+       "clicks": 252.0,
+       "link_clicks": 113.0,
+       "cvr": 14.16,
+       "ctr": 1.250496,
+       "cpm": 16.31054,
+       "reach": 6179.0,
+       "frequency": 3.261369,
        "attiva": true,
        "effective_status": "ACTIVE",
        "dopo_lead": {
-        "spesa_dopo": 1.46,
+        "spesa_dopo": 19.95,
         "ultimo_lead": "2026-11-22",
         "lead_finestra": 16.0
        },
        "status": "ok",
-       "reason": "CPL €19.39: dentro i parametri",
+       "reason": "CPL €20.54: dentro i parametri",
        "sprecato": 0.0,
        "flags": [
-        "frequenza 3.2: pubblico bruciato, cambia audience"
+        "frequenza 3.3: pubblico bruciato, cambia audience"
        ],
        "recent": {
-        "spend": 138.66,
-        "leads": 8.0,
-        "cpl": 17.33
+        "spend": 116.5,
+        "leads": 6.0,
+        "cpl": 19.42
        },
-       "trend": -2.06
-      },
-      {
-       "id": "120251331956590629",
-       "name": "Statica - 3-garanzie (ripresa 19/11)",
-       "campaign_id": "120249502985680629",
-       "campaign_name": "CF - Modulo 1",
-       "spend": 82.71,
-       "leads": 2.0,
-       "cpl": 41.35,
-       "impressions": 5086.0,
-       "clicks": 49.0,
-       "link_clicks": 25.0,
-       "cvr": 8.0,
-       "ctr": 0.963429,
-       "cpm": 16.262289,
-       "reach": 2312.0,
-       "frequency": 2.199827,
-       "attiva": true,
-       "effective_status": "ACTIVE",
-       "dopo_lead": {
-        "spesa_dopo": 55.17,
-        "ultimo_lead": "2026-11-20",
-        "lead_finestra": 2.0
-       },
-       "status": "kill",
-       "reason": "2 lead a CPL €41.35: oltre il tetto di allarme di €30 da 2 a 5 lead",
-       "sprecato": 22.71,
-       "flags": [
-        "CTR 0,96% sotto 1%: segnalato, da solo non fa cambiare creativa"
-       ],
-       "recent": {
-        "spend": 82.71,
-        "leads": 2.0,
-        "cpl": 41.35
-       },
-       "trend": 0.0
-      },
-      {
-       "id": "120251147467390629",
-       "name": "Statica - patrimonializzati-senza-contenuti",
-       "campaign_id": "120249502985680629",
-       "campaign_name": "CF - Modulo 1",
-       "spend": 45.42,
-       "leads": 2.0,
-       "cpl": 22.71,
-       "impressions": 2679.0,
-       "clicks": 23.0,
-       "link_clicks": 15.0,
-       "cvr": 13.33,
-       "ctr": 0.858529,
-       "cpm": 16.954087,
-       "reach": 1378.0,
-       "frequency": 1.944122,
-       "attiva": true,
-       "effective_status": "ACTIVE",
-       "dopo_lead": {
-        "spesa_dopo": 31.8,
-        "ultimo_lead": "2026-11-12",
-        "lead_finestra": 2.0
-       },
-       "status": "ok",
-       "reason": "2 lead a CPL €22.71: sotto i 6 lead si lascia girare fino a €30 di CPL",
-       "sprecato": 0.0,
-       "flags": [
-        "CTR 0,86% sotto 1%: segnalato, da solo non fa cambiare creativa"
-       ],
-       "recent": {
-        "spend": 12.16,
-        "leads": 0.0,
-        "cpl": null
-       },
-       "trend": null
+       "trend": -1.12
       },
       {
        "id": "120250897976970629",
        "name": "CF statica Copia (ripresa 23/10) - Copia",
        "campaign_id": "120249502985680629",
        "campaign_name": "CF - Modulo 1",
-       "spend": 44.44,
+       "spend": 47.35,
        "leads": 4.0,
-       "cpl": 11.11,
-       "impressions": 2804.0,
+       "cpl": 11.84,
+       "impressions": 2873.0,
        "clicks": 30.0,
        "link_clicks": 15.0,
        "cvr": 26.67,
-       "ctr": 1.0699,
-       "cpm": 15.848787,
-       "reach": 1314.0,
-       "frequency": 2.133942,
+       "ctr": 1.044205,
+       "cpm": 16.48103,
+       "reach": 1347.0,
+       "frequency": 2.132888,
        "attiva": true,
        "effective_status": "ACTIVE",
        "dopo_lead": {
-        "spesa_dopo": 0.04,
+        "spesa_dopo": 2.95,
         "ultimo_lead": "2026-11-22",
         "lead_finestra": 4.0
        },
        "status": "ok",
-       "reason": "4 lead a CPL €11.11: sotto i 6 lead si lascia girare fino a €30 di CPL",
+       "reason": "4 lead a CPL €11.84: sotto i 6 lead si lascia girare fino a €30 di CPL",
        "sprecato": 0.0,
        "flags": [],
        "recent": {
-        "spend": 3.35,
+        "spend": 5.84,
         "leads": 1.0,
-        "cpl": 3.35
+        "cpl": 5.84
        },
-       "trend": -7.76
+       "trend": -6.0
+      },
+      {
+       "id": "120251147467390629",
+       "name": "Statica - patrimonializzati-senza-contenuti",
+       "campaign_id": "120249502985680629",
+       "campaign_name": "CF - Modulo 1",
+       "spend": 46.07,
+       "leads": 2.0,
+       "cpl": 23.04,
+       "impressions": 2706.0,
+       "clicks": 24.0,
+       "link_clicks": 15.0,
+       "cvr": 13.33,
+       "ctr": 0.886918,
+       "cpm": 17.025129,
+       "reach": 1388.0,
+       "frequency": 1.949568,
+       "attiva": true,
+       "effective_status": "ACTIVE",
+       "dopo_lead": {
+        "spesa_dopo": 32.45,
+        "ultimo_lead": "2026-11-12",
+        "lead_finestra": 2.0
+       },
+       "status": "ok",
+       "reason": "2 lead a CPL €23.04: sotto i 6 lead si lascia girare fino a €30 di CPL",
+       "sprecato": 0.0,
+       "flags": [
+        "CTR 0,89% sotto 1%: segnalato, da solo non fa cambiare creativa"
+       ],
+       "recent": {
+        "spend": 10.43,
+        "leads": 0.0,
+        "cpl": null
+       },
+       "trend": null
       },
       {
        "id": "120249800005130629",
@@ -1010,7 +974,7 @@
        "dopo_lead": {
         "spesa_dopo": 18.26,
         "ultimo_lead": "2026-10-14",
-        "lead_finestra": 12.0
+        "lead_finestra": 10.0
        },
        "status": "ok",
        "reason": "CPL €22.01: dentro i parametri",
@@ -1104,7 +1068,7 @@
        "attiva": false,
        "effective_status": "UNKNOWN",
        "dopo_lead": {
-        "spesa_dopo": 26.38,
+        "spesa_dopo": 1.56,
         "ultimo_lead": null,
         "lead_finestra": 0.0
        },
@@ -1208,6 +1172,42 @@
        "flags": [],
        "recent": null,
        "trend": null
+      },
+      {
+       "id": "120251331956590629",
+       "name": "Statica - 3-garanzie (ripresa 19/11)",
+       "campaign_id": "120249502985680629",
+       "campaign_name": "CF - Modulo 1",
+       "spend": 82.92,
+       "leads": 2.0,
+       "cpl": 41.46,
+       "impressions": 5091.0,
+       "clicks": 49.0,
+       "link_clicks": 25.0,
+       "cvr": 8.0,
+       "ctr": 0.962483,
+       "cpm": 16.287566,
+       "reach": 2313.0,
+       "frequency": 2.201038,
+       "attiva": false,
+       "effective_status": "PAUSED",
+       "dopo_lead": {
+        "spesa_dopo": 55.38,
+        "ultimo_lead": "2026-11-20",
+        "lead_finestra": 2.0
+       },
+       "status": "kill",
+       "reason": "2 lead a CPL €41.46: oltre il tetto di allarme di €30 da 2 a 5 lead",
+       "sprecato": 22.92,
+       "flags": [
+        "CTR 0,96% sotto 1%: segnalato, da solo non fa cambiare creativa"
+       ],
+       "recent": {
+        "spend": 82.92,
+        "leads": 2.0,
+        "cpl": 41.46
+       },
+       "trend": 0.0
       },
       {
        "id": "120250335107000629",
@@ -1337,7 +1337,7 @@
       },
       {
        "id": "120251078219920629",
-       "name": "Video - 15 milioni (originale Drago/Gatto) riacceso 6/11",
+       "name": "Video - 15 milioni (originale …/Gatto) riacceso 6/11",
        "campaign_id": "120249502985680629",
        "campaign_name": "CF - Modulo 1",
        "spend": 45.83,
@@ -2046,7 +2046,7 @@
        "attiva": false,
        "effective_status": "UNKNOWN",
        "dopo_lead": {
-        "spesa_dopo": 13.42,
+        "spesa_dopo": 12.57,
         "ultimo_lead": null,
         "lead_finestra": 0.0
        },
@@ -2078,7 +2078,7 @@
        "attiva": false,
        "effective_status": "UNKNOWN",
        "dopo_lead": {
-        "spesa_dopo": 10.55,
+        "spesa_dopo": 7.15,
         "ultimo_lead": null,
         "lead_finestra": 0.0
        },
@@ -2154,7 +2154,7 @@
         "CTR 0,59% sotto 1%: segnalato, da solo non fa cambiare creativa"
        ],
        "recent": {
-        "spend": 18.26,
+        "spend": 6.62,
         "leads": 0.0,
         "cpl": null
        },
@@ -2244,7 +2244,7 @@
        "sprecato": 0.0,
        "flags": [],
        "recent": {
-        "spend": 9.13,
+        "spend": 3.58,
         "leads": 0.0,
         "cpl": null
        },
@@ -2308,7 +2308,7 @@
        "sprecato": 0.0,
        "flags": [],
        "recent": {
-        "spend": 0.64,
+        "spend": 0.16,
         "leads": 0.0,
         "cpl": null
        },
@@ -2433,11 +2433,7 @@
        "reason": "€7.52 spesi e 0 lead: mancano €22.48 allo stacco",
        "sprecato": 0.0,
        "flags": [],
-       "recent": {
-        "spend": 0.19,
-        "leads": 0.0,
-        "cpl": null
-       },
+       "recent": null,
        "trend": null
       },
       {
@@ -2503,6 +2499,42 @@
        "trend": null
       },
       {
+       "id": "120251398564360629",
+       "name": "Statica - agenda-vuota",
+       "campaign_id": "120249502985680629",
+       "campaign_name": "CF - Modulo 1",
+       "spend": 4.86,
+       "leads": 0.0,
+       "cpl": null,
+       "impressions": 511.0,
+       "clicks": 2.0,
+       "link_clicks": 0.0,
+       "cvr": null,
+       "ctr": 0.391389,
+       "cpm": 9.510763,
+       "reach": 373.0,
+       "frequency": 1.369973,
+       "attiva": false,
+       "effective_status": "PAUSED",
+       "dopo_lead": {
+        "spesa_dopo": 4.86,
+        "ultimo_lead": null,
+        "lead_finestra": 0.0
+       },
+       "status": "watch",
+       "reason": "€4.86 spesi e 0 lead: mancano €25.14 allo stacco",
+       "sprecato": 0.0,
+       "flags": [
+        "CTR 0,39% sotto 1%: segnalato, da solo non fa cambiare creativa"
+       ],
+       "recent": {
+        "spend": 4.86,
+        "leads": 0.0,
+        "cpl": null
+       },
+       "trend": null
+      },
+      {
        "id": "120251169210090629",
        "name": "Video - costo-rimandare",
        "campaign_id": "120249502985680629",
@@ -2530,7 +2562,7 @@
        "sprecato": 0.0,
        "flags": [],
        "recent": {
-        "spend": 0.17,
+        "spend": 0.09,
         "leads": 0.0,
         "cpl": null
        },
@@ -2688,253 +2720,32 @@
       }
      ],
      "vivo": {
-      "spend": 929.69,
-      "leads": 40.0,
-      "clicks": 1161.0,
-      "link_clicks": 462.0,
-      "impressions": 62428.0,
-      "cpl": 23.24,
-      "cvr": 8.66,
-      "ctr": 1.86,
-      "recent_cpl": 20.27,
-      "recent_spend": 344.63,
-      "recent_leads": 17.0
+      "spend": 884.59,
+      "leads": 38.0,
+      "clicks": 1135.0,
+      "link_clicks": 446.0,
+      "impressions": 59663.0,
+      "cpl": 23.28,
+      "cvr": 8.52,
+      "ctr": 1.9,
+      "recent_cpl": 20.06,
+      "recent_spend": 240.72,
+      "recent_leads": 12.0
      },
-     "n_ads": 60,
-     "n_ads_attivi": 5,
-     "sprecato": 22.71,
-     "status": "kill",
-     "reason": "1 inserzione/i ancora accesa/e fuori soglia (la peggiore: Statica - 3-garanzie (ripresa 19/11), 2 lead a CPL €41.35: oltre il tetto di allarme di €30 da 2 a 5 lead)",
+     "n_ads": 61,
+     "n_ads_attivi": 4,
+     "sprecato": 0.0,
+     "status": "ok",
+     "reason": "inserzioni accese dentro i parametri",
      "flags": [
       "frequenza 10.4: pubblico bruciato, cambia audience"
      ],
      "recent": {
-      "spend": 373.02,
-      "leads": 17.0,
-      "cpl": 21.94
+      "spend": 338.95,
+      "leads": 14.0,
+      "cpl": 24.21
      },
-     "trend": -5.3
-    },
-    {
-     "id": "120251295495220629",
-     "name": "Test ABO - CF",
-     "spend": 138.38,
-     "leads": 2.0,
-     "cpl": 69.19,
-     "impressions": 8579.0,
-     "clicks": 125.0,
-     "link_clicks": 46.0,
-     "cvr": 4.35,
-     "ctr": 1.457046,
-     "cpm": 16.130085,
-     "reach": 3305.0,
-     "frequency": 2.595764,
-     "attiva": true,
-     "effective_status": "ACTIVE",
-     "daily_budget": null,
-     "ads": [
-      {
-       "id": "120251295497530629",
-       "name": "Video - … testimonianza v3 (15/11) [ABO test]",
-       "campaign_id": "120251295495220629",
-       "campaign_name": "Test ABO - CF",
-       "spend": 45.45,
-       "leads": 1.0,
-       "cpl": 45.45,
-       "impressions": 3155.0,
-       "clicks": 53.0,
-       "link_clicks": 17.0,
-       "cvr": 5.88,
-       "ctr": 1.679873,
-       "cpm": 14.405705,
-       "reach": 1906.0,
-       "frequency": 1.655299,
-       "attiva": true,
-       "effective_status": "ACTIVE",
-       "dopo_lead": {
-        "spesa_dopo": 25.24,
-        "ultimo_lead": "2026-11-19",
-        "lead_finestra": 1.0
-       },
-       "status": "kill",
-       "reason": "1 solo lead a €45.45: oltre il limite di €45",
-       "sprecato": 0.45,
-       "flags": [],
-       "recent": {
-        "spend": 45.45,
-        "leads": 1.0,
-        "cpl": 45.45
-       },
-       "trend": 0.0
-      },
-      {
-       "id": "120251372834600629",
-       "name": "ABO test - Statica - smetti-di-chiamare",
-       "campaign_id": "120251295495220629",
-       "campaign_name": "Test ABO - CF",
-       "spend": 16.13,
-       "leads": 0.0,
-       "cpl": null,
-       "impressions": 1118.0,
-       "clicks": 22.0,
-       "link_clicks": 7.0,
-       "cvr": 0.0,
-       "ctr": 1.9678,
-       "cpm": 14.427549,
-       "reach": 736.0,
-       "frequency": 1.519022,
-       "attiva": true,
-       "effective_status": "ACTIVE",
-       "dopo_lead": {
-        "spesa_dopo": 16.13,
-        "ultimo_lead": null,
-        "lead_finestra": 0.0
-       },
-       "status": "watch",
-       "reason": "€16.13 spesi e 0 lead: mancano €13.87 allo stacco",
-       "sprecato": 0.0,
-       "flags": [],
-       "recent": {
-        "spend": 16.13,
-        "leads": 0.0,
-        "cpl": null
-       },
-       "trend": null
-      },
-      {
-       "id": "120251376849580629",
-       "name": "ABO test - CF statica Percorso chiaro 02/11",
-       "campaign_id": "120251295495220629",
-       "campaign_name": "Test ABO - CF",
-       "spend": 14.74,
-       "leads": 1.0,
-       "cpl": 14.74,
-       "impressions": 681.0,
-       "clicks": 6.0,
-       "link_clicks": 3.0,
-       "cvr": 33.33,
-       "ctr": 0.881057,
-       "cpm": 21.64464,
-       "reach": 445.0,
-       "frequency": 1.530337,
-       "attiva": true,
-       "effective_status": "ACTIVE",
-       "dopo_lead": {
-        "spesa_dopo": 12.38,
-        "ultimo_lead": "2026-11-21",
-        "lead_finestra": 1.0
-       },
-       "status": "early",
-       "reason": "1 lead a €14.74: si lascia girare, ma entro €45 (mancano €30.26) deve arrivare il 2° lead, cioe' CPL sotto €22",
-       "sprecato": 0.0,
-       "flags": [
-        "CTR 0,88% sotto 1%: segnalato, da solo non fa cambiare creativa"
-       ],
-       "recent": {
-        "spend": 14.74,
-        "leads": 1.0,
-        "cpl": 14.74
-       },
-       "trend": 0.0
-      },
-      {
-       "id": "120251295502320629",
-       "name": "Statica - testimonianze-consulenti (16/11) [ABO test]",
-       "campaign_id": "120251295495220629",
-       "campaign_name": "Test ABO - CF",
-       "spend": 31.18,
-       "leads": 0.0,
-       "cpl": null,
-       "impressions": 1914.0,
-       "clicks": 17.0,
-       "link_clicks": 4.0,
-       "cvr": 0.0,
-       "ctr": 0.888192,
-       "cpm": 16.290491,
-       "reach": 1083.0,
-       "frequency": 1.767313,
-       "attiva": false,
-       "effective_status": "PAUSED",
-       "dopo_lead": {
-        "spesa_dopo": 31.18,
-        "ultimo_lead": null,
-        "lead_finestra": 0.0
-       },
-       "status": "kill",
-       "reason": "€31.18 spesi e 0 lead: oltre il limite di €30",
-       "sprecato": 1.18,
-       "flags": [
-        "CTR 0,89% sotto 1%: segnalato, da solo non fa cambiare creativa"
-       ],
-       "recent": {
-        "spend": 31.18,
-        "leads": 0.0,
-        "cpl": null
-       },
-       "trend": null
-      },
-      {
-       "id": "120251295499270629",
-       "name": "Video - costo-rimandare [ABO test]",
-       "campaign_id": "120251295495220629",
-       "campaign_name": "Test ABO - CF",
-       "spend": 30.88,
-       "leads": 0.0,
-       "cpl": null,
-       "impressions": 1711.0,
-       "clicks": 27.0,
-       "link_clicks": 15.0,
-       "cvr": 0.0,
-       "ctr": 1.578025,
-       "cpm": 18.047925,
-       "reach": 1034.0,
-       "frequency": 1.654739,
-       "attiva": false,
-       "effective_status": "PAUSED",
-       "dopo_lead": {
-        "spesa_dopo": 30.88,
-        "ultimo_lead": null,
-        "lead_finestra": 0.0
-       },
-       "status": "kill",
-       "reason": "€30.88 spesi e 0 lead: oltre il limite di €30",
-       "sprecato": 0.88,
-       "flags": [],
-       "recent": {
-        "spend": 30.88,
-        "leads": 0.0,
-        "cpl": null
-       },
-       "trend": null
-      }
-     ],
-     "vivo": {
-      "spend": 76.32,
-      "leads": 2.0,
-      "clicks": 81.0,
-      "link_clicks": 27.0,
-      "impressions": 4954.0,
-      "cpl": 38.16,
-      "cvr": 7.41,
-      "ctr": 1.64,
-      "recent_cpl": 38.16,
-      "recent_spend": 76.32,
-      "recent_leads": 2.0
-     },
-     "n_ads": 5,
-     "n_ads_attivi": 3,
-     "sprecato": 0.45,
-     "status": "kill",
-     "reason": "1 inserzione/i ancora accesa/e fuori soglia (la peggiore: Video - … testimonianza v3 (15/11) [ABO test], 1 solo lead a €45.45: oltre il limite di €45)",
-     "flags": [
-      "frequenza 2.6: pubblico bruciato, cambia audience"
-     ],
-     "recent": {
-      "spend": 138.38,
-      "leads": 2.0,
-      "cpl": 69.19
-     },
-     "trend": 0.0
+     "trend": -3.29
     },
     {
      "id": "120249368205620629",
@@ -3094,7 +2905,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [
       "frequenza 5.0: pubblico bruciato, cambia audience"
      ],
@@ -3140,7 +2951,7 @@
        "dopo_lead": {
         "spesa_dopo": 0.09,
         "ultimo_lead": "2026-10-12",
-        "lead_finestra": 14.0
+        "lead_finestra": 10.0
        },
        "status": "winner",
        "reason": "CPL €9.12: sotto €10, ci si mette budget",
@@ -3249,7 +3060,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [
       "frequenza 4.7: pubblico bruciato, cambia audience"
      ],
@@ -3308,7 +3119,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [
       "frequenza 2.8: pubblico bruciato, cambia audience",
       "DA RIPROVARE: staccata a torto, aveva campione e CPL sotto target"
@@ -3402,7 +3213,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [
       "frequenza 4.0: pubblico bruciato, cambia audience"
      ],
@@ -3459,7 +3270,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -3516,13 +3327,268 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [
       "frequenza 3.0: pubblico bruciato, cambia audience",
       "DA RIPROVARE: staccata a torto, aveva campione e CPL sotto target"
      ],
      "recent": null,
      "trend": null
+    },
+    {
+     "id": "120251295495220629",
+     "name": "Test ABO - CF",
+     "spend": 162.47,
+     "leads": 3.0,
+     "cpl": 54.16,
+     "impressions": 10347.0,
+     "clicks": 144.0,
+     "link_clicks": 60.0,
+     "cvr": 5.0,
+     "ctr": 1.391708,
+     "cpm": 15.702136,
+     "reach": 3598.0,
+     "frequency": 2.875764,
+     "attiva": true,
+     "effective_status": "ACTIVE",
+     "daily_budget": null,
+     "ads": [
+      {
+       "id": "120251372834600629",
+       "name": "ABO test - Statica - smetti-di-chiamare",
+       "campaign_id": "120251295495220629",
+       "campaign_name": "Test ABO - CF",
+       "spend": 23.18,
+       "leads": 0.0,
+       "cpl": null,
+       "impressions": 1816.0,
+       "clicks": 28.0,
+       "link_clicks": 11.0,
+       "cvr": 0.0,
+       "ctr": 1.54185,
+       "cpm": 12.764317,
+       "reach": 1048.0,
+       "frequency": 1.732824,
+       "attiva": true,
+       "effective_status": "ACTIVE",
+       "dopo_lead": {
+        "spesa_dopo": 23.18,
+        "ultimo_lead": null,
+        "lead_finestra": 0.0
+       },
+       "status": "watch",
+       "reason": "€23.18 spesi e 0 lead: mancano €6.82 allo stacco",
+       "sprecato": 0.0,
+       "flags": [],
+       "recent": {
+        "spend": 23.18,
+        "leads": 0.0,
+        "cpl": null
+       },
+       "trend": null
+      },
+      {
+       "id": "120251376849580629",
+       "name": "ABO test - CF statica Percorso chiaro 02/11",
+       "campaign_id": "120251295495220629",
+       "campaign_name": "Test ABO - CF",
+       "spend": 22.46,
+       "leads": 1.0,
+       "cpl": 22.46,
+       "impressions": 1078.0,
+       "clicks": 8.0,
+       "link_clicks": 4.0,
+       "cvr": 25.0,
+       "ctr": 0.742115,
+       "cpm": 20.834879,
+       "reach": 650.0,
+       "frequency": 1.658462,
+       "attiva": true,
+       "effective_status": "ACTIVE",
+       "dopo_lead": {
+        "spesa_dopo": 20.1,
+        "ultimo_lead": "2026-11-21",
+        "lead_finestra": 1.0
+       },
+       "status": "early",
+       "reason": "1 lead a €22.46: si lascia girare, ma entro €45 (mancano €22.54) deve arrivare il 2° lead, cioe' CPL sotto €22",
+       "sprecato": 0.0,
+       "flags": [
+        "CTR 0,74% sotto 1%: segnalato, da solo non fa cambiare creativa"
+       ],
+       "recent": {
+        "spend": 22.46,
+        "leads": 1.0,
+        "cpl": 22.46
+       },
+       "trend": 0.0
+      },
+      {
+       "id": "120251398775770629",
+       "name": "ABO test - Video - fonte-di-contatti",
+       "campaign_id": "120251295495220629",
+       "campaign_name": "Test ABO - CF",
+       "spend": 9.01,
+       "leads": 1.0,
+       "cpl": 9.01,
+       "impressions": 657.0,
+       "clicks": 11.0,
+       "link_clicks": 9.0,
+       "cvr": 11.11,
+       "ctr": 1.674277,
+       "cpm": 13.713851,
+       "reach": 492.0,
+       "frequency": 1.335366,
+       "attiva": true,
+       "effective_status": "ACTIVE",
+       "dopo_lead": {
+        "spesa_dopo": 0,
+        "ultimo_lead": "2026-11-24",
+        "lead_finestra": 1.0
+       },
+       "status": "early",
+       "reason": "1 lead a €9.01: si lascia girare, ma entro €45 (mancano €35.99) deve arrivare il 2° lead, cioe' CPL sotto €22",
+       "sprecato": 0.0,
+       "flags": [],
+       "recent": {
+        "spend": 9.01,
+        "leads": 1.0,
+        "cpl": 9.01
+       },
+       "trend": 0.0
+      },
+      {
+       "id": "120251295497530629",
+       "name": "Video - … testimonianza v3 (15/11) [ABO test]",
+       "campaign_id": "120251295495220629",
+       "campaign_name": "Test ABO - CF",
+       "spend": 45.76,
+       "leads": 1.0,
+       "cpl": 45.76,
+       "impressions": 3171.0,
+       "clicks": 53.0,
+       "link_clicks": 17.0,
+       "cvr": 5.88,
+       "ctr": 1.671397,
+       "cpm": 14.430779,
+       "reach": 1910.0,
+       "frequency": 1.660209,
+       "attiva": false,
+       "effective_status": "PAUSED",
+       "dopo_lead": {
+        "spesa_dopo": 25.55,
+        "ultimo_lead": "2026-11-19",
+        "lead_finestra": 1.0
+       },
+       "status": "kill",
+       "reason": "1 solo lead a €45.76: oltre il limite di €45",
+       "sprecato": 0.76,
+       "flags": [],
+       "recent": {
+        "spend": 45.76,
+        "leads": 1.0,
+        "cpl": 45.76
+       },
+       "trend": 0.0
+      },
+      {
+       "id": "120251295502320629",
+       "name": "Statica - testimonianze-consulenti (16/11) [ABO test]",
+       "campaign_id": "120251295495220629",
+       "campaign_name": "Test ABO - CF",
+       "spend": 31.18,
+       "leads": 0.0,
+       "cpl": null,
+       "impressions": 1914.0,
+       "clicks": 17.0,
+       "link_clicks": 4.0,
+       "cvr": 0.0,
+       "ctr": 0.888192,
+       "cpm": 16.290491,
+       "reach": 1083.0,
+       "frequency": 1.767313,
+       "attiva": false,
+       "effective_status": "PAUSED",
+       "dopo_lead": {
+        "spesa_dopo": 31.18,
+        "ultimo_lead": null,
+        "lead_finestra": 0.0
+       },
+       "status": "kill",
+       "reason": "€31.18 spesi e 0 lead: oltre il limite di €30",
+       "sprecato": 1.18,
+       "flags": [
+        "CTR 0,89% sotto 1%: segnalato, da solo non fa cambiare creativa"
+       ],
+       "recent": {
+        "spend": 31.18,
+        "leads": 0.0,
+        "cpl": null
+       },
+       "trend": null
+      },
+      {
+       "id": "120251295499270629",
+       "name": "Video - costo-rimandare [ABO test]",
+       "campaign_id": "120251295495220629",
+       "campaign_name": "Test ABO - CF",
+       "spend": 30.88,
+       "leads": 0.0,
+       "cpl": null,
+       "impressions": 1711.0,
+       "clicks": 27.0,
+       "link_clicks": 15.0,
+       "cvr": 0.0,
+       "ctr": 1.578025,
+       "cpm": 18.047925,
+       "reach": 1034.0,
+       "frequency": 1.654739,
+       "attiva": false,
+       "effective_status": "PAUSED",
+       "dopo_lead": {
+        "spesa_dopo": 30.88,
+        "ultimo_lead": null,
+        "lead_finestra": 0.0
+       },
+       "status": "kill",
+       "reason": "€30.88 spesi e 0 lead: oltre il limite di €30",
+       "sprecato": 0.88,
+       "flags": [],
+       "recent": {
+        "spend": 30.88,
+        "leads": 0.0,
+        "cpl": null
+       },
+       "trend": null
+      }
+     ],
+     "vivo": {
+      "spend": 54.65,
+      "leads": 2.0,
+      "clicks": 47.0,
+      "link_clicks": 24.0,
+      "impressions": 3551.0,
+      "cpl": 27.32,
+      "cvr": 8.33,
+      "ctr": 1.32,
+      "recent_cpl": 27.32,
+      "recent_spend": 54.65,
+      "recent_leads": 2.0
+     },
+     "n_ads": 6,
+     "n_ads_attivi": 3,
+     "sprecato": 0.0,
+     "status": "watch",
+     "reason": "1 inserzione/i ancora accesa/e da sorvegliare",
+     "flags": [
+      "frequenza 2.9: pubblico bruciato, cambia audience"
+     ],
+     "recent": {
+      "spend": 162.47,
+      "leads": 3.0,
+      "cpl": 54.16
+     },
+     "trend": 0.0
     },
     {
      "id": "120248713065570629",
@@ -3576,7 +3642,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [
       "frequenza 2.6: pubblico bruciato, cambia audience"
      ],
@@ -3635,7 +3701,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [
       "frequenza 2.9: pubblico bruciato, cambia audience"
      ],
@@ -3694,7 +3760,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [
       "frequenza 2.6: pubblico bruciato, cambia audience"
      ],
@@ -3751,7 +3817,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -3806,7 +3872,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -3861,7 +3927,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -3916,7 +3982,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -4007,7 +4073,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -4098,7 +4164,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [
       "CTR 0,77% sotto 1%: segnalato, da solo non fa cambiare creativa"
      ],
@@ -4159,7 +4225,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -4250,7 +4316,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [
       "CTR 0,86% sotto 1%: segnalato, da solo non fa cambiare creativa"
      ],
@@ -4309,7 +4375,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [
       "solo 0.0% dei click al link diventa lead: modulo o landing da rivedere"
      ],
@@ -4400,7 +4466,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -4455,7 +4521,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -4510,7 +4576,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -4565,7 +4631,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -4620,7 +4686,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -4675,7 +4741,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -4730,7 +4796,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -4785,7 +4851,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -4840,7 +4906,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -4895,7 +4961,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -4950,7 +5016,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -5005,7 +5071,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -5060,7 +5126,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -5115,7 +5181,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -5170,7 +5236,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -5225,7 +5291,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -5280,7 +5346,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -5335,7 +5401,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -5390,7 +5456,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -5445,7 +5511,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -5500,7 +5566,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -5555,7 +5621,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -5610,7 +5676,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -5665,7 +5731,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -5720,7 +5786,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -5775,7 +5841,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -5830,7 +5896,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -5885,7 +5951,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -5942,7 +6008,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [
       "CTR 0,82% sotto 1%: segnalato, da solo non fa cambiare creativa"
      ],
@@ -5999,7 +6065,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -6054,7 +6120,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -6111,7 +6177,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [
       "CTR 0,94% sotto 1%: segnalato, da solo non fa cambiare creativa"
      ],
@@ -6168,7 +6234,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -6223,7 +6289,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -6278,7 +6344,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -6333,7 +6399,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -6388,7 +6454,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -6443,7 +6509,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -6498,7 +6564,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -6553,7 +6619,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -6608,7 +6674,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -6665,7 +6731,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [
       "CTR 0,85% sotto 1%: segnalato, da solo non fa cambiare creativa"
      ],
@@ -6722,7 +6788,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -6779,7 +6845,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [
       "CTR 0,84% sotto 1%: segnalato, da solo non fa cambiare creativa"
      ],
@@ -6836,7 +6902,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -6891,7 +6957,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -6946,7 +7012,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -7001,7 +7067,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -7056,7 +7122,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -7111,7 +7177,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -7166,7 +7232,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -7223,7 +7289,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [
       "CTR 0,89% sotto 1%: segnalato, da solo non fa cambiare creativa"
      ],
@@ -7286,7 +7352,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [
       "solo 0.0% dei click al link diventa lead: modulo o landing da rivedere"
      ],
@@ -7343,7 +7409,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -7400,7 +7466,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [
       "CTR 0,96% sotto 1%: segnalato, da solo non fa cambiare creativa"
      ],
@@ -7457,7 +7523,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -7512,7 +7578,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -7569,7 +7635,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [
       "CTR 0,94% sotto 1%: segnalato, da solo non fa cambiare creativa"
      ],
@@ -7626,7 +7692,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -7681,7 +7747,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -7736,7 +7802,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -7791,7 +7857,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -7846,7 +7912,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -7901,7 +7967,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -7956,7 +8022,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -8011,7 +8077,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -8068,7 +8134,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [
       "CTR 0,44% sotto 1%: segnalato, da solo non fa cambiare creativa"
      ],
@@ -8125,7 +8191,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -8182,7 +8248,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [
       "CTR 0,66% sotto 1%: segnalato, da solo non fa cambiare creativa"
      ],
@@ -8241,7 +8307,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [
       "CTR 0,46% sotto 1%: segnalato, da solo non fa cambiare creativa"
      ],
@@ -8298,7 +8364,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -8353,7 +8419,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -8408,7 +8474,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -8463,7 +8529,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -8518,7 +8584,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -8573,7 +8639,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -8628,7 +8694,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -8683,7 +8749,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -8740,7 +8806,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [
       "CTR 0,94% sotto 1%: segnalato, da solo non fa cambiare creativa"
      ],
@@ -8797,7 +8863,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -8852,7 +8918,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -8907,7 +8973,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -8962,7 +9028,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -9017,7 +9083,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -9072,7 +9138,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -9127,7 +9193,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -9184,7 +9250,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [
       "CTR 0,80% sotto 1%: segnalato, da solo non fa cambiare creativa"
      ],
@@ -9241,7 +9307,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -9298,7 +9364,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [
       "CTR 0,83% sotto 1%: segnalato, da solo non fa cambiare creativa"
      ],
@@ -9355,7 +9421,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -9410,7 +9476,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -9465,7 +9531,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -9523,7 +9589,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [
       "CTR 0,74% sotto 1%: segnalato, da solo non fa cambiare creativa",
       "solo 0.0% dei click al link diventa lead: modulo o landing da rivedere"
@@ -9584,7 +9650,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [
       "CTR 0,81% sotto 1%: segnalato, da solo non fa cambiare creativa",
       "solo 0.0% dei click al link diventa lead: modulo o landing da rivedere"
@@ -9642,7 +9708,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -9697,7 +9763,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -9752,7 +9818,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -9807,7 +9873,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -9862,7 +9928,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -9917,7 +9983,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -9974,7 +10040,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [
       "CTR 0,99% sotto 1%: segnalato, da solo non fa cambiare creativa"
      ],
@@ -10031,7 +10097,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -10088,7 +10154,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [
       "solo 0.0% dei click al link diventa lead: modulo o landing da rivedere"
      ],
@@ -10145,7 +10211,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -10200,7 +10266,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -10255,7 +10321,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -10310,7 +10376,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -10365,7 +10431,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -10422,7 +10488,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [
       "CTR 0,71% sotto 1%: segnalato, da solo non fa cambiare creativa"
      ],
@@ -10481,7 +10547,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [
       "solo 0.0% dei click al link diventa lead: modulo o landing da rivedere"
      ],
@@ -10538,7 +10604,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -10595,7 +10661,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [
       "solo 0.0% dei click al link diventa lead: modulo o landing da rivedere"
      ],
@@ -10652,7 +10718,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -10707,7 +10773,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -10762,7 +10828,7 @@
      "n_ads_attivi": 0,
      "sprecato": 0,
      "status": "ok",
-     "reason": "tutte le inserzioni fuori soglia sono gia' state staccate",
+     "reason": "tutte le inserzioni … soglia sono gia' state staccate",
      "flags": [],
      "recent": null,
      "trend": null
@@ -10770,7 +10836,7 @@
    ],
    "hiring": {
     "n": 8,
-    "spend": 684.28,
+    "spend": 688.35,
     "leads": 193.0
    },
    "campagne_hiring": [
@@ -10910,20 +10976,20 @@
     {
      "id": "120250629835970629",
      "name": "Venditore - Moduli - Copia 2",
-     "spend": 143.93,
+     "spend": 148.0,
      "leads": 12.0,
-     "cpl": 11.99,
-     "impressions": 6985.0,
-     "clicks": 122.0,
-     "link_clicks": 49.0,
-     "cvr": 24.49,
-     "ctr": 1.7466,
-     "cpm": 20.605583,
-     "reach": 3175.0,
-     "frequency": 2.2,
-     "attiva": false,
-     "effective_status": "PAUSED",
-     "daily_budget": 15.0,
+     "cpl": 12.33,
+     "impressions": 7162.0,
+     "clicks": 129.0,
+     "link_clicks": 52.0,
+     "cvr": 23.08,
+     "ctr": 1.801173,
+     "cpm": 20.664619,
+     "reach": 3237.0,
+     "frequency": 2.212542,
+     "attiva": true,
+     "effective_status": "ACTIVE",
+     "daily_budget": 10.0,
      "hiring": true
     }
    ],
@@ -10974,10 +11040,10 @@
        "con_risultati": [
         "AEA-HOUSE"
        ],
-       "accesa": [],
-       "spenta": [
+       "accesa": [
         "AEA-HOUSE"
        ],
+       "spenta": [],
        "mai": []
       }
      },
@@ -11027,10 +11093,10 @@
        "con_risultati": [
         "AEA-HOUSE"
        ],
-       "accesa": [],
-       "spenta": [
+       "accesa": [
         "AEA-HOUSE"
        ],
+       "spenta": [],
        "mai": []
       }
      },
@@ -11145,10 +11211,10 @@
        "con_risultati": [
         "AEA-HOUSE"
        ],
-       "accesa": [],
-       "spenta": [
+       "accesa": [
         "AEA-HOUSE"
        ],
+       "spenta": [],
        "mai": []
       }
      },
@@ -11233,10 +11299,10 @@
        "con_risultati": [
         "AEA-HOUSE"
        ],
-       "accesa": [],
-       "spenta": [
+       "accesa": [
         "AEA-HOUSE"
        ],
+       "spenta": [],
        "mai": []
       }
      },
@@ -11276,10 +11342,10 @@
        "con_risultati": [
         "AEA-HOUSE"
        ],
-       "accesa": [],
-       "spenta": [
+       "accesa": [
         "AEA-HOUSE"
        ],
+       "spenta": [],
        "mai": []
       }
      },
@@ -11363,10 +11429,10 @@
        "con_risultati": [
         "AEA-HOUSE"
        ],
-       "accesa": [],
-       "spenta": [
+       "accesa": [
         "AEA-HOUSE"
        ],
+       "spenta": [],
        "mai": []
       }
      },
@@ -11517,10 +11583,10 @@
        "con_risultati": [
         "AEA-HOUSE"
        ],
-       "accesa": [],
-       "spenta": [
+       "accesa": [
         "AEA-HOUSE"
        ],
+       "spenta": [],
        "mai": []
       }
      },
@@ -11550,10 +11616,10 @@
        "con_risultati": [
         "AEA-HOUSE"
        ],
-       "accesa": [],
-       "spenta": [
+       "accesa": [
         "AEA-HOUSE"
        ],
+       "spenta": [],
        "mai": []
       }
      },
@@ -11602,10 +11668,10 @@
        "con_risultati": [
         "AEA-HOUSE"
        ],
-       "accesa": [],
-       "spenta": [
+       "accesa": [
         "AEA-HOUSE"
        ],
+       "spenta": [],
        "mai": []
       }
      },
@@ -11665,23 +11731,40 @@
       "costo_cliente": null
      },
      {
+      "ad_id": "120249463699280629",
+      "nome": "Nuova inserzione Contatti",
+      "campagna": "Moduli -immagine - Copia 8",
+      "lead": 1,
+      "apt1": 1,
+      "apt2": 0,
+      "apt3": 1,
+      "chiusi": 0,
+      "k100": 0,
+      "spesa": 25.66,
+      "fonti_clienti": [],
+      "apt_piattaforme": {},
+      "attiva": false,
+      "costo_apt": null,
+      "costo_cliente": null
+     },
+     {
       "ad_id": "120251078253820629",
       "nome": "Video - testimonianza-… (gruppo unico)",
       "campagna": "CF - Modulo 1",
       "lead": 16,
-      "apt1": 11,
+      "apt1": 13,
       "apt2": 4,
       "apt3": 0,
       "chiusi": 0,
       "k100": 0,
-      "spesa": 446.92,
+      "spesa": 462.48,
       "fonti_clienti": [],
       "apt_piattaforme": {
        "fb": 1,
        "ig": 3
       },
       "attiva": true,
-      "costo_apt": 111.73,
+      "costo_apt": 115.62,
       "costo_cliente": null
      },
      {
@@ -11689,18 +11772,18 @@
       "nome": "CF statica 100K … (ripresa 23/10)",
       "campagna": "CF - Modulo 1",
       "lead": 16,
-      "apt1": 6,
+      "apt1": 7,
       "apt2": 3,
       "apt3": 0,
       "chiusi": 0,
       "k100": 0,
-      "spesa": 310.2,
+      "spesa": 328.69,
       "fonti_clienti": [],
       "apt_piattaforme": {
        "ig": 3
       },
       "attiva": true,
-      "costo_apt": 103.4,
+      "costo_apt": 109.56,
       "costo_cliente": null,
       "diffusione": {
        "lead": 31,
@@ -11743,10 +11826,10 @@
        "con_risultati": [
         "AEA-HOUSE"
        ],
-       "accesa": [],
-       "spenta": [
+       "accesa": [
         "AEA-HOUSE"
        ],
+       "spenta": [],
        "mai": []
       }
      },
@@ -11776,10 +11859,10 @@
        "con_risultati": [
         "AEA-HOUSE"
        ],
-       "accesa": [],
-       "spenta": [
+       "accesa": [
         "AEA-HOUSE"
        ],
+       "spenta": [],
        "mai": []
       }
      },
@@ -11809,10 +11892,10 @@
        "con_risultati": [
         "AEA-HOUSE"
        ],
-       "accesa": [],
-       "spenta": [
+       "accesa": [
         "AEA-HOUSE"
        ],
+       "spenta": [],
        "mai": []
       }
      },
@@ -11842,10 +11925,10 @@
        "con_risultati": [
         "AEA-HOUSE"
        ],
-       "accesa": [],
-       "spenta": [
+       "accesa": [
         "AEA-HOUSE"
        ],
+       "spenta": [],
        "mai": []
       }
      },
@@ -11875,10 +11958,10 @@
        "con_risultati": [
         "AEA-HOUSE"
        ],
-       "accesa": [],
-       "spenta": [
+       "accesa": [
         "AEA-HOUSE"
        ],
+       "spenta": [],
        "mai": []
       }
      },
@@ -11908,10 +11991,10 @@
        "con_risultati": [
         "AEA-HOUSE"
        ],
-       "accesa": [],
-       "spenta": [
+       "accesa": [
         "AEA-HOUSE"
        ],
+       "spenta": [],
        "mai": []
       }
      },
@@ -11970,23 +12053,23 @@
     ],
     "altre_con_esiti": 0,
     "totale_creative": {
-     "lead": 409,
-     "apt1": 191,
+     "lead": 410,
+     "apt1": 195,
      "apt2": 109,
-     "apt3": 57,
+     "apt3": 58,
      "chiusi": 10,
      "k100": 0,
-     "spesa": 6959.02
+     "spesa": 7013.880000000001
     },
     "senza_creativa": {
-     "lead": 28,
+     "lead": 30,
      "k100": 0,
      "apt1": 23,
-     "apt2": 13,
+     "apt2": 14,
      "apt3": 10,
      "chiusi": 2
     },
-    "letto": "2026-11-23T08:03:11"
+    "letto": "2026-11-24T08:03:27"
    },
    "nome_breve": "AI Elite Advisory"
   }
@@ -11994,14 +12077,22 @@
  "fermi": [],
  "nuovi": [],
  "errori": [],
- "ruolo_html": "<style>\n.nr{display:grid;grid-template-columns:1.25fr 1fr;gap:12px;margin:18px 0 6px}\n.nr-card{background:linear-gradient(160deg,rgba(52,98,196,.45),rgba(30,64,140,.42));border:1px solid rgba(150,190,255,.22);border-radius:16px;padding:16px 18px;color:#F3F6FD;box-shadow:0 10px 30px rgba(0,0,0,.3)}\n.nr-card.num{border-top:3px solid #FFD21F}\n.nr-card.sf{border-top:3px solid #D4A537}\n.nr-k{font-size:11.5px;font-weight:700;color:#A9BBE0;text-transform:uppercase;letter-spacing:.06em}\n.nr-v{font-size:44px;font-weight:800;letter-spacing:-.03em;line-height:1.05;margin:6px 0 2px;font-variant-numeric:tabular-nums}\n.nr-v small{font-size:20px;color:#A9BBE0;font-weight:700}\n.nr-v .nr-ok{color:#FFD21F}\n.nr-bar{position:relative;height:9px;border-radius:99px;background:rgba(255,255,255,.1);overflow:hidden;margin:10px 0 6px}\n.nr-bar i{position:absolute;left:0;top:0;bottom:0;background:linear-gradient(90deg,#FFD21F,#D4A537);border-radius:99px}\n.nr-bar b{position:absolute;top:-2px;bottom:-2px;width:2px;background:#fff;opacity:.85}\n.nr-s{font-size:12.5px;color:#C4CDE0;line-height:1.5}\n.nr-s b{color:#F3F6FD}\n.nr-due{display:grid;grid-template-columns:1fr 1fr;gap:14px}\n.nr-col{display:flex;flex-direction:column;gap:16px}\n.nr-col>div+div{border-top:1px solid rgba(255,255,255,.12);padding-top:14px}\n.nr-t{font-size:15px;font-weight:600;line-height:1.45;margin:8px 0 6px}\n.nr-tag{display:inline-block;font-size:11px;font-weight:800;border-radius:99px;padding:2px 9px;background:rgba(212,165,55,.2);color:#E6C068;border:1px solid rgba(212,165,55,.45)}\n.nr-tag.old{background:rgba(255,255,255,.08);color:#C4CDE0;border-color:rgba(255,255,255,.2)}\n@media (max-width:760px){.nr,.nr-due{grid-template-columns:1fr}}\n</style><div class=\"nr\"><div class=\"nr-card num\"><div><div class=\"nr-k\">Il tuo numero · clienti col CPL sotto 15 euro</div><div class=\"nr-v\">1<small> / obiettivo da chiedere a Francesco</small></div><div class=\"nr-s\"><b>Luigi M. 13,63 · a un passo: Giovanni C. 16,68</b> · su 13 clienti con un annuncio vivo · CPL dell'annuncio vivo, mai la media della campagna</div></div></div><div class=\"nr-card sf\"><div class=\"nr-k\">Sfida della settimana</div><div class=\"nr-t\">Alzare numero di lead nostro e dei clienti + riprova sociale</div><span class=\"nr-tag\">settimana 16-23</span><div class=\"nr-s\" style=\"margin-top:10px\">numeri del 2026-11-23 07:13</div></div></div>",
+ "ruolo_html": "<style>\n.nr{display:grid;grid-template-columns:1.25fr 1fr;gap:12px;margin:18px 0 6px}\n.nr-card{background:linear-gradient(160deg,rgba(52,98,196,.45),rgba(30,64,140,.42));border:1px solid rgba(150,190,255,.22);border-radius:16px;padding:16px 18px;color:#F3F6FD;box-shadow:0 10px 30px rgba(0,0,0,.3)}\n.nr-card.num{border-top:3px solid #FFD21F}\n.nr-card.sf{border-top:3px solid #D4A537}\n.nr-k{font-size:11.5px;font-weight:700;color:#A9BBE0;text-transform:uppercase;letter-spacing:.06em}\n.nr-v{font-size:44px;font-weight:800;letter-spacing:-.03em;line-height:1.05;margin:6px 0 2px;font-variant-numeric:tabular-nums}\n.nr-v small{font-size:20px;color:#A9BBE0;font-weight:700}\n.nr-v .nr-ok{color:#FFD21F}\n.nr-bar{position:relative;height:9px;border-radius:99px;background:rgba(255,255,255,.1);overflow:hidden;margin:10px 0 6px}\n.nr-bar i{position:absolute;left:0;top:0;bottom:0;background:linear-gradient(90deg,#FFD21F,#D4A537);border-radius:99px}\n.nr-bar b{position:absolute;top:-2px;bottom:-2px;width:2px;background:#fff;opacity:.85}\n.nr-s{font-size:12.5px;color:#C4CDE0;line-height:1.5}\n.nr-s b{color:#F3F6FD}\n.nr-due{display:grid;grid-template-columns:1fr 1fr;gap:14px}\n.nr-col{display:flex;flex-direction:column;gap:16px}\n.nr-col>div+div{border-top:1px solid rgba(255,255,255,.12);padding-top:14px}\n.nr-t{font-size:15px;font-weight:600;line-height:1.45;margin:8px 0 6px}\n.nr-tag{display:inline-block;font-size:11px;font-weight:800;border-radius:99px;padding:2px 9px;background:rgba(212,165,55,.2);color:#E6C068;border:1px solid rgba(212,165,55,.45)}\n.nr-tag.old{background:rgba(255,255,255,.08);color:#C4CDE0;border-color:rgba(255,255,255,.2)}\n@media (max-width:760px){.nr,.nr-due{grid-template-columns:1fr}}\n</style><div class=\"nr\"><div class=\"nr-card num\"><div><div class=\"nr-k\">Il tuo numero · clienti col CPL sotto 15 euro</div><div class=\"nr-v\">1<small> / obiettivo da chiedere a Francesco</small></div><div class=\"nr-s\"><b>Luigi M. 14,60 · a un passo: Giovanni C. 16,88</b> · su 12 clienti con un annuncio vivo · CPL dell'annuncio vivo, mai la media della campagna</div></div></div><div class=\"nr-card sf\"><div class=\"nr-k\">Sfida della settimana</div><div class=\"nr-t\">Nessuna sfida aperta.</div><span class=\"nr-tag old\">la nuova si scrive lunedì</span><div class=\"nr-s\" style=\"margin-top:10px\">numeri del 2026-11-24 07:13</div></div></div>",
  "monitorare": [
+  {
+   "id": "AEA-HOUSE|mon|ruotata-120251398564360629",
+   "alias": "AEA-HOUSE",
+   "cosa": "Statica nuova attaccata (agenda-vuota): controlla che giri",
+   "perche": "Al posto di «Statica - 3-garanzie (ripresa 19/11)», 2 lead a CPL €41.35: oltre il tetto di allarme di €30 da 2 a 5 lead",
+   "dal": "2026-11-23",
+   "tipo": "una_volta"
+  },
   {
    "id": "AEA-HOUSE|mon|diagnosi-targeting",
    "alias": "AEA-HOUSE",
-   "cosa": "Il guasto e' il targeting del gruppo ABO test - CF statica Percorso chiaro 02/11: eta 18-65 invece di 30-63, Advantage+ pubblico acceso, zona larga (countries) senza raggio. Il guasto e' il targeting del gruppo ABO test - Statica - smetti-di-chiamare: eta 18-65 invece di 30-63, Advantage+ pubblico acceso, zona larga (countries) senza raggio. Il guasto e' il targeting del gruppo ABO test - Video … testimonianza v3: eta 18-65 invece di 30-63, Advantage+ pubblico acceso, zona larga (countries) senza raggio. Il guasto e' il targeting del gruppo Nuovo gruppo di inserzioni Contatti - Copia: eta 18-65 invece di 30-63, Advantage+ pubblico acceso, zona larga (countries) senza raggio",
-   "perche": "7 giorni: 434,65 euro, 16 lead, CPL 27,17 · annuncio acceso: CPM 14,93 (parco 16,06), CTR link 0,73%, CPC link 2,06 (parco 2,93), CVR 8,5% su 489 click · CTR link 0,73% sotto 1%: segnalato, da solo non fa cambiare creativa · moduli: 122 appuntamenti su 437 lead (28%, garanzia 20%) · gruppo ABO test - CF statica Percorso chiaro 02/11: eta 18-65, Advantage+ ON, Reels 1 · gruppo ABO test - Statica - smetti-di-chiamare: eta 18-65, Advantage+ ON, Reels 1 · gruppo ABO test - Video … testimonianza v3: eta 18-65, Advantage+ ON, Reels 1 · gruppo Nuovo gruppo di inserzioni Contatti - Copia: eta 18-65, Advantage+ ON, Reels 1",
-   "dal": "2026-11-23",
+   "cosa": "CPL 7 giorni 31,09 sopra 28 con CPM e CPC nella media: pochi lead, non e' ancora una mossa. Il guasto e' il targeting del gruppo ABO test - Video - fonte-di-contatti: eta 18-65 invece di 30-63, Advantage+ pubblico acceso, zona larga (countries) senza raggio. Il guasto e' il targeting del gruppo ABO test - CF statica Percorso chiaro 02/11: eta 18-65 invece di 30-63, Advantage+ pubblico acceso, zona larga (countries) senza raggio. Il guasto e' il targeting del gruppo ABO test - Statica - smetti-di-chiamare: eta 18-65 invece di 30-63, Advantage+ pubblico acceso, zona larga (countries) senza raggio. Il guasto e' il targeting del gruppo Nuovo gruppo di inserzioni Contatti - Copia: eta 18-65 invece di 30-63, Advantage+ pubblico acceso, zona larga (countries) senza raggio",
+   "perche": "7 giorni: 435,30 euro, 14 lead, CPL 31,09 · annuncio acceso: CPM 14,86 (parco 16,31), CTR link 0,74%, CPC link 2,00 (parco 2,91), CVR 8,5% su 470 click · CTR link 0,74% sotto 1%: segnalato, da solo non fa cambiare creativa · moduli: 123 appuntamenti su 440 lead (28%, garanzia 20%) · gruppo ABO test - Video - fonte-di-contatti: eta 18-65, Advantage+ ON, Reels 1 · gruppo ABO test - CF statica Percorso chiaro 02/11: eta 18-65, Advantage+ ON, Reels 1 · gruppo ABO test - Statica - smetti-di-chiamare: eta 18-65, Advantage+ ON, Reels 1 · gruppo Nuovo gruppo di inserzioni Contatti - Copia: eta 18-65, Advantage+ ON, Reels 1",
+   "dal": "2026-11-24",
    "tipo": "giornaliero"
   }
  ],
