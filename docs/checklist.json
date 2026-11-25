@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-25T08:23:33+01:00",
+ "generato": "2026-11-25T13:44:43+01:00",
  "procedura": "https://docs.google.com/document/d/1vn5K-biqWNt40FmqPAzCpsSSZcaTjX25dpWTKnxVoyQ/edit",
  "cartella": "https://drive.google.com/drive/folders/1Zm7RDFGTeyrXjU2tWQAPyRvkA-maCmYk",
  "sezioni": [
@@ -25,57 +25,50 @@
     {
      "k": "ckcsm:mb|ads|lim|davide-d-b-cf-ddb:2026-11-25",
      "t": "Davide D.B. (CF-DDB): 1 posizionamento a limite",
-     "d": "FB Storie CPL 40,46. Limite 45. Si guarda, non si esclude.",
+     "d": "FB Storie CPL 40,52. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
      "k": "ckcsm:mb|ads|lim|luigi-m-cf-lm:2026-11-25",
      "t": "Luigi M. (CF-LM): 1 posizionamento a limite",
-     "d": "IG Reels CPL 38,53. Limite 45. Si guarda, non si esclude.",
+     "d": "IG Reels CPL 38,56. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
      "k": "ckcsm:mb|ads|lim|elisa-m-cf-em:2026-11-25",
      "t": "Elisa M. (CF-EM): 2 posizionamenti a limite",
-     "d": "FB Storie CPL 36,87, FB feed CPL 33,92. Limite 45. Si guarda, non si esclude.",
+     "d": "FB Storie CPL 36,98, FB feed CPL 33,96. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
      "k": "ckcsm:mb|ads|lim|cosimo-c-cf-cc:2026-11-25",
      "t": "Cosimo C. (CF-CC): 2 posizionamenti a limite",
-     "d": "FB Storie CPL 32,69, FB feed CPL 31,09. Limite 45. Si guarda, non si esclude.",
+     "d": "FB Storie CPL 32,69, FB feed CPL 31,11. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
      "k": "ckcsm:mb|ads|lim|gianluca-c-cf-gca:2026-11-25",
      "t": "Gianluca C. (CF-GCA): 2 posizionamenti a limite",
-     "d": "FB feed CPL 31,86, FB Reels CPL 30,52. Limite 45. Si guarda, non si esclude.",
+     "d": "FB feed CPL 32,04, FB Reels CPL 30,63. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
      "k": "ckcsm:mb|ads|lim|raffaele-d-l-cf-rd:2026-11-25",
      "t": "Raffaele D.L. (CF-RD): 1 posizionamento a limite",
-     "d": "IG feed CPL 30,07. Limite 45. Si guarda, non si esclude.",
+     "d": "IG feed CPL 30,10. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
      "k": "ckcsm:mb|ads|lim|alessandro-z-oro-az:2026-11-25",
      "t": "Alessandro Z. (ORO-AZ): 1 posizionamento a limite",
-     "d": "FB feed CPL 30,04. Limite 45. Si guarda, non si esclude.",
+     "d": "FB feed CPL 30,09. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
-     "c": ""
-    },
-    {
-     "k": "ckcsm:mb|ads|modulo|marco-p-cf-mp:2026-11-25",
-     "t": "Marco P. (CF-MP): CVR 2,70% sotto il 4%",
-     "d": "37 click al link, 1 lead. Si guarda il modulo, non l'annuncio.",
-     "m": "modulo",
      "c": ""
     }
    ],
