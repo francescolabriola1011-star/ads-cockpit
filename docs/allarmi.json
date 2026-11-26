@@ -1,9 +1,10 @@
 {
- "generato": "25/11 04:06",
- "n_account_rossi": 5,
- "n_puliti": 11,
+ "generato": "26/11 04:05",
+ "n_account_rossi": 4,
+ "n_puliti": 12,
  "puliti": [
   "AEA-HOUSE",
+  "B",
   "CF-CC",
   "CF-DDB",
   "CF-EM",
@@ -19,13 +20,7 @@
   {
    "cliente": "CF-MP",
    "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "facebook/feed · 3.37 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
-   "gravita": 3
-  },
-  {
-   "cliente": "CF-MP",
-   "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "instagram/feed · 2.09 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "dettaglio": "instagram/feed · 8.14 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
    "gravita": 3
   },
   {
@@ -35,21 +30,9 @@
    "gravita": 3
   },
   {
-   "cliente": "B",
-   "tipo": "CARTELLA DRIVE NON TROVATA",
-   "dettaglio": "attesa «Clienti10X - BuddyFinance7»",
-   "gravita": 2
-  },
-  {
    "cliente": "CF-MP",
    "tipo": "BUCO NELLA ZONA",
    "dettaglio": "esclusa pin 45.630,8.723 (VA), dentro la provincia del cliente · AI Elite - Gruppo Inserzioni Campagna Attiva",
-   "gravita": 2
-  },
-  {
-   "cliente": "CF-MP",
-   "tipo": "PIU' DI UN MODULO VIVO",
-   "dettaglio": "Lead Gen - Marco Pellegatta, Lead Pellegatta Marco",
    "gravita": 2
   },
   {
