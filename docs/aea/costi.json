@@ -1,24 +1,16 @@
 {
- "generato": "26/11/2026 08:14",
- "quota_mese": 87,
- "totale_corrente": 5164,
+ "generato": "27/11/2026 08:32",
+ "quota_mese": 90,
+ "totale_corrente": 5564,
  "totale_m1": 17828,
  "totale_m2": 9483,
  "voci": [
   {
-   "voce": "Michele De Sena",
-   "mese_corrente": 1535,
-   "media_precedenti": 1398,
-   "atteso_a_oggi": 1211,
-   "variazione": 27,
-   "stato": "scappato"
-  },
-  {
    "voce": "Claude",
    "mese_corrente": 184,
    "media_precedenti": 80,
-   "atteso_a_oggi": 69,
-   "variazione": 165,
+   "atteso_a_oggi": 72,
+   "variazione": 156,
    "stato": "scappato"
   },
   {
@@ -30,58 +22,10 @@
    "stato": "nuovo"
   },
   {
-   "voce": "Compenso Francesco Labriola",
-   "mese_corrente": 0,
-   "media_precedenti": 860,
-   "atteso_a_oggi": 745,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
    "voce": "Facebook",
    "mese_corrente": 0,
    "media_precedenti": 2098,
-   "atteso_a_oggi": 1818,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Mytrip",
-   "mese_corrente": 0,
-   "media_precedenti": 319,
-   "atteso_a_oggi": 276,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Go High Level",
-   "mese_corrente": 0,
-   "media_precedenti": 498,
-   "atteso_a_oggi": 431,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Cost Of Goods Sold",
-   "mese_corrente": 0,
-   "media_precedenti": 1960,
-   "atteso_a_oggi": 1699,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Cursor",
-   "mese_corrente": 0,
-   "media_precedenti": 20,
-   "atteso_a_oggi": 17,
-   "variazione": -100,
-   "stato": "sparito"
-  },
-  {
-   "voce": "Grok",
-   "mese_corrente": 0,
-   "media_precedenti": 20,
-   "atteso_a_oggi": 17,
+   "atteso_a_oggi": 1888,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -89,7 +33,31 @@
    "voce": "Mara (Setter)",
    "mese_corrente": 0,
    "media_precedenti": 375,
-   "atteso_a_oggi": 325,
+   "atteso_a_oggi": 338,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Cost Of Goods Sold",
+   "mese_corrente": 0,
+   "media_precedenti": 1960,
+   "atteso_a_oggi": 1764,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Compenso Francesco Labriola",
+   "mese_corrente": 0,
+   "media_precedenti": 860,
+   "atteso_a_oggi": 774,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Mytrip",
+   "mese_corrente": 0,
+   "media_precedenti": 319,
+   "atteso_a_oggi": 287,
    "variazione": -100,
    "stato": "sparito"
   },
@@ -97,37 +65,69 @@
    "voce": "Alessandro Cugini",
    "mese_corrente": 0,
    "media_precedenti": 1118,
-   "atteso_a_oggi": 968,
+   "atteso_a_oggi": 1006,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Go High Level",
+   "mese_corrente": 0,
+   "media_precedenti": 498,
+   "atteso_a_oggi": 448,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Grok",
+   "mese_corrente": 0,
+   "media_precedenti": 20,
+   "atteso_a_oggi": 18,
+   "variazione": -100,
+   "stato": "sparito"
+  },
+  {
+   "voce": "Cursor",
+   "mese_corrente": 0,
+   "media_precedenti": 20,
+   "atteso_a_oggi": 18,
    "variazione": -100,
    "stato": "sparito"
   },
   {
    "voce": "Francesco Labriola",
-   "mese_corrente": 1490,
+   "mese_corrente": 1890,
    "media_precedenti": 4330,
-   "atteso_a_oggi": 3753,
-   "variazione": -60,
+   "atteso_a_oggi": 3897,
+   "variazione": -52,
+   "stato": "stabile"
+  },
+  {
+   "voce": "Michele De Sena",
+   "mese_corrente": 1535,
+   "media_precedenti": 1398,
+   "atteso_a_oggi": 1258,
+   "variazione": 22,
    "stato": "stabile"
   },
   {
    "voce": "Carlo Parodi",
    "mese_corrente": 1435,
    "media_precedenti": 2286,
-   "atteso_a_oggi": 1981,
-   "variazione": -28,
+   "atteso_a_oggi": 2057,
+   "variazione": -30,
    "stato": "stabile"
   },
   {
    "voce": "Chat Gpt",
    "mese_corrente": 40,
    "media_precedenti": 187,
-   "atteso_a_oggi": 162,
-   "variazione": -75,
+   "atteso_a_oggi": 168,
+   "variazione": -76,
    "stato": "stabile"
   }
  ],
- "extra_del_mese": 439,
- "n_scappati": 2,
+ "extra_del_mese": 112,
+ "n_scappati": 1,
  "n_nuovi": 1,
  "n_spariti": 9
 }
