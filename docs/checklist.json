@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-28T07:10:19+01:00",
+ "generato": "2026-11-28T08:18:06+01:00",
  "procedura": "https://docs.google.com/document/d/1vn5K-biqWNt40FmqPAzCpsSSZcaTjX25dpWTKnxVoyQ/edit",
  "cartella": "https://drive.google.com/drive/folders/1Zm7RDFGTeyrXjU2tWQAPyRvkA-maCmYk",
  "sezioni": [
@@ -13,55 +13,69 @@
   {
    "id": "ads",
    "titolo": "Altre mosse ads",
-   "sotto": "Posizionamenti fuori regola e a limite, spesa senza lead, moduli sotto il 4% di CVR, vincenti. Si azzera domani. Nota: dati del cockpit del 2026-11-27, non di oggi.",
+   "sotto": "Posizionamenti fuori regola e a limite, spesa senza lead, moduli sotto il 4% di CVR, vincenti. Si azzera domani.",
    "voci": [
     {
      "k": "ckcsm:mb|ads|lim|elisa-m-cf-em:2026-11-28",
      "t": "Elisa M. (CF-EM): 3 posizionamenti a limite",
-     "d": "FB Storie CPL 40,82, IG Reels CPL 34,07, IG Storie CPL 30,71. Limite 45. Si guarda, non si esclude.",
-     "m": "a limite",
-     "c": ""
-    },
-    {
-     "k": "ckcsm:mb|ads|lim|luigi-m-cf-lm:2026-11-28",
-     "t": "Luigi M. (CF-LM): 1 posizionamento a limite",
-     "d": "IG Reels CPL 39,13. Limite 45. Si guarda, non si esclude.",
+     "d": "FB Storie CPL 41,74, IG Reels CPL 35,76, IG Storie CPL 31,89. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
      "k": "ckcsm:mb|ads|lim|gianluca-c-cf-gca:2026-11-28",
      "t": "Gianluca C. (CF-GCA): 1 posizionamento a limite",
-     "d": "FB feed CPL 37,46. Limite 45. Si guarda, non si esclude.",
+     "d": "FB feed CPL 39,34. Limite 45. Si guarda, non si esclude.",
+     "m": "a limite",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|ads|lim|luigi-m-cf-lm:2026-11-28",
+     "t": "Luigi M. (CF-LM): 1 posizionamento a limite",
+     "d": "IG Reels CPL 39,29. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
      "k": "ckcsm:mb|ads|lim|cosimo-c-cf-cc:2026-11-28",
-     "t": "Cosimo C. (CF-CC): 1 posizionamento a limite",
-     "d": "FB Storie CPL 34,47. Limite 45. Si guarda, non si esclude.",
+     "t": "Cosimo C. (CF-CC): 2 posizionamenti a limite",
+     "d": "FB Storie CPL 34,94, FB feed CPL 30,49. Limite 45. Si guarda, non si esclude.",
+     "m": "a limite",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|ads|lim|riccardo-p-cf-rp:2026-11-28",
+     "t": "Riccardo P. (CF-RP): 1 posizionamento a limite",
+     "d": "FB feed 33,06 spesi, 0 lead. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
      "k": "ckcsm:mb|ads|lim|alessandro-z-oro-az:2026-11-28",
      "t": "Alessandro Z. (ORO-AZ): 1 posizionamento a limite",
-     "d": "FB feed CPL 31,06. Limite 45. Si guarda, non si esclude.",
+     "d": "FB feed CPL 31,38. Limite 45. Si guarda, non si esclude.",
+     "m": "a limite",
+     "c": ""
+    },
+    {
+     "k": "ckcsm:mb|ads|lim|marco-p-cf-mp:2026-11-28",
+     "t": "Marco P. (CF-MP): 1 posizionamento a limite",
+     "d": "FB Reels CPL 30,90. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
      "k": "ckcsm:mb|ads|lim|raffaele-d-l-cf-rd:2026-11-28",
      "t": "Raffaele D.L. (CF-RD): 1 posizionamento a limite",
-     "d": "IG feed CPL 30,54. Limite 45. Si guarda, non si esclude.",
+     "d": "IG feed CPL 30,64. Limite 45. Si guarda, non si esclude.",
      "m": "a limite",
      "c": ""
     },
     {
-     "k": "ckcsm:mb|ads|senza|riccardo-p-cf-rp:2026-11-28",
-     "t": "Riccardo P. (CF-RP): acceso senza lead recenti",
-     "d": "46 euro in 7 giorni. Trova la causa: annuncio, modulo o target.",
-     "m": "spesa",
+     "k": "ckcsm:mb|ads|lim|davide-d-b-cf-ddb:2026-11-28",
+     "t": "Davide D.B. (CF-DDB): 2 posizionamenti a limite",
+     "d": "IG Reels CPL 30,61, FB feed CPL 30,15. Limite 45. Si guarda, non si esclude.",
+     "m": "a limite",
      "c": ""
     }
    ],

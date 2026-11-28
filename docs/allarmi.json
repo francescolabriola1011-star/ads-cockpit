@@ -1,12 +1,13 @@
 {
- "generato": "27/11 04:05",
- "n_account_rossi": 6,
- "n_puliti": 10,
+ "generato": "28/11 04:04",
+ "n_account_rossi": 5,
+ "n_puliti": 11,
  "puliti": [
   "AEA-HOUSE",
+  "B",
+  "CF-CC",
   "CF-DDB",
   "CF-EM",
-  "CF-FR",
   "CF-GC",
   "CF-GCA",
   "CF-GD",
@@ -18,19 +19,19 @@
   {
    "cliente": "CF-MP",
    "tipo": "SPESA SU POSIZIONAMENTO ESCLUSO",
-   "dettaglio": "instagram/feed · 2.69 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
+   "dettaglio": "instagram/feed · 1.38 € ieri · spegni \"consenti spesa limitata\" nel gruppo",
    "gravita": 3
   },
   {
    "cliente": "CF-SM",
    "tipo": "PAGAMENTO BLOCCATO",
-   "dettaglio": "periodo di grazia · 31,69 € da saldare · Mastercard *9451",
+   "dettaglio": "pagamento non saldato · 31,69 € da saldare · Mastercard *9451",
    "gravita": 3
   },
   {
-   "cliente": "CF-CC",
-   "tipo": "PIU' DI UN MODULO VIVO",
-   "dettaglio": "Lead Gen - Cosimo Chirico, Lead Cosimo Chirico",
+   "cliente": "CF-FR",
+   "tipo": "BUCO NELLA ZONA",
+   "dettaglio": "esclusa pin 44.109,10.633 (LU), dentro la provincia del cliente · Gruppo Inserzioni Campagna Attiva",
    "gravita": 2
   },
   {
@@ -56,12 +57,6 @@
    "tipo": "PIU' DI UN MODULO VIVO",
    "dettaglio": "Lead Gen - Raffaele De Leonardis, Lead Raffaele De Leonardis",
    "gravita": 2
-  },
-  {
-   "cliente": "B",
-   "tipo": "FUORI REGOLA",
-   "dettaglio": "Riccardo Pentassuglia - Lead CF / Statica - 01_pensione-serena-4-domande · 03_pensione-serena-mare · €30.49 spesi e 0 lead (limite €30) · solo segnalato, ultimo annuncio acceso",
-   "gravita": 1
   },
   {
    "cliente": "CF-MLC",
